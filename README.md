@@ -9,7 +9,20 @@ tar xzvf timdb-openjdk_classes_tables.tar.gz
 
 ```
 
+# Buidling the database
+Mariadb has been used all alog the process.
+
+DB can be rebuild auromatically by:
+
+	1. Updating the RQ1-/toolsDir/db\_tools file
+	2. Executing ....
+
+
 # RQ1:
+
+## Reproduce Figure 3:
+
+## Reproduce Figure 4:
 
 # Example:
 Make sure you have already reconstructed the database.

@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-WORKDIR="/home/triom/android_java_sha256/ONE_TABLES/PROXIMITY"
+#WORKDIR="${REPO_DIR}/ONE_TABLES/PROXIMITY"
+WORKDIR=`pwd`
 STATS_DIR="${WORKDIR}/STATS"
 mkdir -p "${STATS_DIR}"
 
