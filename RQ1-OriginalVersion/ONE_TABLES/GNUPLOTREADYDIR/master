@@ -1,0 +1,15 @@
+#nb  version  colour
+134 jdk1.5 #000000
+300 jdk1.6 #ffffff
+210 jdk1.7 #000000
+265 jdk1.8 #ffffff
+430 jdk-9 #bbbbbb
+8 jdk-9- 
+67 jdk-10 #444444
+78 jdk-11 #ffffff
+46 jdk-12 #bbbbbb
+35 jdk-13 #777777
+130 jdk-14 #333333
+220 jdk-17 #ffffff
+42 jdk-18 #bbbbbb
+79 jdk-19 #777777
