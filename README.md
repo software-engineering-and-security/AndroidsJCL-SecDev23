@@ -24,6 +24,24 @@ DB can be rebuild auromatically by:
 
 ## Reproduce Figure 4:
 
+## Reproduce figure 5:
+
+# RQ2:
+
+# RQ3:
+
+## OpenJDK
+
+
+```bash 
+cd RQ3-Exploit/openjdk-vulnerable
+#untar openjdk vulnerable version
+tar xzvf openjdk-11.0.1.tar.gz
+
+```
+
+## Android-13
+
 # Example:
 Make sure you have already reconstructed the database.
 
