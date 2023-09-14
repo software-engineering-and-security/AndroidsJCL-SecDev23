@@ -1,0 +1,34 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // Verify all operands, and make sure ptypes is unshared:
+1        try {
+2            return methodType(rtype, ptypes);
+3        } finally {
+4            // Re-assign defaults in case this object escapes
+5            MethodType_init(void.class, NO_PTYPES);
+6        }
+7     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // Verify all operands, and make sure ptypes is unshared:
+1        try {
+2            return methodType(rtype, ptypes);
+3        } finally {
+4            // Re-assign defaults in case this object escapes
+5            MethodType_init(void.class, NO_PTYPES);
+6        }
+7    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // Verify all operands, and make sure ptypes is unshared:
+1        // Return a new validated MethodType for the rtype and ptypes passed from readObject.
+2        MethodType mt = ((MethodType[])wrapAlt)[0];
+3        wrapAlt = null;
+4        return mt;
+5     }
+--------------------------------------------

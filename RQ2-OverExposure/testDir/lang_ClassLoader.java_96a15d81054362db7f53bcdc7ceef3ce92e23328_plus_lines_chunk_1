@@ -1,0 +1,66 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    private static Void checkCreateClassLoader() {
+2        SecurityManager security = System.getSecurityManager();
+3        if (security != null) {
+4            security.checkCreateClassLoader();
+5        }
+6        return null;
+7    }
+8
+9    private ClassLoader(Void unused, ClassLoader parent) {
+10        this.parent = parent;
+11        if (parallelLoaders.contains(this.getClass())) {
+12            parallelLockMap = new ConcurrentHashMap<String, Object>();
+13            package2certs = new ConcurrentHashMap<String, Certificate[]>();
+14            domains =
+15                Collections.synchronizedSet(new HashSet<ProtectionDomain>());
+16            assertionLock = new Object();
+17        } else {
+18            // no finer-grained lock; lock on the classloader instance
+19            parallelLockMap = null;
+20            package2certs = new Hashtable<String, Certificate[]>();
+21            domains = new HashSet<ProtectionDomain>();
+22            assertionLock = this;
+23        }
+24    }
+25
+26     /**
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    private static Void checkCreateClassLoader() {
+2        SecurityManager security = System.getSecurityManager();
+3        if (security != null) {
+4            security.checkCreateClassLoader();
+5        }
+6        return null;
+7    }
+8
+9    private ClassLoader(Void unused, ClassLoader parent) {
+10        this.parent = parent;
+11        if (ParallelLoaders.isRegistered(this.getClass())) {
+12            parallelLockMap = new ConcurrentHashMap<>();
+13            package2certs = new ConcurrentHashMap<>();
+14            domains =
+15                Collections.synchronizedSet(new HashSet<ProtectionDomain>());
+16            assertionLock = new Object();
+17        } else {
+18            // no finer-grained lock; lock on the classloader instance
+19            parallelLockMap = null;
+20            package2certs = new Hashtable<>();
+21            domains = new HashSet<>();
+22            assertionLock = this;
+23        }
+24    }
+25
+26    /**
+---------------------------------------------
+Differences:	['11', '12', '13', '20', '21']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

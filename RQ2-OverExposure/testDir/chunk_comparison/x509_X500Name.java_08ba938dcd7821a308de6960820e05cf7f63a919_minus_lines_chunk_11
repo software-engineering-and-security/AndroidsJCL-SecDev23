@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /** OID for the "SURNAME=" attribute, denoting a person's surname.*/
+2        SURNAME_OID = intern(ObjectIdentifier.newInternal(SURNAME_DATA));
+3 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /** OID for the "SURNAME=" attribute, denoting a person's surname.*/
+2        SURNAME_OID = intern(ObjectIdentifier.newInternal(SURNAME_DATA));
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // OID for the "GIVENNAME=" attribute, denoting a person's given name.
+2    public static final ObjectIdentifier GIVENNAME_OID =
+3            ObjectIdentifier.newInternal(GIVENNAME_DATA);
+4 
+--------------------------------------------

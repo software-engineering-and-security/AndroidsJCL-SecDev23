@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             // Perform the default constraints checking anyway.
+1            certPathDefaultConstraints.permits(currSigAlg, cp);
+2             // Call locally set constraints to check key with primitives.
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            // Perform the default constraints checking anyway.
+1            certPathDefaultConstraints.permits(currSigAlg, cp);
+2            // Call locally set constraints to check key with primitives.
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0             // Perform the default constraints checking anyway.
+1            certPathDefaultConstraints.permits(currSigAlg, currSigAlgParams, cp);
+2             // Call locally set constraints to check key with primitives.
+--------------------------------------------

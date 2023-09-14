@@ -1,0 +1,65 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * Get constraints parameters for JAR. The constraints should be
+3     * checked against all code signers. Returns the parameters,
+4     * or null if the signers for this entry have already been checked.
+5     */
+6    private JarConstraintsParameters getParams(
+7            Map<String, CodeSigner[]> verifiedSigners,
+8            Map<String, CodeSigner[]> sigFileSigners) {
+9
+10        // verifiedSigners is usually preloaded with the Manifest's signers.
+11        // If verifiedSigners contains the Manifest, then it will have all of
+12        // the signers of the JAR. But if it doesn't then we need to fallback
+13        // and check verifiedSigners to see if the signers of this entry have
+14        // been checked already.
+15        if (verifiedSigners.containsKey(JarFile.MANIFEST_NAME)) {
+16            if (verifiedSigners.size() > 1) {
+17                // this means we already checked it previously
+18                return null;
+19            } else {
+20                return new JarConstraintsParameters(
+21                    verifiedSigners.get(JarFile.MANIFEST_NAME));
+22            }
+23        } else {
+24            CodeSigner[] signers = sigFileSigners.get(name);
+25            if (verifiedSigners.containsValue(signers)) {
+26                return null;
+27            } else {
+28                return new JarConstraintsParameters(signers);
+29            }
+30        }
+31    }
+32
+33     // for the toHex function
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0            {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
+1    /**
+2     * convert a byte array to a hex string for debugging purposes
+3     * @param data the binary data to be converted to a hex string
+4     * @return an ASCII hex string
+5     */
+6
+7    static String toHex(byte[] data) {
+8
+9        StringBuffer sb = new StringBuffer(data.length*2);
+10
+11        for (int i=0; i<data.length; i++) {
+12            sb.append(hexc[(data[i] >>4) & 0x0f]);
+13            sb.append(hexc[data[i] & 0x0f]);
+14        }
+15        return sb.toString();
+16    }
+17
+18}
+---------------------------------------------
+Differences:	['0', '6', '7', '8', '9', '15', '16', '18']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

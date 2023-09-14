@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         if (positivePrefix.length() > 0)
+1            positivePrefix = "\\Q" + positivePrefix + "\\E";
+2         negativePrefix = df.getNegativePrefix();
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        if (positivePrefix.length() > 0)
+1            positivePrefix = "\\Q" + positivePrefix + "\\E";
+2        negativePrefix = df.getNegativePrefix();
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         if (positivePrefix.length() > 0)
+1            positivePrefix = Pattern.quote(positivePrefix);
+2         negativePrefix = df.getNegativePrefix();
+--------------------------------------------

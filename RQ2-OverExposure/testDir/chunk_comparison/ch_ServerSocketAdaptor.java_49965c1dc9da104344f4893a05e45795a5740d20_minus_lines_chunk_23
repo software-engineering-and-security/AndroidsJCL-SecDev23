@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1public class ServerSocketAdaptor                        // package-private
+2     extends ServerSocket
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1public class ServerSocketAdaptor                        // package-private
+2    extends ServerSocket
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1class ServerSocketAdaptor                        // package-private
+2     extends ServerSocket
+--------------------------------------------

@@ -1,0 +1,36 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * Checks if a JDK trust anchor is the issuer of a certificate.
+3     *
+4     * @param cert the certificate to check
+5     * @return true if the certificate is issued by a trust anchor
+6     */
+7    public static boolean issuerOf(X509Certificate cert) {
+8        return certIssuers.contains(cert.getIssuerX500Principal());
+9    }
+10
+11     private AnchorCertificates() {}
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * Checks if a JDK trust anchor is the issuer of a certificate.
+3     *
+4     * @param cert the certificate to check
+5     * @return true if the certificate is issued by a trust anchor
+6     */
+7    public static boolean issuerOf(X509Certificate cert) {
+8        return certIssuers.contains(cert.getIssuerX500Principal());
+9    }
+10
+11    private AnchorCertificates() {}
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+--------------------------------------------

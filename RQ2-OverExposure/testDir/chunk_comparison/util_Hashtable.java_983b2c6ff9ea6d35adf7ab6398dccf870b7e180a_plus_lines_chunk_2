@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     {
+1
+2        ObjectInputStream.GetField fields = s.readFields();
+3 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0                int index = (lastReturned.hash & 0x7FFFFFFF) % tab.length;
+1
+2                for (Entry<K,V> e = tab[index], prev = null; e != null;
+3                     prev = e, e = e.next) {
+---------------------------------------------
+Differences:	['0', '2', '3']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0     {
+1        // Read in the threshold and loadFactor
+2        s.defaultReadObject();
+3 
+--------------------------------------------

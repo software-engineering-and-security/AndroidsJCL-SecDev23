@@ -1,0 +1,41 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /*
+2     * OID for "DC=" domain component attributes, used with DNSNames in DN
+3     * format
+4     */
+5        DOMAIN_COMPONENT_OID =
+6            intern(ObjectIdentifier.newInternal(DOMAIN_COMPONENT_DATA));
+7
+8    /** OID for "UID=" denoting a user id, defined in RFCs 1274 & 2798. */
+9        userid_oid = intern(ObjectIdentifier.newInternal(userid_data));
+10    }
+11 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /*
+2     * OID for "DC=" domain component attributes, used with DNS names in DN
+3     * format
+4     */
+5        DOMAIN_COMPONENT_OID =
+6            intern(ObjectIdentifier.newInternal(DOMAIN_COMPONENT_DATA));
+7
+8    /** OID for "UID=" denoting a user id, defined in RFCs 1274 & 2798. */
+9        userid_oid = intern(ObjectIdentifier.newInternal(userid_data));
+10    }
+11
+---------------------------------------------
+Differences:	['2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1    // OID for "UID=" denoting a user id, defined in RFCs 1274 & 2798.
+2    public static final ObjectIdentifier userid_oid =
+3            ObjectIdentifier.newInternal(userid_data);
+4 
+--------------------------------------------

@@ -1,0 +1,22 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             this.trustedPubKey = null;
+1            if (debug != null) {
+2                debug.println("TrustAnchor is null, trustedMatch is false.");
+3            }
+4         }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            this.trustedPubKey = null;
+1            if (debug != null) {
+2                debug.println("TrustAnchor is null, trustedMatch is false.");
+3            }
+4        }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

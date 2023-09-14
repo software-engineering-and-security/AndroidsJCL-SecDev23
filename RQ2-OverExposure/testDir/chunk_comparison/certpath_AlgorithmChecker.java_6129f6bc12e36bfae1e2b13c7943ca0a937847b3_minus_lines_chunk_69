@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        certPathDefaultConstraints.permits(new ConstraintsParameters(
+2                sigAlgName, sigAlgParams, key, variant));
+3     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        certPathDefaultConstraints.permits(new ConstraintsParameters(
+2                sigAlgName, sigAlgParams, key, variant));
+3    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        certPathDefaultConstraints.permits(algorithmId.getName(),
+2            algorithmId.getParameters(),
+3            new CertPathConstraintsParameters(key, variant, anchor));
+4     }
+--------------------------------------------

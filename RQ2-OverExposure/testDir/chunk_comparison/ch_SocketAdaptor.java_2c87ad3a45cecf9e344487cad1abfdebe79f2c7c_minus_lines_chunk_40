@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 } finally {
+1                    if (sc.isOpen())
+2                         sc.configureBlocking(true);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                        sk.cancel();
+1                    if (sc.isOpen())
+2                        sc.configureBlocking(true);
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0                 } finally {
+1                    try {
+2                         sc.configureBlocking(true);
+--------------------------------------------

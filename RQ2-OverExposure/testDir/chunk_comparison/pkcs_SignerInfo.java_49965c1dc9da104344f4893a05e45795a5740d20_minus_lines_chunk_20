@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             // to form signing algorithm
+1            String encryptionAlgname =
+2                 getDigestEncryptionAlgorithmId().getName();
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            // to form signing algorithm
+1            String encryptionAlgname =
+2                getDigestEncryptionAlgorithmId().getName();
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0             // to form signing algorithm
+1            String encryptionAlgName =
+2                 getDigestEncryptionAlgorithmId().getName();
+--------------------------------------------

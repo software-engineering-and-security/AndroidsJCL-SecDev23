@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // optimization
+1        if (lengthInCodePoints == 1 && !Character.isHighSurrogate(seq.charAt(index))) {
+2            assert (index >= 0 && index < seq.length());
+3             return 1;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // optimization
+1        if (lengthInCodePoints == 1 && !Character.isHighSurrogate(seq.charAt(index))) {
+2            assert (index >= 0 && index < seq.length());
+3            return 1;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // optimization
+1        if (lengthInCodePoints == 1 && index >= 0 && index < seq.length() &&
+2            !Character.isHighSurrogate(seq.charAt(index))) {
+3             return 1;
+--------------------------------------------

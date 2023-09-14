@@ -1,0 +1,66 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    private static Void checkCreateClassLoader() {
+2        SecurityManager security = System.getSecurityManager();
+3        if (security != null) {
+4            security.checkCreateClassLoader();
+5        }
+6        return null;
+7    }
+8
+9    private ClassLoader(Void unused, ClassLoader parent) {
+10        this.parent = parent;
+11        if (parallelLoaders.contains(this.getClass())) {
+12            parallelLockMap = new ConcurrentHashMap<String, Object>();
+13            package2certs = new ConcurrentHashMap<String, Certificate[]>();
+14            domains =
+15                Collections.synchronizedSet(new HashSet<ProtectionDomain>());
+16            assertionLock = new Object();
+17        } else {
+18            // no finer-grained lock; lock on the classloader instance
+19            parallelLockMap = null;
+20            package2certs = new Hashtable<String, Certificate[]>();
+21            domains = new HashSet<ProtectionDomain>();
+22            assertionLock = this;
+23        }
+24    }
+25
+26     /**
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    private static Void checkCreateClassLoader() {
+2        return null;
+3    }
+4
+5    private ClassLoader(Void unused, ClassLoader parent) {
+6        this.parent = parent;
+7    }
+8
+9    /**
+10     * Creates a new class loader using the specified parent class loader for
+11     * delegation.
+12     *
+13     * <p> If there is a security manager, its {@link
+14     * SecurityManager#checkCreateClassLoader()
+15     * <tt>checkCreateClassLoader</tt>} method is invoked.  This may result in
+16     * a security exception.  </p>
+17     *
+18     * @param  parent
+19     *         The parent class loader
+20     *
+21     * @throws  SecurityException
+22     *          If a security manager exists and its
+23     *          <tt>checkCreateClassLoader</tt> method doesn't allow creation
+24     *          of a new class loader.
+25     *
+26     * @since  1.2
+---------------------------------------------
+Differences:	['2', '3', '4', '5', '6', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

@@ -1,0 +1,32 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * A map containing the algorithms in this SignerInfo. This is used to
+3     * avoid checking algorithms to see if they are disabled more than once.
+4     * The key is the AlgorithmId of the algorithm, and the value is the name of
+5     * the field or attribute.
+6     */
+7    private Map<AlgorithmId, String> algorithms = new HashMap<>();
+8
+9     public SignerInfo(X500Name  issuerName,
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * DER encode this object onto an output stream.
+3     * Implements the <code>DerEncoder</code> interface.
+4     *
+5     * @param out
+6     * the output stream on which to write the DER encoding.
+7     *
+8     * @exception IOException on encoding error.
+9     */
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+--------------------------------------------

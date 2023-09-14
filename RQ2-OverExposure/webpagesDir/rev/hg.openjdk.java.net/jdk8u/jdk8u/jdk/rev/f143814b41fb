@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: f143814b41fb</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/f143814b41fb">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/f143814b41fb">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/f143814b41fb">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/f143814b41fb">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/f143814b41fb.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/f143814b41fb.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/f143814b41fb.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 14560:f143814b41fb   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8266097: Better hashing support
+Reviewed-by: mbalao, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#121;&#97;&#110;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 26 Aug 2021 14:33:15 +0300</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/1b77223b4674">1b77223b4674</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/4074e9c839a3">4074e9c839a3</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/f143814b41fb/src/share/classes/java/util/HashMap.java">src/share/classes/java/util/HashMap.java</a> <a href="/jdk8u/jdk8u/jdk/file/f143814b41fb/src/share/classes/java/util/HashSet.java">src/share/classes/java/util/HashSet.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 44 insertions(+), 19 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/util/HashMap.java</a></td>
+    <td class="diffstat-total" align="right">52</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:73.0769230769%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:26.9230769231%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/java/util/HashSet.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:11.5384615385%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:9.61538461538%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/util/HashMap.java	Thu Aug 19 18:38:42 2021 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/util/HashMap.java	Thu Aug 26 14:33:15 2021 +0300</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 1997, 2017, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 1997, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -27,6 +27,7 @@</span><a href="#l1.10"></a>
+<span id="l1.11"> </span><a href="#l1.11"></a>
+<span id="l1.12"> import java.io.IOException;</span><a href="#l1.12"></a>
+<span id="l1.13"> import java.io.InvalidObjectException;</span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+import java.io.ObjectInputStream;</span><a href="#l1.14"></a>
+<span id="l1.15"> import java.io.Serializable;</span><a href="#l1.15"></a>
+<span id="l1.16"> import java.lang.reflect.ParameterizedType;</span><a href="#l1.16"></a>
+<span id="l1.17"> import java.lang.reflect.Type;</span><a href="#l1.17"></a>
+<span id="l1.18" class="atline">@@ -1370,23 +1371,28 @@</span><a href="#l1.18"></a>
+<span id="l1.19">      *         could not be found</span><a href="#l1.19"></a>
+<span id="l1.20">      * @throws IOException if an I/O error occurs</span><a href="#l1.20"></a>
+<span id="l1.21">      */</span><a href="#l1.21"></a>
+<span id="l1.22" class="minusline">-    private void readObject(java.io.ObjectInputStream s)</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+    private void readObject(ObjectInputStream s)</span><a href="#l1.23"></a>
+<span id="l1.24">         throws IOException, ClassNotFoundException {</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-        // Read in the threshold (ignored), loadfactor, and any hidden stuff</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-        s.defaultReadObject();</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+        ObjectInputStream.GetField fields = s.readFields();</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+        // Read loadFactor (ignore threshold)</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+        float lf = fields.get(&quot;loadFactor&quot;, 0.75f);</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+        if (lf &lt;= 0 || Float.isNaN(lf))</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+            throw new InvalidObjectException(&quot;Illegal load factor: &quot; + lf);</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+        lf = Math.min(Math.max(0.25f, lf), 4.0f);</span><a href="#l1.35"></a>
+<span id="l1.36" class="plusline">+        HashMap.UnsafeHolder.putLoadFactor(this, lf);</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+</span><a href="#l1.37"></a>
+<span id="l1.38">         reinitialize();</span><a href="#l1.38"></a>
+<span id="l1.39" class="minusline">-        if (loadFactor &lt;= 0 || Float.isNaN(loadFactor))</span><a href="#l1.39"></a>
+<span id="l1.40" class="minusline">-            throw new InvalidObjectException(&quot;Illegal load factor: &quot; +</span><a href="#l1.40"></a>
+<span id="l1.41" class="minusline">-                                             loadFactor);</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+</span><a href="#l1.42"></a>
+<span id="l1.43">         s.readInt();                // Read and ignore number of buckets</span><a href="#l1.43"></a>
+<span id="l1.44">         int mappings = s.readInt(); // Read number of mappings (size)</span><a href="#l1.44"></a>
+<span id="l1.45" class="minusline">-        if (mappings &lt; 0)</span><a href="#l1.45"></a>
+<span id="l1.46" class="minusline">-            throw new InvalidObjectException(&quot;Illegal mappings count: &quot; +</span><a href="#l1.46"></a>
+<span id="l1.47" class="minusline">-                                             mappings);</span><a href="#l1.47"></a>
+<span id="l1.48" class="minusline">-        else if (mappings &gt; 0) { // (if zero, use defaults)</span><a href="#l1.48"></a>
+<span id="l1.49" class="minusline">-            // Size the table using given load factor only if within</span><a href="#l1.49"></a>
+<span id="l1.50" class="minusline">-            // range of 0.25...4.0</span><a href="#l1.50"></a>
+<span id="l1.51" class="minusline">-            float lf = Math.min(Math.max(0.25f, loadFactor), 4.0f);</span><a href="#l1.51"></a>
+<span id="l1.52" class="plusline">+        if (mappings &lt; 0) {</span><a href="#l1.52"></a>
+<span id="l1.53" class="plusline">+            throw new InvalidObjectException(&quot;Illegal mappings count: &quot; + mappings);</span><a href="#l1.53"></a>
+<span id="l1.54" class="plusline">+        } else if (mappings == 0) {</span><a href="#l1.54"></a>
+<span id="l1.55" class="plusline">+            // use defaults</span><a href="#l1.55"></a>
+<span id="l1.56" class="plusline">+        } else if (mappings &gt; 0) {</span><a href="#l1.56"></a>
+<span id="l1.57">             float fc = (float)mappings / lf + 1.0f;</span><a href="#l1.57"></a>
+<span id="l1.58">             int cap = ((fc &lt; DEFAULT_INITIAL_CAPACITY) ?</span><a href="#l1.58"></a>
+<span id="l1.59">                        DEFAULT_INITIAL_CAPACITY :</span><a href="#l1.59"></a>
+<span id="l1.60" class="atline">@@ -1415,6 +1421,24 @@</span><a href="#l1.60"></a>
+<span id="l1.61">         }</span><a href="#l1.61"></a>
+<span id="l1.62">     }</span><a href="#l1.62"></a>
+<span id="l1.63"> </span><a href="#l1.63"></a>
+<span id="l1.64" class="plusline">+    // Support for resetting final field during deserializing</span><a href="#l1.64"></a>
+<span id="l1.65" class="plusline">+    private static final class UnsafeHolder {</span><a href="#l1.65"></a>
+<span id="l1.66" class="plusline">+        private UnsafeHolder() { throw new InternalError(); }</span><a href="#l1.66"></a>
+<span id="l1.67" class="plusline">+        private static final sun.misc.Unsafe unsafe</span><a href="#l1.67"></a>
+<span id="l1.68" class="plusline">+                = sun.misc.Unsafe.getUnsafe();</span><a href="#l1.68"></a>
+<span id="l1.69" class="plusline">+        private static final long LF_OFFSET;</span><a href="#l1.69"></a>
+<span id="l1.70" class="plusline">+        static {</span><a href="#l1.70"></a>
+<span id="l1.71" class="plusline">+            try {</span><a href="#l1.71"></a>
+<span id="l1.72" class="plusline">+                LF_OFFSET = unsafe.objectFieldOffset(HashMap.class.getDeclaredField(&quot;loadFactor&quot;));</span><a href="#l1.72"></a>
+<span id="l1.73" class="plusline">+            } catch (NoSuchFieldException nfe) {</span><a href="#l1.73"></a>
+<span id="l1.74" class="plusline">+                throw new InternalError();</span><a href="#l1.74"></a>
+<span id="l1.75" class="plusline">+            }</span><a href="#l1.75"></a>
+<span id="l1.76" class="plusline">+        }</span><a href="#l1.76"></a>
+<span id="l1.77" class="plusline">+        static void putLoadFactor(HashMap&lt;?, ?&gt; map, float lf) {</span><a href="#l1.77"></a>
+<span id="l1.78" class="plusline">+            unsafe.putFloat(map, LF_OFFSET, lf);</span><a href="#l1.78"></a>
+<span id="l1.79" class="plusline">+        }</span><a href="#l1.79"></a>
+<span id="l1.80" class="plusline">+    }</span><a href="#l1.80"></a>
+<span id="l1.81" class="plusline">+</span><a href="#l1.81"></a>
+<span id="l1.82">     /* ------------------------------------------------------------ */</span><a href="#l1.82"></a>
+<span id="l1.83">     // iterators</span><a href="#l1.83"></a>
+<span id="l1.84"> </span><a href="#l1.84"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/java/util/HashSet.java	Thu Aug 19 18:38:42 2021 +0300</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/java/util/HashSet.java	Thu Aug 26 14:33:15 2021 +0300</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright (c) 1997, 2017, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright (c) 1997, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -294,8 +294,8 @@</span><a href="#l2.10"></a>
+<span id="l2.11">      */</span><a href="#l2.11"></a>
+<span id="l2.12">     private void readObject(java.io.ObjectInputStream s)</span><a href="#l2.12"></a>
+<span id="l2.13">         throws java.io.IOException, ClassNotFoundException {</span><a href="#l2.13"></a>
+<span id="l2.14" class="minusline">-        // Read in any hidden serialization magic</span><a href="#l2.14"></a>
+<span id="l2.15" class="minusline">-        s.defaultReadObject();</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+        // Consume and ignore stream fields (currently zero).</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+        s.readFields();</span><a href="#l2.17"></a>
+<span id="l2.18"> </span><a href="#l2.18"></a>
+<span id="l2.19">         // Read capacity and verify non-negative.</span><a href="#l2.19"></a>
+<span id="l2.20">         int capacity = s.readInt();</span><a href="#l2.20"></a>
+<span id="l2.21" class="atline">@@ -310,12 +310,13 @@</span><a href="#l2.21"></a>
+<span id="l2.22">             throw new InvalidObjectException(&quot;Illegal load factor: &quot; +</span><a href="#l2.22"></a>
+<span id="l2.23">                                              loadFactor);</span><a href="#l2.23"></a>
+<span id="l2.24">         }</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+        // Clamp load factor to range of 0.25...4.0.</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+        loadFactor = Math.min(Math.max(0.25f, loadFactor), 4.0f);</span><a href="#l2.26"></a>
+<span id="l2.27"> </span><a href="#l2.27"></a>
+<span id="l2.28">         // Read size and verify non-negative.</span><a href="#l2.28"></a>
+<span id="l2.29">         int size = s.readInt();</span><a href="#l2.29"></a>
+<span id="l2.30">         if (size &lt; 0) {</span><a href="#l2.30"></a>
+<span id="l2.31" class="minusline">-            throw new InvalidObjectException(&quot;Illegal size: &quot; +</span><a href="#l2.31"></a>
+<span id="l2.32" class="minusline">-                                             size);</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+            throw new InvalidObjectException(&quot;Illegal size: &quot; + size);</span><a href="#l2.33"></a>
+<span id="l2.34">         }</span><a href="#l2.34"></a>
+<span id="l2.35">         // Set the capacity according to the size and load factor ensuring that</span><a href="#l2.35"></a>
+<span id="l2.36">         // the HashMap is at least 25% full but clamping to maximum capacity.</span><a href="#l2.36"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        // Read in size (number of Mappings)
+2         int size = s.readInt();
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        // Read in size (number of Mappings)
+2        int size = s.readInt();
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        // Read second size value, validate and assign to size field
+2         int size = s.readInt();
+--------------------------------------------

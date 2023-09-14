@@ -1,0 +1,35 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             if (!gotDate) {
+1                date = params.getDate();
+2                if (date == null)
+3                    date = new Date();
+4                 gotDate = true;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            if (!gotDate) {
+1                date = params.getDate();
+2                if (date == null)
+3                    date = new Date();
+4                gotDate = true;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0             if (!gotDate) {
+1                // use timestamp if checking signed code that is
+2                // timestamped, otherwise use date parameter
+3                if (timestamp != null &&
+4                    (variant.equals(Validator.VAR_CODE_SIGNING) ||
+5                     variant.equals(Validator.VAR_PLUGIN_CODE_SIGNING))) {
+6                    date = timestamp.getTimestamp();
+7                } else {
+8                    date = params.getDate();
+9                    if (date == null)
+10                        date = new Date();
+11                }
+12                 gotDate = true;
+--------------------------------------------

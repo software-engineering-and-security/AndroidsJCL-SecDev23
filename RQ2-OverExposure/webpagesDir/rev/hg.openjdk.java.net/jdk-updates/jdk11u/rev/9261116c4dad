@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk-updates/jdk11u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk-updates/jdk11u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk-updates/jdk11u/static/mercurial.js"></script>
+
+<title>jdk-updates/jdk11u: 9261116c4dad</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk-updates/jdk11u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/shortlog/9261116c4dad">log</a></li>
+ <li><a href="/jdk-updates/jdk11u/graph/9261116c4dad">graph</a></li>
+ <li><a href="/jdk-updates/jdk11u/tags">tags</a></li>
+ <li><a href="/jdk-updates/jdk11u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk-updates/jdk11u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk-updates/jdk11u/raw-rev/9261116c4dad">raw</a></li>
+ <li><a href="/jdk-updates/jdk11u/file/9261116c4dad">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk-updates/jdk11u/archive/9261116c4dad.zip">zip</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/9261116c4dad.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/9261116c4dad.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk-updates">jdk-updates</a> / <a href="/jdk-updates/jdk11u">jdk11u</a> </h2>
+<h3>changeset 52904:9261116c4dad   </h3>
+
+<form class="search" action="/jdk-updates/jdk11u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk-updates/jdk11u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8234408: Improve TLS session handling
+Reviewed-by: ascarpino, jjiang, ahgross, ssahoo, mullan, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#120;&#117;&#101;&#108;&#101;&#105;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Mon, 25 Nov 2019 09:50:30 -0800</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk-updates/jdk11u/rev/4322d31049b0">4322d31049b0</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk-updates/jdk11u/rev/a839d7be4c48">a839d7be4c48</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk-updates/jdk11u/file/9261116c4dad/src/java.base/share/classes/sun/security/ssl/ClientHello.java">src/java.base/share/classes/sun/security/ssl/ClientHello.java</a> <a href="/jdk-updates/jdk11u/file/9261116c4dad/src/java.base/share/classes/sun/security/ssl/SSLSessionImpl.java">src/java.base/share/classes/sun/security/ssl/SSLSessionImpl.java</a> <a href="/jdk-updates/jdk11u/file/9261116c4dad/src/java.base/share/classes/sun/security/ssl/SSLSocketImpl.java">src/java.base/share/classes/sun/security/ssl/SSLSocketImpl.java</a> <a href="/jdk-updates/jdk11u/file/9261116c4dad/src/java.base/share/classes/sun/security/ssl/TransportContext.java">src/java.base/share/classes/sun/security/ssl/TransportContext.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     4 files changed, 4 insertions(+), 18 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/java.base/share/classes/sun/security/ssl/ClientHello.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.25%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.25%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/java.base/share/classes/sun/security/ssl/SSLSessionImpl.java</a></td>
+    <td class="diffstat-total" align="right">16</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.25%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:93.75%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/java.base/share/classes/sun/security/ssl/SSLSocketImpl.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.25%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.25%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/java.base/share/classes/sun/security/ssl/TransportContext.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.25%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.25%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/ClientHello.java	Wed Dec 11 16:35:43 2019 +0800</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/ClientHello.java	Mon Nov 25 09:50:30 2019 -0800</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -407,7 +407,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">             ProtocolVersion maxProtocolVersion = chc.maximumActiveProtocol;</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6">             // session ID of the ClientHello message</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-            SessionId sessionId = SSLSessionImpl.nullSession.getSessionId();</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            SessionId sessionId = new SessionId(new byte[0]);</span><a href="#l1.8"></a>
+<span id="l1.9"> </span><a href="#l1.9"></a>
+<span id="l1.10">             // a list of cipher suites sent by the client</span><a href="#l1.10"></a>
+<span id="l1.11">             List&lt;CipherSuite&gt; cipherSuites = chc.activeCipherSuites;</span><a href="#l1.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/SSLSessionImpl.java	Wed Dec 11 16:35:43 2019 +0800</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/SSLSessionImpl.java	Mon Nov 25 09:50:30 2019 -0800</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -68,11 +68,6 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> final class SSLSessionImpl extends ExtendedSSLSession {</span><a href="#l2.4"></a>
+<span id="l2.5"> </span><a href="#l2.5"></a>
+<span id="l2.6">     /*</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-     * we only really need a single null session</span><a href="#l2.7"></a>
+<span id="l2.8" class="minusline">-     */</span><a href="#l2.8"></a>
+<span id="l2.9" class="minusline">-    static final SSLSessionImpl         nullSession = new SSLSessionImpl();</span><a href="#l2.9"></a>
+<span id="l2.10" class="minusline">-</span><a href="#l2.10"></a>
+<span id="l2.11" class="minusline">-    /*</span><a href="#l2.11"></a>
+<span id="l2.12">      * The state of a single session, as described in section 7.1</span><a href="#l2.12"></a>
+<span id="l2.13">      * of the SSLv3 spec.</span><a href="#l2.13"></a>
+<span id="l2.14">      */</span><a href="#l2.14"></a>
+<span id="l2.15" class="atline">@@ -141,7 +136,7 @@</span><a href="#l2.15"></a>
+<span id="l2.16">      * be used either by a client or by a server, as a connection is</span><a href="#l2.16"></a>
+<span id="l2.17">      * first opened and before handshaking begins.</span><a href="#l2.17"></a>
+<span id="l2.18">      */</span><a href="#l2.18"></a>
+<span id="l2.19" class="minusline">-    private SSLSessionImpl() {</span><a href="#l2.19"></a>
+<span id="l2.20" class="plusline">+    SSLSessionImpl() {</span><a href="#l2.20"></a>
+<span id="l2.21">         this.protocolVersion = ProtocolVersion.NONE;</span><a href="#l2.21"></a>
+<span id="l2.22">         this.cipherSuite = CipherSuite.C_NULL;</span><a href="#l2.22"></a>
+<span id="l2.23">         this.sessionId = new SessionId(false, null);</span><a href="#l2.23"></a>
+<span id="l2.24" class="atline">@@ -777,15 +772,6 @@</span><a href="#l2.24"></a>
+<span id="l2.25">      */</span><a href="#l2.25"></a>
+<span id="l2.26">     @Override</span><a href="#l2.26"></a>
+<span id="l2.27">     public synchronized void invalidate() {</span><a href="#l2.27"></a>
+<span id="l2.28" class="minusline">-        //</span><a href="#l2.28"></a>
+<span id="l2.29" class="minusline">-        // Can't invalidate the NULL session -- this would be</span><a href="#l2.29"></a>
+<span id="l2.30" class="minusline">-        // attempted when we get a handshaking error on a brand</span><a href="#l2.30"></a>
+<span id="l2.31" class="minusline">-        // new connection, with no &quot;real&quot; session yet.</span><a href="#l2.31"></a>
+<span id="l2.32" class="minusline">-        //</span><a href="#l2.32"></a>
+<span id="l2.33" class="minusline">-        if (this == nullSession) {</span><a href="#l2.33"></a>
+<span id="l2.34" class="minusline">-            return;</span><a href="#l2.34"></a>
+<span id="l2.35" class="minusline">-        }</span><a href="#l2.35"></a>
+<span id="l2.36" class="minusline">-</span><a href="#l2.36"></a>
+<span id="l2.37">         if (context != null) {</span><a href="#l2.37"></a>
+<span id="l2.38">             context.remove(sessionId);</span><a href="#l2.38"></a>
+<span id="l2.39">             context = null;</span><a href="#l2.39"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/SSLSocketImpl.java	Wed Dec 11 16:35:43 2019 +0800</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/SSLSocketImpl.java	Mon Nov 25 09:50:30 2019 -0800</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -334,7 +334,7 @@</span><a href="#l3.3"></a>
+<span id="l3.4">                 SSLLogger.severe(&quot;handshake failed&quot;, ioe);</span><a href="#l3.4"></a>
+<span id="l3.5">             }</span><a href="#l3.5"></a>
+<span id="l3.6"> </span><a href="#l3.6"></a>
+<span id="l3.7" class="minusline">-            return SSLSessionImpl.nullSession;</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+            return new SSLSessionImpl();</span><a href="#l3.8"></a>
+<span id="l3.9">         }</span><a href="#l3.9"></a>
+<span id="l3.10"> </span><a href="#l3.10"></a>
+<span id="l3.11">         return conContext.conSession;</span><a href="#l3.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/TransportContext.java	Wed Dec 11 16:35:43 2019 +0800</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/TransportContext.java	Mon Nov 25 09:50:30 2019 -0800</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -131,7 +131,7 @@</span><a href="#l4.3"></a>
+<span id="l4.4">         this.isUnsureMode = isUnsureMode;</span><a href="#l4.4"></a>
+<span id="l4.5"> </span><a href="#l4.5"></a>
+<span id="l4.6">         // initial security parameters</span><a href="#l4.6"></a>
+<span id="l4.7" class="minusline">-        this.conSession = SSLSessionImpl.nullSession;</span><a href="#l4.7"></a>
+<span id="l4.8" class="plusline">+        this.conSession = new SSLSessionImpl();</span><a href="#l4.8"></a>
+<span id="l4.9">         this.protocolVersion = this.sslConfig.maximumProtocolVersion;</span><a href="#l4.9"></a>
+<span id="l4.10">         this.clientVerifyData = emptyByteArray;</span><a href="#l4.10"></a>
+<span id="l4.11">         this.serverVerifyData = emptyByteArray;</span><a href="#l4.11"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

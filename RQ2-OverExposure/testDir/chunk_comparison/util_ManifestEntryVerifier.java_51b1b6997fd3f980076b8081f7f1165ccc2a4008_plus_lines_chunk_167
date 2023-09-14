@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             return signers;
+1        }
+2
+3        JarConstraintsParameters params =
+4            getParams(verifiedSigners, sigFileSigners);
+5 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0            sb.append(hexc[data[i] & 0x0f]);
+1        }
+2        return sb.toString();
+3    }
+4
+5}
+---------------------------------------------
+Differences:	['0', '2', '3', '4', '5']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

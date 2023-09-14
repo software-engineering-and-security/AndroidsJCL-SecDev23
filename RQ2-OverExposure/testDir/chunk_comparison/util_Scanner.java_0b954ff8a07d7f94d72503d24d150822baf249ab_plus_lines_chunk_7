@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         if (positiveSuffix.length() > 0)
+1            positiveSuffix = Pattern.quote(positiveSuffix);
+2         negativeSuffix = df.getNegativeSuffix();
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        if (!positiveSuffix.isEmpty())
+1            positiveSuffix = Pattern.quote(positiveSuffix);
+2        negativeSuffix = df.getNegativeSuffix();
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         if (positiveSuffix.length() > 0)
+1            positiveSuffix = "\\Q" + positiveSuffix + "\\E";
+2         negativeSuffix = df.getNegativeSuffix();
+--------------------------------------------

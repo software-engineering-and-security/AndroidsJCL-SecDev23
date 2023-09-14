@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // \\p{javaDigit} may not be perfect, see above
+1        String digit = "([0-9]|(\\p{javaDigit}))";
+2         String exponent = "([eE][+-]?"+digit+"+)?";
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // \\p{javaDigit} may not be perfect, see above
+1        String digit = "([0-9]|(\\p{javaDigit}))";
+2        String exponent = "([eE][+-]?"+digit+"+)?";
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // \\p{javaDigit} may not be perfect, see above
+1        String digit = "(([0-9\\p{javaDigit}]))";
+2         String exponent = "([eE][+-]?"+digit+"+)?";
+--------------------------------------------

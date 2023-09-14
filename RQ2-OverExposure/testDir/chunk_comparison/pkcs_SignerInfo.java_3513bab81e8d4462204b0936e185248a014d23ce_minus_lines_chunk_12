@@ -1,0 +1,30 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    // Digest and Signature restrictions
+2    private static final Set<CryptoPrimitive> DIGEST_PRIMITIVE_SET =
+3            Collections.unmodifiableSet(EnumSet.of(CryptoPrimitive.MESSAGE_DIGEST));
+4
+5    private static final Set<CryptoPrimitive> SIG_PRIMITIVE_SET =
+6            Collections.unmodifiableSet(EnumSet.of(CryptoPrimitive.SIGNATURE));
+7
+8     private static final DisabledAlgorithmConstraints JAR_DISABLED_CHECK =
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    // Digest and Signature restrictions
+2    private static final Set<CryptoPrimitive> DIGEST_PRIMITIVE_SET =
+3            Collections.unmodifiableSet(EnumSet.of(CryptoPrimitive.MESSAGE_DIGEST));
+4
+5    private static final Set<CryptoPrimitive> SIG_PRIMITIVE_SET =
+6            Collections.unmodifiableSet(EnumSet.of(CryptoPrimitive.SIGNATURE));
+7
+8    private static final DisabledAlgorithmConstraints JAR_DISABLED_CHECK =
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

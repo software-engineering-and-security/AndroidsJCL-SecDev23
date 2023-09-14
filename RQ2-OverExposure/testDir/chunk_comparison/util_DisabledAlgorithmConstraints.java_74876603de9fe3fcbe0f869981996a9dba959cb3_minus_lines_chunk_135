@@ -1,0 +1,39 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    // Check if a string is contained inside the property
+2    public boolean checkProperty(String param) {
+3        param = param.toLowerCase(Locale.ENGLISH);
+4        for (String block : disabledAlgorithms) {
+5            if (block.toLowerCase(Locale.ENGLISH).indexOf(param) >= 0) {
+6                return true;
+7            }
+8         }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    // Check if a string is contained inside the property
+2    public boolean checkProperty(String param) {
+3        param = param.toLowerCase(Locale.ENGLISH);
+4        for (String block : disabledAlgorithms) {
+5            if (block.toLowerCase(Locale.ENGLISH).indexOf(param) >= 0) {
+6                return true;
+7            }
+8        }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    private static List<String> getNamedCurveFromKey(Key key) {
+2        if (key instanceof ECKey) {
+3            NamedCurve nc = CurveDB.lookup(((ECKey)key).getParams());
+4            return (nc == null ? Collections.emptyList()
+5                               : Arrays.asList(CurveDB.getNamesByOID(nc.getObjectId())));
+6        } else {
+7            return Collections.emptyList();
+8         }
+--------------------------------------------

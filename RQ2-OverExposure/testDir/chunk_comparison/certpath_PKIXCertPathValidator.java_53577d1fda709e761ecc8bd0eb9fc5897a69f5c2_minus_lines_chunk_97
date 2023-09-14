@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         certPathCheckers.add(new AlgorithmChecker(anchor, null, params.date(),
+1                params.timestamp(), params.variant()));
+2         certPathCheckers.add(new KeyChecker(certPathLen,
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        certPathCheckers.add(new AlgorithmChecker(anchor, null, params.date(),
+1                params.timestamp(), params.variant()));
+2        certPathCheckers.add(new KeyChecker(certPathLen,
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         certPathCheckers.add(new AlgorithmChecker(anchor, null, params.date(),
+1                params.variant()));
+2         certPathCheckers.add(new KeyChecker(certPathLen,
+--------------------------------------------

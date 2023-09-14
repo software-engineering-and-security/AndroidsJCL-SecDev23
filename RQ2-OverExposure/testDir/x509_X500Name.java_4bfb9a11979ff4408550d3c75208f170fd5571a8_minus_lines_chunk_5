@@ -1,0 +1,35 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /** OID for the "SERIALNUMBER=" attribute, denoting a serial number for.
+2        a name. Do not confuse with PKCS#9 issuerAndSerialNumber or the
+3        certificate serial number. */
+4        SERIALNUMBER_OID = intern(ObjectIdentifier.newInternal(SERIALNUMBER_DATA));
+5
+6    /** OID for the "C=" attribute, denoting a country. */
+7        countryName_oid = intern(ObjectIdentifier.newInternal(countryName_data));
+8 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /** OID for the "SERIALNUMBER=" attribute, denoting a serial number for.
+2        a name. Do not confuse with PKCS#9 issuerAndSerialNumber or the
+3        certificate serial number. */
+4        SERIALNUMBER_OID = intern(ObjectIdentifier.newInternal(SERIALNUMBER_DATA));
+5
+6    /** OID for the "C=" attribute, denoting a country. */
+7        countryName_oid = intern(ObjectIdentifier.newInternal(countryName_data));
+8
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // OID for the "OU=" attribute, denoting an organizational unit name.
+2    public static final ObjectIdentifier orgUnitName_oid =
+3            ObjectIdentifier.newInternal(orgUnitName_data);
+4 
+--------------------------------------------

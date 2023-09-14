@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /** OID for the "GENERATION=" attribute, denoting Jr., II, etc.*/
+2        GENERATIONQUALIFIER_OID =
+3            intern(ObjectIdentifier.newInternal(GENERATIONQUALIFIER_DATA));
+4 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /** OID for the "GENERATION=" attribute, denoting Jr., II, etc.*/
+2        GENERATIONQUALIFIER_OID =
+3            intern(ObjectIdentifier.newInternal(GENERATIONQUALIFIER_DATA));
+4
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // OID for the "GENERATION=" attribute, denoting Jr., II, etc.
+2    public static final ObjectIdentifier GENERATIONQUALIFIER_OID =
+3            ObjectIdentifier.newInternal(GENERATIONQUALIFIER_DATA);
+4 
+--------------------------------------------

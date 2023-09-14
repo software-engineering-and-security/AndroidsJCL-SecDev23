@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        if (!Arrays.equals(token.getHashedMessage(),
+2             md.digest(encryptedDigest))) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        if (!Arrays.equals(token.getHashedMessage(),
+2            md.digest(encryptedDigest))) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        if (!MessageDigest.isEqual(token.getHashedMessage(),
+2             md.digest(encryptedDigest))) {
+--------------------------------------------

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: 4d7261097cd3</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/4d7261097cd3">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/4d7261097cd3">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/4d7261097cd3">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/4d7261097cd3">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/4d7261097cd3.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/4d7261097cd3.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/4d7261097cd3.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48819:4d7261097cd3   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8272026: Verify Jar Verification
+Reviewed-by: mbalao, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#118;&#111;&#105;&#116;&#121;&#108;&#111;&#118;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 26 Nov 2021 14:57:43 +0300</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/ce7946ee924f">ce7946ee924f</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/0dc979a234d0">0dc979a234d0</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/4d7261097cd3/jdk/src/share/classes/java/util/jar/Attributes.java">jdk/src/share/classes/java/util/jar/Attributes.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 8 insertions(+), 10 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jdk/src/share/classes/java/util/jar/Attributes.java</a></td>
+    <td class="diffstat-total" align="right">18</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:44.4444444444%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:55.5555555556%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jdk/src/share/classes/java/util/jar/Attributes.java	Wed Jan 19 02:42:42 2022 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jdk/src/share/classes/java/util/jar/Attributes.java	Fri Nov 26 14:57:43 2021 +0300</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 1997, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 1997, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -25,6 +25,7 @@</span><a href="#l1.10"></a>
+<span id="l1.11"> </span><a href="#l1.11"></a>
+<span id="l1.12"> package java.util.jar;</span><a href="#l1.12"></a>
+<span id="l1.13"> </span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+import java.io.ByteArrayOutputStream;</span><a href="#l1.14"></a>
+<span id="l1.15"> import java.io.DataInputStream;</span><a href="#l1.15"></a>
+<span id="l1.16"> import java.io.DataOutputStream;</span><a href="#l1.16"></a>
+<span id="l1.17"> import java.io.IOException;</span><a href="#l1.17"></a>
+<span id="l1.18" class="atline">@@ -370,7 +371,7 @@</span><a href="#l1.18"></a>
+<span id="l1.19">      */</span><a href="#l1.19"></a>
+<span id="l1.20">     void read(Manifest.FastInputStream is, byte[] lbuf) throws IOException {</span><a href="#l1.20"></a>
+<span id="l1.21">         String name = null, value = null;</span><a href="#l1.21"></a>
+<span id="l1.22" class="minusline">-        byte[] lastline = null;</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+        ByteArrayOutputStream fullLine = new ByteArrayOutputStream();</span><a href="#l1.23"></a>
+<span id="l1.24"> </span><a href="#l1.24"></a>
+<span id="l1.25">         int len;</span><a href="#l1.25"></a>
+<span id="l1.26">         while ((len = is.readLine(lbuf)) != -1) {</span><a href="#l1.26"></a>
+<span id="l1.27" class="atline">@@ -391,15 +392,12 @@</span><a href="#l1.27"></a>
+<span id="l1.28">                     throw new IOException(&quot;misplaced continuation line&quot;);</span><a href="#l1.28"></a>
+<span id="l1.29">                 }</span><a href="#l1.29"></a>
+<span id="l1.30">                 lineContinued = true;</span><a href="#l1.30"></a>
+<span id="l1.31" class="minusline">-                byte[] buf = new byte[lastline.length + len - 1];</span><a href="#l1.31"></a>
+<span id="l1.32" class="minusline">-                System.arraycopy(lastline, 0, buf, 0, lastline.length);</span><a href="#l1.32"></a>
+<span id="l1.33" class="minusline">-                System.arraycopy(lbuf, 1, buf, lastline.length, len - 1);</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+                fullLine.write(lbuf, 1, len - 1);</span><a href="#l1.34"></a>
+<span id="l1.35">                 if (is.peek() == ' ') {</span><a href="#l1.35"></a>
+<span id="l1.36" class="minusline">-                    lastline = buf;</span><a href="#l1.36"></a>
+<span id="l1.37">                     continue;</span><a href="#l1.37"></a>
+<span id="l1.38">                 }</span><a href="#l1.38"></a>
+<span id="l1.39" class="minusline">-                value = new String(buf, 0, buf.length, &quot;UTF8&quot;);</span><a href="#l1.39"></a>
+<span id="l1.40" class="minusline">-                lastline = null;</span><a href="#l1.40"></a>
+<span id="l1.41" class="plusline">+                value = fullLine.toString(&quot;UTF8&quot;);</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+                fullLine.reset();</span><a href="#l1.42"></a>
+<span id="l1.43">             } else {</span><a href="#l1.43"></a>
+<span id="l1.44">                 while (lbuf[i++] != ':') {</span><a href="#l1.44"></a>
+<span id="l1.45">                     if (i &gt;= len) {</span><a href="#l1.45"></a>
+<span id="l1.46" class="atline">@@ -411,8 +409,8 @@</span><a href="#l1.46"></a>
+<span id="l1.47">                 }</span><a href="#l1.47"></a>
+<span id="l1.48">                 name = new String(lbuf, 0, 0, i - 2);</span><a href="#l1.48"></a>
+<span id="l1.49">                 if (is.peek() == ' ') {</span><a href="#l1.49"></a>
+<span id="l1.50" class="minusline">-                    lastline = new byte[len - i];</span><a href="#l1.50"></a>
+<span id="l1.51" class="minusline">-                    System.arraycopy(lbuf, i, lastline, 0, len - i);</span><a href="#l1.51"></a>
+<span id="l1.52" class="plusline">+                    fullLine.reset();</span><a href="#l1.52"></a>
+<span id="l1.53" class="plusline">+                    fullLine.write(lbuf, i, len - i);</span><a href="#l1.53"></a>
+<span id="l1.54">                     continue;</span><a href="#l1.54"></a>
+<span id="l1.55">                 }</span><a href="#l1.55"></a>
+<span id="l1.56">                 value = new String(lbuf, i, len - i, &quot;UTF8&quot;);</span><a href="#l1.56"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

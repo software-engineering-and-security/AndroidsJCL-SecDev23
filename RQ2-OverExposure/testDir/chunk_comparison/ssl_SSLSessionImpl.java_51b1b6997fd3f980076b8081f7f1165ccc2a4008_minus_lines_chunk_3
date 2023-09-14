@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    private SSLSessionImpl() {
+2         this(ProtocolVersion.NONE, CipherSuite.C_NULL, null,
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    private SSLSessionImpl() {
+2        this(ProtocolVersion.NONE, CipherSuite.C_NULL, null,
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      */
+1    SSLSessionImpl() {
+2         this(ProtocolVersion.NONE, CipherSuite.C_NULL, null,
+--------------------------------------------

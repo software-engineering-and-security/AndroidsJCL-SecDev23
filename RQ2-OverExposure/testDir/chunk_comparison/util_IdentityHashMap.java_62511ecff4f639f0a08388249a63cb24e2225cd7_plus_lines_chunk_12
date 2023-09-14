@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         throws java.io.IOException  {
+1        // Write out size (number of mappings) and any hidden stuff
+2         s.defaultWriteObject();
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        throws java.io.IOException  {
+1        // Write out size (number of mappings) and any hidden stuff
+2        s.defaultWriteObject();
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0         throws java.io.IOException  {
+1        // Write out and any hidden stuff
+2         s.defaultWriteObject();
+--------------------------------------------

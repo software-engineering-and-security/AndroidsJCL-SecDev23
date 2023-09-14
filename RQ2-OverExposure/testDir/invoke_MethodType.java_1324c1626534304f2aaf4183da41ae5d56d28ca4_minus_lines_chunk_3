@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private void readObject(java.io.ObjectInputStream s) throws java.io.IOException, ClassNotFoundException {
+1        // Assign temporary defaults in case this object escapes
+2        MethodType_init(void.class, NO_PTYPES);
+3 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    private void readObject(java.io.ObjectInputStream s) throws java.io.IOException, ClassNotFoundException {
+1        // Assign temporary defaults in case this object escapes
+2        MethodType_init(void.class, NO_PTYPES);
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     private void readObject(java.io.ObjectInputStream s) throws java.io.IOException, ClassNotFoundException {
+1        // Assign defaults in case this object escapes
+2        UNSAFE.putObject(this, rtypeOffset, void.class);
+3        UNSAFE.putObject(this, ptypesOffset, NO_PTYPES);
+4 
+--------------------------------------------

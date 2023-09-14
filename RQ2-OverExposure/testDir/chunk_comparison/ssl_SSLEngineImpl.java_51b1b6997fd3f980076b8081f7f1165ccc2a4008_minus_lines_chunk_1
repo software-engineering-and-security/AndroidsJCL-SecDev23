@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         sslContext = ctx;
+1        sess = SSLSessionImpl.nullSession;
+2         handshakeSession = null;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        sslContext = ctx;
+1        sess = SSLSessionImpl.nullSession;
+2        handshakeSession = null;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         sslContext = ctx;
+1        sess = new SSLSessionImpl();
+2         handshakeSession = null;
+--------------------------------------------

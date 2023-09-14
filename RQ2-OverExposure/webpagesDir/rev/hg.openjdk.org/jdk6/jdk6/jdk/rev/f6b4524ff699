@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: f6b4524ff699</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/f6b4524ff699">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/f6b4524ff699">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/f6b4524ff699">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/f6b4524ff699">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/f6b4524ff699.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/f6b4524ff699.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/f6b4524ff699.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 168:f6b4524ff699   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6656586: Cursor.predefined is protected static mutable (findbugs)
+Reviewed-by: igor</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#114;&#116;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Mon, 04 May 2009 13:45:21 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/7dad07b15c32">7dad07b15c32</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/e8bc0c764294">e8bc0c764294</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/f6b4524ff699/src/share/classes/java/awt/Cursor.java">src/share/classes/java/awt/Cursor.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 12 insertions(+), 2 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/awt/Cursor.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:85.7142857143%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:14.2857142857%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/awt/Cursor.java	Wed Apr 29 14:43:38 2009 -0700</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/awt/Cursor.java	Mon May 04 13:45:21 2009 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -119,6 +119,11 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> </span><a href="#l1.4"></a>
+<span id="l1.5">     protected static Cursor predefined[] = new Cursor[14];</span><a href="#l1.5"></a>
+<span id="l1.6"> </span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+    /**</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+     * This field is a private replacement for 'predefined' array.</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+     */</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+    private final static Cursor[] predefinedPrivate = new Cursor[14];</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+</span><a href="#l1.11"></a>
+<span id="l1.12">     /* Localization names and default values */</span><a href="#l1.12"></a>
+<span id="l1.13">     static final String[][] cursorProperties = {</span><a href="#l1.13"></a>
+<span id="l1.14">         { &quot;AWT.DefaultCursor&quot;, &quot;Default Cursor&quot; },</span><a href="#l1.14"></a>
+<span id="l1.15" class="atline">@@ -252,10 +257,15 @@</span><a href="#l1.15"></a>
+<span id="l1.16">         if (type &lt; Cursor.DEFAULT_CURSOR || type &gt; Cursor.MOVE_CURSOR) {</span><a href="#l1.16"></a>
+<span id="l1.17">             throw new IllegalArgumentException(&quot;illegal cursor type&quot;);</span><a href="#l1.17"></a>
+<span id="l1.18">         }</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+        Cursor c = predefinedPrivate[type];</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+        if (c == null) {</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+            predefinedPrivate[type] = c = new Cursor(type);</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+        }</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+        // fill 'predefined' array for backwards compatibility.</span><a href="#l1.23"></a>
+<span id="l1.24">         if (predefined[type] == null) {</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-            predefined[type] = new Cursor(type);</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+            predefined[type] = c;</span><a href="#l1.26"></a>
+<span id="l1.27">         }</span><a href="#l1.27"></a>
+<span id="l1.28" class="minusline">-        return predefined[type];</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+        return c;</span><a href="#l1.29"></a>
+<span id="l1.30">     }</span><a href="#l1.30"></a>
+<span id="l1.31"> </span><a href="#l1.31"></a>
+<span id="l1.32">     /**</span><a href="#l1.32"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

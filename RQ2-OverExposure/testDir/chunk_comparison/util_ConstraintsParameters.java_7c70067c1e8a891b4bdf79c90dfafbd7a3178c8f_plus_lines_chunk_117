@@ -1,0 +1,49 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0  */
+1public interface ConstraintsParameters {
+2 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0 */
+1public interface ConstraintsParameters {
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0  */
+1public class ConstraintsParameters {
+2    /*
+3     * The below 3 values are used the same as the permit() methods
+4     * published in java.security.AlgorithmConstraints.
+5     */
+6    // Algorithm string to be checked against constraints
+7    private final String algorithm;
+8    // AlgorithmParameters to the algorithm being checked
+9    private final AlgorithmParameters algParams;
+10    // Key being checked against constraints
+11    private final Key key;
+12
+13    /*
+14     * New values that are checked against constraints that the current public
+15     * API does not support.
+16     */
+17    // A certificate being passed to check against constraints.
+18    private final X509Certificate cert;
+19    // This is true if the trust anchor in the certificate chain matches a cert
+20    // in AnchorCertificates
+21    private final boolean trustedMatch;
+22    // PKIXParameter date
+23    private final Date pkixDate;
+24    // Timestamp of the signed JAR file
+25    private final Timestamp jarTimestamp;
+26    private final String variant;
+27    // Named Curve
+28    private final String[] curveStr;
+29    private static final String[] EMPTYLIST = new String[0];
+30 
+--------------------------------------------

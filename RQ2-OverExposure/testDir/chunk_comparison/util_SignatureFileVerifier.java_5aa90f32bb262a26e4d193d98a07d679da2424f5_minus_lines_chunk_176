@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1
+2         CodeSigner[] newSigners = getSigners(infos, block);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        }
+1
+2        if (oldSigners == null) {
+---------------------------------------------
+Differences:	['0', '2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

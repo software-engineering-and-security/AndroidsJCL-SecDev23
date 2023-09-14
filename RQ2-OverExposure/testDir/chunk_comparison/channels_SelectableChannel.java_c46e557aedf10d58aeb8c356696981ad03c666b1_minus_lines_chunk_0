@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     //   regLock, lock object to prevent duplicate registrations
+1    //   boolean isBlocking, protected by regLock
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    //   regLock, lock object to prevent duplicate registrations
+1    //   boolean isBlocking, protected by regLock
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     //   regLock, lock object to prevent duplicate registrations
+1    //   blocking mode, protected by regLock
+2 
+--------------------------------------------

@@ -1,0 +1,34 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         }
+1
+2        ResourceManager.beforeUdpCreate();
+3        try {
+4            this.family = family;
+5            this.fd = Net.socket(family, false);
+6            this.fdVal = IOUtil.fdVal(fd);
+7            this.state = ST_UNCONNECTED;
+8        } catch (IOException ioe) {
+9            ResourceManager.afterUdpClose();
+10            throw ioe;
+11        }
+12     }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2}
+---------------------------------------------
+Differences:	['2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         }
+1        this.family = family;
+2        this.fd = Net.socket(family, false);
+3        this.fdVal = IOUtil.fdVal(fd);
+4        this.state = ST_UNCONNECTED;
+5     }
+--------------------------------------------

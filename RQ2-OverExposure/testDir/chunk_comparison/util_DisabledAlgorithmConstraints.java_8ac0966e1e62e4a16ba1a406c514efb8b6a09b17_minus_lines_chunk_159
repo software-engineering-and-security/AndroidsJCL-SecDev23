@@ -1,0 +1,26 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 }
+1                throw new CertPathValidatorException(
+2                        "Algorithm constraints check failed on keysize limits. " +
+3                        algorithm + " " + KeyUtil.getKeySize(key) + "bit key" +
+4                        extendedMsg(cp),
+5                        null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+6             }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                }
+1                throw new CertPathValidatorException(
+2                        "Algorithm constraints check failed on keysize limits",
+3                        null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+4            }
+5        }
+6
+---------------------------------------------
+Differences:	['2', '3', '4', '5', '6']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

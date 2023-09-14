@@ -1,0 +1,64 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * Returns the date that should be checked against the constraints, or
+3     * null if not set.
+4     */
+5    Date getDate();
+6 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * Returns an extended message used in exceptions. See
+3     * DisabledAlgorithmConstraints for usage.
+4     */
+5    String extendedExceptionMsg();
+6}
+---------------------------------------------
+Differences:	['5', '6']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1    public ConstraintsParameters(Timestamp jarTime) {
+2        this(null, false, null, jarTime, Validator.VAR_GENERIC);
+3    }
+4
+5    public String getAlgorithm() {
+6        return algorithm;
+7    }
+8
+9    public AlgorithmParameters getAlgParams() {
+10        return algParams;
+11    }
+12
+13    public Key getKey() {
+14        return key;
+15    }
+16
+17    // Returns if the trust anchor has a match if anchor checking is enabled.
+18    public boolean isTrustedMatch() {
+19        return trustedMatch;
+20    }
+21
+22    public X509Certificate getCertificate() {
+23        return cert;
+24    }
+25
+26    public Date getPKIXParamDate() {
+27        return pkixDate;
+28    }
+29
+30    public Timestamp getJARTimestamp() {
+31        return jarTimestamp;
+32    }
+33
+34    public String getVariant() {
+35        return variant;
+36    }
+37 
+--------------------------------------------

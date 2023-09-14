@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         private Timestamp timestamp;
+1        private String variant;
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        private Timestamp timestamp;
+1        private String variant;
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         private Timestamp timestamp;
+1        private String variant = Validator.VAR_GENERIC;
+2 
+--------------------------------------------

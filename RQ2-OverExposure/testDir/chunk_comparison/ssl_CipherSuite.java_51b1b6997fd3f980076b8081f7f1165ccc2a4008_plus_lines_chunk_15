@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             K_ECDHE_RSA, B_AES_256, M_SHA, H_SHA256),
+1
+2    // AES_128(CBC) - ECDHE - using SHA
+3    TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA(
+4            0xC009, true, "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA", "",
+5             ProtocolVersion.PROTOCOLS_TO_12,
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    final static CipherSuite C_NULL = CipherSuite.valueOf(0, 0);
+1
+2    // ciphersuite TLS_EMPTY_RENEGOTIATION_INFO_SCSV
+3    final static CipherSuite C_SCSV = CipherSuite.valueOf(0x00, 0xff);
+4}
+---------------------------------------------
+Differences:	['0', '3', '4']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0             K_ECDHE_RSA, B_AES_256, M_SHA, H_SHA256),
+1    TLS_RSA_WITH_AES_256_CBC_SHA(
+2            0x0035, true, "TLS_RSA_WITH_AES_256_CBC_SHA", "",
+3             ProtocolVersion.PROTOCOLS_TO_12,
+--------------------------------------------

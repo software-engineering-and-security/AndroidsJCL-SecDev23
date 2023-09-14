@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    private static final java.io.ObjectStreamField[] serialPersistentFields =
+2     {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    private static final java.io.ObjectStreamField[] serialPersistentFields =
+2    {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      */
+1    private static final ObjectStreamField[] serialPersistentFields =
+2     {
+--------------------------------------------

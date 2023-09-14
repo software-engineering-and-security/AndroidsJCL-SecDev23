@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: d336b7025712</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/d336b7025712">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/d336b7025712">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/d336b7025712">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/d336b7025712">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/d336b7025712.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/d336b7025712.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/d336b7025712.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 14564:d336b7025712   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8266689: More Constrained Delegation
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#98;&#97;&#108;&#97;&#111;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 05 Aug 2021 09:10:04 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/ec2304b38a41">ec2304b38a41</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/2a9b223440e5">2a9b223440e5</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/d336b7025712/src/share/classes/com/sun/security/auth/module/Krb5LoginModule.java">src/share/classes/com/sun/security/auth/module/Krb5LoginModule.java</a> <a href="/jdk8u/jdk8u/jdk/file/d336b7025712/src/share/classes/sun/security/jgss/krb5/SubjectComber.java">src/share/classes/sun/security/jgss/krb5/SubjectComber.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 90 insertions(+), 76 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/com/sun/security/auth/module/Krb5LoginModule.java</a></td>
+    <td class="diffstat-total" align="right">8</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:3.16455696203%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.89873417722%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/sun/security/jgss/krb5/SubjectComber.java</a></td>
+    <td class="diffstat-total" align="right">158</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:53.7974683544%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:46.2025316456%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/com/sun/security/auth/module/Krb5LoginModule.java	Fri Aug 27 15:27:42 2021 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/com/sun/security/auth/module/Krb5LoginModule.java	Thu Aug 05 09:10:04 2021 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -684,9 +684,11 @@</span><a href="#l1.3"></a>
+<span id="l1.4">                 }</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6">                 if (cred != null) {</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-                   // get the principal name from the ticket cache</span><a href="#l1.7"></a>
+<span id="l1.8" class="minusline">-                   if (principal == null) {</span><a href="#l1.8"></a>
+<span id="l1.9" class="minusline">-                        principal = cred.getClient();</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+                    // get the principal name from the ticket cache</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+                    if (principal == null) {</span><a href="#l1.11"></a>
+<span id="l1.12" class="plusline">+                        principal = cred.getProxy() != null</span><a href="#l1.12"></a>
+<span id="l1.13" class="plusline">+                                ? cred.getProxy().getClient()</span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+                                : cred.getClient();</span><a href="#l1.14"></a>
+<span id="l1.15">                    }</span><a href="#l1.15"></a>
+<span id="l1.16">                 }</span><a href="#l1.16"></a>
+<span id="l1.17">                 if (debug) {</span><a href="#l1.17"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/sun/security/jgss/krb5/SubjectComber.java	Fri Aug 27 15:27:42 2021 +0300</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/sun/security/jgss/krb5/SubjectComber.java	Thu Aug 05 09:10:04 2021 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -25,6 +25,7 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> </span><a href="#l2.4"></a>
+<span id="l2.5"> package sun.security.jgss.krb5;</span><a href="#l2.5"></a>
+<span id="l2.6"> </span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+import sun.security.krb5.JavaxSecurityAuthKerberosAccess;</span><a href="#l2.7"></a>
+<span id="l2.8"> import sun.security.krb5.KerberosSecrets;</span><a href="#l2.8"></a>
+<span id="l2.9"> </span><a href="#l2.9"></a>
+<span id="l2.10"> import javax.security.auth.kerberos.KerberosTicket;</span><a href="#l2.10"></a>
+<span id="l2.11" class="atline">@@ -150,83 +151,58 @@</span><a href="#l2.11"></a>
+<span id="l2.12">                     Iterator&lt;Object&gt; iterator = pcs.iterator();</span><a href="#l2.12"></a>
+<span id="l2.13">                     while (iterator.hasNext()) {</span><a href="#l2.13"></a>
+<span id="l2.14">                         Object obj = iterator.next();</span><a href="#l2.14"></a>
+<span id="l2.15" class="minusline">-                        if (obj instanceof KerberosTicket) {</span><a href="#l2.15"></a>
+<span id="l2.16" class="minusline">-                            @SuppressWarnings(&quot;unchecked&quot;)</span><a href="#l2.16"></a>
+<span id="l2.17" class="minusline">-                            KerberosTicket ticket = (KerberosTicket)obj;</span><a href="#l2.17"></a>
+<span id="l2.18" class="minusline">-                            if (DEBUG) {</span><a href="#l2.18"></a>
+<span id="l2.19" class="minusline">-                                System.out.println(&quot;Found ticket for &quot;</span><a href="#l2.19"></a>
+<span id="l2.20" class="minusline">-                                                    + ticket.getClient()</span><a href="#l2.20"></a>
+<span id="l2.21" class="minusline">-                                                    + &quot; to go to &quot;</span><a href="#l2.21"></a>
+<span id="l2.22" class="minusline">-                                                    + ticket.getServer()</span><a href="#l2.22"></a>
+<span id="l2.23" class="minusline">-                                                    + &quot; expiring on &quot;</span><a href="#l2.23"></a>
+<span id="l2.24" class="minusline">-                                                    + ticket.getEndTime());</span><a href="#l2.24"></a>
+<span id="l2.25" class="minusline">-                            }</span><a href="#l2.25"></a>
+<span id="l2.26" class="minusline">-                            if (!ticket.isCurrent()) {</span><a href="#l2.26"></a>
+<span id="l2.27" class="minusline">-                                // let us remove the ticket from the Subject</span><a href="#l2.27"></a>
+<span id="l2.28" class="minusline">-                                // Note that both TGT and service ticket will be</span><a href="#l2.28"></a>
+<span id="l2.29" class="minusline">-                                // removed  upon expiration</span><a href="#l2.29"></a>
+<span id="l2.30" class="minusline">-                                if (!subject.isReadOnly()) {</span><a href="#l2.30"></a>
+<span id="l2.31" class="minusline">-                                    iterator.remove();</span><a href="#l2.31"></a>
+<span id="l2.32" class="minusline">-                                    try {</span><a href="#l2.32"></a>
+<span id="l2.33" class="minusline">-                                        ticket.destroy();</span><a href="#l2.33"></a>
+<span id="l2.34" class="minusline">-                                        if (DEBUG) {</span><a href="#l2.34"></a>
+<span id="l2.35" class="minusline">-                                            System.out.println(&quot;Removed and destroyed &quot;</span><a href="#l2.35"></a>
+<span id="l2.36" class="minusline">-                                                        + &quot;the expired Ticket \n&quot;</span><a href="#l2.36"></a>
+<span id="l2.37" class="minusline">-                                                        + ticket);</span><a href="#l2.37"></a>
+<span id="l2.38" class="plusline">+                        if (!(obj instanceof KerberosTicket)) {</span><a href="#l2.38"></a>
+<span id="l2.39" class="plusline">+                            continue;</span><a href="#l2.39"></a>
+<span id="l2.40" class="plusline">+                        }</span><a href="#l2.40"></a>
+<span id="l2.41" class="plusline">+                        @SuppressWarnings(&quot;unchecked&quot;)</span><a href="#l2.41"></a>
+<span id="l2.42" class="plusline">+                        KerberosTicket ticket = (KerberosTicket)obj;</span><a href="#l2.42"></a>
+<span id="l2.43" class="plusline">+                        if (DEBUG) {</span><a href="#l2.43"></a>
+<span id="l2.44" class="plusline">+                            System.out.println(&quot;Found ticket for &quot;</span><a href="#l2.44"></a>
+<span id="l2.45" class="plusline">+                                                + ticket.getClient()</span><a href="#l2.45"></a>
+<span id="l2.46" class="plusline">+                                                + &quot; to go to &quot;</span><a href="#l2.46"></a>
+<span id="l2.47" class="plusline">+                                                + ticket.getServer()</span><a href="#l2.47"></a>
+<span id="l2.48" class="plusline">+                                                + &quot; expiring on &quot;</span><a href="#l2.48"></a>
+<span id="l2.49" class="plusline">+                                                + ticket.getEndTime());</span><a href="#l2.49"></a>
+<span id="l2.50" class="plusline">+                        }</span><a href="#l2.50"></a>
+<span id="l2.51" class="plusline">+                        if (!ticket.isCurrent()) {</span><a href="#l2.51"></a>
+<span id="l2.52" class="plusline">+                            // let us remove the ticket from the Subject</span><a href="#l2.52"></a>
+<span id="l2.53" class="plusline">+                            // Note that both TGT and service ticket will be</span><a href="#l2.53"></a>
+<span id="l2.54" class="plusline">+                            // removed  upon expiration</span><a href="#l2.54"></a>
+<span id="l2.55" class="plusline">+                            if (!subject.isReadOnly()) {</span><a href="#l2.55"></a>
+<span id="l2.56" class="plusline">+                                iterator.remove();</span><a href="#l2.56"></a>
+<span id="l2.57" class="plusline">+                                try {</span><a href="#l2.57"></a>
+<span id="l2.58" class="plusline">+                                    ticket.destroy();</span><a href="#l2.58"></a>
+<span id="l2.59" class="plusline">+                                    if (DEBUG) {</span><a href="#l2.59"></a>
+<span id="l2.60" class="plusline">+                                        System.out.println(&quot;Removed and destroyed &quot;</span><a href="#l2.60"></a>
+<span id="l2.61" class="plusline">+                                                    + &quot;the expired Ticket \n&quot;</span><a href="#l2.61"></a>
+<span id="l2.62" class="plusline">+                                                    + ticket);</span><a href="#l2.62"></a>
+<span id="l2.63"> </span><a href="#l2.63"></a>
+<span id="l2.64" class="minusline">-                                        }</span><a href="#l2.64"></a>
+<span id="l2.65" class="minusline">-                                    } catch (DestroyFailedException dfe) {</span><a href="#l2.65"></a>
+<span id="l2.66" class="minusline">-                                        if (DEBUG) {</span><a href="#l2.66"></a>
+<span id="l2.67" class="minusline">-                                            System.out.println(&quot;Expired ticket not&quot; +</span><a href="#l2.67"></a>
+<span id="l2.68" class="minusline">-                                                    &quot; detroyed successfully. &quot; + dfe);</span><a href="#l2.68"></a>
+<span id="l2.69" class="minusline">-                                        }</span><a href="#l2.69"></a>
+<span id="l2.70">                                     }</span><a href="#l2.70"></a>
+<span id="l2.71" class="minusline">-</span><a href="#l2.71"></a>
+<span id="l2.72" class="plusline">+                                } catch (DestroyFailedException dfe) {</span><a href="#l2.72"></a>
+<span id="l2.73" class="plusline">+                                    if (DEBUG) {</span><a href="#l2.73"></a>
+<span id="l2.74" class="plusline">+                                        System.out.println(&quot;Expired ticket not&quot; +</span><a href="#l2.74"></a>
+<span id="l2.75" class="plusline">+                                                &quot; detroyed successfully. &quot; + dfe);</span><a href="#l2.75"></a>
+<span id="l2.76" class="plusline">+                                    }</span><a href="#l2.76"></a>
+<span id="l2.77">                                 }</span><a href="#l2.77"></a>
+<span id="l2.78" class="minusline">-                            } else {</span><a href="#l2.78"></a>
+<span id="l2.79" class="minusline">-                                KerberosPrincipal serverAlias = KerberosSecrets</span><a href="#l2.79"></a>
+<span id="l2.80" class="minusline">-                                        .getJavaxSecurityAuthKerberosAccess()</span><a href="#l2.80"></a>
+<span id="l2.81" class="minusline">-                                        .kerberosTicketGetServerAlias(ticket);</span><a href="#l2.81"></a>
+<span id="l2.82" class="minusline">-                                if (serverPrincipal == null ||</span><a href="#l2.82"></a>
+<span id="l2.83" class="minusline">-                                    ticket.getServer().getName().equals(serverPrincipal) ||</span><a href="#l2.83"></a>
+<span id="l2.84" class="minusline">-                                            (serverAlias != null &amp;&amp;</span><a href="#l2.84"></a>
+<span id="l2.85" class="minusline">-                                                    serverPrincipal.equals(</span><a href="#l2.85"></a>
+<span id="l2.86" class="minusline">-                                                            serverAlias.getName())))  {</span><a href="#l2.86"></a>
+<span id="l2.87" class="minusline">-                                    KerberosPrincipal clientAlias = KerberosSecrets</span><a href="#l2.87"></a>
+<span id="l2.88" class="minusline">-                                            .getJavaxSecurityAuthKerberosAccess()</span><a href="#l2.88"></a>
+<span id="l2.89" class="minusline">-                                            .kerberosTicketGetClientAlias(ticket);</span><a href="#l2.89"></a>
+<span id="l2.90" class="minusline">-                                    if (clientPrincipal == null ||</span><a href="#l2.90"></a>
+<span id="l2.91" class="minusline">-                                        clientPrincipal.equals(</span><a href="#l2.91"></a>
+<span id="l2.92" class="minusline">-                                            ticket.getClient().getName()) ||</span><a href="#l2.92"></a>
+<span id="l2.93" class="minusline">-                                            (clientAlias != null &amp;&amp;</span><a href="#l2.93"></a>
+<span id="l2.94" class="minusline">-                                            clientPrincipal.equals(</span><a href="#l2.94"></a>
+<span id="l2.95" class="minusline">-                                                    clientAlias.getName()))) {</span><a href="#l2.95"></a>
+<span id="l2.96" class="minusline">-                                        if (oneOnly) {</span><a href="#l2.96"></a>
+<span id="l2.97" class="minusline">-                                            return ticket;</span><a href="#l2.97"></a>
+<span id="l2.98" class="minusline">-                                        } else {</span><a href="#l2.98"></a>
+<span id="l2.99" class="minusline">-                                            // Record names so that tickets will</span><a href="#l2.99"></a>
+<span id="l2.100" class="minusline">-                                            // all belong to same principals</span><a href="#l2.100"></a>
+<span id="l2.101" class="minusline">-                                            if (clientPrincipal == null) {</span><a href="#l2.101"></a>
+<span id="l2.102" class="minusline">-                                                if (clientAlias == null) {</span><a href="#l2.102"></a>
+<span id="l2.103" class="minusline">-                                                    clientPrincipal =</span><a href="#l2.103"></a>
+<span id="l2.104" class="minusline">-                                                            ticket.getClient().getName();</span><a href="#l2.104"></a>
+<span id="l2.105" class="minusline">-                                                } else {</span><a href="#l2.105"></a>
+<span id="l2.106" class="minusline">-                                                    clientPrincipal =</span><a href="#l2.106"></a>
+<span id="l2.107" class="minusline">-                                                            clientAlias.getName();</span><a href="#l2.107"></a>
+<span id="l2.108" class="minusline">-                                                }</span><a href="#l2.108"></a>
+<span id="l2.109" class="minusline">-                                            }</span><a href="#l2.109"></a>
+<span id="l2.110" class="minusline">-                                            if (serverPrincipal == null) {</span><a href="#l2.110"></a>
+<span id="l2.111" class="minusline">-                                                if (serverAlias == null) {</span><a href="#l2.111"></a>
+<span id="l2.112" class="minusline">-                                                    serverPrincipal =</span><a href="#l2.112"></a>
+<span id="l2.113" class="minusline">-                                                            ticket.getServer().getName();</span><a href="#l2.113"></a>
+<span id="l2.114" class="minusline">-                                                } else {</span><a href="#l2.114"></a>
+<span id="l2.115" class="minusline">-                                                    serverPrincipal =</span><a href="#l2.115"></a>
+<span id="l2.116" class="minusline">-                                                            serverAlias.getName();</span><a href="#l2.116"></a>
+<span id="l2.117" class="minusline">-                                                }</span><a href="#l2.117"></a>
+<span id="l2.118" class="minusline">-                                            }</span><a href="#l2.118"></a>
+<span id="l2.119" class="minusline">-                                            answer.add(credClass.cast(ticket));</span><a href="#l2.119"></a>
+<span id="l2.120" class="minusline">-                                        }</span><a href="#l2.120"></a>
+<span id="l2.121" class="plusline">+                            }</span><a href="#l2.121"></a>
+<span id="l2.122" class="plusline">+                            continue;</span><a href="#l2.122"></a>
+<span id="l2.123" class="plusline">+                        }</span><a href="#l2.123"></a>
+<span id="l2.124" class="plusline">+                        String serverMatch = findServerMatch(serverPrincipal, ticket);</span><a href="#l2.124"></a>
+<span id="l2.125" class="plusline">+                        if (serverMatch != null) {</span><a href="#l2.125"></a>
+<span id="l2.126" class="plusline">+                            String clientMatch = findClientMatch(clientPrincipal, ticket);</span><a href="#l2.126"></a>
+<span id="l2.127" class="plusline">+                            if (clientMatch != null) {</span><a href="#l2.127"></a>
+<span id="l2.128" class="plusline">+                                if (oneOnly) {</span><a href="#l2.128"></a>
+<span id="l2.129" class="plusline">+                                    return ticket;</span><a href="#l2.129"></a>
+<span id="l2.130" class="plusline">+                                } else {</span><a href="#l2.130"></a>
+<span id="l2.131" class="plusline">+                                    // Record names so that tickets will</span><a href="#l2.131"></a>
+<span id="l2.132" class="plusline">+                                    // all belong to same principals</span><a href="#l2.132"></a>
+<span id="l2.133" class="plusline">+                                    if (clientPrincipal == null) {</span><a href="#l2.133"></a>
+<span id="l2.134" class="plusline">+                                        clientPrincipal = clientMatch;</span><a href="#l2.134"></a>
+<span id="l2.135">                                     }</span><a href="#l2.135"></a>
+<span id="l2.136" class="plusline">+                                    if (serverPrincipal == null) {</span><a href="#l2.136"></a>
+<span id="l2.137" class="plusline">+                                        serverPrincipal = serverMatch;</span><a href="#l2.137"></a>
+<span id="l2.138" class="plusline">+                                    }</span><a href="#l2.138"></a>
+<span id="l2.139" class="plusline">+                                    answer.add(credClass.cast(ticket));</span><a href="#l2.139"></a>
+<span id="l2.140">                                 }</span><a href="#l2.140"></a>
+<span id="l2.141">                             }</span><a href="#l2.141"></a>
+<span id="l2.142">                         }</span><a href="#l2.142"></a>
+<span id="l2.143" class="atline">@@ -236,4 +212,40 @@</span><a href="#l2.143"></a>
+<span id="l2.144">             return answer;</span><a href="#l2.144"></a>
+<span id="l2.145">         }</span><a href="#l2.145"></a>
+<span id="l2.146">     }</span><a href="#l2.146"></a>
+<span id="l2.147" class="plusline">+</span><a href="#l2.147"></a>
+<span id="l2.148" class="plusline">+    private static String findServerMatch(String input, KerberosTicket ticket) {</span><a href="#l2.148"></a>
+<span id="l2.149" class="plusline">+        KerberosPrincipal serverAlias = KerberosSecrets</span><a href="#l2.149"></a>
+<span id="l2.150" class="plusline">+                .getJavaxSecurityAuthKerberosAccess()</span><a href="#l2.150"></a>
+<span id="l2.151" class="plusline">+                .kerberosTicketGetServerAlias(ticket);</span><a href="#l2.151"></a>
+<span id="l2.152" class="plusline">+        if (input != null) {</span><a href="#l2.152"></a>
+<span id="l2.153" class="plusline">+            return ((serverAlias != null &amp;&amp; input.equals(serverAlias.getName())) ||</span><a href="#l2.153"></a>
+<span id="l2.154" class="plusline">+                    input.equals(ticket.getServer().getName()))</span><a href="#l2.154"></a>
+<span id="l2.155" class="plusline">+                    ? input : null;</span><a href="#l2.155"></a>
+<span id="l2.156" class="plusline">+        } else {</span><a href="#l2.156"></a>
+<span id="l2.157" class="plusline">+            return serverAlias != null</span><a href="#l2.157"></a>
+<span id="l2.158" class="plusline">+                    ? serverAlias.getName()</span><a href="#l2.158"></a>
+<span id="l2.159" class="plusline">+                    : ticket.getServer().getName();</span><a href="#l2.159"></a>
+<span id="l2.160" class="plusline">+        }</span><a href="#l2.160"></a>
+<span id="l2.161" class="plusline">+    }</span><a href="#l2.161"></a>
+<span id="l2.162" class="plusline">+</span><a href="#l2.162"></a>
+<span id="l2.163" class="plusline">+    private static String findClientMatch(String input, KerberosTicket ticket) {</span><a href="#l2.163"></a>
+<span id="l2.164" class="plusline">+        JavaxSecurityAuthKerberosAccess access = KerberosSecrets</span><a href="#l2.164"></a>
+<span id="l2.165" class="plusline">+                .getJavaxSecurityAuthKerberosAccess();</span><a href="#l2.165"></a>
+<span id="l2.166" class="plusline">+        KerberosPrincipal clientAlias = access.kerberosTicketGetClientAlias(ticket);</span><a href="#l2.166"></a>
+<span id="l2.167" class="plusline">+        KerberosTicket proxy = access.kerberosTicketGetProxy(ticket);</span><a href="#l2.167"></a>
+<span id="l2.168" class="plusline">+        if (input != null) {</span><a href="#l2.168"></a>
+<span id="l2.169" class="plusline">+            return ((clientAlias != null &amp;&amp; input.equals(clientAlias.getName())) ||</span><a href="#l2.169"></a>
+<span id="l2.170" class="plusline">+                    (proxy != null &amp;&amp; input.equals(proxy.getClient().getName())) ||</span><a href="#l2.170"></a>
+<span id="l2.171" class="plusline">+                    (proxy == null &amp;&amp; input.equals(ticket.getClient().getName())))</span><a href="#l2.171"></a>
+<span id="l2.172" class="plusline">+                    ? input : null;</span><a href="#l2.172"></a>
+<span id="l2.173" class="plusline">+        } else {</span><a href="#l2.173"></a>
+<span id="l2.174" class="plusline">+            if (clientAlias != null) {</span><a href="#l2.174"></a>
+<span id="l2.175" class="plusline">+                return clientAlias.getName();</span><a href="#l2.175"></a>
+<span id="l2.176" class="plusline">+            } else if (proxy != null) {</span><a href="#l2.176"></a>
+<span id="l2.177" class="plusline">+                return proxy.getClient().getName();</span><a href="#l2.177"></a>
+<span id="l2.178" class="plusline">+            } else {</span><a href="#l2.178"></a>
+<span id="l2.179" class="plusline">+                return ticket.getClient().getName();</span><a href="#l2.179"></a>
+<span id="l2.180" class="plusline">+            }</span><a href="#l2.180"></a>
+<span id="l2.181" class="plusline">+        }</span><a href="#l2.181"></a>
+<span id="l2.182" class="plusline">+    }</span><a href="#l2.182"></a>
+<span id="l2.183"> }</span><a href="#l2.183"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

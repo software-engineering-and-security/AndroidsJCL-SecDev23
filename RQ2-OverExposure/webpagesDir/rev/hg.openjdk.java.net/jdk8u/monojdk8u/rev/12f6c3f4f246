@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: 12f6c3f4f246</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/12f6c3f4f246">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/12f6c3f4f246">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/12f6c3f4f246">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/12f6c3f4f246">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/12f6c3f4f246.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/12f6c3f4f246.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/12f6c3f4f246.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48809:12f6c3f4f246   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8270392: Improve String constructions
+Reviewed-by: yan, andrew
+Contributed-by: Tianmin Shi &lt;tianshi@amazon.com&gt;</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#112;&#104;&#104;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Tue, 18 Jan 2022 22:12:32 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/1f03562a6c44">1f03562a6c44</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/22fe1e492c16">22fe1e492c16</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/12f6c3f4f246/jdk/src/share/classes/java/lang/StringBuffer.java">jdk/src/share/classes/java/lang/StringBuffer.java</a> <a href="/jdk8u/monojdk8u/file/12f6c3f4f246/jdk/src/share/classes/java/lang/StringBuilder.java">jdk/src/share/classes/java/lang/StringBuilder.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 44 insertions(+), 25 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jdk/src/share/classes/java/lang/StringBuffer.java</a></td>
+    <td class="diffstat-total" align="right">44</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:61.3636363636%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:38.6363636364%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">jdk/src/share/classes/java/lang/StringBuilder.java</a></td>
+    <td class="diffstat-total" align="right">25</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:38.6363636364%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:18.1818181818%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jdk/src/share/classes/java/lang/StringBuffer.java	Tue Nov 30 22:34:34 2021 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jdk/src/share/classes/java/lang/StringBuffer.java	Tue Jan 18 22:12:32 2022 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 1994, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 1994, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -25,6 +25,12 @@</span><a href="#l1.10"></a>
+<span id="l1.11"> </span><a href="#l1.11"></a>
+<span id="l1.12"> package java.lang;</span><a href="#l1.12"></a>
+<span id="l1.13"> </span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+import java.io.IOException;</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+import java.io.ObjectInputStream;</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+import java.io.ObjectOutputStream;</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+import java.io.ObjectStreamField;</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+import java.io.Serializable;</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+import java.io.StreamCorruptedException;</span><a href="#l1.19"></a>
+<span id="l1.20"> import java.util.Arrays;</span><a href="#l1.20"></a>
+<span id="l1.21"> </span><a href="#l1.21"></a>
+<span id="l1.22"> /**</span><a href="#l1.22"></a>
+<span id="l1.23" class="atline">@@ -96,7 +102,7 @@</span><a href="#l1.23"></a>
+<span id="l1.24">  */</span><a href="#l1.24"></a>
+<span id="l1.25">  public final class StringBuffer</span><a href="#l1.25"></a>
+<span id="l1.26">     extends AbstractStringBuilder</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-    implements java.io.Serializable, CharSequence</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+    implements Serializable, CharSequence</span><a href="#l1.28"></a>
+<span id="l1.29"> {</span><a href="#l1.29"></a>
+<span id="l1.30"> </span><a href="#l1.30"></a>
+<span id="l1.31">     /**</span><a href="#l1.31"></a>
+<span id="l1.32" class="atline">@@ -682,20 +688,20 @@</span><a href="#l1.32"></a>
+<span id="l1.33">      *              A flag indicating whether the backing array is shared.</span><a href="#l1.33"></a>
+<span id="l1.34">      *              The value is ignored upon deserialization.</span><a href="#l1.34"></a>
+<span id="l1.35">      */</span><a href="#l1.35"></a>
+<span id="l1.36" class="minusline">-    private static final java.io.ObjectStreamField[] serialPersistentFields =</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+    private static final ObjectStreamField[] serialPersistentFields =</span><a href="#l1.37"></a>
+<span id="l1.38">     {</span><a href="#l1.38"></a>
+<span id="l1.39" class="minusline">-        new java.io.ObjectStreamField(&quot;value&quot;, char[].class),</span><a href="#l1.39"></a>
+<span id="l1.40" class="minusline">-        new java.io.ObjectStreamField(&quot;count&quot;, Integer.TYPE),</span><a href="#l1.40"></a>
+<span id="l1.41" class="minusline">-        new java.io.ObjectStreamField(&quot;shared&quot;, Boolean.TYPE),</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+        new ObjectStreamField(&quot;value&quot;, char[].class),</span><a href="#l1.42"></a>
+<span id="l1.43" class="plusline">+        new ObjectStreamField(&quot;count&quot;, Integer.TYPE),</span><a href="#l1.43"></a>
+<span id="l1.44" class="plusline">+        new ObjectStreamField(&quot;shared&quot;, Boolean.TYPE),</span><a href="#l1.44"></a>
+<span id="l1.45">     };</span><a href="#l1.45"></a>
+<span id="l1.46"> </span><a href="#l1.46"></a>
+<span id="l1.47">     /**</span><a href="#l1.47"></a>
+<span id="l1.48" class="minusline">-     * readObject is called to restore the state of the StringBuffer from</span><a href="#l1.48"></a>
+<span id="l1.49" class="minusline">-     * a stream.</span><a href="#l1.49"></a>
+<span id="l1.50" class="plusline">+     * The {@code writeObject} method is called to write the state of the</span><a href="#l1.50"></a>
+<span id="l1.51" class="plusline">+     * {@code StringBuffer} to a stream.</span><a href="#l1.51"></a>
+<span id="l1.52">      */</span><a href="#l1.52"></a>
+<span id="l1.53" class="minusline">-    private synchronized void writeObject(java.io.ObjectOutputStream s)</span><a href="#l1.53"></a>
+<span id="l1.54" class="minusline">-        throws java.io.IOException {</span><a href="#l1.54"></a>
+<span id="l1.55" class="minusline">-        java.io.ObjectOutputStream.PutField fields = s.putFields();</span><a href="#l1.55"></a>
+<span id="l1.56" class="plusline">+    private synchronized void writeObject(ObjectOutputStream s)</span><a href="#l1.56"></a>
+<span id="l1.57" class="plusline">+        throws IOException {</span><a href="#l1.57"></a>
+<span id="l1.58" class="plusline">+        ObjectOutputStream.PutField fields = s.putFields();</span><a href="#l1.58"></a>
+<span id="l1.59">         fields.put(&quot;value&quot;, value);</span><a href="#l1.59"></a>
+<span id="l1.60">         fields.put(&quot;count&quot;, count);</span><a href="#l1.60"></a>
+<span id="l1.61">         fields.put(&quot;shared&quot;, false);</span><a href="#l1.61"></a>
+<span id="l1.62" class="atline">@@ -703,13 +709,17 @@</span><a href="#l1.62"></a>
+<span id="l1.63">     }</span><a href="#l1.63"></a>
+<span id="l1.64"> </span><a href="#l1.64"></a>
+<span id="l1.65">     /**</span><a href="#l1.65"></a>
+<span id="l1.66" class="minusline">-     * readObject is called to restore the state of the StringBuffer from</span><a href="#l1.66"></a>
+<span id="l1.67" class="minusline">-     * a stream.</span><a href="#l1.67"></a>
+<span id="l1.68" class="plusline">+     * The {@code readObject} method is called to restore the state of the</span><a href="#l1.68"></a>
+<span id="l1.69" class="plusline">+     * {@code StringBuffer} from a stream.</span><a href="#l1.69"></a>
+<span id="l1.70">      */</span><a href="#l1.70"></a>
+<span id="l1.71" class="minusline">-    private void readObject(java.io.ObjectInputStream s)</span><a href="#l1.71"></a>
+<span id="l1.72" class="minusline">-        throws java.io.IOException, ClassNotFoundException {</span><a href="#l1.72"></a>
+<span id="l1.73" class="minusline">-        java.io.ObjectInputStream.GetField fields = s.readFields();</span><a href="#l1.73"></a>
+<span id="l1.74" class="plusline">+    private void readObject(ObjectInputStream s)</span><a href="#l1.74"></a>
+<span id="l1.75" class="plusline">+        throws IOException, ClassNotFoundException {</span><a href="#l1.75"></a>
+<span id="l1.76" class="plusline">+        ObjectInputStream.GetField fields = s.readFields();</span><a href="#l1.76"></a>
+<span id="l1.77">         value = (char[])fields.get(&quot;value&quot;, null);</span><a href="#l1.77"></a>
+<span id="l1.78" class="minusline">-        count = fields.get(&quot;count&quot;, 0);</span><a href="#l1.78"></a>
+<span id="l1.79" class="plusline">+        int c = fields.get(&quot;count&quot;, 0);</span><a href="#l1.79"></a>
+<span id="l1.80" class="plusline">+        if (c &lt; 0 || c &gt; value.length) {</span><a href="#l1.80"></a>
+<span id="l1.81" class="plusline">+            throw new StreamCorruptedException(&quot;count value invalid&quot;);</span><a href="#l1.81"></a>
+<span id="l1.82" class="plusline">+        }</span><a href="#l1.82"></a>
+<span id="l1.83" class="plusline">+        count = c;</span><a href="#l1.83"></a>
+<span id="l1.84">     }</span><a href="#l1.84"></a>
+<span id="l1.85"> }</span><a href="#l1.85"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/jdk/src/share/classes/java/lang/StringBuilder.java	Tue Nov 30 22:34:34 2021 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/jdk/src/share/classes/java/lang/StringBuilder.java	Tue Jan 18 22:12:32 2022 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright (c) 2003, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright (c) 2003, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -25,6 +25,11 @@</span><a href="#l2.10"></a>
+<span id="l2.11"> </span><a href="#l2.11"></a>
+<span id="l2.12"> package java.lang;</span><a href="#l2.12"></a>
+<span id="l2.13"> </span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+import java.io.IOException;</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+import java.io.ObjectInputStream;</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+import java.io.ObjectOutputStream;</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+import java.io.Serializable;</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+import java.io.StreamCorruptedException;</span><a href="#l2.18"></a>
+<span id="l2.19"> </span><a href="#l2.19"></a>
+<span id="l2.20"> /**</span><a href="#l2.20"></a>
+<span id="l2.21">  * A mutable sequence of characters.  This class provides an API compatible</span><a href="#l2.21"></a>
+<span id="l2.22" class="atline">@@ -75,7 +80,7 @@</span><a href="#l2.22"></a>
+<span id="l2.23">  */</span><a href="#l2.23"></a>
+<span id="l2.24"> public final class StringBuilder</span><a href="#l2.24"></a>
+<span id="l2.25">     extends AbstractStringBuilder</span><a href="#l2.25"></a>
+<span id="l2.26" class="minusline">-    implements java.io.Serializable, CharSequence</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+    implements Serializable, CharSequence</span><a href="#l2.27"></a>
+<span id="l2.28"> {</span><a href="#l2.28"></a>
+<span id="l2.29"> </span><a href="#l2.29"></a>
+<span id="l2.30">     /** use serialVersionUID for interoperability */</span><a href="#l2.30"></a>
+<span id="l2.31" class="atline">@@ -418,22 +423,26 @@</span><a href="#l2.31"></a>
+<span id="l2.32">      *             characters currently stored in the string builder, in which</span><a href="#l2.32"></a>
+<span id="l2.33">      *             case extra characters are ignored.</span><a href="#l2.33"></a>
+<span id="l2.34">      */</span><a href="#l2.34"></a>
+<span id="l2.35" class="minusline">-    private void writeObject(java.io.ObjectOutputStream s)</span><a href="#l2.35"></a>
+<span id="l2.36" class="minusline">-        throws java.io.IOException {</span><a href="#l2.36"></a>
+<span id="l2.37" class="plusline">+    private void writeObject(ObjectOutputStream s)</span><a href="#l2.37"></a>
+<span id="l2.38" class="plusline">+        throws IOException {</span><a href="#l2.38"></a>
+<span id="l2.39">         s.defaultWriteObject();</span><a href="#l2.39"></a>
+<span id="l2.40">         s.writeInt(count);</span><a href="#l2.40"></a>
+<span id="l2.41">         s.writeObject(value);</span><a href="#l2.41"></a>
+<span id="l2.42">     }</span><a href="#l2.42"></a>
+<span id="l2.43"> </span><a href="#l2.43"></a>
+<span id="l2.44">     /**</span><a href="#l2.44"></a>
+<span id="l2.45" class="minusline">-     * readObject is called to restore the state of the StringBuffer from</span><a href="#l2.45"></a>
+<span id="l2.46" class="plusline">+     * readObject is called to restore the state of the StringBuilder from</span><a href="#l2.46"></a>
+<span id="l2.47">      * a stream.</span><a href="#l2.47"></a>
+<span id="l2.48">      */</span><a href="#l2.48"></a>
+<span id="l2.49" class="minusline">-    private void readObject(java.io.ObjectInputStream s)</span><a href="#l2.49"></a>
+<span id="l2.50" class="minusline">-        throws java.io.IOException, ClassNotFoundException {</span><a href="#l2.50"></a>
+<span id="l2.51" class="plusline">+    private void readObject(ObjectInputStream s)</span><a href="#l2.51"></a>
+<span id="l2.52" class="plusline">+        throws IOException, ClassNotFoundException {</span><a href="#l2.52"></a>
+<span id="l2.53">         s.defaultReadObject();</span><a href="#l2.53"></a>
+<span id="l2.54" class="minusline">-        count = s.readInt();</span><a href="#l2.54"></a>
+<span id="l2.55" class="plusline">+        int c = s.readInt();</span><a href="#l2.55"></a>
+<span id="l2.56">         value = (char[]) s.readObject();</span><a href="#l2.56"></a>
+<span id="l2.57" class="plusline">+        if (c &lt; 0 || c &gt; value.length) {</span><a href="#l2.57"></a>
+<span id="l2.58" class="plusline">+            throw new StreamCorruptedException(&quot;count value invalid&quot;);</span><a href="#l2.58"></a>
+<span id="l2.59" class="plusline">+        }</span><a href="#l2.59"></a>
+<span id="l2.60" class="plusline">+        count = c;</span><a href="#l2.60"></a>
+<span id="l2.61">     }</span><a href="#l2.61"></a>
+<span id="l2.62"> </span><a href="#l2.62"></a>
+<span id="l2.63"> }</span><a href="#l2.63"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

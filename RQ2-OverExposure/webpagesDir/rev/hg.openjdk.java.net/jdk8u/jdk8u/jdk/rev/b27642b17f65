@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: b27642b17f65</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/b27642b17f65">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/b27642b17f65">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/b27642b17f65">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/b27642b17f65">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/b27642b17f65.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/b27642b17f65.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/b27642b17f65.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 14558:b27642b17f65   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8265580: Enhanced style for RTF kit
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#98;&#97;&#108;&#97;&#111;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 16 Jul 2021 16:57:46 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/3225e407ffbd">3225e407ffbd</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/1b77223b4674">1b77223b4674</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/b27642b17f65/src/share/classes/javax/swing/text/rtf/RTFReader.java">src/share/classes/javax/swing/text/rtf/RTFReader.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 28 insertions(+), 28 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/javax/swing/text/rtf/RTFReader.java</a></td>
+    <td class="diffstat-total" align="right">56</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:50.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:50.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/javax/swing/text/rtf/RTFReader.java	Thu Oct 14 01:33:46 2021 +0100</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/javax/swing/text/rtf/RTFReader.java	Fri Jul 16 16:57:46 2021 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -66,12 +66,12 @@</span><a href="#l1.3"></a>
+<span id="l1.4">   Dictionary&lt;Integer, String&gt; fontTable;</span><a href="#l1.4"></a>
+<span id="l1.5">   /** This array maps color indices to Color objects. */</span><a href="#l1.5"></a>
+<span id="l1.6">   Color[] colorTable;</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-  /** This array maps character style numbers to Style objects. */</span><a href="#l1.7"></a>
+<span id="l1.8" class="minusline">-  Style[] characterStyles;</span><a href="#l1.8"></a>
+<span id="l1.9" class="minusline">-  /** This array maps paragraph style numbers to Style objects. */</span><a href="#l1.9"></a>
+<span id="l1.10" class="minusline">-  Style[] paragraphStyles;</span><a href="#l1.10"></a>
+<span id="l1.11" class="minusline">-  /** This array maps section style numbers to Style objects. */</span><a href="#l1.11"></a>
+<span id="l1.12" class="minusline">-  Style[] sectionStyles;</span><a href="#l1.12"></a>
+<span id="l1.13" class="plusline">+  /** This Map maps character style numbers to Style objects. */</span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+  Map&lt;Integer, Style&gt; characterStyles;</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+  /** This Map maps paragraph style numbers to Style objects. */</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+  Map&lt;Integer, Style&gt; paragraphStyles;</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+  /** This Map maps section style numbers to Style objects. */</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+  Map&lt;Integer, Style&gt; sectionStyles;</span><a href="#l1.18"></a>
+<span id="l1.19"> </span><a href="#l1.19"></a>
+<span id="l1.20">   /** This is the RTF version number, extracted from the \rtf keyword.</span><a href="#l1.20"></a>
+<span id="l1.21">    *  The version information is currently not used. */</span><a href="#l1.21"></a>
+<span id="l1.22" class="atline">@@ -832,9 +832,9 @@</span><a href="#l1.22"></a>
+<span id="l1.23"> </span><a href="#l1.23"></a>
+<span id="l1.24">     public void close()</span><a href="#l1.24"></a>
+<span id="l1.25">     {</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-        Vector&lt;Style&gt; chrStyles = new Vector&lt;Style&gt;();</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-        Vector&lt;Style&gt; pgfStyles = new Vector&lt;Style&gt;();</span><a href="#l1.27"></a>
+<span id="l1.28" class="minusline">-        Vector&lt;Style&gt; secStyles = new Vector&lt;Style&gt;();</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+        Map&lt;Integer, Style&gt; chrStyles = new HashMap&lt;&gt;();</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+        Map&lt;Integer, Style&gt; pgfStyles = new HashMap&lt;&gt;();</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+        Map&lt;Integer, Style&gt; secStyles = new HashMap&lt;&gt;();</span><a href="#l1.31"></a>
+<span id="l1.32">         Enumeration&lt;StyleDefiningDestination&gt; styles = definedStyles.elements();</span><a href="#l1.32"></a>
+<span id="l1.33">         while(styles.hasMoreElements()) {</span><a href="#l1.33"></a>
+<span id="l1.34">             StyleDefiningDestination style;</span><a href="#l1.34"></a>
+<span id="l1.35" class="atline">@@ -843,32 +843,24 @@</span><a href="#l1.35"></a>
+<span id="l1.36">             defined = style.realize();</span><a href="#l1.36"></a>
+<span id="l1.37">             warning(&quot;Style &quot;+style.number+&quot; (&quot;+style.styleName+&quot;): &quot;+defined);</span><a href="#l1.37"></a>
+<span id="l1.38">             String stype = (String)defined.getAttribute(Constants.StyleType);</span><a href="#l1.38"></a>
+<span id="l1.39" class="minusline">-            Vector&lt;Style&gt; toSet;</span><a href="#l1.39"></a>
+<span id="l1.40" class="plusline">+            Map&lt;Integer, Style&gt; toMap;</span><a href="#l1.40"></a>
+<span id="l1.41">             if (stype.equals(Constants.STSection)) {</span><a href="#l1.41"></a>
+<span id="l1.42" class="minusline">-                toSet = secStyles;</span><a href="#l1.42"></a>
+<span id="l1.43" class="plusline">+                toMap = secStyles;</span><a href="#l1.43"></a>
+<span id="l1.44">             } else if (stype.equals(Constants.STCharacter)) {</span><a href="#l1.44"></a>
+<span id="l1.45" class="minusline">-                toSet = chrStyles;</span><a href="#l1.45"></a>
+<span id="l1.46" class="plusline">+                toMap = chrStyles;</span><a href="#l1.46"></a>
+<span id="l1.47">             } else {</span><a href="#l1.47"></a>
+<span id="l1.48" class="minusline">-                toSet = pgfStyles;</span><a href="#l1.48"></a>
+<span id="l1.49" class="plusline">+                toMap = pgfStyles;</span><a href="#l1.49"></a>
+<span id="l1.50">             }</span><a href="#l1.50"></a>
+<span id="l1.51" class="minusline">-            if (toSet.size() &lt;= style.number)</span><a href="#l1.51"></a>
+<span id="l1.52" class="minusline">-                toSet.setSize(style.number + 1);</span><a href="#l1.52"></a>
+<span id="l1.53" class="minusline">-            toSet.setElementAt(defined, style.number);</span><a href="#l1.53"></a>
+<span id="l1.54" class="plusline">+            toMap.put(style.number, defined);</span><a href="#l1.54"></a>
+<span id="l1.55">         }</span><a href="#l1.55"></a>
+<span id="l1.56">         if (!(chrStyles.isEmpty())) {</span><a href="#l1.56"></a>
+<span id="l1.57" class="minusline">-            Style[] styleArray = new Style[chrStyles.size()];</span><a href="#l1.57"></a>
+<span id="l1.58" class="minusline">-            chrStyles.copyInto(styleArray);</span><a href="#l1.58"></a>
+<span id="l1.59" class="minusline">-            characterStyles = styleArray;</span><a href="#l1.59"></a>
+<span id="l1.60" class="plusline">+            characterStyles = chrStyles;</span><a href="#l1.60"></a>
+<span id="l1.61">         }</span><a href="#l1.61"></a>
+<span id="l1.62">         if (!(pgfStyles.isEmpty())) {</span><a href="#l1.62"></a>
+<span id="l1.63" class="minusline">-            Style[] styleArray = new Style[pgfStyles.size()];</span><a href="#l1.63"></a>
+<span id="l1.64" class="minusline">-            pgfStyles.copyInto(styleArray);</span><a href="#l1.64"></a>
+<span id="l1.65" class="minusline">-            paragraphStyles = styleArray;</span><a href="#l1.65"></a>
+<span id="l1.66" class="plusline">+            paragraphStyles = pgfStyles;</span><a href="#l1.66"></a>
+<span id="l1.67">         }</span><a href="#l1.67"></a>
+<span id="l1.68">         if (!(secStyles.isEmpty())) {</span><a href="#l1.68"></a>
+<span id="l1.69" class="minusline">-            Style[] styleArray = new Style[secStyles.size()];</span><a href="#l1.69"></a>
+<span id="l1.70" class="minusline">-            secStyles.copyInto(styleArray);</span><a href="#l1.70"></a>
+<span id="l1.71" class="minusline">-            sectionStyles = styleArray;</span><a href="#l1.71"></a>
+<span id="l1.72" class="plusline">+            sectionStyles = secStyles;</span><a href="#l1.72"></a>
+<span id="l1.73">         }</span><a href="#l1.73"></a>
+<span id="l1.74"> </span><a href="#l1.74"></a>
+<span id="l1.75"> /* (old debugging code)</span><a href="#l1.75"></a>
+<span id="l1.76" class="atline">@@ -951,6 +943,14 @@</span><a href="#l1.76"></a>
+<span id="l1.77"> </span><a href="#l1.77"></a>
+<span id="l1.78">         public boolean handleKeyword(String keyword, int parameter)</span><a href="#l1.78"></a>
+<span id="l1.79">         {</span><a href="#l1.79"></a>
+<span id="l1.80" class="plusline">+            // As per http://www.biblioscape.com/rtf15_spec.htm#Heading2</span><a href="#l1.80"></a>
+<span id="l1.81" class="plusline">+            // we are restricting control word delimiter numeric value</span><a href="#l1.81"></a>
+<span id="l1.82" class="plusline">+            // to be within -32767 through 32767</span><a href="#l1.82"></a>
+<span id="l1.83" class="plusline">+            if (parameter &gt; 32767) {</span><a href="#l1.83"></a>
+<span id="l1.84" class="plusline">+                parameter = 32767;</span><a href="#l1.84"></a>
+<span id="l1.85" class="plusline">+            } else if (parameter &lt; -32767) {</span><a href="#l1.85"></a>
+<span id="l1.86" class="plusline">+                parameter = -32767;</span><a href="#l1.86"></a>
+<span id="l1.87" class="plusline">+            }</span><a href="#l1.87"></a>
+<span id="l1.88">             if (keyword.equals(&quot;s&quot;)) {</span><a href="#l1.88"></a>
+<span id="l1.89">                 characterStyle = false;</span><a href="#l1.89"></a>
+<span id="l1.90">                 sectionStyle = false;</span><a href="#l1.90"></a>
+<span id="l1.91" class="atline">@@ -1288,19 +1288,19 @@</span><a href="#l1.91"></a>
+<span id="l1.92"> </span><a href="#l1.92"></a>
+<span id="l1.93">         if (keyword.equals(&quot;s&quot;) &amp;&amp;</span><a href="#l1.93"></a>
+<span id="l1.94">             paragraphStyles != null) {</span><a href="#l1.94"></a>
+<span id="l1.95" class="minusline">-            parserState.put(&quot;paragraphStyle&quot;, paragraphStyles[parameter]);</span><a href="#l1.95"></a>
+<span id="l1.96" class="plusline">+            parserState.put(&quot;paragraphStyle&quot;, paragraphStyles.get(parameter));</span><a href="#l1.96"></a>
+<span id="l1.97">             return true;</span><a href="#l1.97"></a>
+<span id="l1.98">         }</span><a href="#l1.98"></a>
+<span id="l1.99"> </span><a href="#l1.99"></a>
+<span id="l1.100">         if (keyword.equals(&quot;cs&quot;) &amp;&amp;</span><a href="#l1.100"></a>
+<span id="l1.101">             characterStyles != null) {</span><a href="#l1.101"></a>
+<span id="l1.102" class="minusline">-            parserState.put(&quot;characterStyle&quot;, characterStyles[parameter]);</span><a href="#l1.102"></a>
+<span id="l1.103" class="plusline">+            parserState.put(&quot;characterStyle&quot;, characterStyles.get(parameter));</span><a href="#l1.103"></a>
+<span id="l1.104">             return true;</span><a href="#l1.104"></a>
+<span id="l1.105">         }</span><a href="#l1.105"></a>
+<span id="l1.106"> </span><a href="#l1.106"></a>
+<span id="l1.107">         if (keyword.equals(&quot;ds&quot;) &amp;&amp;</span><a href="#l1.107"></a>
+<span id="l1.108">             sectionStyles != null) {</span><a href="#l1.108"></a>
+<span id="l1.109" class="minusline">-            parserState.put(&quot;sectionStyle&quot;, sectionStyles[parameter]);</span><a href="#l1.109"></a>
+<span id="l1.110" class="plusline">+            parserState.put(&quot;sectionStyle&quot;, sectionStyles.get(parameter));</span><a href="#l1.110"></a>
+<span id="l1.111">             return true;</span><a href="#l1.111"></a>
+<span id="l1.112">         }</span><a href="#l1.112"></a>
+<span id="l1.113"> </span><a href="#l1.113"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                         try {
+1                            blocking = isBlocking();
+2                             // remainder of each packet thrown away
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                        try {
+1                            blocking = isBlocking();
+2                            // remainder of each packet thrown away
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

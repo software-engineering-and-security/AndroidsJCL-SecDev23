@@ -1,0 +1,26 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    public AlgorithmChecker(AlgorithmConstraints constraints,
+2            Timestamp jarTimestamp, String variant) {
+3        this(null, constraints, null, jarTimestamp, variant);
+4     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    public AlgorithmChecker(AlgorithmConstraints constraints,
+2            Timestamp jarTimestamp, String variant) {
+3        this(null, constraints, null, jarTimestamp, variant);
+4    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      */
+1    public AlgorithmChecker(AlgorithmConstraints constraints, String variant) {
+2        this(null, constraints, null, variant);
+3     }
+--------------------------------------------

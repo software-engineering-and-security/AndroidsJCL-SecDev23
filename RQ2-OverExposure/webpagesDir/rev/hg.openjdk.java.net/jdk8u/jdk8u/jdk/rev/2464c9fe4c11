@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: 2464c9fe4c11</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/2464c9fe4c11">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/2464c9fe4c11">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/2464c9fe4c11">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/2464c9fe4c11">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2464c9fe4c11.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2464c9fe4c11.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2464c9fe4c11.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 14485:2464c9fe4c11   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8258432: Improve file transfers
+Reviewed-by: mbalao, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#108;&#118;&#100;&#97;&#118;&#105;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 21 May 2021 19:56:49 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/b00ff8ba3b41">b00ff8ba3b41</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/6c4088f2f22e">6c4088f2f22e</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/2464c9fe4c11/src/share/classes/sun/net/ftp/impl/FtpClient.java">src/share/classes/sun/net/ftp/impl/FtpClient.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 108 insertions(+), 8 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/net/ftp/impl/FtpClient.java</a></td>
+    <td class="diffstat-total" align="right">116</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:93.1034482759%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.89655172414%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/net/ftp/impl/FtpClient.java	Fri Apr 16 16:26:03 2021 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/net/ftp/impl/FtpClient.java	Fri May 21 19:56:49 2021 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -24,14 +24,32 @@</span><a href="#l1.3"></a>
+<span id="l1.4">  */</span><a href="#l1.4"></a>
+<span id="l1.5"> package sun.net.ftp.impl;</span><a href="#l1.5"></a>
+<span id="l1.6"> </span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-import java.net.*;</span><a href="#l1.7"></a>
+<span id="l1.8" class="minusline">-import java.io.*;</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+import java.io.BufferedInputStream;</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+import java.io.BufferedOutputStream;</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+import java.io.BufferedReader;</span><a href="#l1.11"></a>
+<span id="l1.12" class="plusline">+import java.io.Closeable;</span><a href="#l1.12"></a>
+<span id="l1.13" class="plusline">+import java.io.FileNotFoundException;</span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+import java.io.IOException;</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+import java.io.InputStream;</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+import java.io.InputStreamReader;</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+import java.io.OutputStream;</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+import java.io.PrintStream;</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+import java.io.UnsupportedEncodingException;</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+import java.net.Inet6Address;</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+import java.net.InetAddress;</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+import java.net.InetSocketAddress;</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+import java.net.Proxy;</span><a href="#l1.23"></a>
+<span id="l1.24" class="plusline">+import java.net.ServerSocket;</span><a href="#l1.24"></a>
+<span id="l1.25" class="plusline">+import java.net.Socket;</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+import java.net.SocketAddress;</span><a href="#l1.26"></a>
+<span id="l1.27"> import java.security.AccessController;</span><a href="#l1.27"></a>
+<span id="l1.28"> import java.security.PrivilegedAction;</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+import java.security.PrivilegedExceptionAction;</span><a href="#l1.29"></a>
+<span id="l1.30"> import java.text.DateFormat;</span><a href="#l1.30"></a>
+<span id="l1.31"> import java.text.ParseException;</span><a href="#l1.31"></a>
+<span id="l1.32"> import java.text.SimpleDateFormat;</span><a href="#l1.32"></a>
+<span id="l1.33"> import java.util.ArrayList;</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+import java.util.Arrays;</span><a href="#l1.34"></a>
+<span id="l1.35"> import java.util.Calendar;</span><a href="#l1.35"></a>
+<span id="l1.36"> import java.util.Date;</span><a href="#l1.36"></a>
+<span id="l1.37"> import java.util.Iterator;</span><a href="#l1.37"></a>
+<span id="l1.38" class="atline">@@ -44,7 +62,11 @@</span><a href="#l1.38"></a>
+<span id="l1.39"> import javax.net.ssl.SSLSocketFactory;</span><a href="#l1.39"></a>
+<span id="l1.40"> import sun.misc.BASE64Decoder;</span><a href="#l1.40"></a>
+<span id="l1.41"> import sun.misc.BASE64Encoder;</span><a href="#l1.41"></a>
+<span id="l1.42" class="minusline">-import sun.net.ftp.*;</span><a href="#l1.42"></a>
+<span id="l1.43" class="plusline">+import sun.net.ftp.FtpDirEntry;</span><a href="#l1.43"></a>
+<span id="l1.44" class="plusline">+import sun.net.ftp.FtpDirParser;</span><a href="#l1.44"></a>
+<span id="l1.45" class="plusline">+import sun.net.ftp.FtpProtocolException;</span><a href="#l1.45"></a>
+<span id="l1.46" class="plusline">+import sun.net.ftp.FtpReplyCode;</span><a href="#l1.46"></a>
+<span id="l1.47" class="plusline">+import sun.net.util.IPAddressUtil;</span><a href="#l1.47"></a>
+<span id="l1.48"> import sun.util.logging.PlatformLogger;</span><a href="#l1.48"></a>
+<span id="l1.49"> </span><a href="#l1.49"></a>
+<span id="l1.50"> </span><a href="#l1.50"></a>
+<span id="l1.51" class="atline">@@ -107,15 +129,16 @@</span><a href="#l1.51"></a>
+<span id="l1.52">     private static Pattern[] patterns;</span><a href="#l1.52"></a>
+<span id="l1.53">     private static Pattern linkp = Pattern.compile(&quot;(\\p{Print}+) \\-\\&gt; (\\p{Print}+)$&quot;);</span><a href="#l1.53"></a>
+<span id="l1.54">     private DateFormat df = DateFormat.getDateInstance(DateFormat.MEDIUM, java.util.Locale.US);</span><a href="#l1.54"></a>
+<span id="l1.55" class="minusline">-</span><a href="#l1.55"></a>
+<span id="l1.56" class="plusline">+    private static final boolean acceptPasvAddressVal;</span><a href="#l1.56"></a>
+<span id="l1.57">     static {</span><a href="#l1.57"></a>
+<span id="l1.58">         final int vals[] = {0, 0};</span><a href="#l1.58"></a>
+<span id="l1.59">         final String encs[] = {null};</span><a href="#l1.59"></a>
+<span id="l1.60" class="minusline">-</span><a href="#l1.60"></a>
+<span id="l1.61" class="plusline">+        final String acceptPasvAddress[] = {null};</span><a href="#l1.61"></a>
+<span id="l1.62">         AccessController.doPrivileged(</span><a href="#l1.62"></a>
+<span id="l1.63">                 new PrivilegedAction&lt;Object&gt;() {</span><a href="#l1.63"></a>
+<span id="l1.64"> </span><a href="#l1.64"></a>
+<span id="l1.65">                     public Object run() {</span><a href="#l1.65"></a>
+<span id="l1.66" class="plusline">+                        acceptPasvAddress[0] = System.getProperty(&quot;jdk.net.ftp.trustPasvAddress&quot;, &quot;false&quot;);</span><a href="#l1.66"></a>
+<span id="l1.67">                         vals[0] = Integer.getInteger(&quot;sun.net.client.defaultReadTimeout&quot;, 300_000).intValue();</span><a href="#l1.67"></a>
+<span id="l1.68">                         vals[1] = Integer.getInteger(&quot;sun.net.client.defaultConnectTimeout&quot;, 300_000).intValue();</span><a href="#l1.68"></a>
+<span id="l1.69">                         encs[0] = System.getProperty(&quot;file.encoding&quot;, &quot;ISO8859_1&quot;);</span><a href="#l1.69"></a>
+<span id="l1.70" class="atline">@@ -147,6 +170,8 @@</span><a href="#l1.70"></a>
+<span id="l1.71">         for (int i = 0; i &lt; patStrings.length; i++) {</span><a href="#l1.71"></a>
+<span id="l1.72">             patterns[i] = Pattern.compile(patStrings[i]);</span><a href="#l1.72"></a>
+<span id="l1.73">         }</span><a href="#l1.73"></a>
+<span id="l1.74" class="plusline">+</span><a href="#l1.74"></a>
+<span id="l1.75" class="plusline">+        acceptPasvAddressVal = Boolean.parseBoolean(acceptPasvAddress[0]);</span><a href="#l1.75"></a>
+<span id="l1.76">     }</span><a href="#l1.76"></a>
+<span id="l1.77"> </span><a href="#l1.77"></a>
+<span id="l1.78">     /**</span><a href="#l1.78"></a>
+<span id="l1.79" class="atline">@@ -624,7 +649,6 @@</span><a href="#l1.79"></a>
+<span id="l1.80">             //</span><a href="#l1.80"></a>
+<span id="l1.81">             // The regular expression is a bit more complex this time, because</span><a href="#l1.81"></a>
+<span id="l1.82">             // the parenthesis are optionals and we have to use 3 groups.</span><a href="#l1.82"></a>
+<span id="l1.83" class="minusline">-</span><a href="#l1.83"></a>
+<span id="l1.84">             if (pasvPat == null) {</span><a href="#l1.84"></a>
+<span id="l1.85">                 pasvPat = Pattern.compile(&quot;227 .* \\(?(\\d{1,3},\\d{1,3},\\d{1,3},\\d{1,3}),(\\d{1,3}),(\\d{1,3})\\)?&quot;);</span><a href="#l1.85"></a>
+<span id="l1.86">             }</span><a href="#l1.86"></a>
+<span id="l1.87" class="atline">@@ -636,8 +660,15 @@</span><a href="#l1.87"></a>
+<span id="l1.88">             port = Integer.parseInt(m.group(3)) + (Integer.parseInt(m.group(2)) &lt;&lt; 8);</span><a href="#l1.88"></a>
+<span id="l1.89">             // IP address is simple</span><a href="#l1.89"></a>
+<span id="l1.90">             String s = m.group(1).replace(',', '.');</span><a href="#l1.90"></a>
+<span id="l1.91" class="minusline">-            dest = new InetSocketAddress(s, port);</span><a href="#l1.91"></a>
+<span id="l1.92" class="plusline">+            if (!IPAddressUtil.isIPv4LiteralAddress(s))</span><a href="#l1.92"></a>
+<span id="l1.93" class="plusline">+                throw new FtpProtocolException(&quot;PASV failed : &quot;  + serverAnswer);</span><a href="#l1.93"></a>
+<span id="l1.94" class="plusline">+            if (acceptPasvAddressVal) {</span><a href="#l1.94"></a>
+<span id="l1.95" class="plusline">+                dest = new InetSocketAddress(s, port);</span><a href="#l1.95"></a>
+<span id="l1.96" class="plusline">+            } else {</span><a href="#l1.96"></a>
+<span id="l1.97" class="plusline">+                dest = validatePasvAddress(port, s, server.getInetAddress());</span><a href="#l1.97"></a>
+<span id="l1.98" class="plusline">+            }</span><a href="#l1.98"></a>
+<span id="l1.99">         }</span><a href="#l1.99"></a>
+<span id="l1.100" class="plusline">+</span><a href="#l1.100"></a>
+<span id="l1.101">         // Got everything, let's open the socket!</span><a href="#l1.101"></a>
+<span id="l1.102">         Socket s;</span><a href="#l1.102"></a>
+<span id="l1.103">         if (proxy != null) {</span><a href="#l1.103"></a>
+<span id="l1.104" class="atline">@@ -699,6 +730,76 @@</span><a href="#l1.104"></a>
+<span id="l1.105">         return s;</span><a href="#l1.105"></a>
+<span id="l1.106">     }</span><a href="#l1.106"></a>
+<span id="l1.107"> </span><a href="#l1.107"></a>
+<span id="l1.108" class="plusline">+    static final String ERROR_MSG = &quot;Address should be the same as originating server&quot;;</span><a href="#l1.108"></a>
+<span id="l1.109" class="plusline">+</span><a href="#l1.109"></a>
+<span id="l1.110" class="plusline">+    /**</span><a href="#l1.110"></a>
+<span id="l1.111" class="plusline">+     * Returns an InetSocketAddress, based on value of acceptPasvAddressVal</span><a href="#l1.111"></a>
+<span id="l1.112" class="plusline">+     * and other conditions such as the server address returned by pasv</span><a href="#l1.112"></a>
+<span id="l1.113" class="plusline">+     * is not a hostname, is a socks proxy, or the loopback. An exception</span><a href="#l1.113"></a>
+<span id="l1.114" class="plusline">+     * is thrown if none of the valid conditions are met.</span><a href="#l1.114"></a>
+<span id="l1.115" class="plusline">+     */</span><a href="#l1.115"></a>
+<span id="l1.116" class="plusline">+    private InetSocketAddress validatePasvAddress(int port, String s, InetAddress address)</span><a href="#l1.116"></a>
+<span id="l1.117" class="plusline">+        throws FtpProtocolException</span><a href="#l1.117"></a>
+<span id="l1.118" class="plusline">+    {</span><a href="#l1.118"></a>
+<span id="l1.119" class="plusline">+        if (address == null) {</span><a href="#l1.119"></a>
+<span id="l1.120" class="plusline">+            return InetSocketAddress.createUnresolved(serverAddr.getHostName(), port);</span><a href="#l1.120"></a>
+<span id="l1.121" class="plusline">+        }</span><a href="#l1.121"></a>
+<span id="l1.122" class="plusline">+        String serverAddress = address.getHostAddress();</span><a href="#l1.122"></a>
+<span id="l1.123" class="plusline">+        if (serverAddress.equals(s)) {</span><a href="#l1.123"></a>
+<span id="l1.124" class="plusline">+            return new InetSocketAddress(s, port);</span><a href="#l1.124"></a>
+<span id="l1.125" class="plusline">+        } else if (address.isLoopbackAddress() &amp;&amp; s.startsWith(&quot;127.&quot;)) { // can be 127.0</span><a href="#l1.125"></a>
+<span id="l1.126" class="plusline">+            return new InetSocketAddress(s, port);</span><a href="#l1.126"></a>
+<span id="l1.127" class="plusline">+        } else if (address.isLoopbackAddress()) {</span><a href="#l1.127"></a>
+<span id="l1.128" class="plusline">+            if (privilegedLocalHost().getHostAddress().equals(s)) {</span><a href="#l1.128"></a>
+<span id="l1.129" class="plusline">+                return new InetSocketAddress(s, port);</span><a href="#l1.129"></a>
+<span id="l1.130" class="plusline">+            } else {</span><a href="#l1.130"></a>
+<span id="l1.131" class="plusline">+                throw new FtpProtocolException(ERROR_MSG);</span><a href="#l1.131"></a>
+<span id="l1.132" class="plusline">+            }</span><a href="#l1.132"></a>
+<span id="l1.133" class="plusline">+        } else if (s.startsWith(&quot;127.&quot;)) {</span><a href="#l1.133"></a>
+<span id="l1.134" class="plusline">+            if (privilegedLocalHost().equals(address)) {</span><a href="#l1.134"></a>
+<span id="l1.135" class="plusline">+                return new InetSocketAddress(s, port);</span><a href="#l1.135"></a>
+<span id="l1.136" class="plusline">+            } else {</span><a href="#l1.136"></a>
+<span id="l1.137" class="plusline">+                throw new FtpProtocolException(ERROR_MSG);</span><a href="#l1.137"></a>
+<span id="l1.138" class="plusline">+            }</span><a href="#l1.138"></a>
+<span id="l1.139" class="plusline">+        }</span><a href="#l1.139"></a>
+<span id="l1.140" class="plusline">+        String hostName = address.getHostName();</span><a href="#l1.140"></a>
+<span id="l1.141" class="plusline">+        if (!(IPAddressUtil.isIPv4LiteralAddress(hostName) || IPAddressUtil.isIPv6LiteralAddress(hostName))) {</span><a href="#l1.141"></a>
+<span id="l1.142" class="plusline">+            InetAddress[] names = privilegedGetAllByName(hostName);</span><a href="#l1.142"></a>
+<span id="l1.143" class="plusline">+            String resAddress = Arrays</span><a href="#l1.143"></a>
+<span id="l1.144" class="plusline">+                .stream(names)</span><a href="#l1.144"></a>
+<span id="l1.145" class="plusline">+                .map(InetAddress::getHostAddress)</span><a href="#l1.145"></a>
+<span id="l1.146" class="plusline">+                .filter(s::equalsIgnoreCase)</span><a href="#l1.146"></a>
+<span id="l1.147" class="plusline">+                .findFirst()</span><a href="#l1.147"></a>
+<span id="l1.148" class="plusline">+                .orElse(null);</span><a href="#l1.148"></a>
+<span id="l1.149" class="plusline">+            if (resAddress != null) {</span><a href="#l1.149"></a>
+<span id="l1.150" class="plusline">+                return new InetSocketAddress(s, port);</span><a href="#l1.150"></a>
+<span id="l1.151" class="plusline">+            }</span><a href="#l1.151"></a>
+<span id="l1.152" class="plusline">+        }</span><a href="#l1.152"></a>
+<span id="l1.153" class="plusline">+        throw new FtpProtocolException(ERROR_MSG);</span><a href="#l1.153"></a>
+<span id="l1.154" class="plusline">+    }</span><a href="#l1.154"></a>
+<span id="l1.155" class="plusline">+</span><a href="#l1.155"></a>
+<span id="l1.156" class="plusline">+    private static InetAddress privilegedLocalHost() throws FtpProtocolException {</span><a href="#l1.156"></a>
+<span id="l1.157" class="plusline">+        PrivilegedExceptionAction&lt;InetAddress&gt; action = InetAddress::getLocalHost;</span><a href="#l1.157"></a>
+<span id="l1.158" class="plusline">+        try {</span><a href="#l1.158"></a>
+<span id="l1.159" class="plusline">+            return AccessController.doPrivileged(action);</span><a href="#l1.159"></a>
+<span id="l1.160" class="plusline">+        } catch (Exception e) {</span><a href="#l1.160"></a>
+<span id="l1.161" class="plusline">+            FtpProtocolException ftpEx = new FtpProtocolException(ERROR_MSG);</span><a href="#l1.161"></a>
+<span id="l1.162" class="plusline">+            ftpEx.initCause(e);</span><a href="#l1.162"></a>
+<span id="l1.163" class="plusline">+            throw ftpEx;</span><a href="#l1.163"></a>
+<span id="l1.164" class="plusline">+        }</span><a href="#l1.164"></a>
+<span id="l1.165" class="plusline">+    }</span><a href="#l1.165"></a>
+<span id="l1.166" class="plusline">+</span><a href="#l1.166"></a>
+<span id="l1.167" class="plusline">+    private static InetAddress[] privilegedGetAllByName(String hostName) throws FtpProtocolException {</span><a href="#l1.167"></a>
+<span id="l1.168" class="plusline">+        PrivilegedExceptionAction&lt;InetAddress[]&gt; pAction = () -&gt; InetAddress.getAllByName(hostName);</span><a href="#l1.168"></a>
+<span id="l1.169" class="plusline">+        try {</span><a href="#l1.169"></a>
+<span id="l1.170" class="plusline">+            return AccessController.doPrivileged(pAction);</span><a href="#l1.170"></a>
+<span id="l1.171" class="plusline">+        } catch (Exception e) {</span><a href="#l1.171"></a>
+<span id="l1.172" class="plusline">+            FtpProtocolException ftpEx = new FtpProtocolException(ERROR_MSG);</span><a href="#l1.172"></a>
+<span id="l1.173" class="plusline">+            ftpEx.initCause(e);</span><a href="#l1.173"></a>
+<span id="l1.174" class="plusline">+            throw ftpEx;</span><a href="#l1.174"></a>
+<span id="l1.175" class="plusline">+        }</span><a href="#l1.175"></a>
+<span id="l1.176" class="plusline">+    }</span><a href="#l1.176"></a>
+<span id="l1.177" class="plusline">+</span><a href="#l1.177"></a>
+<span id="l1.178">     /**</span><a href="#l1.178"></a>
+<span id="l1.179">      * Opens a data connection with the server according to the set mode</span><a href="#l1.179"></a>
+<span id="l1.180">      * (ACTIVE or PASSIVE) then send the command passed as an argument.</span><a href="#l1.180"></a>
+<span id="l1.181" class="atline">@@ -709,7 +810,6 @@</span><a href="#l1.181"></a>
+<span id="l1.182">      */</span><a href="#l1.182"></a>
+<span id="l1.183">     private Socket openDataConnection(String cmd) throws sun.net.ftp.FtpProtocolException, IOException {</span><a href="#l1.183"></a>
+<span id="l1.184">         Socket clientSocket;</span><a href="#l1.184"></a>
+<span id="l1.185" class="minusline">-</span><a href="#l1.185"></a>
+<span id="l1.186">         if (passiveMode) {</span><a href="#l1.186"></a>
+<span id="l1.187">             try {</span><a href="#l1.187"></a>
+<span id="l1.188">                 return openPassiveDataConnection(cmd);</span><a href="#l1.188"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

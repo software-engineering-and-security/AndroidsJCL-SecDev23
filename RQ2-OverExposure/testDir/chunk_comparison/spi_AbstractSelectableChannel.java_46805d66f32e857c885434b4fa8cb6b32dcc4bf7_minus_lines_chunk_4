@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 throw new IllegalArgumentException();
+1            if (blocking)
+2                 throw new IllegalBlockingModeException();
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                throw new IllegalArgumentException();
+1            if (blocking)
+2                throw new IllegalBlockingModeException();
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                 throw new IllegalArgumentException();
+1            if (isBlocking())
+2                 throw new IllegalBlockingModeException();
+--------------------------------------------

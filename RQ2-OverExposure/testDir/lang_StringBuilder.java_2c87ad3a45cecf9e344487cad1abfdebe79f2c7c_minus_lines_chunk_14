@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     /**
+1     * readObject is called to restore the state of the StringBuffer from
+2      * a stream.
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    /**
+1     * readObject is called to restore the state of the StringBuffer from
+2     * a stream.
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     /**
+1     * readObject is called to restore the state of the StringBuilder from
+2      * a stream.
+--------------------------------------------

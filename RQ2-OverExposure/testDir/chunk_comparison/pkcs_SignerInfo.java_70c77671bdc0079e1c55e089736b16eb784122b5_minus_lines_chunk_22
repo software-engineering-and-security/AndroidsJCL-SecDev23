@@ -1,0 +1,31 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             try {
+1                JAR_DISABLED_CHECK.permits(algname, cparams);
+2            } catch (CertPathValidatorException e) {
+3                throw new SignatureException(e.getMessage(), e);
+4             }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            try {
+1                JAR_DISABLED_CHECK.permits(algname, cparams);
+2            } catch (CertPathValidatorException e) {
+3                throw new SignatureException(e.getMessage(), e);
+4            }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0             try {
+1                ObjectIdentifier oid = AlgorithmId.get(sigAlgName).getOID();
+2                AlgorithmId sigAlgId =
+3                    new AlgorithmId(oid,
+4                            digestEncryptionAlgorithmId.getParameters());
+5                algorithms.put(sigAlgId,
+6                    "SignerInfo digestEncryptionAlgorithm field");
+7            } catch (NoSuchAlgorithmException ignore) {
+8             }
+--------------------------------------------

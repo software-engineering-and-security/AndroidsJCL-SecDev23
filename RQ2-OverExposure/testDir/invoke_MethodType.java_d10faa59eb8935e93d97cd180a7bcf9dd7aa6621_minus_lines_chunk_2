@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         assert(!wt.hasPrimitives());
+1        MethodType uwt = wt.wrapAlt;
+2         if (uwt == null) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        assert(!wt.hasPrimitives());
+1        MethodType uwt = wt.wrapAlt;
+2        if (uwt == null) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         assert(!wt.hasPrimitives());
+1        MethodType uwt = (MethodType)wt.wrapAlt;
+2         if (uwt == null) {
+--------------------------------------------

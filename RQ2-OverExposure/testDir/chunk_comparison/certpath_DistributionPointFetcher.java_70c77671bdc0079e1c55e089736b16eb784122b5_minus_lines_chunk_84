@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         try {
+1            AlgorithmChecker.check(prevKey, crl, variant);
+2         } catch (CertPathValidatorException cpve) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        try {
+1            AlgorithmChecker.check(prevKey, crl, variant);
+2        } catch (CertPathValidatorException cpve) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         try {
+1            AlgorithmChecker.check(prevKey, crl, variant, anchor);
+2         } catch (CertPathValidatorException cpve) {
+--------------------------------------------

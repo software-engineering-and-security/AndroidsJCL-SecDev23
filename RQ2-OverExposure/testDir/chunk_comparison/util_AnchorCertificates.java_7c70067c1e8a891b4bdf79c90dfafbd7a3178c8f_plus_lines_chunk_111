@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      * @param cert the certificate to check
+1     * @return true if the certificate is a JDK trust anchor
+2      */
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0     * @param cert the certificate to check
+1     * @return true if the certificate is a JDK trust anchor
+2     */
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0      * @param cert the certificate to check
+1     * @return true if the certificate is trusted.
+2      */
+--------------------------------------------

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // session ID of the ClientHello message
+1        SessionId sessionId = SSLSessionImpl.nullSession.getSessionId();
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // session ID of the ClientHello message
+1        SessionId sessionId = SSLSessionImpl.nullSession.getSessionId();
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // session ID of the ClientHello message
+1        SessionId sessionId = new SessionId(new byte[0]);
+2 
+--------------------------------------------

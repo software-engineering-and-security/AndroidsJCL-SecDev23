@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8/jdk8/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8/jdk8/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8/jdk8/jdk/static/mercurial.js"></script>
+
+<title>jdk8/jdk8/jdk: 6e7224d650f8</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8/jdk8/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8/jdk8/jdk/shortlog/6e7224d650f8">log</a></li>
+ <li><a href="/jdk8/jdk8/jdk/graph/6e7224d650f8">graph</a></li>
+ <li><a href="/jdk8/jdk8/jdk/tags">tags</a></li>
+ <li><a href="/jdk8/jdk8/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8/jdk8/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8/jdk8/jdk/raw-rev/6e7224d650f8">raw</a></li>
+ <li><a href="/jdk8/jdk8/jdk/file/6e7224d650f8">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8/jdk8/jdk/archive/6e7224d650f8.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8/jdk8/jdk/archive/6e7224d650f8.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8/jdk8/jdk/archive/6e7224d650f8.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8/jdk8/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8">jdk8</a> / <a href="/jdk8/jdk8">jdk8</a> / <a href="/jdk8/jdk8/jdk">jdk</a> </h2>
+<h3>changeset 1840:6e7224d650f8   </h3>
+
+<form class="search" action="/jdk8/jdk8/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8/jdk8/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6631533: ICC_Profile allows detecting if some files exist
+Reviewed-by: prr, hawtin</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#98;&#97;&#101;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 10 Sep 2009 14:15:47 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8/jdk8/jdk/rev/5130f422ca6f">5130f422ca6f</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8/jdk8/jdk/rev/b19f5dc13e8c">b19f5dc13e8c</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8/jdk8/jdk/file/6e7224d650f8/src/share/classes/java/awt/color/ICC_Profile.java">src/share/classes/java/awt/color/ICC_Profile.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 96 insertions(+), 62 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/awt/color/ICC_Profile.java</a></td>
+    <td class="diffstat-total" align="right">158</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:60.7594936709%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:39.2405063291%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/awt/color/ICC_Profile.java	Thu Sep 10 14:04:38 2009 +0400</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/awt/color/ICC_Profile.java	Thu Sep 10 14:15:47 2009 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -863,7 +863,9 @@</span><a href="#l1.3"></a>
+<span id="l1.4">         case ColorSpace.CS_PYCC:</span><a href="#l1.4"></a>
+<span id="l1.5">             synchronized(ICC_Profile.class) {</span><a href="#l1.5"></a>
+<span id="l1.6">                 if (PYCCprofile == null) {</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-                    if (getProfileFile(&quot;PYCC.pf&quot;) != null) {</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+                    if (!sun.jkernel.DownloadManager.isJREComplete() ||</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+                        standardProfileExists(&quot;PYCC.pf&quot;))</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+                    {</span><a href="#l1.10"></a>
+<span id="l1.11">                         ProfileDeferralInfo pInfo =</span><a href="#l1.11"></a>
+<span id="l1.12">                             new ProfileDeferralInfo(&quot;PYCC.pf&quot;,</span><a href="#l1.12"></a>
+<span id="l1.13">                                                     ColorSpace.TYPE_3CLR, 3,</span><a href="#l1.13"></a>
+<span id="l1.14" class="atline">@@ -961,15 +963,15 @@</span><a href="#l1.14"></a>
+<span id="l1.15">      * and it does not permit read access to the given file.</span><a href="#l1.15"></a>
+<span id="l1.16">      */</span><a href="#l1.16"></a>
+<span id="l1.17">     public static ICC_Profile getInstance(String fileName) throws IOException {</span><a href="#l1.17"></a>
+<span id="l1.18" class="minusline">-    ICC_Profile thisProfile;</span><a href="#l1.18"></a>
+<span id="l1.19" class="minusline">-    FileInputStream fis;</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+        ICC_Profile thisProfile;</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+        FileInputStream fis = null;</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+</span><a href="#l1.22"></a>
+<span id="l1.23"> </span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-        SecurityManager security = System.getSecurityManager();</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-        if (security != null) {</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-            security.checkRead(fileName);</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+        File f = getProfileFile(fileName);</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+        if (f != null) {</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+            fis = new FileInputStream(f);</span><a href="#l1.29"></a>
+<span id="l1.30">         }</span><a href="#l1.30"></a>
+<span id="l1.31" class="minusline">-</span><a href="#l1.31"></a>
+<span id="l1.32" class="minusline">-        if ((fis = openProfile(fileName)) == null) {</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+        if (fis == null) {</span><a href="#l1.33"></a>
+<span id="l1.34">             throw new IOException(&quot;Cannot open file &quot; + fileName);</span><a href="#l1.34"></a>
+<span id="l1.35">         }</span><a href="#l1.35"></a>
+<span id="l1.36"> </span><a href="#l1.36"></a>
+<span id="l1.37" class="atline">@@ -1081,11 +1083,22 @@</span><a href="#l1.37"></a>
+<span id="l1.38">     void activateDeferredProfile() throws ProfileDataException {</span><a href="#l1.38"></a>
+<span id="l1.39">         byte profileData[];</span><a href="#l1.39"></a>
+<span id="l1.40">         FileInputStream fis;</span><a href="#l1.40"></a>
+<span id="l1.41" class="minusline">-        String fileName = deferralInfo.filename;</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+        final String fileName = deferralInfo.filename;</span><a href="#l1.42"></a>
+<span id="l1.43"> </span><a href="#l1.43"></a>
+<span id="l1.44">         profileActivator = null;</span><a href="#l1.44"></a>
+<span id="l1.45">         deferralInfo = null;</span><a href="#l1.45"></a>
+<span id="l1.46" class="minusline">-        if ((fis = openProfile(fileName)) == null) {</span><a href="#l1.46"></a>
+<span id="l1.47" class="plusline">+        PrivilegedAction&lt;FileInputStream&gt; pa = new PrivilegedAction&lt;FileInputStream&gt;() {</span><a href="#l1.47"></a>
+<span id="l1.48" class="plusline">+            public FileInputStream run() {</span><a href="#l1.48"></a>
+<span id="l1.49" class="plusline">+                File f = getStandardProfileFile(fileName);</span><a href="#l1.49"></a>
+<span id="l1.50" class="plusline">+                if (f != null) {</span><a href="#l1.50"></a>
+<span id="l1.51" class="plusline">+                    try {</span><a href="#l1.51"></a>
+<span id="l1.52" class="plusline">+                        return new FileInputStream(f);</span><a href="#l1.52"></a>
+<span id="l1.53" class="plusline">+                    } catch (FileNotFoundException e) {}</span><a href="#l1.53"></a>
+<span id="l1.54" class="plusline">+                }</span><a href="#l1.54"></a>
+<span id="l1.55" class="plusline">+                return null;</span><a href="#l1.55"></a>
+<span id="l1.56" class="plusline">+            }</span><a href="#l1.56"></a>
+<span id="l1.57" class="plusline">+        };</span><a href="#l1.57"></a>
+<span id="l1.58" class="plusline">+        if ((fis = AccessController.doPrivileged(pa)) == null) {</span><a href="#l1.58"></a>
+<span id="l1.59">             throw new ProfileDataException(&quot;Cannot open file &quot; + fileName);</span><a href="#l1.59"></a>
+<span id="l1.60">         }</span><a href="#l1.60"></a>
+<span id="l1.61">         try {</span><a href="#l1.61"></a>
+<span id="l1.62" class="atline">@@ -1784,86 +1797,107 @@</span><a href="#l1.62"></a>
+<span id="l1.63">      * available, such as a profile for sRGB.  Built-in profiles use .pf as</span><a href="#l1.63"></a>
+<span id="l1.64">      * the file name extension for profiles, e.g. sRGB.pf.</span><a href="#l1.64"></a>
+<span id="l1.65">      */</span><a href="#l1.65"></a>
+<span id="l1.66" class="minusline">-    private static FileInputStream openProfile(final String fileName) {</span><a href="#l1.66"></a>
+<span id="l1.67" class="minusline">-        return (FileInputStream)java.security.AccessController.doPrivileged(</span><a href="#l1.67"></a>
+<span id="l1.68" class="minusline">-            new java.security.PrivilegedAction() {</span><a href="#l1.68"></a>
+<span id="l1.69" class="minusline">-            public Object run() {</span><a href="#l1.69"></a>
+<span id="l1.70" class="minusline">-                File f = privilegedGetProfileFile(fileName);</span><a href="#l1.70"></a>
+<span id="l1.71" class="minusline">-                if (f != null) {</span><a href="#l1.71"></a>
+<span id="l1.72" class="minusline">-                    try {</span><a href="#l1.72"></a>
+<span id="l1.73" class="minusline">-                        return new FileInputStream(f);</span><a href="#l1.73"></a>
+<span id="l1.74" class="minusline">-                    } catch (FileNotFoundException e) {</span><a href="#l1.74"></a>
+<span id="l1.75" class="minusline">-                    }</span><a href="#l1.75"></a>
+<span id="l1.76" class="minusline">-                }</span><a href="#l1.76"></a>
+<span id="l1.77" class="minusline">-                return null;</span><a href="#l1.77"></a>
+<span id="l1.78" class="minusline">-            }</span><a href="#l1.78"></a>
+<span id="l1.79" class="minusline">-        });</span><a href="#l1.79"></a>
+<span id="l1.80" class="minusline">-    }</span><a href="#l1.80"></a>
+<span id="l1.81" class="minusline">-</span><a href="#l1.81"></a>
+<span id="l1.82" class="minusline">-    private static File getProfileFile(final String fileName) {</span><a href="#l1.82"></a>
+<span id="l1.83" class="minusline">-        return (File)java.security.AccessController.doPrivileged(</span><a href="#l1.83"></a>
+<span id="l1.84" class="minusline">-            new java.security.PrivilegedAction() {</span><a href="#l1.84"></a>
+<span id="l1.85" class="minusline">-            public Object run() {</span><a href="#l1.85"></a>
+<span id="l1.86" class="minusline">-                return privilegedGetProfileFile(fileName);</span><a href="#l1.86"></a>
+<span id="l1.87" class="minusline">-            }</span><a href="#l1.87"></a>
+<span id="l1.88" class="minusline">-        });</span><a href="#l1.88"></a>
+<span id="l1.89" class="minusline">-    }</span><a href="#l1.89"></a>
+<span id="l1.90" class="minusline">-</span><a href="#l1.90"></a>
+<span id="l1.91" class="minusline">-    /*</span><a href="#l1.91"></a>
+<span id="l1.92" class="minusline">-     * this version is called from doPrivileged in openProfile</span><a href="#l1.92"></a>
+<span id="l1.93" class="minusline">-     * or getProfileFile, so the whole method is privileged!</span><a href="#l1.93"></a>
+<span id="l1.94" class="minusline">-     */</span><a href="#l1.94"></a>
+<span id="l1.95" class="minusline">-</span><a href="#l1.95"></a>
+<span id="l1.96" class="minusline">-    private static File privilegedGetProfileFile(String fileName) {</span><a href="#l1.96"></a>
+<span id="l1.97" class="plusline">+    private static File getProfileFile(String fileName) {</span><a href="#l1.97"></a>
+<span id="l1.98">         String path, dir, fullPath;</span><a href="#l1.98"></a>
+<span id="l1.99"> </span><a href="#l1.99"></a>
+<span id="l1.100">         File f = new File(fileName); /* try absolute file name */</span><a href="#l1.100"></a>
+<span id="l1.101" class="minusline">-</span><a href="#l1.101"></a>
+<span id="l1.102" class="plusline">+        if (f.isAbsolute()) {</span><a href="#l1.102"></a>
+<span id="l1.103" class="plusline">+            /* Rest of code has little sense for an absolute pathname,</span><a href="#l1.103"></a>
+<span id="l1.104" class="plusline">+               so return here. */</span><a href="#l1.104"></a>
+<span id="l1.105" class="plusline">+            return f.isFile() ? f : null;</span><a href="#l1.105"></a>
+<span id="l1.106" class="plusline">+        }</span><a href="#l1.106"></a>
+<span id="l1.107">         if ((!f.isFile()) &amp;&amp;</span><a href="#l1.107"></a>
+<span id="l1.108">                 ((path = System.getProperty(&quot;java.iccprofile.path&quot;)) != null)){</span><a href="#l1.108"></a>
+<span id="l1.109">                                     /* try relative to java.iccprofile.path */</span><a href="#l1.109"></a>
+<span id="l1.110">                 StringTokenizer st =</span><a href="#l1.110"></a>
+<span id="l1.111">                     new StringTokenizer(path, File.pathSeparator);</span><a href="#l1.111"></a>
+<span id="l1.112" class="minusline">-                while (st.hasMoreTokens() &amp;&amp; (!f.isFile())) {</span><a href="#l1.112"></a>
+<span id="l1.113" class="plusline">+                while (st.hasMoreTokens() &amp;&amp; ((f == null) || (!f.isFile()))) {</span><a href="#l1.113"></a>
+<span id="l1.114">                     dir = st.nextToken();</span><a href="#l1.114"></a>
+<span id="l1.115">                         fullPath = dir + File.separatorChar + fileName;</span><a href="#l1.115"></a>
+<span id="l1.116">                     f = new File(fullPath);</span><a href="#l1.116"></a>
+<span id="l1.117" class="plusline">+                    if (!isChildOf(f, dir)) {</span><a href="#l1.117"></a>
+<span id="l1.118" class="plusline">+                        f = null;</span><a href="#l1.118"></a>
+<span id="l1.119" class="plusline">+                    }</span><a href="#l1.119"></a>
+<span id="l1.120">                 }</span><a href="#l1.120"></a>
+<span id="l1.121">             }</span><a href="#l1.121"></a>
+<span id="l1.122"> </span><a href="#l1.122"></a>
+<span id="l1.123" class="minusline">-        if ((!f.isFile()) &amp;&amp;</span><a href="#l1.123"></a>
+<span id="l1.124" class="plusline">+        if (((f == null) || (!f.isFile())) &amp;&amp;</span><a href="#l1.124"></a>
+<span id="l1.125">                 ((path = System.getProperty(&quot;java.class.path&quot;)) != null)) {</span><a href="#l1.125"></a>
+<span id="l1.126">                                     /* try relative to java.class.path */</span><a href="#l1.126"></a>
+<span id="l1.127">                 StringTokenizer st =</span><a href="#l1.127"></a>
+<span id="l1.128">                     new StringTokenizer(path, File.pathSeparator);</span><a href="#l1.128"></a>
+<span id="l1.129" class="minusline">-                while (st.hasMoreTokens() &amp;&amp; (!f.isFile())) {</span><a href="#l1.129"></a>
+<span id="l1.130" class="plusline">+                while (st.hasMoreTokens() &amp;&amp; ((f == null) || (!f.isFile()))) {</span><a href="#l1.130"></a>
+<span id="l1.131">                     dir = st.nextToken();</span><a href="#l1.131"></a>
+<span id="l1.132">                         fullPath = dir + File.separatorChar + fileName;</span><a href="#l1.132"></a>
+<span id="l1.133">                     f = new File(fullPath);</span><a href="#l1.133"></a>
+<span id="l1.134" class="plusline">+                    if (!isChildOf(f, dir)) {</span><a href="#l1.134"></a>
+<span id="l1.135" class="plusline">+                        f = null;</span><a href="#l1.135"></a>
+<span id="l1.136" class="plusline">+                    }</span><a href="#l1.136"></a>
+<span id="l1.137">                 }</span><a href="#l1.137"></a>
+<span id="l1.138">             }</span><a href="#l1.138"></a>
+<span id="l1.139" class="minusline">-</span><a href="#l1.139"></a>
+<span id="l1.140" class="minusline">-        if (!f.isFile()) { /* try the directory of built-in profiles */</span><a href="#l1.140"></a>
+<span id="l1.141" class="minusline">-            dir = System.getProperty(&quot;java.home&quot;) +</span><a href="#l1.141"></a>
+<span id="l1.142" class="minusline">-                File.separatorChar + &quot;lib&quot; + File.separatorChar + &quot;cmm&quot;;</span><a href="#l1.142"></a>
+<span id="l1.143" class="minusline">-            fullPath = dir + File.separatorChar + fileName;</span><a href="#l1.143"></a>
+<span id="l1.144" class="minusline">-                f = new File(fullPath);</span><a href="#l1.144"></a>
+<span id="l1.145" class="minusline">-                if (!f.isFile()) {</span><a href="#l1.145"></a>
+<span id="l1.146" class="minusline">-                    //make sure file was installed in the kernel mode</span><a href="#l1.146"></a>
+<span id="l1.147" class="minusline">-                    try {</span><a href="#l1.147"></a>
+<span id="l1.148" class="minusline">-                        //kernel uses platform independent paths =&gt;</span><a href="#l1.148"></a>
+<span id="l1.149" class="minusline">-                        //   should not use platform separator char</span><a href="#l1.149"></a>
+<span id="l1.150" class="minusline">-                        sun.jkernel.DownloadManager.downloadFile(&quot;lib/cmm/&quot;+fileName);</span><a href="#l1.150"></a>
+<span id="l1.151" class="minusline">-                    } catch (IOException ioe) {}</span><a href="#l1.151"></a>
+<span id="l1.152" class="minusline">-                }</span><a href="#l1.152"></a>
+<span id="l1.153" class="minusline">-            }</span><a href="#l1.153"></a>
+<span id="l1.154" class="minusline">-</span><a href="#l1.154"></a>
+<span id="l1.155" class="minusline">-        if (f.isFile()) {</span><a href="#l1.155"></a>
+<span id="l1.156" class="plusline">+        if ((f == null) || (!f.isFile())) {</span><a href="#l1.156"></a>
+<span id="l1.157" class="plusline">+            /* try the directory of built-in profiles */</span><a href="#l1.157"></a>
+<span id="l1.158" class="plusline">+            f = getStandardProfileFile(fileName);</span><a href="#l1.158"></a>
+<span id="l1.159" class="plusline">+        }</span><a href="#l1.159"></a>
+<span id="l1.160" class="plusline">+        if (f != null &amp;&amp; f.isFile()) {</span><a href="#l1.160"></a>
+<span id="l1.161">             return f;</span><a href="#l1.161"></a>
+<span id="l1.162">         }</span><a href="#l1.162"></a>
+<span id="l1.163">         return null;</span><a href="#l1.163"></a>
+<span id="l1.164">     }</span><a href="#l1.164"></a>
+<span id="l1.165"> </span><a href="#l1.165"></a>
+<span id="l1.166" class="plusline">+    /**</span><a href="#l1.166"></a>
+<span id="l1.167" class="plusline">+     * Returns a file object corresponding to a built-in profile</span><a href="#l1.167"></a>
+<span id="l1.168" class="plusline">+     * specified by fileName.</span><a href="#l1.168"></a>
+<span id="l1.169" class="plusline">+     * If there is no built-in profile with such name, then the method</span><a href="#l1.169"></a>
+<span id="l1.170" class="plusline">+     * returns null.</span><a href="#l1.170"></a>
+<span id="l1.171" class="plusline">+     */</span><a href="#l1.171"></a>
+<span id="l1.172" class="plusline">+    private static File getStandardProfileFile(String fileName) {</span><a href="#l1.172"></a>
+<span id="l1.173" class="plusline">+        String dir = System.getProperty(&quot;java.home&quot;) +</span><a href="#l1.173"></a>
+<span id="l1.174" class="plusline">+            File.separatorChar + &quot;lib&quot; + File.separatorChar + &quot;cmm&quot;;</span><a href="#l1.174"></a>
+<span id="l1.175" class="plusline">+        String fullPath = dir + File.separatorChar + fileName;</span><a href="#l1.175"></a>
+<span id="l1.176" class="plusline">+        File f = new File(fullPath);</span><a href="#l1.176"></a>
+<span id="l1.177" class="plusline">+        if (!f.isFile()) {</span><a href="#l1.177"></a>
+<span id="l1.178" class="plusline">+            //make sure file was installed in the kernel mode</span><a href="#l1.178"></a>
+<span id="l1.179" class="plusline">+            try {</span><a href="#l1.179"></a>
+<span id="l1.180" class="plusline">+                //kernel uses platform independent paths =&gt;</span><a href="#l1.180"></a>
+<span id="l1.181" class="plusline">+                //   should not use platform separator char</span><a href="#l1.181"></a>
+<span id="l1.182" class="plusline">+                sun.jkernel.DownloadManager.downloadFile(&quot;lib/cmm/&quot;+fileName);</span><a href="#l1.182"></a>
+<span id="l1.183" class="plusline">+            } catch (IOException ioe) {}</span><a href="#l1.183"></a>
+<span id="l1.184" class="plusline">+        }</span><a href="#l1.184"></a>
+<span id="l1.185" class="plusline">+        return (f.isFile() &amp;&amp; isChildOf(f, dir)) ? f : null;</span><a href="#l1.185"></a>
+<span id="l1.186" class="plusline">+    }</span><a href="#l1.186"></a>
+<span id="l1.187" class="plusline">+</span><a href="#l1.187"></a>
+<span id="l1.188" class="plusline">+    /**</span><a href="#l1.188"></a>
+<span id="l1.189" class="plusline">+     * Checks whether given file resides inside give directory.</span><a href="#l1.189"></a>
+<span id="l1.190" class="plusline">+     */</span><a href="#l1.190"></a>
+<span id="l1.191" class="plusline">+    private static boolean isChildOf(File f, String dirName) {</span><a href="#l1.191"></a>
+<span id="l1.192" class="plusline">+        try {</span><a href="#l1.192"></a>
+<span id="l1.193" class="plusline">+            File dir = new File(dirName);</span><a href="#l1.193"></a>
+<span id="l1.194" class="plusline">+            String canonicalDirName = dir.getCanonicalPath();</span><a href="#l1.194"></a>
+<span id="l1.195" class="plusline">+            if (!canonicalDirName.endsWith(File.separator)) {</span><a href="#l1.195"></a>
+<span id="l1.196" class="plusline">+                canonicalDirName += File.separator;</span><a href="#l1.196"></a>
+<span id="l1.197" class="plusline">+            }</span><a href="#l1.197"></a>
+<span id="l1.198" class="plusline">+            String canonicalFileName = f.getCanonicalPath();</span><a href="#l1.198"></a>
+<span id="l1.199" class="plusline">+            return canonicalFileName.startsWith(canonicalDirName);</span><a href="#l1.199"></a>
+<span id="l1.200" class="plusline">+        } catch (IOException e) {</span><a href="#l1.200"></a>
+<span id="l1.201" class="plusline">+            /* we do not expect the IOException here, because invocation</span><a href="#l1.201"></a>
+<span id="l1.202" class="plusline">+             * of this function is always preceeded by isFile() call.</span><a href="#l1.202"></a>
+<span id="l1.203" class="plusline">+             */</span><a href="#l1.203"></a>
+<span id="l1.204" class="plusline">+            return false;</span><a href="#l1.204"></a>
+<span id="l1.205" class="plusline">+        }</span><a href="#l1.205"></a>
+<span id="l1.206" class="plusline">+    }</span><a href="#l1.206"></a>
+<span id="l1.207" class="plusline">+</span><a href="#l1.207"></a>
+<span id="l1.208" class="plusline">+    /**</span><a href="#l1.208"></a>
+<span id="l1.209" class="plusline">+     * Checks whether built-in profile specified by fileName exists.</span><a href="#l1.209"></a>
+<span id="l1.210" class="plusline">+     */</span><a href="#l1.210"></a>
+<span id="l1.211" class="plusline">+    private static boolean standardProfileExists(final String fileName) {</span><a href="#l1.211"></a>
+<span id="l1.212" class="plusline">+        return AccessController.doPrivileged(new PrivilegedAction&lt;Boolean&gt;() {</span><a href="#l1.212"></a>
+<span id="l1.213" class="plusline">+                public Boolean run() {</span><a href="#l1.213"></a>
+<span id="l1.214" class="plusline">+                    return getStandardProfileFile(fileName) != null;</span><a href="#l1.214"></a>
+<span id="l1.215" class="plusline">+                }</span><a href="#l1.215"></a>
+<span id="l1.216" class="plusline">+            });</span><a href="#l1.216"></a>
+<span id="l1.217" class="plusline">+    }</span><a href="#l1.217"></a>
+<span id="l1.218" class="plusline">+</span><a href="#l1.218"></a>
+<span id="l1.219"> </span><a href="#l1.219"></a>
+<span id="l1.220">     /*</span><a href="#l1.220"></a>
+<span id="l1.221">      * Serialization support.</span><a href="#l1.221"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: 446338ed795d</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/446338ed795d">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/446338ed795d">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/446338ed795d">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/446338ed795d">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/446338ed795d.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/446338ed795d.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/446338ed795d.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 14569:446338ed795d   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8267729: Improve TLS client handshaking
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#98;&#97;&#108;&#97;&#111;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 16 Sep 2021 14:49:37 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/8c553f12bece">8c553f12bece</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/12b0c54cc6b1">12b0c54cc6b1</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/446338ed795d/src/share/classes/sun/security/ssl/ECDHClientKeyExchange.java">src/share/classes/sun/security/ssl/ECDHClientKeyExchange.java</a> <a href="/jdk8u/jdk8u/jdk/file/446338ed795d/src/share/classes/sun/security/ssl/ECDHServerKeyExchange.java">src/share/classes/sun/security/ssl/ECDHServerKeyExchange.java</a> <a href="/jdk8u/jdk8u/jdk/file/446338ed795d/src/share/classes/sun/security/ssl/KeyShareExtension.java">src/share/classes/sun/security/ssl/KeyShareExtension.java</a> <a href="/jdk8u/jdk8u/jdk/file/446338ed795d/src/share/classes/sun/security/ssl/SSLLogger.java">src/share/classes/sun/security/ssl/SSLLogger.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     4 files changed, 59 insertions(+), 40 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/security/ssl/ECDHClientKeyExchange.java</a></td>
+    <td class="diffstat-total" align="right">21</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:17.3913043478%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:13.0434782609%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/sun/security/ssl/ECDHServerKeyExchange.java</a></td>
+    <td class="diffstat-total" align="right">7</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:5.79710144928%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:4.34782608696%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/sun/security/ssl/KeyShareExtension.java</a></td>
+    <td class="diffstat-total" align="right">69</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:60.8695652174%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:39.1304347826%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/share/classes/sun/security/ssl/SSLLogger.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.44927536232%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.44927536232%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/security/ssl/ECDHClientKeyExchange.java	Wed Sep 08 16:43:41 2021 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/ECDHClientKeyExchange.java	Thu Sep 16 14:49:37 2021 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -105,9 +105,10 @@</span><a href="#l1.3"></a>
+<span id="l1.4">                         (ECPublicKey)kf.generatePublic(spec);</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6">                 // check constraints of ECPublicKey</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-                if (!constraints.permits(</span><a href="#l1.7"></a>
+<span id="l1.8" class="minusline">-                        EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l1.8"></a>
+<span id="l1.9" class="minusline">-                        peerPublicKey)) {</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+                if (constraints != null &amp;&amp;</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+                        !constraints.permits(</span><a href="#l1.11"></a>
+<span id="l1.12" class="plusline">+                                EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l1.12"></a>
+<span id="l1.13" class="plusline">+                                peerPublicKey)) {</span><a href="#l1.13"></a>
+<span id="l1.14">                     throw new SSLHandshakeException(</span><a href="#l1.14"></a>
+<span id="l1.15">                         &quot;ECPublicKey does not comply to algorithm constraints&quot;);</span><a href="#l1.15"></a>
+<span id="l1.16">                 }</span><a href="#l1.16"></a>
+<span id="l1.17" class="atline">@@ -324,9 +325,10 @@</span><a href="#l1.17"></a>
+<span id="l1.18">                         (ECPublicKey)kf.generatePublic(spec);</span><a href="#l1.18"></a>
+<span id="l1.19"> </span><a href="#l1.19"></a>
+<span id="l1.20">                 // check constraints of peer ECPublicKey</span><a href="#l1.20"></a>
+<span id="l1.21" class="minusline">-                if (!shc.algorithmConstraints.permits(</span><a href="#l1.21"></a>
+<span id="l1.22" class="minusline">-                        EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l1.22"></a>
+<span id="l1.23" class="minusline">-                        peerPublicKey)) {</span><a href="#l1.23"></a>
+<span id="l1.24" class="plusline">+                if (shc.algorithmConstraints != null &amp;&amp;</span><a href="#l1.24"></a>
+<span id="l1.25" class="plusline">+                        !shc.algorithmConstraints.permits(</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+                                EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+                                peerPublicKey)) {</span><a href="#l1.27"></a>
+<span id="l1.28">                     throw new SSLHandshakeException(</span><a href="#l1.28"></a>
+<span id="l1.29">                         &quot;ECPublicKey does not comply to algorithm constraints&quot;);</span><a href="#l1.29"></a>
+<span id="l1.30">                 }</span><a href="#l1.30"></a>
+<span id="l1.31" class="atline">@@ -498,9 +500,10 @@</span><a href="#l1.31"></a>
+<span id="l1.32">                         (ECPublicKey)kf.generatePublic(spec);</span><a href="#l1.32"></a>
+<span id="l1.33"> </span><a href="#l1.33"></a>
+<span id="l1.34">                 // check constraints of peer ECPublicKey</span><a href="#l1.34"></a>
+<span id="l1.35" class="minusline">-                if (!shc.algorithmConstraints.permits(</span><a href="#l1.35"></a>
+<span id="l1.36" class="minusline">-                        EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l1.36"></a>
+<span id="l1.37" class="minusline">-                        peerPublicKey)) {</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+                if (shc.algorithmConstraints != null &amp;&amp;</span><a href="#l1.38"></a>
+<span id="l1.39" class="plusline">+                        !shc.algorithmConstraints.permits(</span><a href="#l1.39"></a>
+<span id="l1.40" class="plusline">+                                EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l1.40"></a>
+<span id="l1.41" class="plusline">+                                peerPublicKey)) {</span><a href="#l1.41"></a>
+<span id="l1.42">                     throw new SSLHandshakeException(</span><a href="#l1.42"></a>
+<span id="l1.43">                         &quot;ECPublicKey does not comply to algorithm constraints&quot;);</span><a href="#l1.43"></a>
+<span id="l1.44">                 }</span><a href="#l1.44"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/sun/security/ssl/ECDHServerKeyExchange.java	Wed Sep 08 16:43:41 2021 +0300</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/ECDHServerKeyExchange.java	Thu Sep 16 14:49:37 2021 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -535,9 +535,10 @@</span><a href="#l2.3"></a>
+<span id="l2.4">             // validate</span><a href="#l2.4"></a>
+<span id="l2.5">             //</span><a href="#l2.5"></a>
+<span id="l2.6">             // check constraints of EC PublicKey</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-            if (!chc.algorithmConstraints.permits(</span><a href="#l2.7"></a>
+<span id="l2.8" class="minusline">-                    EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l2.8"></a>
+<span id="l2.9" class="minusline">-                    skem.publicKey)) {</span><a href="#l2.9"></a>
+<span id="l2.10" class="plusline">+            if (chc.algorithmConstraints != null &amp;&amp;</span><a href="#l2.10"></a>
+<span id="l2.11" class="plusline">+                    !chc.algorithmConstraints.permits(</span><a href="#l2.11"></a>
+<span id="l2.12" class="plusline">+                            EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l2.12"></a>
+<span id="l2.13" class="plusline">+                            skem.publicKey)) {</span><a href="#l2.13"></a>
+<span id="l2.14">                 throw chc.conContext.fatal(Alert.INSUFFICIENT_SECURITY,</span><a href="#l2.14"></a>
+<span id="l2.15">                         &quot;ECDH ServerKeyExchange does not comply &quot; +</span><a href="#l2.15"></a>
+<span id="l2.16">                         &quot;to algorithm constraints&quot;);</span><a href="#l2.16"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/sun/security/ssl/KeyShareExtension.java	Wed Sep 08 16:43:41 2021 +0300</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/KeyShareExtension.java	Thu Sep 16 14:49:37 2021 +0000</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -345,7 +345,8 @@</span><a href="#l3.3"></a>
+<span id="l3.4">                 NamedGroup ng = NamedGroup.valueOf(entry.namedGroupId);</span><a href="#l3.4"></a>
+<span id="l3.5">                 if (ng == null || !SupportedGroups.isActivatable(</span><a href="#l3.5"></a>
+<span id="l3.6">                         shc.algorithmConstraints, ng)) {</span><a href="#l3.6"></a>
+<span id="l3.7" class="minusline">-                    if (SSLLogger.isOn &amp;&amp; SSLLogger.isOn(&quot;ssl,handshake&quot;)) {</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+                    if (SSLLogger.isOn &amp;&amp;</span><a href="#l3.8"></a>
+<span id="l3.9" class="plusline">+                            SSLLogger.isOn(&quot;ssl,handshake&quot;)) {</span><a href="#l3.9"></a>
+<span id="l3.10">                         SSLLogger.fine(</span><a href="#l3.10"></a>
+<span id="l3.11">                                 &quot;Ignore unsupported named group: &quot; +</span><a href="#l3.11"></a>
+<span id="l3.12">                                 NamedGroup.nameOf(entry.namedGroupId));</span><a href="#l3.12"></a>
+<span id="l3.13" class="atline">@@ -358,40 +359,52 @@</span><a href="#l3.13"></a>
+<span id="l3.14">                         ECDHECredentials ecdhec =</span><a href="#l3.14"></a>
+<span id="l3.15">                             ECDHECredentials.valueOf(ng, entry.keyExchange);</span><a href="#l3.15"></a>
+<span id="l3.16">                         if (ecdhec != null) {</span><a href="#l3.16"></a>
+<span id="l3.17" class="minusline">-                            if (!shc.algorithmConstraints.permits(</span><a href="#l3.17"></a>
+<span id="l3.18" class="minusline">-                                    EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l3.18"></a>
+<span id="l3.19" class="minusline">-                                    ecdhec.popPublicKey)) {</span><a href="#l3.19"></a>
+<span id="l3.20" class="minusline">-                                SSLLogger.warning(</span><a href="#l3.20"></a>
+<span id="l3.21" class="minusline">-                                        &quot;ECDHE key share entry does not &quot; +</span><a href="#l3.21"></a>
+<span id="l3.22" class="minusline">-                                        &quot;comply to algorithm constraints&quot;);</span><a href="#l3.22"></a>
+<span id="l3.23" class="plusline">+                            if (shc.algorithmConstraints != null &amp;&amp;</span><a href="#l3.23"></a>
+<span id="l3.24" class="plusline">+                                    !shc.algorithmConstraints.permits(</span><a href="#l3.24"></a>
+<span id="l3.25" class="plusline">+                                            EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l3.25"></a>
+<span id="l3.26" class="plusline">+                                            ecdhec.popPublicKey)) {</span><a href="#l3.26"></a>
+<span id="l3.27" class="plusline">+                                if (SSLLogger.isOn &amp;&amp;</span><a href="#l3.27"></a>
+<span id="l3.28" class="plusline">+                                        SSLLogger.isOn(&quot;ssl,handshake&quot;)) {</span><a href="#l3.28"></a>
+<span id="l3.29" class="plusline">+                                    SSLLogger.warning(</span><a href="#l3.29"></a>
+<span id="l3.30" class="plusline">+                                            &quot;ECDHE key share entry does not &quot; +</span><a href="#l3.30"></a>
+<span id="l3.31" class="plusline">+                                            &quot;comply to algorithm constraints&quot;);</span><a href="#l3.31"></a>
+<span id="l3.32" class="plusline">+                                }</span><a href="#l3.32"></a>
+<span id="l3.33">                             } else {</span><a href="#l3.33"></a>
+<span id="l3.34">                                 credentials.add(ecdhec);</span><a href="#l3.34"></a>
+<span id="l3.35">                             }</span><a href="#l3.35"></a>
+<span id="l3.36">                         }</span><a href="#l3.36"></a>
+<span id="l3.37">                     } catch (IOException | GeneralSecurityException ex) {</span><a href="#l3.37"></a>
+<span id="l3.38" class="minusline">-                        SSLLogger.warning(</span><a href="#l3.38"></a>
+<span id="l3.39" class="minusline">-                                &quot;Cannot decode named group: &quot; +</span><a href="#l3.39"></a>
+<span id="l3.40" class="minusline">-                                NamedGroup.nameOf(entry.namedGroupId));</span><a href="#l3.40"></a>
+<span id="l3.41" class="plusline">+                        if (SSLLogger.isOn &amp;&amp; SSLLogger.isOn(&quot;ssl,handshake&quot;)) {</span><a href="#l3.41"></a>
+<span id="l3.42" class="plusline">+                            SSLLogger.warning(</span><a href="#l3.42"></a>
+<span id="l3.43" class="plusline">+                                    &quot;Cannot decode named group: &quot; +</span><a href="#l3.43"></a>
+<span id="l3.44" class="plusline">+                                    NamedGroup.nameOf(entry.namedGroupId));</span><a href="#l3.44"></a>
+<span id="l3.45" class="plusline">+                        }</span><a href="#l3.45"></a>
+<span id="l3.46">                     }</span><a href="#l3.46"></a>
+<span id="l3.47">                 } else if (ng.type == NamedGroupType.NAMED_GROUP_FFDHE) {</span><a href="#l3.47"></a>
+<span id="l3.48">                     try {</span><a href="#l3.48"></a>
+<span id="l3.49">                         DHECredentials dhec =</span><a href="#l3.49"></a>
+<span id="l3.50">                                 DHECredentials.valueOf(ng, entry.keyExchange);</span><a href="#l3.50"></a>
+<span id="l3.51">                         if (dhec != null) {</span><a href="#l3.51"></a>
+<span id="l3.52" class="minusline">-                            if (!shc.algorithmConstraints.permits(</span><a href="#l3.52"></a>
+<span id="l3.53" class="minusline">-                                    EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l3.53"></a>
+<span id="l3.54" class="minusline">-                                    dhec.popPublicKey)) {</span><a href="#l3.54"></a>
+<span id="l3.55" class="minusline">-                                SSLLogger.warning(</span><a href="#l3.55"></a>
+<span id="l3.56" class="minusline">-                                        &quot;DHE key share entry does not &quot; +</span><a href="#l3.56"></a>
+<span id="l3.57" class="minusline">-                                        &quot;comply to algorithm constraints&quot;);</span><a href="#l3.57"></a>
+<span id="l3.58" class="plusline">+                            if (shc.algorithmConstraints != null &amp;&amp;</span><a href="#l3.58"></a>
+<span id="l3.59" class="plusline">+                                    !shc.algorithmConstraints.permits(</span><a href="#l3.59"></a>
+<span id="l3.60" class="plusline">+                                            EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l3.60"></a>
+<span id="l3.61" class="plusline">+                                            dhec.popPublicKey)) {</span><a href="#l3.61"></a>
+<span id="l3.62" class="plusline">+                                if (SSLLogger.isOn &amp;&amp;</span><a href="#l3.62"></a>
+<span id="l3.63" class="plusline">+                                        SSLLogger.isOn(&quot;ssl,handshake&quot;)) {</span><a href="#l3.63"></a>
+<span id="l3.64" class="plusline">+                                    SSLLogger.warning(</span><a href="#l3.64"></a>
+<span id="l3.65" class="plusline">+                                            &quot;DHE key share entry does not &quot; +</span><a href="#l3.65"></a>
+<span id="l3.66" class="plusline">+                                            &quot;comply to algorithm constraints&quot;);</span><a href="#l3.66"></a>
+<span id="l3.67" class="plusline">+                                }</span><a href="#l3.67"></a>
+<span id="l3.68">                             } else {</span><a href="#l3.68"></a>
+<span id="l3.69">                                 credentials.add(dhec);</span><a href="#l3.69"></a>
+<span id="l3.70">                             }</span><a href="#l3.70"></a>
+<span id="l3.71">                         }</span><a href="#l3.71"></a>
+<span id="l3.72">                     } catch (IOException | GeneralSecurityException ex) {</span><a href="#l3.72"></a>
+<span id="l3.73" class="minusline">-                        SSLLogger.warning(</span><a href="#l3.73"></a>
+<span id="l3.74" class="minusline">-                                &quot;Cannot decode named group: &quot; +</span><a href="#l3.74"></a>
+<span id="l3.75" class="minusline">-                                NamedGroup.nameOf(entry.namedGroupId));</span><a href="#l3.75"></a>
+<span id="l3.76" class="plusline">+                        if (SSLLogger.isOn &amp;&amp; SSLLogger.isOn(&quot;ssl,handshake&quot;)) {</span><a href="#l3.76"></a>
+<span id="l3.77" class="plusline">+                            SSLLogger.warning(</span><a href="#l3.77"></a>
+<span id="l3.78" class="plusline">+                                    &quot;Cannot decode named group: &quot; +</span><a href="#l3.78"></a>
+<span id="l3.79" class="plusline">+                                    NamedGroup.nameOf(entry.namedGroupId));</span><a href="#l3.79"></a>
+<span id="l3.80" class="plusline">+                        }</span><a href="#l3.80"></a>
+<span id="l3.81">                     }</span><a href="#l3.81"></a>
+<span id="l3.82">                 }</span><a href="#l3.82"></a>
+<span id="l3.83">             }</span><a href="#l3.83"></a>
+<span id="l3.84" class="atline">@@ -648,10 +661,11 @@</span><a href="#l3.84"></a>
+<span id="l3.85">                     ECDHECredentials ecdhec =</span><a href="#l3.85"></a>
+<span id="l3.86">                             ECDHECredentials.valueOf(ng, keyShare.keyExchange);</span><a href="#l3.86"></a>
+<span id="l3.87">                     if (ecdhec != null) {</span><a href="#l3.87"></a>
+<span id="l3.88" class="minusline">-                        if (!chc.algorithmConstraints.permits(</span><a href="#l3.88"></a>
+<span id="l3.89" class="minusline">-                                EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l3.89"></a>
+<span id="l3.90" class="minusline">-                                ecdhec.popPublicKey)) {</span><a href="#l3.90"></a>
+<span id="l3.91" class="minusline">-                            throw chc.conContext.fatal(Alert.UNEXPECTED_MESSAGE,</span><a href="#l3.91"></a>
+<span id="l3.92" class="plusline">+                        if (chc.algorithmConstraints != null &amp;&amp;</span><a href="#l3.92"></a>
+<span id="l3.93" class="plusline">+                                !chc.algorithmConstraints.permits(</span><a href="#l3.93"></a>
+<span id="l3.94" class="plusline">+                                        EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l3.94"></a>
+<span id="l3.95" class="plusline">+                                        ecdhec.popPublicKey)) {</span><a href="#l3.95"></a>
+<span id="l3.96" class="plusline">+                            throw chc.conContext.fatal(Alert.INSUFFICIENT_SECURITY,</span><a href="#l3.96"></a>
+<span id="l3.97">                                     &quot;ECDHE key share entry does not &quot; +</span><a href="#l3.97"></a>
+<span id="l3.98">                                     &quot;comply to algorithm constraints&quot;);</span><a href="#l3.98"></a>
+<span id="l3.99">                         } else {</span><a href="#l3.99"></a>
+<span id="l3.100" class="atline">@@ -668,10 +682,11 @@</span><a href="#l3.100"></a>
+<span id="l3.101">                     DHECredentials dhec =</span><a href="#l3.101"></a>
+<span id="l3.102">                             DHECredentials.valueOf(ng, keyShare.keyExchange);</span><a href="#l3.102"></a>
+<span id="l3.103">                     if (dhec != null) {</span><a href="#l3.103"></a>
+<span id="l3.104" class="minusline">-                        if (!chc.algorithmConstraints.permits(</span><a href="#l3.104"></a>
+<span id="l3.105" class="minusline">-                                EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l3.105"></a>
+<span id="l3.106" class="minusline">-                                dhec.popPublicKey)) {</span><a href="#l3.106"></a>
+<span id="l3.107" class="minusline">-                            throw chc.conContext.fatal(Alert.UNEXPECTED_MESSAGE,</span><a href="#l3.107"></a>
+<span id="l3.108" class="plusline">+                        if (chc.algorithmConstraints != null &amp;&amp;</span><a href="#l3.108"></a>
+<span id="l3.109" class="plusline">+                                !chc.algorithmConstraints.permits(</span><a href="#l3.109"></a>
+<span id="l3.110" class="plusline">+                                        EnumSet.of(CryptoPrimitive.KEY_AGREEMENT),</span><a href="#l3.110"></a>
+<span id="l3.111" class="plusline">+                                        dhec.popPublicKey)) {</span><a href="#l3.111"></a>
+<span id="l3.112" class="plusline">+                            throw chc.conContext.fatal(Alert.INSUFFICIENT_SECURITY,</span><a href="#l3.112"></a>
+<span id="l3.113">                                     &quot;DHE key share entry does not &quot; +</span><a href="#l3.113"></a>
+<span id="l3.114">                                     &quot;comply to algorithm constraints&quot;);</span><a href="#l3.114"></a>
+<span id="l3.115">                         } else {</span><a href="#l3.115"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/share/classes/sun/security/ssl/SSLLogger.java	Wed Sep 08 16:43:41 2021 +0300</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/SSLLogger.java	Thu Sep 16 14:49:37 2021 +0000</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -180,7 +180,7 @@</span><a href="#l4.3"></a>
+<span id="l4.4">     }</span><a href="#l4.4"></a>
+<span id="l4.5"> </span><a href="#l4.5"></a>
+<span id="l4.6">     private static void log(Level level, String msg, Object... params) {</span><a href="#l4.6"></a>
+<span id="l4.7" class="minusline">-        if (logger.isLoggable(level)) {</span><a href="#l4.7"></a>
+<span id="l4.8" class="plusline">+        if (logger != null &amp;&amp; logger.isLoggable(level)) {</span><a href="#l4.8"></a>
+<span id="l4.9">             if (params == null || params.length == 0) {</span><a href="#l4.9"></a>
+<span id="l4.10">                 logger.log(level, msg);</span><a href="#l4.10"></a>
+<span id="l4.11">             } else {</span><a href="#l4.11"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

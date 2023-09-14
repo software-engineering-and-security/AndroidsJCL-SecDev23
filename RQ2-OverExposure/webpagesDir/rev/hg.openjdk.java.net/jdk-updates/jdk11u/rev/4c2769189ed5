@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk-updates/jdk11u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk-updates/jdk11u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk-updates/jdk11u/static/mercurial.js"></script>
+
+<title>jdk-updates/jdk11u: 4c2769189ed5</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk-updates/jdk11u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/shortlog/4c2769189ed5">log</a></li>
+ <li><a href="/jdk-updates/jdk11u/graph/4c2769189ed5">graph</a></li>
+ <li><a href="/jdk-updates/jdk11u/tags">tags</a></li>
+ <li><a href="/jdk-updates/jdk11u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk-updates/jdk11u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk-updates/jdk11u/raw-rev/4c2769189ed5">raw</a></li>
+ <li><a href="/jdk-updates/jdk11u/file/4c2769189ed5">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk-updates/jdk11u/archive/4c2769189ed5.zip">zip</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/4c2769189ed5.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/4c2769189ed5.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk-updates">jdk-updates</a> / <a href="/jdk-updates/jdk11u">jdk11u</a> </h2>
+<h3>changeset 52562:4c2769189ed5   </h3>
+
+<form class="search" action="/jdk-updates/jdk11u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk-updates/jdk11u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8231422: Better serial filter handling
+Reviewed-by: rriggs</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#114;&#111;&#98;&#109;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Tue, 07 Jan 2020 03:41:33 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk-updates/jdk11u/rev/688e846b87bd">688e846b87bd</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk-updates/jdk11u/rev/0f515f4b45fe">0f515f4b45fe</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk-updates/jdk11u/file/4c2769189ed5/src/java.base/share/classes/java/io/ObjectInputFilter.java">src/java.base/share/classes/java/io/ObjectInputFilter.java</a> <a href="/jdk-updates/jdk11u/file/4c2769189ed5/src/java.base/share/classes/jdk/internal/util/StaticProperty.java">src/java.base/share/classes/jdk/internal/util/StaticProperty.java</a> <a href="/jdk-updates/jdk11u/file/4c2769189ed5/src/java.base/share/conf/security/java.security">src/java.base/share/conf/security/java.security</a> <a href="/jdk-updates/jdk11u/file/4c2769189ed5/test/jdk/java/io/Serializable/serialFilter/GlobalFilterTest.java">test/jdk/java/io/Serializable/serialFilter/GlobalFilterTest.java</a> <a href="/jdk-updates/jdk11u/file/4c2769189ed5/test/jdk/java/io/Serializable/serialFilter/security.policy">test/jdk/java/io/Serializable/serialFilter/security.policy</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     5 files changed, 43 insertions(+), 13 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/java.base/share/classes/java/io/ObjectInputFilter.java</a></td>
+    <td class="diffstat-total" align="right">3</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.66666666667%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.33333333333%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/java.base/share/classes/jdk/internal/util/StaticProperty.java</a></td>
+    <td class="diffstat-total" align="right">17</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:53.3333333333%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.33333333333%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/java.base/share/conf/security/java.security</a></td>
+    <td class="diffstat-total" align="right">4</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.66666666667%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.66666666667%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">test/jdk/java/io/Serializable/serialFilter/GlobalFilterTest.java</a></td>
+    <td class="diffstat-total" align="right">30</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:73.3333333333%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:26.6666666667%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">test/jdk/java/io/Serializable/serialFilter/security.policy</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:3.33333333333%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.33333333333%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/java.base/share/classes/java/io/ObjectInputFilter.java	Mon Oct 21 16:52:21 2019 -0700</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/java.base/share/classes/java/io/ObjectInputFilter.java	Tue Jan 07 03:41:33 2020 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -35,6 +35,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> import java.util.function.Function;</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6"> import jdk.internal.misc.SharedSecrets;</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+import jdk.internal.util.StaticProperty;</span><a href="#l1.7"></a>
+<span id="l1.8"> </span><a href="#l1.8"></a>
+<span id="l1.9"> /**</span><a href="#l1.9"></a>
+<span id="l1.10">  * Filter classes, array lengths, and graph metrics during deserialization.</span><a href="#l1.10"></a>
+<span id="l1.11" class="atline">@@ -256,7 +257,7 @@</span><a href="#l1.11"></a>
+<span id="l1.12">         static {</span><a href="#l1.12"></a>
+<span id="l1.13">             configuredFilter = AccessController</span><a href="#l1.13"></a>
+<span id="l1.14">                     .doPrivileged((PrivilegedAction&lt;ObjectInputFilter&gt;) () -&gt; {</span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-                        String props = System.getProperty(SERIAL_FILTER_PROPNAME);</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+                        String props = StaticProperty.jdkSerialFilter();</span><a href="#l1.16"></a>
+<span id="l1.17">                         if (props == null) {</span><a href="#l1.17"></a>
+<span id="l1.18">                             props = Security.getProperty(SERIAL_FILTER_PROPNAME);</span><a href="#l1.18"></a>
+<span id="l1.19">                         }</span><a href="#l1.19"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/java.base/share/classes/jdk/internal/util/StaticProperty.java	Mon Oct 21 16:52:21 2019 -0700</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/java.base/share/classes/jdk/internal/util/StaticProperty.java	Tue Jan 07 03:41:33 2020 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright (c) 2018, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright (c) 2018, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -42,6 +42,7 @@</span><a href="#l2.10"></a>
+<span id="l2.11">     private static final String USER_HOME = initProperty(&quot;user.home&quot;);</span><a href="#l2.11"></a>
+<span id="l2.12">     private static final String USER_DIR  = initProperty(&quot;user.dir&quot;);</span><a href="#l2.12"></a>
+<span id="l2.13">     private static final String USER_NAME = initProperty(&quot;user.name&quot;);</span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+    private static final String JDK_SERIAL_FILTER = System.getProperty(&quot;jdk.serialFilter&quot;);</span><a href="#l2.14"></a>
+<span id="l2.15"> </span><a href="#l2.15"></a>
+<span id="l2.16">     private StaticProperty() {}</span><a href="#l2.16"></a>
+<span id="l2.17"> </span><a href="#l2.17"></a>
+<span id="l2.18" class="atline">@@ -104,4 +105,18 @@</span><a href="#l2.18"></a>
+<span id="l2.19">     public static String userName() {</span><a href="#l2.19"></a>
+<span id="l2.20">         return USER_NAME;</span><a href="#l2.20"></a>
+<span id="l2.21">     }</span><a href="#l2.21"></a>
+<span id="l2.22" class="plusline">+</span><a href="#l2.22"></a>
+<span id="l2.23" class="plusline">+    /**</span><a href="#l2.23"></a>
+<span id="l2.24" class="plusline">+     *</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+     * Return the {@code jdk.serialFilter} system property.</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+     *</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+     * &lt;strong&gt;{@link SecurityManager#checkPropertyAccess} is NOT checked</span><a href="#l2.27"></a>
+<span id="l2.28" class="plusline">+     * in this method. The caller of this method should take care to ensure</span><a href="#l2.28"></a>
+<span id="l2.29" class="plusline">+     * that the returned property is not made accessible to untrusted code.&lt;/strong&gt;</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+     *</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+     * @return the {@code user.name} system property</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+     */</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+    public static String jdkSerialFilter() {</span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+        return JDK_SERIAL_FILTER;</span><a href="#l2.34"></a>
+<span id="l2.35"> }</span><a href="#l2.35"></a>
+<span id="l2.36" class="plusline">+}</span><a href="#l2.36"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/java.base/share/conf/security/java.security	Mon Oct 21 16:52:21 2019 -0700</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/java.base/share/conf/security/java.security	Tue Jan 07 03:41:33 2020 +0000</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -954,8 +954,8 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> # Patterns are separated by &quot;;&quot; (semicolon).</span><a href="#l3.4"></a>
+<span id="l3.5"> # Whitespace is significant and is considered part of the pattern.</span><a href="#l3.5"></a>
+<span id="l3.6"> #</span><a href="#l3.6"></a>
+<span id="l3.7" class="minusline">-# If the system property jdk.serialFilter is also specified, it supersedes</span><a href="#l3.7"></a>
+<span id="l3.8" class="minusline">-# the security property value defined here.</span><a href="#l3.8"></a>
+<span id="l3.9" class="plusline">+# If the system property jdk.serialFilter is also specified on the command</span><a href="#l3.9"></a>
+<span id="l3.10" class="plusline">+# line, it supersedes the security property value defined here.</span><a href="#l3.10"></a>
+<span id="l3.11"> #</span><a href="#l3.11"></a>
+<span id="l3.12"> # If a pattern includes a &quot;=&quot;, it sets a limit.</span><a href="#l3.12"></a>
+<span id="l3.13"> # If a limit appears more than once the last value is used.</span><a href="#l3.13"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/test/jdk/java/io/Serializable/serialFilter/GlobalFilterTest.java	Mon Oct 21 16:52:21 2019 -0700</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/test/jdk/java/io/Serializable/serialFilter/GlobalFilterTest.java	Tue Jan 07 03:41:33 2020 +0000</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> /*</span><a href="#l4.4"></a>
+<span id="l4.5" class="minusline">- * Copyright (c) 2016, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.5"></a>
+<span id="l4.6" class="plusline">+ * Copyright (c) 2016, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.6"></a>
+<span id="l4.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l4.7"></a>
+<span id="l4.8">  *</span><a href="#l4.8"></a>
+<span id="l4.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l4.9"></a>
+<span id="l4.10" class="atline">@@ -41,9 +41,11 @@</span><a href="#l4.10"></a>
+<span id="l4.11"> import org.testng.annotations.DataProvider;</span><a href="#l4.11"></a>
+<span id="l4.12"> </span><a href="#l4.12"></a>
+<span id="l4.13"> /* @test</span><a href="#l4.13"></a>
+<span id="l4.14" class="plusline">+ * @bug 8231422</span><a href="#l4.14"></a>
+<span id="l4.15">  * @build GlobalFilterTest SerialFilterTest</span><a href="#l4.15"></a>
+<span id="l4.16">  * @run testng/othervm GlobalFilterTest</span><a href="#l4.16"></a>
+<span id="l4.17" class="minusline">- * @run testng/othervm -Djdk.serialFilter=java.** GlobalFilterTest</span><a href="#l4.17"></a>
+<span id="l4.18" class="plusline">+ * @run testng/othervm -Djdk.serialFilter=java.**</span><a href="#l4.18"></a>
+<span id="l4.19" class="plusline">+ *          -Dexpected-jdk.serialFilter=java.** GlobalFilterTest</span><a href="#l4.19"></a>
+<span id="l4.20">  * @run testng/othervm/policy=security.policy GlobalFilterTest</span><a href="#l4.20"></a>
+<span id="l4.21">  * @run testng/othervm/policy=security.policy</span><a href="#l4.21"></a>
+<span id="l4.22">  *        -Djava.security.properties=${test.src}/java.security-extra1</span><a href="#l4.22"></a>
+<span id="l4.23" class="atline">@@ -53,6 +55,10 @@</span><a href="#l4.23"></a>
+<span id="l4.24">  */</span><a href="#l4.24"></a>
+<span id="l4.25"> @Test</span><a href="#l4.25"></a>
+<span id="l4.26"> public class GlobalFilterTest {</span><a href="#l4.26"></a>
+<span id="l4.27" class="plusline">+    private static final String serialPropName = &quot;jdk.serialFilter&quot;;</span><a href="#l4.27"></a>
+<span id="l4.28" class="plusline">+    private static final String badSerialFilter = &quot;java.lang.StringBuffer;!*&quot;;</span><a href="#l4.28"></a>
+<span id="l4.29" class="plusline">+    private static final String origSerialFilterProperty =</span><a href="#l4.29"></a>
+<span id="l4.30" class="plusline">+            System.setProperty(serialPropName, badSerialFilter);</span><a href="#l4.30"></a>
+<span id="l4.31"> </span><a href="#l4.31"></a>
+<span id="l4.32">     /**</span><a href="#l4.32"></a>
+<span id="l4.33">      * DataProvider of patterns and objects derived from the configured process-wide filter.</span><a href="#l4.33"></a>
+<span id="l4.34" class="atline">@@ -61,8 +67,8 @@</span><a href="#l4.34"></a>
+<span id="l4.35">     @DataProvider(name=&quot;globalPatternElements&quot;)</span><a href="#l4.35"></a>
+<span id="l4.36">     Object[][] globalPatternElements() {</span><a href="#l4.36"></a>
+<span id="l4.37">         String globalFilter =</span><a href="#l4.37"></a>
+<span id="l4.38" class="minusline">-                System.getProperty(&quot;jdk.serialFilter&quot;,</span><a href="#l4.38"></a>
+<span id="l4.39" class="minusline">-                        Security.getProperty(&quot;jdk.serialFilter&quot;));</span><a href="#l4.39"></a>
+<span id="l4.40" class="plusline">+                System.getProperty(&quot;expected-&quot; + serialPropName,</span><a href="#l4.40"></a>
+<span id="l4.41" class="plusline">+                        Security.getProperty(serialPropName));</span><a href="#l4.41"></a>
+<span id="l4.42">         if (globalFilter == null) {</span><a href="#l4.42"></a>
+<span id="l4.43">             return new Object[0][];</span><a href="#l4.43"></a>
+<span id="l4.44">         }</span><a href="#l4.44"></a>
+<span id="l4.45" class="atline">@@ -99,12 +105,20 @@</span><a href="#l4.45"></a>
+<span id="l4.46">      */</span><a href="#l4.46"></a>
+<span id="l4.47">     @Test()</span><a href="#l4.47"></a>
+<span id="l4.48">     static void globalFilter() {</span><a href="#l4.48"></a>
+<span id="l4.49" class="plusline">+        ObjectInputFilter filter = ObjectInputFilter.Config.getSerialFilter();</span><a href="#l4.49"></a>
+<span id="l4.50" class="plusline">+</span><a href="#l4.50"></a>
+<span id="l4.51" class="plusline">+        // Check that the System.setProperty(jdk.serialFilter) DOES NOT affect the filter.</span><a href="#l4.51"></a>
+<span id="l4.52" class="plusline">+        String asSetSystemProp = System.getProperty(serialPropName,</span><a href="#l4.52"></a>
+<span id="l4.53" class="plusline">+                Security.getProperty(serialPropName));</span><a href="#l4.53"></a>
+<span id="l4.54" class="plusline">+        Assert.assertNotEquals(Objects.toString(filter, null), asSetSystemProp,</span><a href="#l4.54"></a>
+<span id="l4.55" class="plusline">+                &quot;System.setProperty(\&quot;jdk.serialfilter\&quot;, ...) should not change filter: &quot; +</span><a href="#l4.55"></a>
+<span id="l4.56" class="plusline">+                asSetSystemProp);</span><a href="#l4.56"></a>
+<span id="l4.57" class="plusline">+</span><a href="#l4.57"></a>
+<span id="l4.58">         String pattern =</span><a href="#l4.58"></a>
+<span id="l4.59" class="minusline">-                System.getProperty(&quot;jdk.serialFilter&quot;,</span><a href="#l4.59"></a>
+<span id="l4.60" class="minusline">-                        Security.getProperty(&quot;jdk.serialFilter&quot;));</span><a href="#l4.60"></a>
+<span id="l4.61" class="minusline">-        ObjectInputFilter filter = ObjectInputFilter.Config.getSerialFilter();</span><a href="#l4.61"></a>
+<span id="l4.62" class="plusline">+               System.getProperty(&quot;expected-&quot; + serialPropName,</span><a href="#l4.62"></a>
+<span id="l4.63" class="plusline">+                       Security.getProperty(serialPropName));</span><a href="#l4.63"></a>
+<span id="l4.64">         System.out.printf(&quot;global pattern: %s, filter: %s%n&quot;, pattern, filter);</span><a href="#l4.64"></a>
+<span id="l4.65" class="minusline">-        Assert.assertEquals(pattern, Objects.toString(filter, null),</span><a href="#l4.65"></a>
+<span id="l4.66" class="plusline">+        Assert.assertEquals(Objects.toString(filter, null), pattern,</span><a href="#l4.66"></a>
+<span id="l4.67">                 &quot;process-wide filter pattern does not match&quot;);</span><a href="#l4.67"></a>
+<span id="l4.68">     }</span><a href="#l4.68"></a>
+<span id="l4.69"> </span><a href="#l4.69"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- a/test/jdk/java/io/Serializable/serialFilter/security.policy	Mon Oct 21 16:52:21 2019 -0700</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/test/jdk/java/io/Serializable/serialFilter/security.policy	Tue Jan 07 03:41:33 2020 +0000</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -4,7 +4,7 @@</span><a href="#l5.3"></a>
+<span id="l5.4">         permission java.io.SerializablePermission &quot;serialFilter&quot;;</span><a href="#l5.4"></a>
+<span id="l5.5"> </span><a href="#l5.5"></a>
+<span id="l5.6">         // Permissions needed to run the test</span><a href="#l5.6"></a>
+<span id="l5.7" class="minusline">-        permission java.util.PropertyPermission &quot;*&quot;, &quot;read&quot;;</span><a href="#l5.7"></a>
+<span id="l5.8" class="plusline">+        permission java.util.PropertyPermission &quot;*&quot;, &quot;read,write&quot;;</span><a href="#l5.8"></a>
+<span id="l5.9">         permission java.io.FilePermission &quot;&lt;&lt;ALL FILES&gt;&gt;&quot;, &quot;read,write,delete&quot;;</span><a href="#l5.9"></a>
+<span id="l5.10">         permission java.lang.reflect.ReflectPermission &quot;suppressAccessChecks&quot;;</span><a href="#l5.10"></a>
+<span id="l5.11">         permission java.security.SecurityPermission &quot;*&quot;;</span><a href="#l5.11"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

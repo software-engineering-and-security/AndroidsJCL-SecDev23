@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     protected String paramsToString() {
+1        if (params == null) {
+2             return "";
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    protected String paramsToString() {
+1        if (params == null) {
+2            return "";
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     protected String paramsToString() {
+1        if (encodedParams == null) {
+2             return "";
+--------------------------------------------

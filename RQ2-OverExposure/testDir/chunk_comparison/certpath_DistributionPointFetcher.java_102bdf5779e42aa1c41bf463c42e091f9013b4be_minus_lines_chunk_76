@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         return getCRLs(selector, signFlag, prevKey, null, provider, certStores,
+1                reasonsMask, trustAnchors, validity, variant);
+2     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        return getCRLs(selector, signFlag, prevKey, null, provider, certStores,
+1                reasonsMask, trustAnchors, validity, variant);
+2    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         return getCRLs(selector, signFlag, prevKey, null, provider, certStores,
+1                reasonsMask, trustAnchors, validity, variant, null);
+2     }
+--------------------------------------------

@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         throws java.io.IOException, ClassNotFoundException {
+1        // Consume and ignore stream fields (currently zero).
+2        s.readFields();
+3 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        throws java.io.IOException, ClassNotFoundException {
+1        // Consume and ignore stream fields (currently zero).
+2        s.readFields();
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0         throws java.io.IOException, ClassNotFoundException {
+1        // Read in any hidden serialization magic
+2        s.defaultReadObject();
+3 
+--------------------------------------------

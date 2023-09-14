@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk-updates/jdk11u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk-updates/jdk11u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk-updates/jdk11u/static/mercurial.js"></script>
+
+<title>jdk-updates/jdk11u: 36975c9e57a3</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk-updates/jdk11u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/shortlog/36975c9e57a3">log</a></li>
+ <li><a href="/jdk-updates/jdk11u/graph/36975c9e57a3">graph</a></li>
+ <li><a href="/jdk-updates/jdk11u/tags">tags</a></li>
+ <li><a href="/jdk-updates/jdk11u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk-updates/jdk11u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk-updates/jdk11u/raw-rev/36975c9e57a3">raw</a></li>
+ <li><a href="/jdk-updates/jdk11u/file/36975c9e57a3">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk-updates/jdk11u/archive/36975c9e57a3.zip">zip</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/36975c9e57a3.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/36975c9e57a3.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk-updates">jdk-updates</a> / <a href="/jdk-updates/jdk11u">jdk11u</a> </h2>
+<h3>changeset 52899:36975c9e57a3   </h3>
+
+<form class="search" action="/jdk-updates/jdk11u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk-updates/jdk11u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8232424: More constrained algorithms
+Reviewed-by: jnimeh, rhalade, ahgross</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#120;&#117;&#101;&#108;&#101;&#105;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Mon, 28 Oct 2019 10:43:58 -0700</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk-updates/jdk11u/rev/21d16d57df51">21d16d57df51</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk-updates/jdk11u/rev/2b3ca2fc18a4">2b3ca2fc18a4</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk-updates/jdk11u/file/36975c9e57a3/src/java.base/share/classes/sun/security/ssl/HandshakeContext.java">src/java.base/share/classes/sun/security/ssl/HandshakeContext.java</a> <a href="/jdk-updates/jdk11u/file/36975c9e57a3/src/java.base/share/classes/sun/security/ssl/KeyShareExtension.java">src/java.base/share/classes/sun/security/ssl/KeyShareExtension.java</a> <a href="/jdk-updates/jdk11u/file/36975c9e57a3/src/java.base/share/classes/sun/security/ssl/SSLAlgorithmConstraints.java">src/java.base/share/classes/sun/security/ssl/SSLAlgorithmConstraints.java</a> <a href="/jdk-updates/jdk11u/file/36975c9e57a3/src/java.base/share/classes/sun/security/ssl/SSLConfiguration.java">src/java.base/share/classes/sun/security/ssl/SSLConfiguration.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     4 files changed, 26 insertions(+), 23 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/java.base/share/classes/sun/security/ssl/HandshakeContext.java</a></td>
+    <td class="diffstat-total" align="right">8</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:15.3846153846%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:15.3846153846%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/java.base/share/classes/sun/security/ssl/KeyShareExtension.java</a></td>
+    <td class="diffstat-total" align="right">6</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:11.5384615385%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:11.5384615385%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/java.base/share/classes/sun/security/ssl/SSLAlgorithmConstraints.java</a></td>
+    <td class="diffstat-total" align="right">26</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:53.8461538462%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:46.1538461538%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/java.base/share/classes/sun/security/ssl/SSLConfiguration.java</a></td>
+    <td class="diffstat-total" align="right">9</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:19.2307692308%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:15.3846153846%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/HandshakeContext.java	Wed Oct 23 17:03:07 2019 -0700</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/HandshakeContext.java	Mon Oct 28 10:43:58 2019 -0700</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -163,8 +163,10 @@</span><a href="#l1.3"></a>
+<span id="l1.4">         this.conContext = conContext;</span><a href="#l1.4"></a>
+<span id="l1.5">         this.sslConfig = (SSLConfiguration)conContext.sslConfig.clone();</span><a href="#l1.5"></a>
+<span id="l1.6"> </span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+        this.algorithmConstraints = new SSLAlgorithmConstraints(</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+                sslConfig.userSpecifiedAlgorithmConstraints);</span><a href="#l1.8"></a>
+<span id="l1.9">         this.activeProtocols = getActiveProtocols(sslConfig.enabledProtocols,</span><a href="#l1.9"></a>
+<span id="l1.10" class="minusline">-                sslConfig.enabledCipherSuites, sslConfig.algorithmConstraints);</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+                sslConfig.enabledCipherSuites, algorithmConstraints);</span><a href="#l1.11"></a>
+<span id="l1.12">         if (activeProtocols.isEmpty()) {</span><a href="#l1.12"></a>
+<span id="l1.13">             throw new SSLHandshakeException(</span><a href="#l1.13"></a>
+<span id="l1.14">                 &quot;No appropriate protocol (protocol is disabled or &quot; +</span><a href="#l1.14"></a>
+<span id="l1.15" class="atline">@@ -180,12 +182,10 @@</span><a href="#l1.15"></a>
+<span id="l1.16">         }</span><a href="#l1.16"></a>
+<span id="l1.17">         this.maximumActiveProtocol = maximumVersion;</span><a href="#l1.17"></a>
+<span id="l1.18">         this.activeCipherSuites = getActiveCipherSuites(this.activeProtocols,</span><a href="#l1.18"></a>
+<span id="l1.19" class="minusline">-                sslConfig.enabledCipherSuites, sslConfig.algorithmConstraints);</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+                sslConfig.enabledCipherSuites, algorithmConstraints);</span><a href="#l1.20"></a>
+<span id="l1.21">         if (activeCipherSuites.isEmpty()) {</span><a href="#l1.21"></a>
+<span id="l1.22">             throw new SSLHandshakeException(&quot;No appropriate cipher suite&quot;);</span><a href="#l1.22"></a>
+<span id="l1.23">         }</span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-        this.algorithmConstraints =</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-                new SSLAlgorithmConstraints(sslConfig.algorithmConstraints);</span><a href="#l1.25"></a>
+<span id="l1.26"> </span><a href="#l1.26"></a>
+<span id="l1.27">         this.handshakeConsumers = new LinkedHashMap&lt;&gt;();</span><a href="#l1.27"></a>
+<span id="l1.28">         this.handshakeProducers = new HashMap&lt;&gt;();</span><a href="#l1.28"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/KeyShareExtension.java	Wed Oct 23 17:03:07 2019 -0700</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/KeyShareExtension.java	Mon Oct 28 10:43:58 2019 -0700</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -344,7 +344,7 @@</span><a href="#l2.3"></a>
+<span id="l2.4">             for (KeyShareEntry entry : spec.clientShares) {</span><a href="#l2.4"></a>
+<span id="l2.5">                 NamedGroup ng = NamedGroup.valueOf(entry.namedGroupId);</span><a href="#l2.5"></a>
+<span id="l2.6">                 if (ng == null || !SupportedGroups.isActivatable(</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-                        shc.sslConfig.algorithmConstraints, ng)) {</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+                        shc.algorithmConstraints, ng)) {</span><a href="#l2.8"></a>
+<span id="l2.9">                     if (SSLLogger.isOn &amp;&amp; SSLLogger.isOn(&quot;ssl,handshake&quot;)) {</span><a href="#l2.9"></a>
+<span id="l2.10">                         SSLLogger.fine(</span><a href="#l2.10"></a>
+<span id="l2.11">                                 &quot;Ignore unsupported named group: &quot; +</span><a href="#l2.11"></a>
+<span id="l2.12" class="atline">@@ -630,7 +630,7 @@</span><a href="#l2.12"></a>
+<span id="l2.13">             KeyShareEntry keyShare = spec.serverShare;</span><a href="#l2.13"></a>
+<span id="l2.14">             NamedGroup ng = NamedGroup.valueOf(keyShare.namedGroupId);</span><a href="#l2.14"></a>
+<span id="l2.15">             if (ng == null || !SupportedGroups.isActivatable(</span><a href="#l2.15"></a>
+<span id="l2.16" class="minusline">-                    chc.sslConfig.algorithmConstraints, ng)) {</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+                    chc.algorithmConstraints, ng)) {</span><a href="#l2.17"></a>
+<span id="l2.18">                 throw chc.conContext.fatal(Alert.UNEXPECTED_MESSAGE,</span><a href="#l2.18"></a>
+<span id="l2.19">                         &quot;Unsupported named group: &quot; +</span><a href="#l2.19"></a>
+<span id="l2.20">                         NamedGroup.nameOf(keyShare.namedGroupId));</span><a href="#l2.20"></a>
+<span id="l2.21" class="atline">@@ -802,7 +802,7 @@</span><a href="#l2.21"></a>
+<span id="l2.22">             NamedGroup selectedGroup = null;</span><a href="#l2.22"></a>
+<span id="l2.23">             for (NamedGroup ng : shc.clientRequestedNamedGroups) {</span><a href="#l2.23"></a>
+<span id="l2.24">                 if (SupportedGroups.isActivatable(</span><a href="#l2.24"></a>
+<span id="l2.25" class="minusline">-                        shc.sslConfig.algorithmConstraints, ng)) {</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+                        shc.algorithmConstraints, ng)) {</span><a href="#l2.26"></a>
+<span id="l2.27">                     if (SSLLogger.isOn &amp;&amp; SSLLogger.isOn(&quot;ssl,handshake&quot;)) {</span><a href="#l2.27"></a>
+<span id="l2.28">                         SSLLogger.fine(</span><a href="#l2.28"></a>
+<span id="l2.29">                                 &quot;HelloRetryRequest selected named group: &quot; +</span><a href="#l2.29"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/SSLAlgorithmConstraints.java	Wed Oct 23 17:03:07 2019 -0700</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/SSLAlgorithmConstraints.java	Mon Oct 28 10:43:58 2019 -0700</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -71,21 +71,21 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> </span><a href="#l3.4"></a>
+<span id="l3.5">     SSLAlgorithmConstraints(SSLSocket socket,</span><a href="#l3.5"></a>
+<span id="l3.6">             boolean withDefaultCertPathConstraints) {</span><a href="#l3.6"></a>
+<span id="l3.7" class="minusline">-        this.userSpecifiedConstraints = getConstraints(socket);</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+        this.userSpecifiedConstraints = getUserSpecifiedConstraints(socket);</span><a href="#l3.8"></a>
+<span id="l3.9">         this.peerSpecifiedConstraints = null;</span><a href="#l3.9"></a>
+<span id="l3.10">         this.enabledX509DisabledAlgConstraints = withDefaultCertPathConstraints;</span><a href="#l3.10"></a>
+<span id="l3.11">     }</span><a href="#l3.11"></a>
+<span id="l3.12"> </span><a href="#l3.12"></a>
+<span id="l3.13">     SSLAlgorithmConstraints(SSLEngine engine,</span><a href="#l3.13"></a>
+<span id="l3.14">             boolean withDefaultCertPathConstraints) {</span><a href="#l3.14"></a>
+<span id="l3.15" class="minusline">-        this.userSpecifiedConstraints = getConstraints(engine);</span><a href="#l3.15"></a>
+<span id="l3.16" class="plusline">+        this.userSpecifiedConstraints = getUserSpecifiedConstraints(engine);</span><a href="#l3.16"></a>
+<span id="l3.17">         this.peerSpecifiedConstraints = null;</span><a href="#l3.17"></a>
+<span id="l3.18">         this.enabledX509DisabledAlgConstraints = withDefaultCertPathConstraints;</span><a href="#l3.18"></a>
+<span id="l3.19">     }</span><a href="#l3.19"></a>
+<span id="l3.20"> </span><a href="#l3.20"></a>
+<span id="l3.21">     SSLAlgorithmConstraints(SSLSocket socket, String[] supportedAlgorithms,</span><a href="#l3.21"></a>
+<span id="l3.22">             boolean withDefaultCertPathConstraints) {</span><a href="#l3.22"></a>
+<span id="l3.23" class="minusline">-        this.userSpecifiedConstraints = getConstraints(socket);</span><a href="#l3.23"></a>
+<span id="l3.24" class="plusline">+        this.userSpecifiedConstraints = getUserSpecifiedConstraints(socket);</span><a href="#l3.24"></a>
+<span id="l3.25">         this.peerSpecifiedConstraints =</span><a href="#l3.25"></a>
+<span id="l3.26">                 new SupportedSignatureAlgorithmConstraints(supportedAlgorithms);</span><a href="#l3.26"></a>
+<span id="l3.27">         this.enabledX509DisabledAlgConstraints = withDefaultCertPathConstraints;</span><a href="#l3.27"></a>
+<span id="l3.28" class="atline">@@ -93,13 +93,14 @@</span><a href="#l3.28"></a>
+<span id="l3.29"> </span><a href="#l3.29"></a>
+<span id="l3.30">     SSLAlgorithmConstraints(SSLEngine engine, String[] supportedAlgorithms,</span><a href="#l3.30"></a>
+<span id="l3.31">             boolean withDefaultCertPathConstraints) {</span><a href="#l3.31"></a>
+<span id="l3.32" class="minusline">-        this.userSpecifiedConstraints = getConstraints(engine);</span><a href="#l3.32"></a>
+<span id="l3.33" class="plusline">+        this.userSpecifiedConstraints = getUserSpecifiedConstraints(engine);</span><a href="#l3.33"></a>
+<span id="l3.34">         this.peerSpecifiedConstraints =</span><a href="#l3.34"></a>
+<span id="l3.35">                 new SupportedSignatureAlgorithmConstraints(supportedAlgorithms);</span><a href="#l3.35"></a>
+<span id="l3.36">         this.enabledX509DisabledAlgConstraints = withDefaultCertPathConstraints;</span><a href="#l3.36"></a>
+<span id="l3.37">     }</span><a href="#l3.37"></a>
+<span id="l3.38"> </span><a href="#l3.38"></a>
+<span id="l3.39" class="minusline">-    private static AlgorithmConstraints getConstraints(SSLEngine engine) {</span><a href="#l3.39"></a>
+<span id="l3.40" class="plusline">+    private static AlgorithmConstraints getUserSpecifiedConstraints(</span><a href="#l3.40"></a>
+<span id="l3.41" class="plusline">+            SSLEngine engine) {</span><a href="#l3.41"></a>
+<span id="l3.42">         if (engine != null) {</span><a href="#l3.42"></a>
+<span id="l3.43">             // Note that the KeyManager or TrustManager implementation may be</span><a href="#l3.43"></a>
+<span id="l3.44">             // not implemented in the same provider as SSLSocket/SSLEngine.</span><a href="#l3.44"></a>
+<span id="l3.45" class="atline">@@ -108,17 +109,18 @@</span><a href="#l3.45"></a>
+<span id="l3.46">                 HandshakeContext hc =</span><a href="#l3.46"></a>
+<span id="l3.47">                         ((SSLEngineImpl)engine).conContext.handshakeContext;</span><a href="#l3.47"></a>
+<span id="l3.48">                 if (hc != null) {</span><a href="#l3.48"></a>
+<span id="l3.49" class="minusline">-                    return hc.sslConfig.algorithmConstraints;</span><a href="#l3.49"></a>
+<span id="l3.50" class="plusline">+                    return hc.sslConfig.userSpecifiedAlgorithmConstraints;</span><a href="#l3.50"></a>
+<span id="l3.51">                 }</span><a href="#l3.51"></a>
+<span id="l3.52" class="minusline">-            } else {</span><a href="#l3.52"></a>
+<span id="l3.53" class="minusline">-                return engine.getSSLParameters().getAlgorithmConstraints();</span><a href="#l3.53"></a>
+<span id="l3.54">             }</span><a href="#l3.54"></a>
+<span id="l3.55" class="plusline">+</span><a href="#l3.55"></a>
+<span id="l3.56" class="plusline">+            return engine.getSSLParameters().getAlgorithmConstraints();</span><a href="#l3.56"></a>
+<span id="l3.57">         }</span><a href="#l3.57"></a>
+<span id="l3.58"> </span><a href="#l3.58"></a>
+<span id="l3.59">         return null;</span><a href="#l3.59"></a>
+<span id="l3.60">     }</span><a href="#l3.60"></a>
+<span id="l3.61"> </span><a href="#l3.61"></a>
+<span id="l3.62" class="minusline">-    private static AlgorithmConstraints getConstraints(SSLSocket socket) {</span><a href="#l3.62"></a>
+<span id="l3.63" class="plusline">+    private static AlgorithmConstraints getUserSpecifiedConstraints(</span><a href="#l3.63"></a>
+<span id="l3.64" class="plusline">+            SSLSocket socket) {</span><a href="#l3.64"></a>
+<span id="l3.65">         if (socket != null) {</span><a href="#l3.65"></a>
+<span id="l3.66">             // Note that the KeyManager or TrustManager implementation may be</span><a href="#l3.66"></a>
+<span id="l3.67">             // not implemented in the same provider as SSLSocket/SSLEngine.</span><a href="#l3.67"></a>
+<span id="l3.68" class="atline">@@ -127,11 +129,11 @@</span><a href="#l3.68"></a>
+<span id="l3.69">                 HandshakeContext hc =</span><a href="#l3.69"></a>
+<span id="l3.70">                         ((SSLSocketImpl)socket).conContext.handshakeContext;</span><a href="#l3.70"></a>
+<span id="l3.71">                 if (hc != null) {</span><a href="#l3.71"></a>
+<span id="l3.72" class="minusline">-                    return hc.sslConfig.algorithmConstraints;</span><a href="#l3.72"></a>
+<span id="l3.73" class="plusline">+                    return hc.sslConfig.userSpecifiedAlgorithmConstraints;</span><a href="#l3.73"></a>
+<span id="l3.74">                 }</span><a href="#l3.74"></a>
+<span id="l3.75" class="minusline">-            } else {</span><a href="#l3.75"></a>
+<span id="l3.76" class="minusline">-                return socket.getSSLParameters().getAlgorithmConstraints();</span><a href="#l3.76"></a>
+<span id="l3.77">             }</span><a href="#l3.77"></a>
+<span id="l3.78" class="plusline">+</span><a href="#l3.78"></a>
+<span id="l3.79" class="plusline">+            return socket.getSSLParameters().getAlgorithmConstraints();</span><a href="#l3.79"></a>
+<span id="l3.80">         }</span><a href="#l3.80"></a>
+<span id="l3.81"> </span><a href="#l3.81"></a>
+<span id="l3.82">         return null;</span><a href="#l3.82"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/SSLConfiguration.java	Wed Oct 23 17:03:07 2019 -0700</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/SSLConfiguration.java	Mon Oct 28 10:43:58 2019 -0700</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -52,7 +52,7 @@</span><a href="#l4.3"></a>
+<span id="l4.4">  */</span><a href="#l4.4"></a>
+<span id="l4.5"> final class SSLConfiguration implements Cloneable {</span><a href="#l4.5"></a>
+<span id="l4.6">     // configurations with SSLParameters</span><a href="#l4.6"></a>
+<span id="l4.7" class="minusline">-    AlgorithmConstraints        algorithmConstraints;</span><a href="#l4.7"></a>
+<span id="l4.8" class="plusline">+    AlgorithmConstraints        userSpecifiedAlgorithmConstraints;</span><a href="#l4.8"></a>
+<span id="l4.9">     List&lt;ProtocolVersion&gt;       enabledProtocols;</span><a href="#l4.9"></a>
+<span id="l4.10">     List&lt;CipherSuite&gt;           enabledCipherSuites;</span><a href="#l4.10"></a>
+<span id="l4.11">     ClientAuthType              clientAuthType;</span><a href="#l4.11"></a>
+<span id="l4.12" class="atline">@@ -117,7 +117,8 @@</span><a href="#l4.12"></a>
+<span id="l4.13">     SSLConfiguration(SSLContextImpl sslContext, boolean isClientMode) {</span><a href="#l4.13"></a>
+<span id="l4.14"> </span><a href="#l4.14"></a>
+<span id="l4.15">         // Configurations with SSLParameters, default values.</span><a href="#l4.15"></a>
+<span id="l4.16" class="minusline">-        this.algorithmConstraints = SSLAlgorithmConstraints.DEFAULT;</span><a href="#l4.16"></a>
+<span id="l4.17" class="plusline">+        this.userSpecifiedAlgorithmConstraints =</span><a href="#l4.17"></a>
+<span id="l4.18" class="plusline">+                SSLAlgorithmConstraints.DEFAULT;</span><a href="#l4.18"></a>
+<span id="l4.19">         this.enabledProtocols =</span><a href="#l4.19"></a>
+<span id="l4.20">                 sslContext.getDefaultProtocolVersions(!isClientMode);</span><a href="#l4.20"></a>
+<span id="l4.21">         this.enabledCipherSuites =</span><a href="#l4.21"></a>
+<span id="l4.22" class="atline">@@ -154,7 +155,7 @@</span><a href="#l4.22"></a>
+<span id="l4.23">     SSLParameters getSSLParameters() {</span><a href="#l4.23"></a>
+<span id="l4.24">         SSLParameters params = new SSLParameters();</span><a href="#l4.24"></a>
+<span id="l4.25"> </span><a href="#l4.25"></a>
+<span id="l4.26" class="minusline">-        params.setAlgorithmConstraints(this.algorithmConstraints);</span><a href="#l4.26"></a>
+<span id="l4.27" class="plusline">+        params.setAlgorithmConstraints(this.userSpecifiedAlgorithmConstraints);</span><a href="#l4.27"></a>
+<span id="l4.28">         params.setProtocols(ProtocolVersion.toStringArray(enabledProtocols));</span><a href="#l4.28"></a>
+<span id="l4.29">         params.setCipherSuites(CipherSuite.namesOf(enabledCipherSuites));</span><a href="#l4.29"></a>
+<span id="l4.30">         switch (this.clientAuthType) {</span><a href="#l4.30"></a>
+<span id="l4.31" class="atline">@@ -194,7 +195,7 @@</span><a href="#l4.31"></a>
+<span id="l4.32">     void setSSLParameters(SSLParameters params) {</span><a href="#l4.32"></a>
+<span id="l4.33">         AlgorithmConstraints ac = params.getAlgorithmConstraints();</span><a href="#l4.33"></a>
+<span id="l4.34">         if (ac != null) {</span><a href="#l4.34"></a>
+<span id="l4.35" class="minusline">-            this.algorithmConstraints = ac;</span><a href="#l4.35"></a>
+<span id="l4.36" class="plusline">+            this.userSpecifiedAlgorithmConstraints = ac;</span><a href="#l4.36"></a>
+<span id="l4.37">         }   // otherwise, use the default value</span><a href="#l4.37"></a>
+<span id="l4.38"> </span><a href="#l4.38"></a>
+<span id="l4.39">         String[] sa = params.getCipherSuites();</span><a href="#l4.39"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

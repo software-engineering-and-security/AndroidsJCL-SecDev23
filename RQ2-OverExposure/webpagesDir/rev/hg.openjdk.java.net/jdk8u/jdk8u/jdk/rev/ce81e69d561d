@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: ce81e69d561d</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/ce81e69d561d">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/ce81e69d561d">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/ce81e69d561d">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/ce81e69d561d">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/ce81e69d561d.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/ce81e69d561d.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/ce81e69d561d.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 9399:ce81e69d561d   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8033618: Correct logging output
+Reviewed-by: ksrini, alanb, ahgross</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#107;&#105;&#122;&#117;&#110;&#101;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 07 Feb 2014 20:03:54 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/8ff2b797fd7e">8ff2b797fd7e</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/e48a0e01e6e1">e48a0e01e6e1</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/ce81e69d561d/src/share/native/com/sun/java/util/jar/pack/unpack.cpp">src/share/native/com/sun/java/util/jar/pack/unpack.cpp</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 2 insertions(+), 34 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/native/com/sun/java/util/jar/pack/unpack.cpp</a></td>
+    <td class="diffstat-total" align="right">36</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:5.55555555556%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:94.4444444444%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/native/com/sun/java/util/jar/pack/unpack.cpp	Fri Feb 07 12:11:30 2014 -0800</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/native/com/sun/java/util/jar/pack/unpack.cpp	Fri Feb 07 20:03:54 2014 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 2001, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 2001, 2014, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -5166,39 +5166,7 @@</span><a href="#l1.10"></a>
+<span id="l1.11">   } else if (log_file[0] != '\0' &amp;&amp; (errstrm = fopen(log_file,&quot;a+&quot;)) != NULL) {</span><a href="#l1.11"></a>
+<span id="l1.12">     return;</span><a href="#l1.12"></a>
+<span id="l1.13">   } else {</span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-    char log_file_name[PATH_MAX+100];</span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-    char tmpdir[PATH_MAX];</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-#ifdef WIN32</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-    int n = GetTempPath(PATH_MAX,tmpdir); //API returns with trailing '\'</span><a href="#l1.17"></a>
+<span id="l1.18" class="minusline">-    if (n &lt; 1 || n &gt; PATH_MAX) {</span><a href="#l1.18"></a>
+<span id="l1.19" class="minusline">-      sprintf(tmpdir,&quot;C:\\&quot;);</span><a href="#l1.19"></a>
+<span id="l1.20" class="minusline">-    }</span><a href="#l1.20"></a>
+<span id="l1.21" class="minusline">-    sprintf(log_file_name, &quot;%sunpack.log&quot;, tmpdir);</span><a href="#l1.21"></a>
+<span id="l1.22" class="minusline">-#else</span><a href="#l1.22"></a>
+<span id="l1.23" class="minusline">-    sprintf(tmpdir,&quot;/tmp&quot;);</span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-    sprintf(log_file_name, &quot;/tmp/unpack.log&quot;);</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-#endif</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-    if ((errstrm = fopen(log_file_name, &quot;a+&quot;)) != NULL) {</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-      log_file = errstrm_name = saveStr(log_file_name);</span><a href="#l1.27"></a>
+<span id="l1.28" class="minusline">-      return ;</span><a href="#l1.28"></a>
+<span id="l1.29" class="minusline">-    }</span><a href="#l1.29"></a>
+<span id="l1.30" class="minusline">-</span><a href="#l1.30"></a>
+<span id="l1.31" class="minusline">-    char *tname = tempnam(tmpdir,&quot;#upkg&quot;);</span><a href="#l1.31"></a>
+<span id="l1.32" class="minusline">-    if (tname == NULL) return;</span><a href="#l1.32"></a>
+<span id="l1.33" class="minusline">-    sprintf(log_file_name, &quot;%s&quot;, tname);</span><a href="#l1.33"></a>
+<span id="l1.34" class="minusline">-    ::free(tname);</span><a href="#l1.34"></a>
+<span id="l1.35" class="minusline">-    if ((errstrm = fopen(log_file_name, &quot;a+&quot;)) != NULL) {</span><a href="#l1.35"></a>
+<span id="l1.36" class="minusline">-      log_file = errstrm_name = saveStr(log_file_name);</span><a href="#l1.36"></a>
+<span id="l1.37" class="minusline">-      return ;</span><a href="#l1.37"></a>
+<span id="l1.38" class="minusline">-    }</span><a href="#l1.38"></a>
+<span id="l1.39" class="minusline">-#ifndef WIN32</span><a href="#l1.39"></a>
+<span id="l1.40" class="minusline">-    sprintf(log_file_name, &quot;/dev/null&quot;);</span><a href="#l1.40"></a>
+<span id="l1.41" class="minusline">-    // On windows most likely it will fail.</span><a href="#l1.41"></a>
+<span id="l1.42" class="minusline">-    if ( (errstrm = fopen(log_file_name, &quot;a+&quot;)) != NULL) {</span><a href="#l1.42"></a>
+<span id="l1.43" class="minusline">-      log_file = errstrm_name = saveStr(log_file_name);</span><a href="#l1.43"></a>
+<span id="l1.44" class="minusline">-      return ;</span><a href="#l1.44"></a>
+<span id="l1.45" class="minusline">-    }</span><a href="#l1.45"></a>
+<span id="l1.46" class="minusline">-#endif</span><a href="#l1.46"></a>
+<span id="l1.47" class="plusline">+    fprintf(stderr, &quot;Can not open log file %s\n&quot;, log_file);</span><a href="#l1.47"></a>
+<span id="l1.48">     // Last resort</span><a href="#l1.48"></a>
+<span id="l1.49">     // (Do not use stdout, since it might be jarout-&gt;jarfp.)</span><a href="#l1.49"></a>
+<span id="l1.50">     errstrm = stderr;</span><a href="#l1.50"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

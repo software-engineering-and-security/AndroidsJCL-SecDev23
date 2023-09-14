@@ -1,0 +1,22 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                                               Date validity,
+1                                              String variant)
+2         throws CertStoreException
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                                              Date validity,
+1                                              String variant)
+2        throws CertStoreException
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                                               Date validity,
+1                                              String variant,
+2                                              TrustAnchor anchor)
+3         throws CertStoreException
+--------------------------------------------

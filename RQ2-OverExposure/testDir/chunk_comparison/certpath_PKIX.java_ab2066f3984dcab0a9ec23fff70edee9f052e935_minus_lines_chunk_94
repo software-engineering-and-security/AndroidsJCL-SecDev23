@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        Timestamp timestamp() {
+2            return timestamp;
+3        }
+4
+5         String variant() {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        Timestamp timestamp() {
+2            return timestamp;
+3        }
+4    }
+5
+---------------------------------------------
+Differences:	['4', '5']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

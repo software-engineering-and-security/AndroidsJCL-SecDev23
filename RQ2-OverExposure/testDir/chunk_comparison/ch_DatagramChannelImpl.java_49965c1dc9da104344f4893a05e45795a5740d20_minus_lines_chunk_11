@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                     // flush any packets already received.
+1                    boolean blocking = false;
+2                     synchronized (blockingLock()) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                    // flush any packets already received.
+1                    boolean blocking = false;
+2                    synchronized (blockingLock()) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

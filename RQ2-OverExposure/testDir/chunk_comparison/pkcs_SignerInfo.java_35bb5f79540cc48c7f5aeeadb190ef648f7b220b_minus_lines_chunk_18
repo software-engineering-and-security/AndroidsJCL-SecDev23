@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1                if (messageDigest.length != computedMessageDigest.length)
+2                     return null;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1                if (messageDigest.length != computedMessageDigest.length)
+2                    return null;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1                if (!MessageDigest.isEqual(messageDigest, computedMessageDigest)) {
+2                     return null;
+--------------------------------------------

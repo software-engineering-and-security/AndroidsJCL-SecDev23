@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 /*
+1 * Copyright (c) 1997, 2017, Oracle and/or its affiliates. All rights reserved.
+2  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0/*
+1 * Copyright (c) 1997, 2017, Oracle and/or its affiliates. All rights reserved.
+2 * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 /*
+1 * Copyright (c) 1997, 2020, Oracle and/or its affiliates. All rights reserved.
+2  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+--------------------------------------------

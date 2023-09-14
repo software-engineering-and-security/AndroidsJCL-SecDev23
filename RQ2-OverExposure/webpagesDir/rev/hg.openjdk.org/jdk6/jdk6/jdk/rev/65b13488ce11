@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: 65b13488ce11</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/65b13488ce11">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/65b13488ce11">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/65b13488ce11">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/65b13488ce11">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/65b13488ce11.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/65b13488ce11.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/65b13488ce11.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 178:65b13488ce11   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6660049: Synth Region.uiToRegionMap/lowerCaseNameMap are mutable statics
+Reviewed-by: hawtin</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#97;&#108;&#101;&#110;&#107;&#111;&#118;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 18 Jun 2009 14:03:02 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/f237aaa46752">f237aaa46752</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/605a9e62b09d">605a9e62b09d</a> <a href="/jdk6/jdk6/jdk/rev/f29b9b542bec">f29b9b542bec</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/65b13488ce11/src/share/classes/javax/swing/plaf/synth/Region.java">src/share/classes/javax/swing/plaf/synth/Region.java</a> <a href="/jdk6/jdk6/jdk/file/65b13488ce11/test/javax/swing/plaf/synth/Test6660049.java">test/javax/swing/plaf/synth/Test6660049.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 288 insertions(+), 129 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/javax/swing/plaf/synth/Region.java</a></td>
+    <td class="diffstat-total" align="right">294</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:56.1224489796%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:43.8775510204%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">test/javax/swing/plaf/synth/Test6660049.java</a></td>
+    <td class="diffstat-total" align="right">123</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:41.8367346939%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/synth/Region.java	Fri Jun 12 12:42:51 2009 -0700</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/synth/Region.java	Thu Jun 18 14:03:02 2009 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright 2002-2004 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright 2002-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -24,8 +24,13 @@</span><a href="#l1.10"></a>
+<span id="l1.11">  */</span><a href="#l1.11"></a>
+<span id="l1.12"> package javax.swing.plaf.synth;</span><a href="#l1.12"></a>
+<span id="l1.13"> </span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-import javax.swing.*;</span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-import java.util.*;</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+import sun.awt.AppContext;</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+import java.util.HashMap;</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+import java.util.Locale;</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+import java.util.Map;</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+import javax.swing.JComponent;</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+import javax.swing.UIDefaults;</span><a href="#l1.22"></a>
+<span id="l1.23"> </span><a href="#l1.23"></a>
+<span id="l1.24"> /**</span><a href="#l1.24"></a>
+<span id="l1.25">  * A distinct rendering area of a Swing component.  A component may</span><a href="#l1.25"></a>
+<span id="l1.26" class="atline">@@ -67,8 +72,8 @@</span><a href="#l1.26"></a>
+<span id="l1.27">  * @author Scott Violet</span><a href="#l1.27"></a>
+<span id="l1.28">  */</span><a href="#l1.28"></a>
+<span id="l1.29"> public class Region {</span><a href="#l1.29"></a>
+<span id="l1.30" class="minusline">-    private static final Map uiToRegionMap = new HashMap();</span><a href="#l1.30"></a>
+<span id="l1.31" class="minusline">-    private static final Map lowerCaseNameMap = new HashMap();</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+    private static final Object UI_TO_REGION_MAP_KEY = new Object();</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+    private static final Object LOWER_CASE_NAME_MAP_KEY = new Object();</span><a href="#l1.33"></a>
+<span id="l1.34"> </span><a href="#l1.34"></a>
+<span id="l1.35">     /**</span><a href="#l1.35"></a>
+<span id="l1.36">      * ArrowButton's are special types of buttons that also render a</span><a href="#l1.36"></a>
+<span id="l1.37" class="atline">@@ -77,400 +82,433 @@</span><a href="#l1.37"></a>
+<span id="l1.38">      * To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.38"></a>
+<span id="l1.39">      * &lt;code&gt;ArrowButton&lt;/code&gt;.</span><a href="#l1.39"></a>
+<span id="l1.40">      */</span><a href="#l1.40"></a>
+<span id="l1.41" class="minusline">-    public static final Region ARROW_BUTTON = new Region(&quot;ArrowButton&quot;,</span><a href="#l1.41"></a>
+<span id="l1.42" class="minusline">-                                                         &quot;ArrowButtonUI&quot;);</span><a href="#l1.42"></a>
+<span id="l1.43" class="plusline">+    public static final Region ARROW_BUTTON = new Region(&quot;ArrowButton&quot;, false);</span><a href="#l1.43"></a>
+<span id="l1.44"> </span><a href="#l1.44"></a>
+<span id="l1.45">     /**</span><a href="#l1.45"></a>
+<span id="l1.46">      * Button region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.46"></a>
+<span id="l1.47">      * &lt;code&gt;Button&lt;/code&gt;.</span><a href="#l1.47"></a>
+<span id="l1.48">      */</span><a href="#l1.48"></a>
+<span id="l1.49" class="minusline">-    public static final Region BUTTON = new Region(&quot;Button&quot;,</span><a href="#l1.49"></a>
+<span id="l1.50" class="minusline">-                                                   &quot;ButtonUI&quot;);</span><a href="#l1.50"></a>
+<span id="l1.51" class="plusline">+    public static final Region BUTTON = new Region(&quot;Button&quot;, false);</span><a href="#l1.51"></a>
+<span id="l1.52"> </span><a href="#l1.52"></a>
+<span id="l1.53">     /**</span><a href="#l1.53"></a>
+<span id="l1.54">      * CheckBox region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.54"></a>
+<span id="l1.55">      * &lt;code&gt;CheckBox&lt;/code&gt;.</span><a href="#l1.55"></a>
+<span id="l1.56">      */</span><a href="#l1.56"></a>
+<span id="l1.57" class="minusline">-    public static final Region CHECK_BOX = new Region(&quot;CheckBox&quot;,</span><a href="#l1.57"></a>
+<span id="l1.58" class="minusline">-                                                   &quot;CheckBoxUI&quot;);</span><a href="#l1.58"></a>
+<span id="l1.59" class="plusline">+    public static final Region CHECK_BOX = new Region(&quot;CheckBox&quot;, false);</span><a href="#l1.59"></a>
+<span id="l1.60"> </span><a href="#l1.60"></a>
+<span id="l1.61">     /**</span><a href="#l1.61"></a>
+<span id="l1.62">      * CheckBoxMenuItem region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.62"></a>
+<span id="l1.63">      * the name &lt;code&gt;CheckBoxMenuItem&lt;/code&gt;.</span><a href="#l1.63"></a>
+<span id="l1.64">      */</span><a href="#l1.64"></a>
+<span id="l1.65" class="minusline">-    public static final Region CHECK_BOX_MENU_ITEM = new Region(</span><a href="#l1.65"></a>
+<span id="l1.66" class="minusline">-                                     &quot;CheckBoxMenuItem&quot;, &quot;CheckBoxMenuItemUI&quot;);</span><a href="#l1.66"></a>
+<span id="l1.67" class="plusline">+    public static final Region CHECK_BOX_MENU_ITEM = new Region(&quot;CheckBoxMenuItem&quot;, false);</span><a href="#l1.67"></a>
+<span id="l1.68"> </span><a href="#l1.68"></a>
+<span id="l1.69">     /**</span><a href="#l1.69"></a>
+<span id="l1.70">      * ColorChooser region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.70"></a>
+<span id="l1.71">      * the name &lt;code&gt;ColorChooser&lt;/code&gt;.</span><a href="#l1.71"></a>
+<span id="l1.72">      */</span><a href="#l1.72"></a>
+<span id="l1.73" class="minusline">-    public static final Region COLOR_CHOOSER = new Region(</span><a href="#l1.73"></a>
+<span id="l1.74" class="minusline">-                                     &quot;ColorChooser&quot;, &quot;ColorChooserUI&quot;);</span><a href="#l1.74"></a>
+<span id="l1.75" class="plusline">+    public static final Region COLOR_CHOOSER = new Region(&quot;ColorChooser&quot;, false);</span><a href="#l1.75"></a>
+<span id="l1.76"> </span><a href="#l1.76"></a>
+<span id="l1.77">     /**</span><a href="#l1.77"></a>
+<span id="l1.78">      * ComboBox region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.78"></a>
+<span id="l1.79">      * the name &lt;code&gt;ComboBox&lt;/code&gt;.</span><a href="#l1.79"></a>
+<span id="l1.80">      */</span><a href="#l1.80"></a>
+<span id="l1.81" class="minusline">-    public static final Region COMBO_BOX = new Region(</span><a href="#l1.81"></a>
+<span id="l1.82" class="minusline">-                                     &quot;ComboBox&quot;, &quot;ComboBoxUI&quot;);</span><a href="#l1.82"></a>
+<span id="l1.83" class="plusline">+    public static final Region COMBO_BOX = new Region(&quot;ComboBox&quot;, false);</span><a href="#l1.83"></a>
+<span id="l1.84"> </span><a href="#l1.84"></a>
+<span id="l1.85">     /**</span><a href="#l1.85"></a>
+<span id="l1.86">      * DesktopPane region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.86"></a>
+<span id="l1.87">      * the name &lt;code&gt;DesktopPane&lt;/code&gt;.</span><a href="#l1.87"></a>
+<span id="l1.88">      */</span><a href="#l1.88"></a>
+<span id="l1.89" class="minusline">-    public static final Region DESKTOP_PANE = new Region(&quot;DesktopPane&quot;,</span><a href="#l1.89"></a>
+<span id="l1.90" class="minusline">-                                                         &quot;DesktopPaneUI&quot;);</span><a href="#l1.90"></a>
+<span id="l1.91" class="plusline">+    public static final Region DESKTOP_PANE = new Region(&quot;DesktopPane&quot;, false);</span><a href="#l1.91"></a>
+<span id="l1.92" class="plusline">+</span><a href="#l1.92"></a>
+<span id="l1.93">     /**</span><a href="#l1.93"></a>
+<span id="l1.94">      * DesktopIcon region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.94"></a>
+<span id="l1.95">      * the name &lt;code&gt;DesktopIcon&lt;/code&gt;.</span><a href="#l1.95"></a>
+<span id="l1.96">      */</span><a href="#l1.96"></a>
+<span id="l1.97" class="minusline">-    public static final Region DESKTOP_ICON = new Region(&quot;DesktopIcon&quot;,</span><a href="#l1.97"></a>
+<span id="l1.98" class="minusline">-                                                         &quot;DesktopIconUI&quot;);</span><a href="#l1.98"></a>
+<span id="l1.99" class="plusline">+    public static final Region DESKTOP_ICON = new Region(&quot;DesktopIcon&quot;, false);</span><a href="#l1.99"></a>
+<span id="l1.100"> </span><a href="#l1.100"></a>
+<span id="l1.101">     /**</span><a href="#l1.101"></a>
+<span id="l1.102">      * EditorPane region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.102"></a>
+<span id="l1.103">      * the name &lt;code&gt;EditorPane&lt;/code&gt;.</span><a href="#l1.103"></a>
+<span id="l1.104">      */</span><a href="#l1.104"></a>
+<span id="l1.105" class="minusline">-    public static final Region EDITOR_PANE = new Region(&quot;EditorPane&quot;,</span><a href="#l1.105"></a>
+<span id="l1.106" class="minusline">-                                                        &quot;EditorPaneUI&quot;);</span><a href="#l1.106"></a>
+<span id="l1.107" class="plusline">+    public static final Region EDITOR_PANE = new Region(&quot;EditorPane&quot;, false);</span><a href="#l1.107"></a>
+<span id="l1.108"> </span><a href="#l1.108"></a>
+<span id="l1.109">     /**</span><a href="#l1.109"></a>
+<span id="l1.110">      * FileChooser region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.110"></a>
+<span id="l1.111">      * the name &lt;code&gt;FileChooser&lt;/code&gt;.</span><a href="#l1.111"></a>
+<span id="l1.112">      */</span><a href="#l1.112"></a>
+<span id="l1.113" class="minusline">-    public static final Region FILE_CHOOSER = new Region(&quot;FileChooser&quot;,</span><a href="#l1.113"></a>
+<span id="l1.114" class="minusline">-                                                         &quot;FileChooserUI&quot;);</span><a href="#l1.114"></a>
+<span id="l1.115" class="plusline">+    public static final Region FILE_CHOOSER = new Region(&quot;FileChooser&quot;, false);</span><a href="#l1.115"></a>
+<span id="l1.116"> </span><a href="#l1.116"></a>
+<span id="l1.117">     /**</span><a href="#l1.117"></a>
+<span id="l1.118">      * FormattedTextField region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.118"></a>
+<span id="l1.119">      * the name &lt;code&gt;FormattedTextField&lt;/code&gt;.</span><a href="#l1.119"></a>
+<span id="l1.120">      */</span><a href="#l1.120"></a>
+<span id="l1.121" class="minusline">-    public static final Region FORMATTED_TEXT_FIELD = new Region(</span><a href="#l1.121"></a>
+<span id="l1.122" class="minusline">-                            &quot;FormattedTextField&quot;, &quot;FormattedTextFieldUI&quot;);</span><a href="#l1.122"></a>
+<span id="l1.123" class="plusline">+    public static final Region FORMATTED_TEXT_FIELD = new Region(&quot;FormattedTextField&quot;, false);</span><a href="#l1.123"></a>
+<span id="l1.124"> </span><a href="#l1.124"></a>
+<span id="l1.125">     /**</span><a href="#l1.125"></a>
+<span id="l1.126">      * InternalFrame region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.126"></a>
+<span id="l1.127">      * the name &lt;code&gt;InternalFrame&lt;/code&gt;.</span><a href="#l1.127"></a>
+<span id="l1.128">      */</span><a href="#l1.128"></a>
+<span id="l1.129" class="minusline">-    public static final Region INTERNAL_FRAME = new Region(&quot;InternalFrame&quot;,</span><a href="#l1.129"></a>
+<span id="l1.130" class="minusline">-                                                           &quot;InternalFrameUI&quot;);</span><a href="#l1.130"></a>
+<span id="l1.131" class="plusline">+    public static final Region INTERNAL_FRAME = new Region(&quot;InternalFrame&quot;, false);</span><a href="#l1.131"></a>
+<span id="l1.132" class="plusline">+</span><a href="#l1.132"></a>
+<span id="l1.133">     /**</span><a href="#l1.133"></a>
+<span id="l1.134">      * TitlePane of an InternalFrame. The TitlePane typically</span><a href="#l1.134"></a>
+<span id="l1.135">      * shows a menu, title, widgets to manipulate the internal frame.</span><a href="#l1.135"></a>
+<span id="l1.136">      * To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.136"></a>
+<span id="l1.137">      * &lt;code&gt;InternalFrameTitlePane&lt;/code&gt;.</span><a href="#l1.137"></a>
+<span id="l1.138">      */</span><a href="#l1.138"></a>
+<span id="l1.139" class="minusline">-    public static final Region INTERNAL_FRAME_TITLE_PANE =</span><a href="#l1.139"></a>
+<span id="l1.140" class="minusline">-                         new Region(&quot;InternalFrameTitlePane&quot;,</span><a href="#l1.140"></a>
+<span id="l1.141" class="minusline">-                                    &quot;InternalFrameTitlePaneUI&quot;);</span><a href="#l1.141"></a>
+<span id="l1.142" class="plusline">+    public static final Region INTERNAL_FRAME_TITLE_PANE = new Region(&quot;InternalFrameTitlePane&quot;, false);</span><a href="#l1.142"></a>
+<span id="l1.143"> </span><a href="#l1.143"></a>
+<span id="l1.144">     /**</span><a href="#l1.144"></a>
+<span id="l1.145">      * Label region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.145"></a>
+<span id="l1.146">      * &lt;code&gt;Label&lt;/code&gt;.</span><a href="#l1.146"></a>
+<span id="l1.147">      */</span><a href="#l1.147"></a>
+<span id="l1.148" class="minusline">-    public static final Region LABEL = new Region(&quot;Label&quot;, &quot;LabelUI&quot;);</span><a href="#l1.148"></a>
+<span id="l1.149" class="plusline">+    public static final Region LABEL = new Region(&quot;Label&quot;, false);</span><a href="#l1.149"></a>
+<span id="l1.150"> </span><a href="#l1.150"></a>
+<span id="l1.151">     /**</span><a href="#l1.151"></a>
+<span id="l1.152">      * List region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.152"></a>
+<span id="l1.153">      * &lt;code&gt;List&lt;/code&gt;.</span><a href="#l1.153"></a>
+<span id="l1.154">      */</span><a href="#l1.154"></a>
+<span id="l1.155" class="minusline">-    public static final Region LIST = new Region(&quot;List&quot;, &quot;ListUI&quot;);</span><a href="#l1.155"></a>
+<span id="l1.156" class="plusline">+    public static final Region LIST = new Region(&quot;List&quot;, false);</span><a href="#l1.156"></a>
+<span id="l1.157"> </span><a href="#l1.157"></a>
+<span id="l1.158">     /**</span><a href="#l1.158"></a>
+<span id="l1.159">      * Menu region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.159"></a>
+<span id="l1.160">      * &lt;code&gt;Menu&lt;/code&gt;.</span><a href="#l1.160"></a>
+<span id="l1.161">      */</span><a href="#l1.161"></a>
+<span id="l1.162" class="minusline">-    public static final Region MENU = new Region(&quot;Menu&quot;, &quot;MenuUI&quot;);</span><a href="#l1.162"></a>
+<span id="l1.163" class="plusline">+    public static final Region MENU = new Region(&quot;Menu&quot;, false);</span><a href="#l1.163"></a>
+<span id="l1.164"> </span><a href="#l1.164"></a>
+<span id="l1.165">     /**</span><a href="#l1.165"></a>
+<span id="l1.166">      * MenuBar region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.166"></a>
+<span id="l1.167">      * &lt;code&gt;MenuBar&lt;/code&gt;.</span><a href="#l1.167"></a>
+<span id="l1.168">      */</span><a href="#l1.168"></a>
+<span id="l1.169" class="minusline">-    public static final Region MENU_BAR = new Region(&quot;MenuBar&quot;, &quot;MenuBarUI&quot;);</span><a href="#l1.169"></a>
+<span id="l1.170" class="plusline">+    public static final Region MENU_BAR = new Region(&quot;MenuBar&quot;, false);</span><a href="#l1.170"></a>
+<span id="l1.171"> </span><a href="#l1.171"></a>
+<span id="l1.172">     /**</span><a href="#l1.172"></a>
+<span id="l1.173">      * MenuItem region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.173"></a>
+<span id="l1.174">      * &lt;code&gt;MenuItem&lt;/code&gt;.</span><a href="#l1.174"></a>
+<span id="l1.175">      */</span><a href="#l1.175"></a>
+<span id="l1.176" class="minusline">-    public static final Region MENU_ITEM = new Region(&quot;MenuItem&quot;,&quot;MenuItemUI&quot;);</span><a href="#l1.176"></a>
+<span id="l1.177" class="plusline">+    public static final Region MENU_ITEM = new Region(&quot;MenuItem&quot;, false);</span><a href="#l1.177"></a>
+<span id="l1.178"> </span><a href="#l1.178"></a>
+<span id="l1.179">     /**</span><a href="#l1.179"></a>
+<span id="l1.180">      * Accelerator region of a MenuItem. To bind a style to this</span><a href="#l1.180"></a>
+<span id="l1.181">      * &lt;code&gt;Region&lt;/code&gt; use the name &lt;code&gt;MenuItemAccelerator&lt;/code&gt;.</span><a href="#l1.181"></a>
+<span id="l1.182">      */</span><a href="#l1.182"></a>
+<span id="l1.183" class="minusline">-    public static final Region MENU_ITEM_ACCELERATOR = new Region(</span><a href="#l1.183"></a>
+<span id="l1.184" class="minusline">-                                         &quot;MenuItemAccelerator&quot;);</span><a href="#l1.184"></a>
+<span id="l1.185" class="plusline">+    public static final Region MENU_ITEM_ACCELERATOR = new Region(&quot;MenuItemAccelerator&quot;, true);</span><a href="#l1.185"></a>
+<span id="l1.186"> </span><a href="#l1.186"></a>
+<span id="l1.187">     /**</span><a href="#l1.187"></a>
+<span id="l1.188">      * OptionPane region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.188"></a>
+<span id="l1.189">      * the name &lt;code&gt;OptionPane&lt;/code&gt;.</span><a href="#l1.189"></a>
+<span id="l1.190">      */</span><a href="#l1.190"></a>
+<span id="l1.191" class="minusline">-    public static final Region OPTION_PANE = new Region(&quot;OptionPane&quot;,</span><a href="#l1.191"></a>
+<span id="l1.192" class="minusline">-                                                        &quot;OptionPaneUI&quot;);</span><a href="#l1.192"></a>
+<span id="l1.193" class="plusline">+    public static final Region OPTION_PANE = new Region(&quot;OptionPane&quot;, false);</span><a href="#l1.193"></a>
+<span id="l1.194"> </span><a href="#l1.194"></a>
+<span id="l1.195">     /**</span><a href="#l1.195"></a>
+<span id="l1.196">      * Panel region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.196"></a>
+<span id="l1.197">      * &lt;code&gt;Panel&lt;/code&gt;.</span><a href="#l1.197"></a>
+<span id="l1.198">      */</span><a href="#l1.198"></a>
+<span id="l1.199" class="minusline">-    public static final Region PANEL = new Region(&quot;Panel&quot;, &quot;PanelUI&quot;);</span><a href="#l1.199"></a>
+<span id="l1.200" class="plusline">+    public static final Region PANEL = new Region(&quot;Panel&quot;, false);</span><a href="#l1.200"></a>
+<span id="l1.201"> </span><a href="#l1.201"></a>
+<span id="l1.202">     /**</span><a href="#l1.202"></a>
+<span id="l1.203">      * PasswordField region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.203"></a>
+<span id="l1.204">      * the name &lt;code&gt;PasswordField&lt;/code&gt;.</span><a href="#l1.204"></a>
+<span id="l1.205">      */</span><a href="#l1.205"></a>
+<span id="l1.206" class="minusline">-    public static final Region PASSWORD_FIELD = new Region(&quot;PasswordField&quot;,</span><a href="#l1.206"></a>
+<span id="l1.207" class="minusline">-                                                           &quot;PasswordFieldUI&quot;);</span><a href="#l1.207"></a>
+<span id="l1.208" class="plusline">+    public static final Region PASSWORD_FIELD = new Region(&quot;PasswordField&quot;, false);</span><a href="#l1.208"></a>
+<span id="l1.209"> </span><a href="#l1.209"></a>
+<span id="l1.210">     /**</span><a href="#l1.210"></a>
+<span id="l1.211">      * PopupMenu region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.211"></a>
+<span id="l1.212">      * the name &lt;code&gt;PopupMenu&lt;/code&gt;.</span><a href="#l1.212"></a>
+<span id="l1.213">      */</span><a href="#l1.213"></a>
+<span id="l1.214" class="minusline">-    public static final Region POPUP_MENU = new Region(&quot;PopupMenu&quot;,</span><a href="#l1.214"></a>
+<span id="l1.215" class="minusline">-                                                       &quot;PopupMenuUI&quot;);</span><a href="#l1.215"></a>
+<span id="l1.216" class="plusline">+    public static final Region POPUP_MENU = new Region(&quot;PopupMenu&quot;, false);</span><a href="#l1.216"></a>
+<span id="l1.217"> </span><a href="#l1.217"></a>
+<span id="l1.218">     /**</span><a href="#l1.218"></a>
+<span id="l1.219">      * PopupMenuSeparator region. To bind a style to this &lt;code&gt;Region&lt;/code&gt;</span><a href="#l1.219"></a>
+<span id="l1.220">      * use the name &lt;code&gt;PopupMenuSeparator&lt;/code&gt;.</span><a href="#l1.220"></a>
+<span id="l1.221">      */</span><a href="#l1.221"></a>
+<span id="l1.222" class="minusline">-    public static final Region POPUP_MENU_SEPARATOR = new Region(</span><a href="#l1.222"></a>
+<span id="l1.223" class="minusline">-                           &quot;PopupMenuSeparator&quot;, &quot;PopupMenuSeparatorUI&quot;);</span><a href="#l1.223"></a>
+<span id="l1.224" class="plusline">+    public static final Region POPUP_MENU_SEPARATOR = new Region(&quot;PopupMenuSeparator&quot;, false);</span><a href="#l1.224"></a>
+<span id="l1.225"> </span><a href="#l1.225"></a>
+<span id="l1.226">     /**</span><a href="#l1.226"></a>
+<span id="l1.227">      * ProgressBar region. To bind a style to this &lt;code&gt;Region&lt;/code&gt;</span><a href="#l1.227"></a>
+<span id="l1.228">      * use the name &lt;code&gt;ProgressBar&lt;/code&gt;.</span><a href="#l1.228"></a>
+<span id="l1.229">      */</span><a href="#l1.229"></a>
+<span id="l1.230" class="minusline">-    public static final Region PROGRESS_BAR = new Region(&quot;ProgressBar&quot;,</span><a href="#l1.230"></a>
+<span id="l1.231" class="minusline">-                                                         &quot;ProgressBarUI&quot;);</span><a href="#l1.231"></a>
+<span id="l1.232" class="plusline">+    public static final Region PROGRESS_BAR = new Region(&quot;ProgressBar&quot;, false);</span><a href="#l1.232"></a>
+<span id="l1.233"> </span><a href="#l1.233"></a>
+<span id="l1.234">     /**</span><a href="#l1.234"></a>
+<span id="l1.235">      * RadioButton region. To bind a style to this &lt;code&gt;Region&lt;/code&gt;</span><a href="#l1.235"></a>
+<span id="l1.236">      * use the name &lt;code&gt;RadioButton&lt;/code&gt;.</span><a href="#l1.236"></a>
+<span id="l1.237">      */</span><a href="#l1.237"></a>
+<span id="l1.238" class="minusline">-    public static final Region RADIO_BUTTON = new Region(</span><a href="#l1.238"></a>
+<span id="l1.239" class="minusline">-                               &quot;RadioButton&quot;, &quot;RadioButtonUI&quot;);</span><a href="#l1.239"></a>
+<span id="l1.240" class="plusline">+    public static final Region RADIO_BUTTON = new Region(&quot;RadioButton&quot;, false);</span><a href="#l1.240"></a>
+<span id="l1.241"> </span><a href="#l1.241"></a>
+<span id="l1.242">     /**</span><a href="#l1.242"></a>
+<span id="l1.243">      * RegionButtonMenuItem region. To bind a style to this &lt;code&gt;Region&lt;/code&gt;</span><a href="#l1.243"></a>
+<span id="l1.244">      * use the name &lt;code&gt;RadioButtonMenuItem&lt;/code&gt;.</span><a href="#l1.244"></a>
+<span id="l1.245">      */</span><a href="#l1.245"></a>
+<span id="l1.246" class="minusline">-    public static final Region RADIO_BUTTON_MENU_ITEM = new Region(</span><a href="#l1.246"></a>
+<span id="l1.247" class="minusline">-                               &quot;RadioButtonMenuItem&quot;, &quot;RadioButtonMenuItemUI&quot;);</span><a href="#l1.247"></a>
+<span id="l1.248" class="plusline">+    public static final Region RADIO_BUTTON_MENU_ITEM = new Region(&quot;RadioButtonMenuItem&quot;, false);</span><a href="#l1.248"></a>
+<span id="l1.249"> </span><a href="#l1.249"></a>
+<span id="l1.250">     /**</span><a href="#l1.250"></a>
+<span id="l1.251">      * RootPane region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.251"></a>
+<span id="l1.252">      * the name &lt;code&gt;RootPane&lt;/code&gt;.</span><a href="#l1.252"></a>
+<span id="l1.253">      */</span><a href="#l1.253"></a>
+<span id="l1.254" class="minusline">-    public static final Region ROOT_PANE = new Region(&quot;RootPane&quot;,</span><a href="#l1.254"></a>
+<span id="l1.255" class="minusline">-                                                      &quot;RootPaneUI&quot;);</span><a href="#l1.255"></a>
+<span id="l1.256" class="plusline">+    public static final Region ROOT_PANE = new Region(&quot;RootPane&quot;, false);</span><a href="#l1.256"></a>
+<span id="l1.257"> </span><a href="#l1.257"></a>
+<span id="l1.258">     /**</span><a href="#l1.258"></a>
+<span id="l1.259">      * ScrollBar region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.259"></a>
+<span id="l1.260">      * the name &lt;code&gt;ScrollBar&lt;/code&gt;.</span><a href="#l1.260"></a>
+<span id="l1.261">      */</span><a href="#l1.261"></a>
+<span id="l1.262" class="minusline">-    public static final Region SCROLL_BAR = new Region(&quot;ScrollBar&quot;,</span><a href="#l1.262"></a>
+<span id="l1.263" class="minusline">-                                                       &quot;ScrollBarUI&quot;);</span><a href="#l1.263"></a>
+<span id="l1.264" class="plusline">+    public static final Region SCROLL_BAR = new Region(&quot;ScrollBar&quot;, false);</span><a href="#l1.264"></a>
+<span id="l1.265" class="plusline">+</span><a href="#l1.265"></a>
+<span id="l1.266">     /**</span><a href="#l1.266"></a>
+<span id="l1.267">      * Track of the ScrollBar. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.267"></a>
+<span id="l1.268">      * the name &lt;code&gt;ScrollBarTrack&lt;/code&gt;.</span><a href="#l1.268"></a>
+<span id="l1.269">      */</span><a href="#l1.269"></a>
+<span id="l1.270" class="minusline">-    public static final Region SCROLL_BAR_TRACK = new Region(&quot;ScrollBarTrack&quot;);</span><a href="#l1.270"></a>
+<span id="l1.271" class="plusline">+    public static final Region SCROLL_BAR_TRACK = new Region(&quot;ScrollBarTrack&quot;, true);</span><a href="#l1.271"></a>
+<span id="l1.272" class="plusline">+</span><a href="#l1.272"></a>
+<span id="l1.273">     /**</span><a href="#l1.273"></a>
+<span id="l1.274">      * Thumb of the ScrollBar. The thumb is the region of the ScrollBar</span><a href="#l1.274"></a>
+<span id="l1.275">      * that gives a graphical depiction of what percentage of the View is</span><a href="#l1.275"></a>
+<span id="l1.276">      * currently visible. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.276"></a>
+<span id="l1.277">      * the name &lt;code&gt;ScrollBarThumb&lt;/code&gt;.</span><a href="#l1.277"></a>
+<span id="l1.278">      */</span><a href="#l1.278"></a>
+<span id="l1.279" class="minusline">-    public static final Region SCROLL_BAR_THUMB = new Region(&quot;ScrollBarThumb&quot;);</span><a href="#l1.279"></a>
+<span id="l1.280" class="plusline">+    public static final Region SCROLL_BAR_THUMB = new Region(&quot;ScrollBarThumb&quot;, true);</span><a href="#l1.280"></a>
+<span id="l1.281"> </span><a href="#l1.281"></a>
+<span id="l1.282">     /**</span><a href="#l1.282"></a>
+<span id="l1.283">      * ScrollPane region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.283"></a>
+<span id="l1.284">      * the name &lt;code&gt;ScrollPane&lt;/code&gt;.</span><a href="#l1.284"></a>
+<span id="l1.285">      */</span><a href="#l1.285"></a>
+<span id="l1.286" class="minusline">-    public static final Region SCROLL_PANE = new Region(&quot;ScrollPane&quot;,</span><a href="#l1.286"></a>
+<span id="l1.287" class="minusline">-                                                        &quot;ScrollPaneUI&quot;);</span><a href="#l1.287"></a>
+<span id="l1.288" class="plusline">+    public static final Region SCROLL_PANE = new Region(&quot;ScrollPane&quot;, false);</span><a href="#l1.288"></a>
+<span id="l1.289"> </span><a href="#l1.289"></a>
+<span id="l1.290">     /**</span><a href="#l1.290"></a>
+<span id="l1.291">      * Separator region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.291"></a>
+<span id="l1.292">      * the name &lt;code&gt;Separator&lt;/code&gt;.</span><a href="#l1.292"></a>
+<span id="l1.293">      */</span><a href="#l1.293"></a>
+<span id="l1.294" class="minusline">-    public static final Region SEPARATOR = new Region(&quot;Separator&quot;,</span><a href="#l1.294"></a>
+<span id="l1.295" class="minusline">-                                                      &quot;SeparatorUI&quot;);</span><a href="#l1.295"></a>
+<span id="l1.296" class="plusline">+    public static final Region SEPARATOR = new Region(&quot;Separator&quot;, false);</span><a href="#l1.296"></a>
+<span id="l1.297"> </span><a href="#l1.297"></a>
+<span id="l1.298">     /**</span><a href="#l1.298"></a>
+<span id="l1.299">      * Slider region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.299"></a>
+<span id="l1.300">      * the name &lt;code&gt;Slider&lt;/code&gt;.</span><a href="#l1.300"></a>
+<span id="l1.301">      */</span><a href="#l1.301"></a>
+<span id="l1.302" class="minusline">-    public static final Region SLIDER = new Region(&quot;Slider&quot;, &quot;SliderUI&quot;);</span><a href="#l1.302"></a>
+<span id="l1.303" class="plusline">+    public static final Region SLIDER = new Region(&quot;Slider&quot;, false);</span><a href="#l1.303"></a>
+<span id="l1.304" class="plusline">+</span><a href="#l1.304"></a>
+<span id="l1.305">     /**</span><a href="#l1.305"></a>
+<span id="l1.306">      * Track of the Slider. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.306"></a>
+<span id="l1.307">      * the name &lt;code&gt;SliderTrack&lt;/code&gt;.</span><a href="#l1.307"></a>
+<span id="l1.308">      */</span><a href="#l1.308"></a>
+<span id="l1.309" class="minusline">-    public static final Region SLIDER_TRACK = new Region(&quot;SliderTrack&quot;);</span><a href="#l1.309"></a>
+<span id="l1.310" class="plusline">+    public static final Region SLIDER_TRACK = new Region(&quot;SliderTrack&quot;, true);</span><a href="#l1.310"></a>
+<span id="l1.311" class="plusline">+</span><a href="#l1.311"></a>
+<span id="l1.312">     /**</span><a href="#l1.312"></a>
+<span id="l1.313">      * Thumb of the Slider. The thumb of the Slider identifies the current</span><a href="#l1.313"></a>
+<span id="l1.314">      * value. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.314"></a>
+<span id="l1.315">      * &lt;code&gt;SliderThumb&lt;/code&gt;.</span><a href="#l1.315"></a>
+<span id="l1.316">      */</span><a href="#l1.316"></a>
+<span id="l1.317" class="minusline">-    public static final Region SLIDER_THUMB = new Region(&quot;SliderThumb&quot;);</span><a href="#l1.317"></a>
+<span id="l1.318" class="plusline">+    public static final Region SLIDER_THUMB = new Region(&quot;SliderThumb&quot;, true);</span><a href="#l1.318"></a>
+<span id="l1.319"> </span><a href="#l1.319"></a>
+<span id="l1.320">     /**</span><a href="#l1.320"></a>
+<span id="l1.321">      * Spinner region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.321"></a>
+<span id="l1.322">      * &lt;code&gt;Spinner&lt;/code&gt;.</span><a href="#l1.322"></a>
+<span id="l1.323">      */</span><a href="#l1.323"></a>
+<span id="l1.324" class="minusline">-    public static final Region SPINNER = new Region(&quot;Spinner&quot;, &quot;SpinnerUI&quot;);</span><a href="#l1.324"></a>
+<span id="l1.325" class="plusline">+    public static final Region SPINNER = new Region(&quot;Spinner&quot;, false);</span><a href="#l1.325"></a>
+<span id="l1.326"> </span><a href="#l1.326"></a>
+<span id="l1.327">     /**</span><a href="#l1.327"></a>
+<span id="l1.328">      * SplitPane region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.328"></a>
+<span id="l1.329">      * &lt;code&gt;SplitPane&lt;/code&gt;.</span><a href="#l1.329"></a>
+<span id="l1.330">      */</span><a href="#l1.330"></a>
+<span id="l1.331" class="minusline">-    public static final Region SPLIT_PANE = new Region(&quot;SplitPane&quot;,</span><a href="#l1.331"></a>
+<span id="l1.332" class="minusline">-                                                      &quot;SplitPaneUI&quot;);</span><a href="#l1.332"></a>
+<span id="l1.333" class="plusline">+    public static final Region SPLIT_PANE = new Region(&quot;SplitPane&quot;, false);</span><a href="#l1.333"></a>
+<span id="l1.334"> </span><a href="#l1.334"></a>
+<span id="l1.335">     /**</span><a href="#l1.335"></a>
+<span id="l1.336">      * Divider of the SplitPane. To bind a style to this &lt;code&gt;Region&lt;/code&gt;</span><a href="#l1.336"></a>
+<span id="l1.337">      * use the name &lt;code&gt;SplitPaneDivider&lt;/code&gt;.</span><a href="#l1.337"></a>
+<span id="l1.338">      */</span><a href="#l1.338"></a>
+<span id="l1.339" class="minusline">-    public static final Region SPLIT_PANE_DIVIDER = new Region(</span><a href="#l1.339"></a>
+<span id="l1.340" class="minusline">-                                        &quot;SplitPaneDivider&quot;);</span><a href="#l1.340"></a>
+<span id="l1.341" class="plusline">+    public static final Region SPLIT_PANE_DIVIDER = new Region(&quot;SplitPaneDivider&quot;, true);</span><a href="#l1.341"></a>
+<span id="l1.342"> </span><a href="#l1.342"></a>
+<span id="l1.343">     /**</span><a href="#l1.343"></a>
+<span id="l1.344">      * TabbedPane region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.344"></a>
+<span id="l1.345">      * the name &lt;code&gt;TabbedPane&lt;/code&gt;.</span><a href="#l1.345"></a>
+<span id="l1.346">      */</span><a href="#l1.346"></a>
+<span id="l1.347" class="minusline">-    public static final Region TABBED_PANE = new Region(&quot;TabbedPane&quot;,</span><a href="#l1.347"></a>
+<span id="l1.348" class="minusline">-                                                        &quot;TabbedPaneUI&quot;);</span><a href="#l1.348"></a>
+<span id="l1.349" class="plusline">+    public static final Region TABBED_PANE = new Region(&quot;TabbedPane&quot;, false);</span><a href="#l1.349"></a>
+<span id="l1.350" class="plusline">+</span><a href="#l1.350"></a>
+<span id="l1.351">     /**</span><a href="#l1.351"></a>
+<span id="l1.352">      * Region of a TabbedPane for one tab. To bind a style to this</span><a href="#l1.352"></a>
+<span id="l1.353">      * &lt;code&gt;Region&lt;/code&gt; use the name &lt;code&gt;TabbedPaneTab&lt;/code&gt;.</span><a href="#l1.353"></a>
+<span id="l1.354">      */</span><a href="#l1.354"></a>
+<span id="l1.355" class="minusline">-    public static final Region TABBED_PANE_TAB = new Region(&quot;TabbedPaneTab&quot;);</span><a href="#l1.355"></a>
+<span id="l1.356" class="plusline">+    public static final Region TABBED_PANE_TAB = new Region(&quot;TabbedPaneTab&quot;, true);</span><a href="#l1.356"></a>
+<span id="l1.357" class="plusline">+</span><a href="#l1.357"></a>
+<span id="l1.358">     /**</span><a href="#l1.358"></a>
+<span id="l1.359">      * Region of a TabbedPane containing the tabs. To bind a style to this</span><a href="#l1.359"></a>
+<span id="l1.360">      * &lt;code&gt;Region&lt;/code&gt; use the name &lt;code&gt;TabbedPaneTabArea&lt;/code&gt;.</span><a href="#l1.360"></a>
+<span id="l1.361">      */</span><a href="#l1.361"></a>
+<span id="l1.362" class="minusline">-    public static final Region TABBED_PANE_TAB_AREA =</span><a href="#l1.362"></a>
+<span id="l1.363" class="minusline">-                                 new Region(&quot;TabbedPaneTabArea&quot;);</span><a href="#l1.363"></a>
+<span id="l1.364" class="plusline">+    public static final Region TABBED_PANE_TAB_AREA = new Region(&quot;TabbedPaneTabArea&quot;, true);</span><a href="#l1.364"></a>
+<span id="l1.365" class="plusline">+</span><a href="#l1.365"></a>
+<span id="l1.366">     /**</span><a href="#l1.366"></a>
+<span id="l1.367">      * Region of a TabbedPane containing the content. To bind a style to this</span><a href="#l1.367"></a>
+<span id="l1.368">      * &lt;code&gt;Region&lt;/code&gt; use the name &lt;code&gt;TabbedPaneContent&lt;/code&gt;.</span><a href="#l1.368"></a>
+<span id="l1.369">      */</span><a href="#l1.369"></a>
+<span id="l1.370" class="minusline">-    public static final Region TABBED_PANE_CONTENT =</span><a href="#l1.370"></a>
+<span id="l1.371" class="minusline">-                                 new Region(&quot;TabbedPaneContent&quot;);</span><a href="#l1.371"></a>
+<span id="l1.372" class="plusline">+    public static final Region TABBED_PANE_CONTENT = new Region(&quot;TabbedPaneContent&quot;, true);</span><a href="#l1.372"></a>
+<span id="l1.373"> </span><a href="#l1.373"></a>
+<span id="l1.374">     /**</span><a href="#l1.374"></a>
+<span id="l1.375">      * Table region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.375"></a>
+<span id="l1.376">      * the name &lt;code&gt;Table&lt;/code&gt;.</span><a href="#l1.376"></a>
+<span id="l1.377">      */</span><a href="#l1.377"></a>
+<span id="l1.378" class="minusline">-    public static final Region TABLE = new Region(&quot;Table&quot;, &quot;TableUI&quot;);</span><a href="#l1.378"></a>
+<span id="l1.379" class="plusline">+    public static final Region TABLE = new Region(&quot;Table&quot;, false);</span><a href="#l1.379"></a>
+<span id="l1.380"> </span><a href="#l1.380"></a>
+<span id="l1.381">     /**</span><a href="#l1.381"></a>
+<span id="l1.382">      * TableHeader region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.382"></a>
+<span id="l1.383">      * the name &lt;code&gt;TableHeader&lt;/code&gt;.</span><a href="#l1.383"></a>
+<span id="l1.384">      */</span><a href="#l1.384"></a>
+<span id="l1.385" class="minusline">-    public static final Region TABLE_HEADER = new Region(&quot;TableHeader&quot;,</span><a href="#l1.385"></a>
+<span id="l1.386" class="minusline">-                                                         &quot;TableHeaderUI&quot;);</span><a href="#l1.386"></a>
+<span id="l1.387" class="plusline">+    public static final Region TABLE_HEADER = new Region(&quot;TableHeader&quot;, false);</span><a href="#l1.387"></a>
+<span id="l1.388" class="plusline">+</span><a href="#l1.388"></a>
+<span id="l1.389">     /**</span><a href="#l1.389"></a>
+<span id="l1.390">      * TextArea region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.390"></a>
+<span id="l1.391">      * the name &lt;code&gt;TextArea&lt;/code&gt;.</span><a href="#l1.391"></a>
+<span id="l1.392">      */</span><a href="#l1.392"></a>
+<span id="l1.393" class="minusline">-    public static final Region TEXT_AREA = new Region(&quot;TextArea&quot;,</span><a href="#l1.393"></a>
+<span id="l1.394" class="minusline">-                                                      &quot;TextAreaUI&quot;);</span><a href="#l1.394"></a>
+<span id="l1.395" class="plusline">+    public static final Region TEXT_AREA = new Region(&quot;TextArea&quot;, false);</span><a href="#l1.395"></a>
+<span id="l1.396"> </span><a href="#l1.396"></a>
+<span id="l1.397">     /**</span><a href="#l1.397"></a>
+<span id="l1.398">      * TextField region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.398"></a>
+<span id="l1.399">      * the name &lt;code&gt;TextField&lt;/code&gt;.</span><a href="#l1.399"></a>
+<span id="l1.400">      */</span><a href="#l1.400"></a>
+<span id="l1.401" class="minusline">-    public static final Region TEXT_FIELD = new Region(&quot;TextField&quot;,</span><a href="#l1.401"></a>
+<span id="l1.402" class="minusline">-                                                       &quot;TextFieldUI&quot;);</span><a href="#l1.402"></a>
+<span id="l1.403" class="plusline">+    public static final Region TEXT_FIELD = new Region(&quot;TextField&quot;, false);</span><a href="#l1.403"></a>
+<span id="l1.404"> </span><a href="#l1.404"></a>
+<span id="l1.405">     /**</span><a href="#l1.405"></a>
+<span id="l1.406">      * TextPane region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.406"></a>
+<span id="l1.407">      * the name &lt;code&gt;TextPane&lt;/code&gt;.</span><a href="#l1.407"></a>
+<span id="l1.408">      */</span><a href="#l1.408"></a>
+<span id="l1.409" class="minusline">-    public static final Region TEXT_PANE = new Region(&quot;TextPane&quot;,</span><a href="#l1.409"></a>
+<span id="l1.410" class="minusline">-                                                      &quot;TextPaneUI&quot;);</span><a href="#l1.410"></a>
+<span id="l1.411" class="plusline">+    public static final Region TEXT_PANE = new Region(&quot;TextPane&quot;, false);</span><a href="#l1.411"></a>
+<span id="l1.412"> </span><a href="#l1.412"></a>
+<span id="l1.413">     /**</span><a href="#l1.413"></a>
+<span id="l1.414">      * ToggleButton region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.414"></a>
+<span id="l1.415">      * the name &lt;code&gt;ToggleButton&lt;/code&gt;.</span><a href="#l1.415"></a>
+<span id="l1.416">      */</span><a href="#l1.416"></a>
+<span id="l1.417" class="minusline">-    public static final Region TOGGLE_BUTTON = new Region(&quot;ToggleButton&quot;,</span><a href="#l1.417"></a>
+<span id="l1.418" class="minusline">-                                                          &quot;ToggleButtonUI&quot;);</span><a href="#l1.418"></a>
+<span id="l1.419" class="plusline">+    public static final Region TOGGLE_BUTTON = new Region(&quot;ToggleButton&quot;, false);</span><a href="#l1.419"></a>
+<span id="l1.420"> </span><a href="#l1.420"></a>
+<span id="l1.421">     /**</span><a href="#l1.421"></a>
+<span id="l1.422">      * ToolBar region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.422"></a>
+<span id="l1.423">      * the name &lt;code&gt;ToolBar&lt;/code&gt;.</span><a href="#l1.423"></a>
+<span id="l1.424">      */</span><a href="#l1.424"></a>
+<span id="l1.425" class="minusline">-    public static final Region TOOL_BAR = new Region(&quot;ToolBar&quot;, &quot;ToolBarUI&quot;);</span><a href="#l1.425"></a>
+<span id="l1.426" class="plusline">+    public static final Region TOOL_BAR = new Region(&quot;ToolBar&quot;, false);</span><a href="#l1.426"></a>
+<span id="l1.427" class="plusline">+</span><a href="#l1.427"></a>
+<span id="l1.428">     /**</span><a href="#l1.428"></a>
+<span id="l1.429">      * Region of the ToolBar containing the content. To bind a style to this</span><a href="#l1.429"></a>
+<span id="l1.430">      * &lt;code&gt;Region&lt;/code&gt; use the name &lt;code&gt;ToolBarContent&lt;/code&gt;.</span><a href="#l1.430"></a>
+<span id="l1.431">      */</span><a href="#l1.431"></a>
+<span id="l1.432" class="minusline">-    public static final Region TOOL_BAR_CONTENT = new Region(&quot;ToolBarContent&quot;);</span><a href="#l1.432"></a>
+<span id="l1.433" class="plusline">+    public static final Region TOOL_BAR_CONTENT = new Region(&quot;ToolBarContent&quot;, true);</span><a href="#l1.433"></a>
+<span id="l1.434" class="plusline">+</span><a href="#l1.434"></a>
+<span id="l1.435">     /**</span><a href="#l1.435"></a>
+<span id="l1.436">      * Region for the Window containing the ToolBar. To bind a style to this</span><a href="#l1.436"></a>
+<span id="l1.437">      * &lt;code&gt;Region&lt;/code&gt; use the name &lt;code&gt;ToolBarDragWindow&lt;/code&gt;.</span><a href="#l1.437"></a>
+<span id="l1.438">      */</span><a href="#l1.438"></a>
+<span id="l1.439" class="minusline">-    public static final Region TOOL_BAR_DRAG_WINDOW = new Region(</span><a href="#l1.439"></a>
+<span id="l1.440" class="minusline">-                                        &quot;ToolBarDragWindow&quot;, null, false);</span><a href="#l1.440"></a>
+<span id="l1.441" class="plusline">+    public static final Region TOOL_BAR_DRAG_WINDOW = new Region(&quot;ToolBarDragWindow&quot;, false);</span><a href="#l1.441"></a>
+<span id="l1.442"> </span><a href="#l1.442"></a>
+<span id="l1.443">     /**</span><a href="#l1.443"></a>
+<span id="l1.444">      * ToolTip region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.444"></a>
+<span id="l1.445">      * the name &lt;code&gt;ToolTip&lt;/code&gt;.</span><a href="#l1.445"></a>
+<span id="l1.446">      */</span><a href="#l1.446"></a>
+<span id="l1.447" class="minusline">-    public static final Region TOOL_TIP = new Region(&quot;ToolTip&quot;, &quot;ToolTipUI&quot;);</span><a href="#l1.447"></a>
+<span id="l1.448" class="plusline">+    public static final Region TOOL_TIP = new Region(&quot;ToolTip&quot;, false);</span><a href="#l1.448"></a>
+<span id="l1.449"> </span><a href="#l1.449"></a>
+<span id="l1.450">     /**</span><a href="#l1.450"></a>
+<span id="l1.451">      * ToolBar separator region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.451"></a>
+<span id="l1.452">      * the name &lt;code&gt;ToolBarSeparator&lt;/code&gt;.</span><a href="#l1.452"></a>
+<span id="l1.453">      */</span><a href="#l1.453"></a>
+<span id="l1.454" class="minusline">-    public static final Region TOOL_BAR_SEPARATOR = new Region(</span><a href="#l1.454"></a>
+<span id="l1.455" class="minusline">-                          &quot;ToolBarSeparator&quot;, &quot;ToolBarSeparatorUI&quot;);</span><a href="#l1.455"></a>
+<span id="l1.456" class="plusline">+    public static final Region TOOL_BAR_SEPARATOR = new Region(&quot;ToolBarSeparator&quot;, false);</span><a href="#l1.456"></a>
+<span id="l1.457"> </span><a href="#l1.457"></a>
+<span id="l1.458">     /**</span><a href="#l1.458"></a>
+<span id="l1.459">      * Tree region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use the name</span><a href="#l1.459"></a>
+<span id="l1.460">      * &lt;code&gt;Tree&lt;/code&gt;.</span><a href="#l1.460"></a>
+<span id="l1.461">      */</span><a href="#l1.461"></a>
+<span id="l1.462" class="minusline">-    public static final Region TREE = new Region(&quot;Tree&quot;, &quot;TreeUI&quot;);</span><a href="#l1.462"></a>
+<span id="l1.463" class="plusline">+    public static final Region TREE = new Region(&quot;Tree&quot;, false);</span><a href="#l1.463"></a>
+<span id="l1.464" class="plusline">+</span><a href="#l1.464"></a>
+<span id="l1.465">     /**</span><a href="#l1.465"></a>
+<span id="l1.466">      * Region of the Tree for one cell. To bind a style to this</span><a href="#l1.466"></a>
+<span id="l1.467">      * &lt;code&gt;Region&lt;/code&gt; use the name &lt;code&gt;TreeCell&lt;/code&gt;.</span><a href="#l1.467"></a>
+<span id="l1.468">      */</span><a href="#l1.468"></a>
+<span id="l1.469" class="minusline">-    public static final Region TREE_CELL = new Region(&quot;TreeCell&quot;);</span><a href="#l1.469"></a>
+<span id="l1.470" class="plusline">+    public static final Region TREE_CELL = new Region(&quot;TreeCell&quot;, true);</span><a href="#l1.470"></a>
+<span id="l1.471"> </span><a href="#l1.471"></a>
+<span id="l1.472">     /**</span><a href="#l1.472"></a>
+<span id="l1.473">      * Viewport region. To bind a style to this &lt;code&gt;Region&lt;/code&gt; use</span><a href="#l1.473"></a>
+<span id="l1.474">      * the name &lt;code&gt;Viewport&lt;/code&gt;.</span><a href="#l1.474"></a>
+<span id="l1.475">      */</span><a href="#l1.475"></a>
+<span id="l1.476" class="minusline">-    public static final Region VIEWPORT = new Region(&quot;Viewport&quot;, &quot;ViewportUI&quot;);</span><a href="#l1.476"></a>
+<span id="l1.477" class="minusline">-</span><a href="#l1.477"></a>
+<span id="l1.478" class="plusline">+    public static final Region VIEWPORT = new Region(&quot;Viewport&quot;, false);</span><a href="#l1.478"></a>
+<span id="l1.479"> </span><a href="#l1.479"></a>
+<span id="l1.480" class="minusline">-    private String name;</span><a href="#l1.480"></a>
+<span id="l1.481" class="minusline">-    private boolean subregion;</span><a href="#l1.481"></a>
+<span id="l1.482" class="plusline">+    private static Map&lt;String, Region&gt; getUItoRegionMap() {</span><a href="#l1.482"></a>
+<span id="l1.483" class="plusline">+        AppContext context = AppContext.getAppContext();</span><a href="#l1.483"></a>
+<span id="l1.484" class="plusline">+        Map&lt;String, Region&gt; map = (Map&lt;String, Region&gt;) context.get(UI_TO_REGION_MAP_KEY);</span><a href="#l1.484"></a>
+<span id="l1.485" class="plusline">+        if (map == null) {</span><a href="#l1.485"></a>
+<span id="l1.486" class="plusline">+            map = new HashMap&lt;String, Region&gt;();</span><a href="#l1.486"></a>
+<span id="l1.487" class="plusline">+            map.put(&quot;ArrowButtonUI&quot;, ARROW_BUTTON);</span><a href="#l1.487"></a>
+<span id="l1.488" class="plusline">+            map.put(&quot;ButtonUI&quot;, BUTTON);</span><a href="#l1.488"></a>
+<span id="l1.489" class="plusline">+            map.put(&quot;CheckBoxUI&quot;, CHECK_BOX);</span><a href="#l1.489"></a>
+<span id="l1.490" class="plusline">+            map.put(&quot;CheckBoxMenuItemUI&quot;, CHECK_BOX_MENU_ITEM);</span><a href="#l1.490"></a>
+<span id="l1.491" class="plusline">+            map.put(&quot;ColorChooserUI&quot;, COLOR_CHOOSER);</span><a href="#l1.491"></a>
+<span id="l1.492" class="plusline">+            map.put(&quot;ComboBoxUI&quot;, COMBO_BOX);</span><a href="#l1.492"></a>
+<span id="l1.493" class="plusline">+            map.put(&quot;DesktopPaneUI&quot;, DESKTOP_PANE);</span><a href="#l1.493"></a>
+<span id="l1.494" class="plusline">+            map.put(&quot;DesktopIconUI&quot;, DESKTOP_ICON);</span><a href="#l1.494"></a>
+<span id="l1.495" class="plusline">+            map.put(&quot;EditorPaneUI&quot;, EDITOR_PANE);</span><a href="#l1.495"></a>
+<span id="l1.496" class="plusline">+            map.put(&quot;FileChooserUI&quot;, FILE_CHOOSER);</span><a href="#l1.496"></a>
+<span id="l1.497" class="plusline">+            map.put(&quot;FormattedTextFieldUI&quot;, FORMATTED_TEXT_FIELD);</span><a href="#l1.497"></a>
+<span id="l1.498" class="plusline">+            map.put(&quot;InternalFrameUI&quot;, INTERNAL_FRAME);</span><a href="#l1.498"></a>
+<span id="l1.499" class="plusline">+            map.put(&quot;InternalFrameTitlePaneUI&quot;, INTERNAL_FRAME_TITLE_PANE);</span><a href="#l1.499"></a>
+<span id="l1.500" class="plusline">+            map.put(&quot;LabelUI&quot;, LABEL);</span><a href="#l1.500"></a>
+<span id="l1.501" class="plusline">+            map.put(&quot;ListUI&quot;, LIST);</span><a href="#l1.501"></a>
+<span id="l1.502" class="plusline">+            map.put(&quot;MenuUI&quot;, MENU);</span><a href="#l1.502"></a>
+<span id="l1.503" class="plusline">+            map.put(&quot;MenuBarUI&quot;, MENU_BAR);</span><a href="#l1.503"></a>
+<span id="l1.504" class="plusline">+            map.put(&quot;MenuItemUI&quot;, MENU_ITEM);</span><a href="#l1.504"></a>
+<span id="l1.505" class="plusline">+            map.put(&quot;OptionPaneUI&quot;, OPTION_PANE);</span><a href="#l1.505"></a>
+<span id="l1.506" class="plusline">+            map.put(&quot;PanelUI&quot;, PANEL);</span><a href="#l1.506"></a>
+<span id="l1.507" class="plusline">+            map.put(&quot;PasswordFieldUI&quot;, PASSWORD_FIELD);</span><a href="#l1.507"></a>
+<span id="l1.508" class="plusline">+            map.put(&quot;PopupMenuUI&quot;, POPUP_MENU);</span><a href="#l1.508"></a>
+<span id="l1.509" class="plusline">+            map.put(&quot;PopupMenuSeparatorUI&quot;, POPUP_MENU_SEPARATOR);</span><a href="#l1.509"></a>
+<span id="l1.510" class="plusline">+            map.put(&quot;ProgressBarUI&quot;, PROGRESS_BAR);</span><a href="#l1.510"></a>
+<span id="l1.511" class="plusline">+            map.put(&quot;RadioButtonUI&quot;, RADIO_BUTTON);</span><a href="#l1.511"></a>
+<span id="l1.512" class="plusline">+            map.put(&quot;RadioButtonMenuItemUI&quot;, RADIO_BUTTON_MENU_ITEM);</span><a href="#l1.512"></a>
+<span id="l1.513" class="plusline">+            map.put(&quot;RootPaneUI&quot;, ROOT_PANE);</span><a href="#l1.513"></a>
+<span id="l1.514" class="plusline">+            map.put(&quot;ScrollBarUI&quot;, SCROLL_BAR);</span><a href="#l1.514"></a>
+<span id="l1.515" class="plusline">+            map.put(&quot;ScrollPaneUI&quot;, SCROLL_PANE);</span><a href="#l1.515"></a>
+<span id="l1.516" class="plusline">+            map.put(&quot;SeparatorUI&quot;, SEPARATOR);</span><a href="#l1.516"></a>
+<span id="l1.517" class="plusline">+            map.put(&quot;SliderUI&quot;, SLIDER);</span><a href="#l1.517"></a>
+<span id="l1.518" class="plusline">+            map.put(&quot;SpinnerUI&quot;, SPINNER);</span><a href="#l1.518"></a>
+<span id="l1.519" class="plusline">+            map.put(&quot;SplitPaneUI&quot;, SPLIT_PANE);</span><a href="#l1.519"></a>
+<span id="l1.520" class="plusline">+            map.put(&quot;TabbedPaneUI&quot;, TABBED_PANE);</span><a href="#l1.520"></a>
+<span id="l1.521" class="plusline">+            map.put(&quot;TableUI&quot;, TABLE);</span><a href="#l1.521"></a>
+<span id="l1.522" class="plusline">+            map.put(&quot;TableHeaderUI&quot;, TABLE_HEADER);</span><a href="#l1.522"></a>
+<span id="l1.523" class="plusline">+            map.put(&quot;TextAreaUI&quot;, TEXT_AREA);</span><a href="#l1.523"></a>
+<span id="l1.524" class="plusline">+            map.put(&quot;TextFieldUI&quot;, TEXT_FIELD);</span><a href="#l1.524"></a>
+<span id="l1.525" class="plusline">+            map.put(&quot;TextPaneUI&quot;, TEXT_PANE);</span><a href="#l1.525"></a>
+<span id="l1.526" class="plusline">+            map.put(&quot;ToggleButtonUI&quot;, TOGGLE_BUTTON);</span><a href="#l1.526"></a>
+<span id="l1.527" class="plusline">+            map.put(&quot;ToolBarUI&quot;, TOOL_BAR);</span><a href="#l1.527"></a>
+<span id="l1.528" class="plusline">+            map.put(&quot;ToolTipUI&quot;, TOOL_TIP);</span><a href="#l1.528"></a>
+<span id="l1.529" class="plusline">+            map.put(&quot;ToolBarSeparatorUI&quot;, TOOL_BAR_SEPARATOR);</span><a href="#l1.529"></a>
+<span id="l1.530" class="plusline">+            map.put(&quot;TreeUI&quot;, TREE);</span><a href="#l1.530"></a>
+<span id="l1.531" class="plusline">+            map.put(&quot;ViewportUI&quot;, VIEWPORT);</span><a href="#l1.531"></a>
+<span id="l1.532" class="plusline">+            context.put(UI_TO_REGION_MAP_KEY, map);</span><a href="#l1.532"></a>
+<span id="l1.533" class="plusline">+        }</span><a href="#l1.533"></a>
+<span id="l1.534" class="plusline">+        return map;</span><a href="#l1.534"></a>
+<span id="l1.535" class="plusline">+    }</span><a href="#l1.535"></a>
+<span id="l1.536"> </span><a href="#l1.536"></a>
+<span id="l1.537" class="plusline">+    private static Map&lt;Region, String&gt; getLowerCaseNameMap() {</span><a href="#l1.537"></a>
+<span id="l1.538" class="plusline">+        AppContext context = AppContext.getAppContext();</span><a href="#l1.538"></a>
+<span id="l1.539" class="plusline">+        Map&lt;Region, String&gt; map = (Map&lt;Region, String&gt;) context.get(LOWER_CASE_NAME_MAP_KEY);</span><a href="#l1.539"></a>
+<span id="l1.540" class="plusline">+        if (map == null) {</span><a href="#l1.540"></a>
+<span id="l1.541" class="plusline">+            map = new HashMap&lt;Region, String&gt;();</span><a href="#l1.541"></a>
+<span id="l1.542" class="plusline">+            context.put(LOWER_CASE_NAME_MAP_KEY, map);</span><a href="#l1.542"></a>
+<span id="l1.543" class="plusline">+        }</span><a href="#l1.543"></a>
+<span id="l1.544" class="plusline">+        return map;</span><a href="#l1.544"></a>
+<span id="l1.545" class="plusline">+    }</span><a href="#l1.545"></a>
+<span id="l1.546"> </span><a href="#l1.546"></a>
+<span id="l1.547">     static Region getRegion(JComponent c) {</span><a href="#l1.547"></a>
+<span id="l1.548" class="minusline">-        return (Region)uiToRegionMap.get(c.getUIClassID());</span><a href="#l1.548"></a>
+<span id="l1.549" class="plusline">+        return getUItoRegionMap().get(c.getUIClassID());</span><a href="#l1.549"></a>
+<span id="l1.550">     }</span><a href="#l1.550"></a>
+<span id="l1.551"> </span><a href="#l1.551"></a>
+<span id="l1.552">     static void registerUIs(UIDefaults table) {</span><a href="#l1.552"></a>
+<span id="l1.553" class="minusline">-        Iterator uis = uiToRegionMap.keySet().iterator();</span><a href="#l1.553"></a>
+<span id="l1.554" class="minusline">-</span><a href="#l1.554"></a>
+<span id="l1.555" class="minusline">-        while (uis.hasNext()) {</span><a href="#l1.555"></a>
+<span id="l1.556" class="minusline">-            Object key = uis.next();</span><a href="#l1.556"></a>
+<span id="l1.557" class="minusline">-</span><a href="#l1.557"></a>
+<span id="l1.558" class="plusline">+        for (Object key : getUItoRegionMap().keySet()) {</span><a href="#l1.558"></a>
+<span id="l1.559">             table.put(key, &quot;javax.swing.plaf.synth.SynthLookAndFeel&quot;);</span><a href="#l1.559"></a>
+<span id="l1.560">         }</span><a href="#l1.560"></a>
+<span id="l1.561">     }</span><a href="#l1.561"></a>
+<span id="l1.562"> </span><a href="#l1.562"></a>
+<span id="l1.563" class="plusline">+    private final String name;</span><a href="#l1.563"></a>
+<span id="l1.564" class="plusline">+    private final boolean subregion;</span><a href="#l1.564"></a>
+<span id="l1.565"> </span><a href="#l1.565"></a>
+<span id="l1.566" class="minusline">-    Region(String name) {</span><a href="#l1.566"></a>
+<span id="l1.567" class="minusline">-        this(name, null, true);</span><a href="#l1.567"></a>
+<span id="l1.568" class="minusline">-    }</span><a href="#l1.568"></a>
+<span id="l1.569" class="minusline">-</span><a href="#l1.569"></a>
+<span id="l1.570" class="minusline">-    Region(String name, String ui) {</span><a href="#l1.570"></a>
+<span id="l1.571" class="minusline">-        this(name, ui, false);</span><a href="#l1.571"></a>
+<span id="l1.572" class="plusline">+    private Region(String name, boolean subregion) {</span><a href="#l1.572"></a>
+<span id="l1.573" class="plusline">+        if (name == null) {</span><a href="#l1.573"></a>
+<span id="l1.574" class="plusline">+            throw new NullPointerException(&quot;You must specify a non-null name&quot;);</span><a href="#l1.574"></a>
+<span id="l1.575" class="plusline">+        }</span><a href="#l1.575"></a>
+<span id="l1.576" class="plusline">+        this.name = name;</span><a href="#l1.576"></a>
+<span id="l1.577" class="plusline">+        this.subregion = subregion;</span><a href="#l1.577"></a>
+<span id="l1.578">     }</span><a href="#l1.578"></a>
+<span id="l1.579"> </span><a href="#l1.579"></a>
+<span id="l1.580">     /**</span><a href="#l1.580"></a>
+<span id="l1.581" class="atline">@@ -485,14 +523,10 @@</span><a href="#l1.581"></a>
+<span id="l1.582">      * @param subregion Whether or not this is a subregion.</span><a href="#l1.582"></a>
+<span id="l1.583">      */</span><a href="#l1.583"></a>
+<span id="l1.584">     protected Region(String name, String ui, boolean subregion) {</span><a href="#l1.584"></a>
+<span id="l1.585" class="minusline">-        if (name == null) {</span><a href="#l1.585"></a>
+<span id="l1.586" class="minusline">-            throw new NullPointerException(&quot;You must specify a non-null name&quot;);</span><a href="#l1.586"></a>
+<span id="l1.587" class="plusline">+        this(name, subregion);</span><a href="#l1.587"></a>
+<span id="l1.588" class="plusline">+        if (ui != null) {</span><a href="#l1.588"></a>
+<span id="l1.589" class="plusline">+            getUItoRegionMap().put(ui, this);</span><a href="#l1.589"></a>
+<span id="l1.590">         }</span><a href="#l1.590"></a>
+<span id="l1.591" class="minusline">-        this.name = name;</span><a href="#l1.591"></a>
+<span id="l1.592" class="minusline">-        if (ui != null) {</span><a href="#l1.592"></a>
+<span id="l1.593" class="minusline">-            uiToRegionMap.put(ui, this);</span><a href="#l1.593"></a>
+<span id="l1.594" class="minusline">-        }</span><a href="#l1.594"></a>
+<span id="l1.595" class="minusline">-        this.subregion = subregion;</span><a href="#l1.595"></a>
+<span id="l1.596">     }</span><a href="#l1.596"></a>
+<span id="l1.597"> </span><a href="#l1.597"></a>
+<span id="l1.598">     /**</span><a href="#l1.598"></a>
+<span id="l1.599" class="atline">@@ -518,16 +552,17 @@</span><a href="#l1.599"></a>
+<span id="l1.600"> </span><a href="#l1.600"></a>
+<span id="l1.601">     /**</span><a href="#l1.601"></a>
+<span id="l1.602">      * Returns the name, in lowercase.</span><a href="#l1.602"></a>
+<span id="l1.603" class="plusline">+     *</span><a href="#l1.603"></a>
+<span id="l1.604" class="plusline">+     * @return lower case representation of the name of the Region</span><a href="#l1.604"></a>
+<span id="l1.605">      */</span><a href="#l1.605"></a>
+<span id="l1.606">     String getLowerCaseName() {</span><a href="#l1.606"></a>
+<span id="l1.607" class="minusline">-        synchronized(lowerCaseNameMap) {</span><a href="#l1.607"></a>
+<span id="l1.608" class="minusline">-            String lowerCaseName = (String)lowerCaseNameMap.get(this);</span><a href="#l1.608"></a>
+<span id="l1.609" class="minusline">-            if (lowerCaseName == null) {</span><a href="#l1.609"></a>
+<span id="l1.610" class="minusline">-                lowerCaseName = getName().toLowerCase();</span><a href="#l1.610"></a>
+<span id="l1.611" class="minusline">-                lowerCaseNameMap.put(this, lowerCaseName);</span><a href="#l1.611"></a>
+<span id="l1.612" class="minusline">-            }</span><a href="#l1.612"></a>
+<span id="l1.613" class="minusline">-            return lowerCaseName;</span><a href="#l1.613"></a>
+<span id="l1.614" class="plusline">+        Map&lt;Region, String&gt; lowerCaseNameMap = getLowerCaseNameMap();</span><a href="#l1.614"></a>
+<span id="l1.615" class="plusline">+        String lowerCaseName = lowerCaseNameMap.get(this);</span><a href="#l1.615"></a>
+<span id="l1.616" class="plusline">+        if (lowerCaseName == null) {</span><a href="#l1.616"></a>
+<span id="l1.617" class="plusline">+            lowerCaseName = name.toLowerCase(Locale.ENGLISH);</span><a href="#l1.617"></a>
+<span id="l1.618" class="plusline">+            lowerCaseNameMap.put(this, lowerCaseName);</span><a href="#l1.618"></a>
+<span id="l1.619">         }</span><a href="#l1.619"></a>
+<span id="l1.620" class="plusline">+        return lowerCaseName;</span><a href="#l1.620"></a>
+<span id="l1.621">     }</span><a href="#l1.621"></a>
+<span id="l1.622"> </span><a href="#l1.622"></a>
+<span id="l1.623">     /**</span><a href="#l1.623"></a>
+<span id="l1.624" class="atline">@@ -535,6 +570,7 @@</span><a href="#l1.624"></a>
+<span id="l1.625">      *</span><a href="#l1.625"></a>
+<span id="l1.626">      * @return name of the Region.</span><a href="#l1.626"></a>
+<span id="l1.627">      */</span><a href="#l1.627"></a>
+<span id="l1.628" class="plusline">+    @Override</span><a href="#l1.628"></a>
+<span id="l1.629">     public String toString() {</span><a href="#l1.629"></a>
+<span id="l1.630">         return name;</span><a href="#l1.630"></a>
+<span id="l1.631">     }</span><a href="#l1.631"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/test/javax/swing/plaf/synth/Test6660049.java	Thu Jun 18 14:03:02 2009 +0400</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -0,0 +1,123 @@</span><a href="#l2.3"></a>
+<span id="l2.4" class="plusline">+/*</span><a href="#l2.4"></a>
+<span id="l2.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+ *</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.8"></a>
+<span id="l2.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l2.9"></a>
+<span id="l2.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l2.10"></a>
+<span id="l2.11" class="plusline">+ *</span><a href="#l2.11"></a>
+<span id="l2.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l2.12"></a>
+<span id="l2.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+ * accompanied this code).</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+ *</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l2.18"></a>
+<span id="l2.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l2.19"></a>
+<span id="l2.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l2.20"></a>
+<span id="l2.21" class="plusline">+ *</span><a href="#l2.21"></a>
+<span id="l2.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l2.22"></a>
+<span id="l2.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l2.23"></a>
+<span id="l2.24" class="plusline">+ * have any questions.</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+ */</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+/*</span><a href="#l2.27"></a>
+<span id="l2.28" class="plusline">+ * @test</span><a href="#l2.28"></a>
+<span id="l2.29" class="plusline">+ * @bug 6660049 6849518</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+ * @summary Tests the Region initialization</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+ */</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+</span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l2.34"></a>
+<span id="l2.35" class="plusline">+</span><a href="#l2.35"></a>
+<span id="l2.36" class="plusline">+import javax.swing.JButton;</span><a href="#l2.36"></a>
+<span id="l2.37" class="plusline">+import javax.swing.JComponent;</span><a href="#l2.37"></a>
+<span id="l2.38" class="plusline">+import javax.swing.SwingUtilities;</span><a href="#l2.38"></a>
+<span id="l2.39" class="plusline">+import javax.swing.plaf.synth.Region;</span><a href="#l2.39"></a>
+<span id="l2.40" class="plusline">+import javax.swing.plaf.synth.SynthLookAndFeel;</span><a href="#l2.40"></a>
+<span id="l2.41" class="plusline">+</span><a href="#l2.41"></a>
+<span id="l2.42" class="plusline">+public class Test6660049 implements Runnable {</span><a href="#l2.42"></a>
+<span id="l2.43" class="plusline">+    public static void main(String[] args) {</span><a href="#l2.43"></a>
+<span id="l2.44" class="plusline">+        SwingUtilities.invokeLater(new Test6660049(</span><a href="#l2.44"></a>
+<span id="l2.45" class="plusline">+                javax.swing.JButton.class,</span><a href="#l2.45"></a>
+<span id="l2.46" class="plusline">+                javax.swing.JCheckBox.class,</span><a href="#l2.46"></a>
+<span id="l2.47" class="plusline">+                javax.swing.JCheckBoxMenuItem.class,</span><a href="#l2.47"></a>
+<span id="l2.48" class="plusline">+                javax.swing.JColorChooser.class,</span><a href="#l2.48"></a>
+<span id="l2.49" class="plusline">+                javax.swing.JComboBox.class,</span><a href="#l2.49"></a>
+<span id="l2.50" class="plusline">+                javax.swing.JDesktopPane.class,</span><a href="#l2.50"></a>
+<span id="l2.51" class="plusline">+                javax.swing.JEditorPane.class,</span><a href="#l2.51"></a>
+<span id="l2.52" class="plusline">+                javax.swing.JFileChooser.class,</span><a href="#l2.52"></a>
+<span id="l2.53" class="plusline">+                javax.swing.JFormattedTextField.class,</span><a href="#l2.53"></a>
+<span id="l2.54" class="plusline">+                javax.swing.JInternalFrame.class,</span><a href="#l2.54"></a>
+<span id="l2.55" class="plusline">+                javax.swing.JLabel.class,</span><a href="#l2.55"></a>
+<span id="l2.56" class="plusline">+                javax.swing.JList.class,</span><a href="#l2.56"></a>
+<span id="l2.57" class="plusline">+                javax.swing.JMenu.class,</span><a href="#l2.57"></a>
+<span id="l2.58" class="plusline">+                javax.swing.JMenuBar.class,</span><a href="#l2.58"></a>
+<span id="l2.59" class="plusline">+                javax.swing.JMenuItem.class,</span><a href="#l2.59"></a>
+<span id="l2.60" class="plusline">+                javax.swing.JOptionPane.class,</span><a href="#l2.60"></a>
+<span id="l2.61" class="plusline">+                javax.swing.JPanel.class,</span><a href="#l2.61"></a>
+<span id="l2.62" class="plusline">+                javax.swing.JPasswordField.class,</span><a href="#l2.62"></a>
+<span id="l2.63" class="plusline">+                javax.swing.JPopupMenu.class,</span><a href="#l2.63"></a>
+<span id="l2.64" class="plusline">+                javax.swing.JProgressBar.class,</span><a href="#l2.64"></a>
+<span id="l2.65" class="plusline">+                javax.swing.JRadioButton.class,</span><a href="#l2.65"></a>
+<span id="l2.66" class="plusline">+                javax.swing.JRadioButtonMenuItem.class,</span><a href="#l2.66"></a>
+<span id="l2.67" class="plusline">+                javax.swing.JRootPane.class,</span><a href="#l2.67"></a>
+<span id="l2.68" class="plusline">+                javax.swing.JScrollBar.class,</span><a href="#l2.68"></a>
+<span id="l2.69" class="plusline">+                javax.swing.JScrollPane.class,</span><a href="#l2.69"></a>
+<span id="l2.70" class="plusline">+                javax.swing.JSeparator.class,</span><a href="#l2.70"></a>
+<span id="l2.71" class="plusline">+                javax.swing.JSlider.class,</span><a href="#l2.71"></a>
+<span id="l2.72" class="plusline">+                javax.swing.JSpinner.class,</span><a href="#l2.72"></a>
+<span id="l2.73" class="plusline">+                javax.swing.JSplitPane.class,</span><a href="#l2.73"></a>
+<span id="l2.74" class="plusline">+                javax.swing.JTabbedPane.class,</span><a href="#l2.74"></a>
+<span id="l2.75" class="plusline">+                javax.swing.JTable.class,</span><a href="#l2.75"></a>
+<span id="l2.76" class="plusline">+                javax.swing.JTextArea.class,</span><a href="#l2.76"></a>
+<span id="l2.77" class="plusline">+                javax.swing.JTextField.class,</span><a href="#l2.77"></a>
+<span id="l2.78" class="plusline">+                javax.swing.JTextPane.class,</span><a href="#l2.78"></a>
+<span id="l2.79" class="plusline">+                javax.swing.JToggleButton.class,</span><a href="#l2.79"></a>
+<span id="l2.80" class="plusline">+                javax.swing.JToolBar.class,</span><a href="#l2.80"></a>
+<span id="l2.81" class="plusline">+                javax.swing.JToolTip.class,</span><a href="#l2.81"></a>
+<span id="l2.82" class="plusline">+                javax.swing.JTree.class,</span><a href="#l2.82"></a>
+<span id="l2.83" class="plusline">+                javax.swing.JViewport.class,</span><a href="#l2.83"></a>
+<span id="l2.84" class="plusline">+                javax.swing.table.JTableHeader.class));</span><a href="#l2.84"></a>
+<span id="l2.85" class="plusline">+    }</span><a href="#l2.85"></a>
+<span id="l2.86" class="plusline">+</span><a href="#l2.86"></a>
+<span id="l2.87" class="plusline">+    private final Class&lt;? extends JComponent&gt;[] types;</span><a href="#l2.87"></a>
+<span id="l2.88" class="plusline">+    private final Region region;</span><a href="#l2.88"></a>
+<span id="l2.89" class="plusline">+</span><a href="#l2.89"></a>
+<span id="l2.90" class="plusline">+    private Test6660049(Class&lt;? extends JComponent&gt;... types) {</span><a href="#l2.90"></a>
+<span id="l2.91" class="plusline">+        this.types = types;</span><a href="#l2.91"></a>
+<span id="l2.92" class="plusline">+        run();</span><a href="#l2.92"></a>
+<span id="l2.93" class="plusline">+</span><a href="#l2.93"></a>
+<span id="l2.94" class="plusline">+        this.region = new Region(&quot;Button&quot;, &quot;ButtonUI&quot;, true) {</span><a href="#l2.94"></a>
+<span id="l2.95" class="plusline">+            @Override</span><a href="#l2.95"></a>
+<span id="l2.96" class="plusline">+            public String getName() {</span><a href="#l2.96"></a>
+<span id="l2.97" class="plusline">+                throw new Error(&quot;6660049: exploit is available&quot;);</span><a href="#l2.97"></a>
+<span id="l2.98" class="plusline">+            }</span><a href="#l2.98"></a>
+<span id="l2.99" class="plusline">+        };</span><a href="#l2.99"></a>
+<span id="l2.100" class="plusline">+    }</span><a href="#l2.100"></a>
+<span id="l2.101" class="plusline">+</span><a href="#l2.101"></a>
+<span id="l2.102" class="plusline">+    public void run() {</span><a href="#l2.102"></a>
+<span id="l2.103" class="plusline">+        if (this.region != null) {</span><a href="#l2.103"></a>
+<span id="l2.104" class="plusline">+            SunToolkit.createNewAppContext();</span><a href="#l2.104"></a>
+<span id="l2.105" class="plusline">+        }</span><a href="#l2.105"></a>
+<span id="l2.106" class="plusline">+        for (Class&lt;? extends JComponent&gt; type : this.types) {</span><a href="#l2.106"></a>
+<span id="l2.107" class="plusline">+            Region region = getRegion(type);</span><a href="#l2.107"></a>
+<span id="l2.108" class="plusline">+            if (region == null) {</span><a href="#l2.108"></a>
+<span id="l2.109" class="plusline">+                throw new Error(&quot;6849518: region is not initialized&quot;);</span><a href="#l2.109"></a>
+<span id="l2.110" class="plusline">+            }</span><a href="#l2.110"></a>
+<span id="l2.111" class="plusline">+        }</span><a href="#l2.111"></a>
+<span id="l2.112" class="plusline">+        getRegion(JButton.class).getName();</span><a href="#l2.112"></a>
+<span id="l2.113" class="plusline">+    }</span><a href="#l2.113"></a>
+<span id="l2.114" class="plusline">+</span><a href="#l2.114"></a>
+<span id="l2.115" class="plusline">+    private static Region getRegion(Class&lt;? extends JComponent&gt; type) {</span><a href="#l2.115"></a>
+<span id="l2.116" class="plusline">+        try {</span><a href="#l2.116"></a>
+<span id="l2.117" class="plusline">+            return SynthLookAndFeel.getRegion(type.newInstance());</span><a href="#l2.117"></a>
+<span id="l2.118" class="plusline">+        }</span><a href="#l2.118"></a>
+<span id="l2.119" class="plusline">+        catch (IllegalAccessException exception) {</span><a href="#l2.119"></a>
+<span id="l2.120" class="plusline">+            throw new Error(&quot;unexpected exception&quot;, exception);</span><a href="#l2.120"></a>
+<span id="l2.121" class="plusline">+        }</span><a href="#l2.121"></a>
+<span id="l2.122" class="plusline">+        catch (InstantiationException exception) {</span><a href="#l2.122"></a>
+<span id="l2.123" class="plusline">+            throw new Error(&quot;unexpected exception&quot;, exception);</span><a href="#l2.123"></a>
+<span id="l2.124" class="plusline">+        }</span><a href="#l2.124"></a>
+<span id="l2.125" class="plusline">+    }</span><a href="#l2.125"></a>
+<span id="l2.126" class="plusline">+}</span><a href="#l2.126"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

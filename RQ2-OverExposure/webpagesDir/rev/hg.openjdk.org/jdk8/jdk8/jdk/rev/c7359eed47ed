@@ -1,0 +1,1353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8/jdk8/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8/jdk8/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8/jdk8/jdk/static/mercurial.js"></script>
+
+<title>jdk8/jdk8/jdk: c7359eed47ed</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8/jdk8/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8/jdk8/jdk/shortlog/c7359eed47ed">log</a></li>
+ <li><a href="/jdk8/jdk8/jdk/graph/c7359eed47ed">graph</a></li>
+ <li><a href="/jdk8/jdk8/jdk/tags">tags</a></li>
+ <li><a href="/jdk8/jdk8/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8/jdk8/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8/jdk8/jdk/raw-rev/c7359eed47ed">raw</a></li>
+ <li><a href="/jdk8/jdk8/jdk/file/c7359eed47ed">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8/jdk8/jdk/archive/c7359eed47ed.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8/jdk8/jdk/archive/c7359eed47ed.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8/jdk8/jdk/archive/c7359eed47ed.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8/jdk8/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8">jdk8</a> / <a href="/jdk8/jdk8">jdk8</a> / <a href="/jdk8/jdk8/jdk">jdk</a> </h2>
+<h3>changeset 1833:c7359eed47ed   </h3>
+
+<form class="search" action="/jdk8/jdk8/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8/jdk8/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6657026: Numerous static security flaws in Swing (findbugs)
+Reviewed-by: hawtin, peterz</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#97;&#108;&#101;&#110;&#107;&#111;&#118;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 03 Sep 2009 19:42:27 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8/jdk8/jdk/rev/f318c99e43f5">f318c99e43f5</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8/jdk8/jdk/rev/f3e42d3bb311">f3e42d3bb311</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8/jdk8/jdk/file/c7359eed47ed/src/share/classes/javax/swing/ToolTipManager.java">src/share/classes/javax/swing/ToolTipManager.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/src/share/classes/javax/swing/UIManager.java">src/share/classes/javax/swing/UIManager.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/src/share/classes/javax/swing/plaf/basic/BasicSplitPaneUI.java">src/share/classes/javax/swing/plaf/basic/BasicSplitPaneUI.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/src/share/classes/javax/swing/plaf/metal/MetalBumps.java">src/share/classes/javax/swing/plaf/metal/MetalBumps.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/src/share/classes/javax/swing/plaf/metal/MetalInternalFrameUI.java">src/share/classes/javax/swing/plaf/metal/MetalInternalFrameUI.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/src/share/classes/javax/swing/plaf/metal/MetalSliderUI.java">src/share/classes/javax/swing/plaf/metal/MetalSliderUI.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/test/javax/swing/ToolTipManager/Test6657026.java">test/javax/swing/ToolTipManager/Test6657026.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/test/javax/swing/UIManager/Test6657026.java">test/javax/swing/UIManager/Test6657026.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/test/javax/swing/plaf/basic/BasicSplitPaneUI/Test6657026.java">test/javax/swing/plaf/basic/BasicSplitPaneUI/Test6657026.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/test/javax/swing/plaf/metal/MetalBorders/Test6657026.java">test/javax/swing/plaf/metal/MetalBorders/Test6657026.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/test/javax/swing/plaf/metal/MetalBumps/Test6657026.java">test/javax/swing/plaf/metal/MetalBumps/Test6657026.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/test/javax/swing/plaf/metal/MetalInternalFrameUI/Test6657026.java">test/javax/swing/plaf/metal/MetalInternalFrameUI/Test6657026.java</a> <a href="/jdk8/jdk8/jdk/file/c7359eed47ed/test/javax/swing/plaf/metal/MetalSliderUI/Test6657026.java">test/javax/swing/plaf/metal/MetalSliderUI/Test6657026.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     13 files changed, 734 insertions(+), 95 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/javax/swing/ToolTipManager.java</a></td>
+    <td class="diffstat-total" align="right">15</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:3.78151260504%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.52100840336%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/javax/swing/UIManager.java</a></td>
+    <td class="diffstat-total" align="right">38</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:4.6218487395%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:11.3445378151%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/javax/swing/plaf/basic/BasicSplitPaneUI.java</a></td>
+    <td class="diffstat-total" align="right">10</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.68067226891%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.52100840336%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/share/classes/javax/swing/plaf/metal/MetalBumps.java</a></td>
+    <td class="diffstat-total" align="right">62</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.66386554622%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:16.3865546218%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">src/share/classes/javax/swing/plaf/metal/MetalInternalFrameUI.java</a></td>
+    <td class="diffstat-total" align="right">10</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.68067226891%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.52100840336%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l6.1">src/share/classes/javax/swing/plaf/metal/MetalSliderUI.java</a></td>
+    <td class="diffstat-total" align="right">23</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:5.04201680672%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:4.6218487395%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l7.1">test/javax/swing/ToolTipManager/Test6657026.java</a></td>
+    <td class="diffstat-total" align="right">74</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:31.0924369748%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l8.1">test/javax/swing/UIManager/Test6657026.java</a></td>
+    <td class="diffstat-total" align="right">59</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:24.7899159664%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l9.1">test/javax/swing/plaf/basic/BasicSplitPaneUI/Test6657026.java</a></td>
+    <td class="diffstat-total" align="right">82</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:34.4537815126%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l10.1">test/javax/swing/plaf/metal/MetalBorders/Test6657026.java</a></td>
+    <td class="diffstat-total" align="right">91</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:38.2352941176%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l11.1">test/javax/swing/plaf/metal/MetalBumps/Test6657026.java</a></td>
+    <td class="diffstat-total" align="right">238</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l12.1">test/javax/swing/plaf/metal/MetalInternalFrameUI/Test6657026.java</a></td>
+    <td class="diffstat-total" align="right">60</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:25.2100840336%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l13.1">test/javax/swing/plaf/metal/MetalSliderUI/Test6657026.java</a></td>
+    <td class="diffstat-total" align="right">67</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:28.1512605042%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/javax/swing/ToolTipManager.java	Tue Sep 01 08:15:00 2009 -0700</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/javax/swing/ToolTipManager.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright 1997-2006 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright 1997-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -27,10 +27,7 @@</span><a href="#l1.10"></a>
+<span id="l1.11"> package javax.swing;</span><a href="#l1.11"></a>
+<span id="l1.12"> </span><a href="#l1.12"></a>
+<span id="l1.13"> import java.awt.event.*;</span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-import java.applet.*;</span><a href="#l1.14"></a>
+<span id="l1.15"> import java.awt.*;</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-import java.io.Serializable;</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-import sun.swing.UIAction;</span><a href="#l1.17"></a>
+<span id="l1.18"> </span><a href="#l1.18"></a>
+<span id="l1.19"> /**</span><a href="#l1.19"></a>
+<span id="l1.20">  * Manages all the &lt;code&gt;ToolTips&lt;/code&gt; in the system.</span><a href="#l1.20"></a>
+<span id="l1.21" class="atline">@@ -60,7 +57,7 @@</span><a href="#l1.21"></a>
+<span id="l1.22">     JComponent insideComponent;</span><a href="#l1.22"></a>
+<span id="l1.23">     MouseEvent mouseEvent;</span><a href="#l1.23"></a>
+<span id="l1.24">     boolean showImmediately;</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-    final static ToolTipManager sharedInstance = new ToolTipManager();</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+    private static final Object TOOL_TIP_MANAGER_KEY = new Object();</span><a href="#l1.26"></a>
+<span id="l1.27">     transient Popup tipWindow;</span><a href="#l1.27"></a>
+<span id="l1.28">     /** The Window tip is being displayed in. This will be non-null if</span><a href="#l1.28"></a>
+<span id="l1.29">      * the Window tip is in differs from that of insideComponent's Window.</span><a href="#l1.29"></a>
+<span id="l1.30" class="atline">@@ -345,7 +342,13 @@</span><a href="#l1.30"></a>
+<span id="l1.31">      * @return a shared &lt;code&gt;ToolTipManager&lt;/code&gt; object</span><a href="#l1.31"></a>
+<span id="l1.32">      */</span><a href="#l1.32"></a>
+<span id="l1.33">     public static ToolTipManager sharedInstance() {</span><a href="#l1.33"></a>
+<span id="l1.34" class="minusline">-        return sharedInstance;</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+        Object value = SwingUtilities.appContextGet(TOOL_TIP_MANAGER_KEY);</span><a href="#l1.35"></a>
+<span id="l1.36" class="plusline">+        if (value instanceof ToolTipManager) {</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+            return (ToolTipManager) value;</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+        }</span><a href="#l1.38"></a>
+<span id="l1.39" class="plusline">+        ToolTipManager manager = new ToolTipManager();</span><a href="#l1.39"></a>
+<span id="l1.40" class="plusline">+        SwingUtilities.appContextPut(TOOL_TIP_MANAGER_KEY, manager);</span><a href="#l1.40"></a>
+<span id="l1.41" class="plusline">+        return manager;</span><a href="#l1.41"></a>
+<span id="l1.42">     }</span><a href="#l1.42"></a>
+<span id="l1.43"> </span><a href="#l1.43"></a>
+<span id="l1.44">     // add keylistener here to trigger tip for access</span><a href="#l1.44"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/javax/swing/UIManager.java	Tue Sep 01 08:15:00 2009 -0700</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/javax/swing/UIManager.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright 1997-2008 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright 1997-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -197,6 +197,8 @@</span><a href="#l2.10"></a>
+<span id="l2.11">         Vector&lt;LookAndFeel&gt; auxLookAndFeels = null;</span><a href="#l2.11"></a>
+<span id="l2.12">         SwingPropertyChangeSupport changeSupport;</span><a href="#l2.12"></a>
+<span id="l2.13"> </span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+        LookAndFeelInfo[] installedLAFs;</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+</span><a href="#l2.15"></a>
+<span id="l2.16">         UIDefaults getLookAndFeelDefaults() { return tables[0]; }</span><a href="#l2.16"></a>
+<span id="l2.17">         void setLookAndFeelDefaults(UIDefaults x) { tables[0] = x; }</span><a href="#l2.17"></a>
+<span id="l2.18"> </span><a href="#l2.18"></a>
+<span id="l2.19" class="atline">@@ -227,18 +229,6 @@</span><a href="#l2.19"></a>
+<span id="l2.20">      */</span><a href="#l2.20"></a>
+<span id="l2.21">     private static final Object classLock = new Object();</span><a href="#l2.21"></a>
+<span id="l2.22"> </span><a href="#l2.22"></a>
+<span id="l2.23" class="minusline">-</span><a href="#l2.23"></a>
+<span id="l2.24" class="minusline">-    /* Cache the last referenced LAFState to improve performance</span><a href="#l2.24"></a>
+<span id="l2.25" class="minusline">-     * when accessing it.  The cache is based on last thread rather</span><a href="#l2.25"></a>
+<span id="l2.26" class="minusline">-     * than last AppContext because of the cost of looking up the</span><a href="#l2.26"></a>
+<span id="l2.27" class="minusline">-     * AppContext each time.  Since most Swing UI work is on the</span><a href="#l2.27"></a>
+<span id="l2.28" class="minusline">-     * EventDispatchThread, this hits often enough to justify the</span><a href="#l2.28"></a>
+<span id="l2.29" class="minusline">-     * overhead.  (4193032)</span><a href="#l2.29"></a>
+<span id="l2.30" class="minusline">-     */</span><a href="#l2.30"></a>
+<span id="l2.31" class="minusline">-    private static Thread currentLAFStateThread = null;</span><a href="#l2.31"></a>
+<span id="l2.32" class="minusline">-    private static LAFState currentLAFState = null;</span><a href="#l2.32"></a>
+<span id="l2.33" class="minusline">-</span><a href="#l2.33"></a>
+<span id="l2.34" class="minusline">-</span><a href="#l2.34"></a>
+<span id="l2.35">     /**</span><a href="#l2.35"></a>
+<span id="l2.36">      * Return the &lt;code&gt;LAFState&lt;/code&gt; object, lazily create one if necessary.</span><a href="#l2.36"></a>
+<span id="l2.37">      * All access to the &lt;code&gt;LAFState&lt;/code&gt; fields is done via this method,</span><a href="#l2.37"></a>
+<span id="l2.38" class="atline">@@ -248,13 +238,6 @@</span><a href="#l2.38"></a>
+<span id="l2.39">      * &lt;/pre&gt;</span><a href="#l2.39"></a>
+<span id="l2.40">      */</span><a href="#l2.40"></a>
+<span id="l2.41">     private static LAFState getLAFState() {</span><a href="#l2.41"></a>
+<span id="l2.42" class="minusline">-        // First check whether we're running on the same thread as</span><a href="#l2.42"></a>
+<span id="l2.43" class="minusline">-        // the last request.</span><a href="#l2.43"></a>
+<span id="l2.44" class="minusline">-        Thread thisThread = Thread.currentThread();</span><a href="#l2.44"></a>
+<span id="l2.45" class="minusline">-        if (thisThread == currentLAFStateThread) {</span><a href="#l2.45"></a>
+<span id="l2.46" class="minusline">-            return currentLAFState;</span><a href="#l2.46"></a>
+<span id="l2.47" class="minusline">-        }</span><a href="#l2.47"></a>
+<span id="l2.48" class="minusline">-</span><a href="#l2.48"></a>
+<span id="l2.49">         LAFState rv = (LAFState)SwingUtilities.appContextGet(</span><a href="#l2.49"></a>
+<span id="l2.50">                 SwingUtilities2.LAF_STATE_KEY);</span><a href="#l2.50"></a>
+<span id="l2.51">         if (rv == null) {</span><a href="#l2.51"></a>
+<span id="l2.52" class="atline">@@ -268,10 +251,6 @@</span><a href="#l2.52"></a>
+<span id="l2.53">                 }</span><a href="#l2.53"></a>
+<span id="l2.54">             }</span><a href="#l2.54"></a>
+<span id="l2.55">         }</span><a href="#l2.55"></a>
+<span id="l2.56" class="minusline">-</span><a href="#l2.56"></a>
+<span id="l2.57" class="minusline">-        currentLAFStateThread = thisThread;</span><a href="#l2.57"></a>
+<span id="l2.58" class="minusline">-        currentLAFState = rv;</span><a href="#l2.58"></a>
+<span id="l2.59" class="minusline">-</span><a href="#l2.59"></a>
+<span id="l2.60">         return rv;</span><a href="#l2.60"></a>
+<span id="l2.61">     }</span><a href="#l2.61"></a>
+<span id="l2.62"> </span><a href="#l2.62"></a>
+<span id="l2.63" class="atline">@@ -431,7 +410,10 @@</span><a href="#l2.63"></a>
+<span id="l2.64">      */</span><a href="#l2.64"></a>
+<span id="l2.65">     public static LookAndFeelInfo[] getInstalledLookAndFeels() {</span><a href="#l2.65"></a>
+<span id="l2.66">         maybeInitialize();</span><a href="#l2.66"></a>
+<span id="l2.67" class="minusline">-        LookAndFeelInfo[] ilafs = installedLAFs;</span><a href="#l2.67"></a>
+<span id="l2.68" class="plusline">+        LookAndFeelInfo[] ilafs = getLAFState().installedLAFs;</span><a href="#l2.68"></a>
+<span id="l2.69" class="plusline">+        if (ilafs == null) {</span><a href="#l2.69"></a>
+<span id="l2.70" class="plusline">+            ilafs = installedLAFs;</span><a href="#l2.70"></a>
+<span id="l2.71" class="plusline">+        }</span><a href="#l2.71"></a>
+<span id="l2.72">         LookAndFeelInfo[] rv = new LookAndFeelInfo[ilafs.length];</span><a href="#l2.72"></a>
+<span id="l2.73">         System.arraycopy(ilafs, 0, rv, 0, ilafs.length);</span><a href="#l2.73"></a>
+<span id="l2.74">         return rv;</span><a href="#l2.74"></a>
+<span id="l2.75" class="atline">@@ -453,9 +435,10 @@</span><a href="#l2.75"></a>
+<span id="l2.76">     public static void setInstalledLookAndFeels(LookAndFeelInfo[] infos)</span><a href="#l2.76"></a>
+<span id="l2.77">         throws SecurityException</span><a href="#l2.77"></a>
+<span id="l2.78">     {</span><a href="#l2.78"></a>
+<span id="l2.79" class="plusline">+        maybeInitialize();</span><a href="#l2.79"></a>
+<span id="l2.80">         LookAndFeelInfo[] newInfos = new LookAndFeelInfo[infos.length];</span><a href="#l2.80"></a>
+<span id="l2.81">         System.arraycopy(infos, 0, newInfos, 0, infos.length);</span><a href="#l2.81"></a>
+<span id="l2.82" class="minusline">-        installedLAFs = newInfos;</span><a href="#l2.82"></a>
+<span id="l2.83" class="plusline">+        getLAFState().installedLAFs = newInfos;</span><a href="#l2.83"></a>
+<span id="l2.84">     }</span><a href="#l2.84"></a>
+<span id="l2.85"> </span><a href="#l2.85"></a>
+<span id="l2.86"> </span><a href="#l2.86"></a>
+<span id="l2.87" class="atline">@@ -1307,10 +1290,11 @@</span><a href="#l2.87"></a>
+<span id="l2.88">             }</span><a href="#l2.88"></a>
+<span id="l2.89">         }</span><a href="#l2.89"></a>
+<span id="l2.90"> </span><a href="#l2.90"></a>
+<span id="l2.91" class="minusline">-        installedLAFs = new LookAndFeelInfo[ilafs.size()];</span><a href="#l2.91"></a>
+<span id="l2.92" class="plusline">+        LookAndFeelInfo[] installedLAFs = new LookAndFeelInfo[ilafs.size()];</span><a href="#l2.92"></a>
+<span id="l2.93">         for(int i = 0; i &lt; ilafs.size(); i++) {</span><a href="#l2.93"></a>
+<span id="l2.94">             installedLAFs[i] = ilafs.elementAt(i);</span><a href="#l2.94"></a>
+<span id="l2.95">         }</span><a href="#l2.95"></a>
+<span id="l2.96" class="plusline">+        getLAFState().installedLAFs = installedLAFs;</span><a href="#l2.96"></a>
+<span id="l2.97">     }</span><a href="#l2.97"></a>
+<span id="l2.98"> </span><a href="#l2.98"></a>
+<span id="l2.99"> </span><a href="#l2.99"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/basic/BasicSplitPaneUI.java	Tue Sep 01 08:15:00 2009 -0700</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/basic/BasicSplitPaneUI.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> /*</span><a href="#l3.4"></a>
+<span id="l3.5" class="minusline">- * Copyright 1997-2008 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l3.5"></a>
+<span id="l3.6" class="plusline">+ * Copyright 1997-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l3.6"></a>
+<span id="l3.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l3.7"></a>
+<span id="l3.8">  *</span><a href="#l3.8"></a>
+<span id="l3.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l3.9"></a>
+<span id="l3.10" class="atline">@@ -31,14 +31,12 @@</span><a href="#l3.10"></a>
+<span id="l3.11"> import sun.swing.UIAction;</span><a href="#l3.11"></a>
+<span id="l3.12"> import javax.swing.*;</span><a href="#l3.12"></a>
+<span id="l3.13"> import javax.swing.border.Border;</span><a href="#l3.13"></a>
+<span id="l3.14" class="minusline">-import javax.swing.event.*;</span><a href="#l3.14"></a>
+<span id="l3.15"> import java.awt.*;</span><a href="#l3.15"></a>
+<span id="l3.16"> import java.awt.event.*;</span><a href="#l3.16"></a>
+<span id="l3.17"> import java.awt.peer.ComponentPeer;</span><a href="#l3.17"></a>
+<span id="l3.18"> import java.awt.peer.LightweightPeer;</span><a href="#l3.18"></a>
+<span id="l3.19"> import java.beans.*;</span><a href="#l3.19"></a>
+<span id="l3.20"> import java.util.*;</span><a href="#l3.20"></a>
+<span id="l3.21" class="minusline">-import javax.swing.plaf.ActionMapUIResource;</span><a href="#l3.21"></a>
+<span id="l3.22"> import javax.swing.plaf.SplitPaneUI;</span><a href="#l3.22"></a>
+<span id="l3.23"> import javax.swing.plaf.ComponentUI;</span><a href="#l3.23"></a>
+<span id="l3.24"> import javax.swing.plaf.UIResource;</span><a href="#l3.24"></a>
+<span id="l3.25" class="atline">@@ -106,13 +104,13 @@</span><a href="#l3.25"></a>
+<span id="l3.26">      * Keys to use for forward focus traversal when the JComponent is</span><a href="#l3.26"></a>
+<span id="l3.27">      * managing focus.</span><a href="#l3.27"></a>
+<span id="l3.28">      */</span><a href="#l3.28"></a>
+<span id="l3.29" class="minusline">-    private static Set&lt;KeyStroke&gt; managingFocusForwardTraversalKeys;</span><a href="#l3.29"></a>
+<span id="l3.30" class="plusline">+    private Set&lt;KeyStroke&gt; managingFocusForwardTraversalKeys;</span><a href="#l3.30"></a>
+<span id="l3.31"> </span><a href="#l3.31"></a>
+<span id="l3.32">     /**</span><a href="#l3.32"></a>
+<span id="l3.33">      * Keys to use for backward focus traversal when the JComponent is</span><a href="#l3.33"></a>
+<span id="l3.34">      * managing focus.</span><a href="#l3.34"></a>
+<span id="l3.35">      */</span><a href="#l3.35"></a>
+<span id="l3.36" class="minusline">-    private static Set&lt;KeyStroke&gt; managingFocusBackwardTraversalKeys;</span><a href="#l3.36"></a>
+<span id="l3.37" class="plusline">+    private Set&lt;KeyStroke&gt; managingFocusBackwardTraversalKeys;</span><a href="#l3.37"></a>
+<span id="l3.38"> </span><a href="#l3.38"></a>
+<span id="l3.39"> </span><a href="#l3.39"></a>
+<span id="l3.40">     /**</span><a href="#l3.40"></a>
+<span id="l3.41" class="atline">@@ -675,7 +673,7 @@</span><a href="#l3.41"></a>
+<span id="l3.42">      * @return increment via keyboard methods.</span><a href="#l3.42"></a>
+<span id="l3.43">      */</span><a href="#l3.43"></a>
+<span id="l3.44">     int getKeyboardMoveIncrement() {</span><a href="#l3.44"></a>
+<span id="l3.45" class="minusline">-        return KEYBOARD_DIVIDER_MOVE_OFFSET;</span><a href="#l3.45"></a>
+<span id="l3.46" class="plusline">+        return 3;</span><a href="#l3.46"></a>
+<span id="l3.47">     }</span><a href="#l3.47"></a>
+<span id="l3.48"> </span><a href="#l3.48"></a>
+<span id="l3.49">     /**</span><a href="#l3.49"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/metal/MetalBumps.java	Tue Sep 01 08:15:00 2009 -0700</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/metal/MetalBumps.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> /*</span><a href="#l4.4"></a>
+<span id="l4.5" class="minusline">- * Copyright 1998-2008 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l4.5"></a>
+<span id="l4.6" class="plusline">+ * Copyright 1998-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l4.6"></a>
+<span id="l4.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l4.7"></a>
+<span id="l4.8">  *</span><a href="#l4.8"></a>
+<span id="l4.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l4.9"></a>
+<span id="l4.10" class="atline">@@ -28,8 +28,9 @@</span><a href="#l4.10"></a>
+<span id="l4.11"> import java.awt.*;</span><a href="#l4.11"></a>
+<span id="l4.12"> import java.awt.image.*;</span><a href="#l4.12"></a>
+<span id="l4.13"> import javax.swing.*;</span><a href="#l4.13"></a>
+<span id="l4.14" class="minusline">-import java.io.*;</span><a href="#l4.14"></a>
+<span id="l4.15" class="minusline">-import java.util.*;</span><a href="#l4.15"></a>
+<span id="l4.16" class="plusline">+import java.util.ArrayList;</span><a href="#l4.16"></a>
+<span id="l4.17" class="plusline">+import java.util.List;</span><a href="#l4.17"></a>
+<span id="l4.18" class="plusline">+import sun.awt.AppContext;</span><a href="#l4.18"></a>
+<span id="l4.19"> </span><a href="#l4.19"></a>
+<span id="l4.20"> /**</span><a href="#l4.20"></a>
+<span id="l4.21">  * Implements the bumps used throughout the Metal Look and Feel.</span><a href="#l4.21"></a>
+<span id="l4.22" class="atline">@@ -49,19 +50,9 @@</span><a href="#l4.22"></a>
+<span id="l4.23">     protected Color shadowColor;</span><a href="#l4.23"></a>
+<span id="l4.24">     protected Color backColor;</span><a href="#l4.24"></a>
+<span id="l4.25"> </span><a href="#l4.25"></a>
+<span id="l4.26" class="minusline">-    protected static Vector&lt;BumpBuffer&gt; buffers = new Vector&lt;BumpBuffer&gt;();</span><a href="#l4.26"></a>
+<span id="l4.27" class="plusline">+    private static final Object METAL_BUMPS = new Object();</span><a href="#l4.27"></a>
+<span id="l4.28">     protected BumpBuffer buffer;</span><a href="#l4.28"></a>
+<span id="l4.29"> </span><a href="#l4.29"></a>
+<span id="l4.30" class="minusline">-    public MetalBumps( Dimension bumpArea ) {</span><a href="#l4.30"></a>
+<span id="l4.31" class="minusline">-        this( bumpArea.width, bumpArea.height );</span><a href="#l4.31"></a>
+<span id="l4.32" class="minusline">-    }</span><a href="#l4.32"></a>
+<span id="l4.33" class="minusline">-</span><a href="#l4.33"></a>
+<span id="l4.34" class="minusline">-    public MetalBumps( int width, int height ) {</span><a href="#l4.34"></a>
+<span id="l4.35" class="minusline">-        this(width, height, MetalLookAndFeel.getPrimaryControlHighlight(),</span><a href="#l4.35"></a>
+<span id="l4.36" class="minusline">-             MetalLookAndFeel.getPrimaryControlDarkShadow(),</span><a href="#l4.36"></a>
+<span id="l4.37" class="minusline">-             MetalLookAndFeel.getPrimaryControlShadow());</span><a href="#l4.37"></a>
+<span id="l4.38" class="minusline">-    }</span><a href="#l4.38"></a>
+<span id="l4.39" class="minusline">-</span><a href="#l4.39"></a>
+<span id="l4.40">     /**</span><a href="#l4.40"></a>
+<span id="l4.41">      * Creates MetalBumps of the specified size with the specified colors.</span><a href="#l4.41"></a>
+<span id="l4.42">      * If &lt;code&gt;newBackColor&lt;/code&gt; is null, the background will be</span><a href="#l4.42"></a>
+<span id="l4.43" class="atline">@@ -73,26 +64,22 @@</span><a href="#l4.43"></a>
+<span id="l4.44">         setBumpColors( newTopColor, newShadowColor, newBackColor );</span><a href="#l4.44"></a>
+<span id="l4.45">     }</span><a href="#l4.45"></a>
+<span id="l4.46"> </span><a href="#l4.46"></a>
+<span id="l4.47" class="minusline">-    private BumpBuffer getBuffer(GraphicsConfiguration gc, Color aTopColor,</span><a href="#l4.47"></a>
+<span id="l4.48" class="minusline">-                                 Color aShadowColor, Color aBackColor) {</span><a href="#l4.48"></a>
+<span id="l4.49" class="minusline">-        if (buffer != null &amp;&amp; buffer.hasSameConfiguration(</span><a href="#l4.49"></a>
+<span id="l4.50" class="minusline">-                              gc, aTopColor, aShadowColor, aBackColor)) {</span><a href="#l4.50"></a>
+<span id="l4.51" class="minusline">-            return buffer;</span><a href="#l4.51"></a>
+<span id="l4.52" class="plusline">+    private static BumpBuffer createBuffer(GraphicsConfiguration gc,</span><a href="#l4.52"></a>
+<span id="l4.53" class="plusline">+                                           Color topColor, Color shadowColor, Color backColor) {</span><a href="#l4.53"></a>
+<span id="l4.54" class="plusline">+        AppContext context = AppContext.getAppContext();</span><a href="#l4.54"></a>
+<span id="l4.55" class="plusline">+        List&lt;BumpBuffer&gt; buffers = (List&lt;BumpBuffer&gt;) context.get(METAL_BUMPS);</span><a href="#l4.55"></a>
+<span id="l4.56" class="plusline">+        if (buffers == null) {</span><a href="#l4.56"></a>
+<span id="l4.57" class="plusline">+            buffers = new ArrayList&lt;BumpBuffer&gt;();</span><a href="#l4.57"></a>
+<span id="l4.58" class="plusline">+            context.put(METAL_BUMPS, buffers);</span><a href="#l4.58"></a>
+<span id="l4.59">         }</span><a href="#l4.59"></a>
+<span id="l4.60" class="minusline">-        BumpBuffer result = null;</span><a href="#l4.60"></a>
+<span id="l4.61" class="minusline">-</span><a href="#l4.61"></a>
+<span id="l4.62" class="minusline">-        for (BumpBuffer aBuffer : buffers) {</span><a href="#l4.62"></a>
+<span id="l4.63" class="minusline">-            if ( aBuffer.hasSameConfiguration(gc, aTopColor, aShadowColor,</span><a href="#l4.63"></a>
+<span id="l4.64" class="minusline">-                                              aBackColor)) {</span><a href="#l4.64"></a>
+<span id="l4.65" class="minusline">-                result = aBuffer;</span><a href="#l4.65"></a>
+<span id="l4.66" class="minusline">-                break;</span><a href="#l4.66"></a>
+<span id="l4.67" class="plusline">+        for (BumpBuffer buffer : buffers) {</span><a href="#l4.67"></a>
+<span id="l4.68" class="plusline">+            if (buffer.hasSameConfiguration(gc, topColor, shadowColor, backColor)) {</span><a href="#l4.68"></a>
+<span id="l4.69" class="plusline">+                return buffer;</span><a href="#l4.69"></a>
+<span id="l4.70">             }</span><a href="#l4.70"></a>
+<span id="l4.71">         }</span><a href="#l4.71"></a>
+<span id="l4.72" class="minusline">-        if (result == null) {</span><a href="#l4.72"></a>
+<span id="l4.73" class="minusline">-            result = new BumpBuffer(gc, topColor, shadowColor, backColor);</span><a href="#l4.73"></a>
+<span id="l4.74" class="minusline">-            buffers.addElement(result);</span><a href="#l4.74"></a>
+<span id="l4.75" class="minusline">-        }</span><a href="#l4.75"></a>
+<span id="l4.76" class="minusline">-        return result;</span><a href="#l4.76"></a>
+<span id="l4.77" class="plusline">+        BumpBuffer buffer = new BumpBuffer(gc, topColor, shadowColor, backColor);</span><a href="#l4.77"></a>
+<span id="l4.78" class="plusline">+        buffers.add(buffer);</span><a href="#l4.78"></a>
+<span id="l4.79" class="plusline">+        return buffer;</span><a href="#l4.79"></a>
+<span id="l4.80">     }</span><a href="#l4.80"></a>
+<span id="l4.81"> </span><a href="#l4.81"></a>
+<span id="l4.82">     public void setBumpArea( Dimension bumpArea ) {</span><a href="#l4.82"></a>
+<span id="l4.83" class="atline">@@ -119,10 +106,12 @@</span><a href="#l4.83"></a>
+<span id="l4.84">         GraphicsConfiguration gc = (g instanceof Graphics2D) ?</span><a href="#l4.84"></a>
+<span id="l4.85">                 ((Graphics2D) g).getDeviceConfiguration() : null;</span><a href="#l4.85"></a>
+<span id="l4.86"> </span><a href="#l4.86"></a>
+<span id="l4.87" class="minusline">-        buffer = getBuffer(gc, topColor, shadowColor, backColor);</span><a href="#l4.87"></a>
+<span id="l4.88" class="plusline">+        if ((buffer == null) || !buffer.hasSameConfiguration(gc, topColor, shadowColor, backColor)) {</span><a href="#l4.88"></a>
+<span id="l4.89" class="plusline">+            buffer = createBuffer(gc, topColor, shadowColor, backColor);</span><a href="#l4.89"></a>
+<span id="l4.90" class="plusline">+        }</span><a href="#l4.90"></a>
+<span id="l4.91"> </span><a href="#l4.91"></a>
+<span id="l4.92" class="minusline">-        int bufferWidth = buffer.getImageSize().width;</span><a href="#l4.92"></a>
+<span id="l4.93" class="minusline">-        int bufferHeight = buffer.getImageSize().height;</span><a href="#l4.93"></a>
+<span id="l4.94" class="plusline">+        int bufferWidth = BumpBuffer.IMAGE_SIZE;</span><a href="#l4.94"></a>
+<span id="l4.95" class="plusline">+        int bufferHeight = BumpBuffer.IMAGE_SIZE;</span><a href="#l4.95"></a>
+<span id="l4.96">         int iconWidth = getIconWidth();</span><a href="#l4.96"></a>
+<span id="l4.97">         int iconHeight = getIconHeight();</span><a href="#l4.97"></a>
+<span id="l4.98">         int x2 = x + iconWidth;</span><a href="#l4.98"></a>
+<span id="l4.99" class="atline">@@ -155,7 +144,6 @@</span><a href="#l4.99"></a>
+<span id="l4.100"> class BumpBuffer {</span><a href="#l4.100"></a>
+<span id="l4.101"> </span><a href="#l4.101"></a>
+<span id="l4.102">     static final int IMAGE_SIZE = 64;</span><a href="#l4.102"></a>
+<span id="l4.103" class="minusline">-    static Dimension imageSize = new Dimension( IMAGE_SIZE, IMAGE_SIZE );</span><a href="#l4.103"></a>
+<span id="l4.104"> </span><a href="#l4.104"></a>
+<span id="l4.105">     transient Image image;</span><a href="#l4.105"></a>
+<span id="l4.106">     Color topColor;</span><a href="#l4.106"></a>
+<span id="l4.107" class="atline">@@ -197,10 +185,6 @@</span><a href="#l4.107"></a>
+<span id="l4.108">         return image;</span><a href="#l4.108"></a>
+<span id="l4.109">     }</span><a href="#l4.109"></a>
+<span id="l4.110"> </span><a href="#l4.110"></a>
+<span id="l4.111" class="minusline">-    public Dimension getImageSize() {</span><a href="#l4.111"></a>
+<span id="l4.112" class="minusline">-        return imageSize;</span><a href="#l4.112"></a>
+<span id="l4.113" class="minusline">-    }</span><a href="#l4.113"></a>
+<span id="l4.114" class="minusline">-</span><a href="#l4.114"></a>
+<span id="l4.115">     /**</span><a href="#l4.115"></a>
+<span id="l4.116">      * Paints the bumps into the current image.</span><a href="#l4.116"></a>
+<span id="l4.117">      */</span><a href="#l4.117"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/metal/MetalInternalFrameUI.java	Tue Sep 01 08:15:00 2009 -0700</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/metal/MetalInternalFrameUI.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l5.3"></a>
+<span id="l5.4"> /*</span><a href="#l5.4"></a>
+<span id="l5.5" class="minusline">- * Copyright 1998-2006 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l5.5"></a>
+<span id="l5.6" class="plusline">+ * Copyright 1998-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l5.6"></a>
+<span id="l5.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l5.7"></a>
+<span id="l5.8">  *</span><a href="#l5.8"></a>
+<span id="l5.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l5.9"></a>
+<span id="l5.10" class="atline">@@ -31,10 +31,8 @@</span><a href="#l5.10"></a>
+<span id="l5.11"> import javax.swing.event.*;</span><a href="#l5.11"></a>
+<span id="l5.12"> import javax.swing.border.*;</span><a href="#l5.12"></a>
+<span id="l5.13"> import javax.swing.plaf.basic.*;</span><a href="#l5.13"></a>
+<span id="l5.14" class="minusline">-import java.util.EventListener;</span><a href="#l5.14"></a>
+<span id="l5.15"> import java.beans.PropertyChangeListener;</span><a href="#l5.15"></a>
+<span id="l5.16"> import java.beans.PropertyChangeEvent;</span><a href="#l5.16"></a>
+<span id="l5.17" class="minusline">-import java.beans.PropertyVetoException;</span><a href="#l5.17"></a>
+<span id="l5.18"> import javax.swing.plaf.*;</span><a href="#l5.18"></a>
+<span id="l5.19"> </span><a href="#l5.19"></a>
+<span id="l5.20"> /**</span><a href="#l5.20"></a>
+<span id="l5.21" class="atline">@@ -51,7 +49,7 @@</span><a href="#l5.21"></a>
+<span id="l5.22">   private static final Border handyEmptyBorder = new EmptyBorder(0,0,0,0);</span><a href="#l5.22"></a>
+<span id="l5.23"> </span><a href="#l5.23"></a>
+<span id="l5.24">   protected static String IS_PALETTE   = &quot;JInternalFrame.isPalette&quot;;</span><a href="#l5.24"></a>
+<span id="l5.25" class="minusline">-</span><a href="#l5.25"></a>
+<span id="l5.26" class="plusline">+  private static String IS_PALETTE_KEY = &quot;JInternalFrame.isPalette&quot;;</span><a href="#l5.26"></a>
+<span id="l5.27">   private static String FRAME_TYPE     = &quot;JInternalFrame.frameType&quot;;</span><a href="#l5.27"></a>
+<span id="l5.28">   private static String NORMAL_FRAME   = &quot;normal&quot;;</span><a href="#l5.28"></a>
+<span id="l5.29">   private static String PALETTE_FRAME  = &quot;palette&quot;;</span><a href="#l5.29"></a>
+<span id="l5.30" class="atline">@@ -68,7 +66,7 @@</span><a href="#l5.30"></a>
+<span id="l5.31">   public void installUI(JComponent c) {</span><a href="#l5.31"></a>
+<span id="l5.32">     super.installUI(c);</span><a href="#l5.32"></a>
+<span id="l5.33"> </span><a href="#l5.33"></a>
+<span id="l5.34" class="minusline">-    Object paletteProp = c.getClientProperty( IS_PALETTE );</span><a href="#l5.34"></a>
+<span id="l5.35" class="plusline">+    Object paletteProp = c.getClientProperty(IS_PALETTE_KEY);</span><a href="#l5.35"></a>
+<span id="l5.36">     if ( paletteProp != null ) {</span><a href="#l5.36"></a>
+<span id="l5.37">         setPalette( ((Boolean)paletteProp).booleanValue() );</span><a href="#l5.37"></a>
+<span id="l5.38">     }</span><a href="#l5.38"></a>
+<span id="l5.39" class="atline">@@ -187,7 +185,7 @@</span><a href="#l5.39"></a>
+<span id="l5.40">                   ui.setFrameType( (String) e.getNewValue() );</span><a href="#l5.40"></a>
+<span id="l5.41">               }</span><a href="#l5.41"></a>
+<span id="l5.42">           }</span><a href="#l5.42"></a>
+<span id="l5.43" class="minusline">-          else if ( name.equals( IS_PALETTE ) )</span><a href="#l5.43"></a>
+<span id="l5.44" class="plusline">+          else if ( name.equals(IS_PALETTE_KEY) )</span><a href="#l5.44"></a>
+<span id="l5.45">           {</span><a href="#l5.45"></a>
+<span id="l5.46">               if ( e.getNewValue() != null )</span><a href="#l5.46"></a>
+<span id="l5.47">               {</span><a href="#l5.47"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l6.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/metal/MetalSliderUI.java	Tue Sep 01 08:15:00 2009 -0700</span><a href="#l6.1"></a>
+<span id="l6.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/metal/MetalSliderUI.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l6.2"></a>
+<span id="l6.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l6.3"></a>
+<span id="l6.4"> /*</span><a href="#l6.4"></a>
+<span id="l6.5" class="minusline">- * Copyright 1998-2008 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l6.5"></a>
+<span id="l6.6" class="plusline">+ * Copyright 1998-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l6.6"></a>
+<span id="l6.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l6.7"></a>
+<span id="l6.8">  *</span><a href="#l6.8"></a>
+<span id="l6.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l6.9"></a>
+<span id="l6.10" class="atline">@@ -54,12 +54,13 @@</span><a href="#l6.10"></a>
+<span id="l6.11"> </span><a href="#l6.11"></a>
+<span id="l6.12">     protected final int TICK_BUFFER = 4;</span><a href="#l6.12"></a>
+<span id="l6.13">     protected boolean filledSlider = false;</span><a href="#l6.13"></a>
+<span id="l6.14" class="minusline">-    // NOTE: these next three variables are currently unused.</span><a href="#l6.14"></a>
+<span id="l6.15" class="plusline">+    // NOTE: these next five variables are currently unused.</span><a href="#l6.15"></a>
+<span id="l6.16">     protected static Color thumbColor;</span><a href="#l6.16"></a>
+<span id="l6.17">     protected static Color highlightColor;</span><a href="#l6.17"></a>
+<span id="l6.18">     protected static Color darkShadowColor;</span><a href="#l6.18"></a>
+<span id="l6.19">     protected static int trackWidth;</span><a href="#l6.19"></a>
+<span id="l6.20">     protected static int tickLength;</span><a href="#l6.20"></a>
+<span id="l6.21" class="plusline">+    private int safeLength;</span><a href="#l6.21"></a>
+<span id="l6.22"> </span><a href="#l6.22"></a>
+<span id="l6.23">    /**</span><a href="#l6.23"></a>
+<span id="l6.24">     * A default horizontal thumb &lt;code&gt;Icon&lt;/code&gt;. This field might not be</span><a href="#l6.24"></a>
+<span id="l6.25" class="atline">@@ -107,7 +108,7 @@</span><a href="#l6.25"></a>
+<span id="l6.26"> </span><a href="#l6.26"></a>
+<span id="l6.27">     public void installUI( JComponent c ) {</span><a href="#l6.27"></a>
+<span id="l6.28">         trackWidth = ((Integer)UIManager.get( &quot;Slider.trackWidth&quot; )).intValue();</span><a href="#l6.28"></a>
+<span id="l6.29" class="minusline">-        tickLength = ((Integer)UIManager.get( &quot;Slider.majorTickLength&quot; )).intValue();</span><a href="#l6.29"></a>
+<span id="l6.30" class="plusline">+        tickLength = safeLength = ((Integer)UIManager.get( &quot;Slider.majorTickLength&quot; )).intValue();</span><a href="#l6.30"></a>
+<span id="l6.31">         horizThumbIcon = SAFE_HORIZ_THUMB_ICON =</span><a href="#l6.31"></a>
+<span id="l6.32">                 UIManager.getIcon( &quot;Slider.horizontalThumbIcon&quot; );</span><a href="#l6.32"></a>
+<span id="l6.33">         vertThumbIcon = SAFE_VERT_THUMB_ICON =</span><a href="#l6.33"></a>
+<span id="l6.34" class="atline">@@ -477,8 +478,8 @@</span><a href="#l6.34"></a>
+<span id="l6.35">      * determine the tick area rectangle.</span><a href="#l6.35"></a>
+<span id="l6.36">      */</span><a href="#l6.36"></a>
+<span id="l6.37">     public int getTickLength() {</span><a href="#l6.37"></a>
+<span id="l6.38" class="minusline">-        return slider.getOrientation() == JSlider.HORIZONTAL ? tickLength + TICK_BUFFER + 1 :</span><a href="#l6.38"></a>
+<span id="l6.39" class="minusline">-        tickLength + TICK_BUFFER + 3;</span><a href="#l6.39"></a>
+<span id="l6.40" class="plusline">+        return slider.getOrientation() == JSlider.HORIZONTAL ? safeLength + TICK_BUFFER + 1 :</span><a href="#l6.40"></a>
+<span id="l6.41" class="plusline">+        safeLength + TICK_BUFFER + 3;</span><a href="#l6.41"></a>
+<span id="l6.42">     }</span><a href="#l6.42"></a>
+<span id="l6.43"> </span><a href="#l6.43"></a>
+<span id="l6.44">     /**</span><a href="#l6.44"></a>
+<span id="l6.45" class="atline">@@ -523,22 +524,22 @@</span><a href="#l6.45"></a>
+<span id="l6.46"> </span><a href="#l6.46"></a>
+<span id="l6.47">     protected void paintMinorTickForHorizSlider( Graphics g, Rectangle tickBounds, int x ) {</span><a href="#l6.47"></a>
+<span id="l6.48">         g.setColor( slider.isEnabled() ? slider.getForeground() : MetalLookAndFeel.getControlShadow() );</span><a href="#l6.48"></a>
+<span id="l6.49" class="minusline">-        g.drawLine( x, TICK_BUFFER, x, TICK_BUFFER + (tickLength / 2) );</span><a href="#l6.49"></a>
+<span id="l6.50" class="plusline">+        g.drawLine( x, TICK_BUFFER, x, TICK_BUFFER + (safeLength / 2) );</span><a href="#l6.50"></a>
+<span id="l6.51">     }</span><a href="#l6.51"></a>
+<span id="l6.52"> </span><a href="#l6.52"></a>
+<span id="l6.53">     protected void paintMajorTickForHorizSlider( Graphics g, Rectangle tickBounds, int x ) {</span><a href="#l6.53"></a>
+<span id="l6.54">         g.setColor( slider.isEnabled() ? slider.getForeground() : MetalLookAndFeel.getControlShadow() );</span><a href="#l6.54"></a>
+<span id="l6.55" class="minusline">-        g.drawLine( x, TICK_BUFFER , x, TICK_BUFFER + (tickLength - 1) );</span><a href="#l6.55"></a>
+<span id="l6.56" class="plusline">+        g.drawLine( x, TICK_BUFFER , x, TICK_BUFFER + (safeLength - 1) );</span><a href="#l6.56"></a>
+<span id="l6.57">     }</span><a href="#l6.57"></a>
+<span id="l6.58"> </span><a href="#l6.58"></a>
+<span id="l6.59">     protected void paintMinorTickForVertSlider( Graphics g, Rectangle tickBounds, int y ) {</span><a href="#l6.59"></a>
+<span id="l6.60">         g.setColor( slider.isEnabled() ? slider.getForeground() : MetalLookAndFeel.getControlShadow() );</span><a href="#l6.60"></a>
+<span id="l6.61"> </span><a href="#l6.61"></a>
+<span id="l6.62">         if (MetalUtils.isLeftToRight(slider)) {</span><a href="#l6.62"></a>
+<span id="l6.63" class="minusline">-            g.drawLine( TICK_BUFFER, y, TICK_BUFFER + (tickLength / 2), y );</span><a href="#l6.63"></a>
+<span id="l6.64" class="plusline">+            g.drawLine( TICK_BUFFER, y, TICK_BUFFER + (safeLength / 2), y );</span><a href="#l6.64"></a>
+<span id="l6.65">         }</span><a href="#l6.65"></a>
+<span id="l6.66">         else {</span><a href="#l6.66"></a>
+<span id="l6.67" class="minusline">-            g.drawLine( 0, y, tickLength/2, y );</span><a href="#l6.67"></a>
+<span id="l6.68" class="plusline">+            g.drawLine( 0, y, safeLength/2, y );</span><a href="#l6.68"></a>
+<span id="l6.69">         }</span><a href="#l6.69"></a>
+<span id="l6.70">     }</span><a href="#l6.70"></a>
+<span id="l6.71"> </span><a href="#l6.71"></a>
+<span id="l6.72" class="atline">@@ -546,10 +547,10 @@</span><a href="#l6.72"></a>
+<span id="l6.73">         g.setColor( slider.isEnabled() ? slider.getForeground() : MetalLookAndFeel.getControlShadow() );</span><a href="#l6.73"></a>
+<span id="l6.74"> </span><a href="#l6.74"></a>
+<span id="l6.75">         if (MetalUtils.isLeftToRight(slider)) {</span><a href="#l6.75"></a>
+<span id="l6.76" class="minusline">-            g.drawLine( TICK_BUFFER, y, TICK_BUFFER + tickLength, y );</span><a href="#l6.76"></a>
+<span id="l6.77" class="plusline">+            g.drawLine( TICK_BUFFER, y, TICK_BUFFER + safeLength, y );</span><a href="#l6.77"></a>
+<span id="l6.78">         }</span><a href="#l6.78"></a>
+<span id="l6.79">         else {</span><a href="#l6.79"></a>
+<span id="l6.80" class="minusline">-            g.drawLine( 0, y, tickLength, y );</span><a href="#l6.80"></a>
+<span id="l6.81" class="plusline">+            g.drawLine( 0, y, safeLength, y );</span><a href="#l6.81"></a>
+<span id="l6.82">         }</span><a href="#l6.82"></a>
+<span id="l6.83">     }</span><a href="#l6.83"></a>
+<span id="l6.84"> }</span><a href="#l6.84"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l7.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l7.1"></a>
+<span id="l7.2" class="plusline">+++ b/test/javax/swing/ToolTipManager/Test6657026.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l7.2"></a>
+<span id="l7.3" class="atline">@@ -0,0 +1,74 @@</span><a href="#l7.3"></a>
+<span id="l7.4" class="plusline">+/*</span><a href="#l7.4"></a>
+<span id="l7.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l7.5"></a>
+<span id="l7.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l7.6"></a>
+<span id="l7.7" class="plusline">+ *</span><a href="#l7.7"></a>
+<span id="l7.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l7.8"></a>
+<span id="l7.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l7.9"></a>
+<span id="l7.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l7.10"></a>
+<span id="l7.11" class="plusline">+ *</span><a href="#l7.11"></a>
+<span id="l7.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l7.12"></a>
+<span id="l7.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l7.13"></a>
+<span id="l7.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l7.14"></a>
+<span id="l7.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l7.15"></a>
+<span id="l7.16" class="plusline">+ * accompanied this code).</span><a href="#l7.16"></a>
+<span id="l7.17" class="plusline">+ *</span><a href="#l7.17"></a>
+<span id="l7.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l7.18"></a>
+<span id="l7.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l7.19"></a>
+<span id="l7.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l7.20"></a>
+<span id="l7.21" class="plusline">+ *</span><a href="#l7.21"></a>
+<span id="l7.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l7.22"></a>
+<span id="l7.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l7.23"></a>
+<span id="l7.24" class="plusline">+ * have any questions.</span><a href="#l7.24"></a>
+<span id="l7.25" class="plusline">+ */</span><a href="#l7.25"></a>
+<span id="l7.26" class="plusline">+</span><a href="#l7.26"></a>
+<span id="l7.27" class="plusline">+/*</span><a href="#l7.27"></a>
+<span id="l7.28" class="plusline">+ * @test</span><a href="#l7.28"></a>
+<span id="l7.29" class="plusline">+ * @bug 6657026</span><a href="#l7.29"></a>
+<span id="l7.30" class="plusline">+ * @summary Tests shared ToolTipManager in different application contexts</span><a href="#l7.30"></a>
+<span id="l7.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l7.31"></a>
+<span id="l7.32" class="plusline">+ */</span><a href="#l7.32"></a>
+<span id="l7.33" class="plusline">+</span><a href="#l7.33"></a>
+<span id="l7.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l7.34"></a>
+<span id="l7.35" class="plusline">+import javax.swing.ToolTipManager;</span><a href="#l7.35"></a>
+<span id="l7.36" class="plusline">+</span><a href="#l7.36"></a>
+<span id="l7.37" class="plusline">+public class Test6657026 implements Runnable {</span><a href="#l7.37"></a>
+<span id="l7.38" class="plusline">+</span><a href="#l7.38"></a>
+<span id="l7.39" class="plusline">+    private static final int DISMISS = 4000;</span><a href="#l7.39"></a>
+<span id="l7.40" class="plusline">+    private static final int INITIAL = 750;</span><a href="#l7.40"></a>
+<span id="l7.41" class="plusline">+    private static final int RESHOW = 500;</span><a href="#l7.41"></a>
+<span id="l7.42" class="plusline">+</span><a href="#l7.42"></a>
+<span id="l7.43" class="plusline">+    public static void main(String[] args) throws InterruptedException {</span><a href="#l7.43"></a>
+<span id="l7.44" class="plusline">+        ToolTipManager manager = ToolTipManager.sharedInstance();</span><a href="#l7.44"></a>
+<span id="l7.45" class="plusline">+        if (DISMISS != manager.getDismissDelay()) {</span><a href="#l7.45"></a>
+<span id="l7.46" class="plusline">+            throw new Error(&quot;unexpected dismiss delay&quot;);</span><a href="#l7.46"></a>
+<span id="l7.47" class="plusline">+        }</span><a href="#l7.47"></a>
+<span id="l7.48" class="plusline">+        if (INITIAL != manager.getInitialDelay()) {</span><a href="#l7.48"></a>
+<span id="l7.49" class="plusline">+            throw new Error(&quot;unexpected initial delay&quot;);</span><a href="#l7.49"></a>
+<span id="l7.50" class="plusline">+        }</span><a href="#l7.50"></a>
+<span id="l7.51" class="plusline">+        if (RESHOW != manager.getReshowDelay()) {</span><a href="#l7.51"></a>
+<span id="l7.52" class="plusline">+            throw new Error(&quot;unexpected reshow delay&quot;);</span><a href="#l7.52"></a>
+<span id="l7.53" class="plusline">+        }</span><a href="#l7.53"></a>
+<span id="l7.54" class="plusline">+        manager.setDismissDelay(DISMISS + 1);</span><a href="#l7.54"></a>
+<span id="l7.55" class="plusline">+        manager.setInitialDelay(INITIAL + 1);</span><a href="#l7.55"></a>
+<span id="l7.56" class="plusline">+        manager.setReshowDelay(RESHOW + 1);</span><a href="#l7.56"></a>
+<span id="l7.57" class="plusline">+</span><a href="#l7.57"></a>
+<span id="l7.58" class="plusline">+        ThreadGroup group = new ThreadGroup(&quot;$$$&quot;);</span><a href="#l7.58"></a>
+<span id="l7.59" class="plusline">+        Thread thread = new Thread(group, new Test6657026());</span><a href="#l7.59"></a>
+<span id="l7.60" class="plusline">+        thread.start();</span><a href="#l7.60"></a>
+<span id="l7.61" class="plusline">+        thread.join();</span><a href="#l7.61"></a>
+<span id="l7.62" class="plusline">+    }</span><a href="#l7.62"></a>
+<span id="l7.63" class="plusline">+</span><a href="#l7.63"></a>
+<span id="l7.64" class="plusline">+    public void run() {</span><a href="#l7.64"></a>
+<span id="l7.65" class="plusline">+        SunToolkit.createNewAppContext();</span><a href="#l7.65"></a>
+<span id="l7.66" class="plusline">+        ToolTipManager manager = ToolTipManager.sharedInstance();</span><a href="#l7.66"></a>
+<span id="l7.67" class="plusline">+        if (DISMISS != manager.getDismissDelay()) {</span><a href="#l7.67"></a>
+<span id="l7.68" class="plusline">+            throw new Error(&quot;shared dismiss delay&quot;);</span><a href="#l7.68"></a>
+<span id="l7.69" class="plusline">+        }</span><a href="#l7.69"></a>
+<span id="l7.70" class="plusline">+        if (INITIAL != manager.getInitialDelay()) {</span><a href="#l7.70"></a>
+<span id="l7.71" class="plusline">+            throw new Error(&quot;shared initial delay&quot;);</span><a href="#l7.71"></a>
+<span id="l7.72" class="plusline">+        }</span><a href="#l7.72"></a>
+<span id="l7.73" class="plusline">+        if (RESHOW != manager.getReshowDelay()) {</span><a href="#l7.73"></a>
+<span id="l7.74" class="plusline">+            throw new Error(&quot;shared reshow delay&quot;);</span><a href="#l7.74"></a>
+<span id="l7.75" class="plusline">+        }</span><a href="#l7.75"></a>
+<span id="l7.76" class="plusline">+    }</span><a href="#l7.76"></a>
+<span id="l7.77" class="plusline">+}</span><a href="#l7.77"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l8.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l8.1"></a>
+<span id="l8.2" class="plusline">+++ b/test/javax/swing/UIManager/Test6657026.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l8.2"></a>
+<span id="l8.3" class="atline">@@ -0,0 +1,59 @@</span><a href="#l8.3"></a>
+<span id="l8.4" class="plusline">+/*</span><a href="#l8.4"></a>
+<span id="l8.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l8.5"></a>
+<span id="l8.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l8.6"></a>
+<span id="l8.7" class="plusline">+ *</span><a href="#l8.7"></a>
+<span id="l8.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l8.8"></a>
+<span id="l8.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l8.9"></a>
+<span id="l8.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l8.10"></a>
+<span id="l8.11" class="plusline">+ *</span><a href="#l8.11"></a>
+<span id="l8.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l8.12"></a>
+<span id="l8.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l8.13"></a>
+<span id="l8.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l8.14"></a>
+<span id="l8.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l8.15"></a>
+<span id="l8.16" class="plusline">+ * accompanied this code).</span><a href="#l8.16"></a>
+<span id="l8.17" class="plusline">+ *</span><a href="#l8.17"></a>
+<span id="l8.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l8.18"></a>
+<span id="l8.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l8.19"></a>
+<span id="l8.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l8.20"></a>
+<span id="l8.21" class="plusline">+ *</span><a href="#l8.21"></a>
+<span id="l8.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l8.22"></a>
+<span id="l8.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l8.23"></a>
+<span id="l8.24" class="plusline">+ * have any questions.</span><a href="#l8.24"></a>
+<span id="l8.25" class="plusline">+ */</span><a href="#l8.25"></a>
+<span id="l8.26" class="plusline">+</span><a href="#l8.26"></a>
+<span id="l8.27" class="plusline">+/*</span><a href="#l8.27"></a>
+<span id="l8.28" class="plusline">+ * @test</span><a href="#l8.28"></a>
+<span id="l8.29" class="plusline">+ * @bug 6657026</span><a href="#l8.29"></a>
+<span id="l8.30" class="plusline">+ * @summary Tests shared UIManager in different application contexts</span><a href="#l8.30"></a>
+<span id="l8.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l8.31"></a>
+<span id="l8.32" class="plusline">+ */</span><a href="#l8.32"></a>
+<span id="l8.33" class="plusline">+</span><a href="#l8.33"></a>
+<span id="l8.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l8.34"></a>
+<span id="l8.35" class="plusline">+</span><a href="#l8.35"></a>
+<span id="l8.36" class="plusline">+import javax.swing.UIManager;</span><a href="#l8.36"></a>
+<span id="l8.37" class="plusline">+import javax.swing.UIManager.LookAndFeelInfo;</span><a href="#l8.37"></a>
+<span id="l8.38" class="plusline">+</span><a href="#l8.38"></a>
+<span id="l8.39" class="plusline">+public class Test6657026 implements Runnable {</span><a href="#l8.39"></a>
+<span id="l8.40" class="plusline">+</span><a href="#l8.40"></a>
+<span id="l8.41" class="plusline">+    public static void main(String[] args) throws Exception {</span><a href="#l8.41"></a>
+<span id="l8.42" class="plusline">+        if (UIManager.getInstalledLookAndFeels().length == 0) {</span><a href="#l8.42"></a>
+<span id="l8.43" class="plusline">+            throw new Error(&quot;unexpected amount of look&amp;feels&quot;);</span><a href="#l8.43"></a>
+<span id="l8.44" class="plusline">+        }</span><a href="#l8.44"></a>
+<span id="l8.45" class="plusline">+        UIManager.setInstalledLookAndFeels(new LookAndFeelInfo[0]);</span><a href="#l8.45"></a>
+<span id="l8.46" class="plusline">+        if (UIManager.getInstalledLookAndFeels().length != 0) {</span><a href="#l8.46"></a>
+<span id="l8.47" class="plusline">+            throw new Error(&quot;unexpected amount of look&amp;feels&quot;);</span><a href="#l8.47"></a>
+<span id="l8.48" class="plusline">+        }</span><a href="#l8.48"></a>
+<span id="l8.49" class="plusline">+</span><a href="#l8.49"></a>
+<span id="l8.50" class="plusline">+        ThreadGroup group = new ThreadGroup(&quot;$$$&quot;);</span><a href="#l8.50"></a>
+<span id="l8.51" class="plusline">+        Thread thread = new Thread(group, new Test6657026());</span><a href="#l8.51"></a>
+<span id="l8.52" class="plusline">+        thread.start();</span><a href="#l8.52"></a>
+<span id="l8.53" class="plusline">+        thread.join();</span><a href="#l8.53"></a>
+<span id="l8.54" class="plusline">+    }</span><a href="#l8.54"></a>
+<span id="l8.55" class="plusline">+</span><a href="#l8.55"></a>
+<span id="l8.56" class="plusline">+    public void run() {</span><a href="#l8.56"></a>
+<span id="l8.57" class="plusline">+        SunToolkit.createNewAppContext();</span><a href="#l8.57"></a>
+<span id="l8.58" class="plusline">+        if (UIManager.getInstalledLookAndFeels().length == 0) {</span><a href="#l8.58"></a>
+<span id="l8.59" class="plusline">+            throw new Error(&quot;shared look&amp;feels&quot;);</span><a href="#l8.59"></a>
+<span id="l8.60" class="plusline">+        }</span><a href="#l8.60"></a>
+<span id="l8.61" class="plusline">+    }</span><a href="#l8.61"></a>
+<span id="l8.62" class="plusline">+}</span><a href="#l8.62"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l9.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l9.1"></a>
+<span id="l9.2" class="plusline">+++ b/test/javax/swing/plaf/basic/BasicSplitPaneUI/Test6657026.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l9.2"></a>
+<span id="l9.3" class="atline">@@ -0,0 +1,82 @@</span><a href="#l9.3"></a>
+<span id="l9.4" class="plusline">+/*</span><a href="#l9.4"></a>
+<span id="l9.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l9.5"></a>
+<span id="l9.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l9.6"></a>
+<span id="l9.7" class="plusline">+ *</span><a href="#l9.7"></a>
+<span id="l9.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l9.8"></a>
+<span id="l9.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l9.9"></a>
+<span id="l9.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l9.10"></a>
+<span id="l9.11" class="plusline">+ *</span><a href="#l9.11"></a>
+<span id="l9.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l9.12"></a>
+<span id="l9.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l9.13"></a>
+<span id="l9.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l9.14"></a>
+<span id="l9.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l9.15"></a>
+<span id="l9.16" class="plusline">+ * accompanied this code).</span><a href="#l9.16"></a>
+<span id="l9.17" class="plusline">+ *</span><a href="#l9.17"></a>
+<span id="l9.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l9.18"></a>
+<span id="l9.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l9.19"></a>
+<span id="l9.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l9.20"></a>
+<span id="l9.21" class="plusline">+ *</span><a href="#l9.21"></a>
+<span id="l9.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l9.22"></a>
+<span id="l9.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l9.23"></a>
+<span id="l9.24" class="plusline">+ * have any questions.</span><a href="#l9.24"></a>
+<span id="l9.25" class="plusline">+ */</span><a href="#l9.25"></a>
+<span id="l9.26" class="plusline">+</span><a href="#l9.26"></a>
+<span id="l9.27" class="plusline">+/*</span><a href="#l9.27"></a>
+<span id="l9.28" class="plusline">+ * @test</span><a href="#l9.28"></a>
+<span id="l9.29" class="plusline">+ * @bug 6657026</span><a href="#l9.29"></a>
+<span id="l9.30" class="plusline">+ * @summary Tests shared BasicSplitPaneUI in different application contexts</span><a href="#l9.30"></a>
+<span id="l9.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l9.31"></a>
+<span id="l9.32" class="plusline">+ */</span><a href="#l9.32"></a>
+<span id="l9.33" class="plusline">+</span><a href="#l9.33"></a>
+<span id="l9.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l9.34"></a>
+<span id="l9.35" class="plusline">+</span><a href="#l9.35"></a>
+<span id="l9.36" class="plusline">+import java.awt.event.ActionEvent;</span><a href="#l9.36"></a>
+<span id="l9.37" class="plusline">+import java.util.Set;</span><a href="#l9.37"></a>
+<span id="l9.38" class="plusline">+import javax.swing.JSplitPane;</span><a href="#l9.38"></a>
+<span id="l9.39" class="plusline">+import javax.swing.plaf.basic.BasicSplitPaneUI;</span><a href="#l9.39"></a>
+<span id="l9.40" class="plusline">+</span><a href="#l9.40"></a>
+<span id="l9.41" class="plusline">+public class Test6657026 extends BasicSplitPaneUI implements Runnable {</span><a href="#l9.41"></a>
+<span id="l9.42" class="plusline">+</span><a href="#l9.42"></a>
+<span id="l9.43" class="plusline">+    public static void main(String[] args) throws InterruptedException {</span><a href="#l9.43"></a>
+<span id="l9.44" class="plusline">+        if (new JSplitPane().getFocusTraversalKeys(0).isEmpty()){</span><a href="#l9.44"></a>
+<span id="l9.45" class="plusline">+            throw new Error(&quot;unexpected traversal keys&quot;);</span><a href="#l9.45"></a>
+<span id="l9.46" class="plusline">+        }</span><a href="#l9.46"></a>
+<span id="l9.47" class="plusline">+        new JSplitPane() {</span><a href="#l9.47"></a>
+<span id="l9.48" class="plusline">+            public void setFocusTraversalKeys(int id, Set keystrokes) {</span><a href="#l9.48"></a>
+<span id="l9.49" class="plusline">+                keystrokes.clear();</span><a href="#l9.49"></a>
+<span id="l9.50" class="plusline">+                super.setFocusTraversalKeys(id, keystrokes);</span><a href="#l9.50"></a>
+<span id="l9.51" class="plusline">+            }</span><a href="#l9.51"></a>
+<span id="l9.52" class="plusline">+        };</span><a href="#l9.52"></a>
+<span id="l9.53" class="plusline">+        if (new JSplitPane().getFocusTraversalKeys(0).isEmpty()) {</span><a href="#l9.53"></a>
+<span id="l9.54" class="plusline">+            throw new Error(&quot;shared traversal keys&quot;);</span><a href="#l9.54"></a>
+<span id="l9.55" class="plusline">+        }</span><a href="#l9.55"></a>
+<span id="l9.56" class="plusline">+        KEYBOARD_DIVIDER_MOVE_OFFSET = -KEYBOARD_DIVIDER_MOVE_OFFSET;</span><a href="#l9.56"></a>
+<span id="l9.57" class="plusline">+</span><a href="#l9.57"></a>
+<span id="l9.58" class="plusline">+        ThreadGroup group = new ThreadGroup(&quot;$$$&quot;);</span><a href="#l9.58"></a>
+<span id="l9.59" class="plusline">+        Thread thread = new Thread(group, new Test6657026());</span><a href="#l9.59"></a>
+<span id="l9.60" class="plusline">+        thread.start();</span><a href="#l9.60"></a>
+<span id="l9.61" class="plusline">+        thread.join();</span><a href="#l9.61"></a>
+<span id="l9.62" class="plusline">+    }</span><a href="#l9.62"></a>
+<span id="l9.63" class="plusline">+</span><a href="#l9.63"></a>
+<span id="l9.64" class="plusline">+    public void run() {</span><a href="#l9.64"></a>
+<span id="l9.65" class="plusline">+        SunToolkit.createNewAppContext();</span><a href="#l9.65"></a>
+<span id="l9.66" class="plusline">+        if (new JSplitPane().getFocusTraversalKeys(0).isEmpty()) {</span><a href="#l9.66"></a>
+<span id="l9.67" class="plusline">+            throw new Error(&quot;shared traversal keys&quot;);</span><a href="#l9.67"></a>
+<span id="l9.68" class="plusline">+        }</span><a href="#l9.68"></a>
+<span id="l9.69" class="plusline">+        JSplitPane pane = new JSplitPane();</span><a href="#l9.69"></a>
+<span id="l9.70" class="plusline">+        pane.setUI(this);</span><a href="#l9.70"></a>
+<span id="l9.71" class="plusline">+</span><a href="#l9.71"></a>
+<span id="l9.72" class="plusline">+        createFocusListener().focusGained(null); // allows actions</span><a href="#l9.72"></a>
+<span id="l9.73" class="plusline">+        test(pane, &quot;positiveIncrement&quot;, 3);</span><a href="#l9.73"></a>
+<span id="l9.74" class="plusline">+        test(pane, &quot;negativeIncrement&quot;, 0);</span><a href="#l9.74"></a>
+<span id="l9.75" class="plusline">+    }</span><a href="#l9.75"></a>
+<span id="l9.76" class="plusline">+</span><a href="#l9.76"></a>
+<span id="l9.77" class="plusline">+    private static void test(JSplitPane pane, String action, int expected) {</span><a href="#l9.77"></a>
+<span id="l9.78" class="plusline">+        ActionEvent event = new ActionEvent(pane, expected, action);</span><a href="#l9.78"></a>
+<span id="l9.79" class="plusline">+        pane.getActionMap().get(action).actionPerformed(event);</span><a href="#l9.79"></a>
+<span id="l9.80" class="plusline">+        int actual = pane.getDividerLocation();</span><a href="#l9.80"></a>
+<span id="l9.81" class="plusline">+        if (actual != expected) {</span><a href="#l9.81"></a>
+<span id="l9.82" class="plusline">+            throw new Error(actual + &quot;, but expected &quot; + expected);</span><a href="#l9.82"></a>
+<span id="l9.83" class="plusline">+        }</span><a href="#l9.83"></a>
+<span id="l9.84" class="plusline">+    }</span><a href="#l9.84"></a>
+<span id="l9.85" class="plusline">+}</span><a href="#l9.85"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l10.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l10.1"></a>
+<span id="l10.2" class="plusline">+++ b/test/javax/swing/plaf/metal/MetalBorders/Test6657026.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l10.2"></a>
+<span id="l10.3" class="atline">@@ -0,0 +1,91 @@</span><a href="#l10.3"></a>
+<span id="l10.4" class="plusline">+/*</span><a href="#l10.4"></a>
+<span id="l10.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l10.5"></a>
+<span id="l10.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l10.6"></a>
+<span id="l10.7" class="plusline">+ *</span><a href="#l10.7"></a>
+<span id="l10.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l10.8"></a>
+<span id="l10.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l10.9"></a>
+<span id="l10.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l10.10"></a>
+<span id="l10.11" class="plusline">+ *</span><a href="#l10.11"></a>
+<span id="l10.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l10.12"></a>
+<span id="l10.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l10.13"></a>
+<span id="l10.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l10.14"></a>
+<span id="l10.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l10.15"></a>
+<span id="l10.16" class="plusline">+ * accompanied this code).</span><a href="#l10.16"></a>
+<span id="l10.17" class="plusline">+ *</span><a href="#l10.17"></a>
+<span id="l10.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l10.18"></a>
+<span id="l10.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l10.19"></a>
+<span id="l10.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l10.20"></a>
+<span id="l10.21" class="plusline">+ *</span><a href="#l10.21"></a>
+<span id="l10.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l10.22"></a>
+<span id="l10.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l10.23"></a>
+<span id="l10.24" class="plusline">+ * have any questions.</span><a href="#l10.24"></a>
+<span id="l10.25" class="plusline">+ */</span><a href="#l10.25"></a>
+<span id="l10.26" class="plusline">+</span><a href="#l10.26"></a>
+<span id="l10.27" class="plusline">+/*</span><a href="#l10.27"></a>
+<span id="l10.28" class="plusline">+ * @test</span><a href="#l10.28"></a>
+<span id="l10.29" class="plusline">+ * @bug 6657026</span><a href="#l10.29"></a>
+<span id="l10.30" class="plusline">+ * @summary Tests constancy of borders</span><a href="#l10.30"></a>
+<span id="l10.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l10.31"></a>
+<span id="l10.32" class="plusline">+ */</span><a href="#l10.32"></a>
+<span id="l10.33" class="plusline">+</span><a href="#l10.33"></a>
+<span id="l10.34" class="plusline">+import java.awt.Insets;</span><a href="#l10.34"></a>
+<span id="l10.35" class="plusline">+import javax.swing.border.Border;</span><a href="#l10.35"></a>
+<span id="l10.36" class="plusline">+import javax.swing.plaf.metal.MetalBorders.ButtonBorder;</span><a href="#l10.36"></a>
+<span id="l10.37" class="plusline">+import javax.swing.plaf.metal.MetalBorders.MenuBarBorder;</span><a href="#l10.37"></a>
+<span id="l10.38" class="plusline">+import javax.swing.plaf.metal.MetalBorders.MenuItemBorder;</span><a href="#l10.38"></a>
+<span id="l10.39" class="plusline">+import javax.swing.plaf.metal.MetalBorders.PopupMenuBorder;</span><a href="#l10.39"></a>
+<span id="l10.40" class="plusline">+</span><a href="#l10.40"></a>
+<span id="l10.41" class="plusline">+public class Test6657026 {</span><a href="#l10.41"></a>
+<span id="l10.42" class="plusline">+</span><a href="#l10.42"></a>
+<span id="l10.43" class="plusline">+    private static final Insets NEGATIVE = new Insets(Integer.MIN_VALUE,</span><a href="#l10.43"></a>
+<span id="l10.44" class="plusline">+                                                      Integer.MIN_VALUE,</span><a href="#l10.44"></a>
+<span id="l10.45" class="plusline">+                                                      Integer.MIN_VALUE,</span><a href="#l10.45"></a>
+<span id="l10.46" class="plusline">+                                                      Integer.MIN_VALUE);</span><a href="#l10.46"></a>
+<span id="l10.47" class="plusline">+</span><a href="#l10.47"></a>
+<span id="l10.48" class="plusline">+    public static void main(String[] args) {</span><a href="#l10.48"></a>
+<span id="l10.49" class="plusline">+        new ButtonBorder() {{borderInsets = NEGATIVE;}};</span><a href="#l10.49"></a>
+<span id="l10.50" class="plusline">+        new MenuBarBorder() {{borderInsets = NEGATIVE;}};</span><a href="#l10.50"></a>
+<span id="l10.51" class="plusline">+        new MenuItemBorder() {{borderInsets = NEGATIVE;}};</span><a href="#l10.51"></a>
+<span id="l10.52" class="plusline">+        new PopupMenuBorder() {{borderInsets = NEGATIVE;}};</span><a href="#l10.52"></a>
+<span id="l10.53" class="plusline">+</span><a href="#l10.53"></a>
+<span id="l10.54" class="plusline">+        test(create(&quot;ButtonBorder&quot;));</span><a href="#l10.54"></a>
+<span id="l10.55" class="plusline">+        test(create(&quot;MenuBarBorder&quot;));</span><a href="#l10.55"></a>
+<span id="l10.56" class="plusline">+        test(create(&quot;MenuItemBorder&quot;));</span><a href="#l10.56"></a>
+<span id="l10.57" class="plusline">+        test(create(&quot;PopupMenuBorder&quot;));</span><a href="#l10.57"></a>
+<span id="l10.58" class="plusline">+</span><a href="#l10.58"></a>
+<span id="l10.59" class="plusline">+        test(create(&quot;Flush3DBorder&quot;));</span><a href="#l10.59"></a>
+<span id="l10.60" class="plusline">+        test(create(&quot;InternalFrameBorder&quot;));</span><a href="#l10.60"></a>
+<span id="l10.61" class="plusline">+        // NOT USED: test(create(&quot;FrameBorder&quot;));</span><a href="#l10.61"></a>
+<span id="l10.62" class="plusline">+        // NOT USED: test(create(&quot;DialogBorder&quot;));</span><a href="#l10.62"></a>
+<span id="l10.63" class="plusline">+        test(create(&quot;PaletteBorder&quot;));</span><a href="#l10.63"></a>
+<span id="l10.64" class="plusline">+        test(create(&quot;OptionDialogBorder&quot;));</span><a href="#l10.64"></a>
+<span id="l10.65" class="plusline">+        test(create(&quot;ScrollPaneBorder&quot;));</span><a href="#l10.65"></a>
+<span id="l10.66" class="plusline">+    }</span><a href="#l10.66"></a>
+<span id="l10.67" class="plusline">+</span><a href="#l10.67"></a>
+<span id="l10.68" class="plusline">+    private static Border create(String name) {</span><a href="#l10.68"></a>
+<span id="l10.69" class="plusline">+        try {</span><a href="#l10.69"></a>
+<span id="l10.70" class="plusline">+            name = &quot;javax.swing.plaf.metal.MetalBorders$&quot; + name;</span><a href="#l10.70"></a>
+<span id="l10.71" class="plusline">+            return (Border) Class.forName(name).newInstance();</span><a href="#l10.71"></a>
+<span id="l10.72" class="plusline">+        }</span><a href="#l10.72"></a>
+<span id="l10.73" class="plusline">+        catch (Exception exception) {</span><a href="#l10.73"></a>
+<span id="l10.74" class="plusline">+            throw new Error(&quot;unexpected exception&quot;, exception);</span><a href="#l10.74"></a>
+<span id="l10.75" class="plusline">+        }</span><a href="#l10.75"></a>
+<span id="l10.76" class="plusline">+    }</span><a href="#l10.76"></a>
+<span id="l10.77" class="plusline">+</span><a href="#l10.77"></a>
+<span id="l10.78" class="plusline">+    private static void test(Border border) {</span><a href="#l10.78"></a>
+<span id="l10.79" class="plusline">+        Insets actual = border.getBorderInsets(null);</span><a href="#l10.79"></a>
+<span id="l10.80" class="plusline">+        if (NEGATIVE.equals(actual)) {</span><a href="#l10.80"></a>
+<span id="l10.81" class="plusline">+            throw new Error(&quot;unexpected insets in &quot; + border.getClass());</span><a href="#l10.81"></a>
+<span id="l10.82" class="plusline">+        }</span><a href="#l10.82"></a>
+<span id="l10.83" class="plusline">+        Insets expected = (Insets) actual.clone();</span><a href="#l10.83"></a>
+<span id="l10.84" class="plusline">+        // modify</span><a href="#l10.84"></a>
+<span id="l10.85" class="plusline">+        actual.top++;</span><a href="#l10.85"></a>
+<span id="l10.86" class="plusline">+        actual.left++;</span><a href="#l10.86"></a>
+<span id="l10.87" class="plusline">+        actual.right++;</span><a href="#l10.87"></a>
+<span id="l10.88" class="plusline">+        actual.bottom++;</span><a href="#l10.88"></a>
+<span id="l10.89" class="plusline">+        // validate</span><a href="#l10.89"></a>
+<span id="l10.90" class="plusline">+        if (!expected.equals(border.getBorderInsets(null))) {</span><a href="#l10.90"></a>
+<span id="l10.91" class="plusline">+            throw new Error(&quot;shared insets in &quot; + border.getClass());</span><a href="#l10.91"></a>
+<span id="l10.92" class="plusline">+        }</span><a href="#l10.92"></a>
+<span id="l10.93" class="plusline">+    }</span><a href="#l10.93"></a>
+<span id="l10.94" class="plusline">+}</span><a href="#l10.94"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l11.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l11.1"></a>
+<span id="l11.2" class="plusline">+++ b/test/javax/swing/plaf/metal/MetalBumps/Test6657026.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l11.2"></a>
+<span id="l11.3" class="atline">@@ -0,0 +1,238 @@</span><a href="#l11.3"></a>
+<span id="l11.4" class="plusline">+/*</span><a href="#l11.4"></a>
+<span id="l11.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l11.5"></a>
+<span id="l11.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l11.6"></a>
+<span id="l11.7" class="plusline">+ *</span><a href="#l11.7"></a>
+<span id="l11.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l11.8"></a>
+<span id="l11.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l11.9"></a>
+<span id="l11.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l11.10"></a>
+<span id="l11.11" class="plusline">+ *</span><a href="#l11.11"></a>
+<span id="l11.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l11.12"></a>
+<span id="l11.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l11.13"></a>
+<span id="l11.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l11.14"></a>
+<span id="l11.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l11.15"></a>
+<span id="l11.16" class="plusline">+ * accompanied this code).</span><a href="#l11.16"></a>
+<span id="l11.17" class="plusline">+ *</span><a href="#l11.17"></a>
+<span id="l11.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l11.18"></a>
+<span id="l11.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l11.19"></a>
+<span id="l11.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l11.20"></a>
+<span id="l11.21" class="plusline">+ *</span><a href="#l11.21"></a>
+<span id="l11.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l11.22"></a>
+<span id="l11.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l11.23"></a>
+<span id="l11.24" class="plusline">+ * have any questions.</span><a href="#l11.24"></a>
+<span id="l11.25" class="plusline">+ */</span><a href="#l11.25"></a>
+<span id="l11.26" class="plusline">+</span><a href="#l11.26"></a>
+<span id="l11.27" class="plusline">+/*</span><a href="#l11.27"></a>
+<span id="l11.28" class="plusline">+ * @test</span><a href="#l11.28"></a>
+<span id="l11.29" class="plusline">+ * @bug 6657026</span><a href="#l11.29"></a>
+<span id="l11.30" class="plusline">+ * @summary Tests shared MetalBumps in different application contexts</span><a href="#l11.30"></a>
+<span id="l11.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l11.31"></a>
+<span id="l11.32" class="plusline">+ */</span><a href="#l11.32"></a>
+<span id="l11.33" class="plusline">+</span><a href="#l11.33"></a>
+<span id="l11.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l11.34"></a>
+<span id="l11.35" class="plusline">+</span><a href="#l11.35"></a>
+<span id="l11.36" class="plusline">+import java.awt.Color;</span><a href="#l11.36"></a>
+<span id="l11.37" class="plusline">+import java.awt.Component;</span><a href="#l11.37"></a>
+<span id="l11.38" class="plusline">+import java.awt.Font;</span><a href="#l11.38"></a>
+<span id="l11.39" class="plusline">+import java.awt.FontMetrics;</span><a href="#l11.39"></a>
+<span id="l11.40" class="plusline">+import java.awt.Graphics;</span><a href="#l11.40"></a>
+<span id="l11.41" class="plusline">+import java.awt.Image;</span><a href="#l11.41"></a>
+<span id="l11.42" class="plusline">+import java.awt.Rectangle;</span><a href="#l11.42"></a>
+<span id="l11.43" class="plusline">+import java.awt.Shape;</span><a href="#l11.43"></a>
+<span id="l11.44" class="plusline">+import java.awt.image.BufferedImage;</span><a href="#l11.44"></a>
+<span id="l11.45" class="plusline">+import java.awt.image.ImageObserver;</span><a href="#l11.45"></a>
+<span id="l11.46" class="plusline">+import java.text.AttributedCharacterIterator;</span><a href="#l11.46"></a>
+<span id="l11.47" class="plusline">+import javax.swing.Icon;</span><a href="#l11.47"></a>
+<span id="l11.48" class="plusline">+import javax.swing.plaf.metal.MetalBorders.ToolBarBorder;</span><a href="#l11.48"></a>
+<span id="l11.49" class="plusline">+</span><a href="#l11.49"></a>
+<span id="l11.50" class="plusline">+public class Test6657026 extends ToolBarBorder implements Runnable {</span><a href="#l11.50"></a>
+<span id="l11.51" class="plusline">+</span><a href="#l11.51"></a>
+<span id="l11.52" class="plusline">+    public static void main(String[] args) throws Exception {</span><a href="#l11.52"></a>
+<span id="l11.53" class="plusline">+        new Test6657026().test();</span><a href="#l11.53"></a>
+<span id="l11.54" class="plusline">+</span><a href="#l11.54"></a>
+<span id="l11.55" class="plusline">+        ThreadGroup group = new ThreadGroup(&quot;$$$&quot;);</span><a href="#l11.55"></a>
+<span id="l11.56" class="plusline">+        Thread thread = new Thread(group, new Test6657026());</span><a href="#l11.56"></a>
+<span id="l11.57" class="plusline">+        thread.start();</span><a href="#l11.57"></a>
+<span id="l11.58" class="plusline">+        thread.join();</span><a href="#l11.58"></a>
+<span id="l11.59" class="plusline">+    }</span><a href="#l11.59"></a>
+<span id="l11.60" class="plusline">+</span><a href="#l11.60"></a>
+<span id="l11.61" class="plusline">+    public void run() {</span><a href="#l11.61"></a>
+<span id="l11.62" class="plusline">+        SunToolkit.createNewAppContext();</span><a href="#l11.62"></a>
+<span id="l11.63" class="plusline">+        test();</span><a href="#l11.63"></a>
+<span id="l11.64" class="plusline">+    }</span><a href="#l11.64"></a>
+<span id="l11.65" class="plusline">+</span><a href="#l11.65"></a>
+<span id="l11.66" class="plusline">+    private void test() {</span><a href="#l11.66"></a>
+<span id="l11.67" class="plusline">+        MyGraphics mg = new MyGraphics();</span><a href="#l11.67"></a>
+<span id="l11.68" class="plusline">+        Icon icon = bumps;</span><a href="#l11.68"></a>
+<span id="l11.69" class="plusline">+        icon.paintIcon(mg.component, mg, 0, 0);</span><a href="#l11.69"></a>
+<span id="l11.70" class="plusline">+        if (mg.image != null) {</span><a href="#l11.70"></a>
+<span id="l11.71" class="plusline">+            boolean failed = true;</span><a href="#l11.71"></a>
+<span id="l11.72" class="plusline">+            int value = mg.image.getRGB(0, 0);</span><a href="#l11.72"></a>
+<span id="l11.73" class="plusline">+            for (int x = 0; x &lt; mg.image.getWidth(); x++) {</span><a href="#l11.73"></a>
+<span id="l11.74" class="plusline">+                for (int y = 0; y &lt; mg.image.getHeight(); y++) {</span><a href="#l11.74"></a>
+<span id="l11.75" class="plusline">+                    int current = mg.image.getRGB(x, y);</span><a href="#l11.75"></a>
+<span id="l11.76" class="plusline">+                    if (current != value) {</span><a href="#l11.76"></a>
+<span id="l11.77" class="plusline">+                        mg.image.setRGB(x, y, value);</span><a href="#l11.77"></a>
+<span id="l11.78" class="plusline">+                        failed = false;</span><a href="#l11.78"></a>
+<span id="l11.79" class="plusline">+                    }</span><a href="#l11.79"></a>
+<span id="l11.80" class="plusline">+</span><a href="#l11.80"></a>
+<span id="l11.81" class="plusline">+                }</span><a href="#l11.81"></a>
+<span id="l11.82" class="plusline">+            }</span><a href="#l11.82"></a>
+<span id="l11.83" class="plusline">+            if (failed) {</span><a href="#l11.83"></a>
+<span id="l11.84" class="plusline">+                throw new Error(&quot;shared metal bumps&quot;);</span><a href="#l11.84"></a>
+<span id="l11.85" class="plusline">+            }</span><a href="#l11.85"></a>
+<span id="l11.86" class="plusline">+        }</span><a href="#l11.86"></a>
+<span id="l11.87" class="plusline">+    }</span><a href="#l11.87"></a>
+<span id="l11.88" class="plusline">+</span><a href="#l11.88"></a>
+<span id="l11.89" class="plusline">+    private static class MyGraphics extends Graphics {</span><a href="#l11.89"></a>
+<span id="l11.90" class="plusline">+</span><a href="#l11.90"></a>
+<span id="l11.91" class="plusline">+        private final Component component = new Component() {};</span><a href="#l11.91"></a>
+<span id="l11.92" class="plusline">+        private BufferedImage image;</span><a href="#l11.92"></a>
+<span id="l11.93" class="plusline">+</span><a href="#l11.93"></a>
+<span id="l11.94" class="plusline">+        public Graphics create() {</span><a href="#l11.94"></a>
+<span id="l11.95" class="plusline">+            return null;  // TODO: check</span><a href="#l11.95"></a>
+<span id="l11.96" class="plusline">+        }</span><a href="#l11.96"></a>
+<span id="l11.97" class="plusline">+</span><a href="#l11.97"></a>
+<span id="l11.98" class="plusline">+        public void translate(int x, int y) {</span><a href="#l11.98"></a>
+<span id="l11.99" class="plusline">+            // TODO: check</span><a href="#l11.99"></a>
+<span id="l11.100" class="plusline">+        }</span><a href="#l11.100"></a>
+<span id="l11.101" class="plusline">+</span><a href="#l11.101"></a>
+<span id="l11.102" class="plusline">+        public Color getColor() {</span><a href="#l11.102"></a>
+<span id="l11.103" class="plusline">+            return null;  // TODO: check</span><a href="#l11.103"></a>
+<span id="l11.104" class="plusline">+        }</span><a href="#l11.104"></a>
+<span id="l11.105" class="plusline">+</span><a href="#l11.105"></a>
+<span id="l11.106" class="plusline">+        public void setColor(Color color) {</span><a href="#l11.106"></a>
+<span id="l11.107" class="plusline">+            // TODO: check</span><a href="#l11.107"></a>
+<span id="l11.108" class="plusline">+        }</span><a href="#l11.108"></a>
+<span id="l11.109" class="plusline">+</span><a href="#l11.109"></a>
+<span id="l11.110" class="plusline">+        public void setPaintMode() {</span><a href="#l11.110"></a>
+<span id="l11.111" class="plusline">+            // TODO: check</span><a href="#l11.111"></a>
+<span id="l11.112" class="plusline">+        }</span><a href="#l11.112"></a>
+<span id="l11.113" class="plusline">+</span><a href="#l11.113"></a>
+<span id="l11.114" class="plusline">+        public void setXORMode(Color c1) {</span><a href="#l11.114"></a>
+<span id="l11.115" class="plusline">+            // TODO: check</span><a href="#l11.115"></a>
+<span id="l11.116" class="plusline">+        }</span><a href="#l11.116"></a>
+<span id="l11.117" class="plusline">+</span><a href="#l11.117"></a>
+<span id="l11.118" class="plusline">+        public Font getFont() {</span><a href="#l11.118"></a>
+<span id="l11.119" class="plusline">+            return null;  // TODO: check</span><a href="#l11.119"></a>
+<span id="l11.120" class="plusline">+        }</span><a href="#l11.120"></a>
+<span id="l11.121" class="plusline">+</span><a href="#l11.121"></a>
+<span id="l11.122" class="plusline">+        public void setFont(Font font) {</span><a href="#l11.122"></a>
+<span id="l11.123" class="plusline">+            // TODO: check</span><a href="#l11.123"></a>
+<span id="l11.124" class="plusline">+        }</span><a href="#l11.124"></a>
+<span id="l11.125" class="plusline">+</span><a href="#l11.125"></a>
+<span id="l11.126" class="plusline">+        public FontMetrics getFontMetrics(Font font) {</span><a href="#l11.126"></a>
+<span id="l11.127" class="plusline">+            return null;  // TODO: check</span><a href="#l11.127"></a>
+<span id="l11.128" class="plusline">+        }</span><a href="#l11.128"></a>
+<span id="l11.129" class="plusline">+</span><a href="#l11.129"></a>
+<span id="l11.130" class="plusline">+        public Rectangle getClipBounds() {</span><a href="#l11.130"></a>
+<span id="l11.131" class="plusline">+            return null;  // TODO: check</span><a href="#l11.131"></a>
+<span id="l11.132" class="plusline">+        }</span><a href="#l11.132"></a>
+<span id="l11.133" class="plusline">+</span><a href="#l11.133"></a>
+<span id="l11.134" class="plusline">+        public void clipRect(int x, int y, int width, int height) {</span><a href="#l11.134"></a>
+<span id="l11.135" class="plusline">+            // TODO: check</span><a href="#l11.135"></a>
+<span id="l11.136" class="plusline">+        }</span><a href="#l11.136"></a>
+<span id="l11.137" class="plusline">+</span><a href="#l11.137"></a>
+<span id="l11.138" class="plusline">+        public void setClip(int x, int y, int width, int height) {</span><a href="#l11.138"></a>
+<span id="l11.139" class="plusline">+            // TODO: check</span><a href="#l11.139"></a>
+<span id="l11.140" class="plusline">+        }</span><a href="#l11.140"></a>
+<span id="l11.141" class="plusline">+</span><a href="#l11.141"></a>
+<span id="l11.142" class="plusline">+        public Shape getClip() {</span><a href="#l11.142"></a>
+<span id="l11.143" class="plusline">+            return null;  // TODO: check</span><a href="#l11.143"></a>
+<span id="l11.144" class="plusline">+        }</span><a href="#l11.144"></a>
+<span id="l11.145" class="plusline">+</span><a href="#l11.145"></a>
+<span id="l11.146" class="plusline">+        public void setClip(Shape clip) {</span><a href="#l11.146"></a>
+<span id="l11.147" class="plusline">+            // TODO: check</span><a href="#l11.147"></a>
+<span id="l11.148" class="plusline">+        }</span><a href="#l11.148"></a>
+<span id="l11.149" class="plusline">+</span><a href="#l11.149"></a>
+<span id="l11.150" class="plusline">+        public void copyArea(int x, int y, int width, int height, int dx, int dy) {</span><a href="#l11.150"></a>
+<span id="l11.151" class="plusline">+            // TODO: check</span><a href="#l11.151"></a>
+<span id="l11.152" class="plusline">+        }</span><a href="#l11.152"></a>
+<span id="l11.153" class="plusline">+</span><a href="#l11.153"></a>
+<span id="l11.154" class="plusline">+        public void drawLine(int x1, int y1, int x2, int y2) {</span><a href="#l11.154"></a>
+<span id="l11.155" class="plusline">+            // TODO: check</span><a href="#l11.155"></a>
+<span id="l11.156" class="plusline">+        }</span><a href="#l11.156"></a>
+<span id="l11.157" class="plusline">+</span><a href="#l11.157"></a>
+<span id="l11.158" class="plusline">+        public void fillRect(int x, int y, int width, int height) {</span><a href="#l11.158"></a>
+<span id="l11.159" class="plusline">+            // TODO: check</span><a href="#l11.159"></a>
+<span id="l11.160" class="plusline">+        }</span><a href="#l11.160"></a>
+<span id="l11.161" class="plusline">+</span><a href="#l11.161"></a>
+<span id="l11.162" class="plusline">+        public void clearRect(int x, int y, int width, int height) {</span><a href="#l11.162"></a>
+<span id="l11.163" class="plusline">+            // TODO: check</span><a href="#l11.163"></a>
+<span id="l11.164" class="plusline">+        }</span><a href="#l11.164"></a>
+<span id="l11.165" class="plusline">+</span><a href="#l11.165"></a>
+<span id="l11.166" class="plusline">+        public void drawRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight) {</span><a href="#l11.166"></a>
+<span id="l11.167" class="plusline">+            // TODO: check</span><a href="#l11.167"></a>
+<span id="l11.168" class="plusline">+        }</span><a href="#l11.168"></a>
+<span id="l11.169" class="plusline">+</span><a href="#l11.169"></a>
+<span id="l11.170" class="plusline">+        public void fillRoundRect(int x, int y, int width, int height, int arcWidth, int arcHeight) {</span><a href="#l11.170"></a>
+<span id="l11.171" class="plusline">+            // TODO: check</span><a href="#l11.171"></a>
+<span id="l11.172" class="plusline">+        }</span><a href="#l11.172"></a>
+<span id="l11.173" class="plusline">+</span><a href="#l11.173"></a>
+<span id="l11.174" class="plusline">+        public void drawOval(int x, int y, int width, int height) {</span><a href="#l11.174"></a>
+<span id="l11.175" class="plusline">+            // TODO: check</span><a href="#l11.175"></a>
+<span id="l11.176" class="plusline">+        }</span><a href="#l11.176"></a>
+<span id="l11.177" class="plusline">+</span><a href="#l11.177"></a>
+<span id="l11.178" class="plusline">+        public void fillOval(int x, int y, int width, int height) {</span><a href="#l11.178"></a>
+<span id="l11.179" class="plusline">+            // TODO: check</span><a href="#l11.179"></a>
+<span id="l11.180" class="plusline">+        }</span><a href="#l11.180"></a>
+<span id="l11.181" class="plusline">+</span><a href="#l11.181"></a>
+<span id="l11.182" class="plusline">+        public void drawArc(int x, int y, int width, int height, int startAngle, int arcAngle) {</span><a href="#l11.182"></a>
+<span id="l11.183" class="plusline">+            // TODO: check</span><a href="#l11.183"></a>
+<span id="l11.184" class="plusline">+        }</span><a href="#l11.184"></a>
+<span id="l11.185" class="plusline">+</span><a href="#l11.185"></a>
+<span id="l11.186" class="plusline">+        public void fillArc(int x, int y, int width, int height, int startAngle, int arcAngle) {</span><a href="#l11.186"></a>
+<span id="l11.187" class="plusline">+            // TODO: check</span><a href="#l11.187"></a>
+<span id="l11.188" class="plusline">+        }</span><a href="#l11.188"></a>
+<span id="l11.189" class="plusline">+</span><a href="#l11.189"></a>
+<span id="l11.190" class="plusline">+        public void drawPolyline(int[] xPoints, int[] yPoints, int nPoints) {</span><a href="#l11.190"></a>
+<span id="l11.191" class="plusline">+            // TODO: check</span><a href="#l11.191"></a>
+<span id="l11.192" class="plusline">+        }</span><a href="#l11.192"></a>
+<span id="l11.193" class="plusline">+</span><a href="#l11.193"></a>
+<span id="l11.194" class="plusline">+        public void drawPolygon(int[] xPoints, int[] yPoints, int nPoints) {</span><a href="#l11.194"></a>
+<span id="l11.195" class="plusline">+            // TODO: check</span><a href="#l11.195"></a>
+<span id="l11.196" class="plusline">+        }</span><a href="#l11.196"></a>
+<span id="l11.197" class="plusline">+</span><a href="#l11.197"></a>
+<span id="l11.198" class="plusline">+        public void fillPolygon(int[] xPoints, int[] yPoints, int nPoints) {</span><a href="#l11.198"></a>
+<span id="l11.199" class="plusline">+            // TODO: check</span><a href="#l11.199"></a>
+<span id="l11.200" class="plusline">+        }</span><a href="#l11.200"></a>
+<span id="l11.201" class="plusline">+</span><a href="#l11.201"></a>
+<span id="l11.202" class="plusline">+        public void drawString(String str, int x, int y) {</span><a href="#l11.202"></a>
+<span id="l11.203" class="plusline">+            // TODO: check</span><a href="#l11.203"></a>
+<span id="l11.204" class="plusline">+        }</span><a href="#l11.204"></a>
+<span id="l11.205" class="plusline">+</span><a href="#l11.205"></a>
+<span id="l11.206" class="plusline">+        public void drawString(AttributedCharacterIterator iterator, int x, int y) {</span><a href="#l11.206"></a>
+<span id="l11.207" class="plusline">+            // TODO: check</span><a href="#l11.207"></a>
+<span id="l11.208" class="plusline">+        }</span><a href="#l11.208"></a>
+<span id="l11.209" class="plusline">+</span><a href="#l11.209"></a>
+<span id="l11.210" class="plusline">+        public boolean drawImage(Image img, int x, int y, ImageObserver observer) {</span><a href="#l11.210"></a>
+<span id="l11.211" class="plusline">+            return false;  // TODO: check</span><a href="#l11.211"></a>
+<span id="l11.212" class="plusline">+        }</span><a href="#l11.212"></a>
+<span id="l11.213" class="plusline">+</span><a href="#l11.213"></a>
+<span id="l11.214" class="plusline">+        public boolean drawImage(Image img, int x, int y, int width, int height, ImageObserver observer) {</span><a href="#l11.214"></a>
+<span id="l11.215" class="plusline">+            return false;  // TODO: check</span><a href="#l11.215"></a>
+<span id="l11.216" class="plusline">+        }</span><a href="#l11.216"></a>
+<span id="l11.217" class="plusline">+</span><a href="#l11.217"></a>
+<span id="l11.218" class="plusline">+        public boolean drawImage(Image img, int x, int y, Color bgcolor, ImageObserver observer) {</span><a href="#l11.218"></a>
+<span id="l11.219" class="plusline">+            return false;  // TODO: check</span><a href="#l11.219"></a>
+<span id="l11.220" class="plusline">+        }</span><a href="#l11.220"></a>
+<span id="l11.221" class="plusline">+</span><a href="#l11.221"></a>
+<span id="l11.222" class="plusline">+        public boolean drawImage(Image img, int x, int y, int width, int height, Color bgcolor, ImageObserver observer) {</span><a href="#l11.222"></a>
+<span id="l11.223" class="plusline">+            return false;  // TODO: check</span><a href="#l11.223"></a>
+<span id="l11.224" class="plusline">+        }</span><a href="#l11.224"></a>
+<span id="l11.225" class="plusline">+</span><a href="#l11.225"></a>
+<span id="l11.226" class="plusline">+        public boolean drawImage(Image img, int dx1, int dy1, int dx2, int dy2, int sx1, int sy1, int sx2, int sy2, ImageObserver observer) {</span><a href="#l11.226"></a>
+<span id="l11.227" class="plusline">+            if (img instanceof BufferedImage) {</span><a href="#l11.227"></a>
+<span id="l11.228" class="plusline">+                this.image = (BufferedImage) img;</span><a href="#l11.228"></a>
+<span id="l11.229" class="plusline">+            }</span><a href="#l11.229"></a>
+<span id="l11.230" class="plusline">+            return false;  // TODO: check</span><a href="#l11.230"></a>
+<span id="l11.231" class="plusline">+        }</span><a href="#l11.231"></a>
+<span id="l11.232" class="plusline">+</span><a href="#l11.232"></a>
+<span id="l11.233" class="plusline">+        public boolean drawImage(Image img, int dx1, int dy1, int dx2, int dy2, int sx1, int sy1, int sx2, int sy2, Color bgcolor, ImageObserver observer) {</span><a href="#l11.233"></a>
+<span id="l11.234" class="plusline">+            return false;  // TODO: check</span><a href="#l11.234"></a>
+<span id="l11.235" class="plusline">+        }</span><a href="#l11.235"></a>
+<span id="l11.236" class="plusline">+</span><a href="#l11.236"></a>
+<span id="l11.237" class="plusline">+        public void dispose() {</span><a href="#l11.237"></a>
+<span id="l11.238" class="plusline">+            // TODO: check</span><a href="#l11.238"></a>
+<span id="l11.239" class="plusline">+        }</span><a href="#l11.239"></a>
+<span id="l11.240" class="plusline">+    }</span><a href="#l11.240"></a>
+<span id="l11.241" class="plusline">+}</span><a href="#l11.241"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l12.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l12.1"></a>
+<span id="l12.2" class="plusline">+++ b/test/javax/swing/plaf/metal/MetalInternalFrameUI/Test6657026.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l12.2"></a>
+<span id="l12.3" class="atline">@@ -0,0 +1,60 @@</span><a href="#l12.3"></a>
+<span id="l12.4" class="plusline">+/*</span><a href="#l12.4"></a>
+<span id="l12.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l12.5"></a>
+<span id="l12.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l12.6"></a>
+<span id="l12.7" class="plusline">+ *</span><a href="#l12.7"></a>
+<span id="l12.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l12.8"></a>
+<span id="l12.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l12.9"></a>
+<span id="l12.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l12.10"></a>
+<span id="l12.11" class="plusline">+ *</span><a href="#l12.11"></a>
+<span id="l12.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l12.12"></a>
+<span id="l12.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l12.13"></a>
+<span id="l12.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l12.14"></a>
+<span id="l12.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l12.15"></a>
+<span id="l12.16" class="plusline">+ * accompanied this code).</span><a href="#l12.16"></a>
+<span id="l12.17" class="plusline">+ *</span><a href="#l12.17"></a>
+<span id="l12.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l12.18"></a>
+<span id="l12.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l12.19"></a>
+<span id="l12.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l12.20"></a>
+<span id="l12.21" class="plusline">+ *</span><a href="#l12.21"></a>
+<span id="l12.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l12.22"></a>
+<span id="l12.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l12.23"></a>
+<span id="l12.24" class="plusline">+ * have any questions.</span><a href="#l12.24"></a>
+<span id="l12.25" class="plusline">+ */</span><a href="#l12.25"></a>
+<span id="l12.26" class="plusline">+</span><a href="#l12.26"></a>
+<span id="l12.27" class="plusline">+/*</span><a href="#l12.27"></a>
+<span id="l12.28" class="plusline">+ * @test</span><a href="#l12.28"></a>
+<span id="l12.29" class="plusline">+ * @bug 6657026</span><a href="#l12.29"></a>
+<span id="l12.30" class="plusline">+ * @summary Tests shared MetalInternalFrameUI in different application contexts</span><a href="#l12.30"></a>
+<span id="l12.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l12.31"></a>
+<span id="l12.32" class="plusline">+ */</span><a href="#l12.32"></a>
+<span id="l12.33" class="plusline">+</span><a href="#l12.33"></a>
+<span id="l12.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l12.34"></a>
+<span id="l12.35" class="plusline">+</span><a href="#l12.35"></a>
+<span id="l12.36" class="plusline">+import javax.swing.JInternalFrame;</span><a href="#l12.36"></a>
+<span id="l12.37" class="plusline">+import javax.swing.JPanel;</span><a href="#l12.37"></a>
+<span id="l12.38" class="plusline">+import javax.swing.UIManager;</span><a href="#l12.38"></a>
+<span id="l12.39" class="plusline">+import javax.swing.plaf.metal.MetalInternalFrameUI;</span><a href="#l12.39"></a>
+<span id="l12.40" class="plusline">+import javax.swing.plaf.metal.MetalLookAndFeel;</span><a href="#l12.40"></a>
+<span id="l12.41" class="plusline">+</span><a href="#l12.41"></a>
+<span id="l12.42" class="plusline">+public class Test6657026 extends MetalInternalFrameUI implements Runnable {</span><a href="#l12.42"></a>
+<span id="l12.43" class="plusline">+</span><a href="#l12.43"></a>
+<span id="l12.44" class="plusline">+    public static void main(String[] args) throws Exception {</span><a href="#l12.44"></a>
+<span id="l12.45" class="plusline">+        UIManager.setLookAndFeel(new MetalLookAndFeel());</span><a href="#l12.45"></a>
+<span id="l12.46" class="plusline">+</span><a href="#l12.46"></a>
+<span id="l12.47" class="plusline">+        ThreadGroup group = new ThreadGroup(&quot;$$$&quot;);</span><a href="#l12.47"></a>
+<span id="l12.48" class="plusline">+        Thread thread = new Thread(group, new Test6657026());</span><a href="#l12.48"></a>
+<span id="l12.49" class="plusline">+        thread.start();</span><a href="#l12.49"></a>
+<span id="l12.50" class="plusline">+        thread.join();</span><a href="#l12.50"></a>
+<span id="l12.51" class="plusline">+</span><a href="#l12.51"></a>
+<span id="l12.52" class="plusline">+        new JInternalFrame().setContentPane(new JPanel());</span><a href="#l12.52"></a>
+<span id="l12.53" class="plusline">+    }</span><a href="#l12.53"></a>
+<span id="l12.54" class="plusline">+</span><a href="#l12.54"></a>
+<span id="l12.55" class="plusline">+    public Test6657026() {</span><a href="#l12.55"></a>
+<span id="l12.56" class="plusline">+        super(null);</span><a href="#l12.56"></a>
+<span id="l12.57" class="plusline">+    }</span><a href="#l12.57"></a>
+<span id="l12.58" class="plusline">+</span><a href="#l12.58"></a>
+<span id="l12.59" class="plusline">+    public void run() {</span><a href="#l12.59"></a>
+<span id="l12.60" class="plusline">+        SunToolkit.createNewAppContext();</span><a href="#l12.60"></a>
+<span id="l12.61" class="plusline">+        IS_PALETTE = JInternalFrame.CONTENT_PANE_PROPERTY;</span><a href="#l12.61"></a>
+<span id="l12.62" class="plusline">+    }</span><a href="#l12.62"></a>
+<span id="l12.63" class="plusline">+}</span><a href="#l12.63"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l13.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l13.1"></a>
+<span id="l13.2" class="plusline">+++ b/test/javax/swing/plaf/metal/MetalSliderUI/Test6657026.java	Thu Sep 03 19:42:27 2009 +0400</span><a href="#l13.2"></a>
+<span id="l13.3" class="atline">@@ -0,0 +1,67 @@</span><a href="#l13.3"></a>
+<span id="l13.4" class="plusline">+/*</span><a href="#l13.4"></a>
+<span id="l13.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l13.5"></a>
+<span id="l13.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l13.6"></a>
+<span id="l13.7" class="plusline">+ *</span><a href="#l13.7"></a>
+<span id="l13.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l13.8"></a>
+<span id="l13.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l13.9"></a>
+<span id="l13.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l13.10"></a>
+<span id="l13.11" class="plusline">+ *</span><a href="#l13.11"></a>
+<span id="l13.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l13.12"></a>
+<span id="l13.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l13.13"></a>
+<span id="l13.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l13.14"></a>
+<span id="l13.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l13.15"></a>
+<span id="l13.16" class="plusline">+ * accompanied this code).</span><a href="#l13.16"></a>
+<span id="l13.17" class="plusline">+ *</span><a href="#l13.17"></a>
+<span id="l13.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l13.18"></a>
+<span id="l13.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l13.19"></a>
+<span id="l13.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l13.20"></a>
+<span id="l13.21" class="plusline">+ *</span><a href="#l13.21"></a>
+<span id="l13.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l13.22"></a>
+<span id="l13.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l13.23"></a>
+<span id="l13.24" class="plusline">+ * have any questions.</span><a href="#l13.24"></a>
+<span id="l13.25" class="plusline">+ */</span><a href="#l13.25"></a>
+<span id="l13.26" class="plusline">+</span><a href="#l13.26"></a>
+<span id="l13.27" class="plusline">+/*</span><a href="#l13.27"></a>
+<span id="l13.28" class="plusline">+ * @test</span><a href="#l13.28"></a>
+<span id="l13.29" class="plusline">+ * @bug 6657026</span><a href="#l13.29"></a>
+<span id="l13.30" class="plusline">+ * @summary Tests shared MetalSliderUI in different application contexts</span><a href="#l13.30"></a>
+<span id="l13.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l13.31"></a>
+<span id="l13.32" class="plusline">+ */</span><a href="#l13.32"></a>
+<span id="l13.33" class="plusline">+</span><a href="#l13.33"></a>
+<span id="l13.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l13.34"></a>
+<span id="l13.35" class="plusline">+</span><a href="#l13.35"></a>
+<span id="l13.36" class="plusline">+import javax.swing.JSlider;</span><a href="#l13.36"></a>
+<span id="l13.37" class="plusline">+import javax.swing.UIManager;</span><a href="#l13.37"></a>
+<span id="l13.38" class="plusline">+import javax.swing.plaf.metal.MetalLookAndFeel;</span><a href="#l13.38"></a>
+<span id="l13.39" class="plusline">+import javax.swing.plaf.metal.MetalSliderUI;</span><a href="#l13.39"></a>
+<span id="l13.40" class="plusline">+</span><a href="#l13.40"></a>
+<span id="l13.41" class="plusline">+public class Test6657026 extends MetalSliderUI implements Runnable {</span><a href="#l13.41"></a>
+<span id="l13.42" class="plusline">+</span><a href="#l13.42"></a>
+<span id="l13.43" class="plusline">+    public static void main(String[] args) throws Exception {</span><a href="#l13.43"></a>
+<span id="l13.44" class="plusline">+        UIManager.setLookAndFeel(new MetalLookAndFeel());</span><a href="#l13.44"></a>
+<span id="l13.45" class="plusline">+        JSlider slider = new JSlider();</span><a href="#l13.45"></a>
+<span id="l13.46" class="plusline">+        test(slider);</span><a href="#l13.46"></a>
+<span id="l13.47" class="plusline">+</span><a href="#l13.47"></a>
+<span id="l13.48" class="plusline">+        ThreadGroup group = new ThreadGroup(&quot;$$$&quot;);</span><a href="#l13.48"></a>
+<span id="l13.49" class="plusline">+        Thread thread = new Thread(group, new Test6657026());</span><a href="#l13.49"></a>
+<span id="l13.50" class="plusline">+        thread.start();</span><a href="#l13.50"></a>
+<span id="l13.51" class="plusline">+        thread.join();</span><a href="#l13.51"></a>
+<span id="l13.52" class="plusline">+</span><a href="#l13.52"></a>
+<span id="l13.53" class="plusline">+        test(slider);</span><a href="#l13.53"></a>
+<span id="l13.54" class="plusline">+    }</span><a href="#l13.54"></a>
+<span id="l13.55" class="plusline">+</span><a href="#l13.55"></a>
+<span id="l13.56" class="plusline">+    public void run() {</span><a href="#l13.56"></a>
+<span id="l13.57" class="plusline">+        SunToolkit.createNewAppContext();</span><a href="#l13.57"></a>
+<span id="l13.58" class="plusline">+        JSlider slider = new JSlider();</span><a href="#l13.58"></a>
+<span id="l13.59" class="plusline">+        test(slider);</span><a href="#l13.59"></a>
+<span id="l13.60" class="plusline">+        tickLength = -10000;</span><a href="#l13.60"></a>
+<span id="l13.61" class="plusline">+    }</span><a href="#l13.61"></a>
+<span id="l13.62" class="plusline">+</span><a href="#l13.62"></a>
+<span id="l13.63" class="plusline">+    private static void test(JSlider slider) {</span><a href="#l13.63"></a>
+<span id="l13.64" class="plusline">+        MetalSliderUI ui = (MetalSliderUI) slider.getUI();</span><a href="#l13.64"></a>
+<span id="l13.65" class="plusline">+        int actual = ui.getTickLength();</span><a href="#l13.65"></a>
+<span id="l13.66" class="plusline">+        if (actual != 11) {</span><a href="#l13.66"></a>
+<span id="l13.67" class="plusline">+            throw new Error(actual + &quot;, but expected 11&quot;);</span><a href="#l13.67"></a>
+<span id="l13.68" class="plusline">+        }</span><a href="#l13.68"></a>
+<span id="l13.69" class="plusline">+    }</span><a href="#l13.69"></a>
+<span id="l13.70" class="plusline">+}</span><a href="#l13.70"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

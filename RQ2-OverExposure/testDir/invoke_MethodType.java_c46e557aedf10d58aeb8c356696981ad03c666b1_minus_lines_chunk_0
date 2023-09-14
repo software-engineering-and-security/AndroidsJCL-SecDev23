@@ -1,0 +1,22 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private @Stable MethodTypeForm form; // erased form, plus cached data about primitives
+1    private @Stable MethodType wrapAlt;  // alternative wrapped/unwrapped version
+2     private @Stable Invokers invokers;   // cache of handy higher-order adapters
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    private @Stable MethodTypeForm form; // erased form, plus cached data about primitives
+1    private @Stable MethodType wrapAlt;  // alternative wrapped/unwrapped version
+2    private @Stable Invokers invokers;   // cache of handy higher-order adapters
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     private @Stable MethodTypeForm form; // erased form, plus cached data about primitives
+1    private @Stable Object wrapAlt;  // alternative wrapped/unwrapped version and
+2                                     // private communication for readObject and readResolve
+3     private @Stable Invokers invokers;   // cache of handy higher-order adapters
+--------------------------------------------

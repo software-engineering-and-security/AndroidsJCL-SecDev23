@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         }
+1        oid = X500Name.intern(derval.data.getOID());
+2         value = derval.data.getDerValue();
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        }
+1        oid = X500Name.intern(derval.data.getOID());
+2        value = derval.data.getDerValue();
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         }
+1        oid = derval.data.getOID();
+2         value = derval.data.getDerValue();
+--------------------------------------------

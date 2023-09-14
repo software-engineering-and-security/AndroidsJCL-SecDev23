@@ -1,0 +1,31 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         /*
+1         * If we are passed a certificate, extract the public key and use it.
+2         *
+3         * Check if each constraint fails and check if there is a linked
+4         * constraint  Any permitted constraint will exit the linked list
+5         * to allow the operation.
+6          */
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        /*
+1         * If we are passed a certificate, extract the public key and use it.
+2         *
+3         * Check if each constraint fails and check if there is a linked
+4         * constraint  Any permitted constraint will exit the linked list
+5         * to allow the operation.
+6         */
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         /*
+1         * For each key, check if each constraint fails and check if there is
+2         * a linked constraint. Any permitted constraint will exit the linked
+3         * list to allow the operation.
+4          */
+--------------------------------------------

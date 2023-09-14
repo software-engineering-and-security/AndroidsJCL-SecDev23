@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                         " used with Constraint date: " +
+1                        dateFormat.format(denyAfterDate) + "; " + errmsg +
+2                        dateFormat.format(currentDate) + extendedMsg(cp),
+3                         null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                        " used with Constraint date: " +
+1                        dateFormat.format(denyAfterDate) + "; " + errmsg +
+2                        dateFormat.format(currentDate) + extendedMsg(cp),
+3                        null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                         " used with Constraint date: " +
+1                        dateFormat.format(denyAfterDate) + "; params date: " +
+2                        dateFormat.format(currentDate) + cp.extendedExceptionMsg(),
+3                         null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+--------------------------------------------

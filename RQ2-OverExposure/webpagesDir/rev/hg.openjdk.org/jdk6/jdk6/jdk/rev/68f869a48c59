@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: 68f869a48c59</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/68f869a48c59">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/68f869a48c59">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/68f869a48c59">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/68f869a48c59">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/68f869a48c59.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/68f869a48c59.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/68f869a48c59.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 222:68f869a48c59   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6824265: (tz) TimeZone.getTimeZone allows probing local filesystem
+Reviewed-by: peytoia</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#111;&#107;&#117;&#116;&#115;&#117;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 28 Aug 2009 21:58:55 +0900</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/aa750b9dade2">aa750b9dade2</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/8fcfc9ce8804">8fcfc9ce8804</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/68f869a48c59/src/share/classes/sun/util/calendar/ZoneInfoFile.java">src/share/classes/sun/util/calendar/ZoneInfoFile.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 45 insertions(+), 31 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/util/calendar/ZoneInfoFile.java</a></td>
+    <td class="diffstat-total" align="right">76</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:59.2105263158%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:40.7894736842%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/util/calendar/ZoneInfoFile.java	Wed Aug 26 15:01:13 2009 -0700</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/util/calendar/ZoneInfoFile.java	Fri Aug 28 21:58:55 2009 +0900</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright 2000-2006 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright 2000-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -472,6 +472,18 @@</span><a href="#l1.10"></a>
+<span id="l1.11"> </span><a href="#l1.11"></a>
+<span id="l1.12">     private static Map&lt;String, ZoneInfo&gt; zoneInfoObjects = null;</span><a href="#l1.12"></a>
+<span id="l1.13"> </span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+    private static final String ziDir;</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+    static {</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+        String zi = (String) AccessController.doPrivileged(</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+                         new sun.security.action.GetPropertyAction(&quot;java.home&quot;))</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+                    + File.separator + &quot;lib&quot; + File.separator + &quot;zi&quot;;</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+        try {</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+            zi = new File(zi).getCanonicalPath();</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+        } catch (Exception e) {</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+        }</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+        ziDir = zi;</span><a href="#l1.23"></a>
+<span id="l1.24" class="plusline">+    }</span><a href="#l1.24"></a>
+<span id="l1.25" class="plusline">+</span><a href="#l1.25"></a>
+<span id="l1.26">     /**</span><a href="#l1.26"></a>
+<span id="l1.27">      * Converts the given time zone ID to a platform dependent path</span><a href="#l1.27"></a>
+<span id="l1.28">      * name. For example, &quot;America/Los_Angeles&quot; is converted to</span><a href="#l1.28"></a>
+<span id="l1.29" class="atline">@@ -576,20 +588,7 @@</span><a href="#l1.29"></a>
+<span id="l1.30">             return null;</span><a href="#l1.30"></a>
+<span id="l1.31">         }</span><a href="#l1.31"></a>
+<span id="l1.32"> </span><a href="#l1.32"></a>
+<span id="l1.33" class="minusline">-        int index;</span><a href="#l1.33"></a>
+<span id="l1.34" class="minusline">-        for (index = 0; index &lt; JAVAZI_LABEL.length; index++) {</span><a href="#l1.34"></a>
+<span id="l1.35" class="minusline">-            if (buf[index] != JAVAZI_LABEL[index]) {</span><a href="#l1.35"></a>
+<span id="l1.36" class="minusline">-                System.err.println(&quot;ZoneInfo: wrong magic number: &quot; + id);</span><a href="#l1.36"></a>
+<span id="l1.37" class="minusline">-                return null;</span><a href="#l1.37"></a>
+<span id="l1.38" class="minusline">-            }</span><a href="#l1.38"></a>
+<span id="l1.39" class="minusline">-        }</span><a href="#l1.39"></a>
+<span id="l1.40" class="minusline">-</span><a href="#l1.40"></a>
+<span id="l1.41" class="minusline">-        if (buf[index++] &gt; JAVAZI_VERSION) {</span><a href="#l1.41"></a>
+<span id="l1.42" class="minusline">-            System.err.println(&quot;ZoneInfo: incompatible version (&quot;</span><a href="#l1.42"></a>
+<span id="l1.43" class="minusline">-                               + buf[index - 1] + &quot;): &quot; + id);</span><a href="#l1.43"></a>
+<span id="l1.44" class="minusline">-            return null;</span><a href="#l1.44"></a>
+<span id="l1.45" class="minusline">-        }</span><a href="#l1.45"></a>
+<span id="l1.46" class="minusline">-</span><a href="#l1.46"></a>
+<span id="l1.47" class="plusline">+        int index = 0;</span><a href="#l1.47"></a>
+<span id="l1.48">         int filesize = buf.length;</span><a href="#l1.48"></a>
+<span id="l1.49">         int rawOffset = 0;</span><a href="#l1.49"></a>
+<span id="l1.50">         int dstSavings = 0;</span><a href="#l1.50"></a>
+<span id="l1.51" class="atline">@@ -600,6 +599,18 @@</span><a href="#l1.51"></a>
+<span id="l1.52">         int[] simpleTimeZoneParams = null;</span><a href="#l1.52"></a>
+<span id="l1.53"> </span><a href="#l1.53"></a>
+<span id="l1.54">         try {</span><a href="#l1.54"></a>
+<span id="l1.55" class="plusline">+            for (index = 0; index &lt; JAVAZI_LABEL.length; index++) {</span><a href="#l1.55"></a>
+<span id="l1.56" class="plusline">+                if (buf[index] != JAVAZI_LABEL[index]) {</span><a href="#l1.56"></a>
+<span id="l1.57" class="plusline">+                    System.err.println(&quot;ZoneInfo: wrong magic number: &quot; + id);</span><a href="#l1.57"></a>
+<span id="l1.58" class="plusline">+                    return null;</span><a href="#l1.58"></a>
+<span id="l1.59" class="plusline">+                }</span><a href="#l1.59"></a>
+<span id="l1.60" class="plusline">+            }</span><a href="#l1.60"></a>
+<span id="l1.61" class="plusline">+            if (buf[index++] &gt; JAVAZI_VERSION) {</span><a href="#l1.61"></a>
+<span id="l1.62" class="plusline">+                System.err.println(&quot;ZoneInfo: incompatible version (&quot;</span><a href="#l1.62"></a>
+<span id="l1.63" class="plusline">+                                   + buf[index - 1] + &quot;): &quot; + id);</span><a href="#l1.63"></a>
+<span id="l1.64" class="plusline">+                return null;</span><a href="#l1.64"></a>
+<span id="l1.65" class="plusline">+            }</span><a href="#l1.65"></a>
+<span id="l1.66" class="plusline">+</span><a href="#l1.66"></a>
+<span id="l1.67">             while (index &lt; filesize) {</span><a href="#l1.67"></a>
+<span id="l1.68">                 byte tag = buf[index++];</span><a href="#l1.68"></a>
+<span id="l1.69">                 int  len = ((buf[index++] &amp; 0xFF) &lt;&lt; 8) + (buf[index++] &amp; 0xFF);</span><a href="#l1.69"></a>
+<span id="l1.70" class="atline">@@ -1017,30 +1028,33 @@</span><a href="#l1.70"></a>
+<span id="l1.71">      * Reads the specified file under &amp;lt;java.home&amp;gt;/lib/zi into a buffer.</span><a href="#l1.71"></a>
+<span id="l1.72">      * @return the buffer, or null if any I/O error occurred.</span><a href="#l1.72"></a>
+<span id="l1.73">      */</span><a href="#l1.73"></a>
+<span id="l1.74" class="minusline">-    private static byte[] readZoneInfoFile(String fileName) {</span><a href="#l1.74"></a>
+<span id="l1.75" class="plusline">+    private static byte[] readZoneInfoFile(final String fileName) {</span><a href="#l1.75"></a>
+<span id="l1.76">         byte[] buffer = null;</span><a href="#l1.76"></a>
+<span id="l1.77"> </span><a href="#l1.77"></a>
+<span id="l1.78">         try {</span><a href="#l1.78"></a>
+<span id="l1.79" class="minusline">-            String homeDir = AccessController.doPrivileged(</span><a href="#l1.79"></a>
+<span id="l1.80" class="minusline">-                new sun.security.action.GetPropertyAction(&quot;java.home&quot;));</span><a href="#l1.80"></a>
+<span id="l1.81" class="minusline">-            final String fname = homeDir + File.separator + &quot;lib&quot; + File.separator</span><a href="#l1.81"></a>
+<span id="l1.82" class="minusline">-                                 + &quot;zi&quot; + File.separator + fileName;</span><a href="#l1.82"></a>
+<span id="l1.83">             buffer = (byte[]) AccessController.doPrivileged(new PrivilegedExceptionAction() {</span><a href="#l1.83"></a>
+<span id="l1.84">                 public Object run() throws IOException {</span><a href="#l1.84"></a>
+<span id="l1.85" class="minusline">-                    File file = new File(fname);</span><a href="#l1.85"></a>
+<span id="l1.86" class="minusline">-                    if (!file.canRead()) {</span><a href="#l1.86"></a>
+<span id="l1.87" class="plusline">+                    File file = new File(ziDir, fileName);</span><a href="#l1.87"></a>
+<span id="l1.88" class="plusline">+                    if (!file.exists() || !file.isFile()) {</span><a href="#l1.88"></a>
+<span id="l1.89">                         return null;</span><a href="#l1.89"></a>
+<span id="l1.90">                     }</span><a href="#l1.90"></a>
+<span id="l1.91" class="minusline">-                    int filesize = (int)file.length();</span><a href="#l1.91"></a>
+<span id="l1.92" class="minusline">-                    byte[] buf = new byte[filesize];</span><a href="#l1.92"></a>
+<span id="l1.93" class="minusline">-</span><a href="#l1.93"></a>
+<span id="l1.94" class="minusline">-                    FileInputStream fis = new FileInputStream(file);</span><a href="#l1.94"></a>
+<span id="l1.95" class="minusline">-</span><a href="#l1.95"></a>
+<span id="l1.96" class="minusline">-                    if (fis.read(buf) != filesize) {</span><a href="#l1.96"></a>
+<span id="l1.97" class="minusline">-                        fis.close();</span><a href="#l1.97"></a>
+<span id="l1.98" class="minusline">-                        throw new IOException(&quot;read error on &quot; + fname);</span><a href="#l1.98"></a>
+<span id="l1.99" class="plusline">+                    file = file.getCanonicalFile();</span><a href="#l1.99"></a>
+<span id="l1.100" class="plusline">+                    String path = file.getCanonicalPath();</span><a href="#l1.100"></a>
+<span id="l1.101" class="plusline">+                    byte[] buf = null;</span><a href="#l1.101"></a>
+<span id="l1.102" class="plusline">+                    if (path != null &amp;&amp; path.startsWith(ziDir)) {</span><a href="#l1.102"></a>
+<span id="l1.103" class="plusline">+                        int filesize = (int)file.length();</span><a href="#l1.103"></a>
+<span id="l1.104" class="plusline">+                        if (filesize &gt; 0) {</span><a href="#l1.104"></a>
+<span id="l1.105" class="plusline">+                            FileInputStream fis = new FileInputStream(file);</span><a href="#l1.105"></a>
+<span id="l1.106" class="plusline">+                            buf = new byte[filesize];</span><a href="#l1.106"></a>
+<span id="l1.107" class="plusline">+                            try {</span><a href="#l1.107"></a>
+<span id="l1.108" class="plusline">+                                if (fis.read(buf) != filesize) {</span><a href="#l1.108"></a>
+<span id="l1.109" class="plusline">+                                    throw new IOException(&quot;read error on &quot; + fileName);</span><a href="#l1.109"></a>
+<span id="l1.110" class="plusline">+                                }</span><a href="#l1.110"></a>
+<span id="l1.111" class="plusline">+                            } finally {</span><a href="#l1.111"></a>
+<span id="l1.112" class="plusline">+                                fis.close();</span><a href="#l1.112"></a>
+<span id="l1.113" class="plusline">+                            }</span><a href="#l1.113"></a>
+<span id="l1.114" class="plusline">+                        }</span><a href="#l1.114"></a>
+<span id="l1.115">                     }</span><a href="#l1.115"></a>
+<span id="l1.116" class="minusline">-                    fis.close();</span><a href="#l1.116"></a>
+<span id="l1.117">                     return buf;</span><a href="#l1.117"></a>
+<span id="l1.118">                 }</span><a href="#l1.118"></a>
+<span id="l1.119">             });</span><a href="#l1.119"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

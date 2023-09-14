@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    private synchronized void writeObject(java.io.ObjectOutputStream s)
+2        throws java.io.IOException {
+3        java.io.ObjectOutputStream.PutField fields = s.putFields();
+4         fields.put("value", value);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    private synchronized void writeObject(java.io.ObjectOutputStream s)
+2        throws java.io.IOException {
+3        java.io.ObjectOutputStream.PutField fields = s.putFields();
+4        char[] val = new char[capacity()];
+---------------------------------------------
+Differences:	['4']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0      */
+1    private synchronized void writeObject(ObjectOutputStream s)
+2        throws IOException {
+3        ObjectOutputStream.PutField fields = s.putFields();
+4         fields.put("value", value);
+--------------------------------------------

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // Scanner will do the right thing
+1        String digit = "((?i)["+radixDigits+"]|\\p{javaDigit})";
+2         String groupedNumeral = "("+non0Digit+digit+"?"+digit+"?("+
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // Scanner will do the right thing
+1        String digit = "((?i)["+radixDigits+"]|\\p{javaDigit})";
+2        // Android-changed: Support non-decimal starting digits.
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // Scanner will do the right thing
+1        String digit = "((?i)["+radixDigits+"\\p{javaDigit}])";
+2         String groupedNumeral = "("+non0Digit+digit+"?"+digit+"?("+
+--------------------------------------------

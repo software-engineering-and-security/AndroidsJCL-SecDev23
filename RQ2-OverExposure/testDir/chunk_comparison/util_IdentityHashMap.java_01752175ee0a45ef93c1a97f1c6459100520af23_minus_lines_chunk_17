@@ -1,0 +1,22 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         int cap = capacity(size);
+1        SharedSecrets.getJavaOISAccess().checkArray(s, Object[].class, cap);
+2         init(cap);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        int cap = capacity(size);
+1        SharedSecrets.getJavaOISAccess().checkArray(s, Object[].class, cap);
+2        init(cap);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         int cap = capacity(size);
+1        SharedSecrets.getJavaOISAccess().checkArray(s, Object[].class, cap*2);
+2        this.size = size;
+3         init(cap);
+--------------------------------------------

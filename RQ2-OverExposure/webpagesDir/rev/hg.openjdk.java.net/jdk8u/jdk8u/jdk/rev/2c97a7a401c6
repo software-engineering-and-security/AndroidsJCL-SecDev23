@@ -1,0 +1,1143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: 2c97a7a401c6</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/2c97a7a401c6">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/2c97a7a401c6">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/2c97a7a401c6">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2c97a7a401c6.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2c97a7a401c6.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2c97a7a401c6.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 13781:2c97a7a401c6   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8229951: Better Ticket Granting Services
+Reviewed-by: mbalao</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#110;&#100;&#114;&#101;&#119;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Sun, 12 Jan 2020 06:47:40 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/2c2aa634c373">2c2aa634c373</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/31c836956458">31c836956458</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/Checksum.java">src/share/classes/sun/security/krb5/Checksum.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/KrbTgsReq.java">src/share/classes/sun/security/krb5/KrbTgsReq.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/PAForUserEnc.java">src/share/classes/sun/security/krb5/internal/PAForUserEnc.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/CksumType.java">src/share/classes/sun/security/krb5/internal/crypto/CksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/Crc32CksumType.java">src/share/classes/sun/security/krb5/internal/crypto/Crc32CksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/DesCbcCrcEType.java">src/share/classes/sun/security/krb5/internal/crypto/DesCbcCrcEType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/DesMacCksumType.java">src/share/classes/sun/security/krb5/internal/crypto/DesMacCksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/DesMacKCksumType.java">src/share/classes/sun/security/krb5/internal/crypto/DesMacKCksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/HmacMd5ArcFourCksumType.java">src/share/classes/sun/security/krb5/internal/crypto/HmacMd5ArcFourCksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes128CksumType.java">src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes128CksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes256CksumType.java">src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes256CksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Des3KdCksumType.java">src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Des3KdCksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/RsaMd5CksumType.java">src/share/classes/sun/security/krb5/internal/crypto/RsaMd5CksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/src/share/classes/sun/security/krb5/internal/crypto/RsaMd5DesCksumType.java">src/share/classes/sun/security/krb5/internal/crypto/RsaMd5DesCksumType.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c97a7a401c6/test/sun/security/krb5/auto/KDC.java">test/sun/security/krb5/auto/KDC.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     15 files changed, 119 insertions(+), 250 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/security/krb5/Checksum.java</a></td>
+    <td class="diffstat-total" align="right">151</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:42.3841059603%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:57.6158940397%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/sun/security/krb5/KrbTgsReq.java</a></td>
+    <td class="diffstat-total" align="right">20</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.662251655629%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:12.582781457%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/sun/security/krb5/internal/PAForUserEnc.java</a></td>
+    <td class="diffstat-total" align="right">3</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.32450331126%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.662251655629%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/share/classes/sun/security/krb5/internal/crypto/CksumType.java</a></td>
+    <td class="diffstat-total" align="right">43</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:4.6357615894%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:23.8410596026%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">src/share/classes/sun/security/krb5/internal/crypto/Crc32CksumType.java</a></td>
+    <td class="diffstat-total" align="right">18</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:4.6357615894%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:7.28476821192%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l6.1">src/share/classes/sun/security/krb5/internal/crypto/DesCbcCrcEType.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.662251655629%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.662251655629%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l7.1">src/share/classes/sun/security/krb5/internal/crypto/DesMacCksumType.java</a></td>
+    <td class="diffstat-total" align="right">10</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.98675496689%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:4.6357615894%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l8.1">src/share/classes/sun/security/krb5/internal/crypto/DesMacKCksumType.java</a></td>
+    <td class="diffstat-total" align="right">12</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.64900662252%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:5.29801324503%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l9.1">src/share/classes/sun/security/krb5/internal/crypto/HmacMd5ArcFourCksumType.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.64900662252%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.62251655629%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l10.1">src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes128CksumType.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.64900662252%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.62251655629%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l11.1">src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes256CksumType.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.64900662252%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.62251655629%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l12.1">src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Des3KdCksumType.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.64900662252%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.62251655629%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l13.1">src/share/classes/sun/security/krb5/internal/crypto/RsaMd5CksumType.java</a></td>
+    <td class="diffstat-total" align="right">20</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:3.31125827815%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:9.93377483444%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l14.1">src/share/classes/sun/security/krb5/internal/crypto/RsaMd5DesCksumType.java</a></td>
+    <td class="diffstat-total" align="right">17</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:3.97350993377%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:7.28476821192%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l15.1">test/sun/security/krb5/auto/KDC.java</a></td>
+    <td class="diffstat-total" align="right">17</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.98675496689%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:9.27152317881%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/security/krb5/Checksum.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/Checksum.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -69,6 +69,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">     // draft-brezak-win2k-krb-rc4-hmac-04.txt</span><a href="#l1.4"></a>
+<span id="l1.5">     public static final int CKSUMTYPE_HMAC_MD5_ARCFOUR = -138;</span><a href="#l1.5"></a>
+<span id="l1.6"> </span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+    // default checksum type, -1 if not set</span><a href="#l1.7"></a>
+<span id="l1.8">     static int CKSUMTYPE_DEFAULT;</span><a href="#l1.8"></a>
+<span id="l1.9">     static int SAFECKSUMTYPE_DEFAULT;</span><a href="#l1.9"></a>
+<span id="l1.10"> </span><a href="#l1.10"></a>
+<span id="l1.11" class="atline">@@ -83,26 +84,19 @@</span><a href="#l1.11"></a>
+<span id="l1.12">         try {</span><a href="#l1.12"></a>
+<span id="l1.13">             cfg = Config.getInstance();</span><a href="#l1.13"></a>
+<span id="l1.14">             temp = cfg.get(&quot;libdefaults&quot;, &quot;default_checksum&quot;);</span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-            if (temp != null)</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-                {</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-                    CKSUMTYPE_DEFAULT = Config.getType(temp);</span><a href="#l1.17"></a>
+<span id="l1.18" class="minusline">-                } else {</span><a href="#l1.18"></a>
+<span id="l1.19" class="minusline">-                    /*</span><a href="#l1.19"></a>
+<span id="l1.20" class="minusline">-                     * If the default checksum is not</span><a href="#l1.20"></a>
+<span id="l1.21" class="minusline">-                     * specified in the configuration we</span><a href="#l1.21"></a>
+<span id="l1.22" class="minusline">-                     * set it to RSA_MD5. We follow the MIT and</span><a href="#l1.22"></a>
+<span id="l1.23" class="minusline">-                     * SEAM implementation.</span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-                     */</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-                    CKSUMTYPE_DEFAULT = CKSUMTYPE_RSA_MD5;</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-                }</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+            if (temp != null) {</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+                CKSUMTYPE_DEFAULT = Config.getType(temp);</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+            } else {</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+                CKSUMTYPE_DEFAULT = -1;</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+            }</span><a href="#l1.31"></a>
+<span id="l1.32">         } catch (Exception exc) {</span><a href="#l1.32"></a>
+<span id="l1.33">             if (DEBUG) {</span><a href="#l1.33"></a>
+<span id="l1.34">                 System.out.println(&quot;Exception in getting default checksum &quot;+</span><a href="#l1.34"></a>
+<span id="l1.35" class="minusline">-                                   &quot;value from the configuration &quot; +</span><a href="#l1.35"></a>
+<span id="l1.36" class="minusline">-                                   &quot;Setting default checksum to be RSA-MD5&quot;);</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+                                   &quot;value from the configuration. &quot; +</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+                                   &quot;No default checksum set.&quot;);</span><a href="#l1.38"></a>
+<span id="l1.39">                 exc.printStackTrace();</span><a href="#l1.39"></a>
+<span id="l1.40">             }</span><a href="#l1.40"></a>
+<span id="l1.41" class="minusline">-            CKSUMTYPE_DEFAULT = CKSUMTYPE_RSA_MD5;</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+            CKSUMTYPE_DEFAULT = -1;</span><a href="#l1.42"></a>
+<span id="l1.43">         }</span><a href="#l1.43"></a>
+<span id="l1.44"> </span><a href="#l1.44"></a>
+<span id="l1.45"> </span><a href="#l1.45"></a>
+<span id="l1.46" class="atline">@@ -112,117 +106,100 @@</span><a href="#l1.46"></a>
+<span id="l1.47">                 {</span><a href="#l1.47"></a>
+<span id="l1.48">                     SAFECKSUMTYPE_DEFAULT = Config.getType(temp);</span><a href="#l1.48"></a>
+<span id="l1.49">                 } else {</span><a href="#l1.49"></a>
+<span id="l1.50" class="minusline">-                    SAFECKSUMTYPE_DEFAULT = CKSUMTYPE_RSA_MD5_DES;</span><a href="#l1.50"></a>
+<span id="l1.51" class="plusline">+                    SAFECKSUMTYPE_DEFAULT = -1;</span><a href="#l1.51"></a>
+<span id="l1.52">                 }</span><a href="#l1.52"></a>
+<span id="l1.53">         } catch (Exception exc) {</span><a href="#l1.53"></a>
+<span id="l1.54">             if (DEBUG) {</span><a href="#l1.54"></a>
+<span id="l1.55">                 System.out.println(&quot;Exception in getting safe default &quot; +</span><a href="#l1.55"></a>
+<span id="l1.56">                                    &quot;checksum value &quot; +</span><a href="#l1.56"></a>
+<span id="l1.57" class="minusline">-                                   &quot;from the configuration Setting  &quot; +</span><a href="#l1.57"></a>
+<span id="l1.58" class="minusline">-                                   &quot;safe default checksum to be RSA-MD5&quot;);</span><a href="#l1.58"></a>
+<span id="l1.59" class="plusline">+                                   &quot;from the configuration Setting.  &quot; +</span><a href="#l1.59"></a>
+<span id="l1.60" class="plusline">+                                   &quot;No safe default checksum set.&quot;);</span><a href="#l1.60"></a>
+<span id="l1.61">                 exc.printStackTrace();</span><a href="#l1.61"></a>
+<span id="l1.62">             }</span><a href="#l1.62"></a>
+<span id="l1.63" class="minusline">-            SAFECKSUMTYPE_DEFAULT = CKSUMTYPE_RSA_MD5_DES;</span><a href="#l1.63"></a>
+<span id="l1.64" class="plusline">+            SAFECKSUMTYPE_DEFAULT = -1;</span><a href="#l1.64"></a>
+<span id="l1.65">         }</span><a href="#l1.65"></a>
+<span id="l1.66">     }</span><a href="#l1.66"></a>
+<span id="l1.67"> </span><a href="#l1.67"></a>
+<span id="l1.68">     /**</span><a href="#l1.68"></a>
+<span id="l1.69">      * Constructs a new Checksum using the raw data and type.</span><a href="#l1.69"></a>
+<span id="l1.70" class="plusline">+     *</span><a href="#l1.70"></a>
+<span id="l1.71" class="plusline">+     * This constructor is only used by Authenticator Checksum</span><a href="#l1.71"></a>
+<span id="l1.72" class="plusline">+     * {@link sun.security.jgss.krb5.InitialToken.OverloadedChecksum}</span><a href="#l1.72"></a>
+<span id="l1.73" class="plusline">+     * where the checksum type must be 0x8003</span><a href="#l1.73"></a>
+<span id="l1.74" class="plusline">+     * (see https://tools.ietf.org/html/rfc4121#section-4.1.1)</span><a href="#l1.74"></a>
+<span id="l1.75" class="plusline">+     * and checksum field/value is used to convey service flags,</span><a href="#l1.75"></a>
+<span id="l1.76" class="plusline">+     * channel bindings, and optional delegation information.</span><a href="#l1.76"></a>
+<span id="l1.77" class="plusline">+     * This special type does NOT have a {@link CksumType} and has its</span><a href="#l1.77"></a>
+<span id="l1.78" class="plusline">+     * own calculating and verification rules. It does has the same</span><a href="#l1.78"></a>
+<span id="l1.79" class="plusline">+     * ASN.1 encoding though.</span><a href="#l1.79"></a>
+<span id="l1.80" class="plusline">+     *</span><a href="#l1.80"></a>
+<span id="l1.81">      * @data the byte array of checksum.</span><a href="#l1.81"></a>
+<span id="l1.82">      * @new_cksumType the type of checksum.</span><a href="#l1.82"></a>
+<span id="l1.83" class="minusline">-     *</span><a href="#l1.83"></a>
+<span id="l1.84">      */</span><a href="#l1.84"></a>
+<span id="l1.85" class="minusline">-         // used in InitialToken</span><a href="#l1.85"></a>
+<span id="l1.86">     public Checksum(byte[] data, int new_cksumType) {</span><a href="#l1.86"></a>
+<span id="l1.87">         cksumType = new_cksumType;</span><a href="#l1.87"></a>
+<span id="l1.88">         checksum = data;</span><a href="#l1.88"></a>
+<span id="l1.89">     }</span><a href="#l1.89"></a>
+<span id="l1.90"> </span><a href="#l1.90"></a>
+<span id="l1.91">     /**</span><a href="#l1.91"></a>
+<span id="l1.92" class="minusline">-     * Constructs a new Checksum by calculating the checksum over the data</span><a href="#l1.92"></a>
+<span id="l1.93" class="minusline">-     * using specified checksum type.</span><a href="#l1.93"></a>
+<span id="l1.94" class="minusline">-     * @new_cksumType the type of checksum.</span><a href="#l1.94"></a>
+<span id="l1.95" class="minusline">-     * @data the data that needs to be performed a checksum calculation on.</span><a href="#l1.95"></a>
+<span id="l1.96" class="plusline">+     * Constructs a new Checksum by calculating over the data using</span><a href="#l1.96"></a>
+<span id="l1.97" class="plusline">+     * the specified checksum type. If the checksum is unkeyed, key</span><a href="#l1.97"></a>
+<span id="l1.98" class="plusline">+     * and usage are ignored.</span><a href="#l1.98"></a>
+<span id="l1.99" class="plusline">+     *</span><a href="#l1.99"></a>
+<span id="l1.100" class="plusline">+     * @param new_cksumType the type of checksum. If set to -1, the</span><a href="#l1.100"></a>
+<span id="l1.101" class="plusline">+     *      {@linkplain EType#checksumType() mandatory checksum type}</span><a href="#l1.101"></a>
+<span id="l1.102" class="plusline">+     *      for the encryption type of {@code key} will be used</span><a href="#l1.102"></a>
+<span id="l1.103" class="plusline">+     * @param data the data that needs to be performed a checksum calculation on</span><a href="#l1.103"></a>
+<span id="l1.104" class="plusline">+     * @param key the key used by a keyed checksum</span><a href="#l1.104"></a>
+<span id="l1.105" class="plusline">+     * @param usage the usage used by a keyed checksum</span><a href="#l1.105"></a>
+<span id="l1.106">      */</span><a href="#l1.106"></a>
+<span id="l1.107" class="minusline">-    public Checksum(int new_cksumType, byte[] data)</span><a href="#l1.107"></a>
+<span id="l1.108" class="minusline">-        throws KdcErrException, KrbCryptoException {</span><a href="#l1.108"></a>
+<span id="l1.109" class="minusline">-</span><a href="#l1.109"></a>
+<span id="l1.110" class="minusline">-        cksumType = new_cksumType;</span><a href="#l1.110"></a>
+<span id="l1.111" class="minusline">-        CksumType cksumEngine = CksumType.getInstance(cksumType);</span><a href="#l1.111"></a>
+<span id="l1.112" class="minusline">-        if (!cksumEngine.isSafe()) {</span><a href="#l1.112"></a>
+<span id="l1.113" class="minusline">-            checksum = cksumEngine.calculateChecksum(data, data.length);</span><a href="#l1.113"></a>
+<span id="l1.114" class="plusline">+    public Checksum(int new_cksumType, byte[] data,</span><a href="#l1.114"></a>
+<span id="l1.115" class="plusline">+                    EncryptionKey key, int usage)</span><a href="#l1.115"></a>
+<span id="l1.116" class="plusline">+            throws KdcErrException, KrbApErrException, KrbCryptoException {</span><a href="#l1.116"></a>
+<span id="l1.117" class="plusline">+        if (new_cksumType == -1) {</span><a href="#l1.117"></a>
+<span id="l1.118" class="plusline">+            cksumType = EType.getInstance(key.getEType()).checksumType();</span><a href="#l1.118"></a>
+<span id="l1.119">         } else {</span><a href="#l1.119"></a>
+<span id="l1.120" class="minusline">-            throw new KdcErrException(Krb5.KRB_AP_ERR_INAPP_CKSUM);</span><a href="#l1.120"></a>
+<span id="l1.121" class="plusline">+            cksumType = new_cksumType;</span><a href="#l1.121"></a>
+<span id="l1.122">         }</span><a href="#l1.122"></a>
+<span id="l1.123" class="minusline">-    }</span><a href="#l1.123"></a>
+<span id="l1.124" class="minusline">-</span><a href="#l1.124"></a>
+<span id="l1.125" class="minusline">-    /**</span><a href="#l1.125"></a>
+<span id="l1.126" class="minusline">-     * Constructs a new Checksum by calculating the keyed checksum</span><a href="#l1.126"></a>
+<span id="l1.127" class="minusline">-     * over the data using specified checksum type.</span><a href="#l1.127"></a>
+<span id="l1.128" class="minusline">-     * @new_cksumType the type of checksum.</span><a href="#l1.128"></a>
+<span id="l1.129" class="minusline">-     * @data the data that needs to be performed a checksum calculation on.</span><a href="#l1.129"></a>
+<span id="l1.130" class="minusline">-     */</span><a href="#l1.130"></a>
+<span id="l1.131" class="minusline">-         // KrbSafe, KrbTgsReq</span><a href="#l1.131"></a>
+<span id="l1.132" class="minusline">-    public Checksum(int new_cksumType, byte[] data,</span><a href="#l1.132"></a>
+<span id="l1.133" class="minusline">-                        EncryptionKey key, int usage)</span><a href="#l1.133"></a>
+<span id="l1.134" class="minusline">-        throws KdcErrException, KrbApErrException, KrbCryptoException {</span><a href="#l1.134"></a>
+<span id="l1.135" class="minusline">-        cksumType = new_cksumType;</span><a href="#l1.135"></a>
+<span id="l1.136" class="minusline">-        CksumType cksumEngine = CksumType.getInstance(cksumType);</span><a href="#l1.136"></a>
+<span id="l1.137" class="minusline">-        if (!cksumEngine.isSafe())</span><a href="#l1.137"></a>
+<span id="l1.138" class="minusline">-            throw new KrbApErrException(Krb5.KRB_AP_ERR_INAPP_CKSUM);</span><a href="#l1.138"></a>
+<span id="l1.139" class="minusline">-        checksum =</span><a href="#l1.139"></a>
+<span id="l1.140" class="minusline">-            cksumEngine.calculateKeyedChecksum(data,</span><a href="#l1.140"></a>
+<span id="l1.141" class="minusline">-                data.length,</span><a href="#l1.141"></a>
+<span id="l1.142" class="minusline">-                key.getBytes(),</span><a href="#l1.142"></a>
+<span id="l1.143" class="minusline">-                usage);</span><a href="#l1.143"></a>
+<span id="l1.144" class="plusline">+        checksum = CksumType.getInstance(cksumType).calculateChecksum(</span><a href="#l1.144"></a>
+<span id="l1.145" class="plusline">+                    data, data.length, key.getBytes(), usage);</span><a href="#l1.145"></a>
+<span id="l1.146">     }</span><a href="#l1.146"></a>
+<span id="l1.147"> </span><a href="#l1.147"></a>
+<span id="l1.148">     /**</span><a href="#l1.148"></a>
+<span id="l1.149">      * Verifies the keyed checksum over the data passed in.</span><a href="#l1.149"></a>
+<span id="l1.150">      */</span><a href="#l1.150"></a>
+<span id="l1.151" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, EncryptionKey key,</span><a href="#l1.151"></a>
+<span id="l1.152" class="minusline">-                                        int usage)</span><a href="#l1.152"></a>
+<span id="l1.153" class="minusline">-        throws KdcErrException, KrbApErrException, KrbCryptoException {</span><a href="#l1.153"></a>
+<span id="l1.154" class="plusline">+    public boolean verifyKeyedChecksum(byte[] data, EncryptionKey key, int usage)</span><a href="#l1.154"></a>
+<span id="l1.155" class="plusline">+            throws KdcErrException, KrbApErrException, KrbCryptoException {</span><a href="#l1.155"></a>
+<span id="l1.156">         CksumType cksumEngine = CksumType.getInstance(cksumType);</span><a href="#l1.156"></a>
+<span id="l1.157" class="minusline">-        if (!cksumEngine.isSafe())</span><a href="#l1.157"></a>
+<span id="l1.158" class="plusline">+        if (!cksumEngine.isKeyed()) {</span><a href="#l1.158"></a>
+<span id="l1.159">             throw new KrbApErrException(Krb5.KRB_AP_ERR_INAPP_CKSUM);</span><a href="#l1.159"></a>
+<span id="l1.160" class="minusline">-        return cksumEngine.verifyKeyedChecksum(data,</span><a href="#l1.160"></a>
+<span id="l1.161" class="minusline">-                                               data.length,</span><a href="#l1.161"></a>
+<span id="l1.162" class="minusline">-                                               key.getBytes(),</span><a href="#l1.162"></a>
+<span id="l1.163" class="minusline">-                                               checksum,</span><a href="#l1.163"></a>
+<span id="l1.164" class="minusline">-            usage);</span><a href="#l1.164"></a>
+<span id="l1.165" class="minusline">-    }</span><a href="#l1.165"></a>
+<span id="l1.166" class="minusline">-</span><a href="#l1.166"></a>
+<span id="l1.167" class="minusline">-    // ===============  ATTENTION! Use with care  ==================</span><a href="#l1.167"></a>
+<span id="l1.168" class="minusline">-    // According to https://tools.ietf.org/html/rfc3961#section-6.1,</span><a href="#l1.168"></a>
+<span id="l1.169" class="minusline">-    // An unkeyed checksum should only be used &quot;in limited circumstances</span><a href="#l1.169"></a>
+<span id="l1.170" class="minusline">-    // where the lack of a key does not provide a window for an attack,</span><a href="#l1.170"></a>
+<span id="l1.171" class="minusline">-    // preferably as part of an encrypted message&quot;.</span><a href="#l1.171"></a>
+<span id="l1.172" class="minusline">-    public boolean verifyAnyChecksum(byte[] data, EncryptionKey key,</span><a href="#l1.172"></a>
+<span id="l1.173" class="minusline">-            int usage)</span><a href="#l1.173"></a>
+<span id="l1.174" class="minusline">-            throws KdcErrException, KrbCryptoException {</span><a href="#l1.174"></a>
+<span id="l1.175" class="minusline">-        CksumType cksumEngine = CksumType.getInstance(cksumType);</span><a href="#l1.175"></a>
+<span id="l1.176" class="minusline">-        if (!cksumEngine.isSafe()) {</span><a href="#l1.176"></a>
+<span id="l1.177" class="minusline">-            return cksumEngine.verifyChecksum(data, checksum);</span><a href="#l1.177"></a>
+<span id="l1.178">         } else {</span><a href="#l1.178"></a>
+<span id="l1.179" class="minusline">-            return cksumEngine.verifyKeyedChecksum(data,</span><a href="#l1.179"></a>
+<span id="l1.180" class="minusline">-                    data.length,</span><a href="#l1.180"></a>
+<span id="l1.181" class="minusline">-                    key.getBytes(),</span><a href="#l1.181"></a>
+<span id="l1.182" class="minusline">-                    checksum,</span><a href="#l1.182"></a>
+<span id="l1.183" class="minusline">-                    usage);</span><a href="#l1.183"></a>
+<span id="l1.184" class="plusline">+            return cksumEngine.verifyChecksum(</span><a href="#l1.184"></a>
+<span id="l1.185" class="plusline">+                    data, data.length, key.getBytes(), checksum, usage);</span><a href="#l1.185"></a>
+<span id="l1.186">         }</span><a href="#l1.186"></a>
+<span id="l1.187">     }</span><a href="#l1.187"></a>
+<span id="l1.188"> </span><a href="#l1.188"></a>
+<span id="l1.189" class="minusline">-    /*</span><a href="#l1.189"></a>
+<span id="l1.190" class="minusline">-    public Checksum(byte[] data) throws KdcErrException, KrbCryptoException {</span><a href="#l1.190"></a>
+<span id="l1.191" class="minusline">-        this(Checksum.CKSUMTYPE_DEFAULT, data);</span><a href="#l1.191"></a>
+<span id="l1.192" class="plusline">+</span><a href="#l1.192"></a>
+<span id="l1.193" class="plusline">+    /**</span><a href="#l1.193"></a>
+<span id="l1.194" class="plusline">+     * Verifies the checksum over the data passed in. The checksum might</span><a href="#l1.194"></a>
+<span id="l1.195" class="plusline">+     * be a keyed or not.</span><a href="#l1.195"></a>
+<span id="l1.196" class="plusline">+     *</span><a href="#l1.196"></a>
+<span id="l1.197" class="plusline">+     * ===============  ATTENTION! Use with care  ==================</span><a href="#l1.197"></a>
+<span id="l1.198" class="plusline">+     * According to https://tools.ietf.org/html/rfc3961#section-6.1,</span><a href="#l1.198"></a>
+<span id="l1.199" class="plusline">+     * An unkeyed checksum should only be used &quot;in limited circumstances</span><a href="#l1.199"></a>
+<span id="l1.200" class="plusline">+     * where the lack of a key does not provide a window for an attack,</span><a href="#l1.200"></a>
+<span id="l1.201" class="plusline">+     * preferably as part of an encrypted message&quot;.</span><a href="#l1.201"></a>
+<span id="l1.202" class="plusline">+     */</span><a href="#l1.202"></a>
+<span id="l1.203" class="plusline">+    public boolean verifyAnyChecksum(byte[] data, EncryptionKey key, int usage)</span><a href="#l1.203"></a>
+<span id="l1.204" class="plusline">+            throws KdcErrException, KrbCryptoException {</span><a href="#l1.204"></a>
+<span id="l1.205" class="plusline">+        return CksumType.getInstance(cksumType).verifyChecksum(</span><a href="#l1.205"></a>
+<span id="l1.206" class="plusline">+                data, data.length, key.getBytes(), checksum, usage);</span><a href="#l1.206"></a>
+<span id="l1.207">     }</span><a href="#l1.207"></a>
+<span id="l1.208" class="minusline">-    */</span><a href="#l1.208"></a>
+<span id="l1.209"> </span><a href="#l1.209"></a>
+<span id="l1.210">     boolean isEqual(Checksum cksum) throws KdcErrException {</span><a href="#l1.210"></a>
+<span id="l1.211" class="minusline">-        if (cksumType != cksum.cksumType)</span><a href="#l1.211"></a>
+<span id="l1.212" class="plusline">+        if (cksumType != cksum.cksumType) {</span><a href="#l1.212"></a>
+<span id="l1.213">             return false;</span><a href="#l1.213"></a>
+<span id="l1.214" class="minusline">-        CksumType cksumEngine = CksumType.getInstance(cksumType);</span><a href="#l1.214"></a>
+<span id="l1.215" class="plusline">+        }</span><a href="#l1.215"></a>
+<span id="l1.216">         return CksumType.isChecksumEqual(checksum, cksum.checksum);</span><a href="#l1.216"></a>
+<span id="l1.217">     }</span><a href="#l1.217"></a>
+<span id="l1.218"> </span><a href="#l1.218"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/sun/security/krb5/KrbTgsReq.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/KrbTgsReq.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -320,26 +320,8 @@</span><a href="#l2.3"></a>
+<span id="l2.4">         byte[] temp = reqBody.asn1Encode(Krb5.KRB_TGS_REQ);</span><a href="#l2.4"></a>
+<span id="l2.5">         // if the checksum type is one of the keyed checksum types,</span><a href="#l2.5"></a>
+<span id="l2.6">         // use session key.</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-        Checksum cksum;</span><a href="#l2.7"></a>
+<span id="l2.8" class="minusline">-        switch (Checksum.CKSUMTYPE_DEFAULT) {</span><a href="#l2.8"></a>
+<span id="l2.9" class="minusline">-        case Checksum.CKSUMTYPE_RSA_MD4_DES:</span><a href="#l2.9"></a>
+<span id="l2.10" class="minusline">-        case Checksum.CKSUMTYPE_DES_MAC:</span><a href="#l2.10"></a>
+<span id="l2.11" class="minusline">-        case Checksum.CKSUMTYPE_DES_MAC_K:</span><a href="#l2.11"></a>
+<span id="l2.12" class="minusline">-        case Checksum.CKSUMTYPE_RSA_MD4_DES_K:</span><a href="#l2.12"></a>
+<span id="l2.13" class="minusline">-        case Checksum.CKSUMTYPE_RSA_MD5_DES:</span><a href="#l2.13"></a>
+<span id="l2.14" class="minusline">-        case Checksum.CKSUMTYPE_HMAC_SHA1_DES3_KD:</span><a href="#l2.14"></a>
+<span id="l2.15" class="minusline">-        case Checksum.CKSUMTYPE_HMAC_MD5_ARCFOUR:</span><a href="#l2.15"></a>
+<span id="l2.16" class="minusline">-        case Checksum.CKSUMTYPE_HMAC_SHA1_96_AES128:</span><a href="#l2.16"></a>
+<span id="l2.17" class="minusline">-        case Checksum.CKSUMTYPE_HMAC_SHA1_96_AES256:</span><a href="#l2.17"></a>
+<span id="l2.18" class="minusline">-            cksum = new Checksum(Checksum.CKSUMTYPE_DEFAULT, temp, key,</span><a href="#l2.18"></a>
+<span id="l2.19" class="plusline">+        Checksum cksum  = new Checksum(Checksum.CKSUMTYPE_DEFAULT, temp, key,</span><a href="#l2.19"></a>
+<span id="l2.20">                 KeyUsage.KU_PA_TGS_REQ_CKSUM);</span><a href="#l2.20"></a>
+<span id="l2.21" class="minusline">-            break;</span><a href="#l2.21"></a>
+<span id="l2.22" class="minusline">-        case Checksum.CKSUMTYPE_CRC32:</span><a href="#l2.22"></a>
+<span id="l2.23" class="minusline">-        case Checksum.CKSUMTYPE_RSA_MD4:</span><a href="#l2.23"></a>
+<span id="l2.24" class="minusline">-        case Checksum.CKSUMTYPE_RSA_MD5:</span><a href="#l2.24"></a>
+<span id="l2.25" class="minusline">-        default:</span><a href="#l2.25"></a>
+<span id="l2.26" class="minusline">-            cksum = new Checksum(Checksum.CKSUMTYPE_DEFAULT, temp);</span><a href="#l2.26"></a>
+<span id="l2.27" class="minusline">-        }</span><a href="#l2.27"></a>
+<span id="l2.28"> </span><a href="#l2.28"></a>
+<span id="l2.29">         // Usage will be KeyUsage.KU_PA_TGS_REQ_AUTHENTICATOR</span><a href="#l2.29"></a>
+<span id="l2.30"> </span><a href="#l2.30"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/PAForUserEnc.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/PAForUserEnc.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> /*</span><a href="#l3.4"></a>
+<span id="l3.5" class="minusline">- * Copyright (c) 2012, Oracle and/or its affiliates. All rights reserved.</span><a href="#l3.5"></a>
+<span id="l3.6" class="plusline">+ * Copyright (c) 2012, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l3.6"></a>
+<span id="l3.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l3.7"></a>
+<span id="l3.8">  *</span><a href="#l3.8"></a>
+<span id="l3.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l3.9"></a>
+<span id="l3.10" class="atline">@@ -133,6 +133,7 @@</span><a href="#l3.10"></a>
+<span id="l3.11">         bytes.write(DerValue.createTag(DerValue.TAG_CONTEXT, true, (byte)0x01), name.getRealm().asn1Encode());</span><a href="#l3.11"></a>
+<span id="l3.12"> </span><a href="#l3.12"></a>
+<span id="l3.13">         try {</span><a href="#l3.13"></a>
+<span id="l3.14" class="plusline">+            // MS-SFU 2.2.1: use hmac-md5 checksum regardless of key type</span><a href="#l3.14"></a>
+<span id="l3.15">             Checksum cks = new Checksum(</span><a href="#l3.15"></a>
+<span id="l3.16">                     Checksum.CKSUMTYPE_HMAC_MD5_ARCFOUR,</span><a href="#l3.16"></a>
+<span id="l3.17">                     getS4UByteArray(),</span><a href="#l3.17"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/CksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/CksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> /*</span><a href="#l4.4"></a>
+<span id="l4.5" class="minusline">- * Copyright (c) 2000, 2012, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.5"></a>
+<span id="l4.6" class="plusline">+ * Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.6"></a>
+<span id="l4.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l4.7"></a>
+<span id="l4.8">  *</span><a href="#l4.8"></a>
+<span id="l4.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l4.9"></a>
+<span id="l4.10" class="atline">@@ -31,10 +31,7 @@</span><a href="#l4.10"></a>
+<span id="l4.11"> </span><a href="#l4.11"></a>
+<span id="l4.12"> package sun.security.krb5.internal.crypto;</span><a href="#l4.12"></a>
+<span id="l4.13"> </span><a href="#l4.13"></a>
+<span id="l4.14" class="minusline">-import sun.security.krb5.Config;</span><a href="#l4.14"></a>
+<span id="l4.15"> import sun.security.krb5.Checksum;</span><a href="#l4.15"></a>
+<span id="l4.16" class="minusline">-import sun.security.krb5.EncryptedData;</span><a href="#l4.16"></a>
+<span id="l4.17" class="minusline">-import sun.security.krb5.KrbException;</span><a href="#l4.17"></a>
+<span id="l4.18"> import sun.security.krb5.KrbCryptoException;</span><a href="#l4.18"></a>
+<span id="l4.19"> import sun.security.krb5.internal.*;</span><a href="#l4.19"></a>
+<span id="l4.20"> </span><a href="#l4.20"></a>
+<span id="l4.21" class="atline">@@ -81,6 +78,7 @@</span><a href="#l4.21"></a>
+<span id="l4.22">             cksumTypeName =</span><a href="#l4.22"></a>
+<span id="l4.23">                 &quot;sun.security.krb5.internal.crypto.HmacSha1Aes128CksumType&quot;;</span><a href="#l4.23"></a>
+<span id="l4.24">             break;</span><a href="#l4.24"></a>
+<span id="l4.25" class="plusline">+</span><a href="#l4.25"></a>
+<span id="l4.26">         case Checksum.CKSUMTYPE_HMAC_SHA1_96_AES256:</span><a href="#l4.26"></a>
+<span id="l4.27">             cksumType = new HmacSha1Aes256CksumType();</span><a href="#l4.27"></a>
+<span id="l4.28">             cksumTypeName =</span><a href="#l4.28"></a>
+<span id="l4.29" class="atline">@@ -117,32 +115,11 @@</span><a href="#l4.29"></a>
+<span id="l4.30">         return cksumType;</span><a href="#l4.30"></a>
+<span id="l4.31">     }</span><a href="#l4.31"></a>
+<span id="l4.32"> </span><a href="#l4.32"></a>
+<span id="l4.33" class="minusline">-</span><a href="#l4.33"></a>
+<span id="l4.34" class="minusline">-    /**</span><a href="#l4.34"></a>
+<span id="l4.35" class="minusline">-     * Returns default checksum type.</span><a href="#l4.35"></a>
+<span id="l4.36" class="minusline">-     */</span><a href="#l4.36"></a>
+<span id="l4.37" class="minusline">-    public static CksumType getInstance() throws KdcErrException {</span><a href="#l4.37"></a>
+<span id="l4.38" class="minusline">-        // this method provided for Kerberos applications.</span><a href="#l4.38"></a>
+<span id="l4.39" class="minusline">-        int cksumType = Checksum.CKSUMTYPE_RSA_MD5; // default</span><a href="#l4.39"></a>
+<span id="l4.40" class="minusline">-        try {</span><a href="#l4.40"></a>
+<span id="l4.41" class="minusline">-            Config c = Config.getInstance();</span><a href="#l4.41"></a>
+<span id="l4.42" class="minusline">-            if ((cksumType = (Config.getType(c.get(&quot;libdefaults&quot;,</span><a href="#l4.42"></a>
+<span id="l4.43" class="minusline">-                    &quot;ap_req_checksum_type&quot;)))) == - 1) {</span><a href="#l4.43"></a>
+<span id="l4.44" class="minusline">-                if ((cksumType = Config.getType(c.get(&quot;libdefaults&quot;,</span><a href="#l4.44"></a>
+<span id="l4.45" class="minusline">-                        &quot;checksum_type&quot;))) == -1) {</span><a href="#l4.45"></a>
+<span id="l4.46" class="minusline">-                    cksumType = Checksum.CKSUMTYPE_RSA_MD5; // default</span><a href="#l4.46"></a>
+<span id="l4.47" class="minusline">-                }</span><a href="#l4.47"></a>
+<span id="l4.48" class="minusline">-            }</span><a href="#l4.48"></a>
+<span id="l4.49" class="minusline">-        } catch (KrbException e) {</span><a href="#l4.49"></a>
+<span id="l4.50" class="minusline">-        }</span><a href="#l4.50"></a>
+<span id="l4.51" class="minusline">-        return getInstance(cksumType);</span><a href="#l4.51"></a>
+<span id="l4.52" class="minusline">-    }</span><a href="#l4.52"></a>
+<span id="l4.53" class="minusline">-</span><a href="#l4.53"></a>
+<span id="l4.54">     public abstract int confounderSize();</span><a href="#l4.54"></a>
+<span id="l4.55"> </span><a href="#l4.55"></a>
+<span id="l4.56">     public abstract int cksumType();</span><a href="#l4.56"></a>
+<span id="l4.57"> </span><a href="#l4.57"></a>
+<span id="l4.58" class="minusline">-    public abstract boolean isSafe();</span><a href="#l4.58"></a>
+<span id="l4.59" class="plusline">+    public abstract boolean isKeyed();</span><a href="#l4.59"></a>
+<span id="l4.60"> </span><a href="#l4.60"></a>
+<span id="l4.61">     public abstract int cksumSize();</span><a href="#l4.61"></a>
+<span id="l4.62"> </span><a href="#l4.62"></a>
+<span id="l4.63" class="atline">@@ -150,18 +127,12 @@</span><a href="#l4.63"></a>
+<span id="l4.64"> </span><a href="#l4.64"></a>
+<span id="l4.65">     public abstract int keySize();</span><a href="#l4.65"></a>
+<span id="l4.66"> </span><a href="#l4.66"></a>
+<span id="l4.67" class="minusline">-    public abstract byte[] calculateChecksum(byte[] data, int size)</span><a href="#l4.67"></a>
+<span id="l4.68" class="minusline">-        throws KrbCryptoException;</span><a href="#l4.68"></a>
+<span id="l4.69" class="minusline">-</span><a href="#l4.69"></a>
+<span id="l4.70" class="minusline">-    public abstract byte[] calculateKeyedChecksum(byte[] data, int size,</span><a href="#l4.70"></a>
+<span id="l4.71" class="plusline">+    // Note: key and usage will be ignored for an unkeyed checksum.</span><a href="#l4.71"></a>
+<span id="l4.72" class="plusline">+    public abstract byte[] calculateChecksum(byte[] data, int size,</span><a href="#l4.72"></a>
+<span id="l4.73">         byte[] key, int usage) throws KrbCryptoException;</span><a href="#l4.73"></a>
+<span id="l4.74"> </span><a href="#l4.74"></a>
+<span id="l4.75" class="minusline">-    public boolean verifyChecksum(byte[] data, byte[] checksum)</span><a href="#l4.75"></a>
+<span id="l4.76" class="minusline">-            throws KrbCryptoException {</span><a href="#l4.76"></a>
+<span id="l4.77" class="minusline">-        throw new UnsupportedOperationException(&quot;Not supported&quot;);</span><a href="#l4.77"></a>
+<span id="l4.78" class="minusline">-    }</span><a href="#l4.78"></a>
+<span id="l4.79" class="minusline">-</span><a href="#l4.79"></a>
+<span id="l4.80" class="minusline">-    public abstract boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l4.80"></a>
+<span id="l4.81" class="plusline">+    // Note: key and usage will be ignored for an unkeyed checksum.</span><a href="#l4.81"></a>
+<span id="l4.82" class="plusline">+    public abstract boolean verifyChecksum(byte[] data, int size,</span><a href="#l4.82"></a>
+<span id="l4.83">         byte[] key, byte[] checksum, int usage) throws KrbCryptoException;</span><a href="#l4.83"></a>
+<span id="l4.84"> </span><a href="#l4.84"></a>
+<span id="l4.85">     public static boolean isChecksumEqual(byte[] cksum1, byte[] cksum2) {</span><a href="#l4.85"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/Crc32CksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/Crc32CksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -32,7 +32,6 @@</span><a href="#l5.3"></a>
+<span id="l5.4"> </span><a href="#l5.4"></a>
+<span id="l5.5"> import sun.security.krb5.*;</span><a href="#l5.5"></a>
+<span id="l5.6"> import sun.security.krb5.internal.*;</span><a href="#l5.6"></a>
+<span id="l5.7" class="minusline">-import java.util.zip.CRC32;</span><a href="#l5.7"></a>
+<span id="l5.8"> </span><a href="#l5.8"></a>
+<span id="l5.9"> public class Crc32CksumType extends CksumType {</span><a href="#l5.9"></a>
+<span id="l5.10"> </span><a href="#l5.10"></a>
+<span id="l5.11" class="atline">@@ -47,7 +46,7 @@</span><a href="#l5.11"></a>
+<span id="l5.12">         return Checksum.CKSUMTYPE_CRC32;</span><a href="#l5.12"></a>
+<span id="l5.13">     }</span><a href="#l5.13"></a>
+<span id="l5.14"> </span><a href="#l5.14"></a>
+<span id="l5.15" class="minusline">-    public boolean isSafe() {</span><a href="#l5.15"></a>
+<span id="l5.16" class="plusline">+    public boolean isKeyed() {</span><a href="#l5.16"></a>
+<span id="l5.17">         return false;</span><a href="#l5.17"></a>
+<span id="l5.18">     }</span><a href="#l5.18"></a>
+<span id="l5.19"> </span><a href="#l5.19"></a>
+<span id="l5.20" class="atline">@@ -63,18 +62,15 @@</span><a href="#l5.20"></a>
+<span id="l5.21">         return 0;</span><a href="#l5.21"></a>
+<span id="l5.22">     }</span><a href="#l5.22"></a>
+<span id="l5.23"> </span><a href="#l5.23"></a>
+<span id="l5.24" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) {</span><a href="#l5.24"></a>
+<span id="l5.25" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size,</span><a href="#l5.25"></a>
+<span id="l5.26" class="plusline">+            byte[] key, int usage) {</span><a href="#l5.26"></a>
+<span id="l5.27">         return crc32.byte2crc32sum_bytes(data, size);</span><a href="#l5.27"></a>
+<span id="l5.28">     }</span><a href="#l5.28"></a>
+<span id="l5.29"> </span><a href="#l5.29"></a>
+<span id="l5.30" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size,</span><a href="#l5.30"></a>
+<span id="l5.31" class="minusline">-                                         byte[] key, int usage) {</span><a href="#l5.31"></a>
+<span id="l5.32" class="minusline">-                                             return null;</span><a href="#l5.32"></a>
+<span id="l5.33" class="minusline">-                                         }</span><a href="#l5.33"></a>
+<span id="l5.34" class="minusline">-</span><a href="#l5.34"></a>
+<span id="l5.35" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l5.35"></a>
+<span id="l5.36" class="minusline">-                                       byte[] key, byte[] checksum, int usage) {</span><a href="#l5.36"></a>
+<span id="l5.37" class="minusline">-        return false;</span><a href="#l5.37"></a>
+<span id="l5.38" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l5.38"></a>
+<span id="l5.39" class="plusline">+            byte[] key, byte[] checksum, int usage) {</span><a href="#l5.39"></a>
+<span id="l5.40" class="plusline">+        return CksumType.isChecksumEqual(checksum,</span><a href="#l5.40"></a>
+<span id="l5.41" class="plusline">+                crc32.byte2crc32sum_bytes(data));</span><a href="#l5.41"></a>
+<span id="l5.42">     }</span><a href="#l5.42"></a>
+<span id="l5.43"> </span><a href="#l5.43"></a>
+<span id="l5.44">     public static byte[] int2quad(long input) {</span><a href="#l5.44"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l6.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/DesCbcCrcEType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l6.1"></a>
+<span id="l6.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/DesCbcCrcEType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l6.2"></a>
+<span id="l6.3" class="atline">@@ -53,7 +53,7 @@</span><a href="#l6.3"></a>
+<span id="l6.4">     }</span><a href="#l6.4"></a>
+<span id="l6.5"> </span><a href="#l6.5"></a>
+<span id="l6.6">     public int checksumType() {</span><a href="#l6.6"></a>
+<span id="l6.7" class="minusline">-        return Checksum.CKSUMTYPE_CRC32;</span><a href="#l6.7"></a>
+<span id="l6.8" class="plusline">+        return Checksum.CKSUMTYPE_RSA_MD5;</span><a href="#l6.8"></a>
+<span id="l6.9">     }</span><a href="#l6.9"></a>
+<span id="l6.10"> </span><a href="#l6.10"></a>
+<span id="l6.11">     public int checksumSize() {</span><a href="#l6.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l7.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/DesMacCksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l7.1"></a>
+<span id="l7.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/DesMacCksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l7.2"></a>
+<span id="l7.3" class="atline">@@ -49,7 +49,7 @@</span><a href="#l7.3"></a>
+<span id="l7.4">         return Checksum.CKSUMTYPE_DES_MAC;</span><a href="#l7.4"></a>
+<span id="l7.5">     }</span><a href="#l7.5"></a>
+<span id="l7.6"> </span><a href="#l7.6"></a>
+<span id="l7.7" class="minusline">-    public boolean isSafe() {</span><a href="#l7.7"></a>
+<span id="l7.8" class="plusline">+    public boolean isKeyed() {</span><a href="#l7.8"></a>
+<span id="l7.9">         return true;</span><a href="#l7.9"></a>
+<span id="l7.10">     }</span><a href="#l7.10"></a>
+<span id="l7.11"> </span><a href="#l7.11"></a>
+<span id="l7.12" class="atline">@@ -65,10 +65,6 @@</span><a href="#l7.12"></a>
+<span id="l7.13">         return 8;</span><a href="#l7.13"></a>
+<span id="l7.14">     }</span><a href="#l7.14"></a>
+<span id="l7.15"> </span><a href="#l7.15"></a>
+<span id="l7.16" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) {</span><a href="#l7.16"></a>
+<span id="l7.17" class="minusline">-        return null;</span><a href="#l7.17"></a>
+<span id="l7.18" class="minusline">-    }</span><a href="#l7.18"></a>
+<span id="l7.19" class="minusline">-</span><a href="#l7.19"></a>
+<span id="l7.20">     /**</span><a href="#l7.20"></a>
+<span id="l7.21">      * Calculates keyed checksum.</span><a href="#l7.21"></a>
+<span id="l7.22">      * @param data the data used to generate the checksum.</span><a href="#l7.22"></a>
+<span id="l7.23" class="atline">@@ -78,7 +74,7 @@</span><a href="#l7.23"></a>
+<span id="l7.24">      *</span><a href="#l7.24"></a>
+<span id="l7.25">      * @modified by Yanni Zhang, 12/08/99.</span><a href="#l7.25"></a>
+<span id="l7.26">      */</span><a href="#l7.26"></a>
+<span id="l7.27" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size, byte[] key,</span><a href="#l7.27"></a>
+<span id="l7.28" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size, byte[] key,</span><a href="#l7.28"></a>
+<span id="l7.29">         int usage) throws KrbCryptoException {</span><a href="#l7.29"></a>
+<span id="l7.30">         byte[] new_data = new byte[size + confounderSize()];</span><a href="#l7.30"></a>
+<span id="l7.31">         byte[] conf = Confounder.bytes(confounderSize());</span><a href="#l7.31"></a>
+<span id="l7.32" class="atline">@@ -130,7 +126,7 @@</span><a href="#l7.32"></a>
+<span id="l7.33">      *</span><a href="#l7.33"></a>
+<span id="l7.34">      * @modified by Yanni Zhang, 12/08/99.</span><a href="#l7.34"></a>
+<span id="l7.35">      */</span><a href="#l7.35"></a>
+<span id="l7.36" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l7.36"></a>
+<span id="l7.37" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l7.37"></a>
+<span id="l7.38">         byte[] key, byte[] checksum, int usage) throws KrbCryptoException {</span><a href="#l7.38"></a>
+<span id="l7.39">         byte[] cksum = decryptKeyedChecksum(checksum, key);</span><a href="#l7.39"></a>
+<span id="l7.40"> </span><a href="#l7.40"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l8.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/DesMacKCksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l8.1"></a>
+<span id="l8.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/DesMacKCksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l8.2"></a>
+<span id="l8.3" class="atline">@@ -48,7 +48,7 @@</span><a href="#l8.3"></a>
+<span id="l8.4">         return Checksum.CKSUMTYPE_DES_MAC_K;</span><a href="#l8.4"></a>
+<span id="l8.5">     }</span><a href="#l8.5"></a>
+<span id="l8.6"> </span><a href="#l8.6"></a>
+<span id="l8.7" class="minusline">-    public boolean isSafe() {</span><a href="#l8.7"></a>
+<span id="l8.8" class="plusline">+    public boolean isKeyed() {</span><a href="#l8.8"></a>
+<span id="l8.9">         return true;</span><a href="#l8.9"></a>
+<span id="l8.10">     }</span><a href="#l8.10"></a>
+<span id="l8.11"> </span><a href="#l8.11"></a>
+<span id="l8.12" class="atline">@@ -64,10 +64,6 @@</span><a href="#l8.12"></a>
+<span id="l8.13">         return 8;</span><a href="#l8.13"></a>
+<span id="l8.14">     }</span><a href="#l8.14"></a>
+<span id="l8.15"> </span><a href="#l8.15"></a>
+<span id="l8.16" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) {</span><a href="#l8.16"></a>
+<span id="l8.17" class="minusline">-        return null;</span><a href="#l8.17"></a>
+<span id="l8.18" class="minusline">-    }</span><a href="#l8.18"></a>
+<span id="l8.19" class="minusline">-</span><a href="#l8.19"></a>
+<span id="l8.20">     /**</span><a href="#l8.20"></a>
+<span id="l8.21">      * Calculates keyed checksum.</span><a href="#l8.21"></a>
+<span id="l8.22">      * @param data the data used to generate the checksum.</span><a href="#l8.22"></a>
+<span id="l8.23" class="atline">@@ -77,7 +73,7 @@</span><a href="#l8.23"></a>
+<span id="l8.24">      *</span><a href="#l8.24"></a>
+<span id="l8.25">      * @modified by Yanni Zhang, 12/08/99.</span><a href="#l8.25"></a>
+<span id="l8.26">      */</span><a href="#l8.26"></a>
+<span id="l8.27" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size, byte[] key,</span><a href="#l8.27"></a>
+<span id="l8.28" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size, byte[] key,</span><a href="#l8.28"></a>
+<span id="l8.29">         int usage) throws KrbCryptoException {</span><a href="#l8.29"></a>
+<span id="l8.30">         //check for weak keys</span><a href="#l8.30"></a>
+<span id="l8.31">         try {</span><a href="#l8.31"></a>
+<span id="l8.32" class="atline">@@ -93,9 +89,9 @@</span><a href="#l8.32"></a>
+<span id="l8.33">         return cksum;</span><a href="#l8.33"></a>
+<span id="l8.34">     }</span><a href="#l8.34"></a>
+<span id="l8.35"> </span><a href="#l8.35"></a>
+<span id="l8.36" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l8.36"></a>
+<span id="l8.37" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l8.37"></a>
+<span id="l8.38">         byte[] key, byte[] checksum, int usage) throws KrbCryptoException {</span><a href="#l8.38"></a>
+<span id="l8.39" class="minusline">-        byte[] new_cksum = calculateKeyedChecksum(data, data.length, key, usage);</span><a href="#l8.39"></a>
+<span id="l8.40" class="plusline">+        byte[] new_cksum = calculateChecksum(data, data.length, key, usage);</span><a href="#l8.40"></a>
+<span id="l8.41">         return isChecksumEqual(checksum, new_cksum);</span><a href="#l8.41"></a>
+<span id="l8.42">     }</span><a href="#l8.42"></a>
+<span id="l8.43"> </span><a href="#l8.43"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l9.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/HmacMd5ArcFourCksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l9.1"></a>
+<span id="l9.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/HmacMd5ArcFourCksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l9.2"></a>
+<span id="l9.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l9.3"></a>
+<span id="l9.4"> /*</span><a href="#l9.4"></a>
+<span id="l9.5" class="minusline">- * Copyright (c) 2005, Oracle and/or its affiliates. All rights reserved.</span><a href="#l9.5"></a>
+<span id="l9.6" class="plusline">+ * Copyright (c) 2005, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l9.6"></a>
+<span id="l9.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l9.7"></a>
+<span id="l9.8">  *</span><a href="#l9.8"></a>
+<span id="l9.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l9.9"></a>
+<span id="l9.10" class="atline">@@ -28,8 +28,6 @@</span><a href="#l9.10"></a>
+<span id="l9.11"> import sun.security.krb5.Checksum;</span><a href="#l9.11"></a>
+<span id="l9.12"> import sun.security.krb5.KrbCryptoException;</span><a href="#l9.12"></a>
+<span id="l9.13"> import sun.security.krb5.internal.*;</span><a href="#l9.13"></a>
+<span id="l9.14" class="minusline">-import javax.crypto.spec.DESKeySpec;</span><a href="#l9.14"></a>
+<span id="l9.15" class="minusline">-import java.security.InvalidKeyException;</span><a href="#l9.15"></a>
+<span id="l9.16"> import java.security.GeneralSecurityException;</span><a href="#l9.16"></a>
+<span id="l9.17"> </span><a href="#l9.17"></a>
+<span id="l9.18"> /**</span><a href="#l9.18"></a>
+<span id="l9.19" class="atline">@@ -51,7 +49,7 @@</span><a href="#l9.19"></a>
+<span id="l9.20">         return Checksum.CKSUMTYPE_HMAC_MD5_ARCFOUR;</span><a href="#l9.20"></a>
+<span id="l9.21">     }</span><a href="#l9.21"></a>
+<span id="l9.22"> </span><a href="#l9.22"></a>
+<span id="l9.23" class="minusline">-    public boolean isSafe() {</span><a href="#l9.23"></a>
+<span id="l9.24" class="plusline">+    public boolean isKeyed() {</span><a href="#l9.24"></a>
+<span id="l9.25">         return true;</span><a href="#l9.25"></a>
+<span id="l9.26">     }</span><a href="#l9.26"></a>
+<span id="l9.27"> </span><a href="#l9.27"></a>
+<span id="l9.28" class="atline">@@ -67,10 +65,6 @@</span><a href="#l9.28"></a>
+<span id="l9.29">         return 16;   // bytes</span><a href="#l9.29"></a>
+<span id="l9.30">     }</span><a href="#l9.30"></a>
+<span id="l9.31"> </span><a href="#l9.31"></a>
+<span id="l9.32" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) {</span><a href="#l9.32"></a>
+<span id="l9.33" class="minusline">-        return null;</span><a href="#l9.33"></a>
+<span id="l9.34" class="minusline">-    }</span><a href="#l9.34"></a>
+<span id="l9.35" class="minusline">-</span><a href="#l9.35"></a>
+<span id="l9.36">     /**</span><a href="#l9.36"></a>
+<span id="l9.37">      * Calculates keyed checksum.</span><a href="#l9.37"></a>
+<span id="l9.38">      * @param data the data used to generate the checksum.</span><a href="#l9.38"></a>
+<span id="l9.39" class="atline">@@ -78,7 +72,7 @@</span><a href="#l9.39"></a>
+<span id="l9.40">      * @param key the key used to encrypt the checksum.</span><a href="#l9.40"></a>
+<span id="l9.41">      * @return keyed checksum.</span><a href="#l9.41"></a>
+<span id="l9.42">      */</span><a href="#l9.42"></a>
+<span id="l9.43" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size, byte[] key,</span><a href="#l9.43"></a>
+<span id="l9.44" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size, byte[] key,</span><a href="#l9.44"></a>
+<span id="l9.45">         int usage) throws KrbCryptoException {</span><a href="#l9.45"></a>
+<span id="l9.46"> </span><a href="#l9.46"></a>
+<span id="l9.47">          try {</span><a href="#l9.47"></a>
+<span id="l9.48" class="atline">@@ -98,7 +92,7 @@</span><a href="#l9.48"></a>
+<span id="l9.49">      * @param checksum</span><a href="#l9.49"></a>
+<span id="l9.50">      * @return true if verification is successful.</span><a href="#l9.50"></a>
+<span id="l9.51">      */</span><a href="#l9.51"></a>
+<span id="l9.52" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l9.52"></a>
+<span id="l9.53" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l9.53"></a>
+<span id="l9.54">         byte[] key, byte[] checksum, int usage) throws KrbCryptoException {</span><a href="#l9.54"></a>
+<span id="l9.55"> </span><a href="#l9.55"></a>
+<span id="l9.56">          try {</span><a href="#l9.56"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l10.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes128CksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l10.1"></a>
+<span id="l10.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes128CksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l10.2"></a>
+<span id="l10.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l10.3"></a>
+<span id="l10.4"> /*</span><a href="#l10.4"></a>
+<span id="l10.5" class="minusline">- * Copyright (c) 2004, Oracle and/or its affiliates. All rights reserved.</span><a href="#l10.5"></a>
+<span id="l10.6" class="plusline">+ * Copyright (c) 2004, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l10.6"></a>
+<span id="l10.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l10.7"></a>
+<span id="l10.8">  *</span><a href="#l10.8"></a>
+<span id="l10.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l10.9"></a>
+<span id="l10.10" class="atline">@@ -28,8 +28,6 @@</span><a href="#l10.10"></a>
+<span id="l10.11"> import sun.security.krb5.Checksum;</span><a href="#l10.11"></a>
+<span id="l10.12"> import sun.security.krb5.KrbCryptoException;</span><a href="#l10.12"></a>
+<span id="l10.13"> import sun.security.krb5.internal.*;</span><a href="#l10.13"></a>
+<span id="l10.14" class="minusline">-import javax.crypto.spec.DESKeySpec;</span><a href="#l10.14"></a>
+<span id="l10.15" class="minusline">-import java.security.InvalidKeyException;</span><a href="#l10.15"></a>
+<span id="l10.16"> import java.security.GeneralSecurityException;</span><a href="#l10.16"></a>
+<span id="l10.17"> </span><a href="#l10.17"></a>
+<span id="l10.18"> /*</span><a href="#l10.18"></a>
+<span id="l10.19" class="atline">@@ -51,7 +49,7 @@</span><a href="#l10.19"></a>
+<span id="l10.20">         return Checksum.CKSUMTYPE_HMAC_SHA1_96_AES128;</span><a href="#l10.20"></a>
+<span id="l10.21">     }</span><a href="#l10.21"></a>
+<span id="l10.22"> </span><a href="#l10.22"></a>
+<span id="l10.23" class="minusline">-    public boolean isSafe() {</span><a href="#l10.23"></a>
+<span id="l10.24" class="plusline">+    public boolean isKeyed() {</span><a href="#l10.24"></a>
+<span id="l10.25">         return true;</span><a href="#l10.25"></a>
+<span id="l10.26">     }</span><a href="#l10.26"></a>
+<span id="l10.27"> </span><a href="#l10.27"></a>
+<span id="l10.28" class="atline">@@ -67,10 +65,6 @@</span><a href="#l10.28"></a>
+<span id="l10.29">         return 16;   // bytes</span><a href="#l10.29"></a>
+<span id="l10.30">     }</span><a href="#l10.30"></a>
+<span id="l10.31"> </span><a href="#l10.31"></a>
+<span id="l10.32" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) {</span><a href="#l10.32"></a>
+<span id="l10.33" class="minusline">-        return null;</span><a href="#l10.33"></a>
+<span id="l10.34" class="minusline">-    }</span><a href="#l10.34"></a>
+<span id="l10.35" class="minusline">-</span><a href="#l10.35"></a>
+<span id="l10.36">     /**</span><a href="#l10.36"></a>
+<span id="l10.37">      * Calculates keyed checksum.</span><a href="#l10.37"></a>
+<span id="l10.38">      * @param data the data used to generate the checksum.</span><a href="#l10.38"></a>
+<span id="l10.39" class="atline">@@ -78,7 +72,7 @@</span><a href="#l10.39"></a>
+<span id="l10.40">      * @param key the key used to encrypt the checksum.</span><a href="#l10.40"></a>
+<span id="l10.41">      * @return keyed checksum.</span><a href="#l10.41"></a>
+<span id="l10.42">      */</span><a href="#l10.42"></a>
+<span id="l10.43" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size, byte[] key,</span><a href="#l10.43"></a>
+<span id="l10.44" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size, byte[] key,</span><a href="#l10.44"></a>
+<span id="l10.45">         int usage) throws KrbCryptoException {</span><a href="#l10.45"></a>
+<span id="l10.46"> </span><a href="#l10.46"></a>
+<span id="l10.47">          try {</span><a href="#l10.47"></a>
+<span id="l10.48" class="atline">@@ -98,7 +92,7 @@</span><a href="#l10.48"></a>
+<span id="l10.49">      * @param checksum</span><a href="#l10.49"></a>
+<span id="l10.50">      * @return true if verification is successful.</span><a href="#l10.50"></a>
+<span id="l10.51">      */</span><a href="#l10.51"></a>
+<span id="l10.52" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l10.52"></a>
+<span id="l10.53" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l10.53"></a>
+<span id="l10.54">         byte[] key, byte[] checksum, int usage) throws KrbCryptoException {</span><a href="#l10.54"></a>
+<span id="l10.55"> </span><a href="#l10.55"></a>
+<span id="l10.56">          try {</span><a href="#l10.56"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l11.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes256CksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l11.1"></a>
+<span id="l11.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Aes256CksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l11.2"></a>
+<span id="l11.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l11.3"></a>
+<span id="l11.4"> /*</span><a href="#l11.4"></a>
+<span id="l11.5" class="minusline">- * Copyright (c) 2004, Oracle and/or its affiliates. All rights reserved.</span><a href="#l11.5"></a>
+<span id="l11.6" class="plusline">+ * Copyright (c) 2004, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l11.6"></a>
+<span id="l11.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l11.7"></a>
+<span id="l11.8">  *</span><a href="#l11.8"></a>
+<span id="l11.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l11.9"></a>
+<span id="l11.10" class="atline">@@ -28,8 +28,6 @@</span><a href="#l11.10"></a>
+<span id="l11.11"> import sun.security.krb5.Checksum;</span><a href="#l11.11"></a>
+<span id="l11.12"> import sun.security.krb5.KrbCryptoException;</span><a href="#l11.12"></a>
+<span id="l11.13"> import sun.security.krb5.internal.*;</span><a href="#l11.13"></a>
+<span id="l11.14" class="minusline">-import javax.crypto.spec.DESKeySpec;</span><a href="#l11.14"></a>
+<span id="l11.15" class="minusline">-import java.security.InvalidKeyException;</span><a href="#l11.15"></a>
+<span id="l11.16"> import java.security.GeneralSecurityException;</span><a href="#l11.16"></a>
+<span id="l11.17"> </span><a href="#l11.17"></a>
+<span id="l11.18"> /*</span><a href="#l11.18"></a>
+<span id="l11.19" class="atline">@@ -51,7 +49,7 @@</span><a href="#l11.19"></a>
+<span id="l11.20">         return Checksum.CKSUMTYPE_HMAC_SHA1_96_AES256;</span><a href="#l11.20"></a>
+<span id="l11.21">     }</span><a href="#l11.21"></a>
+<span id="l11.22"> </span><a href="#l11.22"></a>
+<span id="l11.23" class="minusline">-    public boolean isSafe() {</span><a href="#l11.23"></a>
+<span id="l11.24" class="plusline">+    public boolean isKeyed() {</span><a href="#l11.24"></a>
+<span id="l11.25">         return true;</span><a href="#l11.25"></a>
+<span id="l11.26">     }</span><a href="#l11.26"></a>
+<span id="l11.27"> </span><a href="#l11.27"></a>
+<span id="l11.28" class="atline">@@ -67,10 +65,6 @@</span><a href="#l11.28"></a>
+<span id="l11.29">         return 32;   // bytes</span><a href="#l11.29"></a>
+<span id="l11.30">     }</span><a href="#l11.30"></a>
+<span id="l11.31"> </span><a href="#l11.31"></a>
+<span id="l11.32" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) {</span><a href="#l11.32"></a>
+<span id="l11.33" class="minusline">-        return null;</span><a href="#l11.33"></a>
+<span id="l11.34" class="minusline">-    }</span><a href="#l11.34"></a>
+<span id="l11.35" class="minusline">-</span><a href="#l11.35"></a>
+<span id="l11.36">     /**</span><a href="#l11.36"></a>
+<span id="l11.37">      * Calculates keyed checksum.</span><a href="#l11.37"></a>
+<span id="l11.38">      * @param data the data used to generate the checksum.</span><a href="#l11.38"></a>
+<span id="l11.39" class="atline">@@ -78,7 +72,7 @@</span><a href="#l11.39"></a>
+<span id="l11.40">      * @param key the key used to encrypt the checksum.</span><a href="#l11.40"></a>
+<span id="l11.41">      * @return keyed checksum.</span><a href="#l11.41"></a>
+<span id="l11.42">      */</span><a href="#l11.42"></a>
+<span id="l11.43" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size, byte[] key,</span><a href="#l11.43"></a>
+<span id="l11.44" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size, byte[] key,</span><a href="#l11.44"></a>
+<span id="l11.45">         int usage) throws KrbCryptoException {</span><a href="#l11.45"></a>
+<span id="l11.46"> </span><a href="#l11.46"></a>
+<span id="l11.47">          try {</span><a href="#l11.47"></a>
+<span id="l11.48" class="atline">@@ -98,7 +92,7 @@</span><a href="#l11.48"></a>
+<span id="l11.49">      * @param checksum</span><a href="#l11.49"></a>
+<span id="l11.50">      * @return true if verification is successful.</span><a href="#l11.50"></a>
+<span id="l11.51">      */</span><a href="#l11.51"></a>
+<span id="l11.52" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l11.52"></a>
+<span id="l11.53" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l11.53"></a>
+<span id="l11.54">         byte[] key, byte[] checksum, int usage) throws KrbCryptoException {</span><a href="#l11.54"></a>
+<span id="l11.55"> </span><a href="#l11.55"></a>
+<span id="l11.56">          try {</span><a href="#l11.56"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l12.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Des3KdCksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l12.1"></a>
+<span id="l12.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/HmacSha1Des3KdCksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l12.2"></a>
+<span id="l12.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l12.3"></a>
+<span id="l12.4"> /*</span><a href="#l12.4"></a>
+<span id="l12.5" class="minusline">- * Copyright (c) 2004, Oracle and/or its affiliates. All rights reserved.</span><a href="#l12.5"></a>
+<span id="l12.6" class="plusline">+ * Copyright (c) 2004, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l12.6"></a>
+<span id="l12.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l12.7"></a>
+<span id="l12.8">  *</span><a href="#l12.8"></a>
+<span id="l12.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l12.9"></a>
+<span id="l12.10" class="atline">@@ -28,8 +28,6 @@</span><a href="#l12.10"></a>
+<span id="l12.11"> import sun.security.krb5.Checksum;</span><a href="#l12.11"></a>
+<span id="l12.12"> import sun.security.krb5.KrbCryptoException;</span><a href="#l12.12"></a>
+<span id="l12.13"> import sun.security.krb5.internal.*;</span><a href="#l12.13"></a>
+<span id="l12.14" class="minusline">-import javax.crypto.spec.DESKeySpec;</span><a href="#l12.14"></a>
+<span id="l12.15" class="minusline">-import java.security.InvalidKeyException;</span><a href="#l12.15"></a>
+<span id="l12.16"> import java.security.GeneralSecurityException;</span><a href="#l12.16"></a>
+<span id="l12.17"> </span><a href="#l12.17"></a>
+<span id="l12.18"> public class HmacSha1Des3KdCksumType extends CksumType {</span><a href="#l12.18"></a>
+<span id="l12.19" class="atline">@@ -45,7 +43,7 @@</span><a href="#l12.19"></a>
+<span id="l12.20">         return Checksum.CKSUMTYPE_HMAC_SHA1_DES3_KD;</span><a href="#l12.20"></a>
+<span id="l12.21">     }</span><a href="#l12.21"></a>
+<span id="l12.22"> </span><a href="#l12.22"></a>
+<span id="l12.23" class="minusline">-    public boolean isSafe() {</span><a href="#l12.23"></a>
+<span id="l12.24" class="plusline">+    public boolean isKeyed() {</span><a href="#l12.24"></a>
+<span id="l12.25">         return true;</span><a href="#l12.25"></a>
+<span id="l12.26">     }</span><a href="#l12.26"></a>
+<span id="l12.27"> </span><a href="#l12.27"></a>
+<span id="l12.28" class="atline">@@ -61,10 +59,6 @@</span><a href="#l12.28"></a>
+<span id="l12.29">         return 24;   // bytes</span><a href="#l12.29"></a>
+<span id="l12.30">     }</span><a href="#l12.30"></a>
+<span id="l12.31"> </span><a href="#l12.31"></a>
+<span id="l12.32" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) {</span><a href="#l12.32"></a>
+<span id="l12.33" class="minusline">-        return null;</span><a href="#l12.33"></a>
+<span id="l12.34" class="minusline">-    }</span><a href="#l12.34"></a>
+<span id="l12.35" class="minusline">-</span><a href="#l12.35"></a>
+<span id="l12.36">     /**</span><a href="#l12.36"></a>
+<span id="l12.37">      * Calculates keyed checksum.</span><a href="#l12.37"></a>
+<span id="l12.38">      * @param data the data used to generate the checksum.</span><a href="#l12.38"></a>
+<span id="l12.39" class="atline">@@ -72,7 +66,7 @@</span><a href="#l12.39"></a>
+<span id="l12.40">      * @param key the key used to encrypt the checksum.</span><a href="#l12.40"></a>
+<span id="l12.41">      * @return keyed checksum.</span><a href="#l12.41"></a>
+<span id="l12.42">      */</span><a href="#l12.42"></a>
+<span id="l12.43" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size, byte[] key,</span><a href="#l12.43"></a>
+<span id="l12.44" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size, byte[] key,</span><a href="#l12.44"></a>
+<span id="l12.45">         int usage) throws KrbCryptoException {</span><a href="#l12.45"></a>
+<span id="l12.46"> </span><a href="#l12.46"></a>
+<span id="l12.47">          try {</span><a href="#l12.47"></a>
+<span id="l12.48" class="atline">@@ -92,7 +86,7 @@</span><a href="#l12.48"></a>
+<span id="l12.49">      * @param checksum</span><a href="#l12.49"></a>
+<span id="l12.50">      * @return true if verification is successful.</span><a href="#l12.50"></a>
+<span id="l12.51">      */</span><a href="#l12.51"></a>
+<span id="l12.52" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l12.52"></a>
+<span id="l12.53" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l12.53"></a>
+<span id="l12.54">         byte[] key, byte[] checksum, int usage) throws KrbCryptoException {</span><a href="#l12.54"></a>
+<span id="l12.55"> </span><a href="#l12.55"></a>
+<span id="l12.56">          try {</span><a href="#l12.56"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l13.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/RsaMd5CksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l13.1"></a>
+<span id="l13.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/RsaMd5CksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l13.2"></a>
+<span id="l13.3" class="atline">@@ -33,8 +33,6 @@</span><a href="#l13.3"></a>
+<span id="l13.4"> import sun.security.krb5.KrbCryptoException;</span><a href="#l13.4"></a>
+<span id="l13.5"> import sun.security.krb5.internal.*;</span><a href="#l13.5"></a>
+<span id="l13.6"> import java.security.MessageDigest;</span><a href="#l13.6"></a>
+<span id="l13.7" class="minusline">-import java.security.Provider;</span><a href="#l13.7"></a>
+<span id="l13.8" class="minusline">-import java.security.Security;</span><a href="#l13.8"></a>
+<span id="l13.9"> </span><a href="#l13.9"></a>
+<span id="l13.10"> public final class RsaMd5CksumType extends CksumType {</span><a href="#l13.10"></a>
+<span id="l13.11"> </span><a href="#l13.11"></a>
+<span id="l13.12" class="atline">@@ -49,7 +47,7 @@</span><a href="#l13.12"></a>
+<span id="l13.13">         return Checksum.CKSUMTYPE_RSA_MD5;</span><a href="#l13.13"></a>
+<span id="l13.14">     }</span><a href="#l13.14"></a>
+<span id="l13.15"> </span><a href="#l13.15"></a>
+<span id="l13.16" class="minusline">-    public boolean isSafe() {</span><a href="#l13.16"></a>
+<span id="l13.17" class="plusline">+    public boolean isKeyed() {</span><a href="#l13.17"></a>
+<span id="l13.18">         return false;</span><a href="#l13.18"></a>
+<span id="l13.19">     }</span><a href="#l13.19"></a>
+<span id="l13.20"> </span><a href="#l13.20"></a>
+<span id="l13.21" class="atline">@@ -74,7 +72,8 @@</span><a href="#l13.21"></a>
+<span id="l13.22">      * @modified by Yanni Zhang, 12/08/99.</span><a href="#l13.22"></a>
+<span id="l13.23">      */</span><a href="#l13.23"></a>
+<span id="l13.24"> </span><a href="#l13.24"></a>
+<span id="l13.25" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) throws KrbCryptoException{</span><a href="#l13.25"></a>
+<span id="l13.26" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size,</span><a href="#l13.26"></a>
+<span id="l13.27" class="plusline">+            byte[] key, int usage) throws KrbCryptoException{</span><a href="#l13.27"></a>
+<span id="l13.28">         MessageDigest md5;</span><a href="#l13.28"></a>
+<span id="l13.29">         byte[] result = null;</span><a href="#l13.29"></a>
+<span id="l13.30">         try {</span><a href="#l13.30"></a>
+<span id="l13.31" class="atline">@@ -91,18 +90,9 @@</span><a href="#l13.31"></a>
+<span id="l13.32">         return result;</span><a href="#l13.32"></a>
+<span id="l13.33">     }</span><a href="#l13.33"></a>
+<span id="l13.34"> </span><a href="#l13.34"></a>
+<span id="l13.35" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size,</span><a href="#l13.35"></a>
+<span id="l13.36" class="minusline">-        byte[] key, int usage) throws KrbCryptoException {</span><a href="#l13.36"></a>
+<span id="l13.37" class="minusline">-                                             return null;</span><a href="#l13.37"></a>
+<span id="l13.38" class="minusline">-                                         }</span><a href="#l13.38"></a>
+<span id="l13.39" class="minusline">-</span><a href="#l13.39"></a>
+<span id="l13.40" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l13.40"></a>
+<span id="l13.41" class="minusline">-        byte[] key, byte[] checksum, int usage) throws KrbCryptoException {</span><a href="#l13.41"></a>
+<span id="l13.42" class="minusline">-        return false;</span><a href="#l13.42"></a>
+<span id="l13.43" class="minusline">-    }</span><a href="#l13.43"></a>
+<span id="l13.44" class="minusline">-</span><a href="#l13.44"></a>
+<span id="l13.45">     @Override</span><a href="#l13.45"></a>
+<span id="l13.46" class="minusline">-    public boolean verifyChecksum(byte[] data, byte[] checksum)</span><a href="#l13.46"></a>
+<span id="l13.47" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l13.47"></a>
+<span id="l13.48" class="plusline">+            byte[] key, byte[] checksum, int usage)</span><a href="#l13.48"></a>
+<span id="l13.49">             throws KrbCryptoException {</span><a href="#l13.49"></a>
+<span id="l13.50">         try {</span><a href="#l13.50"></a>
+<span id="l13.51">             byte[] calculated = MessageDigest.getInstance(&quot;MD5&quot;).digest(data);</span><a href="#l13.51"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l14.1" class="minusline">--- a/src/share/classes/sun/security/krb5/internal/crypto/RsaMd5DesCksumType.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l14.1"></a>
+<span id="l14.2" class="plusline">+++ b/src/share/classes/sun/security/krb5/internal/crypto/RsaMd5DesCksumType.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l14.2"></a>
+<span id="l14.3" class="atline">@@ -33,12 +33,8 @@</span><a href="#l14.3"></a>
+<span id="l14.4"> import sun.security.krb5.Confounder;</span><a href="#l14.4"></a>
+<span id="l14.5"> import sun.security.krb5.KrbCryptoException;</span><a href="#l14.5"></a>
+<span id="l14.6"> import sun.security.krb5.internal.*;</span><a href="#l14.6"></a>
+<span id="l14.7" class="minusline">-import javax.crypto.Cipher;</span><a href="#l14.7"></a>
+<span id="l14.8" class="minusline">-import javax.crypto.SecretKey;</span><a href="#l14.8"></a>
+<span id="l14.9"> import javax.crypto.spec.DESKeySpec;</span><a href="#l14.9"></a>
+<span id="l14.10"> import java.security.MessageDigest;</span><a href="#l14.10"></a>
+<span id="l14.11" class="minusline">-import java.security.Provider;</span><a href="#l14.11"></a>
+<span id="l14.12" class="minusline">-import java.security.Security;</span><a href="#l14.12"></a>
+<span id="l14.13"> import java.security.InvalidKeyException;</span><a href="#l14.13"></a>
+<span id="l14.14"> </span><a href="#l14.14"></a>
+<span id="l14.15"> public final class RsaMd5DesCksumType extends CksumType {</span><a href="#l14.15"></a>
+<span id="l14.16" class="atline">@@ -54,7 +50,7 @@</span><a href="#l14.16"></a>
+<span id="l14.17">         return Checksum.CKSUMTYPE_RSA_MD5_DES;</span><a href="#l14.17"></a>
+<span id="l14.18">     }</span><a href="#l14.18"></a>
+<span id="l14.19"> </span><a href="#l14.19"></a>
+<span id="l14.20" class="minusline">-    public boolean isSafe() {</span><a href="#l14.20"></a>
+<span id="l14.21" class="plusline">+    public boolean isKeyed() {</span><a href="#l14.21"></a>
+<span id="l14.22">         return true;</span><a href="#l14.22"></a>
+<span id="l14.23">     }</span><a href="#l14.23"></a>
+<span id="l14.24"> </span><a href="#l14.24"></a>
+<span id="l14.25" class="atline">@@ -79,7 +75,7 @@</span><a href="#l14.25"></a>
+<span id="l14.26">      *</span><a href="#l14.26"></a>
+<span id="l14.27">      * @modified by Yanni Zhang, 12/08/99.</span><a href="#l14.27"></a>
+<span id="l14.28">      */</span><a href="#l14.28"></a>
+<span id="l14.29" class="minusline">-    public byte[] calculateKeyedChecksum(byte[] data, int size, byte[] key,</span><a href="#l14.29"></a>
+<span id="l14.30" class="plusline">+    public byte[] calculateChecksum(byte[] data, int size, byte[] key,</span><a href="#l14.30"></a>
+<span id="l14.31">         int usage) throws KrbCryptoException {</span><a href="#l14.31"></a>
+<span id="l14.32">         //prepend confounder</span><a href="#l14.32"></a>
+<span id="l14.33">         byte[] new_data = new byte[size + confounderSize()];</span><a href="#l14.33"></a>
+<span id="l14.34" class="atline">@@ -88,7 +84,7 @@</span><a href="#l14.34"></a>
+<span id="l14.35">         System.arraycopy(data, 0, new_data, confounderSize(), size);</span><a href="#l14.35"></a>
+<span id="l14.36"> </span><a href="#l14.36"></a>
+<span id="l14.37">         //calculate md5 cksum</span><a href="#l14.37"></a>
+<span id="l14.38" class="minusline">-        byte[] mdc_cksum = calculateChecksum(new_data, new_data.length);</span><a href="#l14.38"></a>
+<span id="l14.39" class="plusline">+        byte[] mdc_cksum = calculateRawChecksum(new_data, new_data.length);</span><a href="#l14.39"></a>
+<span id="l14.40">         byte[] cksum = new byte[cksumSize()];</span><a href="#l14.40"></a>
+<span id="l14.41">         System.arraycopy(conf, 0, cksum, 0, confounderSize());</span><a href="#l14.41"></a>
+<span id="l14.42">         System.arraycopy(mdc_cksum, 0, cksum, confounderSize(),</span><a href="#l14.42"></a>
+<span id="l14.43" class="atline">@@ -125,7 +121,7 @@</span><a href="#l14.43"></a>
+<span id="l14.44">      *</span><a href="#l14.44"></a>
+<span id="l14.45">      * @modified by Yanni Zhang, 12/08/99.</span><a href="#l14.45"></a>
+<span id="l14.46">      */</span><a href="#l14.46"></a>
+<span id="l14.47" class="minusline">-    public boolean verifyKeyedChecksum(byte[] data, int size,</span><a href="#l14.47"></a>
+<span id="l14.48" class="plusline">+    public boolean verifyChecksum(byte[] data, int size,</span><a href="#l14.48"></a>
+<span id="l14.49">         byte[] key, byte[] checksum, int usage) throws KrbCryptoException {</span><a href="#l14.49"></a>
+<span id="l14.50">         //decrypt checksum</span><a href="#l14.50"></a>
+<span id="l14.51">         byte[] cksum = decryptKeyedChecksum(checksum, key);</span><a href="#l14.51"></a>
+<span id="l14.52" class="atline">@@ -135,7 +131,7 @@</span><a href="#l14.52"></a>
+<span id="l14.53">         System.arraycopy(cksum, 0, new_data, 0, confounderSize());</span><a href="#l14.53"></a>
+<span id="l14.54">         System.arraycopy(data, 0, new_data, confounderSize(), size);</span><a href="#l14.54"></a>
+<span id="l14.55"> </span><a href="#l14.55"></a>
+<span id="l14.56" class="minusline">-        byte[] new_cksum = calculateChecksum(new_data, new_data.length);</span><a href="#l14.56"></a>
+<span id="l14.57" class="plusline">+        byte[] new_cksum = calculateRawChecksum(new_data, new_data.length);</span><a href="#l14.57"></a>
+<span id="l14.58">         //extract original cksum value</span><a href="#l14.58"></a>
+<span id="l14.59">         byte[] orig_cksum = new byte[cksumSize() - confounderSize()];</span><a href="#l14.59"></a>
+<span id="l14.60">         System.arraycopy(cksum,  confounderSize(), orig_cksum, 0,</span><a href="#l14.60"></a>
+<span id="l14.61" class="atline">@@ -181,7 +177,7 @@</span><a href="#l14.61"></a>
+<span id="l14.62">      *</span><a href="#l14.62"></a>
+<span id="l14.63">      * @modified by Yanni Zhang, 12/08/99.</span><a href="#l14.63"></a>
+<span id="l14.64">      */</span><a href="#l14.64"></a>
+<span id="l14.65" class="minusline">-    public byte[] calculateChecksum(byte[] data, int size) throws KrbCryptoException{</span><a href="#l14.65"></a>
+<span id="l14.66" class="plusline">+    private byte[] calculateRawChecksum(byte[] data, int size) throws KrbCryptoException{</span><a href="#l14.66"></a>
+<span id="l14.67">         MessageDigest md5;</span><a href="#l14.67"></a>
+<span id="l14.68">         byte[] result = null;</span><a href="#l14.68"></a>
+<span id="l14.69">         try {</span><a href="#l14.69"></a>
+<span id="l14.70" class="atline">@@ -197,5 +193,4 @@</span><a href="#l14.70"></a>
+<span id="l14.71">         }</span><a href="#l14.71"></a>
+<span id="l14.72">         return result;</span><a href="#l14.72"></a>
+<span id="l14.73">     }</span><a href="#l14.73"></a>
+<span id="l14.74" class="minusline">-</span><a href="#l14.74"></a>
+<span id="l14.75"> }</span><a href="#l14.75"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l15.1" class="minusline">--- a/test/sun/security/krb5/auto/KDC.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l15.1"></a>
+<span id="l15.2" class="plusline">+++ b/test/sun/security/krb5/auto/KDC.java	Sun Jan 12 06:47:40 2020 +0000</span><a href="#l15.2"></a>
+<span id="l15.3" class="atline">@@ -726,7 +726,7 @@</span><a href="#l15.3"></a>
+<span id="l15.4">      * @return the key</span><a href="#l15.4"></a>
+<span id="l15.5">      * @throws sun.security.krb5.KrbException for unknown/unsupported etype</span><a href="#l15.5"></a>
+<span id="l15.6">      */</span><a href="#l15.6"></a>
+<span id="l15.7" class="minusline">-    private EncryptionKey keyForUser(PrincipalName p, int etype, boolean server)</span><a href="#l15.7"></a>
+<span id="l15.8" class="plusline">+    EncryptionKey keyForUser(PrincipalName p, int etype, boolean server)</span><a href="#l15.8"></a>
+<span id="l15.9">             throws KrbException {</span><a href="#l15.9"></a>
+<span id="l15.10">         try {</span><a href="#l15.10"></a>
+<span id="l15.11">             // Do not call EncryptionKey.acquireSecretKeys(), otherwise</span><a href="#l15.11"></a>
+<span id="l15.12" class="atline">@@ -797,7 +797,7 @@</span><a href="#l15.12"></a>
+<span id="l15.13">             int e2 = eTypes[0];     // etype for outgoing session key</span><a href="#l15.13"></a>
+<span id="l15.14">             int e3 = eTypes[0];     // etype for outgoing ticket</span><a href="#l15.14"></a>
+<span id="l15.15"> </span><a href="#l15.15"></a>
+<span id="l15.16" class="minusline">-            PAData[] pas = KDCReqDotPAData(tgsReq);</span><a href="#l15.16"></a>
+<span id="l15.17" class="plusline">+            PAData[] pas = tgsReq.pAData;</span><a href="#l15.17"></a>
+<span id="l15.18"> </span><a href="#l15.18"></a>
+<span id="l15.19">             Ticket tkt = null;</span><a href="#l15.19"></a>
+<span id="l15.20">             EncTicketPart etp = null;</span><a href="#l15.20"></a>
+<span id="l15.21" class="atline">@@ -828,7 +828,6 @@</span><a href="#l15.21"></a>
+<span id="l15.22">                 for (PAData pa: pas) {</span><a href="#l15.22"></a>
+<span id="l15.23">                     if (pa.getType() == Krb5.PA_TGS_REQ) {</span><a href="#l15.23"></a>
+<span id="l15.24">                         APReq apReq = new APReq(pa.getValue());</span><a href="#l15.24"></a>
+<span id="l15.25" class="minusline">-                        EncryptedData ed = apReq.authenticator;</span><a href="#l15.25"></a>
+<span id="l15.26">                         tkt = apReq.ticket;</span><a href="#l15.26"></a>
+<span id="l15.27">                         int te = tkt.encPart.getEType();</span><a href="#l15.27"></a>
+<span id="l15.28">                         EncryptionKey kkey = keyForUser(tkt.sname, te, true);</span><a href="#l15.28"></a>
+<span id="l15.29" class="atline">@@ -1282,7 +1281,7 @@</span><a href="#l15.29"></a>
+<span id="l15.30">                 outPAs.add(new PAData(Krb5.PA_ETYPE_INFO, eid.toByteArray()));</span><a href="#l15.30"></a>
+<span id="l15.31">             }</span><a href="#l15.31"></a>
+<span id="l15.32"> </span><a href="#l15.32"></a>
+<span id="l15.33" class="minusline">-            PAData[] inPAs = KDCReqDotPAData(asReq);</span><a href="#l15.33"></a>
+<span id="l15.34" class="plusline">+            PAData[] inPAs = asReq.pAData;</span><a href="#l15.34"></a>
+<span id="l15.35">             List&lt;PAData&gt; enc_outPAs = new ArrayList&lt;&gt;();</span><a href="#l15.35"></a>
+<span id="l15.36"> </span><a href="#l15.36"></a>
+<span id="l15.37">             byte[] paEncTimestamp = null;</span><a href="#l15.37"></a>
+<span id="l15.38" class="atline">@@ -2100,7 +2099,6 @@</span><a href="#l15.38"></a>
+<span id="l15.39">     }</span><a href="#l15.39"></a>
+<span id="l15.40"> </span><a href="#l15.40"></a>
+<span id="l15.41">     // Calling private methods thru reflections</span><a href="#l15.41"></a>
+<span id="l15.42" class="minusline">-    private static final Field getPADataField;</span><a href="#l15.42"></a>
+<span id="l15.43">     private static final Field getEType;</span><a href="#l15.43"></a>
+<span id="l15.44">     private static final Constructor&lt;EncryptedData&gt; ctorEncryptedData;</span><a href="#l15.44"></a>
+<span id="l15.45">     private static final Method stringToKey;</span><a href="#l15.45"></a>
+<span id="l15.46" class="atline">@@ -2110,8 +2108,6 @@</span><a href="#l15.46"></a>
+<span id="l15.47">         try {</span><a href="#l15.47"></a>
+<span id="l15.48">             ctorEncryptedData = EncryptedData.class.getDeclaredConstructor(DerValue.class);</span><a href="#l15.48"></a>
+<span id="l15.49">             ctorEncryptedData.setAccessible(true);</span><a href="#l15.49"></a>
+<span id="l15.50" class="minusline">-            getPADataField = KDCReq.class.getDeclaredField(&quot;pAData&quot;);</span><a href="#l15.50"></a>
+<span id="l15.51" class="minusline">-            getPADataField.setAccessible(true);</span><a href="#l15.51"></a>
+<span id="l15.52">             getEType = KDCReqBody.class.getDeclaredField(&quot;eType&quot;);</span><a href="#l15.52"></a>
+<span id="l15.53">             getEType.setAccessible(true);</span><a href="#l15.53"></a>
+<span id="l15.54">             stringToKey = EncryptionKey.class.getDeclaredMethod(</span><a href="#l15.54"></a>
+<span id="l15.55" class="atline">@@ -2133,13 +2129,6 @@</span><a href="#l15.55"></a>
+<span id="l15.56">             throw new AssertionError(e);</span><a href="#l15.56"></a>
+<span id="l15.57">         }</span><a href="#l15.57"></a>
+<span id="l15.58">     }</span><a href="#l15.58"></a>
+<span id="l15.59" class="minusline">-    private static PAData[] KDCReqDotPAData(KDCReq req) {</span><a href="#l15.59"></a>
+<span id="l15.60" class="minusline">-        try {</span><a href="#l15.60"></a>
+<span id="l15.61" class="minusline">-            return (PAData[])getPADataField.get(req);</span><a href="#l15.61"></a>
+<span id="l15.62" class="minusline">-        } catch (Exception e) {</span><a href="#l15.62"></a>
+<span id="l15.63" class="minusline">-            throw new AssertionError(e);</span><a href="#l15.63"></a>
+<span id="l15.64" class="minusline">-        }</span><a href="#l15.64"></a>
+<span id="l15.65" class="minusline">-    }</span><a href="#l15.65"></a>
+<span id="l15.66">     private static int[] KDCReqBodyDotEType(KDCReqBody body) {</span><a href="#l15.66"></a>
+<span id="l15.67">         try {</span><a href="#l15.67"></a>
+<span id="l15.68">             return (int[]) getEType.get(body);</span><a href="#l15.68"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

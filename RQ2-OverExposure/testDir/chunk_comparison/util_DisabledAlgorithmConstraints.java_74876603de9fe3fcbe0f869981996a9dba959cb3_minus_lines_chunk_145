@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0          *
+1         * @param cp CertConstraintParameter containing certificate info
+2          * @throws CertPathValidatorException if constraint disallows.
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0         *
+1         * @param cp CertConstraintParameter containing certificate info
+2         * @throws CertPathValidatorException if constraint disallows.
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0          *
+1         * @param cp ConstraintsParameter containing certificate info
+2          * @throws CertPathValidatorException if constraint disallows.
+--------------------------------------------

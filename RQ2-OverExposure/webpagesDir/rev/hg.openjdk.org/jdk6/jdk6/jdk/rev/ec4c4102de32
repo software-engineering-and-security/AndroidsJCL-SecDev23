@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: ec4c4102de32</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/ec4c4102de32">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/ec4c4102de32">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/ec4c4102de32">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/ec4c4102de32">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/ec4c4102de32.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/ec4c4102de32.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/ec4c4102de32.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 225:ec4c4102de32   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6822057: X11 and Win32GraphicsDevice don't clone arrays returned from getConfigurations()
+Reviewed-by: prr</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#98;&#97;&#101;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 28 Aug 2009 18:47:07 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/e232ff106724">e232ff106724</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/5a2b1a213d6e">5a2b1a213d6e</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/ec4c4102de32/src/solaris/classes/sun/awt/X11GraphicsDevice.java">src/solaris/classes/sun/awt/X11GraphicsDevice.java</a> <a href="/jdk6/jdk6/jdk/file/ec4c4102de32/src/windows/classes/sun/awt/Win32GraphicsDevice.java">src/windows/classes/sun/awt/Win32GraphicsDevice.java</a> <a href="/jdk6/jdk6/jdk/file/ec4c4102de32/test/java/awt/GraphicsDevice/CloneConfigsTest.java">test/java/awt/GraphicsDevice/CloneConfigsTest.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     3 files changed, 121 insertions(+), 3 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/solaris/classes/sun/awt/X11GraphicsDevice.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.847457627119%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.847457627119%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/windows/classes/sun/awt/Win32GraphicsDevice.java</a></td>
+    <td class="diffstat-total" align="right">4</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.69491525424%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.69491525424%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">test/java/awt/GraphicsDevice/CloneConfigsTest.java</a></td>
+    <td class="diffstat-total" align="right">118</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11GraphicsDevice.java	Fri Aug 28 18:29:49 2009 +0400</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11GraphicsDevice.java	Fri Aug 28 18:47:07 2009 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -134,7 +134,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">                 makeConfigurations();</span><a href="#l1.4"></a>
+<span id="l1.5">             }</span><a href="#l1.5"></a>
+<span id="l1.6">         }</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-        return configs;</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+        return configs.clone();</span><a href="#l1.8"></a>
+<span id="l1.9">     }</span><a href="#l1.9"></a>
+<span id="l1.10"> </span><a href="#l1.10"></a>
+<span id="l1.11">     private void makeConfigurations() {</span><a href="#l1.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/windows/classes/sun/awt/Win32GraphicsDevice.java	Fri Aug 28 18:29:49 2009 +0400</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/windows/classes/sun/awt/Win32GraphicsDevice.java	Fri Aug 28 18:47:07 2009 +0400</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -170,7 +170,7 @@</span><a href="#l2.3"></a>
+<span id="l2.4">                 if (defaultConfig != null) {</span><a href="#l2.4"></a>
+<span id="l2.5">                     configs = new GraphicsConfiguration[1];</span><a href="#l2.5"></a>
+<span id="l2.6">                     configs[0] = defaultConfig;</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-                    return configs;</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+                    return configs.clone();</span><a href="#l2.8"></a>
+<span id="l2.9">                 }</span><a href="#l2.9"></a>
+<span id="l2.10">             }</span><a href="#l2.10"></a>
+<span id="l2.11"> </span><a href="#l2.11"></a>
+<span id="l2.12" class="atline">@@ -202,7 +202,7 @@</span><a href="#l2.12"></a>
+<span id="l2.13">             configs = new GraphicsConfiguration[v.size()];</span><a href="#l2.13"></a>
+<span id="l2.14">             v.copyInto(configs);</span><a href="#l2.14"></a>
+<span id="l2.15">         }</span><a href="#l2.15"></a>
+<span id="l2.16" class="minusline">-        return configs;</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+        return configs.clone();</span><a href="#l2.17"></a>
+<span id="l2.18">     }</span><a href="#l2.18"></a>
+<span id="l2.19"> </span><a href="#l2.19"></a>
+<span id="l2.20">     /**</span><a href="#l2.20"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/test/java/awt/GraphicsDevice/CloneConfigsTest.java	Fri Aug 28 18:47:07 2009 +0400</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -0,0 +1,118 @@</span><a href="#l3.3"></a>
+<span id="l3.4" class="plusline">+/*</span><a href="#l3.4"></a>
+<span id="l3.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l3.5"></a>
+<span id="l3.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l3.6"></a>
+<span id="l3.7" class="plusline">+ *</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l3.8"></a>
+<span id="l3.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l3.9"></a>
+<span id="l3.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l3.10"></a>
+<span id="l3.11" class="plusline">+ *</span><a href="#l3.11"></a>
+<span id="l3.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l3.12"></a>
+<span id="l3.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l3.13"></a>
+<span id="l3.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l3.14"></a>
+<span id="l3.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l3.15"></a>
+<span id="l3.16" class="plusline">+ * accompanied this code).</span><a href="#l3.16"></a>
+<span id="l3.17" class="plusline">+ *</span><a href="#l3.17"></a>
+<span id="l3.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l3.18"></a>
+<span id="l3.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l3.19"></a>
+<span id="l3.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l3.20"></a>
+<span id="l3.21" class="plusline">+ *</span><a href="#l3.21"></a>
+<span id="l3.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l3.22"></a>
+<span id="l3.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l3.23"></a>
+<span id="l3.24" class="plusline">+ * have any questions.</span><a href="#l3.24"></a>
+<span id="l3.25" class="plusline">+ */</span><a href="#l3.25"></a>
+<span id="l3.26" class="plusline">+</span><a href="#l3.26"></a>
+<span id="l3.27" class="plusline">+/*</span><a href="#l3.27"></a>
+<span id="l3.28" class="plusline">+ * @test</span><a href="#l3.28"></a>
+<span id="l3.29" class="plusline">+ * @bug     6822057</span><a href="#l3.29"></a>
+<span id="l3.30" class="plusline">+ *</span><a href="#l3.30"></a>
+<span id="l3.31" class="plusline">+ * @summary Test verifies that list of supported graphics configurations</span><a href="#l3.31"></a>
+<span id="l3.32" class="plusline">+ *          can not be changed via modification of elements of an array</span><a href="#l3.32"></a>
+<span id="l3.33" class="plusline">+ *          returned by getConfiguration() method.</span><a href="#l3.33"></a>
+<span id="l3.34" class="plusline">+ *</span><a href="#l3.34"></a>
+<span id="l3.35" class="plusline">+ * @run     main CloneConfigsTest</span><a href="#l3.35"></a>
+<span id="l3.36" class="plusline">+ * @run     main/othervm -Dsun.java2d.opengl=True CloneConfigsTest</span><a href="#l3.36"></a>
+<span id="l3.37" class="plusline">+ * @run     main/othervm -Dsun.java2d.d3d=true CloneConfigsTest</span><a href="#l3.37"></a>
+<span id="l3.38" class="plusline">+ * @run     main/othervm -Dsun.java2d.noddraw=true CloneConfigsTest</span><a href="#l3.38"></a>
+<span id="l3.39" class="plusline">+ */</span><a href="#l3.39"></a>
+<span id="l3.40" class="plusline">+</span><a href="#l3.40"></a>
+<span id="l3.41" class="plusline">+import java.awt.GraphicsConfiguration;</span><a href="#l3.41"></a>
+<span id="l3.42" class="plusline">+import java.awt.GraphicsDevice;</span><a href="#l3.42"></a>
+<span id="l3.43" class="plusline">+import java.awt.GraphicsEnvironment;</span><a href="#l3.43"></a>
+<span id="l3.44" class="plusline">+import java.awt.Rectangle;</span><a href="#l3.44"></a>
+<span id="l3.45" class="plusline">+import java.awt.geom.AffineTransform;</span><a href="#l3.45"></a>
+<span id="l3.46" class="plusline">+import java.awt.image.BufferedImage;</span><a href="#l3.46"></a>
+<span id="l3.47" class="plusline">+import java.awt.image.ColorModel;</span><a href="#l3.47"></a>
+<span id="l3.48" class="plusline">+</span><a href="#l3.48"></a>
+<span id="l3.49" class="plusline">+public class CloneConfigsTest {</span><a href="#l3.49"></a>
+<span id="l3.50" class="plusline">+</span><a href="#l3.50"></a>
+<span id="l3.51" class="plusline">+    public static void main(String[] args) {</span><a href="#l3.51"></a>
+<span id="l3.52" class="plusline">+        GraphicsEnvironment env =</span><a href="#l3.52"></a>
+<span id="l3.53" class="plusline">+                GraphicsEnvironment.getLocalGraphicsEnvironment();</span><a href="#l3.53"></a>
+<span id="l3.54" class="plusline">+</span><a href="#l3.54"></a>
+<span id="l3.55" class="plusline">+        GraphicsDevice[] devices = env.getScreenDevices();</span><a href="#l3.55"></a>
+<span id="l3.56" class="plusline">+</span><a href="#l3.56"></a>
+<span id="l3.57" class="plusline">+        GraphicsConfiguration c = new TestConfig();</span><a href="#l3.57"></a>
+<span id="l3.58" class="plusline">+</span><a href="#l3.58"></a>
+<span id="l3.59" class="plusline">+        for (GraphicsDevice gd : devices) {</span><a href="#l3.59"></a>
+<span id="l3.60" class="plusline">+            System.out.println(&quot;Device: &quot; + gd);</span><a href="#l3.60"></a>
+<span id="l3.61" class="plusline">+</span><a href="#l3.61"></a>
+<span id="l3.62" class="plusline">+            GraphicsConfiguration[] configs = gd.getConfigurations();</span><a href="#l3.62"></a>
+<span id="l3.63" class="plusline">+</span><a href="#l3.63"></a>
+<span id="l3.64" class="plusline">+            for (int i = 0; i &lt; configs.length; i++) {</span><a href="#l3.64"></a>
+<span id="l3.65" class="plusline">+                GraphicsConfiguration gc  = configs[i];</span><a href="#l3.65"></a>
+<span id="l3.66" class="plusline">+                System.out.println(&quot;\tConfig: &quot; + gc);</span><a href="#l3.66"></a>
+<span id="l3.67" class="plusline">+</span><a href="#l3.67"></a>
+<span id="l3.68" class="plusline">+                configs[i] = c;</span><a href="#l3.68"></a>
+<span id="l3.69" class="plusline">+            }</span><a href="#l3.69"></a>
+<span id="l3.70" class="plusline">+</span><a href="#l3.70"></a>
+<span id="l3.71" class="plusline">+            // verify whether array of configs was modified </span><a href="#l3.71"></a>
+<span id="l3.72" class="plusline">+            configs = gd.getConfigurations();</span><a href="#l3.72"></a>
+<span id="l3.73" class="plusline">+            for (GraphicsConfiguration gc : configs) {</span><a href="#l3.73"></a>
+<span id="l3.74" class="plusline">+                if (gc == c) {</span><a href="#l3.74"></a>
+<span id="l3.75" class="plusline">+                    throw new RuntimeException(&quot;Test failed.&quot;);</span><a href="#l3.75"></a>
+<span id="l3.76" class="plusline">+                }</span><a href="#l3.76"></a>
+<span id="l3.77" class="plusline">+            }</span><a href="#l3.77"></a>
+<span id="l3.78" class="plusline">+            System.out.println(&quot;Test passed.&quot;);</span><a href="#l3.78"></a>
+<span id="l3.79" class="plusline">+        }</span><a href="#l3.79"></a>
+<span id="l3.80" class="plusline">+    }</span><a href="#l3.80"></a>
+<span id="l3.81" class="plusline">+</span><a href="#l3.81"></a>
+<span id="l3.82" class="plusline">+    private static class TestConfig extends GraphicsConfiguration {</span><a href="#l3.82"></a>
+<span id="l3.83" class="plusline">+</span><a href="#l3.83"></a>
+<span id="l3.84" class="plusline">+        @Override</span><a href="#l3.84"></a>
+<span id="l3.85" class="plusline">+        public GraphicsDevice getDevice() {</span><a href="#l3.85"></a>
+<span id="l3.86" class="plusline">+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);</span><a href="#l3.86"></a>
+<span id="l3.87" class="plusline">+        }</span><a href="#l3.87"></a>
+<span id="l3.88" class="plusline">+</span><a href="#l3.88"></a>
+<span id="l3.89" class="plusline">+        @Override</span><a href="#l3.89"></a>
+<span id="l3.90" class="plusline">+        public BufferedImage createCompatibleImage(int width, int height) {</span><a href="#l3.90"></a>
+<span id="l3.91" class="plusline">+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);</span><a href="#l3.91"></a>
+<span id="l3.92" class="plusline">+        }</span><a href="#l3.92"></a>
+<span id="l3.93" class="plusline">+</span><a href="#l3.93"></a>
+<span id="l3.94" class="plusline">+        @Override</span><a href="#l3.94"></a>
+<span id="l3.95" class="plusline">+        public ColorModel getColorModel() {</span><a href="#l3.95"></a>
+<span id="l3.96" class="plusline">+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);</span><a href="#l3.96"></a>
+<span id="l3.97" class="plusline">+        }</span><a href="#l3.97"></a>
+<span id="l3.98" class="plusline">+</span><a href="#l3.98"></a>
+<span id="l3.99" class="plusline">+        @Override</span><a href="#l3.99"></a>
+<span id="l3.100" class="plusline">+        public ColorModel getColorModel(int transparency) {</span><a href="#l3.100"></a>
+<span id="l3.101" class="plusline">+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);</span><a href="#l3.101"></a>
+<span id="l3.102" class="plusline">+        }</span><a href="#l3.102"></a>
+<span id="l3.103" class="plusline">+</span><a href="#l3.103"></a>
+<span id="l3.104" class="plusline">+        @Override</span><a href="#l3.104"></a>
+<span id="l3.105" class="plusline">+        public AffineTransform getDefaultTransform() {</span><a href="#l3.105"></a>
+<span id="l3.106" class="plusline">+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);</span><a href="#l3.106"></a>
+<span id="l3.107" class="plusline">+        }</span><a href="#l3.107"></a>
+<span id="l3.108" class="plusline">+</span><a href="#l3.108"></a>
+<span id="l3.109" class="plusline">+        @Override</span><a href="#l3.109"></a>
+<span id="l3.110" class="plusline">+        public AffineTransform getNormalizingTransform() {</span><a href="#l3.110"></a>
+<span id="l3.111" class="plusline">+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);</span><a href="#l3.111"></a>
+<span id="l3.112" class="plusline">+        }</span><a href="#l3.112"></a>
+<span id="l3.113" class="plusline">+</span><a href="#l3.113"></a>
+<span id="l3.114" class="plusline">+        @Override</span><a href="#l3.114"></a>
+<span id="l3.115" class="plusline">+        public Rectangle getBounds() {</span><a href="#l3.115"></a>
+<span id="l3.116" class="plusline">+            throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);</span><a href="#l3.116"></a>
+<span id="l3.117" class="plusline">+        }</span><a href="#l3.117"></a>
+<span id="l3.118" class="plusline">+</span><a href="#l3.118"></a>
+<span id="l3.119" class="plusline">+    }</span><a href="#l3.119"></a>
+<span id="l3.120" class="plusline">+</span><a href="#l3.120"></a>
+<span id="l3.121" class="plusline">+}</span><a href="#l3.121"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: 22fe1e492c16</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/22fe1e492c16">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/22fe1e492c16">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/22fe1e492c16">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/22fe1e492c16">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/22fe1e492c16.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/22fe1e492c16.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/22fe1e492c16.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48810:22fe1e492c16   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8270416: Enhance construction of Identity maps
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#118;&#111;&#105;&#116;&#121;&#108;&#111;&#118;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 05 Jan 2022 00:54:23 +0300</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/12f6c3f4f246">12f6c3f4f246</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/fb79a897664c">fb79a897664c</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/22fe1e492c16/jdk/src/share/classes/java/util/Hashtable.java">jdk/src/share/classes/java/util/Hashtable.java</a> <a href="/jdk8u/monojdk8u/file/22fe1e492c16/jdk/src/share/classes/java/util/IdentityHashMap.java">jdk/src/share/classes/java/util/IdentityHashMap.java</a> <a href="/jdk8u/monojdk8u/file/22fe1e492c16/jdk/test/java/util/Hashtable/DeserializedLength.java">jdk/test/java/util/Hashtable/DeserializedLength.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     3 files changed, 46 insertions(+), 21 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jdk/src/share/classes/java/util/Hashtable.java</a></td>
+    <td class="diffstat-total" align="right">41</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:75.6097560976%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:24.3902439024%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">jdk/src/share/classes/java/util/IdentityHashMap.java</a></td>
+    <td class="diffstat-total" align="right">22</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:31.7073170732%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:21.9512195122%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">jdk/test/java/util/Hashtable/DeserializedLength.java</a></td>
+    <td class="diffstat-total" align="right">4</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:4.87804878049%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:4.87804878049%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jdk/src/share/classes/java/util/Hashtable.java	Tue Jan 18 22:12:32 2022 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jdk/src/share/classes/java/util/Hashtable.java	Wed Jan 05 00:54:23 2022 +0300</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 1994, 2017, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 1994, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -1163,15 +1163,17 @@</span><a href="#l1.10"></a>
+<span id="l1.11">     /**</span><a href="#l1.11"></a>
+<span id="l1.12">      * Reconstitute the Hashtable from a stream (i.e., deserialize it).</span><a href="#l1.12"></a>
+<span id="l1.13">      */</span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-    private void readObject(java.io.ObjectInputStream s)</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+    private void readObject(ObjectInputStream s)</span><a href="#l1.15"></a>
+<span id="l1.16">          throws IOException, ClassNotFoundException</span><a href="#l1.16"></a>
+<span id="l1.17">     {</span><a href="#l1.17"></a>
+<span id="l1.18" class="minusline">-        // Read in the threshold and loadFactor</span><a href="#l1.18"></a>
+<span id="l1.19" class="minusline">-        s.defaultReadObject();</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+        ObjectInputStream.GetField fields = s.readFields();</span><a href="#l1.21"></a>
+<span id="l1.22"> </span><a href="#l1.22"></a>
+<span id="l1.23" class="minusline">-        // Validate loadFactor (ignore threshold - it will be re-computed)</span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-        if (loadFactor &lt;= 0 || Float.isNaN(loadFactor))</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-            throw new StreamCorruptedException(&quot;Illegal Load: &quot; + loadFactor);</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+        // Read and validate loadFactor (ignore threshold - it will be re-computed)</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+        float lf = fields.get(&quot;loadFactor&quot;, 0.75f);</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+        if (lf &lt;= 0 || Float.isNaN(lf))</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+            throw new StreamCorruptedException(&quot;Illegal load factor: &quot; + lf);</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+        lf = Math.min(Math.max(0.25f, lf), 4.0f);</span><a href="#l1.30"></a>
+<span id="l1.31"> </span><a href="#l1.31"></a>
+<span id="l1.32">         // Read the original length of the array and number of elements</span><a href="#l1.32"></a>
+<span id="l1.33">         int origlength = s.readInt();</span><a href="#l1.33"></a>
+<span id="l1.34" class="atline">@@ -1183,13 +1185,13 @@</span><a href="#l1.34"></a>
+<span id="l1.35"> </span><a href="#l1.35"></a>
+<span id="l1.36">         // Clamp original length to be more than elements / loadFactor</span><a href="#l1.36"></a>
+<span id="l1.37">         // (this is the invariant enforced with auto-growth)</span><a href="#l1.37"></a>
+<span id="l1.38" class="minusline">-        origlength = Math.max(origlength, (int)(elements / loadFactor) + 1);</span><a href="#l1.38"></a>
+<span id="l1.39" class="plusline">+        origlength = Math.max(origlength, (int)(elements / lf) + 1);</span><a href="#l1.39"></a>
+<span id="l1.40"> </span><a href="#l1.40"></a>
+<span id="l1.41">         // Compute new length with a bit of room 5% + 3 to grow but</span><a href="#l1.41"></a>
+<span id="l1.42">         // no larger than the clamped original length.  Make the length</span><a href="#l1.42"></a>
+<span id="l1.43">         // odd if it's large enough, this helps distribute the entries.</span><a href="#l1.43"></a>
+<span id="l1.44">         // Guard against the length ending up zero, that's not valid.</span><a href="#l1.44"></a>
+<span id="l1.45" class="minusline">-        int length = (int)((elements + elements / 20) / loadFactor) + 3;</span><a href="#l1.45"></a>
+<span id="l1.46" class="plusline">+        int length = (int)((elements + elements / 20) / lf) + 3;</span><a href="#l1.46"></a>
+<span id="l1.47">         if (length &gt; elements &amp;&amp; (length &amp; 1) == 0)</span><a href="#l1.47"></a>
+<span id="l1.48">             length--;</span><a href="#l1.48"></a>
+<span id="l1.49">         length = Math.min(length, origlength);</span><a href="#l1.49"></a>
+<span id="l1.50" class="atline">@@ -1201,8 +1203,9 @@</span><a href="#l1.50"></a>
+<span id="l1.51">         // Check Map.Entry[].class since it's the nearest public type to</span><a href="#l1.51"></a>
+<span id="l1.52">         // what we're actually creating.</span><a href="#l1.52"></a>
+<span id="l1.53">         SharedSecrets.getJavaOISAccess().checkArray(s, Map.Entry[].class, length);</span><a href="#l1.53"></a>
+<span id="l1.54" class="plusline">+        Hashtable.UnsafeHolder.putLoadFactor(this, lf);</span><a href="#l1.54"></a>
+<span id="l1.55">         table = new Entry&lt;?,?&gt;[length];</span><a href="#l1.55"></a>
+<span id="l1.56" class="minusline">-        threshold = (int)Math.min(length * loadFactor, MAX_ARRAY_SIZE + 1);</span><a href="#l1.56"></a>
+<span id="l1.57" class="plusline">+        threshold = (int)Math.min(length * lf, MAX_ARRAY_SIZE + 1);</span><a href="#l1.57"></a>
+<span id="l1.58">         count = 0;</span><a href="#l1.58"></a>
+<span id="l1.59"> </span><a href="#l1.59"></a>
+<span id="l1.60">         // Read the number of elements and then all the key/value objects</span><a href="#l1.60"></a>
+<span id="l1.61" class="atline">@@ -1216,6 +1219,24 @@</span><a href="#l1.61"></a>
+<span id="l1.62">         }</span><a href="#l1.62"></a>
+<span id="l1.63">     }</span><a href="#l1.63"></a>
+<span id="l1.64"> </span><a href="#l1.64"></a>
+<span id="l1.65" class="plusline">+    // Support for resetting final field during deserializing</span><a href="#l1.65"></a>
+<span id="l1.66" class="plusline">+    private static final class UnsafeHolder {</span><a href="#l1.66"></a>
+<span id="l1.67" class="plusline">+        private UnsafeHolder() { throw new InternalError(); }</span><a href="#l1.67"></a>
+<span id="l1.68" class="plusline">+        private static final sun.misc.Unsafe unsafe</span><a href="#l1.68"></a>
+<span id="l1.69" class="plusline">+                = sun.misc.Unsafe.getUnsafe();</span><a href="#l1.69"></a>
+<span id="l1.70" class="plusline">+        private static final long LF_OFFSET;</span><a href="#l1.70"></a>
+<span id="l1.71" class="plusline">+        static {</span><a href="#l1.71"></a>
+<span id="l1.72" class="plusline">+            try {</span><a href="#l1.72"></a>
+<span id="l1.73" class="plusline">+                LF_OFFSET = unsafe.objectFieldOffset(Hashtable.class.getDeclaredField(&quot;loadFactor&quot;));</span><a href="#l1.73"></a>
+<span id="l1.74" class="plusline">+            } catch (NoSuchFieldException nfe) {</span><a href="#l1.74"></a>
+<span id="l1.75" class="plusline">+                throw new InternalError();</span><a href="#l1.75"></a>
+<span id="l1.76" class="plusline">+            }</span><a href="#l1.76"></a>
+<span id="l1.77" class="plusline">+        }</span><a href="#l1.77"></a>
+<span id="l1.78" class="plusline">+        static void putLoadFactor(Hashtable&lt;?, ?&gt; table, float lf) {</span><a href="#l1.78"></a>
+<span id="l1.79" class="plusline">+            unsafe.putFloat(table, LF_OFFSET, lf);</span><a href="#l1.79"></a>
+<span id="l1.80" class="plusline">+        }</span><a href="#l1.80"></a>
+<span id="l1.81" class="plusline">+    }</span><a href="#l1.81"></a>
+<span id="l1.82" class="plusline">+</span><a href="#l1.82"></a>
+<span id="l1.83">     /**</span><a href="#l1.83"></a>
+<span id="l1.84">      * The put method used by readObject. This is provided because put</span><a href="#l1.84"></a>
+<span id="l1.85">      * is overridable and should not be called in readObject since the</span><a href="#l1.85"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/jdk/src/share/classes/java/util/IdentityHashMap.java	Tue Jan 18 22:12:32 2022 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/jdk/src/share/classes/java/util/IdentityHashMap.java	Wed Jan 05 00:54:23 2022 +0300</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright (c) 2000, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -25,6 +25,8 @@</span><a href="#l2.10"></a>
+<span id="l2.11"> </span><a href="#l2.11"></a>
+<span id="l2.12"> package java.util;</span><a href="#l2.12"></a>
+<span id="l2.13"> </span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+import java.io.ObjectInputStream;</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+import java.io.ObjectOutputStream;</span><a href="#l2.15"></a>
+<span id="l2.16"> import java.lang.reflect.Array;</span><a href="#l2.16"></a>
+<span id="l2.17"> import java.util.function.BiConsumer;</span><a href="#l2.17"></a>
+<span id="l2.18"> import java.util.function.BiFunction;</span><a href="#l2.18"></a>
+<span id="l2.19" class="atline">@@ -1272,12 +1274,12 @@</span><a href="#l2.19"></a>
+<span id="l2.20">      *          IdentityHashMap.  The key-value mappings are emitted in no</span><a href="#l2.20"></a>
+<span id="l2.21">      *          particular order.</span><a href="#l2.21"></a>
+<span id="l2.22">      */</span><a href="#l2.22"></a>
+<span id="l2.23" class="minusline">-    private void writeObject(java.io.ObjectOutputStream s)</span><a href="#l2.23"></a>
+<span id="l2.24" class="plusline">+    private void writeObject(ObjectOutputStream s)</span><a href="#l2.24"></a>
+<span id="l2.25">         throws java.io.IOException  {</span><a href="#l2.25"></a>
+<span id="l2.26" class="minusline">-        // Write out and any hidden stuff</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+        // Write out size (number of mappings) and any hidden stuff</span><a href="#l2.27"></a>
+<span id="l2.28">         s.defaultWriteObject();</span><a href="#l2.28"></a>
+<span id="l2.29"> </span><a href="#l2.29"></a>
+<span id="l2.30" class="minusline">-        // Write out size (number of Mappings)</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+        // Write out size again (maintained for backward compatibility)</span><a href="#l2.31"></a>
+<span id="l2.32">         s.writeInt(size);</span><a href="#l2.32"></a>
+<span id="l2.33"> </span><a href="#l2.33"></a>
+<span id="l2.34">         // Write out keys and values (alternating)</span><a href="#l2.34"></a>
+<span id="l2.35" class="atline">@@ -1295,18 +1297,20 @@</span><a href="#l2.35"></a>
+<span id="l2.36">      * Reconstitutes the &lt;tt&gt;IdentityHashMap&lt;/tt&gt; instance from a stream (i.e.,</span><a href="#l2.36"></a>
+<span id="l2.37">      * deserializes it).</span><a href="#l2.37"></a>
+<span id="l2.38">      */</span><a href="#l2.38"></a>
+<span id="l2.39" class="minusline">-    private void readObject(java.io.ObjectInputStream s)</span><a href="#l2.39"></a>
+<span id="l2.40" class="plusline">+    private void readObject(ObjectInputStream s)</span><a href="#l2.40"></a>
+<span id="l2.41">         throws java.io.IOException, ClassNotFoundException  {</span><a href="#l2.41"></a>
+<span id="l2.42" class="minusline">-        // Read in any hidden stuff</span><a href="#l2.42"></a>
+<span id="l2.43" class="minusline">-        s.defaultReadObject();</span><a href="#l2.43"></a>
+<span id="l2.44" class="plusline">+        // Size (number of mappings) is written to the stream twice</span><a href="#l2.44"></a>
+<span id="l2.45" class="plusline">+        // Read first size value and ignore it</span><a href="#l2.45"></a>
+<span id="l2.46" class="plusline">+        s.readFields();</span><a href="#l2.46"></a>
+<span id="l2.47"> </span><a href="#l2.47"></a>
+<span id="l2.48" class="minusline">-        // Read in size (number of Mappings)</span><a href="#l2.48"></a>
+<span id="l2.49" class="plusline">+        // Read second size value, validate and assign to size field</span><a href="#l2.49"></a>
+<span id="l2.50">         int size = s.readInt();</span><a href="#l2.50"></a>
+<span id="l2.51">         if (size &lt; 0)</span><a href="#l2.51"></a>
+<span id="l2.52">             throw new java.io.StreamCorruptedException</span><a href="#l2.52"></a>
+<span id="l2.53">                 (&quot;Illegal mappings count: &quot; + size);</span><a href="#l2.53"></a>
+<span id="l2.54">         int cap = capacity(size);</span><a href="#l2.54"></a>
+<span id="l2.55" class="minusline">-        SharedSecrets.getJavaOISAccess().checkArray(s, Object[].class, cap);</span><a href="#l2.55"></a>
+<span id="l2.56" class="plusline">+        SharedSecrets.getJavaOISAccess().checkArray(s, Object[].class, cap*2);</span><a href="#l2.56"></a>
+<span id="l2.57" class="plusline">+        this.size = size;</span><a href="#l2.57"></a>
+<span id="l2.58">         init(cap);</span><a href="#l2.58"></a>
+<span id="l2.59"> </span><a href="#l2.59"></a>
+<span id="l2.60">         // Read the keys and values, and put the mappings in the table</span><a href="#l2.60"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/jdk/test/java/util/Hashtable/DeserializedLength.java	Tue Jan 18 22:12:32 2022 +0000</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/jdk/test/java/util/Hashtable/DeserializedLength.java	Wed Jan 05 00:54:23 2022 +0300</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> /*</span><a href="#l3.4"></a>
+<span id="l3.5" class="minusline">- * Copyright (c) 2014, Oracle and/or its affiliates. All rights reserved.</span><a href="#l3.5"></a>
+<span id="l3.6" class="plusline">+ * Copyright (c) 2014, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l3.6"></a>
+<span id="l3.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l3.7"></a>
+<span id="l3.8">  *</span><a href="#l3.8"></a>
+<span id="l3.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l3.9"></a>
+<span id="l3.10" class="atline">@@ -99,7 +99,7 @@</span><a href="#l3.10"></a>
+<span id="l3.11">         );</span><a href="#l3.11"></a>
+<span id="l3.12"> </span><a href="#l3.12"></a>
+<span id="l3.13">         for (int elements : new int[]{10, 50, 500, 5000}) {</span><a href="#l3.13"></a>
+<span id="l3.14" class="minusline">-            for (float loadFactor : new float[]{0.15f, 0.5f, 0.75f, 1.0f, 2.5f}) {</span><a href="#l3.14"></a>
+<span id="l3.15" class="plusline">+            for (float loadFactor : new float[]{0.25f, 0.5f, 0.75f, 1.0f, 2.5f}) {</span><a href="#l3.15"></a>
+<span id="l3.16">                 ok &amp;= testDeserializedLength(elements, loadFactor);</span><a href="#l3.16"></a>
+<span id="l3.17">             }</span><a href="#l3.17"></a>
+<span id="l3.18">         }</span><a href="#l3.18"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

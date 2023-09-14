@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private static Set<String> certs = Collections.emptySet();
+1    private static Set<X500Principal> certIssuers = Collections.emptySet();
+2 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    private static Set<String> certs = Collections.emptySet();
+1    private static Set<X500Principal> certIssuers = Collections.emptySet();
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+--------------------------------------------

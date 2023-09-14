@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         }
+1
+2        String extendedMsg(ConstraintsParameters cp) {
+3            return (cp.getCertificate() == null ? "." :
+4                    " used with certificate: " +
+5                            cp.getCertificate().getSubjectX500Principal() +
+6                    (cp.getVariant() != Validator.VAR_GENERIC ?
+7                            ".  Usage was " + cp.getVariant() : "."));
+8        }
+9     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    }
+1
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

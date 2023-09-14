@@ -1,0 +1,22 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         if (size < 0) {
+1            throw new InvalidObjectException("Illegal size: " + size);
+2         }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        if (size < 0) {
+1            throw new InvalidObjectException("Illegal size: " + size);
+2        }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0         if (size < 0) {
+1            throw new InvalidObjectException("Illegal size: " +
+2                                             size);
+3         }
+--------------------------------------------

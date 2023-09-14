@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     {
+1        new java.io.ObjectStreamField("value", char[].class),
+2        new java.io.ObjectStreamField("count", Integer.TYPE),
+3        new java.io.ObjectStreamField("shared", Boolean.TYPE),
+4     };
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    {
+1        new java.io.ObjectStreamField("value", char[].class),
+2        new java.io.ObjectStreamField("count", Integer.TYPE),
+3        new java.io.ObjectStreamField("shared", Boolean.TYPE),
+4    };
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     {
+1        new ObjectStreamField("value", char[].class),
+2        new ObjectStreamField("count", Integer.TYPE),
+3        new ObjectStreamField("shared", Boolean.TYPE),
+4     };
+--------------------------------------------

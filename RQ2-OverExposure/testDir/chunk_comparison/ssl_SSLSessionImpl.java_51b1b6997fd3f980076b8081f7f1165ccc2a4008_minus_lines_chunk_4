@@ -1,0 +1,32 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     synchronized public void invalidate() {
+1        //
+2        // Can't invalidate the NULL session -- this would be
+3        // attempted when we get a handshaking error on a brand
+4        // new connection, with no "real" session yet.
+5        //
+6        if (this == nullSession) {
+7            return;
+8        }
+9         invalidated = true;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // new connection, with no "real" session yet.
+1        //
+2        if (this == nullSession) {
+3            return;
+4        }
+5        invalidated = true;
+6        if (debug != null && Debug.isOn("session")) {
+7            System.out.println("%% Invalidated:  " + this);
+8        }
+9        if (context != null) {
+---------------------------------------------
+Differences:	['6', '7', '9']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

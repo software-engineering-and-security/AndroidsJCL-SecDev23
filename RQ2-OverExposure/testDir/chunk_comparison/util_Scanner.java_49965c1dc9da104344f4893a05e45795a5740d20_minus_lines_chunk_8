@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         if (negativeSuffix.length() > 0)
+1            negativeSuffix = "\\Q" + negativeSuffix + "\\E";
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        if (negativeSuffix.length() > 0)
+1            negativeSuffix = "\\Q" + negativeSuffix + "\\E";
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         if (negativeSuffix.length() > 0)
+1            negativeSuffix = Pattern.quote(negativeSuffix);
+2 
+--------------------------------------------

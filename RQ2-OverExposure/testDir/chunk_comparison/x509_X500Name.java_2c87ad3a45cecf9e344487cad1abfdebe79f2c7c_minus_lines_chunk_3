@@ -1,0 +1,69 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    public static final ObjectIdentifier commonName_oid;
+2    public static final ObjectIdentifier countryName_oid;
+3    public static final ObjectIdentifier localityName_oid;
+4    public static final ObjectIdentifier orgName_oid;
+5    public static final ObjectIdentifier orgUnitName_oid;
+6    public static final ObjectIdentifier stateName_oid;
+7    public static final ObjectIdentifier streetAddress_oid;
+8    public static final ObjectIdentifier title_oid;
+9    public static final ObjectIdentifier DNQUALIFIER_OID;
+10    public static final ObjectIdentifier SURNAME_OID;
+11    public static final ObjectIdentifier GIVENNAME_OID;
+12    public static final ObjectIdentifier INITIALS_OID;
+13    public static final ObjectIdentifier GENERATIONQUALIFIER_OID;
+14    public static final ObjectIdentifier ipAddress_oid;
+15    public static final ObjectIdentifier DOMAIN_COMPONENT_OID;
+16    public static final ObjectIdentifier userid_oid;
+17    public static final ObjectIdentifier SERIALNUMBER_OID;
+18 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    public static final ObjectIdentifier commonName_oid;
+2    public static final ObjectIdentifier countryName_oid;
+3    public static final ObjectIdentifier localityName_oid;
+4    public static final ObjectIdentifier orgName_oid;
+5    public static final ObjectIdentifier orgUnitName_oid;
+6    public static final ObjectIdentifier stateName_oid;
+7    public static final ObjectIdentifier streetAddress_oid;
+8    public static final ObjectIdentifier title_oid;
+9    public static final ObjectIdentifier DNQUALIFIER_OID;
+10    public static final ObjectIdentifier SURNAME_OID;
+11    public static final ObjectIdentifier GIVENNAME_OID;
+12    public static final ObjectIdentifier INITIALS_OID;
+13    public static final ObjectIdentifier GENERATIONQUALIFIER_OID;
+14    public static final ObjectIdentifier ipAddress_oid;
+15    public static final ObjectIdentifier DOMAIN_COMPONENT_OID;
+16    public static final ObjectIdentifier userid_oid;
+17    public static final ObjectIdentifier SERIALNUMBER_OID;
+18
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // OID for the "CN=" attribute, denoting a person's common name.
+2    public static final ObjectIdentifier commonName_oid =
+3            ObjectIdentifier.newInternal(commonName_data);
+4
+5    // OID for the "SERIALNUMBER=" attribute, denoting a serial number for.
+6    // a name. Do not confuse with PKCS#9 issuerAndSerialNumber or the
+7    // certificate serial number.
+8    public static final ObjectIdentifier SERIALNUMBER_OID =
+9            ObjectIdentifier.newInternal(SERIALNUMBER_DATA);
+10
+11    // OID for the "C=" attribute, denoting a country.
+12    public static final ObjectIdentifier countryName_oid =
+13            ObjectIdentifier.newInternal(countryName_data);
+14
+15    // OID for the "L=" attribute, denoting a locality (such as a city).
+16    public static final ObjectIdentifier localityName_oid =
+17            ObjectIdentifier.newInternal(localityName_data);
+18 
+--------------------------------------------

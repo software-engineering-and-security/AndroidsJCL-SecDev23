@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      * Create a new {@code AlgorithmChecker} with the
+1     * given {@code TrustAnchor}, {@code AlgorithmConstraints},
+2     * {@code Timestamp}, and {@code String} variant.
+3      *
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     * Create a new {@code AlgorithmChecker} with the
+1     * given {@code TrustAnchor}, {@code AlgorithmConstraints},
+2     * {@code Timestamp}, and {@code String} variant.
+3     *
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      * Create a new {@code AlgorithmChecker} with the
+1     * given {@code TrustAnchor}, {@code AlgorithmConstraints}, {@code Date},
+2     * and {@code String} variant.
+3      *
+--------------------------------------------

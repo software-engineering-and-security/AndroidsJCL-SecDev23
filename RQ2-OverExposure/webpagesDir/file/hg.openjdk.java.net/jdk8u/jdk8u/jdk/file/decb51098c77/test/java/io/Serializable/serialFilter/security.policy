@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: decb51098c77 test/java/io/Serializable/serialFilter/security.policy</title>
+</head>
+<body>
+
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+<li><a href="/jdk8u/jdk8u/jdk/shortlog/decb51098c77">log</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/graph/decb51098c77">graph</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+<li><a href="/jdk8u/jdk8u/jdk/rev/decb51098c77">changeset</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/file/decb51098c77/test/java/io/Serializable/serialFilter/">browse</a></li>
+</ul>
+<ul>
+<li class="active">file</li>
+<li><a href="/jdk8u/jdk8u/jdk/file/tip/test/java/io/Serializable/serialFilter/security.policy">latest</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/diff/decb51098c77/test/java/io/Serializable/serialFilter/security.policy">diff</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/comparison/decb51098c77/test/java/io/Serializable/serialFilter/security.policy">comparison</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/annotate/decb51098c77/test/java/io/Serializable/serialFilter/security.policy">annotate</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/log/decb51098c77/test/java/io/Serializable/serialFilter/security.policy">file log</a></li>
+<li><a href="/jdk8u/jdk8u/jdk/raw-file/decb51098c77/test/java/io/Serializable/serialFilter/security.policy">raw</a></li>
+</ul>
+<ul>
+<li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>view test/java/io/Serializable/serialFilter/security.policy @ 13784:decb51098c77</h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8231422: Better serial filter handling
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#108;&#118;&#100;&#97;&#118;&#105;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 23 Oct 2019 17:20:02 +0000</td>
+</tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/file/09c05d3bf23e/test/java/io/Serializable/serialFilter/security.policy">09c05d3bf23e</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"></td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line source</div>
+<pre class="sourcelines stripes4 wrap">
+<span id="l1">// Individual Permissions to for GlobalFilterTest</span><a href="#l1"></a>
+<span id="l2">grant {</span><a href="#l2"></a>
+<span id="l3">        // Specific permission under test</span><a href="#l3"></a>
+<span id="l4">        permission java.security.SerializablePermission &quot;serialFilter&quot;;</span><a href="#l4"></a>
+<span id="l5">        // Permissions needed to run the test</span><a href="#l5"></a>
+<span id="l6">        permission java.util.PropertyPermission &quot;*&quot;, &quot;read,write&quot;;</span><a href="#l6"></a>
+<span id="l7">        permission java.io.FilePermission &quot;&lt;&lt;ALL FILES&gt;&gt;&quot;, &quot;read,write,delete&quot;;</span><a href="#l7"></a>
+<span id="l8">        permission java.lang.reflect.ReflectPermission &quot;suppressAccessChecks&quot;;</span><a href="#l8"></a>
+<span id="l9">        permission java.security.SecurityPermission &quot;*&quot;;</span><a href="#l9"></a>
+<span id="l10">        permission java.lang.RuntimePermission &quot;accessDeclaredMembers&quot;;</span><a href="#l10"></a>
+<span id="l11">        permission java.lang.RuntimePermission &quot;accessClassInPackage.sun.misc&quot;;</span><a href="#l11"></a>
+<span id="l12">};</span><a href="#l12"></a>
+<span id="l13"></span><a href="#l13"></a>
+<span id="l14">// Standard extensions get all permissions by default</span><a href="#l14"></a>
+<span id="l15">grant codeBase &quot;file:${{java.ext.dirs}}/*&quot; {</span><a href="#l15"></a>
+<span id="l16">        permission java.security.AllPermission;</span><a href="#l16"></a>
+<span id="l17">};</span><a href="#l17"></a></pre>
+<div class="sourcelast"></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

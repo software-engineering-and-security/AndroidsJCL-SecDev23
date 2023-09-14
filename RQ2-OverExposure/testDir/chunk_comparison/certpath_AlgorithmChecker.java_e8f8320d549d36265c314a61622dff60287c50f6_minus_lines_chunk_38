@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private final PublicKey trustedPubKey;
+1    private final Date pkixdate;
+2     private PublicKey prevPubKey;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    private final PublicKey trustedPubKey;
+1    private final Date pkixdate;
+2    private PublicKey prevPubKey;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     private final PublicKey trustedPubKey;
+1    private final Date date;
+2     private PublicKey prevPubKey;
+--------------------------------------------

@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 import sun.security.x509.X509CRLImpl;
+1import sun.security.x509.AlgorithmId;
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0import sun.security.x509.X509CRLImpl;
+1import sun.security.x509.AlgorithmId;
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

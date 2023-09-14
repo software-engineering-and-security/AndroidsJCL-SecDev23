@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private final FileDescriptor fd;
+1
+2    // fd value needed for dev/poll. This value will remain valid
+3    // even after the value in the file descriptor object has been set to -1
+4    private int fdVal;
+5 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2}
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0     private final FileDescriptor fd;
+1    private final int fdVal;
+2 
+--------------------------------------------

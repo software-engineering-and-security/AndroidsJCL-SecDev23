@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8/jdk8/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8/jdk8/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8/jdk8/jdk/static/mercurial.js"></script>
+
+<title>jdk8/jdk8/jdk: 75d8c1200df8</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8/jdk8/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8/jdk8/jdk/shortlog/75d8c1200df8">log</a></li>
+ <li><a href="/jdk8/jdk8/jdk/graph/75d8c1200df8">graph</a></li>
+ <li><a href="/jdk8/jdk8/jdk/tags">tags</a></li>
+ <li><a href="/jdk8/jdk8/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8/jdk8/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8/jdk8/jdk/raw-rev/75d8c1200df8">raw</a></li>
+ <li><a href="/jdk8/jdk8/jdk/file/75d8c1200df8">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8/jdk8/jdk/archive/75d8c1200df8.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8/jdk8/jdk/archive/75d8c1200df8.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8/jdk8/jdk/archive/75d8c1200df8.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8/jdk8/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8">jdk8</a> / <a href="/jdk8/jdk8">jdk8</a> / <a href="/jdk8/jdk8/jdk">jdk</a> </h2>
+<h3>changeset 3615:75d8c1200df8   </h3>
+
+<form class="search" action="/jdk8/jdk8/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8/jdk8/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">7020522: Need to reapply the fix for 6664512
+Reviewed-by: art, mchung</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#100;&#99;&#104;&#101;&#114;&#101;&#112;&#97;&#110;&#111;&#118;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 25 Feb 2011 13:58:54 +0300</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8/jdk8/jdk/rev/df0de56682b7">df0de56682b7</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8/jdk8/jdk/rev/c27520009762">c27520009762</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8/jdk8/jdk/file/75d8c1200df8/src/share/classes/sun/util/logging/PlatformLogger.java">src/share/classes/sun/util/logging/PlatformLogger.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 8 insertions(+), 1 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/util/logging/PlatformLogger.java</a></td>
+    <td class="diffstat-total" align="right">9</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:88.8888888889%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:11.1111111111%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/util/logging/PlatformLogger.java	Thu Feb 24 13:01:01 2011 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/util/logging/PlatformLogger.java	Fri Feb 25 13:58:54 2011 +0300</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -535,7 +535,14 @@</span><a href="#l1.3"></a>
+<span id="l1.4">         }</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6">         void doLog(int level, String msg, Object... params) {</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-            LoggingSupport.log(javaLogger, levelObjects.get(level), msg, params);</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            // only pass String objects to the j.u.l.Logger which may</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+            // be created by untrusted code</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+            int len = (params != null) ? params.length : 0;</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+            Object[] sparams = new String[len];</span><a href="#l1.11"></a>
+<span id="l1.12" class="plusline">+            for (int i = 0; i &lt; len; i++) {</span><a href="#l1.12"></a>
+<span id="l1.13" class="plusline">+                sparams [i] = String.valueOf(params[i]);</span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+            }</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+            LoggingSupport.log(javaLogger, levelObjects.get(level), msg, sparams);</span><a href="#l1.15"></a>
+<span id="l1.16">         }</span><a href="#l1.16"></a>
+<span id="l1.17"> </span><a href="#l1.17"></a>
+<span id="l1.18">         boolean isEnabled() {</span><a href="#l1.18"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

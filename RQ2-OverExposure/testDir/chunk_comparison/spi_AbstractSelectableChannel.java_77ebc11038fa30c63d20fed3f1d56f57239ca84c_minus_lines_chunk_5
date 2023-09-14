@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     public final boolean isBlocking() {
+1        synchronized (regLock) {
+2            return blocking;
+3        }
+4     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    {
+1        synchronized (regLock) {
+2            if (!isOpen())
+3                throw new ClosedChannelException();
+4            boolean blocking = !nonBlocking;
+---------------------------------------------
+Differences:	['0', '2', '3', '4']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0     public final boolean isBlocking() {
+1        return !nonBlocking;
+2     }
+--------------------------------------------

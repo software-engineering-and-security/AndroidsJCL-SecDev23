@@ -1,0 +1,40 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private static final DisabledAlgorithmConstraints
+1        certPathDefaultConstraints = new DisabledAlgorithmConstraints(
+2            DisabledAlgorithmConstraints.PROPERTY_CERTPATH_DISABLED_ALGS);
+3
+4    // If there is no "cacerts" keyword, then disable anchor checking
+5    private static final boolean publicCALimits =
+6            certPathDefaultConstraints.checkProperty("jdkCA");
+7
+8    // If anchor checking enabled, this will be true if the trust anchor
+9    // has a match in the cacerts file
+10    private boolean trustedMatch = false;
+11 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    private static final DisabledAlgorithmConstraints
+1        certPathDefaultConstraints = new DisabledAlgorithmConstraints(
+2            DisabledAlgorithmConstraints.PROPERTY_CERTPATH_DISABLED_ALGS);
+3
+4    // If there is no "cacerts" keyword, then disable anchor checking
+5    private static final boolean publicCALimits =
+6            certPathDefaultConstraints.checkProperty("jdkCA");
+7
+8    // If anchor checking enabled, this will be true if the trust anchor
+9    // has a match in the cacerts file
+10    private boolean trustedMatch = false;
+11
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     private static final DisabledAlgorithmConstraints
+1        certPathDefaultConstraints =
+2            DisabledAlgorithmConstraints.certPathConstraints();
+3 
+--------------------------------------------

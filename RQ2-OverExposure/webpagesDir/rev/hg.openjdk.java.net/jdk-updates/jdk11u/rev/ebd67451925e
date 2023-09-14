@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk-updates/jdk11u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk-updates/jdk11u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk-updates/jdk11u/static/mercurial.js"></script>
+
+<title>jdk-updates/jdk11u: ebd67451925e</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk-updates/jdk11u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/shortlog/ebd67451925e">log</a></li>
+ <li><a href="/jdk-updates/jdk11u/graph/ebd67451925e">graph</a></li>
+ <li><a href="/jdk-updates/jdk11u/tags">tags</a></li>
+ <li><a href="/jdk-updates/jdk11u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk-updates/jdk11u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk-updates/jdk11u/raw-rev/ebd67451925e">raw</a></li>
+ <li><a href="/jdk-updates/jdk11u/file/ebd67451925e">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk-updates/jdk11u/archive/ebd67451925e.zip">zip</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/ebd67451925e.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/ebd67451925e.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk-updates">jdk-updates</a> / <a href="/jdk-updates/jdk11u">jdk11u</a> </h2>
+<h3>changeset 52890:ebd67451925e   </h3>
+
+<form class="search" action="/jdk-updates/jdk11u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk-updates/jdk11u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8223904: Improve Nashorn matching
+Reviewed-by: jlaskey, sundar, mschoene, rhalade</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#104;&#97;&#110;&#110;&#101;&#115;&#119;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 15 Nov 2019 19:10:43 +0100</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk-updates/jdk11u/rev/5006fd8e5864">5006fd8e5864</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk-updates/jdk11u/rev/1cec4823607e">1cec4823607e</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk-updates/jdk11u/file/ebd67451925e/src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/Parser.java">src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/Parser.java</a> <a href="/jdk-updates/jdk11u/file/ebd67451925e/src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/ast/StringNode.java">src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/ast/StringNode.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 17 insertions(+), 5 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/Parser.java</a></td>
+    <td class="diffstat-total" align="right">6</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:18.75%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:18.75%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/ast/StringNode.java</a></td>
+    <td class="diffstat-total" align="right">16</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:87.5%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:12.5%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/Parser.java	Wed Nov 06 17:13:21 2019 +0100</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/Parser.java	Fri Nov 15 19:10:43 2019 +0100</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -452,7 +452,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">     private Node parseExp(final TokenType term) {</span><a href="#l1.4"></a>
+<span id="l1.5">         if (token.type == term)</span><a href="#l1.5"></a>
+<span id="l1.6">          {</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-            return StringNode.EMPTY; // goto end_of_token</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            return StringNode.createEmpty(); // goto end_of_token</span><a href="#l1.8"></a>
+<span id="l1.9">         }</span><a href="#l1.9"></a>
+<span id="l1.10"> </span><a href="#l1.10"></a>
+<span id="l1.11">         Node node = null;</span><a href="#l1.11"></a>
+<span id="l1.12" class="atline">@@ -461,7 +461,7 @@</span><a href="#l1.12"></a>
+<span id="l1.13">         switch(token.type) {</span><a href="#l1.13"></a>
+<span id="l1.14">         case ALT:</span><a href="#l1.14"></a>
+<span id="l1.15">         case EOT:</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-            return StringNode.EMPTY; // end_of_token:, node_new_empty</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+            return StringNode.createEmpty(); // end_of_token:, node_new_empty</span><a href="#l1.17"></a>
+<span id="l1.18"> </span><a href="#l1.18"></a>
+<span id="l1.19">         case SUBEXP_OPEN:</span><a href="#l1.19"></a>
+<span id="l1.20">             node = parseEnclose(TokenType.SUBEXP_CLOSE);</span><a href="#l1.20"></a>
+<span id="l1.21" class="atline">@@ -569,7 +569,7 @@</span><a href="#l1.21"></a>
+<span id="l1.22">                 if (syntax.contextInvalidRepeatOps()) {</span><a href="#l1.22"></a>
+<span id="l1.23">                     throw new SyntaxException(ERR_TARGET_OF_REPEAT_OPERATOR_NOT_SPECIFIED);</span><a href="#l1.23"></a>
+<span id="l1.24">                 }</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-                node = StringNode.EMPTY; // node_new_empty</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+                node = StringNode.createEmpty(); // node_new_empty</span><a href="#l1.26"></a>
+<span id="l1.27">             } else {</span><a href="#l1.27"></a>
+<span id="l1.28">                 return parseExpTkByte(group); // goto tk_byte</span><a href="#l1.28"></a>
+<span id="l1.29">             }</span><a href="#l1.29"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/ast/StringNode.java	Wed Nov 06 17:13:21 2019 +0100</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/jdk.scripting.nashorn/share/classes/jdk/nashorn/internal/runtime/regexp/joni/ast/StringNode.java	Fri Nov 15 19:10:43 2019 +0100</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -27,7 +27,6 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> </span><a href="#l2.4"></a>
+<span id="l2.5">     private static final int NODE_STR_MARGIN = 16;</span><a href="#l2.5"></a>
+<span id="l2.6">     private static final int NODE_STR_BUF_SIZE = 24;</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-    public static final StringNode EMPTY = new StringNode(null, Integer.MAX_VALUE, Integer.MAX_VALUE);</span><a href="#l2.7"></a>
+<span id="l2.8"> </span><a href="#l2.8"></a>
+<span id="l2.9">     public char[] chars;</span><a href="#l2.9"></a>
+<span id="l2.10">     public int p;</span><a href="#l2.10"></a>
+<span id="l2.11" class="atline">@@ -36,7 +35,13 @@</span><a href="#l2.11"></a>
+<span id="l2.12">     public int flag;</span><a href="#l2.12"></a>
+<span id="l2.13"> </span><a href="#l2.13"></a>
+<span id="l2.14">     public StringNode() {</span><a href="#l2.14"></a>
+<span id="l2.15" class="minusline">-        this.chars = new char[NODE_STR_BUF_SIZE];</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+        this(NODE_STR_BUF_SIZE);</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+    }</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+</span><a href="#l2.18"></a>
+<span id="l2.19" class="plusline">+    private StringNode(int size) {</span><a href="#l2.19"></a>
+<span id="l2.20" class="plusline">+        this.chars = new char[size];</span><a href="#l2.20"></a>
+<span id="l2.21" class="plusline">+        this.p = 0;</span><a href="#l2.21"></a>
+<span id="l2.22" class="plusline">+        this.end = 0;</span><a href="#l2.22"></a>
+<span id="l2.23">     }</span><a href="#l2.23"></a>
+<span id="l2.24"> </span><a href="#l2.24"></a>
+<span id="l2.25">     public StringNode(final char[] chars, final int p, final int end) {</span><a href="#l2.25"></a>
+<span id="l2.26" class="atline">@@ -51,6 +56,13 @@</span><a href="#l2.26"></a>
+<span id="l2.27">         chars[end++] = c;</span><a href="#l2.27"></a>
+<span id="l2.28">     }</span><a href="#l2.28"></a>
+<span id="l2.29"> </span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+    /**</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+     * Create a new empty StringNode.</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+     */</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+    public static StringNode createEmpty() {</span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+        return new StringNode(0);</span><a href="#l2.34"></a>
+<span id="l2.35" class="plusline">+    }</span><a href="#l2.35"></a>
+<span id="l2.36" class="plusline">+</span><a href="#l2.36"></a>
+<span id="l2.37">     /* Ensure there is ahead bytes available in node's buffer</span><a href="#l2.37"></a>
+<span id="l2.38">      * (assumes that the node is not shared)</span><a href="#l2.38"></a>
+<span id="l2.39">      */</span><a href="#l2.39"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

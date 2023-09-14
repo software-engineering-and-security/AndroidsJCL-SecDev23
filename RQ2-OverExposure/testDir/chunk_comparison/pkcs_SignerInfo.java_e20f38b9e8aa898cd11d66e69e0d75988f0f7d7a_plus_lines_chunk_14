@@ -1,0 +1,32 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * A map containing the algorithms in this SignerInfo. This is used to
+3     * avoid checking algorithms to see if they are disabled more than once.
+4     * The key is the AlgorithmId of the algorithm, and the value is the name of
+5     * the field or attribute.
+6     */
+7    private Map<AlgorithmId, String> algorithms = new HashMap<>();
+8
+9     public SignerInfo(X500Name  issuerName,
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * Returns the timestamp PKCS7 data unverified.
+3     * @return a PKCS7 object
+4     */
+5    public PKCS7 getTsToken() throws IOException {
+6        if (unauthenticatedAttributes == null) {
+7            return null;
+8        }
+9        PKCS9Attribute tsTokenAttr =
+---------------------------------------------
+Differences:	['7', '8', '9']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

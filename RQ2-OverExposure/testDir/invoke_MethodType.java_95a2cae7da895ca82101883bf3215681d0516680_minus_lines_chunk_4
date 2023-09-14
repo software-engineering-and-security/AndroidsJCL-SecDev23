@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         Class<?>[] parameterArray = (Class<?>[]) s.readObject();
+1        parameterArray = parameterArray.clone();  // make sure it is unshared
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        Class<?>[] parameterArray = (Class<?>[]) s.readObject();
+1        parameterArray = parameterArray.clone();  // make sure it is unshared
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

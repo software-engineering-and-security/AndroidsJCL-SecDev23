@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 import sun.misc.BASE64Encoder;
+1import sun.net.ftp.*;
+2 import sun.util.logging.PlatformLogger;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0import sun.misc.BASE64Encoder;
+1import sun.net.ftp.*;
+2import sun.util.logging.PlatformLogger;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 import sun.misc.BASE64Encoder;
+1import sun.net.ftp.FtpDirEntry;
+2import sun.net.ftp.FtpDirParser;
+3import sun.net.ftp.FtpProtocolException;
+4import sun.net.ftp.FtpReplyCode;
+5import sun.net.util.IPAddressUtil;
+6 import sun.util.logging.PlatformLogger;
+--------------------------------------------

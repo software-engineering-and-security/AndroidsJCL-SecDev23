@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             return;
+1        }
+2 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0                newSigners.length);
+1        }
+2        signerCache.add(cachedSigners);
+---------------------------------------------
+Differences:	['0', '2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                         Enumeration<String> list = cacerts.aliases();
+1                        String alias;
+2                         while (list.hasMoreElements()) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                        Enumeration<String> list = cacerts.aliases();
+1                        String alias;
+2                        while (list.hasMoreElements()) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

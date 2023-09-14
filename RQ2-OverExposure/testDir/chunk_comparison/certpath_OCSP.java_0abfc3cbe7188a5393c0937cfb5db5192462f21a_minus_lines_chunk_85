@@ -1,0 +1,22 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         return check(cert, issuerCert, responderURI, responderCert, date,
+1                     Collections.<Extension>emptyList(), Validator.VAR_GENERIC);
+2     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        return check(cert, issuerCert, responderURI, responderCert, date,
+1                     Collections.<Extension>emptyList(), Validator.VAR_GENERIC);
+2    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         return check(cert, issuerCert, responderURI, responderCert, date,
+1                     Collections.<Extension>emptyList(),
+2                     Validator.VAR_PLUGIN_CODE_SIGNING);
+3     }
+--------------------------------------------

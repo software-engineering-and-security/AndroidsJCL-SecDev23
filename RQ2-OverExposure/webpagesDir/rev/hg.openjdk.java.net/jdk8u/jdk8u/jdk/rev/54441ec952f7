@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: 54441ec952f7</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/54441ec952f7">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/54441ec952f7">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/54441ec952f7">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/54441ec952f7">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/54441ec952f7.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/54441ec952f7.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/54441ec952f7.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 14574:54441ec952f7   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8269618: Better session identification
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#99;&#118;&#101;&#114;&#103;&#104;&#101;&#115;&#101;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 15 Oct 2021 03:11:56 +0100</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/6de43823dd11">6de43823dd11</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/132377e2edb2">132377e2edb2</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/54441ec952f7/src/share/classes/sun/security/ssl/HelloCookieManager.java">src/share/classes/sun/security/ssl/HelloCookieManager.java</a> <a href="/jdk8u/jdk8u/jdk/file/54441ec952f7/src/share/classes/sun/security/ssl/PreSharedKeyExtension.java">src/share/classes/sun/security/ssl/PreSharedKeyExtension.java</a> <a href="/jdk8u/jdk8u/jdk/file/54441ec952f7/src/share/classes/sun/security/ssl/RandomCookie.java">src/share/classes/sun/security/ssl/RandomCookie.java</a> <a href="/jdk8u/jdk8u/jdk/file/54441ec952f7/src/share/classes/sun/security/ssl/RenegoInfoExtension.java">src/share/classes/sun/security/ssl/RenegoInfoExtension.java</a> <a href="/jdk8u/jdk8u/jdk/file/54441ec952f7/src/share/classes/sun/security/ssl/SessionId.java">src/share/classes/sun/security/ssl/SessionId.java</a> <a href="/jdk8u/jdk8u/jdk/file/54441ec952f7/src/share/classes/sun/security/ssl/Utilities.java">src/share/classes/sun/security/ssl/Utilities.java</a> <a href="/jdk8u/jdk8u/jdk/file/54441ec952f7/src/share/classes/sun/security/util/ByteArrays.java">src/share/classes/sun/security/util/ByteArrays.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     7 files changed, 82 insertions(+), 30 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/security/ssl/HelloCookieManager.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.49253731343%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.49253731343%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/sun/security/ssl/PreSharedKeyExtension.java</a></td>
+    <td class="diffstat-total" align="right">3</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.49253731343%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.98507462687%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/sun/security/ssl/RandomCookie.java</a></td>
+    <td class="diffstat-total" align="right">10</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:8.9552238806%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:5.97014925373%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/share/classes/sun/security/ssl/RenegoInfoExtension.java</a></td>
+    <td class="diffstat-total" align="right">8</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:7.46268656716%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:4.4776119403%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">src/share/classes/sun/security/ssl/SessionId.java</a></td>
+    <td class="diffstat-total" align="right">3</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.98507462687%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.49253731343%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l6.1">src/share/classes/sun/security/ssl/Utilities.java</a></td>
+    <td class="diffstat-total" align="right">19</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:28.3582089552%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l7.1">src/share/classes/sun/security/util/ByteArrays.java</a></td>
+    <td class="diffstat-total" align="right">67</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/security/ssl/HelloCookieManager.java	Fri Sep 10 15:01:32 2021 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/HelloCookieManager.java	Fri Oct 15 03:11:56 2021 +0100</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -180,7 +180,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">             md.update(headerBytes);</span><a href="#l1.4"></a>
+<span id="l1.5">             byte[] headerCookie = md.digest(secret);</span><a href="#l1.5"></a>
+<span id="l1.6"> </span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-            if (!Arrays.equals(headerCookie, prevHeadCookie)) {</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            if (!MessageDigest.isEqual(headerCookie, prevHeadCookie)) {</span><a href="#l1.8"></a>
+<span id="l1.9">                 return false;</span><a href="#l1.9"></a>
+<span id="l1.10">             }</span><a href="#l1.10"></a>
+<span id="l1.11"> </span><a href="#l1.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/sun/security/ssl/PreSharedKeyExtension.java	Fri Sep 10 15:01:32 2021 +0300</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/PreSharedKeyExtension.java	Fri Oct 15 03:11:56 2021 +0100</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -31,7 +31,6 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> import java.util.List;</span><a href="#l2.4"></a>
+<span id="l2.5"> import java.util.ArrayList;</span><a href="#l2.5"></a>
+<span id="l2.6"> import java.util.Locale;</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-import java.util.Arrays;</span><a href="#l2.7"></a>
+<span id="l2.8"> import java.util.Objects;</span><a href="#l2.8"></a>
+<span id="l2.9"> import java.util.Collection;</span><a href="#l2.9"></a>
+<span id="l2.10"> import javax.crypto.Mac;</span><a href="#l2.10"></a>
+<span id="l2.11" class="atline">@@ -539,7 +538,7 @@</span><a href="#l2.11"></a>
+<span id="l2.12">         SecretKey binderKey = deriveBinderKey(shc, psk, session);</span><a href="#l2.12"></a>
+<span id="l2.13">         byte[] computedBinder =</span><a href="#l2.13"></a>
+<span id="l2.14">                 computeBinder(shc, binderKey, session, pskBinderHash);</span><a href="#l2.14"></a>
+<span id="l2.15" class="minusline">-        if (!Arrays.equals(binder, computedBinder)) {</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+        if (!MessageDigest.isEqual(binder, computedBinder)) {</span><a href="#l2.16"></a>
+<span id="l2.17">             throw shc.conContext.fatal(Alert.ILLEGAL_PARAMETER,</span><a href="#l2.17"></a>
+<span id="l2.18">                     &quot;Incorect PSK binder value&quot;);</span><a href="#l2.18"></a>
+<span id="l2.19">         }</span><a href="#l2.19"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/sun/security/ssl/RandomCookie.java	Fri Sep 10 15:01:32 2021 +0300</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/RandomCookie.java	Fri Oct 15 03:11:56 2021 +0100</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -25,10 +25,12 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> </span><a href="#l3.4"></a>
+<span id="l3.5"> package sun.security.ssl;</span><a href="#l3.5"></a>
+<span id="l3.6"> </span><a href="#l3.6"></a>
+<span id="l3.7" class="plusline">+import sun.security.util.ByteArrays;</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+</span><a href="#l3.8"></a>
+<span id="l3.9"> import java.io.*;</span><a href="#l3.9"></a>
+<span id="l3.10"> import java.nio.ByteBuffer;</span><a href="#l3.10"></a>
+<span id="l3.11" class="plusline">+import java.security.MessageDigest;</span><a href="#l3.11"></a>
+<span id="l3.12"> import java.security.SecureRandom;</span><a href="#l3.12"></a>
+<span id="l3.13" class="minusline">-import java.util.Arrays;</span><a href="#l3.13"></a>
+<span id="l3.14"> </span><a href="#l3.14"></a>
+<span id="l3.15"> /*</span><a href="#l3.15"></a>
+<span id="l3.16">  * RandomCookie ... SSL hands standard format random cookies (nonces)</span><a href="#l3.16"></a>
+<span id="l3.17" class="atline">@@ -111,7 +113,7 @@</span><a href="#l3.17"></a>
+<span id="l3.18">     }</span><a href="#l3.18"></a>
+<span id="l3.19"> </span><a href="#l3.19"></a>
+<span id="l3.20">     boolean isHelloRetryRequest() {</span><a href="#l3.20"></a>
+<span id="l3.21" class="minusline">-        return Arrays.equals(hrrRandomBytes, randomBytes);</span><a href="#l3.21"></a>
+<span id="l3.22" class="plusline">+        return MessageDigest.isEqual(hrrRandomBytes, randomBytes);</span><a href="#l3.22"></a>
+<span id="l3.23">     }</span><a href="#l3.23"></a>
+<span id="l3.24"> </span><a href="#l3.24"></a>
+<span id="l3.25">     // Used for client random validation of version downgrade protection.</span><a href="#l3.25"></a>
+<span id="l3.26" class="atline">@@ -130,10 +132,10 @@</span><a href="#l3.26"></a>
+<span id="l3.27">     }</span><a href="#l3.27"></a>
+<span id="l3.28"> </span><a href="#l3.28"></a>
+<span id="l3.29">     private boolean isT12Downgrade() {</span><a href="#l3.29"></a>
+<span id="l3.30" class="minusline">-        return Utilities.equals(randomBytes, 24, 32, t12Protection, 0, 8);</span><a href="#l3.30"></a>
+<span id="l3.31" class="plusline">+        return ByteArrays.isEqual(randomBytes, 24, 32, t12Protection, 0, 8);</span><a href="#l3.31"></a>
+<span id="l3.32">     }</span><a href="#l3.32"></a>
+<span id="l3.33"> </span><a href="#l3.33"></a>
+<span id="l3.34">     private boolean isT11Downgrade() {</span><a href="#l3.34"></a>
+<span id="l3.35" class="minusline">-        return Utilities.equals(randomBytes, 24, 32, t11Protection, 0, 8);</span><a href="#l3.35"></a>
+<span id="l3.36" class="plusline">+        return ByteArrays.isEqual(randomBytes, 24, 32, t11Protection, 0, 8);</span><a href="#l3.36"></a>
+<span id="l3.37">     }</span><a href="#l3.37"></a>
+<span id="l3.38"> }</span><a href="#l3.38"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/share/classes/sun/security/ssl/RenegoInfoExtension.java	Fri Sep 10 15:01:32 2021 +0300</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/RenegoInfoExtension.java	Fri Oct 15 03:11:56 2021 +0100</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -27,6 +27,7 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> </span><a href="#l4.4"></a>
+<span id="l4.5"> import java.io.IOException;</span><a href="#l4.5"></a>
+<span id="l4.6"> import java.nio.ByteBuffer;</span><a href="#l4.6"></a>
+<span id="l4.7" class="plusline">+import java.security.MessageDigest;</span><a href="#l4.7"></a>
+<span id="l4.8"> import java.text.MessageFormat;</span><a href="#l4.8"></a>
+<span id="l4.9"> import java.util.Arrays;</span><a href="#l4.9"></a>
+<span id="l4.10"> import java.util.Locale;</span><a href="#l4.10"></a>
+<span id="l4.11" class="atline">@@ -37,6 +38,7 @@</span><a href="#l4.11"></a>
+<span id="l4.12"> import static sun.security.ssl.SSLExtension.SH_RENEGOTIATION_INFO;</span><a href="#l4.12"></a>
+<span id="l4.13"> import sun.security.ssl.SSLExtension.SSLExtensionSpec;</span><a href="#l4.13"></a>
+<span id="l4.14"> import sun.security.ssl.SSLHandshake.HandshakeMessage;</span><a href="#l4.14"></a>
+<span id="l4.15" class="plusline">+import sun.security.util.ByteArrays;</span><a href="#l4.15"></a>
+<span id="l4.16"> </span><a href="#l4.16"></a>
+<span id="l4.17"> /**</span><a href="#l4.17"></a>
+<span id="l4.18">  * Pack of the &quot;renegotiation_info&quot; extensions [RFC 5746].</span><a href="#l4.18"></a>
+<span id="l4.19" class="atline">@@ -243,7 +245,7 @@</span><a href="#l4.19"></a>
+<span id="l4.20">                             &quot;renegotiation&quot;);</span><a href="#l4.20"></a>
+<span id="l4.21">                 } else {</span><a href="#l4.21"></a>
+<span id="l4.22">                     // verify the client_verify_data value</span><a href="#l4.22"></a>
+<span id="l4.23" class="minusline">-                    if (!Arrays.equals(shc.conContext.clientVerifyData,</span><a href="#l4.23"></a>
+<span id="l4.24" class="plusline">+                    if (!MessageDigest.isEqual(shc.conContext.clientVerifyData,</span><a href="#l4.24"></a>
+<span id="l4.25">                             spec.renegotiatedConnection)) {</span><a href="#l4.25"></a>
+<span id="l4.26">                         throw shc.conContext.fatal(Alert.UNEXPECTED_MESSAGE,</span><a href="#l4.26"></a>
+<span id="l4.27">                             &quot;Invalid renegotiation_info extension data: &quot; +</span><a href="#l4.27"></a>
+<span id="l4.28" class="atline">@@ -470,14 +472,14 @@</span><a href="#l4.28"></a>
+<span id="l4.29">                 }</span><a href="#l4.29"></a>
+<span id="l4.30"> </span><a href="#l4.30"></a>
+<span id="l4.31">                 byte[] cvd = chc.conContext.clientVerifyData;</span><a href="#l4.31"></a>
+<span id="l4.32" class="minusline">-                if (!Utilities.equals(spec.renegotiatedConnection,</span><a href="#l4.32"></a>
+<span id="l4.33" class="plusline">+                if (!ByteArrays.isEqual(spec.renegotiatedConnection,</span><a href="#l4.33"></a>
+<span id="l4.34">                         0, cvd.length, cvd, 0, cvd.length)) {</span><a href="#l4.34"></a>
+<span id="l4.35">                     throw chc.conContext.fatal(Alert.HANDSHAKE_FAILURE,</span><a href="#l4.35"></a>
+<span id="l4.36">                         &quot;Invalid renegotiation_info in ServerHello: &quot; +</span><a href="#l4.36"></a>
+<span id="l4.37">                         &quot;unmatched client_verify_data value&quot;);</span><a href="#l4.37"></a>
+<span id="l4.38">                 }</span><a href="#l4.38"></a>
+<span id="l4.39">                 byte[] svd = chc.conContext.serverVerifyData;</span><a href="#l4.39"></a>
+<span id="l4.40" class="minusline">-                if (!Utilities.equals(spec.renegotiatedConnection,</span><a href="#l4.40"></a>
+<span id="l4.41" class="plusline">+                if (!ByteArrays.isEqual(spec.renegotiatedConnection,</span><a href="#l4.41"></a>
+<span id="l4.42">                         cvd.length, infoLen, svd, 0, svd.length)) {</span><a href="#l4.42"></a>
+<span id="l4.43">                     throw chc.conContext.fatal(Alert.HANDSHAKE_FAILURE,</span><a href="#l4.43"></a>
+<span id="l4.44">                         &quot;Invalid renegotiation_info in ServerHello: &quot; +</span><a href="#l4.44"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- a/src/share/classes/sun/security/ssl/SessionId.java	Fri Sep 10 15:01:32 2021 +0300</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/SessionId.java	Fri Oct 15 03:11:56 2021 +0100</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -25,6 +25,7 @@</span><a href="#l5.3"></a>
+<span id="l5.4"> </span><a href="#l5.4"></a>
+<span id="l5.5"> package sun.security.ssl;</span><a href="#l5.5"></a>
+<span id="l5.6"> </span><a href="#l5.6"></a>
+<span id="l5.7" class="plusline">+import java.security.MessageDigest;</span><a href="#l5.7"></a>
+<span id="l5.8"> import java.security.SecureRandom;</span><a href="#l5.8"></a>
+<span id="l5.9"> import java.util.Arrays;</span><a href="#l5.9"></a>
+<span id="l5.10"> import javax.net.ssl.SSLProtocolException;</span><a href="#l5.10"></a>
+<span id="l5.11" class="atline">@@ -89,7 +90,7 @@</span><a href="#l5.11"></a>
+<span id="l5.12"> </span><a href="#l5.12"></a>
+<span id="l5.13">         if (obj instanceof SessionId) {</span><a href="#l5.13"></a>
+<span id="l5.14">             SessionId that = (SessionId)obj;</span><a href="#l5.14"></a>
+<span id="l5.15" class="minusline">-            return Arrays.equals(this.sessionId, that.sessionId);</span><a href="#l5.15"></a>
+<span id="l5.16" class="plusline">+            return MessageDigest.isEqual(this.sessionId, that.sessionId);</span><a href="#l5.16"></a>
+<span id="l5.17">         }</span><a href="#l5.17"></a>
+<span id="l5.18"> </span><a href="#l5.18"></a>
+<span id="l5.19">         return false;</span><a href="#l5.19"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l6.1" class="minusline">--- a/src/share/classes/sun/security/ssl/Utilities.java	Fri Sep 10 15:01:32 2021 +0300</span><a href="#l6.1"></a>
+<span id="l6.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/Utilities.java	Fri Oct 15 03:11:56 2021 +0100</span><a href="#l6.2"></a>
+<span id="l6.3" class="atline">@@ -250,23 +250,4 @@</span><a href="#l6.3"></a>
+<span id="l6.4">         }</span><a href="#l6.4"></a>
+<span id="l6.5">     }</span><a href="#l6.5"></a>
+<span id="l6.6"> </span><a href="#l6.6"></a>
+<span id="l6.7" class="minusline">-    /**</span><a href="#l6.7"></a>
+<span id="l6.8" class="minusline">-     * Returns true if the two specified arrays of bytes, over the specified</span><a href="#l6.8"></a>
+<span id="l6.9" class="minusline">-     * ranges, are &lt;i&gt;equal&lt;/i&gt; to one another.</span><a href="#l6.9"></a>
+<span id="l6.10" class="minusline">-     */</span><a href="#l6.10"></a>
+<span id="l6.11" class="minusline">-    static boolean equals(byte[] arr1, int st1, int end1, byte[] arr2, int st2, int end2) {</span><a href="#l6.11"></a>
+<span id="l6.12" class="minusline">-        rangeCheck(arr1.length, st1, end1);</span><a href="#l6.12"></a>
+<span id="l6.13" class="minusline">-        rangeCheck(arr2.length, st2, end2);</span><a href="#l6.13"></a>
+<span id="l6.14" class="minusline">-</span><a href="#l6.14"></a>
+<span id="l6.15" class="minusline">-        int aLength = end1 - st1;</span><a href="#l6.15"></a>
+<span id="l6.16" class="minusline">-        int bLength = end2 - st2;</span><a href="#l6.16"></a>
+<span id="l6.17" class="minusline">-        if (aLength != bLength)</span><a href="#l6.17"></a>
+<span id="l6.18" class="minusline">-            return false;</span><a href="#l6.18"></a>
+<span id="l6.19" class="minusline">-</span><a href="#l6.19"></a>
+<span id="l6.20" class="minusline">-        for(int i=0; i&lt;aLength; i++)</span><a href="#l6.20"></a>
+<span id="l6.21" class="minusline">-            if(arr1[i + st1] != arr2[i + st2])</span><a href="#l6.21"></a>
+<span id="l6.22" class="minusline">-                return false;</span><a href="#l6.22"></a>
+<span id="l6.23" class="minusline">-        return true;</span><a href="#l6.23"></a>
+<span id="l6.24" class="minusline">-    }</span><a href="#l6.24"></a>
+<span id="l6.25" class="minusline">-</span><a href="#l6.25"></a>
+<span id="l6.26"> }</span><a href="#l6.26"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l7.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l7.1"></a>
+<span id="l7.2" class="plusline">+++ b/src/share/classes/sun/security/util/ByteArrays.java	Fri Oct 15 03:11:56 2021 +0100</span><a href="#l7.2"></a>
+<span id="l7.3" class="atline">@@ -0,0 +1,67 @@</span><a href="#l7.3"></a>
+<span id="l7.4" class="plusline">+/*</span><a href="#l7.4"></a>
+<span id="l7.5" class="plusline">+ * Copyright (c) 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l7.5"></a>
+<span id="l7.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l7.6"></a>
+<span id="l7.7" class="plusline">+ *</span><a href="#l7.7"></a>
+<span id="l7.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l7.8"></a>
+<span id="l7.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l7.9"></a>
+<span id="l7.10" class="plusline">+ * published by the Free Software Foundation.  Oracle designates this</span><a href="#l7.10"></a>
+<span id="l7.11" class="plusline">+ * particular file as subject to the &quot;Classpath&quot; exception as provided</span><a href="#l7.11"></a>
+<span id="l7.12" class="plusline">+ * by Oracle in the LICENSE file that accompanied this code.</span><a href="#l7.12"></a>
+<span id="l7.13" class="plusline">+ *</span><a href="#l7.13"></a>
+<span id="l7.14" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l7.14"></a>
+<span id="l7.15" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l7.15"></a>
+<span id="l7.16" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l7.16"></a>
+<span id="l7.17" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l7.17"></a>
+<span id="l7.18" class="plusline">+ * accompanied this code).</span><a href="#l7.18"></a>
+<span id="l7.19" class="plusline">+ *</span><a href="#l7.19"></a>
+<span id="l7.20" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l7.20"></a>
+<span id="l7.21" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l7.21"></a>
+<span id="l7.22" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l7.22"></a>
+<span id="l7.23" class="plusline">+ *</span><a href="#l7.23"></a>
+<span id="l7.24" class="plusline">+ * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA</span><a href="#l7.24"></a>
+<span id="l7.25" class="plusline">+ * or visit www.oracle.com if you need additional information or have any</span><a href="#l7.25"></a>
+<span id="l7.26" class="plusline">+ * questions.</span><a href="#l7.26"></a>
+<span id="l7.27" class="plusline">+ */</span><a href="#l7.27"></a>
+<span id="l7.28" class="plusline">+</span><a href="#l7.28"></a>
+<span id="l7.29" class="plusline">+package sun.security.util;</span><a href="#l7.29"></a>
+<span id="l7.30" class="plusline">+</span><a href="#l7.30"></a>
+<span id="l7.31" class="plusline">+/**</span><a href="#l7.31"></a>
+<span id="l7.32" class="plusline">+ * A time-instance comparison of two byte arrays.</span><a href="#l7.32"></a>
+<span id="l7.33" class="plusline">+ */</span><a href="#l7.33"></a>
+<span id="l7.34" class="plusline">+public class ByteArrays {</span><a href="#l7.34"></a>
+<span id="l7.35" class="plusline">+    // See the MessageDigest.isEqual(byte[] digesta, byte[] digestb)</span><a href="#l7.35"></a>
+<span id="l7.36" class="plusline">+    // implementation.  This is a potential enhancement of the</span><a href="#l7.36"></a>
+<span id="l7.37" class="plusline">+    // MessageDigest class.</span><a href="#l7.37"></a>
+<span id="l7.38" class="plusline">+    public static boolean isEqual(byte[] a, int aFromIndex, int aToIndex,</span><a href="#l7.38"></a>
+<span id="l7.39" class="plusline">+                                 byte[] b, int bFromIndex, int bToIndex) {</span><a href="#l7.39"></a>
+<span id="l7.40" class="plusline">+        if (a == b) {</span><a href="#l7.40"></a>
+<span id="l7.41" class="plusline">+            return true;</span><a href="#l7.41"></a>
+<span id="l7.42" class="plusline">+        }</span><a href="#l7.42"></a>
+<span id="l7.43" class="plusline">+</span><a href="#l7.43"></a>
+<span id="l7.44" class="plusline">+        if (a == null || b == null) {</span><a href="#l7.44"></a>
+<span id="l7.45" class="plusline">+            return false;</span><a href="#l7.45"></a>
+<span id="l7.46" class="plusline">+        }</span><a href="#l7.46"></a>
+<span id="l7.47" class="plusline">+</span><a href="#l7.47"></a>
+<span id="l7.48" class="plusline">+        if (a.length == 0) {</span><a href="#l7.48"></a>
+<span id="l7.49" class="plusline">+            return b.length == 0;</span><a href="#l7.49"></a>
+<span id="l7.50" class="plusline">+        }</span><a href="#l7.50"></a>
+<span id="l7.51" class="plusline">+</span><a href="#l7.51"></a>
+<span id="l7.52" class="plusline">+        int lenA = aToIndex - aFromIndex;</span><a href="#l7.52"></a>
+<span id="l7.53" class="plusline">+        int lenB = bToIndex - bFromIndex;</span><a href="#l7.53"></a>
+<span id="l7.54" class="plusline">+</span><a href="#l7.54"></a>
+<span id="l7.55" class="plusline">+        if (lenB == 0) {</span><a href="#l7.55"></a>
+<span id="l7.56" class="plusline">+            return lenA == 0;</span><a href="#l7.56"></a>
+<span id="l7.57" class="plusline">+        }</span><a href="#l7.57"></a>
+<span id="l7.58" class="plusline">+</span><a href="#l7.58"></a>
+<span id="l7.59" class="plusline">+        int result = 0;</span><a href="#l7.59"></a>
+<span id="l7.60" class="plusline">+        result |= lenA - lenB;</span><a href="#l7.60"></a>
+<span id="l7.61" class="plusline">+</span><a href="#l7.61"></a>
+<span id="l7.62" class="plusline">+        // time-constant comparison</span><a href="#l7.62"></a>
+<span id="l7.63" class="plusline">+        for (int indexA = 0; indexA &lt; lenA; indexA++) {</span><a href="#l7.63"></a>
+<span id="l7.64" class="plusline">+            int indexB = ((indexA - lenB) &gt;&gt;&gt; 31) * indexA;</span><a href="#l7.64"></a>
+<span id="l7.65" class="plusline">+            result |= a[aFromIndex + indexA] ^ b[bFromIndex + indexB];</span><a href="#l7.65"></a>
+<span id="l7.66" class="plusline">+        }</span><a href="#l7.66"></a>
+<span id="l7.67" class="plusline">+</span><a href="#l7.67"></a>
+<span id="l7.68" class="plusline">+        return result == 0;</span><a href="#l7.68"></a>
+<span id="l7.69" class="plusline">+    }</span><a href="#l7.69"></a>
+<span id="l7.70" class="plusline">+}</span><a href="#l7.70"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

@@ -1,0 +1,969 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: ed63c186574c</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/ed63c186574c">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/ed63c186574c">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/ed63c186574c">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/ed63c186574c">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/ed63c186574c.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/ed63c186574c.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/ed63c186574c.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 166:ed63c186574c   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6777487: Encoder allows reading private variables with certain names
+Reviewed-by: peterz</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#97;&#108;&#101;&#110;&#107;&#111;&#118;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 29 Apr 2009 20:47:57 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/ec321bbac6cd">ec321bbac6cd</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/7dad07b15c32">7dad07b15c32</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/ed63c186574c/src/share/classes/java/beans/MetaData.java">src/share/classes/java/beans/MetaData.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestBox.java">test/java/beans/XMLEncoder/6777487/TestBox.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestCheckedCollection.java">test/java/beans/XMLEncoder/6777487/TestCheckedCollection.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestCheckedList.java">test/java/beans/XMLEncoder/6777487/TestCheckedList.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestCheckedMap.java">test/java/beans/XMLEncoder/6777487/TestCheckedMap.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestCheckedRandomAccessList.java">test/java/beans/XMLEncoder/6777487/TestCheckedRandomAccessList.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestCheckedSet.java">test/java/beans/XMLEncoder/6777487/TestCheckedSet.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestCheckedSortedMap.java">test/java/beans/XMLEncoder/6777487/TestCheckedSortedMap.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestCheckedSortedSet.java">test/java/beans/XMLEncoder/6777487/TestCheckedSortedSet.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestEncoder.java">test/java/beans/XMLEncoder/6777487/TestEncoder.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestEnumMap.java">test/java/beans/XMLEncoder/6777487/TestEnumMap.java</a> <a href="/jdk6/jdk6/jdk/file/ed63c186574c/test/java/beans/XMLEncoder/6777487/TestEnumSet.java">test/java/beans/XMLEncoder/6777487/TestEnumSet.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     12 files changed, 589 insertions(+), 38 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/beans/MetaData.java</a></td>
+    <td class="diffstat-total" align="right">83</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:54.2168674699%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:45.7831325301%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">test/java/beans/XMLEncoder/6777487/TestBox.java</a></td>
+    <td class="diffstat-total" align="right">52</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:62.6506024096%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">test/java/beans/XMLEncoder/6777487/TestCheckedCollection.java</a></td>
+    <td class="diffstat-total" align="right">48</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:57.8313253012%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">test/java/beans/XMLEncoder/6777487/TestCheckedList.java</a></td>
+    <td class="diffstat-total" align="right">48</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:57.8313253012%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">test/java/beans/XMLEncoder/6777487/TestCheckedMap.java</a></td>
+    <td class="diffstat-total" align="right">49</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:59.0361445783%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l6.1">test/java/beans/XMLEncoder/6777487/TestCheckedRandomAccessList.java</a></td>
+    <td class="diffstat-total" align="right">48</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:57.8313253012%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l7.1">test/java/beans/XMLEncoder/6777487/TestCheckedSet.java</a></td>
+    <td class="diffstat-total" align="right">48</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:57.8313253012%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l8.1">test/java/beans/XMLEncoder/6777487/TestCheckedSortedMap.java</a></td>
+    <td class="diffstat-total" align="right">49</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:59.0361445783%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l9.1">test/java/beans/XMLEncoder/6777487/TestCheckedSortedSet.java</a></td>
+    <td class="diffstat-total" align="right">48</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:57.8313253012%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l10.1">test/java/beans/XMLEncoder/6777487/TestEncoder.java</a></td>
+    <td class="diffstat-total" align="right">60</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:72.2891566265%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l11.1">test/java/beans/XMLEncoder/6777487/TestEnumMap.java</a></td>
+    <td class="diffstat-total" align="right">47</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:56.6265060241%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l12.1">test/java/beans/XMLEncoder/6777487/TestEnumSet.java</a></td>
+    <td class="diffstat-total" align="right">47</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:56.6265060241%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/beans/MetaData.java	Wed Apr 29 20:37:25 2009 +0400</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/beans/MetaData.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright 2000-2007 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright 2000-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -331,31 +331,6 @@</span><a href="#l1.10"></a>
+<span id="l1.11">         return (oldC.size() == newC.size()) &amp;&amp; oldC.containsAll(newC);</span><a href="#l1.11"></a>
+<span id="l1.12">     }</span><a href="#l1.12"></a>
+<span id="l1.13"> </span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-    static Object getPrivateField(final Object instance, final String name) {</span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-        return AccessController.doPrivileged(</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-                new PrivilegedAction() {</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-                    public Object run() {</span><a href="#l1.17"></a>
+<span id="l1.18" class="minusline">-                        Class type = instance.getClass();</span><a href="#l1.18"></a>
+<span id="l1.19" class="minusline">-                        while ( true ) {</span><a href="#l1.19"></a>
+<span id="l1.20" class="minusline">-                            try {</span><a href="#l1.20"></a>
+<span id="l1.21" class="minusline">-                                Field field = type.getDeclaredField(name);</span><a href="#l1.21"></a>
+<span id="l1.22" class="minusline">-                                field.setAccessible(true);</span><a href="#l1.22"></a>
+<span id="l1.23" class="minusline">-                                return field.get( instance );</span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-                            }</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-                            catch (NoSuchFieldException exception) {</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-                                type = type.getSuperclass();</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-                                if (type == null) {</span><a href="#l1.27"></a>
+<span id="l1.28" class="minusline">-                                    throw new IllegalStateException(&quot;Could not find field &quot; + name, exception);</span><a href="#l1.28"></a>
+<span id="l1.29" class="minusline">-                                }</span><a href="#l1.29"></a>
+<span id="l1.30" class="minusline">-                            }</span><a href="#l1.30"></a>
+<span id="l1.31" class="minusline">-                            catch (Exception exception) {</span><a href="#l1.31"></a>
+<span id="l1.32" class="minusline">-                                throw new IllegalStateException(&quot;Could not get value &quot; + type.getName() + '.' + name, exception);</span><a href="#l1.32"></a>
+<span id="l1.33" class="minusline">-                            }</span><a href="#l1.33"></a>
+<span id="l1.34" class="minusline">-                        }</span><a href="#l1.34"></a>
+<span id="l1.35" class="minusline">-                    }</span><a href="#l1.35"></a>
+<span id="l1.36" class="minusline">-                } );</span><a href="#l1.36"></a>
+<span id="l1.37" class="minusline">-    }</span><a href="#l1.37"></a>
+<span id="l1.38" class="minusline">-</span><a href="#l1.38"></a>
+<span id="l1.39">     static final class EmptyList_PersistenceDelegate extends java_util_Collections {</span><a href="#l1.39"></a>
+<span id="l1.40">         protected Expression instantiate(Object oldInstance, Encoder out) {</span><a href="#l1.40"></a>
+<span id="l1.41">             return new Expression(oldInstance, Collections.class, &quot;emptyList&quot;, null);</span><a href="#l1.41"></a>
+<span id="l1.42" class="atline">@@ -496,7 +471,7 @@</span><a href="#l1.42"></a>
+<span id="l1.43"> </span><a href="#l1.43"></a>
+<span id="l1.44">     static final class CheckedCollection_PersistenceDelegate extends java_util_Collections {</span><a href="#l1.44"></a>
+<span id="l1.45">         protected Expression instantiate(Object oldInstance, Encoder out) {</span><a href="#l1.45"></a>
+<span id="l1.46" class="minusline">-            Object type = getPrivateField(oldInstance, &quot;type&quot;);</span><a href="#l1.46"></a>
+<span id="l1.47" class="plusline">+            Object type = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedCollection.type&quot;);</span><a href="#l1.47"></a>
+<span id="l1.48">             List list = new ArrayList((Collection) oldInstance);</span><a href="#l1.48"></a>
+<span id="l1.49">             return new Expression(oldInstance, Collections.class, &quot;checkedCollection&quot;, new Object[]{list, type});</span><a href="#l1.49"></a>
+<span id="l1.50">         }</span><a href="#l1.50"></a>
+<span id="l1.51" class="atline">@@ -504,7 +479,7 @@</span><a href="#l1.51"></a>
+<span id="l1.52"> </span><a href="#l1.52"></a>
+<span id="l1.53">     static final class CheckedList_PersistenceDelegate extends java_util_Collections {</span><a href="#l1.53"></a>
+<span id="l1.54">         protected Expression instantiate(Object oldInstance, Encoder out) {</span><a href="#l1.54"></a>
+<span id="l1.55" class="minusline">-            Object type = getPrivateField(oldInstance, &quot;type&quot;);</span><a href="#l1.55"></a>
+<span id="l1.56" class="plusline">+            Object type = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedCollection.type&quot;);</span><a href="#l1.56"></a>
+<span id="l1.57">             List list = new LinkedList((Collection) oldInstance);</span><a href="#l1.57"></a>
+<span id="l1.58">             return new Expression(oldInstance, Collections.class, &quot;checkedList&quot;, new Object[]{list, type});</span><a href="#l1.58"></a>
+<span id="l1.59">         }</span><a href="#l1.59"></a>
+<span id="l1.60" class="atline">@@ -512,7 +487,7 @@</span><a href="#l1.60"></a>
+<span id="l1.61"> </span><a href="#l1.61"></a>
+<span id="l1.62">     static final class CheckedRandomAccessList_PersistenceDelegate extends java_util_Collections {</span><a href="#l1.62"></a>
+<span id="l1.63">         protected Expression instantiate(Object oldInstance, Encoder out) {</span><a href="#l1.63"></a>
+<span id="l1.64" class="minusline">-            Object type = getPrivateField(oldInstance, &quot;type&quot;);</span><a href="#l1.64"></a>
+<span id="l1.65" class="plusline">+            Object type = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedCollection.type&quot;);</span><a href="#l1.65"></a>
+<span id="l1.66">             List list = new ArrayList((Collection) oldInstance);</span><a href="#l1.66"></a>
+<span id="l1.67">             return new Expression(oldInstance, Collections.class, &quot;checkedList&quot;, new Object[]{list, type});</span><a href="#l1.67"></a>
+<span id="l1.68">         }</span><a href="#l1.68"></a>
+<span id="l1.69" class="atline">@@ -520,7 +495,7 @@</span><a href="#l1.69"></a>
+<span id="l1.70"> </span><a href="#l1.70"></a>
+<span id="l1.71">     static final class CheckedSet_PersistenceDelegate extends java_util_Collections {</span><a href="#l1.71"></a>
+<span id="l1.72">         protected Expression instantiate(Object oldInstance, Encoder out) {</span><a href="#l1.72"></a>
+<span id="l1.73" class="minusline">-            Object type = getPrivateField(oldInstance, &quot;type&quot;);</span><a href="#l1.73"></a>
+<span id="l1.74" class="plusline">+            Object type = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedCollection.type&quot;);</span><a href="#l1.74"></a>
+<span id="l1.75">             Set set = new HashSet((Set) oldInstance);</span><a href="#l1.75"></a>
+<span id="l1.76">             return new Expression(oldInstance, Collections.class, &quot;checkedSet&quot;, new Object[]{set, type});</span><a href="#l1.76"></a>
+<span id="l1.77">         }</span><a href="#l1.77"></a>
+<span id="l1.78" class="atline">@@ -528,7 +503,7 @@</span><a href="#l1.78"></a>
+<span id="l1.79"> </span><a href="#l1.79"></a>
+<span id="l1.80">     static final class CheckedSortedSet_PersistenceDelegate extends java_util_Collections {</span><a href="#l1.80"></a>
+<span id="l1.81">         protected Expression instantiate(Object oldInstance, Encoder out) {</span><a href="#l1.81"></a>
+<span id="l1.82" class="minusline">-            Object type = getPrivateField(oldInstance, &quot;type&quot;);</span><a href="#l1.82"></a>
+<span id="l1.83" class="plusline">+            Object type = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedCollection.type&quot;);</span><a href="#l1.83"></a>
+<span id="l1.84">             SortedSet set = new TreeSet((SortedSet) oldInstance);</span><a href="#l1.84"></a>
+<span id="l1.85">             return new Expression(oldInstance, Collections.class, &quot;checkedSortedSet&quot;, new Object[]{set, type});</span><a href="#l1.85"></a>
+<span id="l1.86">         }</span><a href="#l1.86"></a>
+<span id="l1.87" class="atline">@@ -536,8 +511,8 @@</span><a href="#l1.87"></a>
+<span id="l1.88"> </span><a href="#l1.88"></a>
+<span id="l1.89">     static final class CheckedMap_PersistenceDelegate extends java_util_Collections {</span><a href="#l1.89"></a>
+<span id="l1.90">         protected Expression instantiate(Object oldInstance, Encoder out) {</span><a href="#l1.90"></a>
+<span id="l1.91" class="minusline">-            Object keyType = getPrivateField(oldInstance, &quot;keyType&quot;);</span><a href="#l1.91"></a>
+<span id="l1.92" class="minusline">-            Object valueType = getPrivateField(oldInstance, &quot;valueType&quot;);</span><a href="#l1.92"></a>
+<span id="l1.93" class="plusline">+            Object keyType   = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedMap.keyType&quot;);</span><a href="#l1.93"></a>
+<span id="l1.94" class="plusline">+            Object valueType = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedMap.valueType&quot;);</span><a href="#l1.94"></a>
+<span id="l1.95">             Map map = new HashMap((Map) oldInstance);</span><a href="#l1.95"></a>
+<span id="l1.96">             return new Expression(oldInstance, Collections.class, &quot;checkedMap&quot;, new Object[]{map, keyType, valueType});</span><a href="#l1.96"></a>
+<span id="l1.97">         }</span><a href="#l1.97"></a>
+<span id="l1.98" class="atline">@@ -545,8 +520,8 @@</span><a href="#l1.98"></a>
+<span id="l1.99"> </span><a href="#l1.99"></a>
+<span id="l1.100">     static final class CheckedSortedMap_PersistenceDelegate extends java_util_Collections {</span><a href="#l1.100"></a>
+<span id="l1.101">         protected Expression instantiate(Object oldInstance, Encoder out) {</span><a href="#l1.101"></a>
+<span id="l1.102" class="minusline">-            Object keyType = getPrivateField(oldInstance, &quot;keyType&quot;);</span><a href="#l1.102"></a>
+<span id="l1.103" class="minusline">-            Object valueType = getPrivateField(oldInstance, &quot;valueType&quot;);</span><a href="#l1.103"></a>
+<span id="l1.104" class="plusline">+            Object keyType   = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedMap.keyType&quot;);</span><a href="#l1.104"></a>
+<span id="l1.105" class="plusline">+            Object valueType = MetaData.getPrivateFieldValue(oldInstance, &quot;java.util.Collections$CheckedMap.valueType&quot;);</span><a href="#l1.105"></a>
+<span id="l1.106">             SortedMap map = new TreeMap((SortedMap) oldInstance);</span><a href="#l1.106"></a>
+<span id="l1.107">             return new Expression(oldInstance, Collections.class, &quot;checkedSortedMap&quot;, new Object[]{map, keyType, valueType});</span><a href="#l1.107"></a>
+<span id="l1.108">         }</span><a href="#l1.108"></a>
+<span id="l1.109" class="atline">@@ -568,7 +543,7 @@</span><a href="#l1.109"></a>
+<span id="l1.110">     }</span><a href="#l1.110"></a>
+<span id="l1.111"> </span><a href="#l1.111"></a>
+<span id="l1.112">     private static Object getType(Object instance) {</span><a href="#l1.112"></a>
+<span id="l1.113" class="minusline">-        return java_util_Collections.getPrivateField(instance, &quot;keyType&quot;);</span><a href="#l1.113"></a>
+<span id="l1.114" class="plusline">+        return MetaData.getPrivateFieldValue(instance, &quot;java.util.EnumMap.keyType&quot;);</span><a href="#l1.114"></a>
+<span id="l1.115">     }</span><a href="#l1.115"></a>
+<span id="l1.116"> }</span><a href="#l1.116"></a>
+<span id="l1.117"> </span><a href="#l1.117"></a>
+<span id="l1.118" class="atline">@@ -587,7 +562,7 @@</span><a href="#l1.118"></a>
+<span id="l1.119">     }</span><a href="#l1.119"></a>
+<span id="l1.120"> </span><a href="#l1.120"></a>
+<span id="l1.121">     private static Object getType(Object instance) {</span><a href="#l1.121"></a>
+<span id="l1.122" class="minusline">-        return java_util_Collections.getPrivateField(instance, &quot;elementType&quot;);</span><a href="#l1.122"></a>
+<span id="l1.123" class="plusline">+        return MetaData.getPrivateFieldValue(instance, &quot;java.util.EnumSet.elementType&quot;);</span><a href="#l1.123"></a>
+<span id="l1.124">     }</span><a href="#l1.124"></a>
+<span id="l1.125"> }</span><a href="#l1.125"></a>
+<span id="l1.126"> </span><a href="#l1.126"></a>
+<span id="l1.127" class="atline">@@ -1268,7 +1243,7 @@</span><a href="#l1.127"></a>
+<span id="l1.128"> </span><a href="#l1.128"></a>
+<span id="l1.129">     private Integer getAxis(Object object) {</span><a href="#l1.129"></a>
+<span id="l1.130">         Box box = (Box) object;</span><a href="#l1.130"></a>
+<span id="l1.131" class="minusline">-        return (Integer) java_util_Collections.getPrivateField(box.getLayout(), &quot;axis&quot;);</span><a href="#l1.131"></a>
+<span id="l1.132" class="plusline">+        return (Integer) MetaData.getPrivateFieldValue(box.getLayout(), &quot;javax.swing.BoxLayout.axis&quot;);</span><a href="#l1.132"></a>
+<span id="l1.133">     }</span><a href="#l1.133"></a>
+<span id="l1.134"> }</span><a href="#l1.134"></a>
+<span id="l1.135"> </span><a href="#l1.135"></a>
+<span id="l1.136" class="atline">@@ -1351,6 +1326,7 @@</span><a href="#l1.136"></a>
+<span id="l1.137"> }</span><a href="#l1.137"></a>
+<span id="l1.138"> </span><a href="#l1.138"></a>
+<span id="l1.139"> class MetaData {</span><a href="#l1.139"></a>
+<span id="l1.140" class="plusline">+    private static final Map&lt;String,Field&gt; fields = Collections.synchronizedMap(new WeakHashMap&lt;String, Field&gt;());</span><a href="#l1.140"></a>
+<span id="l1.141">     private static Hashtable internalPersistenceDelegates = new Hashtable();</span><a href="#l1.141"></a>
+<span id="l1.142">     private static Hashtable transientProperties = new Hashtable();</span><a href="#l1.142"></a>
+<span id="l1.143"> </span><a href="#l1.143"></a>
+<span id="l1.144" class="atline">@@ -1706,4 +1682,35 @@</span><a href="#l1.144"></a>
+<span id="l1.145">         }</span><a href="#l1.145"></a>
+<span id="l1.146">         tp.add(property);</span><a href="#l1.146"></a>
+<span id="l1.147">     }</span><a href="#l1.147"></a>
+<span id="l1.148" class="plusline">+</span><a href="#l1.148"></a>
+<span id="l1.149" class="plusline">+    static Object getPrivateFieldValue(Object instance, String name) {</span><a href="#l1.149"></a>
+<span id="l1.150" class="plusline">+        Field field = fields.get(name);</span><a href="#l1.150"></a>
+<span id="l1.151" class="plusline">+        if (field == null) {</span><a href="#l1.151"></a>
+<span id="l1.152" class="plusline">+            int index = name.lastIndexOf('.');</span><a href="#l1.152"></a>
+<span id="l1.153" class="plusline">+            final String className = name.substring(0, index);</span><a href="#l1.153"></a>
+<span id="l1.154" class="plusline">+            final String fieldName = name.substring(1 + index);</span><a href="#l1.154"></a>
+<span id="l1.155" class="plusline">+            field = AccessController.doPrivileged(new PrivilegedAction&lt;Field&gt;() {</span><a href="#l1.155"></a>
+<span id="l1.156" class="plusline">+                public Field run() {</span><a href="#l1.156"></a>
+<span id="l1.157" class="plusline">+                    try {</span><a href="#l1.157"></a>
+<span id="l1.158" class="plusline">+                        Field field = Class.forName(className).getDeclaredField(fieldName);</span><a href="#l1.158"></a>
+<span id="l1.159" class="plusline">+                        field.setAccessible(true);</span><a href="#l1.159"></a>
+<span id="l1.160" class="plusline">+                        return field;</span><a href="#l1.160"></a>
+<span id="l1.161" class="plusline">+                    }</span><a href="#l1.161"></a>
+<span id="l1.162" class="plusline">+                    catch (ClassNotFoundException exception) {</span><a href="#l1.162"></a>
+<span id="l1.163" class="plusline">+                        throw new IllegalStateException(&quot;Could not find class&quot;, exception);</span><a href="#l1.163"></a>
+<span id="l1.164" class="plusline">+                    }</span><a href="#l1.164"></a>
+<span id="l1.165" class="plusline">+                    catch (NoSuchFieldException exception) {</span><a href="#l1.165"></a>
+<span id="l1.166" class="plusline">+                        throw new IllegalStateException(&quot;Could not find field&quot;, exception);</span><a href="#l1.166"></a>
+<span id="l1.167" class="plusline">+                    }</span><a href="#l1.167"></a>
+<span id="l1.168" class="plusline">+                }</span><a href="#l1.168"></a>
+<span id="l1.169" class="plusline">+            });</span><a href="#l1.169"></a>
+<span id="l1.170" class="plusline">+            fields.put(name, field);</span><a href="#l1.170"></a>
+<span id="l1.171" class="plusline">+        }</span><a href="#l1.171"></a>
+<span id="l1.172" class="plusline">+        try {</span><a href="#l1.172"></a>
+<span id="l1.173" class="plusline">+            return field.get(instance);</span><a href="#l1.173"></a>
+<span id="l1.174" class="plusline">+        }</span><a href="#l1.174"></a>
+<span id="l1.175" class="plusline">+        catch (IllegalAccessException exception) {</span><a href="#l1.175"></a>
+<span id="l1.176" class="plusline">+            throw new IllegalStateException(&quot;Could not get value of the field&quot;, exception);</span><a href="#l1.176"></a>
+<span id="l1.177" class="plusline">+        }</span><a href="#l1.177"></a>
+<span id="l1.178" class="plusline">+    }</span><a href="#l1.178"></a>
+<span id="l1.179"> }</span><a href="#l1.179"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestBox.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -0,0 +1,52 @@</span><a href="#l2.3"></a>
+<span id="l2.4" class="plusline">+/*</span><a href="#l2.4"></a>
+<span id="l2.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+ *</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.8"></a>
+<span id="l2.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l2.9"></a>
+<span id="l2.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l2.10"></a>
+<span id="l2.11" class="plusline">+ *</span><a href="#l2.11"></a>
+<span id="l2.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l2.12"></a>
+<span id="l2.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+ * accompanied this code).</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+ *</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l2.18"></a>
+<span id="l2.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l2.19"></a>
+<span id="l2.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l2.20"></a>
+<span id="l2.21" class="plusline">+ *</span><a href="#l2.21"></a>
+<span id="l2.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l2.22"></a>
+<span id="l2.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l2.23"></a>
+<span id="l2.24" class="plusline">+ * have any questions.</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+ */</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+/*</span><a href="#l2.27"></a>
+<span id="l2.28" class="plusline">+ * @test</span><a href="#l2.28"></a>
+<span id="l2.29" class="plusline">+ * @bug 6777487</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+ * @summary Tests private field access for BoxLayout</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+ */</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+</span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+import java.awt.FlowLayout;</span><a href="#l2.34"></a>
+<span id="l2.35" class="plusline">+import javax.swing.Box;</span><a href="#l2.35"></a>
+<span id="l2.36" class="plusline">+import javax.swing.BoxLayout;</span><a href="#l2.36"></a>
+<span id="l2.37" class="plusline">+</span><a href="#l2.37"></a>
+<span id="l2.38" class="plusline">+public final class TestBox {</span><a href="#l2.38"></a>
+<span id="l2.39" class="plusline">+    private static final Integer OBJECT = Integer.valueOf(-123);</span><a href="#l2.39"></a>
+<span id="l2.40" class="plusline">+</span><a href="#l2.40"></a>
+<span id="l2.41" class="plusline">+    public static void main(String[] args) {</span><a href="#l2.41"></a>
+<span id="l2.42" class="plusline">+        TestEncoder.test(</span><a href="#l2.42"></a>
+<span id="l2.43" class="plusline">+                new Box(BoxLayout.LINE_AXIS),</span><a href="#l2.43"></a>
+<span id="l2.44" class="plusline">+                new Box(BoxLayout.PAGE_AXIS) {</span><a href="#l2.44"></a>
+<span id="l2.45" class="plusline">+                    @Override</span><a href="#l2.45"></a>
+<span id="l2.46" class="plusline">+                    public FlowLayout getLayout() {</span><a href="#l2.46"></a>
+<span id="l2.47" class="plusline">+                        return new FlowLayout() {</span><a href="#l2.47"></a>
+<span id="l2.48" class="plusline">+                            private final Object axis = OBJECT;</span><a href="#l2.48"></a>
+<span id="l2.49" class="plusline">+                        };</span><a href="#l2.49"></a>
+<span id="l2.50" class="plusline">+                    }</span><a href="#l2.50"></a>
+<span id="l2.51" class="plusline">+                },</span><a href="#l2.51"></a>
+<span id="l2.52" class="plusline">+                OBJECT</span><a href="#l2.52"></a>
+<span id="l2.53" class="plusline">+        );</span><a href="#l2.53"></a>
+<span id="l2.54" class="plusline">+    }</span><a href="#l2.54"></a>
+<span id="l2.55" class="plusline">+}</span><a href="#l2.55"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestCheckedCollection.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -0,0 +1,48 @@</span><a href="#l3.3"></a>
+<span id="l3.4" class="plusline">+/*</span><a href="#l3.4"></a>
+<span id="l3.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l3.5"></a>
+<span id="l3.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l3.6"></a>
+<span id="l3.7" class="plusline">+ *</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l3.8"></a>
+<span id="l3.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l3.9"></a>
+<span id="l3.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l3.10"></a>
+<span id="l3.11" class="plusline">+ *</span><a href="#l3.11"></a>
+<span id="l3.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l3.12"></a>
+<span id="l3.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l3.13"></a>
+<span id="l3.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l3.14"></a>
+<span id="l3.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l3.15"></a>
+<span id="l3.16" class="plusline">+ * accompanied this code).</span><a href="#l3.16"></a>
+<span id="l3.17" class="plusline">+ *</span><a href="#l3.17"></a>
+<span id="l3.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l3.18"></a>
+<span id="l3.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l3.19"></a>
+<span id="l3.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l3.20"></a>
+<span id="l3.21" class="plusline">+ *</span><a href="#l3.21"></a>
+<span id="l3.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l3.22"></a>
+<span id="l3.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l3.23"></a>
+<span id="l3.24" class="plusline">+ * have any questions.</span><a href="#l3.24"></a>
+<span id="l3.25" class="plusline">+ */</span><a href="#l3.25"></a>
+<span id="l3.26" class="plusline">+</span><a href="#l3.26"></a>
+<span id="l3.27" class="plusline">+/*</span><a href="#l3.27"></a>
+<span id="l3.28" class="plusline">+ * @test</span><a href="#l3.28"></a>
+<span id="l3.29" class="plusline">+ * @bug 6777487</span><a href="#l3.29"></a>
+<span id="l3.30" class="plusline">+ * @summary Tests private field access for CheckedCollection</span><a href="#l3.30"></a>
+<span id="l3.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l3.31"></a>
+<span id="l3.32" class="plusline">+ */</span><a href="#l3.32"></a>
+<span id="l3.33" class="plusline">+</span><a href="#l3.33"></a>
+<span id="l3.34" class="plusline">+import java.util.ArrayList;</span><a href="#l3.34"></a>
+<span id="l3.35" class="plusline">+import java.util.Collections;</span><a href="#l3.35"></a>
+<span id="l3.36" class="plusline">+import java.util.List;</span><a href="#l3.36"></a>
+<span id="l3.37" class="plusline">+</span><a href="#l3.37"></a>
+<span id="l3.38" class="plusline">+public final class TestCheckedCollection {</span><a href="#l3.38"></a>
+<span id="l3.39" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l3.39"></a>
+<span id="l3.40" class="plusline">+</span><a href="#l3.40"></a>
+<span id="l3.41" class="plusline">+    public static void main(String[] args) {</span><a href="#l3.41"></a>
+<span id="l3.42" class="plusline">+        List&lt;String&gt; list = Collections.emptyList();</span><a href="#l3.42"></a>
+<span id="l3.43" class="plusline">+        TestEncoder.test(</span><a href="#l3.43"></a>
+<span id="l3.44" class="plusline">+                Collections.checkedCollection(list, String.class),</span><a href="#l3.44"></a>
+<span id="l3.45" class="plusline">+                new ArrayList() {</span><a href="#l3.45"></a>
+<span id="l3.46" class="plusline">+                    private final Object type = OBJECT;</span><a href="#l3.46"></a>
+<span id="l3.47" class="plusline">+                },</span><a href="#l3.47"></a>
+<span id="l3.48" class="plusline">+                OBJECT</span><a href="#l3.48"></a>
+<span id="l3.49" class="plusline">+        );</span><a href="#l3.49"></a>
+<span id="l3.50" class="plusline">+    }</span><a href="#l3.50"></a>
+<span id="l3.51" class="plusline">+}</span><a href="#l3.51"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestCheckedList.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -0,0 +1,48 @@</span><a href="#l4.3"></a>
+<span id="l4.4" class="plusline">+/*</span><a href="#l4.4"></a>
+<span id="l4.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l4.5"></a>
+<span id="l4.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l4.6"></a>
+<span id="l4.7" class="plusline">+ *</span><a href="#l4.7"></a>
+<span id="l4.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l4.8"></a>
+<span id="l4.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l4.9"></a>
+<span id="l4.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l4.10"></a>
+<span id="l4.11" class="plusline">+ *</span><a href="#l4.11"></a>
+<span id="l4.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l4.12"></a>
+<span id="l4.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l4.13"></a>
+<span id="l4.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l4.14"></a>
+<span id="l4.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l4.15"></a>
+<span id="l4.16" class="plusline">+ * accompanied this code).</span><a href="#l4.16"></a>
+<span id="l4.17" class="plusline">+ *</span><a href="#l4.17"></a>
+<span id="l4.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l4.18"></a>
+<span id="l4.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l4.19"></a>
+<span id="l4.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l4.20"></a>
+<span id="l4.21" class="plusline">+ *</span><a href="#l4.21"></a>
+<span id="l4.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l4.22"></a>
+<span id="l4.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l4.23"></a>
+<span id="l4.24" class="plusline">+ * have any questions.</span><a href="#l4.24"></a>
+<span id="l4.25" class="plusline">+ */</span><a href="#l4.25"></a>
+<span id="l4.26" class="plusline">+</span><a href="#l4.26"></a>
+<span id="l4.27" class="plusline">+/*</span><a href="#l4.27"></a>
+<span id="l4.28" class="plusline">+ * @test</span><a href="#l4.28"></a>
+<span id="l4.29" class="plusline">+ * @bug 6777487</span><a href="#l4.29"></a>
+<span id="l4.30" class="plusline">+ * @summary Tests private field access for CheckedList</span><a href="#l4.30"></a>
+<span id="l4.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l4.31"></a>
+<span id="l4.32" class="plusline">+ */</span><a href="#l4.32"></a>
+<span id="l4.33" class="plusline">+</span><a href="#l4.33"></a>
+<span id="l4.34" class="plusline">+import java.util.ArrayList;</span><a href="#l4.34"></a>
+<span id="l4.35" class="plusline">+import java.util.Collections;</span><a href="#l4.35"></a>
+<span id="l4.36" class="plusline">+import java.util.List;</span><a href="#l4.36"></a>
+<span id="l4.37" class="plusline">+</span><a href="#l4.37"></a>
+<span id="l4.38" class="plusline">+public final class TestCheckedList {</span><a href="#l4.38"></a>
+<span id="l4.39" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l4.39"></a>
+<span id="l4.40" class="plusline">+</span><a href="#l4.40"></a>
+<span id="l4.41" class="plusline">+    public static void main(String[] args) {</span><a href="#l4.41"></a>
+<span id="l4.42" class="plusline">+        List&lt;String&gt; list = Collections.emptyList();</span><a href="#l4.42"></a>
+<span id="l4.43" class="plusline">+        TestEncoder.test(</span><a href="#l4.43"></a>
+<span id="l4.44" class="plusline">+                Collections.checkedList(list, String.class),</span><a href="#l4.44"></a>
+<span id="l4.45" class="plusline">+                new ArrayList() {</span><a href="#l4.45"></a>
+<span id="l4.46" class="plusline">+                    private final Object type = OBJECT;</span><a href="#l4.46"></a>
+<span id="l4.47" class="plusline">+                },</span><a href="#l4.47"></a>
+<span id="l4.48" class="plusline">+                OBJECT</span><a href="#l4.48"></a>
+<span id="l4.49" class="plusline">+        );</span><a href="#l4.49"></a>
+<span id="l4.50" class="plusline">+    }</span><a href="#l4.50"></a>
+<span id="l4.51" class="plusline">+}</span><a href="#l4.51"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestCheckedMap.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -0,0 +1,49 @@</span><a href="#l5.3"></a>
+<span id="l5.4" class="plusline">+/*</span><a href="#l5.4"></a>
+<span id="l5.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l5.5"></a>
+<span id="l5.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l5.6"></a>
+<span id="l5.7" class="plusline">+ *</span><a href="#l5.7"></a>
+<span id="l5.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l5.8"></a>
+<span id="l5.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l5.9"></a>
+<span id="l5.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l5.10"></a>
+<span id="l5.11" class="plusline">+ *</span><a href="#l5.11"></a>
+<span id="l5.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l5.12"></a>
+<span id="l5.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l5.13"></a>
+<span id="l5.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l5.14"></a>
+<span id="l5.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l5.15"></a>
+<span id="l5.16" class="plusline">+ * accompanied this code).</span><a href="#l5.16"></a>
+<span id="l5.17" class="plusline">+ *</span><a href="#l5.17"></a>
+<span id="l5.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l5.18"></a>
+<span id="l5.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l5.19"></a>
+<span id="l5.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l5.20"></a>
+<span id="l5.21" class="plusline">+ *</span><a href="#l5.21"></a>
+<span id="l5.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l5.22"></a>
+<span id="l5.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l5.23"></a>
+<span id="l5.24" class="plusline">+ * have any questions.</span><a href="#l5.24"></a>
+<span id="l5.25" class="plusline">+ */</span><a href="#l5.25"></a>
+<span id="l5.26" class="plusline">+</span><a href="#l5.26"></a>
+<span id="l5.27" class="plusline">+/*</span><a href="#l5.27"></a>
+<span id="l5.28" class="plusline">+ * @test</span><a href="#l5.28"></a>
+<span id="l5.29" class="plusline">+ * @bug 6777487</span><a href="#l5.29"></a>
+<span id="l5.30" class="plusline">+ * @summary Tests private field access for CheckedMap</span><a href="#l5.30"></a>
+<span id="l5.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l5.31"></a>
+<span id="l5.32" class="plusline">+ */</span><a href="#l5.32"></a>
+<span id="l5.33" class="plusline">+</span><a href="#l5.33"></a>
+<span id="l5.34" class="plusline">+import java.util.Collections;</span><a href="#l5.34"></a>
+<span id="l5.35" class="plusline">+import java.util.HashMap;</span><a href="#l5.35"></a>
+<span id="l5.36" class="plusline">+import java.util.Map;</span><a href="#l5.36"></a>
+<span id="l5.37" class="plusline">+</span><a href="#l5.37"></a>
+<span id="l5.38" class="plusline">+public final class TestCheckedMap {</span><a href="#l5.38"></a>
+<span id="l5.39" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l5.39"></a>
+<span id="l5.40" class="plusline">+</span><a href="#l5.40"></a>
+<span id="l5.41" class="plusline">+    public static void main(String[] args) {</span><a href="#l5.41"></a>
+<span id="l5.42" class="plusline">+        Map&lt;String, String&gt; map = Collections.emptyMap();</span><a href="#l5.42"></a>
+<span id="l5.43" class="plusline">+        TestEncoder.test(</span><a href="#l5.43"></a>
+<span id="l5.44" class="plusline">+                Collections.checkedMap(map, String.class, String.class),</span><a href="#l5.44"></a>
+<span id="l5.45" class="plusline">+                new HashMap() {</span><a href="#l5.45"></a>
+<span id="l5.46" class="plusline">+                    private final Object keyType = OBJECT;</span><a href="#l5.46"></a>
+<span id="l5.47" class="plusline">+                    private final Object valueType = OBJECT;</span><a href="#l5.47"></a>
+<span id="l5.48" class="plusline">+                },</span><a href="#l5.48"></a>
+<span id="l5.49" class="plusline">+                OBJECT</span><a href="#l5.49"></a>
+<span id="l5.50" class="plusline">+        );</span><a href="#l5.50"></a>
+<span id="l5.51" class="plusline">+    }</span><a href="#l5.51"></a>
+<span id="l5.52" class="plusline">+}</span><a href="#l5.52"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l6.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l6.1"></a>
+<span id="l6.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestCheckedRandomAccessList.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l6.2"></a>
+<span id="l6.3" class="atline">@@ -0,0 +1,48 @@</span><a href="#l6.3"></a>
+<span id="l6.4" class="plusline">+/*</span><a href="#l6.4"></a>
+<span id="l6.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l6.5"></a>
+<span id="l6.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l6.6"></a>
+<span id="l6.7" class="plusline">+ *</span><a href="#l6.7"></a>
+<span id="l6.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l6.8"></a>
+<span id="l6.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l6.9"></a>
+<span id="l6.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l6.10"></a>
+<span id="l6.11" class="plusline">+ *</span><a href="#l6.11"></a>
+<span id="l6.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l6.12"></a>
+<span id="l6.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l6.13"></a>
+<span id="l6.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l6.14"></a>
+<span id="l6.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l6.15"></a>
+<span id="l6.16" class="plusline">+ * accompanied this code).</span><a href="#l6.16"></a>
+<span id="l6.17" class="plusline">+ *</span><a href="#l6.17"></a>
+<span id="l6.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l6.18"></a>
+<span id="l6.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l6.19"></a>
+<span id="l6.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l6.20"></a>
+<span id="l6.21" class="plusline">+ *</span><a href="#l6.21"></a>
+<span id="l6.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l6.22"></a>
+<span id="l6.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l6.23"></a>
+<span id="l6.24" class="plusline">+ * have any questions.</span><a href="#l6.24"></a>
+<span id="l6.25" class="plusline">+ */</span><a href="#l6.25"></a>
+<span id="l6.26" class="plusline">+</span><a href="#l6.26"></a>
+<span id="l6.27" class="plusline">+/*</span><a href="#l6.27"></a>
+<span id="l6.28" class="plusline">+ * @test</span><a href="#l6.28"></a>
+<span id="l6.29" class="plusline">+ * @bug 6777487</span><a href="#l6.29"></a>
+<span id="l6.30" class="plusline">+ * @summary Tests private field access for CheckedRandomAccessList</span><a href="#l6.30"></a>
+<span id="l6.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l6.31"></a>
+<span id="l6.32" class="plusline">+ */</span><a href="#l6.32"></a>
+<span id="l6.33" class="plusline">+</span><a href="#l6.33"></a>
+<span id="l6.34" class="plusline">+import java.util.ArrayList;</span><a href="#l6.34"></a>
+<span id="l6.35" class="plusline">+import java.util.Collections;</span><a href="#l6.35"></a>
+<span id="l6.36" class="plusline">+import java.util.List;</span><a href="#l6.36"></a>
+<span id="l6.37" class="plusline">+</span><a href="#l6.37"></a>
+<span id="l6.38" class="plusline">+public final class TestCheckedRandomAccessList {</span><a href="#l6.38"></a>
+<span id="l6.39" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l6.39"></a>
+<span id="l6.40" class="plusline">+</span><a href="#l6.40"></a>
+<span id="l6.41" class="plusline">+    public static void main(String[] args) {</span><a href="#l6.41"></a>
+<span id="l6.42" class="plusline">+        List&lt;String&gt; list = new ArrayList&lt;String&gt;();</span><a href="#l6.42"></a>
+<span id="l6.43" class="plusline">+        TestEncoder.test(</span><a href="#l6.43"></a>
+<span id="l6.44" class="plusline">+                Collections.checkedList(list, String.class),</span><a href="#l6.44"></a>
+<span id="l6.45" class="plusline">+                new ArrayList() {</span><a href="#l6.45"></a>
+<span id="l6.46" class="plusline">+                    private final Object type = OBJECT;</span><a href="#l6.46"></a>
+<span id="l6.47" class="plusline">+                },</span><a href="#l6.47"></a>
+<span id="l6.48" class="plusline">+                OBJECT</span><a href="#l6.48"></a>
+<span id="l6.49" class="plusline">+        );</span><a href="#l6.49"></a>
+<span id="l6.50" class="plusline">+    }</span><a href="#l6.50"></a>
+<span id="l6.51" class="plusline">+}</span><a href="#l6.51"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l7.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l7.1"></a>
+<span id="l7.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestCheckedSet.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l7.2"></a>
+<span id="l7.3" class="atline">@@ -0,0 +1,48 @@</span><a href="#l7.3"></a>
+<span id="l7.4" class="plusline">+/*</span><a href="#l7.4"></a>
+<span id="l7.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l7.5"></a>
+<span id="l7.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l7.6"></a>
+<span id="l7.7" class="plusline">+ *</span><a href="#l7.7"></a>
+<span id="l7.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l7.8"></a>
+<span id="l7.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l7.9"></a>
+<span id="l7.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l7.10"></a>
+<span id="l7.11" class="plusline">+ *</span><a href="#l7.11"></a>
+<span id="l7.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l7.12"></a>
+<span id="l7.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l7.13"></a>
+<span id="l7.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l7.14"></a>
+<span id="l7.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l7.15"></a>
+<span id="l7.16" class="plusline">+ * accompanied this code).</span><a href="#l7.16"></a>
+<span id="l7.17" class="plusline">+ *</span><a href="#l7.17"></a>
+<span id="l7.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l7.18"></a>
+<span id="l7.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l7.19"></a>
+<span id="l7.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l7.20"></a>
+<span id="l7.21" class="plusline">+ *</span><a href="#l7.21"></a>
+<span id="l7.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l7.22"></a>
+<span id="l7.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l7.23"></a>
+<span id="l7.24" class="plusline">+ * have any questions.</span><a href="#l7.24"></a>
+<span id="l7.25" class="plusline">+ */</span><a href="#l7.25"></a>
+<span id="l7.26" class="plusline">+</span><a href="#l7.26"></a>
+<span id="l7.27" class="plusline">+/*</span><a href="#l7.27"></a>
+<span id="l7.28" class="plusline">+ * @test</span><a href="#l7.28"></a>
+<span id="l7.29" class="plusline">+ * @bug 6777487</span><a href="#l7.29"></a>
+<span id="l7.30" class="plusline">+ * @summary Tests private field access for CheckedSet</span><a href="#l7.30"></a>
+<span id="l7.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l7.31"></a>
+<span id="l7.32" class="plusline">+ */</span><a href="#l7.32"></a>
+<span id="l7.33" class="plusline">+</span><a href="#l7.33"></a>
+<span id="l7.34" class="plusline">+import java.util.Collections;</span><a href="#l7.34"></a>
+<span id="l7.35" class="plusline">+import java.util.HashSet;</span><a href="#l7.35"></a>
+<span id="l7.36" class="plusline">+import java.util.Set;</span><a href="#l7.36"></a>
+<span id="l7.37" class="plusline">+</span><a href="#l7.37"></a>
+<span id="l7.38" class="plusline">+public final class TestCheckedSet {</span><a href="#l7.38"></a>
+<span id="l7.39" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l7.39"></a>
+<span id="l7.40" class="plusline">+</span><a href="#l7.40"></a>
+<span id="l7.41" class="plusline">+    public static void main(String[] args) {</span><a href="#l7.41"></a>
+<span id="l7.42" class="plusline">+        Set&lt;String&gt; set = Collections.emptySet();</span><a href="#l7.42"></a>
+<span id="l7.43" class="plusline">+        TestEncoder.test(</span><a href="#l7.43"></a>
+<span id="l7.44" class="plusline">+                Collections.checkedSet(set, String.class),</span><a href="#l7.44"></a>
+<span id="l7.45" class="plusline">+                new HashSet() {</span><a href="#l7.45"></a>
+<span id="l7.46" class="plusline">+                    private final Object type = OBJECT;</span><a href="#l7.46"></a>
+<span id="l7.47" class="plusline">+                },</span><a href="#l7.47"></a>
+<span id="l7.48" class="plusline">+                OBJECT</span><a href="#l7.48"></a>
+<span id="l7.49" class="plusline">+        );</span><a href="#l7.49"></a>
+<span id="l7.50" class="plusline">+    }</span><a href="#l7.50"></a>
+<span id="l7.51" class="plusline">+}</span><a href="#l7.51"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l8.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l8.1"></a>
+<span id="l8.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestCheckedSortedMap.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l8.2"></a>
+<span id="l8.3" class="atline">@@ -0,0 +1,49 @@</span><a href="#l8.3"></a>
+<span id="l8.4" class="plusline">+/*</span><a href="#l8.4"></a>
+<span id="l8.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l8.5"></a>
+<span id="l8.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l8.6"></a>
+<span id="l8.7" class="plusline">+ *</span><a href="#l8.7"></a>
+<span id="l8.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l8.8"></a>
+<span id="l8.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l8.9"></a>
+<span id="l8.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l8.10"></a>
+<span id="l8.11" class="plusline">+ *</span><a href="#l8.11"></a>
+<span id="l8.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l8.12"></a>
+<span id="l8.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l8.13"></a>
+<span id="l8.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l8.14"></a>
+<span id="l8.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l8.15"></a>
+<span id="l8.16" class="plusline">+ * accompanied this code).</span><a href="#l8.16"></a>
+<span id="l8.17" class="plusline">+ *</span><a href="#l8.17"></a>
+<span id="l8.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l8.18"></a>
+<span id="l8.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l8.19"></a>
+<span id="l8.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l8.20"></a>
+<span id="l8.21" class="plusline">+ *</span><a href="#l8.21"></a>
+<span id="l8.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l8.22"></a>
+<span id="l8.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l8.23"></a>
+<span id="l8.24" class="plusline">+ * have any questions.</span><a href="#l8.24"></a>
+<span id="l8.25" class="plusline">+ */</span><a href="#l8.25"></a>
+<span id="l8.26" class="plusline">+</span><a href="#l8.26"></a>
+<span id="l8.27" class="plusline">+/*</span><a href="#l8.27"></a>
+<span id="l8.28" class="plusline">+ * @test</span><a href="#l8.28"></a>
+<span id="l8.29" class="plusline">+ * @bug 6777487</span><a href="#l8.29"></a>
+<span id="l8.30" class="plusline">+ * @summary Tests private field access for CheckedSortedMap</span><a href="#l8.30"></a>
+<span id="l8.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l8.31"></a>
+<span id="l8.32" class="plusline">+ */</span><a href="#l8.32"></a>
+<span id="l8.33" class="plusline">+</span><a href="#l8.33"></a>
+<span id="l8.34" class="plusline">+import java.util.Collections;</span><a href="#l8.34"></a>
+<span id="l8.35" class="plusline">+import java.util.SortedMap;</span><a href="#l8.35"></a>
+<span id="l8.36" class="plusline">+import java.util.TreeMap;</span><a href="#l8.36"></a>
+<span id="l8.37" class="plusline">+</span><a href="#l8.37"></a>
+<span id="l8.38" class="plusline">+public final class TestCheckedSortedMap {</span><a href="#l8.38"></a>
+<span id="l8.39" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l8.39"></a>
+<span id="l8.40" class="plusline">+</span><a href="#l8.40"></a>
+<span id="l8.41" class="plusline">+    public static void main(String[] args) {</span><a href="#l8.41"></a>
+<span id="l8.42" class="plusline">+        SortedMap&lt;String, String&gt; map = new TreeMap&lt;String, String&gt;();</span><a href="#l8.42"></a>
+<span id="l8.43" class="plusline">+        TestEncoder.test(</span><a href="#l8.43"></a>
+<span id="l8.44" class="plusline">+                Collections.checkedSortedMap(map, String.class, String.class),</span><a href="#l8.44"></a>
+<span id="l8.45" class="plusline">+                new TreeMap() {</span><a href="#l8.45"></a>
+<span id="l8.46" class="plusline">+                    private final Object keyType = OBJECT;</span><a href="#l8.46"></a>
+<span id="l8.47" class="plusline">+                    private final Object valueType = OBJECT;</span><a href="#l8.47"></a>
+<span id="l8.48" class="plusline">+                },</span><a href="#l8.48"></a>
+<span id="l8.49" class="plusline">+                OBJECT</span><a href="#l8.49"></a>
+<span id="l8.50" class="plusline">+        );</span><a href="#l8.50"></a>
+<span id="l8.51" class="plusline">+    }</span><a href="#l8.51"></a>
+<span id="l8.52" class="plusline">+}</span><a href="#l8.52"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l9.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l9.1"></a>
+<span id="l9.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestCheckedSortedSet.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l9.2"></a>
+<span id="l9.3" class="atline">@@ -0,0 +1,48 @@</span><a href="#l9.3"></a>
+<span id="l9.4" class="plusline">+/*</span><a href="#l9.4"></a>
+<span id="l9.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l9.5"></a>
+<span id="l9.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l9.6"></a>
+<span id="l9.7" class="plusline">+ *</span><a href="#l9.7"></a>
+<span id="l9.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l9.8"></a>
+<span id="l9.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l9.9"></a>
+<span id="l9.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l9.10"></a>
+<span id="l9.11" class="plusline">+ *</span><a href="#l9.11"></a>
+<span id="l9.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l9.12"></a>
+<span id="l9.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l9.13"></a>
+<span id="l9.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l9.14"></a>
+<span id="l9.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l9.15"></a>
+<span id="l9.16" class="plusline">+ * accompanied this code).</span><a href="#l9.16"></a>
+<span id="l9.17" class="plusline">+ *</span><a href="#l9.17"></a>
+<span id="l9.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l9.18"></a>
+<span id="l9.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l9.19"></a>
+<span id="l9.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l9.20"></a>
+<span id="l9.21" class="plusline">+ *</span><a href="#l9.21"></a>
+<span id="l9.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l9.22"></a>
+<span id="l9.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l9.23"></a>
+<span id="l9.24" class="plusline">+ * have any questions.</span><a href="#l9.24"></a>
+<span id="l9.25" class="plusline">+ */</span><a href="#l9.25"></a>
+<span id="l9.26" class="plusline">+</span><a href="#l9.26"></a>
+<span id="l9.27" class="plusline">+/*</span><a href="#l9.27"></a>
+<span id="l9.28" class="plusline">+ * @test</span><a href="#l9.28"></a>
+<span id="l9.29" class="plusline">+ * @bug 6777487</span><a href="#l9.29"></a>
+<span id="l9.30" class="plusline">+ * @summary Tests private field access for CheckedSortedSet</span><a href="#l9.30"></a>
+<span id="l9.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l9.31"></a>
+<span id="l9.32" class="plusline">+ */</span><a href="#l9.32"></a>
+<span id="l9.33" class="plusline">+</span><a href="#l9.33"></a>
+<span id="l9.34" class="plusline">+import java.util.Collections;</span><a href="#l9.34"></a>
+<span id="l9.35" class="plusline">+import java.util.SortedSet;</span><a href="#l9.35"></a>
+<span id="l9.36" class="plusline">+import java.util.TreeSet;</span><a href="#l9.36"></a>
+<span id="l9.37" class="plusline">+</span><a href="#l9.37"></a>
+<span id="l9.38" class="plusline">+public final class TestCheckedSortedSet {</span><a href="#l9.38"></a>
+<span id="l9.39" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l9.39"></a>
+<span id="l9.40" class="plusline">+</span><a href="#l9.40"></a>
+<span id="l9.41" class="plusline">+    public static void main(String[] args) {</span><a href="#l9.41"></a>
+<span id="l9.42" class="plusline">+        SortedSet&lt;String&gt; set = new TreeSet&lt;String&gt;();</span><a href="#l9.42"></a>
+<span id="l9.43" class="plusline">+        TestEncoder.test(</span><a href="#l9.43"></a>
+<span id="l9.44" class="plusline">+                Collections.checkedSortedSet(set, String.class),</span><a href="#l9.44"></a>
+<span id="l9.45" class="plusline">+                new TreeSet() {</span><a href="#l9.45"></a>
+<span id="l9.46" class="plusline">+                    private final Object type = OBJECT;</span><a href="#l9.46"></a>
+<span id="l9.47" class="plusline">+                },</span><a href="#l9.47"></a>
+<span id="l9.48" class="plusline">+                OBJECT</span><a href="#l9.48"></a>
+<span id="l9.49" class="plusline">+        );</span><a href="#l9.49"></a>
+<span id="l9.50" class="plusline">+    }</span><a href="#l9.50"></a>
+<span id="l9.51" class="plusline">+}</span><a href="#l9.51"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l10.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l10.1"></a>
+<span id="l10.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestEncoder.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l10.2"></a>
+<span id="l10.3" class="atline">@@ -0,0 +1,60 @@</span><a href="#l10.3"></a>
+<span id="l10.4" class="plusline">+/*</span><a href="#l10.4"></a>
+<span id="l10.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l10.5"></a>
+<span id="l10.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l10.6"></a>
+<span id="l10.7" class="plusline">+ *</span><a href="#l10.7"></a>
+<span id="l10.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l10.8"></a>
+<span id="l10.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l10.9"></a>
+<span id="l10.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l10.10"></a>
+<span id="l10.11" class="plusline">+ *</span><a href="#l10.11"></a>
+<span id="l10.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l10.12"></a>
+<span id="l10.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l10.13"></a>
+<span id="l10.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l10.14"></a>
+<span id="l10.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l10.15"></a>
+<span id="l10.16" class="plusline">+ * accompanied this code).</span><a href="#l10.16"></a>
+<span id="l10.17" class="plusline">+ *</span><a href="#l10.17"></a>
+<span id="l10.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l10.18"></a>
+<span id="l10.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l10.19"></a>
+<span id="l10.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l10.20"></a>
+<span id="l10.21" class="plusline">+ *</span><a href="#l10.21"></a>
+<span id="l10.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l10.22"></a>
+<span id="l10.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l10.23"></a>
+<span id="l10.24" class="plusline">+ * have any questions.</span><a href="#l10.24"></a>
+<span id="l10.25" class="plusline">+ */</span><a href="#l10.25"></a>
+<span id="l10.26" class="plusline">+</span><a href="#l10.26"></a>
+<span id="l10.27" class="plusline">+import java.beans.Expression;</span><a href="#l10.27"></a>
+<span id="l10.28" class="plusline">+import java.beans.XMLEncoder;</span><a href="#l10.28"></a>
+<span id="l10.29" class="plusline">+</span><a href="#l10.29"></a>
+<span id="l10.30" class="plusline">+final class TestEncoder extends XMLEncoder {</span><a href="#l10.30"></a>
+<span id="l10.31" class="plusline">+    private Expression expression;</span><a href="#l10.31"></a>
+<span id="l10.32" class="plusline">+</span><a href="#l10.32"></a>
+<span id="l10.33" class="plusline">+    private TestEncoder() {</span><a href="#l10.33"></a>
+<span id="l10.34" class="plusline">+        super(System.out);</span><a href="#l10.34"></a>
+<span id="l10.35" class="plusline">+    }</span><a href="#l10.35"></a>
+<span id="l10.36" class="plusline">+</span><a href="#l10.36"></a>
+<span id="l10.37" class="plusline">+    @Override</span><a href="#l10.37"></a>
+<span id="l10.38" class="plusline">+    public void writeExpression(Expression expression) {</span><a href="#l10.38"></a>
+<span id="l10.39" class="plusline">+        if (this.expression == null) {</span><a href="#l10.39"></a>
+<span id="l10.40" class="plusline">+            this.expression = expression;</span><a href="#l10.40"></a>
+<span id="l10.41" class="plusline">+        }</span><a href="#l10.41"></a>
+<span id="l10.42" class="plusline">+        super.writeExpression(expression);</span><a href="#l10.42"></a>
+<span id="l10.43" class="plusline">+    }</span><a href="#l10.43"></a>
+<span id="l10.44" class="plusline">+</span><a href="#l10.44"></a>
+<span id="l10.45" class="plusline">+    public static void test(Object provider, Object object, Object value) {</span><a href="#l10.45"></a>
+<span id="l10.46" class="plusline">+        System.setSecurityManager(new SecurityManager());</span><a href="#l10.46"></a>
+<span id="l10.47" class="plusline">+</span><a href="#l10.47"></a>
+<span id="l10.48" class="plusline">+        TestEncoder encoder = new TestEncoder();</span><a href="#l10.48"></a>
+<span id="l10.49" class="plusline">+        encoder.setPersistenceDelegate(</span><a href="#l10.49"></a>
+<span id="l10.50" class="plusline">+                object.getClass(),</span><a href="#l10.50"></a>
+<span id="l10.51" class="plusline">+                encoder.getPersistenceDelegate(provider.getClass()));</span><a href="#l10.51"></a>
+<span id="l10.52" class="plusline">+        encoder.writeObject(object);</span><a href="#l10.52"></a>
+<span id="l10.53" class="plusline">+        encoder.close();</span><a href="#l10.53"></a>
+<span id="l10.54" class="plusline">+</span><a href="#l10.54"></a>
+<span id="l10.55" class="plusline">+        if (encoder.expression != null) {</span><a href="#l10.55"></a>
+<span id="l10.56" class="plusline">+            for (Object argument : encoder.expression.getArguments()) {</span><a href="#l10.56"></a>
+<span id="l10.57" class="plusline">+                if (value.equals(argument)) {</span><a href="#l10.57"></a>
+<span id="l10.58" class="plusline">+                    throw new Error(&quot;Found private value!&quot;);</span><a href="#l10.58"></a>
+<span id="l10.59" class="plusline">+                }</span><a href="#l10.59"></a>
+<span id="l10.60" class="plusline">+            }</span><a href="#l10.60"></a>
+<span id="l10.61" class="plusline">+        }</span><a href="#l10.61"></a>
+<span id="l10.62" class="plusline">+    }</span><a href="#l10.62"></a>
+<span id="l10.63" class="plusline">+}</span><a href="#l10.63"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l11.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l11.1"></a>
+<span id="l11.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestEnumMap.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l11.2"></a>
+<span id="l11.3" class="atline">@@ -0,0 +1,47 @@</span><a href="#l11.3"></a>
+<span id="l11.4" class="plusline">+/*</span><a href="#l11.4"></a>
+<span id="l11.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l11.5"></a>
+<span id="l11.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l11.6"></a>
+<span id="l11.7" class="plusline">+ *</span><a href="#l11.7"></a>
+<span id="l11.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l11.8"></a>
+<span id="l11.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l11.9"></a>
+<span id="l11.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l11.10"></a>
+<span id="l11.11" class="plusline">+ *</span><a href="#l11.11"></a>
+<span id="l11.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l11.12"></a>
+<span id="l11.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l11.13"></a>
+<span id="l11.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l11.14"></a>
+<span id="l11.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l11.15"></a>
+<span id="l11.16" class="plusline">+ * accompanied this code).</span><a href="#l11.16"></a>
+<span id="l11.17" class="plusline">+ *</span><a href="#l11.17"></a>
+<span id="l11.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l11.18"></a>
+<span id="l11.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l11.19"></a>
+<span id="l11.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l11.20"></a>
+<span id="l11.21" class="plusline">+ *</span><a href="#l11.21"></a>
+<span id="l11.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l11.22"></a>
+<span id="l11.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l11.23"></a>
+<span id="l11.24" class="plusline">+ * have any questions.</span><a href="#l11.24"></a>
+<span id="l11.25" class="plusline">+ */</span><a href="#l11.25"></a>
+<span id="l11.26" class="plusline">+</span><a href="#l11.26"></a>
+<span id="l11.27" class="plusline">+/*</span><a href="#l11.27"></a>
+<span id="l11.28" class="plusline">+ * @test</span><a href="#l11.28"></a>
+<span id="l11.29" class="plusline">+ * @bug 6777487</span><a href="#l11.29"></a>
+<span id="l11.30" class="plusline">+ * @summary Tests private field access for EnumMap</span><a href="#l11.30"></a>
+<span id="l11.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l11.31"></a>
+<span id="l11.32" class="plusline">+ */</span><a href="#l11.32"></a>
+<span id="l11.33" class="plusline">+</span><a href="#l11.33"></a>
+<span id="l11.34" class="plusline">+import java.util.EnumMap;</span><a href="#l11.34"></a>
+<span id="l11.35" class="plusline">+import java.util.HashMap;</span><a href="#l11.35"></a>
+<span id="l11.36" class="plusline">+</span><a href="#l11.36"></a>
+<span id="l11.37" class="plusline">+public final class TestEnumMap {</span><a href="#l11.37"></a>
+<span id="l11.38" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l11.38"></a>
+<span id="l11.39" class="plusline">+</span><a href="#l11.39"></a>
+<span id="l11.40" class="plusline">+    public static void main(String[] args) {</span><a href="#l11.40"></a>
+<span id="l11.41" class="plusline">+        TestEncoder.test(</span><a href="#l11.41"></a>
+<span id="l11.42" class="plusline">+                new EnumMap&lt;Point, String&gt;(Point.class),</span><a href="#l11.42"></a>
+<span id="l11.43" class="plusline">+                new HashMap() {</span><a href="#l11.43"></a>
+<span id="l11.44" class="plusline">+                    private final Object keyType = OBJECT;</span><a href="#l11.44"></a>
+<span id="l11.45" class="plusline">+                },</span><a href="#l11.45"></a>
+<span id="l11.46" class="plusline">+                OBJECT);</span><a href="#l11.46"></a>
+<span id="l11.47" class="plusline">+    }</span><a href="#l11.47"></a>
+<span id="l11.48" class="plusline">+</span><a href="#l11.48"></a>
+<span id="l11.49" class="plusline">+    public enum Point { X, Y, Z }</span><a href="#l11.49"></a>
+<span id="l11.50" class="plusline">+}</span><a href="#l11.50"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l12.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l12.1"></a>
+<span id="l12.2" class="plusline">+++ b/test/java/beans/XMLEncoder/6777487/TestEnumSet.java	Wed Apr 29 20:47:57 2009 +0400</span><a href="#l12.2"></a>
+<span id="l12.3" class="atline">@@ -0,0 +1,47 @@</span><a href="#l12.3"></a>
+<span id="l12.4" class="plusline">+/*</span><a href="#l12.4"></a>
+<span id="l12.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l12.5"></a>
+<span id="l12.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l12.6"></a>
+<span id="l12.7" class="plusline">+ *</span><a href="#l12.7"></a>
+<span id="l12.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l12.8"></a>
+<span id="l12.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l12.9"></a>
+<span id="l12.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l12.10"></a>
+<span id="l12.11" class="plusline">+ *</span><a href="#l12.11"></a>
+<span id="l12.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l12.12"></a>
+<span id="l12.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l12.13"></a>
+<span id="l12.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l12.14"></a>
+<span id="l12.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l12.15"></a>
+<span id="l12.16" class="plusline">+ * accompanied this code).</span><a href="#l12.16"></a>
+<span id="l12.17" class="plusline">+ *</span><a href="#l12.17"></a>
+<span id="l12.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l12.18"></a>
+<span id="l12.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l12.19"></a>
+<span id="l12.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l12.20"></a>
+<span id="l12.21" class="plusline">+ *</span><a href="#l12.21"></a>
+<span id="l12.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l12.22"></a>
+<span id="l12.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l12.23"></a>
+<span id="l12.24" class="plusline">+ * have any questions.</span><a href="#l12.24"></a>
+<span id="l12.25" class="plusline">+ */</span><a href="#l12.25"></a>
+<span id="l12.26" class="plusline">+</span><a href="#l12.26"></a>
+<span id="l12.27" class="plusline">+/*</span><a href="#l12.27"></a>
+<span id="l12.28" class="plusline">+ * @test</span><a href="#l12.28"></a>
+<span id="l12.29" class="plusline">+ * @bug 6777487</span><a href="#l12.29"></a>
+<span id="l12.30" class="plusline">+ * @summary Tests private field access for EnumSet</span><a href="#l12.30"></a>
+<span id="l12.31" class="plusline">+ * @author Sergey Malenkov</span><a href="#l12.31"></a>
+<span id="l12.32" class="plusline">+ */</span><a href="#l12.32"></a>
+<span id="l12.33" class="plusline">+</span><a href="#l12.33"></a>
+<span id="l12.34" class="plusline">+import java.util.EnumSet;</span><a href="#l12.34"></a>
+<span id="l12.35" class="plusline">+import java.util.HashSet;</span><a href="#l12.35"></a>
+<span id="l12.36" class="plusline">+</span><a href="#l12.36"></a>
+<span id="l12.37" class="plusline">+public final class TestEnumSet {</span><a href="#l12.37"></a>
+<span id="l12.38" class="plusline">+    private static final Object OBJECT = new Object();</span><a href="#l12.38"></a>
+<span id="l12.39" class="plusline">+</span><a href="#l12.39"></a>
+<span id="l12.40" class="plusline">+    public static void main(String[] args) {</span><a href="#l12.40"></a>
+<span id="l12.41" class="plusline">+        TestEncoder.test(</span><a href="#l12.41"></a>
+<span id="l12.42" class="plusline">+                EnumSet.noneOf(Point.class),</span><a href="#l12.42"></a>
+<span id="l12.43" class="plusline">+                new HashSet() {</span><a href="#l12.43"></a>
+<span id="l12.44" class="plusline">+                    private final Object elementType = OBJECT;</span><a href="#l12.44"></a>
+<span id="l12.45" class="plusline">+                },</span><a href="#l12.45"></a>
+<span id="l12.46" class="plusline">+                OBJECT);</span><a href="#l12.46"></a>
+<span id="l12.47" class="plusline">+    }</span><a href="#l12.47"></a>
+<span id="l12.48" class="plusline">+</span><a href="#l12.48"></a>
+<span id="l12.49" class="plusline">+    public enum Point { X, Y, Z }</span><a href="#l12.49"></a>
+<span id="l12.50" class="plusline">+}</span><a href="#l12.50"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

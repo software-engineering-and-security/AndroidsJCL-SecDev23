@@ -1,0 +1,1191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: 725d71b428c3</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/725d71b428c3">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/725d71b428c3">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/725d71b428c3">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/725d71b428c3">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/725d71b428c3.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/725d71b428c3.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/725d71b428c3.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48813:725d71b428c3   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8270646: Improved scanning of XML entities
+Reviewed-by: mbalao, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#115;&#101;&#114;&#98;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 19 Jan 2022 01:29:03 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/76e7ac8ee6dd">76e7ac8ee6dd</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/ae8938f8c5fc">ae8938f8c5fc</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/725d71b428c3/jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11DocumentScannerImpl.java">jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11DocumentScannerImpl.java</a> <a href="/jdk8u/monojdk8u/file/725d71b428c3/jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11EntityScanner.java">jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11EntityScanner.java</a> <a href="/jdk8u/monojdk8u/file/725d71b428c3/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityScanner.java">jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityScanner.java</a> <a href="/jdk8u/monojdk8u/file/725d71b428c3/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLScanner.java">jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLScanner.java</a> <a href="/jdk8u/monojdk8u/file/725d71b428c3/jaxp/src/com/sun/org/apache/xerces/internal/util/XMLStringBuffer.java">jaxp/src/com/sun/org/apache/xerces/internal/util/XMLStringBuffer.java</a> <a href="/jdk8u/monojdk8u/file/725d71b428c3/jaxp/src/com/sun/org/apache/xerces/internal/xni/XMLString.java">jaxp/src/com/sun/org/apache/xerces/internal/xni/XMLString.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     6 files changed, 209 insertions(+), 549 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11DocumentScannerImpl.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.56338028169%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.38028169014%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11EntityScanner.java</a></td>
+    <td class="diffstat-total" align="right">210</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:3.94366197183%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:55.2112676056%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityScanner.java</a></td>
+    <td class="diffstat-total" align="right">355</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:31.2676056338%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:68.7323943662%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLScanner.java</a></td>
+    <td class="diffstat-total" align="right">10</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.56338028169%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.25352112676%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">jaxp/src/com/sun/org/apache/xerces/internal/util/XMLStringBuffer.java</a></td>
+    <td class="diffstat-total" align="right">88</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.56338028169%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:24.2253521127%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l6.1">jaxp/src/com/sun/org/apache/xerces/internal/xni/XMLString.java</a></td>
+    <td class="diffstat-total" align="right">81</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:21.9718309859%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.845070422535%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11DocumentScannerImpl.java	Wed Jan 19 01:15:09 2022 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11DocumentScannerImpl.java	Wed Jan 19 01:29:03 2022 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 2016, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 2016, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  */</span><a href="#l1.7"></a>
+<span id="l1.8"> /*</span><a href="#l1.8"></a>
+<span id="l1.9">  * Licensed to the Apache Software Foundation (ASF) under one or more</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -53,7 +53,7 @@</span><a href="#l1.10"></a>
+<span id="l1.11">  * @author Andy Clark, IBM</span><a href="#l1.11"></a>
+<span id="l1.12">  * @author Arnaud  Le Hors, IBM</span><a href="#l1.12"></a>
+<span id="l1.13">  * @author Eric Ye, IBM</span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">- *</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+ * @LastModified: Aug 2021</span><a href="#l1.15"></a>
+<span id="l1.16">  */</span><a href="#l1.16"></a>
+<span id="l1.17"> public class XML11DocumentScannerImpl</span><a href="#l1.17"></a>
+<span id="l1.18">     extends XMLDocumentScannerImpl {</span><a href="#l1.18"></a>
+<span id="l1.19" class="atline">@@ -277,16 +277,6 @@</span><a href="#l1.19"></a>
+<span id="l1.20">                                            + fStringBuffer.toString() + &quot;\&quot;&quot;);</span><a href="#l1.20"></a>
+<span id="l1.21">                     }</span><a href="#l1.21"></a>
+<span id="l1.22">                 }</span><a href="#l1.22"></a>
+<span id="l1.23" class="minusline">-                // note that none of these characters should ever get through</span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-                // XML11EntityScanner.  Not sure why</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-                // this check was originally necessary.  - NG</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-                else if (c == '\n' || c == '\r' || c == 0x85 || c == 0x2028) {</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-                    fEntityScanner.scanChar(null);</span><a href="#l1.27"></a>
+<span id="l1.28" class="minusline">-                    fStringBuffer.append(' ');</span><a href="#l1.28"></a>
+<span id="l1.29" class="minusline">-                    if (entityDepth == fEntityDepth) {</span><a href="#l1.29"></a>
+<span id="l1.30" class="minusline">-                        fStringBuffer2.append('\n');</span><a href="#l1.30"></a>
+<span id="l1.31" class="minusline">-                    }</span><a href="#l1.31"></a>
+<span id="l1.32" class="minusline">-                }</span><a href="#l1.32"></a>
+<span id="l1.33">                 else if (c != -1 &amp;&amp; XMLChar.isHighSurrogate(c)) {</span><a href="#l1.33"></a>
+<span id="l1.34">                     fStringBuffer3.clear();</span><a href="#l1.34"></a>
+<span id="l1.35">                     if (scanSurrogates(fStringBuffer3)) {</span><a href="#l1.35"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11EntityScanner.java	Wed Jan 19 01:15:09 2022 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xerces/internal/impl/XML11EntityScanner.java	Wed Jan 19 01:29:03 2022 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -20,6 +20,7 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> </span><a href="#l2.4"></a>
+<span id="l2.5"> package com.sun.org.apache.xerces.internal.impl;</span><a href="#l2.5"></a>
+<span id="l2.6"> </span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+import static com.sun.org.apache.xerces.internal.impl.Constants.XML_VERSION_1_1;</span><a href="#l2.7"></a>
+<span id="l2.8"> import com.sun.org.apache.xerces.internal.impl.XMLScanner.NameType;</span><a href="#l2.8"></a>
+<span id="l2.9"> import com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;</span><a href="#l2.9"></a>
+<span id="l2.10"> import com.sun.org.apache.xerces.internal.util.XML11Char;</span><a href="#l2.10"></a>
+<span id="l2.11" class="atline">@@ -40,7 +41,7 @@</span><a href="#l2.11"></a>
+<span id="l2.12">  * @author Michael Glavassevich, IBM</span><a href="#l2.12"></a>
+<span id="l2.13">  * @author Neil Graham, IBM</span><a href="#l2.13"></a>
+<span id="l2.14">  *</span><a href="#l2.14"></a>
+<span id="l2.15" class="minusline">- * @LastModified: Apr 2021</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+ * @LastModified: Aug 2021</span><a href="#l2.16"></a>
+<span id="l2.17">  */</span><a href="#l2.17"></a>
+<span id="l2.18"> </span><a href="#l2.18"></a>
+<span id="l2.19"> public class XML11EntityScanner</span><a href="#l2.19"></a>
+<span id="l2.20" class="atline">@@ -116,7 +117,7 @@</span><a href="#l2.20"></a>
+<span id="l2.21">                 load(1, false, false);</span><a href="#l2.21"></a>
+<span id="l2.22">                 offset = 0;</span><a href="#l2.22"></a>
+<span id="l2.23">             }</span><a href="#l2.23"></a>
+<span id="l2.24" class="minusline">-            if (c == '\r' &amp;&amp; external) {</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+            if (c == '\r' &amp;&amp; external &amp;&amp; fCurrentEntity.position &lt; fCurrentEntity.count) {</span><a href="#l2.25"></a>
+<span id="l2.26">                 int cc = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l2.26"></a>
+<span id="l2.27">                 if (cc != '\n' &amp;&amp; cc != 0x85) {</span><a href="#l2.27"></a>
+<span id="l2.28">                     fCurrentEntity.position--;</span><a href="#l2.28"></a>
+<span id="l2.29" class="atline">@@ -761,71 +762,12 @@</span><a href="#l2.29"></a>
+<span id="l2.30">         }</span><a href="#l2.30"></a>
+<span id="l2.31"> </span><a href="#l2.31"></a>
+<span id="l2.32">         // normalize newlines</span><a href="#l2.32"></a>
+<span id="l2.33" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l2.33"></a>
+<span id="l2.34" class="minusline">-        int c = fCurrentEntity.ch[offset];</span><a href="#l2.34"></a>
+<span id="l2.35" class="minusline">-        int newlines = 0;</span><a href="#l2.35"></a>
+<span id="l2.36" class="minusline">-        boolean counted = false;</span><a href="#l2.36"></a>
+<span id="l2.37" class="minusline">-        boolean external = fCurrentEntity.isExternal();</span><a href="#l2.37"></a>
+<span id="l2.38" class="minusline">-        if (c == '\n' || ((c == '\r' || c == 0x85 || c == 0x2028) &amp;&amp; external)) {</span><a href="#l2.38"></a>
+<span id="l2.39" class="minusline">-            do {</span><a href="#l2.39"></a>
+<span id="l2.40" class="minusline">-                c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l2.40"></a>
+<span id="l2.41" class="minusline">-                if ((c == '\r' ) &amp;&amp; external) {</span><a href="#l2.41"></a>
+<span id="l2.42" class="minusline">-                    newlines++;</span><a href="#l2.42"></a>
+<span id="l2.43" class="minusline">-                    fCurrentEntity.lineNumber++;</span><a href="#l2.43"></a>
+<span id="l2.44" class="minusline">-                    fCurrentEntity.columnNumber = 1;</span><a href="#l2.44"></a>
+<span id="l2.45" class="minusline">-                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l2.45"></a>
+<span id="l2.46" class="minusline">-                        checkEntityLimit(null, fCurrentEntity, offset, newlines);</span><a href="#l2.46"></a>
+<span id="l2.47" class="minusline">-                        offset = 0;</span><a href="#l2.47"></a>
+<span id="l2.48" class="minusline">-                        fCurrentEntity.baseCharOffset += (fCurrentEntity.position - fCurrentEntity.startPosition);</span><a href="#l2.48"></a>
+<span id="l2.49" class="minusline">-                        fCurrentEntity.position = newlines;</span><a href="#l2.49"></a>
+<span id="l2.50" class="minusline">-                        fCurrentEntity.startPosition = newlines;</span><a href="#l2.50"></a>
+<span id="l2.51" class="minusline">-                        if (load(newlines, false, true)) {</span><a href="#l2.51"></a>
+<span id="l2.52" class="minusline">-                            counted = true;</span><a href="#l2.52"></a>
+<span id="l2.53" class="minusline">-                            break;</span><a href="#l2.53"></a>
+<span id="l2.54" class="minusline">-                        }</span><a href="#l2.54"></a>
+<span id="l2.55" class="minusline">-                    }</span><a href="#l2.55"></a>
+<span id="l2.56" class="minusline">-                    int cc = fCurrentEntity.ch[fCurrentEntity.position];</span><a href="#l2.56"></a>
+<span id="l2.57" class="minusline">-                    if (cc == '\n' || cc == 0x85) {</span><a href="#l2.57"></a>
+<span id="l2.58" class="minusline">-                        fCurrentEntity.position++;</span><a href="#l2.58"></a>
+<span id="l2.59" class="minusline">-                        offset++;</span><a href="#l2.59"></a>
+<span id="l2.60" class="minusline">-                    }</span><a href="#l2.60"></a>
+<span id="l2.61" class="minusline">-                    /*** NEWLINE NORMALIZATION ***/</span><a href="#l2.61"></a>
+<span id="l2.62" class="minusline">-                    else {</span><a href="#l2.62"></a>
+<span id="l2.63" class="minusline">-                        newlines++;</span><a href="#l2.63"></a>
+<span id="l2.64" class="minusline">-                    }</span><a href="#l2.64"></a>
+<span id="l2.65" class="minusline">-                }</span><a href="#l2.65"></a>
+<span id="l2.66" class="minusline">-                else if (c == '\n' || ((c == 0x85 || c == 0x2028) &amp;&amp; external)) {</span><a href="#l2.66"></a>
+<span id="l2.67" class="minusline">-                    newlines++;</span><a href="#l2.67"></a>
+<span id="l2.68" class="minusline">-                    fCurrentEntity.lineNumber++;</span><a href="#l2.68"></a>
+<span id="l2.69" class="minusline">-                    fCurrentEntity.columnNumber = 1;</span><a href="#l2.69"></a>
+<span id="l2.70" class="minusline">-                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l2.70"></a>
+<span id="l2.71" class="minusline">-                        checkEntityLimit(null, fCurrentEntity, offset, newlines);</span><a href="#l2.71"></a>
+<span id="l2.72" class="minusline">-                        offset = 0;</span><a href="#l2.72"></a>
+<span id="l2.73" class="minusline">-                        fCurrentEntity.baseCharOffset += (fCurrentEntity.position - fCurrentEntity.startPosition);</span><a href="#l2.73"></a>
+<span id="l2.74" class="minusline">-                        fCurrentEntity.position = newlines;</span><a href="#l2.74"></a>
+<span id="l2.75" class="minusline">-                        fCurrentEntity.startPosition = newlines;</span><a href="#l2.75"></a>
+<span id="l2.76" class="minusline">-                        if (load(newlines, false, true)) {</span><a href="#l2.76"></a>
+<span id="l2.77" class="minusline">-                            counted = true;</span><a href="#l2.77"></a>
+<span id="l2.78" class="minusline">-                            break;</span><a href="#l2.78"></a>
+<span id="l2.79" class="minusline">-                        }</span><a href="#l2.79"></a>
+<span id="l2.80" class="minusline">-                    }</span><a href="#l2.80"></a>
+<span id="l2.81" class="minusline">-                }</span><a href="#l2.81"></a>
+<span id="l2.82" class="minusline">-                else {</span><a href="#l2.82"></a>
+<span id="l2.83" class="minusline">-                    fCurrentEntity.position--;</span><a href="#l2.83"></a>
+<span id="l2.84" class="minusline">-                    break;</span><a href="#l2.84"></a>
+<span id="l2.85" class="minusline">-                }</span><a href="#l2.85"></a>
+<span id="l2.86" class="minusline">-            } while (fCurrentEntity.position &lt; fCurrentEntity.count - 1);</span><a href="#l2.86"></a>
+<span id="l2.87" class="minusline">-            for (int i = offset; i &lt; fCurrentEntity.position; i++) {</span><a href="#l2.87"></a>
+<span id="l2.88" class="minusline">-                fCurrentEntity.ch[i] = '\n';</span><a href="#l2.88"></a>
+<span id="l2.89" class="minusline">-            }</span><a href="#l2.89"></a>
+<span id="l2.90" class="minusline">-            int length = fCurrentEntity.position - offset;</span><a href="#l2.90"></a>
+<span id="l2.91" class="minusline">-            if (fCurrentEntity.position == fCurrentEntity.count - 1) {</span><a href="#l2.91"></a>
+<span id="l2.92" class="minusline">-                checkEntityLimit(null, fCurrentEntity, offset, length);</span><a href="#l2.92"></a>
+<span id="l2.93" class="minusline">-                content.setValues(fCurrentEntity.ch, offset, length);</span><a href="#l2.93"></a>
+<span id="l2.94" class="minusline">-                return -1;</span><a href="#l2.94"></a>
+<span id="l2.95" class="minusline">-            }</span><a href="#l2.95"></a>
+<span id="l2.96" class="plusline">+        if (normalizeNewlines(XML_VERSION_1_1, content, false, false, null)) {</span><a href="#l2.96"></a>
+<span id="l2.97" class="plusline">+            return -1;</span><a href="#l2.97"></a>
+<span id="l2.98">         }</span><a href="#l2.98"></a>
+<span id="l2.99"> </span><a href="#l2.99"></a>
+<span id="l2.100" class="plusline">+        int c;</span><a href="#l2.100"></a>
+<span id="l2.101" class="plusline">+        boolean external = fCurrentEntity.isExternal();</span><a href="#l2.101"></a>
+<span id="l2.102">         // inner loop, scanning for content</span><a href="#l2.102"></a>
+<span id="l2.103">         if (external) {</span><a href="#l2.103"></a>
+<span id="l2.104">             while (fCurrentEntity.position &lt; fCurrentEntity.count) {</span><a href="#l2.104"></a>
+<span id="l2.105" class="atline">@@ -913,65 +855,12 @@</span><a href="#l2.105"></a>
+<span id="l2.106">         }</span><a href="#l2.106"></a>
+<span id="l2.107"> </span><a href="#l2.107"></a>
+<span id="l2.108">         // normalize newlines</span><a href="#l2.108"></a>
+<span id="l2.109" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l2.109"></a>
+<span id="l2.110" class="minusline">-        int c = fCurrentEntity.ch[offset];</span><a href="#l2.110"></a>
+<span id="l2.111" class="minusline">-        int newlines = 0;</span><a href="#l2.111"></a>
+<span id="l2.112" class="minusline">-        boolean external = fCurrentEntity.isExternal();</span><a href="#l2.112"></a>
+<span id="l2.113" class="minusline">-        if (c == '\n' || ((c == '\r' || c == 0x85 || c == 0x2028) &amp;&amp; external)) {</span><a href="#l2.113"></a>
+<span id="l2.114" class="minusline">-            do {</span><a href="#l2.114"></a>
+<span id="l2.115" class="minusline">-                c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l2.115"></a>
+<span id="l2.116" class="minusline">-                if ((c == '\r' ) &amp;&amp; external) {</span><a href="#l2.116"></a>
+<span id="l2.117" class="minusline">-                    newlines++;</span><a href="#l2.117"></a>
+<span id="l2.118" class="minusline">-                    fCurrentEntity.lineNumber++;</span><a href="#l2.118"></a>
+<span id="l2.119" class="minusline">-                    fCurrentEntity.columnNumber = 1;</span><a href="#l2.119"></a>
+<span id="l2.120" class="minusline">-                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l2.120"></a>
+<span id="l2.121" class="minusline">-                        offset = 0;</span><a href="#l2.121"></a>
+<span id="l2.122" class="minusline">-                        fCurrentEntity.baseCharOffset += (fCurrentEntity.position - fCurrentEntity.startPosition);</span><a href="#l2.122"></a>
+<span id="l2.123" class="minusline">-                        fCurrentEntity.position = newlines;</span><a href="#l2.123"></a>
+<span id="l2.124" class="minusline">-                        fCurrentEntity.startPosition = newlines;</span><a href="#l2.124"></a>
+<span id="l2.125" class="minusline">-                        if (load(newlines, false, true)) {</span><a href="#l2.125"></a>
+<span id="l2.126" class="minusline">-                            break;</span><a href="#l2.126"></a>
+<span id="l2.127" class="minusline">-                        }</span><a href="#l2.127"></a>
+<span id="l2.128" class="minusline">-                    }</span><a href="#l2.128"></a>
+<span id="l2.129" class="minusline">-                    int cc = fCurrentEntity.ch[fCurrentEntity.position];</span><a href="#l2.129"></a>
+<span id="l2.130" class="minusline">-                    if (cc == '\n' || cc == 0x85) {</span><a href="#l2.130"></a>
+<span id="l2.131" class="minusline">-                        fCurrentEntity.position++;</span><a href="#l2.131"></a>
+<span id="l2.132" class="minusline">-                        offset++;</span><a href="#l2.132"></a>
+<span id="l2.133" class="minusline">-                    }</span><a href="#l2.133"></a>
+<span id="l2.134" class="minusline">-                    /*** NEWLINE NORMALIZATION ***/</span><a href="#l2.134"></a>
+<span id="l2.135" class="minusline">-                    else {</span><a href="#l2.135"></a>
+<span id="l2.136" class="minusline">-                        newlines++;</span><a href="#l2.136"></a>
+<span id="l2.137" class="minusline">-                    }</span><a href="#l2.137"></a>
+<span id="l2.138" class="minusline">-                }</span><a href="#l2.138"></a>
+<span id="l2.139" class="minusline">-                else if (c == '\n' || ((c == 0x85 || c == 0x2028) &amp;&amp; external)) {</span><a href="#l2.139"></a>
+<span id="l2.140" class="minusline">-                    newlines++;</span><a href="#l2.140"></a>
+<span id="l2.141" class="minusline">-                    fCurrentEntity.lineNumber++;</span><a href="#l2.141"></a>
+<span id="l2.142" class="minusline">-                    fCurrentEntity.columnNumber = 1;</span><a href="#l2.142"></a>
+<span id="l2.143" class="minusline">-                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l2.143"></a>
+<span id="l2.144" class="minusline">-                        offset = 0;</span><a href="#l2.144"></a>
+<span id="l2.145" class="minusline">-                        fCurrentEntity.baseCharOffset += (fCurrentEntity.position - fCurrentEntity.startPosition);</span><a href="#l2.145"></a>
+<span id="l2.146" class="minusline">-                        fCurrentEntity.position = newlines;</span><a href="#l2.146"></a>
+<span id="l2.147" class="minusline">-                        fCurrentEntity.startPosition = newlines;</span><a href="#l2.147"></a>
+<span id="l2.148" class="minusline">-                        if (load(newlines, false, true)) {</span><a href="#l2.148"></a>
+<span id="l2.149" class="minusline">-                            break;</span><a href="#l2.149"></a>
+<span id="l2.150" class="minusline">-                        }</span><a href="#l2.150"></a>
+<span id="l2.151" class="minusline">-                    }</span><a href="#l2.151"></a>
+<span id="l2.152" class="minusline">-                }</span><a href="#l2.152"></a>
+<span id="l2.153" class="minusline">-                else {</span><a href="#l2.153"></a>
+<span id="l2.154" class="minusline">-                    fCurrentEntity.position--;</span><a href="#l2.154"></a>
+<span id="l2.155" class="minusline">-                    break;</span><a href="#l2.155"></a>
+<span id="l2.156" class="minusline">-                }</span><a href="#l2.156"></a>
+<span id="l2.157" class="minusline">-            } while (fCurrentEntity.position &lt; fCurrentEntity.count - 1);</span><a href="#l2.157"></a>
+<span id="l2.158" class="minusline">-            for (int i = offset; i &lt; fCurrentEntity.position; i++) {</span><a href="#l2.158"></a>
+<span id="l2.159" class="minusline">-                fCurrentEntity.ch[i] = '\n';</span><a href="#l2.159"></a>
+<span id="l2.160" class="minusline">-            }</span><a href="#l2.160"></a>
+<span id="l2.161" class="minusline">-            int length = fCurrentEntity.position - offset;</span><a href="#l2.161"></a>
+<span id="l2.162" class="minusline">-            if (fCurrentEntity.position == fCurrentEntity.count - 1) {</span><a href="#l2.162"></a>
+<span id="l2.163" class="minusline">-                content.setValues(fCurrentEntity.ch, offset, length);</span><a href="#l2.163"></a>
+<span id="l2.164" class="minusline">-                return -1;</span><a href="#l2.164"></a>
+<span id="l2.165" class="minusline">-            }</span><a href="#l2.165"></a>
+<span id="l2.166" class="plusline">+        if (normalizeNewlines(XML_VERSION_1_1, content, false, true, null)) {</span><a href="#l2.166"></a>
+<span id="l2.167" class="plusline">+            return -1;</span><a href="#l2.167"></a>
+<span id="l2.168">         }</span><a href="#l2.168"></a>
+<span id="l2.169"> </span><a href="#l2.169"></a>
+<span id="l2.170" class="plusline">+        int c;</span><a href="#l2.170"></a>
+<span id="l2.171" class="plusline">+        boolean external = fCurrentEntity.isExternal();</span><a href="#l2.171"></a>
+<span id="l2.172">         // scan literal value</span><a href="#l2.172"></a>
+<span id="l2.173">         if (external) {</span><a href="#l2.173"></a>
+<span id="l2.174">             while (fCurrentEntity.position &lt; fCurrentEntity.count) {</span><a href="#l2.174"></a>
+<span id="l2.175" class="atline">@@ -1093,66 +982,11 @@</span><a href="#l2.175"></a>
+<span id="l2.176">             }</span><a href="#l2.176"></a>
+<span id="l2.177"> </span><a href="#l2.177"></a>
+<span id="l2.178">             // normalize newlines</span><a href="#l2.178"></a>
+<span id="l2.179" class="minusline">-            int offset = fCurrentEntity.position;</span><a href="#l2.179"></a>
+<span id="l2.180" class="minusline">-            int c = fCurrentEntity.ch[offset];</span><a href="#l2.180"></a>
+<span id="l2.181" class="minusline">-            int newlines = 0;</span><a href="#l2.181"></a>
+<span id="l2.182" class="minusline">-            if (c == '\n' || ((c == '\r' || c == 0x85 || c == 0x2028) &amp;&amp; external)) {</span><a href="#l2.182"></a>
+<span id="l2.183" class="minusline">-                do {</span><a href="#l2.183"></a>
+<span id="l2.184" class="minusline">-                    c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l2.184"></a>
+<span id="l2.185" class="minusline">-                    if ((c == '\r' ) &amp;&amp; external) {</span><a href="#l2.185"></a>
+<span id="l2.186" class="minusline">-                        newlines++;</span><a href="#l2.186"></a>
+<span id="l2.187" class="minusline">-                        fCurrentEntity.lineNumber++;</span><a href="#l2.187"></a>
+<span id="l2.188" class="minusline">-                        fCurrentEntity.columnNumber = 1;</span><a href="#l2.188"></a>
+<span id="l2.189" class="minusline">-                        if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l2.189"></a>
+<span id="l2.190" class="minusline">-                            offset = 0;</span><a href="#l2.190"></a>
+<span id="l2.191" class="minusline">-                            fCurrentEntity.baseCharOffset += (fCurrentEntity.position - fCurrentEntity.startPosition);</span><a href="#l2.191"></a>
+<span id="l2.192" class="minusline">-                            fCurrentEntity.position = newlines;</span><a href="#l2.192"></a>
+<span id="l2.193" class="minusline">-                            fCurrentEntity.startPosition = newlines;</span><a href="#l2.193"></a>
+<span id="l2.194" class="minusline">-                            if (load(newlines, false, true)) {</span><a href="#l2.194"></a>
+<span id="l2.195" class="minusline">-                                break;</span><a href="#l2.195"></a>
+<span id="l2.196" class="minusline">-                            }</span><a href="#l2.196"></a>
+<span id="l2.197" class="minusline">-                        }</span><a href="#l2.197"></a>
+<span id="l2.198" class="minusline">-                        int cc = fCurrentEntity.ch[fCurrentEntity.position];</span><a href="#l2.198"></a>
+<span id="l2.199" class="minusline">-                        if (cc == '\n' || cc == 0x85) {</span><a href="#l2.199"></a>
+<span id="l2.200" class="minusline">-                            fCurrentEntity.position++;</span><a href="#l2.200"></a>
+<span id="l2.201" class="minusline">-                            offset++;</span><a href="#l2.201"></a>
+<span id="l2.202" class="minusline">-                        }</span><a href="#l2.202"></a>
+<span id="l2.203" class="minusline">-                        /*** NEWLINE NORMALIZATION ***/</span><a href="#l2.203"></a>
+<span id="l2.204" class="minusline">-                        else {</span><a href="#l2.204"></a>
+<span id="l2.205" class="minusline">-                            newlines++;</span><a href="#l2.205"></a>
+<span id="l2.206" class="minusline">-                        }</span><a href="#l2.206"></a>
+<span id="l2.207" class="minusline">-                    }</span><a href="#l2.207"></a>
+<span id="l2.208" class="minusline">-                    else if (c == '\n' || ((c == 0x85 || c == 0x2028) &amp;&amp; external)) {</span><a href="#l2.208"></a>
+<span id="l2.209" class="minusline">-                        newlines++;</span><a href="#l2.209"></a>
+<span id="l2.210" class="minusline">-                        fCurrentEntity.lineNumber++;</span><a href="#l2.210"></a>
+<span id="l2.211" class="minusline">-                        fCurrentEntity.columnNumber = 1;</span><a href="#l2.211"></a>
+<span id="l2.212" class="minusline">-                        if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l2.212"></a>
+<span id="l2.213" class="minusline">-                            offset = 0;</span><a href="#l2.213"></a>
+<span id="l2.214" class="minusline">-                            fCurrentEntity.baseCharOffset += (fCurrentEntity.position - fCurrentEntity.startPosition);</span><a href="#l2.214"></a>
+<span id="l2.215" class="minusline">-                            fCurrentEntity.position = newlines;</span><a href="#l2.215"></a>
+<span id="l2.216" class="minusline">-                            fCurrentEntity.startPosition = newlines;</span><a href="#l2.216"></a>
+<span id="l2.217" class="minusline">-                            fCurrentEntity.count = newlines;</span><a href="#l2.217"></a>
+<span id="l2.218" class="minusline">-                            if (load(newlines, false, true)) {</span><a href="#l2.218"></a>
+<span id="l2.219" class="minusline">-                                break;</span><a href="#l2.219"></a>
+<span id="l2.220" class="minusline">-                            }</span><a href="#l2.220"></a>
+<span id="l2.221" class="minusline">-                        }</span><a href="#l2.221"></a>
+<span id="l2.222" class="minusline">-                    }</span><a href="#l2.222"></a>
+<span id="l2.223" class="minusline">-                    else {</span><a href="#l2.223"></a>
+<span id="l2.224" class="minusline">-                        fCurrentEntity.position--;</span><a href="#l2.224"></a>
+<span id="l2.225" class="minusline">-                        break;</span><a href="#l2.225"></a>
+<span id="l2.226" class="minusline">-                    }</span><a href="#l2.226"></a>
+<span id="l2.227" class="minusline">-                } while (fCurrentEntity.position &lt; fCurrentEntity.count - 1);</span><a href="#l2.227"></a>
+<span id="l2.228" class="minusline">-                for (int i = offset; i &lt; fCurrentEntity.position; i++) {</span><a href="#l2.228"></a>
+<span id="l2.229" class="minusline">-                    fCurrentEntity.ch[i] = '\n';</span><a href="#l2.229"></a>
+<span id="l2.230" class="minusline">-                }</span><a href="#l2.230"></a>
+<span id="l2.231" class="minusline">-                int length = fCurrentEntity.position - offset;</span><a href="#l2.231"></a>
+<span id="l2.232" class="minusline">-                if (fCurrentEntity.position == fCurrentEntity.count - 1) {</span><a href="#l2.232"></a>
+<span id="l2.233" class="minusline">-                    checkEntityLimit(NameType.COMMENT, fCurrentEntity, offset, length);</span><a href="#l2.233"></a>
+<span id="l2.234" class="minusline">-                    buffer.append(fCurrentEntity.ch, offset, length);</span><a href="#l2.234"></a>
+<span id="l2.235" class="minusline">-                    return true;</span><a href="#l2.235"></a>
+<span id="l2.236" class="minusline">-                }</span><a href="#l2.236"></a>
+<span id="l2.237" class="plusline">+            if (normalizeNewlines(XML_VERSION_1_1, buffer, true, false, NameType.COMMENT)) {</span><a href="#l2.237"></a>
+<span id="l2.238" class="plusline">+                return true;</span><a href="#l2.238"></a>
+<span id="l2.239">             }</span><a href="#l2.239"></a>
+<span id="l2.240"> </span><a href="#l2.240"></a>
+<span id="l2.241" class="plusline">+            int c;</span><a href="#l2.241"></a>
+<span id="l2.242">             // iterate over buffer looking for delimiter</span><a href="#l2.242"></a>
+<span id="l2.243">             if (external) {</span><a href="#l2.243"></a>
+<span id="l2.244">                 OUTER: while (fCurrentEntity.position &lt; fCurrentEntity.count) {</span><a href="#l2.244"></a>
+<span id="l2.245" class="atline">@@ -1286,22 +1120,6 @@</span><a href="#l2.245"></a>
+<span id="l2.246">             checkEntityLimit(nt, fCurrentEntity, offset, fCurrentEntity.position - offset);</span><a href="#l2.246"></a>
+<span id="l2.247">             return true;</span><a href="#l2.247"></a>
+<span id="l2.248">         }</span><a href="#l2.248"></a>
+<span id="l2.249" class="minusline">-        else if (c == '\n' &amp;&amp; (cc == '\r' ) &amp;&amp; fCurrentEntity.isExternal()) {</span><a href="#l2.249"></a>
+<span id="l2.250" class="minusline">-            // handle newlines</span><a href="#l2.250"></a>
+<span id="l2.251" class="minusline">-            if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l2.251"></a>
+<span id="l2.252" class="minusline">-                invokeListeners(1);</span><a href="#l2.252"></a>
+<span id="l2.253" class="minusline">-                fCurrentEntity.ch[0] = (char)cc;</span><a href="#l2.253"></a>
+<span id="l2.254" class="minusline">-                load(1, false, false);</span><a href="#l2.254"></a>
+<span id="l2.255" class="minusline">-            }</span><a href="#l2.255"></a>
+<span id="l2.256" class="minusline">-            int ccc = fCurrentEntity.ch[++fCurrentEntity.position];</span><a href="#l2.256"></a>
+<span id="l2.257" class="minusline">-            if (ccc == '\n' || ccc == 0x85) {</span><a href="#l2.257"></a>
+<span id="l2.258" class="minusline">-                fCurrentEntity.position++;</span><a href="#l2.258"></a>
+<span id="l2.259" class="minusline">-            }</span><a href="#l2.259"></a>
+<span id="l2.260" class="minusline">-            fCurrentEntity.lineNumber++;</span><a href="#l2.260"></a>
+<span id="l2.261" class="minusline">-            fCurrentEntity.columnNumber = 1;</span><a href="#l2.261"></a>
+<span id="l2.262" class="minusline">-            checkEntityLimit(nt, fCurrentEntity, offset, fCurrentEntity.position - offset);</span><a href="#l2.262"></a>
+<span id="l2.263" class="minusline">-            return true;</span><a href="#l2.263"></a>
+<span id="l2.264" class="minusline">-        }</span><a href="#l2.264"></a>
+<span id="l2.265"> </span><a href="#l2.265"></a>
+<span id="l2.266">         // character was not skipped</span><a href="#l2.266"></a>
+<span id="l2.267">         return false;</span><a href="#l2.267"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityScanner.java	Wed Jan 19 01:15:09 2022 +0000</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityScanner.java	Wed Jan 19 01:29:03 2022 +0000</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -21,6 +21,8 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> package com.sun.org.apache.xerces.internal.impl;</span><a href="#l3.4"></a>
+<span id="l3.5"> </span><a href="#l3.5"></a>
+<span id="l3.6"> </span><a href="#l3.6"></a>
+<span id="l3.7" class="plusline">+import static com.sun.org.apache.xerces.internal.impl.Constants.XML_VERSION_1_0;</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+import static com.sun.org.apache.xerces.internal.impl.Constants.XML_VERSION_1_1;</span><a href="#l3.8"></a>
+<span id="l3.9"> import com.sun.org.apache.xerces.internal.impl.XMLScanner.NameType;</span><a href="#l3.9"></a>
+<span id="l3.10"> import com.sun.org.apache.xerces.internal.impl.io.ASCIIReader;</span><a href="#l3.10"></a>
+<span id="l3.11"> import com.sun.org.apache.xerces.internal.impl.io.UCSReader;</span><a href="#l3.11"></a>
+<span id="l3.12" class="atline">@@ -55,7 +57,7 @@</span><a href="#l3.12"></a>
+<span id="l3.13">  * @author Arnaud  Le Hors, IBM</span><a href="#l3.13"></a>
+<span id="l3.14">  * @author K.Venugopal Sun Microsystems</span><a href="#l3.14"></a>
+<span id="l3.15">  *</span><a href="#l3.15"></a>
+<span id="l3.16" class="minusline">- * @LastModified: Apr 2021</span><a href="#l3.16"></a>
+<span id="l3.17" class="plusline">+ * @LastModified: Aug 2021</span><a href="#l3.17"></a>
+<span id="l3.18">  */</span><a href="#l3.18"></a>
+<span id="l3.19"> public class XMLEntityScanner implements XMLLocator  {</span><a href="#l3.19"></a>
+<span id="l3.20"> </span><a href="#l3.20"></a>
+<span id="l3.21" class="atline">@@ -149,6 +151,15 @@</span><a href="#l3.21"></a>
+<span id="l3.22">     // indicates that the operation is for detecting XML version</span><a href="#l3.22"></a>
+<span id="l3.23">     boolean detectingVersion = false;</span><a href="#l3.23"></a>
+<span id="l3.24"> </span><a href="#l3.24"></a>
+<span id="l3.25" class="plusline">+    // offset of the current cursor position</span><a href="#l3.25"></a>
+<span id="l3.26" class="plusline">+    int offset = 0;</span><a href="#l3.26"></a>
+<span id="l3.27" class="plusline">+</span><a href="#l3.27"></a>
+<span id="l3.28" class="plusline">+    // number of newlines in the current process</span><a href="#l3.28"></a>
+<span id="l3.29" class="plusline">+    int newlines = 0;</span><a href="#l3.29"></a>
+<span id="l3.30" class="plusline">+</span><a href="#l3.30"></a>
+<span id="l3.31" class="plusline">+    // indicating whether the content has been counted towards limit</span><a href="#l3.31"></a>
+<span id="l3.32" class="plusline">+    boolean counted = false;</span><a href="#l3.32"></a>
+<span id="l3.33" class="plusline">+</span><a href="#l3.33"></a>
+<span id="l3.34">     //</span><a href="#l3.34"></a>
+<span id="l3.35">     // Constructors</span><a href="#l3.35"></a>
+<span id="l3.36">     //</span><a href="#l3.36"></a>
+<span id="l3.37" class="atline">@@ -553,7 +564,7 @@</span><a href="#l3.37"></a>
+<span id="l3.38">         }</span><a href="#l3.38"></a>
+<span id="l3.39"> </span><a href="#l3.39"></a>
+<span id="l3.40">         // scan character</span><a href="#l3.40"></a>
+<span id="l3.41" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l3.41"></a>
+<span id="l3.42" class="plusline">+        offset = fCurrentEntity.position;</span><a href="#l3.42"></a>
+<span id="l3.43">         int c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l3.43"></a>
+<span id="l3.44">         if (c == '\n' || (c == '\r' &amp;&amp; isExternal)) {</span><a href="#l3.44"></a>
+<span id="l3.45">             fCurrentEntity.lineNumber++;</span><a href="#l3.45"></a>
+<span id="l3.46" class="atline">@@ -561,10 +572,10 @@</span><a href="#l3.46"></a>
+<span id="l3.47">             if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.47"></a>
+<span id="l3.48">                 invokeListeners(1);</span><a href="#l3.48"></a>
+<span id="l3.49">                 fCurrentEntity.ch[0] = (char)c;</span><a href="#l3.49"></a>
+<span id="l3.50" class="minusline">-                load(1, false, false);</span><a href="#l3.50"></a>
+<span id="l3.51" class="plusline">+                load(1, true, false);</span><a href="#l3.51"></a>
+<span id="l3.52">                 offset = 0;</span><a href="#l3.52"></a>
+<span id="l3.53">             }</span><a href="#l3.53"></a>
+<span id="l3.54" class="minusline">-            if (c == '\r' &amp;&amp; isExternal) {</span><a href="#l3.54"></a>
+<span id="l3.55" class="plusline">+            if (c == '\r' &amp;&amp; isExternal &amp;&amp; fCurrentEntity.position &lt; fCurrentEntity.count) {</span><a href="#l3.55"></a>
+<span id="l3.56">                 if (fCurrentEntity.ch[fCurrentEntity.position++] != '\n') {</span><a href="#l3.56"></a>
+<span id="l3.57">                     fCurrentEntity.position--;</span><a href="#l3.57"></a>
+<span id="l3.58">                 }</span><a href="#l3.58"></a>
+<span id="l3.59" class="atline">@@ -614,7 +625,7 @@</span><a href="#l3.59"></a>
+<span id="l3.60">         }</span><a href="#l3.60"></a>
+<span id="l3.61"> </span><a href="#l3.61"></a>
+<span id="l3.62">         // scan nmtoken</span><a href="#l3.62"></a>
+<span id="l3.63" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l3.63"></a>
+<span id="l3.64" class="plusline">+        offset = fCurrentEntity.position;</span><a href="#l3.64"></a>
+<span id="l3.65">         boolean vc = false;</span><a href="#l3.65"></a>
+<span id="l3.66">         char c;</span><a href="#l3.66"></a>
+<span id="l3.67">         while (true){</span><a href="#l3.67"></a>
+<span id="l3.68" class="atline">@@ -695,7 +706,7 @@</span><a href="#l3.68"></a>
+<span id="l3.69">         }</span><a href="#l3.69"></a>
+<span id="l3.70"> </span><a href="#l3.70"></a>
+<span id="l3.71">         // scan name</span><a href="#l3.71"></a>
+<span id="l3.72" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l3.72"></a>
+<span id="l3.73" class="plusline">+        offset = fCurrentEntity.position;</span><a href="#l3.73"></a>
+<span id="l3.74">         int length;</span><a href="#l3.74"></a>
+<span id="l3.75">         if (XMLChar.isNameStart(fCurrentEntity.ch[offset])) {</span><a href="#l3.75"></a>
+<span id="l3.76">             if (++fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.76"></a>
+<span id="l3.77" class="atline">@@ -788,7 +799,7 @@</span><a href="#l3.77"></a>
+<span id="l3.78">         }</span><a href="#l3.78"></a>
+<span id="l3.79"> </span><a href="#l3.79"></a>
+<span id="l3.80">         // scan qualified name</span><a href="#l3.80"></a>
+<span id="l3.81" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l3.81"></a>
+<span id="l3.82" class="plusline">+        offset = fCurrentEntity.position;</span><a href="#l3.82"></a>
+<span id="l3.83"> </span><a href="#l3.83"></a>
+<span id="l3.84">         //making a check if if the specified character is a valid name start character</span><a href="#l3.84"></a>
+<span id="l3.85">         //as defined by production [5] in the XML 1.0 specification.</span><a href="#l3.85"></a>
+<span id="l3.86" class="atline">@@ -1043,81 +1054,11 @@</span><a href="#l3.86"></a>
+<span id="l3.87">         }</span><a href="#l3.87"></a>
+<span id="l3.88"> </span><a href="#l3.88"></a>
+<span id="l3.89">         // normalize newlines</span><a href="#l3.89"></a>
+<span id="l3.90" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l3.90"></a>
+<span id="l3.91" class="minusline">-        int c = fCurrentEntity.ch[offset];</span><a href="#l3.91"></a>
+<span id="l3.92" class="minusline">-        int newlines = 0;</span><a href="#l3.92"></a>
+<span id="l3.93" class="minusline">-        boolean counted = false;</span><a href="#l3.93"></a>
+<span id="l3.94" class="minusline">-        if (c == '\n' || (c == '\r' &amp;&amp; isExternal)) {</span><a href="#l3.94"></a>
+<span id="l3.95" class="minusline">-            if (DEBUG_BUFFER) {</span><a href="#l3.95"></a>
+<span id="l3.96" class="minusline">-                System.out.print(&quot;[newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.96"></a>
+<span id="l3.97" class="minusline">-                print();</span><a href="#l3.97"></a>
+<span id="l3.98" class="minusline">-                System.out.println();</span><a href="#l3.98"></a>
+<span id="l3.99" class="minusline">-            }</span><a href="#l3.99"></a>
+<span id="l3.100" class="minusline">-            do {</span><a href="#l3.100"></a>
+<span id="l3.101" class="minusline">-                c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l3.101"></a>
+<span id="l3.102" class="minusline">-                if (c == '\r' &amp;&amp; isExternal) {</span><a href="#l3.102"></a>
+<span id="l3.103" class="minusline">-                    newlines++;</span><a href="#l3.103"></a>
+<span id="l3.104" class="minusline">-                    fCurrentEntity.lineNumber++;</span><a href="#l3.104"></a>
+<span id="l3.105" class="minusline">-                    fCurrentEntity.columnNumber = 1;</span><a href="#l3.105"></a>
+<span id="l3.106" class="minusline">-                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.106"></a>
+<span id="l3.107" class="minusline">-                        checkEntityLimit(null, fCurrentEntity, offset, newlines);</span><a href="#l3.107"></a>
+<span id="l3.108" class="minusline">-                        offset = 0;</span><a href="#l3.108"></a>
+<span id="l3.109" class="minusline">-                        fCurrentEntity.position = newlines;</span><a href="#l3.109"></a>
+<span id="l3.110" class="minusline">-                        if (load(newlines, false, true)) {</span><a href="#l3.110"></a>
+<span id="l3.111" class="minusline">-                            counted = true;</span><a href="#l3.111"></a>
+<span id="l3.112" class="minusline">-                            break;</span><a href="#l3.112"></a>
+<span id="l3.113" class="minusline">-                        }</span><a href="#l3.113"></a>
+<span id="l3.114" class="minusline">-                    }</span><a href="#l3.114"></a>
+<span id="l3.115" class="minusline">-                    if (fCurrentEntity.ch[fCurrentEntity.position] == '\n') {</span><a href="#l3.115"></a>
+<span id="l3.116" class="minusline">-                        fCurrentEntity.position++;</span><a href="#l3.116"></a>
+<span id="l3.117" class="minusline">-                        offset++;</span><a href="#l3.117"></a>
+<span id="l3.118" class="minusline">-                    }</span><a href="#l3.118"></a>
+<span id="l3.119" class="minusline">-                    /*** NEWLINE NORMALIZATION ***/</span><a href="#l3.119"></a>
+<span id="l3.120" class="minusline">-                    else {</span><a href="#l3.120"></a>
+<span id="l3.121" class="minusline">-                        newlines++;</span><a href="#l3.121"></a>
+<span id="l3.122" class="minusline">-                    }</span><a href="#l3.122"></a>
+<span id="l3.123" class="minusline">-                } else if (c == '\n') {</span><a href="#l3.123"></a>
+<span id="l3.124" class="minusline">-                    newlines++;</span><a href="#l3.124"></a>
+<span id="l3.125" class="minusline">-                    fCurrentEntity.lineNumber++;</span><a href="#l3.125"></a>
+<span id="l3.126" class="minusline">-                    fCurrentEntity.columnNumber = 1;</span><a href="#l3.126"></a>
+<span id="l3.127" class="minusline">-                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.127"></a>
+<span id="l3.128" class="minusline">-                        checkEntityLimit(null, fCurrentEntity, offset, newlines);</span><a href="#l3.128"></a>
+<span id="l3.129" class="minusline">-                        offset = 0;</span><a href="#l3.129"></a>
+<span id="l3.130" class="minusline">-                        fCurrentEntity.position = newlines;</span><a href="#l3.130"></a>
+<span id="l3.131" class="minusline">-                        if (load(newlines, false, true)) {</span><a href="#l3.131"></a>
+<span id="l3.132" class="minusline">-                            counted = true;</span><a href="#l3.132"></a>
+<span id="l3.133" class="minusline">-                            break;</span><a href="#l3.133"></a>
+<span id="l3.134" class="minusline">-                        }</span><a href="#l3.134"></a>
+<span id="l3.135" class="minusline">-                    }</span><a href="#l3.135"></a>
+<span id="l3.136" class="minusline">-                } else {</span><a href="#l3.136"></a>
+<span id="l3.137" class="minusline">-                    fCurrentEntity.position--;</span><a href="#l3.137"></a>
+<span id="l3.138" class="minusline">-                    break;</span><a href="#l3.138"></a>
+<span id="l3.139" class="minusline">-                }</span><a href="#l3.139"></a>
+<span id="l3.140" class="minusline">-            } while (fCurrentEntity.position &lt; fCurrentEntity.count - 1);</span><a href="#l3.140"></a>
+<span id="l3.141" class="minusline">-            for (int i = offset; i &lt; fCurrentEntity.position; i++) {</span><a href="#l3.141"></a>
+<span id="l3.142" class="minusline">-                fCurrentEntity.ch[i] = '\n';</span><a href="#l3.142"></a>
+<span id="l3.143" class="minusline">-            }</span><a href="#l3.143"></a>
+<span id="l3.144" class="minusline">-            int length = fCurrentEntity.position - offset;</span><a href="#l3.144"></a>
+<span id="l3.145" class="minusline">-            if (fCurrentEntity.position == fCurrentEntity.count - 1) {</span><a href="#l3.145"></a>
+<span id="l3.146" class="minusline">-                checkEntityLimit(null, fCurrentEntity, offset, length);</span><a href="#l3.146"></a>
+<span id="l3.147" class="minusline">-                //CHANGED: dont replace the value.. append to the buffer. This gives control to the callee</span><a href="#l3.147"></a>
+<span id="l3.148" class="minusline">-                //on buffering the data..</span><a href="#l3.148"></a>
+<span id="l3.149" class="minusline">-                content.setValues(fCurrentEntity.ch, offset, length);</span><a href="#l3.149"></a>
+<span id="l3.150" class="minusline">-                //content.append(fCurrentEntity.ch, offset, length);</span><a href="#l3.150"></a>
+<span id="l3.151" class="minusline">-                if (DEBUG_BUFFER) {</span><a href="#l3.151"></a>
+<span id="l3.152" class="minusline">-                    System.out.print(&quot;]newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.152"></a>
+<span id="l3.153" class="minusline">-                    print();</span><a href="#l3.153"></a>
+<span id="l3.154" class="minusline">-                    System.out.println();</span><a href="#l3.154"></a>
+<span id="l3.155" class="minusline">-                }</span><a href="#l3.155"></a>
+<span id="l3.156" class="minusline">-                return -1;</span><a href="#l3.156"></a>
+<span id="l3.157" class="minusline">-            }</span><a href="#l3.157"></a>
+<span id="l3.158" class="minusline">-            if (DEBUG_BUFFER) {</span><a href="#l3.158"></a>
+<span id="l3.159" class="minusline">-                System.out.print(&quot;]newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.159"></a>
+<span id="l3.160" class="minusline">-                print();</span><a href="#l3.160"></a>
+<span id="l3.161" class="minusline">-                System.out.println();</span><a href="#l3.161"></a>
+<span id="l3.162" class="minusline">-            }</span><a href="#l3.162"></a>
+<span id="l3.163" class="plusline">+        if (normalizeNewlines(XML_VERSION_1_0, content, false, false, null)) {</span><a href="#l3.163"></a>
+<span id="l3.164" class="plusline">+            return -1;</span><a href="#l3.164"></a>
+<span id="l3.165">         }</span><a href="#l3.165"></a>
+<span id="l3.166"> </span><a href="#l3.166"></a>
+<span id="l3.167" class="plusline">+        int c;</span><a href="#l3.167"></a>
+<span id="l3.168">         while (fCurrentEntity.position &lt; fCurrentEntity.count) {</span><a href="#l3.168"></a>
+<span id="l3.169">             c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l3.169"></a>
+<span id="l3.170">             if (!XMLChar.isContent(c)) {</span><a href="#l3.170"></a>
+<span id="l3.171" class="atline">@@ -1202,85 +1143,14 @@</span><a href="#l3.171"></a>
+<span id="l3.172">         }</span><a href="#l3.172"></a>
+<span id="l3.173"> </span><a href="#l3.173"></a>
+<span id="l3.174">         // normalize newlines</span><a href="#l3.174"></a>
+<span id="l3.175" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l3.175"></a>
+<span id="l3.176" class="minusline">-        int c = fCurrentEntity.ch[offset];</span><a href="#l3.176"></a>
+<span id="l3.177" class="minusline">-        int newlines = 0;</span><a href="#l3.177"></a>
+<span id="l3.178">         if(whiteSpaceInfoNeeded)</span><a href="#l3.178"></a>
+<span id="l3.179">             whiteSpaceLen=0;</span><a href="#l3.179"></a>
+<span id="l3.180" class="minusline">-        if (c == '\n' || (c == '\r' &amp;&amp; isExternal)) {</span><a href="#l3.180"></a>
+<span id="l3.181" class="minusline">-            if (DEBUG_BUFFER) {</span><a href="#l3.181"></a>
+<span id="l3.182" class="minusline">-                System.out.print(&quot;[newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.182"></a>
+<span id="l3.183" class="minusline">-                print();</span><a href="#l3.183"></a>
+<span id="l3.184" class="minusline">-                System.out.println();</span><a href="#l3.184"></a>
+<span id="l3.185" class="minusline">-            }</span><a href="#l3.185"></a>
+<span id="l3.186" class="minusline">-            do {</span><a href="#l3.186"></a>
+<span id="l3.187" class="minusline">-                c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l3.187"></a>
+<span id="l3.188" class="minusline">-                if (c == '\r' &amp;&amp; isExternal) {</span><a href="#l3.188"></a>
+<span id="l3.189" class="minusline">-                    newlines++;</span><a href="#l3.189"></a>
+<span id="l3.190" class="minusline">-                    fCurrentEntity.lineNumber++;</span><a href="#l3.190"></a>
+<span id="l3.191" class="minusline">-                    fCurrentEntity.columnNumber = 1;</span><a href="#l3.191"></a>
+<span id="l3.192" class="minusline">-                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.192"></a>
+<span id="l3.193" class="minusline">-                        offset = 0;</span><a href="#l3.193"></a>
+<span id="l3.194" class="minusline">-                        fCurrentEntity.position = newlines;</span><a href="#l3.194"></a>
+<span id="l3.195" class="minusline">-                        if (load(newlines, false, true)) {</span><a href="#l3.195"></a>
+<span id="l3.196" class="minusline">-                            break;</span><a href="#l3.196"></a>
+<span id="l3.197" class="minusline">-                        }</span><a href="#l3.197"></a>
+<span id="l3.198" class="minusline">-                    }</span><a href="#l3.198"></a>
+<span id="l3.199" class="minusline">-                    if (fCurrentEntity.ch[fCurrentEntity.position] == '\n') {</span><a href="#l3.199"></a>
+<span id="l3.200" class="minusline">-                        fCurrentEntity.position++;</span><a href="#l3.200"></a>
+<span id="l3.201" class="minusline">-                        offset++;</span><a href="#l3.201"></a>
+<span id="l3.202" class="minusline">-                    }</span><a href="#l3.202"></a>
+<span id="l3.203" class="minusline">-                    /*** NEWLINE NORMALIZATION ***/</span><a href="#l3.203"></a>
+<span id="l3.204" class="minusline">-                    else {</span><a href="#l3.204"></a>
+<span id="l3.205" class="minusline">-                        newlines++;</span><a href="#l3.205"></a>
+<span id="l3.206" class="minusline">-                    }</span><a href="#l3.206"></a>
+<span id="l3.207" class="minusline">-                    /***/</span><a href="#l3.207"></a>
+<span id="l3.208" class="minusline">-                } else if (c == '\n') {</span><a href="#l3.208"></a>
+<span id="l3.209" class="minusline">-                    newlines++;</span><a href="#l3.209"></a>
+<span id="l3.210" class="minusline">-                    fCurrentEntity.lineNumber++;</span><a href="#l3.210"></a>
+<span id="l3.211" class="minusline">-                    fCurrentEntity.columnNumber = 1;</span><a href="#l3.211"></a>
+<span id="l3.212" class="minusline">-                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.212"></a>
+<span id="l3.213" class="minusline">-                        offset = 0;</span><a href="#l3.213"></a>
+<span id="l3.214" class="minusline">-                        fCurrentEntity.position = newlines;</span><a href="#l3.214"></a>
+<span id="l3.215" class="minusline">-                        if (load(newlines, false, true)) {</span><a href="#l3.215"></a>
+<span id="l3.216" class="minusline">-                            break;</span><a href="#l3.216"></a>
+<span id="l3.217" class="minusline">-                        }</span><a href="#l3.217"></a>
+<span id="l3.218" class="minusline">-                    }</span><a href="#l3.218"></a>
+<span id="l3.219" class="minusline">-                    /*** NEWLINE NORMALIZATION ***</span><a href="#l3.219"></a>
+<span id="l3.220" class="minusline">-                     * if (fCurrentEntity.ch[fCurrentEntity.position] == '\r'</span><a href="#l3.220"></a>
+<span id="l3.221" class="minusline">-                     * &amp;&amp; external) {</span><a href="#l3.221"></a>
+<span id="l3.222" class="minusline">-                     * fCurrentEntity.position++;</span><a href="#l3.222"></a>
+<span id="l3.223" class="minusline">-                     * offset++;</span><a href="#l3.223"></a>
+<span id="l3.224" class="minusline">-                     * }</span><a href="#l3.224"></a>
+<span id="l3.225" class="minusline">-                     * /***/</span><a href="#l3.225"></a>
+<span id="l3.226" class="minusline">-                } else {</span><a href="#l3.226"></a>
+<span id="l3.227" class="minusline">-                    fCurrentEntity.position--;</span><a href="#l3.227"></a>
+<span id="l3.228" class="minusline">-                    break;</span><a href="#l3.228"></a>
+<span id="l3.229" class="minusline">-                }</span><a href="#l3.229"></a>
+<span id="l3.230" class="minusline">-            } while (fCurrentEntity.position &lt; fCurrentEntity.count - 1);</span><a href="#l3.230"></a>
+<span id="l3.231" class="minusline">-            int i=0;</span><a href="#l3.231"></a>
+<span id="l3.232" class="minusline">-            for ( i = offset; i &lt; fCurrentEntity.position; i++) {</span><a href="#l3.232"></a>
+<span id="l3.233" class="minusline">-                fCurrentEntity.ch[i] = '\n';</span><a href="#l3.233"></a>
+<span id="l3.234" class="minusline">-                storeWhiteSpace(i);</span><a href="#l3.234"></a>
+<span id="l3.235" class="minusline">-            }</span><a href="#l3.235"></a>
+<span id="l3.236"> </span><a href="#l3.236"></a>
+<span id="l3.237" class="minusline">-            int length = fCurrentEntity.position - offset;</span><a href="#l3.237"></a>
+<span id="l3.238" class="minusline">-            if (fCurrentEntity.position == fCurrentEntity.count - 1) {</span><a href="#l3.238"></a>
+<span id="l3.239" class="minusline">-                content.setValues(fCurrentEntity.ch, offset, length);</span><a href="#l3.239"></a>
+<span id="l3.240" class="minusline">-                if (DEBUG_BUFFER) {</span><a href="#l3.240"></a>
+<span id="l3.241" class="minusline">-                    System.out.print(&quot;]newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.241"></a>
+<span id="l3.242" class="minusline">-                    print();</span><a href="#l3.242"></a>
+<span id="l3.243" class="minusline">-                    System.out.println();</span><a href="#l3.243"></a>
+<span id="l3.244" class="minusline">-                }</span><a href="#l3.244"></a>
+<span id="l3.245" class="minusline">-                return -1;</span><a href="#l3.245"></a>
+<span id="l3.246" class="minusline">-            }</span><a href="#l3.246"></a>
+<span id="l3.247" class="minusline">-            if (DEBUG_BUFFER) {</span><a href="#l3.247"></a>
+<span id="l3.248" class="minusline">-                System.out.print(&quot;]newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.248"></a>
+<span id="l3.249" class="minusline">-                print();</span><a href="#l3.249"></a>
+<span id="l3.250" class="minusline">-                System.out.println();</span><a href="#l3.250"></a>
+<span id="l3.251" class="minusline">-            }</span><a href="#l3.251"></a>
+<span id="l3.252" class="plusline">+        if (normalizeNewlines(XML_VERSION_1_0, content, false, true, null)) {</span><a href="#l3.252"></a>
+<span id="l3.253" class="plusline">+            return -1;</span><a href="#l3.253"></a>
+<span id="l3.254">         }</span><a href="#l3.254"></a>
+<span id="l3.255"> </span><a href="#l3.255"></a>
+<span id="l3.256" class="plusline">+        int c;</span><a href="#l3.256"></a>
+<span id="l3.257">         // scan literal value</span><a href="#l3.257"></a>
+<span id="l3.258">         for (; fCurrentEntity.position&lt;fCurrentEntity.count; fCurrentEntity.position++) {</span><a href="#l3.258"></a>
+<span id="l3.259">             c = fCurrentEntity.ch[fCurrentEntity.position];</span><a href="#l3.259"></a>
+<span id="l3.260" class="atline">@@ -1331,7 +1201,7 @@</span><a href="#l3.260"></a>
+<span id="l3.261">      *</span><a href="#l3.261"></a>
+<span id="l3.262">      * @param whiteSpacePos position of a whitespace in the scanner entity buffer</span><a href="#l3.262"></a>
+<span id="l3.263">      */</span><a href="#l3.263"></a>
+<span id="l3.264" class="minusline">-    private void storeWhiteSpace(int whiteSpacePos) {</span><a href="#l3.264"></a>
+<span id="l3.265" class="plusline">+    void storeWhiteSpace(int whiteSpacePos) {</span><a href="#l3.265"></a>
+<span id="l3.266">         if (whiteSpaceLen &gt;= whiteSpaceLookup.length) {</span><a href="#l3.266"></a>
+<span id="l3.267">             int [] tmp = new int[whiteSpaceLookup.length + 100];</span><a href="#l3.267"></a>
+<span id="l3.268">             System.arraycopy(whiteSpaceLookup, 0, tmp, 0, whiteSpaceLookup.length);</span><a href="#l3.268"></a>
+<span id="l3.269" class="atline">@@ -1413,75 +1283,11 @@</span><a href="#l3.269"></a>
+<span id="l3.270">                 return false;</span><a href="#l3.270"></a>
+<span id="l3.271">             }</span><a href="#l3.271"></a>
+<span id="l3.272"> </span><a href="#l3.272"></a>
+<span id="l3.273" class="minusline">-            // normalize newlines</span><a href="#l3.273"></a>
+<span id="l3.274" class="minusline">-            int offset = fCurrentEntity.position;</span><a href="#l3.274"></a>
+<span id="l3.275" class="minusline">-            int c = fCurrentEntity.ch[offset];</span><a href="#l3.275"></a>
+<span id="l3.276" class="minusline">-            int newlines = 0;</span><a href="#l3.276"></a>
+<span id="l3.277" class="minusline">-            if (c == '\n' || (c == '\r' &amp;&amp; isExternal)) {</span><a href="#l3.277"></a>
+<span id="l3.278" class="minusline">-                if (DEBUG_BUFFER) {</span><a href="#l3.278"></a>
+<span id="l3.279" class="minusline">-                    System.out.print(&quot;[newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.279"></a>
+<span id="l3.280" class="minusline">-                    print();</span><a href="#l3.280"></a>
+<span id="l3.281" class="minusline">-                    System.out.println();</span><a href="#l3.281"></a>
+<span id="l3.282" class="minusline">-                }</span><a href="#l3.282"></a>
+<span id="l3.283" class="minusline">-                do {</span><a href="#l3.283"></a>
+<span id="l3.284" class="minusline">-                    c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l3.284"></a>
+<span id="l3.285" class="minusline">-                    if (c == '\r' &amp;&amp; isExternal) {</span><a href="#l3.285"></a>
+<span id="l3.286" class="minusline">-                        newlines++;</span><a href="#l3.286"></a>
+<span id="l3.287" class="minusline">-                        fCurrentEntity.lineNumber++;</span><a href="#l3.287"></a>
+<span id="l3.288" class="minusline">-                        fCurrentEntity.columnNumber = 1;</span><a href="#l3.288"></a>
+<span id="l3.289" class="minusline">-                        if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.289"></a>
+<span id="l3.290" class="minusline">-                            offset = 0;</span><a href="#l3.290"></a>
+<span id="l3.291" class="minusline">-                            fCurrentEntity.position = newlines;</span><a href="#l3.291"></a>
+<span id="l3.292" class="minusline">-                            if (load(newlines, false, true)) {</span><a href="#l3.292"></a>
+<span id="l3.293" class="minusline">-                                break;</span><a href="#l3.293"></a>
+<span id="l3.294" class="minusline">-                            }</span><a href="#l3.294"></a>
+<span id="l3.295" class="minusline">-                        }</span><a href="#l3.295"></a>
+<span id="l3.296" class="minusline">-                        if (fCurrentEntity.ch[fCurrentEntity.position] == '\n') {</span><a href="#l3.296"></a>
+<span id="l3.297" class="minusline">-                            fCurrentEntity.position++;</span><a href="#l3.297"></a>
+<span id="l3.298" class="minusline">-                            offset++;</span><a href="#l3.298"></a>
+<span id="l3.299" class="minusline">-                        }</span><a href="#l3.299"></a>
+<span id="l3.300" class="minusline">-                        /*** NEWLINE NORMALIZATION ***/</span><a href="#l3.300"></a>
+<span id="l3.301" class="minusline">-                        else {</span><a href="#l3.301"></a>
+<span id="l3.302" class="minusline">-                            newlines++;</span><a href="#l3.302"></a>
+<span id="l3.303" class="minusline">-                        }</span><a href="#l3.303"></a>
+<span id="l3.304" class="minusline">-                    } else if (c == '\n') {</span><a href="#l3.304"></a>
+<span id="l3.305" class="minusline">-                        newlines++;</span><a href="#l3.305"></a>
+<span id="l3.306" class="minusline">-                        fCurrentEntity.lineNumber++;</span><a href="#l3.306"></a>
+<span id="l3.307" class="minusline">-                        fCurrentEntity.columnNumber = 1;</span><a href="#l3.307"></a>
+<span id="l3.308" class="minusline">-                        if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.308"></a>
+<span id="l3.309" class="minusline">-                            offset = 0;</span><a href="#l3.309"></a>
+<span id="l3.310" class="minusline">-                            fCurrentEntity.position = newlines;</span><a href="#l3.310"></a>
+<span id="l3.311" class="minusline">-                            fCurrentEntity.count = newlines;</span><a href="#l3.311"></a>
+<span id="l3.312" class="minusline">-                            if (load(newlines, false, true)) {</span><a href="#l3.312"></a>
+<span id="l3.313" class="minusline">-                                break;</span><a href="#l3.313"></a>
+<span id="l3.314" class="minusline">-                            }</span><a href="#l3.314"></a>
+<span id="l3.315" class="minusline">-                        }</span><a href="#l3.315"></a>
+<span id="l3.316" class="minusline">-                    } else {</span><a href="#l3.316"></a>
+<span id="l3.317" class="minusline">-                        fCurrentEntity.position--;</span><a href="#l3.317"></a>
+<span id="l3.318" class="minusline">-                        break;</span><a href="#l3.318"></a>
+<span id="l3.319" class="minusline">-                    }</span><a href="#l3.319"></a>
+<span id="l3.320" class="minusline">-                } while (fCurrentEntity.position &lt; fCurrentEntity.count - 1);</span><a href="#l3.320"></a>
+<span id="l3.321" class="minusline">-                for (int i = offset; i &lt; fCurrentEntity.position; i++) {</span><a href="#l3.321"></a>
+<span id="l3.322" class="minusline">-                    fCurrentEntity.ch[i] = '\n';</span><a href="#l3.322"></a>
+<span id="l3.323" class="minusline">-                }</span><a href="#l3.323"></a>
+<span id="l3.324" class="minusline">-                int length = fCurrentEntity.position - offset;</span><a href="#l3.324"></a>
+<span id="l3.325" class="minusline">-                if (fCurrentEntity.position == fCurrentEntity.count - 1) {</span><a href="#l3.325"></a>
+<span id="l3.326" class="minusline">-                    checkEntityLimit(NameType.COMMENT, fCurrentEntity, offset, length);</span><a href="#l3.326"></a>
+<span id="l3.327" class="minusline">-                    buffer.append(fCurrentEntity.ch, offset, length);</span><a href="#l3.327"></a>
+<span id="l3.328" class="minusline">-                    if (DEBUG_BUFFER) {</span><a href="#l3.328"></a>
+<span id="l3.329" class="minusline">-                        System.out.print(&quot;]newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.329"></a>
+<span id="l3.330" class="minusline">-                        print();</span><a href="#l3.330"></a>
+<span id="l3.331" class="minusline">-                        System.out.println();</span><a href="#l3.331"></a>
+<span id="l3.332" class="minusline">-                    }</span><a href="#l3.332"></a>
+<span id="l3.333" class="minusline">-                    return true;</span><a href="#l3.333"></a>
+<span id="l3.334" class="minusline">-                }</span><a href="#l3.334"></a>
+<span id="l3.335" class="minusline">-                if (DEBUG_BUFFER) {</span><a href="#l3.335"></a>
+<span id="l3.336" class="minusline">-                    System.out.print(&quot;]newline, &quot;+offset+&quot;, &quot;+fCurrentEntity.position+&quot;: &quot;);</span><a href="#l3.336"></a>
+<span id="l3.337" class="minusline">-                    print();</span><a href="#l3.337"></a>
+<span id="l3.338" class="minusline">-                    System.out.println();</span><a href="#l3.338"></a>
+<span id="l3.339" class="minusline">-                }</span><a href="#l3.339"></a>
+<span id="l3.340" class="plusline">+            if (normalizeNewlines(XML_VERSION_1_0, buffer, true, false, NameType.COMMENT)) {</span><a href="#l3.340"></a>
+<span id="l3.341" class="plusline">+                return true;</span><a href="#l3.341"></a>
+<span id="l3.342">             }</span><a href="#l3.342"></a>
+<span id="l3.343"> </span><a href="#l3.343"></a>
+<span id="l3.344" class="plusline">+            int c;</span><a href="#l3.344"></a>
+<span id="l3.345">             // iterate over buffer looking for delimiter</span><a href="#l3.345"></a>
+<span id="l3.346">             OUTER: while (fCurrentEntity.position &lt; fCurrentEntity.count) {</span><a href="#l3.346"></a>
+<span id="l3.347">                 c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l3.347"></a>
+<span id="l3.348" class="atline">@@ -1561,7 +1367,7 @@</span><a href="#l3.348"></a>
+<span id="l3.349">         }</span><a href="#l3.349"></a>
+<span id="l3.350"> </span><a href="#l3.350"></a>
+<span id="l3.351">         // skip character</span><a href="#l3.351"></a>
+<span id="l3.352" class="minusline">-        int offset = fCurrentEntity.position;</span><a href="#l3.352"></a>
+<span id="l3.353" class="plusline">+        offset = fCurrentEntity.position;</span><a href="#l3.353"></a>
+<span id="l3.354">         int cc = fCurrentEntity.ch[fCurrentEntity.position];</span><a href="#l3.354"></a>
+<span id="l3.355">         if (cc == c) {</span><a href="#l3.355"></a>
+<span id="l3.356">             fCurrentEntity.position++;</span><a href="#l3.356"></a>
+<span id="l3.357" class="atline">@@ -1578,26 +1384,6 @@</span><a href="#l3.357"></a>
+<span id="l3.358">             }</span><a href="#l3.358"></a>
+<span id="l3.359">             checkEntityLimit(nt, fCurrentEntity, offset, fCurrentEntity.position - offset);</span><a href="#l3.359"></a>
+<span id="l3.360">             return true;</span><a href="#l3.360"></a>
+<span id="l3.361" class="minusline">-        } else if (c == '\n' &amp;&amp; cc == '\r' &amp;&amp; isExternal) {</span><a href="#l3.361"></a>
+<span id="l3.362" class="minusline">-            // handle newlines</span><a href="#l3.362"></a>
+<span id="l3.363" class="minusline">-            if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.363"></a>
+<span id="l3.364" class="minusline">-                invokeListeners(1);</span><a href="#l3.364"></a>
+<span id="l3.365" class="minusline">-                fCurrentEntity.ch[0] = (char)cc;</span><a href="#l3.365"></a>
+<span id="l3.366" class="minusline">-                load(1, false, false);</span><a href="#l3.366"></a>
+<span id="l3.367" class="minusline">-            }</span><a href="#l3.367"></a>
+<span id="l3.368" class="minusline">-            fCurrentEntity.position++;</span><a href="#l3.368"></a>
+<span id="l3.369" class="minusline">-            if (fCurrentEntity.ch[fCurrentEntity.position] == '\n') {</span><a href="#l3.369"></a>
+<span id="l3.370" class="minusline">-                fCurrentEntity.position++;</span><a href="#l3.370"></a>
+<span id="l3.371" class="minusline">-            }</span><a href="#l3.371"></a>
+<span id="l3.372" class="minusline">-            fCurrentEntity.lineNumber++;</span><a href="#l3.372"></a>
+<span id="l3.373" class="minusline">-            fCurrentEntity.columnNumber = 1;</span><a href="#l3.373"></a>
+<span id="l3.374" class="minusline">-            if (DEBUG_BUFFER) {</span><a href="#l3.374"></a>
+<span id="l3.375" class="minusline">-                System.out.print(&quot;)skipChar, '&quot;+(char)c+&quot;': &quot;);</span><a href="#l3.375"></a>
+<span id="l3.376" class="minusline">-                print();</span><a href="#l3.376"></a>
+<span id="l3.377" class="minusline">-                System.out.println(&quot; -&gt; true&quot;);</span><a href="#l3.377"></a>
+<span id="l3.378" class="minusline">-            }</span><a href="#l3.378"></a>
+<span id="l3.379" class="minusline">-            checkEntityLimit(nt, fCurrentEntity, offset, fCurrentEntity.position - offset);</span><a href="#l3.379"></a>
+<span id="l3.380" class="minusline">-            return true;</span><a href="#l3.380"></a>
+<span id="l3.381">         }</span><a href="#l3.381"></a>
+<span id="l3.382"> </span><a href="#l3.382"></a>
+<span id="l3.383">         // character was not skipped</span><a href="#l3.383"></a>
+<span id="l3.384" class="atline">@@ -1650,7 +1436,7 @@</span><a href="#l3.384"></a>
+<span id="l3.385"> </span><a href="#l3.385"></a>
+<span id="l3.386">         // skip spaces</span><a href="#l3.386"></a>
+<span id="l3.387">         int c = fCurrentEntity.ch[fCurrentEntity.position];</span><a href="#l3.387"></a>
+<span id="l3.388" class="minusline">-        int offset = fCurrentEntity.position - 1;</span><a href="#l3.388"></a>
+<span id="l3.389" class="plusline">+        offset = fCurrentEntity.position - 1;</span><a href="#l3.389"></a>
+<span id="l3.390">         if (XMLChar.isSpace(c)) {</span><a href="#l3.390"></a>
+<span id="l3.391">             do {</span><a href="#l3.391"></a>
+<span id="l3.392">                 boolean entityChanged = false;</span><a href="#l3.392"></a>
+<span id="l3.393" class="atline">@@ -2323,5 +2109,86 @@</span><a href="#l3.393"></a>
+<span id="l3.394"> </span><a href="#l3.394"></a>
+<span id="l3.395">     } // skipDeclSpaces():boolean</span><a href="#l3.395"></a>
+<span id="l3.396"> </span><a href="#l3.396"></a>
+<span id="l3.397" class="plusline">+    /**</span><a href="#l3.397"></a>
+<span id="l3.398" class="plusline">+     * Normalizes newlines. As specified in XML specification, this method</span><a href="#l3.398"></a>
+<span id="l3.399" class="plusline">+     * converts newlines, '\n', '\r' and '\r\n' to '\n' as 2.11 End-of-Line Handling.</span><a href="#l3.399"></a>
+<span id="l3.400" class="plusline">+     * Further, it may put them in a cache for later process as needed, for example</span><a href="#l3.400"></a>
+<span id="l3.401" class="plusline">+     * as specified in 3.3.3 Attribute-Value Normalization.</span><a href="#l3.401"></a>
+<span id="l3.402" class="plusline">+     *</span><a href="#l3.402"></a>
+<span id="l3.403" class="plusline">+     * @ImplNote this method does not limit to processing external parsed entities</span><a href="#l3.403"></a>
+<span id="l3.404" class="plusline">+     * as 2.11 required. It handles all cases where newlines need to be processed.</span><a href="#l3.404"></a>
+<span id="l3.405" class="plusline">+     *</span><a href="#l3.405"></a>
+<span id="l3.406" class="plusline">+     * @param buffer the current content buffer</span><a href="#l3.406"></a>
+<span id="l3.407" class="plusline">+     * @param append a flag indicating whether to append to the buffer</span><a href="#l3.407"></a>
+<span id="l3.408" class="plusline">+     * @param storeWS a flag indicating whether the whitespaces need to be stored</span><a href="#l3.408"></a>
+<span id="l3.409" class="plusline">+     * for later processing</span><a href="#l3.409"></a>
+<span id="l3.410" class="plusline">+     * @param nt the type of the entity</span><a href="#l3.410"></a>
+<span id="l3.411" class="plusline">+     * @return true if the cursor is at the end of the current entity, false otherwise.</span><a href="#l3.411"></a>
+<span id="l3.412" class="plusline">+     * @throws IOException</span><a href="#l3.412"></a>
+<span id="l3.413" class="plusline">+     */</span><a href="#l3.413"></a>
+<span id="l3.414" class="plusline">+    protected boolean normalizeNewlines(short version, XMLString buffer, boolean append,</span><a href="#l3.414"></a>
+<span id="l3.415" class="plusline">+            boolean storeWS, NameType nt)</span><a href="#l3.415"></a>
+<span id="l3.416" class="plusline">+            throws IOException {</span><a href="#l3.416"></a>
+<span id="l3.417" class="plusline">+        // normalize newlines</span><a href="#l3.417"></a>
+<span id="l3.418" class="plusline">+        offset = fCurrentEntity.position;</span><a href="#l3.418"></a>
+<span id="l3.419" class="plusline">+        int c = fCurrentEntity.ch[offset];</span><a href="#l3.419"></a>
+<span id="l3.420" class="plusline">+        newlines = 0;</span><a href="#l3.420"></a>
+<span id="l3.421" class="plusline">+        // how this information is used is determined by the caller of this method</span><a href="#l3.421"></a>
+<span id="l3.422" class="plusline">+        counted = false;</span><a href="#l3.422"></a>
+<span id="l3.423" class="plusline">+        if ((c == '\n' || c == '\r') ||</span><a href="#l3.423"></a>
+<span id="l3.424" class="plusline">+                (version == XML_VERSION_1_1 &amp;&amp; (c == 0x85 || c == 0x2028))) {</span><a href="#l3.424"></a>
+<span id="l3.425" class="plusline">+            do {</span><a href="#l3.425"></a>
+<span id="l3.426" class="plusline">+                c = fCurrentEntity.ch[fCurrentEntity.position++];</span><a href="#l3.426"></a>
+<span id="l3.427" class="plusline">+                if ((c == '\n' || c == '\r') ||</span><a href="#l3.427"></a>
+<span id="l3.428" class="plusline">+                    (version == XML_VERSION_1_1 &amp;&amp; (c == 0x85 || c == 0x2028))) {</span><a href="#l3.428"></a>
+<span id="l3.429" class="plusline">+                    newlines++;</span><a href="#l3.429"></a>
+<span id="l3.430" class="plusline">+                    fCurrentEntity.lineNumber++;</span><a href="#l3.430"></a>
+<span id="l3.431" class="plusline">+                    fCurrentEntity.columnNumber = 1;</span><a href="#l3.431"></a>
+<span id="l3.432" class="plusline">+                    if (fCurrentEntity.position == fCurrentEntity.count) {</span><a href="#l3.432"></a>
+<span id="l3.433" class="plusline">+                        checkEntityLimit(nt, fCurrentEntity, offset, newlines);</span><a href="#l3.433"></a>
+<span id="l3.434" class="plusline">+                        offset = 0;</span><a href="#l3.434"></a>
+<span id="l3.435" class="plusline">+                        fCurrentEntity.position = newlines;</span><a href="#l3.435"></a>
+<span id="l3.436" class="plusline">+                        if (load(newlines, false, true)) {</span><a href="#l3.436"></a>
+<span id="l3.437" class="plusline">+                            counted = true;</span><a href="#l3.437"></a>
+<span id="l3.438" class="plusline">+                            break;</span><a href="#l3.438"></a>
+<span id="l3.439" class="plusline">+                        }</span><a href="#l3.439"></a>
+<span id="l3.440" class="plusline">+                    }</span><a href="#l3.440"></a>
+<span id="l3.441" class="plusline">+                    if (c == '\r') {</span><a href="#l3.441"></a>
+<span id="l3.442" class="plusline">+                        int cc = fCurrentEntity.ch[fCurrentEntity.position];</span><a href="#l3.442"></a>
+<span id="l3.443" class="plusline">+                        if (cc == '\n' || (version == XML_VERSION_1_1 &amp;&amp; cc == 0x85)) {</span><a href="#l3.443"></a>
+<span id="l3.444" class="plusline">+                            fCurrentEntity.position++;</span><a href="#l3.444"></a>
+<span id="l3.445" class="plusline">+                            offset++;</span><a href="#l3.445"></a>
+<span id="l3.446" class="plusline">+                        }</span><a href="#l3.446"></a>
+<span id="l3.447" class="plusline">+                        /*** NEWLINE NORMALIZATION ***/</span><a href="#l3.447"></a>
+<span id="l3.448" class="plusline">+                        else {</span><a href="#l3.448"></a>
+<span id="l3.449" class="plusline">+                            newlines++;</span><a href="#l3.449"></a>
+<span id="l3.450" class="plusline">+                        }</span><a href="#l3.450"></a>
+<span id="l3.451" class="plusline">+                    }</span><a href="#l3.451"></a>
+<span id="l3.452" class="plusline">+                } else {</span><a href="#l3.452"></a>
+<span id="l3.453" class="plusline">+                    fCurrentEntity.position--;</span><a href="#l3.453"></a>
+<span id="l3.454" class="plusline">+                    break;</span><a href="#l3.454"></a>
+<span id="l3.455" class="plusline">+                }</span><a href="#l3.455"></a>
+<span id="l3.456" class="plusline">+            } while (fCurrentEntity.position &lt; fCurrentEntity.count - 1);</span><a href="#l3.456"></a>
+<span id="l3.457"> </span><a href="#l3.457"></a>
+<span id="l3.458" class="plusline">+            for (int i = offset; i &lt; fCurrentEntity.position; i++) {</span><a href="#l3.458"></a>
+<span id="l3.459" class="plusline">+                fCurrentEntity.ch[i] = '\n';</span><a href="#l3.459"></a>
+<span id="l3.460" class="plusline">+                if (storeWS) {</span><a href="#l3.460"></a>
+<span id="l3.461" class="plusline">+                    storeWhiteSpace(i);</span><a href="#l3.461"></a>
+<span id="l3.462" class="plusline">+                }</span><a href="#l3.462"></a>
+<span id="l3.463" class="plusline">+            }</span><a href="#l3.463"></a>
+<span id="l3.464" class="plusline">+</span><a href="#l3.464"></a>
+<span id="l3.465" class="plusline">+            int length = fCurrentEntity.position - offset;</span><a href="#l3.465"></a>
+<span id="l3.466" class="plusline">+            if (fCurrentEntity.position == fCurrentEntity.count - 1) {</span><a href="#l3.466"></a>
+<span id="l3.467" class="plusline">+                checkEntityLimit(nt, fCurrentEntity, offset, length);</span><a href="#l3.467"></a>
+<span id="l3.468" class="plusline">+                if (append) {</span><a href="#l3.468"></a>
+<span id="l3.469" class="plusline">+                    buffer.append(fCurrentEntity.ch, offset, length);</span><a href="#l3.469"></a>
+<span id="l3.470" class="plusline">+                } else {</span><a href="#l3.470"></a>
+<span id="l3.471" class="plusline">+                    buffer.setValues(fCurrentEntity.ch, offset, length);</span><a href="#l3.471"></a>
+<span id="l3.472" class="plusline">+                }</span><a href="#l3.472"></a>
+<span id="l3.473" class="plusline">+</span><a href="#l3.473"></a>
+<span id="l3.474" class="plusline">+                return true;</span><a href="#l3.474"></a>
+<span id="l3.475" class="plusline">+            }</span><a href="#l3.475"></a>
+<span id="l3.476" class="plusline">+        }</span><a href="#l3.476"></a>
+<span id="l3.477" class="plusline">+        return false;</span><a href="#l3.477"></a>
+<span id="l3.478" class="plusline">+    }</span><a href="#l3.478"></a>
+<span id="l3.479"> } // class XMLEntityScanner</span><a href="#l3.479"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLScanner.java	Wed Jan 19 01:15:09 2022 +0000</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLScanner.java	Wed Jan 19 01:29:03 2022 +0000</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> /*</span><a href="#l4.4"></a>
+<span id="l4.5" class="minusline">- * Copyright (c) 2003, 2020, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.5"></a>
+<span id="l4.6" class="plusline">+ * Copyright (c) 2003, 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.6"></a>
+<span id="l4.7">  */</span><a href="#l4.7"></a>
+<span id="l4.8"> </span><a href="#l4.8"></a>
+<span id="l4.9"> /*</span><a href="#l4.9"></a>
+<span id="l4.10" class="atline">@@ -68,7 +68,7 @@</span><a href="#l4.10"></a>
+<span id="l4.11">  * @author Eric Ye, IBM</span><a href="#l4.11"></a>
+<span id="l4.12">  * @author K.Venugopal SUN Microsystems</span><a href="#l4.12"></a>
+<span id="l4.13">  * @author Sunitha Reddy, SUN Microsystems</span><a href="#l4.13"></a>
+<span id="l4.14" class="minusline">- * @LastModified: Feb 2020</span><a href="#l4.14"></a>
+<span id="l4.15" class="plusline">+ * @LastModified: Aug 2021</span><a href="#l4.15"></a>
+<span id="l4.16">  */</span><a href="#l4.16"></a>
+<span id="l4.17"> public abstract class XMLScanner</span><a href="#l4.17"></a>
+<span id="l4.18">         implements XMLComponent {</span><a href="#l4.18"></a>
+<span id="l4.19" class="atline">@@ -957,12 +957,6 @@</span><a href="#l4.19"></a>
+<span id="l4.20">                         System.out.println(&quot;** valueF: \&quot;&quot;</span><a href="#l4.20"></a>
+<span id="l4.21">                                 + stringBuffer.toString() + &quot;\&quot;&quot;);</span><a href="#l4.21"></a>
+<span id="l4.22">                     }</span><a href="#l4.22"></a>
+<span id="l4.23" class="minusline">-                } else if (c == '\n' || c == '\r') {</span><a href="#l4.23"></a>
+<span id="l4.24" class="minusline">-                    fEntityScanner.scanChar(null);</span><a href="#l4.24"></a>
+<span id="l4.25" class="minusline">-                    stringBuffer.append(' ');</span><a href="#l4.25"></a>
+<span id="l4.26" class="minusline">-                    if (entityDepth == fEntityDepth &amp;&amp; fNeedNonNormalizedValue) {</span><a href="#l4.26"></a>
+<span id="l4.27" class="minusline">-                        fStringBuffer2.append('\n');</span><a href="#l4.27"></a>
+<span id="l4.28" class="minusline">-                    }</span><a href="#l4.28"></a>
+<span id="l4.29">                 } else if (c != -1 &amp;&amp; XMLChar.isHighSurrogate(c)) {</span><a href="#l4.29"></a>
+<span id="l4.30">                     fStringBuffer3.clear();</span><a href="#l4.30"></a>
+<span id="l4.31">                     if (scanSurrogates(fStringBuffer3)) {</span><a href="#l4.31"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xerces/internal/util/XMLStringBuffer.java	Wed Jan 19 01:15:09 2022 +0000</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xerces/internal/util/XMLStringBuffer.java	Wed Jan 19 01:29:03 2022 +0000</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -1,6 +1,5 @@</span><a href="#l5.3"></a>
+<span id="l5.4"> /*</span><a href="#l5.4"></a>
+<span id="l5.5" class="minusline">- * reserved comment block</span><a href="#l5.5"></a>
+<span id="l5.6" class="minusline">- * DO NOT REMOVE OR ALTER!</span><a href="#l5.6"></a>
+<span id="l5.7" class="plusline">+ * Copyright (c) 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l5.7"></a>
+<span id="l5.8">  */</span><a href="#l5.8"></a>
+<span id="l5.9"> /*</span><a href="#l5.9"></a>
+<span id="l5.10">  * The Apache Software License, Version 1.1</span><a href="#l5.10"></a>
+<span id="l5.11" class="atline">@@ -81,20 +80,12 @@</span><a href="#l5.11"></a>
+<span id="l5.12">  *</span><a href="#l5.12"></a>
+<span id="l5.13">  * @author Andy Clark, IBM</span><a href="#l5.13"></a>
+<span id="l5.14">  * @author Eric Ye, IBM</span><a href="#l5.14"></a>
+<span id="l5.15" class="minusline">- *</span><a href="#l5.15"></a>
+<span id="l5.16" class="plusline">+ * @LastModified: Aug 2021</span><a href="#l5.16"></a>
+<span id="l5.17">  */</span><a href="#l5.17"></a>
+<span id="l5.18"> public class XMLStringBuffer</span><a href="#l5.18"></a>
+<span id="l5.19"> extends XMLString {</span><a href="#l5.19"></a>
+<span id="l5.20"> </span><a href="#l5.20"></a>
+<span id="l5.21">     //</span><a href="#l5.21"></a>
+<span id="l5.22" class="minusline">-    // Constants</span><a href="#l5.22"></a>
+<span id="l5.23" class="minusline">-    //</span><a href="#l5.23"></a>
+<span id="l5.24" class="minusline">-</span><a href="#l5.24"></a>
+<span id="l5.25" class="minusline">-</span><a href="#l5.25"></a>
+<span id="l5.26" class="minusline">-    /** Default buffer size (32). */</span><a href="#l5.26"></a>
+<span id="l5.27" class="minusline">-    public static final int DEFAULT_SIZE = 32;</span><a href="#l5.27"></a>
+<span id="l5.28" class="minusline">-</span><a href="#l5.28"></a>
+<span id="l5.29" class="minusline">-    //</span><a href="#l5.29"></a>
+<span id="l5.30">     // Data</span><a href="#l5.30"></a>
+<span id="l5.31">     //</span><a href="#l5.31"></a>
+<span id="l5.32"> </span><a href="#l5.32"></a>
+<span id="l5.33" class="atline">@@ -152,79 +143,4 @@</span><a href="#l5.33"></a>
+<span id="l5.34">         length = 0;</span><a href="#l5.34"></a>
+<span id="l5.35">     }</span><a href="#l5.35"></a>
+<span id="l5.36"> </span><a href="#l5.36"></a>
+<span id="l5.37" class="minusline">-    /**</span><a href="#l5.37"></a>
+<span id="l5.38" class="minusline">-     * append</span><a href="#l5.38"></a>
+<span id="l5.39" class="minusline">-     *</span><a href="#l5.39"></a>
+<span id="l5.40" class="minusline">-     * @param c</span><a href="#l5.40"></a>
+<span id="l5.41" class="minusline">-     */</span><a href="#l5.41"></a>
+<span id="l5.42" class="minusline">-    public void append(char c) {</span><a href="#l5.42"></a>
+<span id="l5.43" class="minusline">-        if(this.length + 1 &gt; this.ch.length){</span><a href="#l5.43"></a>
+<span id="l5.44" class="minusline">-            int newLength = this.ch.length * 2 ;</span><a href="#l5.44"></a>
+<span id="l5.45" class="minusline">-            if(newLength &lt; this.ch.length + DEFAULT_SIZE){</span><a href="#l5.45"></a>
+<span id="l5.46" class="minusline">-                newLength = this.ch.length + DEFAULT_SIZE;</span><a href="#l5.46"></a>
+<span id="l5.47" class="minusline">-            }</span><a href="#l5.47"></a>
+<span id="l5.48" class="minusline">-            char [] tmp = new char[newLength];</span><a href="#l5.48"></a>
+<span id="l5.49" class="minusline">-            System.arraycopy(this.ch, 0, tmp, 0, this.length);</span><a href="#l5.49"></a>
+<span id="l5.50" class="minusline">-            this.ch = tmp;</span><a href="#l5.50"></a>
+<span id="l5.51" class="minusline">-        }</span><a href="#l5.51"></a>
+<span id="l5.52" class="minusline">-        this.ch[this.length] = c ;</span><a href="#l5.52"></a>
+<span id="l5.53" class="minusline">-        this.length++;</span><a href="#l5.53"></a>
+<span id="l5.54" class="minusline">-    } // append(char)</span><a href="#l5.54"></a>
+<span id="l5.55" class="minusline">-</span><a href="#l5.55"></a>
+<span id="l5.56" class="minusline">-    /**</span><a href="#l5.56"></a>
+<span id="l5.57" class="minusline">-     * append</span><a href="#l5.57"></a>
+<span id="l5.58" class="minusline">-     *</span><a href="#l5.58"></a>
+<span id="l5.59" class="minusline">-     * @param s</span><a href="#l5.59"></a>
+<span id="l5.60" class="minusline">-     */</span><a href="#l5.60"></a>
+<span id="l5.61" class="minusline">-    public void append(String s) {</span><a href="#l5.61"></a>
+<span id="l5.62" class="minusline">-        int length = s.length();</span><a href="#l5.62"></a>
+<span id="l5.63" class="minusline">-        if (this.length + length &gt; this.ch.length) {</span><a href="#l5.63"></a>
+<span id="l5.64" class="minusline">-            int newLength = this.ch.length * 2 ;</span><a href="#l5.64"></a>
+<span id="l5.65" class="minusline">-            if(newLength &lt; this.ch.length + length + DEFAULT_SIZE){</span><a href="#l5.65"></a>
+<span id="l5.66" class="minusline">-                newLength = this.ch.length + length+ DEFAULT_SIZE;</span><a href="#l5.66"></a>
+<span id="l5.67" class="minusline">-            }</span><a href="#l5.67"></a>
+<span id="l5.68" class="minusline">-</span><a href="#l5.68"></a>
+<span id="l5.69" class="minusline">-            char[] newch = new char[newLength];</span><a href="#l5.69"></a>
+<span id="l5.70" class="minusline">-            System.arraycopy(this.ch, 0, newch, 0, this.length);</span><a href="#l5.70"></a>
+<span id="l5.71" class="minusline">-            this.ch = newch;</span><a href="#l5.71"></a>
+<span id="l5.72" class="minusline">-        }</span><a href="#l5.72"></a>
+<span id="l5.73" class="minusline">-        s.getChars(0, length, this.ch, this.length);</span><a href="#l5.73"></a>
+<span id="l5.74" class="minusline">-        this.length += length;</span><a href="#l5.74"></a>
+<span id="l5.75" class="minusline">-    } // append(String)</span><a href="#l5.75"></a>
+<span id="l5.76" class="minusline">-</span><a href="#l5.76"></a>
+<span id="l5.77" class="minusline">-    /**</span><a href="#l5.77"></a>
+<span id="l5.78" class="minusline">-     * append</span><a href="#l5.78"></a>
+<span id="l5.79" class="minusline">-     *</span><a href="#l5.79"></a>
+<span id="l5.80" class="minusline">-     * @param ch</span><a href="#l5.80"></a>
+<span id="l5.81" class="minusline">-     * @param offset</span><a href="#l5.81"></a>
+<span id="l5.82" class="minusline">-     * @param length</span><a href="#l5.82"></a>
+<span id="l5.83" class="minusline">-     */</span><a href="#l5.83"></a>
+<span id="l5.84" class="minusline">-    public void append(char[] ch, int offset, int length) {</span><a href="#l5.84"></a>
+<span id="l5.85" class="minusline">-        if (this.length + length &gt; this.ch.length) {</span><a href="#l5.85"></a>
+<span id="l5.86" class="minusline">-            int newLength = this.ch.length * 2 ;</span><a href="#l5.86"></a>
+<span id="l5.87" class="minusline">-            if(newLength &lt; this.ch.length + length + DEFAULT_SIZE){</span><a href="#l5.87"></a>
+<span id="l5.88" class="minusline">-                newLength = this.ch.length + length + DEFAULT_SIZE;</span><a href="#l5.88"></a>
+<span id="l5.89" class="minusline">-            }</span><a href="#l5.89"></a>
+<span id="l5.90" class="minusline">-            char[] newch = new char[newLength];</span><a href="#l5.90"></a>
+<span id="l5.91" class="minusline">-            System.arraycopy(this.ch, 0, newch, 0, this.length);</span><a href="#l5.91"></a>
+<span id="l5.92" class="minusline">-            this.ch = newch;</span><a href="#l5.92"></a>
+<span id="l5.93" class="minusline">-        }</span><a href="#l5.93"></a>
+<span id="l5.94" class="minusline">-        //making the code more robust as it would handle null or 0 length data,</span><a href="#l5.94"></a>
+<span id="l5.95" class="minusline">-        //add the data only when it contains some thing</span><a href="#l5.95"></a>
+<span id="l5.96" class="minusline">-        if(ch != null &amp;&amp; length &gt; 0){</span><a href="#l5.96"></a>
+<span id="l5.97" class="minusline">-            System.arraycopy(ch, offset, this.ch, this.length, length);</span><a href="#l5.97"></a>
+<span id="l5.98" class="minusline">-            this.length += length;</span><a href="#l5.98"></a>
+<span id="l5.99" class="minusline">-        }</span><a href="#l5.99"></a>
+<span id="l5.100" class="minusline">-    } // append(char[],int,int)</span><a href="#l5.100"></a>
+<span id="l5.101" class="minusline">-</span><a href="#l5.101"></a>
+<span id="l5.102" class="minusline">-    /**</span><a href="#l5.102"></a>
+<span id="l5.103" class="minusline">-     * append</span><a href="#l5.103"></a>
+<span id="l5.104" class="minusline">-     *</span><a href="#l5.104"></a>
+<span id="l5.105" class="minusline">-     * @param s</span><a href="#l5.105"></a>
+<span id="l5.106" class="minusline">-     */</span><a href="#l5.106"></a>
+<span id="l5.107" class="minusline">-    public void append(XMLString s) {</span><a href="#l5.107"></a>
+<span id="l5.108" class="minusline">-        append(s.ch, s.offset, s.length);</span><a href="#l5.108"></a>
+<span id="l5.109" class="minusline">-    } // append(XMLString)</span><a href="#l5.109"></a>
+<span id="l5.110" class="minusline">-</span><a href="#l5.110"></a>
+<span id="l5.111" class="minusline">-</span><a href="#l5.111"></a>
+<span id="l5.112"> } // class XMLStringBuffer</span><a href="#l5.112"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l6.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xerces/internal/xni/XMLString.java	Wed Jan 19 01:15:09 2022 +0000</span><a href="#l6.1"></a>
+<span id="l6.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xerces/internal/xni/XMLString.java	Wed Jan 19 01:29:03 2022 +0000</span><a href="#l6.2"></a>
+<span id="l6.3" class="atline">@@ -1,6 +1,5 @@</span><a href="#l6.3"></a>
+<span id="l6.4"> /*</span><a href="#l6.4"></a>
+<span id="l6.5" class="minusline">- * reserved comment block</span><a href="#l6.5"></a>
+<span id="l6.6" class="minusline">- * DO NOT REMOVE OR ALTER!</span><a href="#l6.6"></a>
+<span id="l6.7" class="plusline">+ * Copyright (c) 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l6.7"></a>
+<span id="l6.8">  */</span><a href="#l6.8"></a>
+<span id="l6.9"> /*</span><a href="#l6.9"></a>
+<span id="l6.10">  * Copyright 2000-2002,2004 The Apache Software Foundation.</span><a href="#l6.10"></a>
+<span id="l6.11" class="atline">@@ -41,9 +40,11 @@</span><a href="#l6.11"></a>
+<span id="l6.12">  *</span><a href="#l6.12"></a>
+<span id="l6.13">  * @author Eric Ye, IBM</span><a href="#l6.13"></a>
+<span id="l6.14">  * @author Andy Clark, IBM</span><a href="#l6.14"></a>
+<span id="l6.15" class="minusline">- *</span><a href="#l6.15"></a>
+<span id="l6.16" class="plusline">+ * @LastModified: Aug 2021</span><a href="#l6.16"></a>
+<span id="l6.17">  */</span><a href="#l6.17"></a>
+<span id="l6.18"> public class XMLString {</span><a href="#l6.18"></a>
+<span id="l6.19" class="plusline">+    /** Default buffer size (32). */</span><a href="#l6.19"></a>
+<span id="l6.20" class="plusline">+    public static final int DEFAULT_SIZE = 32;</span><a href="#l6.20"></a>
+<span id="l6.21"> </span><a href="#l6.21"></a>
+<span id="l6.22">     //</span><a href="#l6.22"></a>
+<span id="l6.23">     // Data</span><a href="#l6.23"></a>
+<span id="l6.24" class="atline">@@ -188,4 +189,78 @@</span><a href="#l6.24"></a>
+<span id="l6.25">         return length &gt; 0 ? new String(ch, offset, length) : &quot;&quot;;</span><a href="#l6.25"></a>
+<span id="l6.26">     } // toString():String</span><a href="#l6.26"></a>
+<span id="l6.27"> </span><a href="#l6.27"></a>
+<span id="l6.28" class="plusline">+    /**</span><a href="#l6.28"></a>
+<span id="l6.29" class="plusline">+     * Appends a char to the buffer.</span><a href="#l6.29"></a>
+<span id="l6.30" class="plusline">+     *</span><a href="#l6.30"></a>
+<span id="l6.31" class="plusline">+     * @param c the char</span><a href="#l6.31"></a>
+<span id="l6.32" class="plusline">+     */</span><a href="#l6.32"></a>
+<span id="l6.33" class="plusline">+    public void append(char c) {</span><a href="#l6.33"></a>
+<span id="l6.34" class="plusline">+        if(this.length + 1 &gt; this.ch.length){</span><a href="#l6.34"></a>
+<span id="l6.35" class="plusline">+            int newLength = this.ch.length * 2 ;</span><a href="#l6.35"></a>
+<span id="l6.36" class="plusline">+            if(newLength &lt; this.ch.length + DEFAULT_SIZE){</span><a href="#l6.36"></a>
+<span id="l6.37" class="plusline">+                newLength = this.ch.length + DEFAULT_SIZE;</span><a href="#l6.37"></a>
+<span id="l6.38" class="plusline">+            }</span><a href="#l6.38"></a>
+<span id="l6.39" class="plusline">+            char [] tmp = new char[newLength];</span><a href="#l6.39"></a>
+<span id="l6.40" class="plusline">+            System.arraycopy(this.ch, 0, tmp, 0, this.length);</span><a href="#l6.40"></a>
+<span id="l6.41" class="plusline">+            this.ch = tmp;</span><a href="#l6.41"></a>
+<span id="l6.42" class="plusline">+        }</span><a href="#l6.42"></a>
+<span id="l6.43" class="plusline">+        this.ch[this.length] = c ;</span><a href="#l6.43"></a>
+<span id="l6.44" class="plusline">+        this.length++;</span><a href="#l6.44"></a>
+<span id="l6.45" class="plusline">+    } // append(char)</span><a href="#l6.45"></a>
+<span id="l6.46" class="plusline">+</span><a href="#l6.46"></a>
+<span id="l6.47" class="plusline">+    /**</span><a href="#l6.47"></a>
+<span id="l6.48" class="plusline">+     * Appends a string to the buffer.</span><a href="#l6.48"></a>
+<span id="l6.49" class="plusline">+     *</span><a href="#l6.49"></a>
+<span id="l6.50" class="plusline">+     * @param s the string</span><a href="#l6.50"></a>
+<span id="l6.51" class="plusline">+     */</span><a href="#l6.51"></a>
+<span id="l6.52" class="plusline">+    public void append(String s) {</span><a href="#l6.52"></a>
+<span id="l6.53" class="plusline">+        int length = s.length();</span><a href="#l6.53"></a>
+<span id="l6.54" class="plusline">+        if (this.length + length &gt; this.ch.length) {</span><a href="#l6.54"></a>
+<span id="l6.55" class="plusline">+            int newLength = this.ch.length * 2 ;</span><a href="#l6.55"></a>
+<span id="l6.56" class="plusline">+            if(newLength &lt; this.ch.length + length + DEFAULT_SIZE){</span><a href="#l6.56"></a>
+<span id="l6.57" class="plusline">+                newLength = this.ch.length + length+ DEFAULT_SIZE;</span><a href="#l6.57"></a>
+<span id="l6.58" class="plusline">+            }</span><a href="#l6.58"></a>
+<span id="l6.59" class="plusline">+</span><a href="#l6.59"></a>
+<span id="l6.60" class="plusline">+            char[] newch = new char[newLength];</span><a href="#l6.60"></a>
+<span id="l6.61" class="plusline">+            System.arraycopy(this.ch, 0, newch, 0, this.length);</span><a href="#l6.61"></a>
+<span id="l6.62" class="plusline">+            this.ch = newch;</span><a href="#l6.62"></a>
+<span id="l6.63" class="plusline">+        }</span><a href="#l6.63"></a>
+<span id="l6.64" class="plusline">+        s.getChars(0, length, this.ch, this.length);</span><a href="#l6.64"></a>
+<span id="l6.65" class="plusline">+        this.length += length;</span><a href="#l6.65"></a>
+<span id="l6.66" class="plusline">+    } // append(String)</span><a href="#l6.66"></a>
+<span id="l6.67" class="plusline">+</span><a href="#l6.67"></a>
+<span id="l6.68" class="plusline">+    /**</span><a href="#l6.68"></a>
+<span id="l6.69" class="plusline">+     * Appends a number of characters to the buffer.</span><a href="#l6.69"></a>
+<span id="l6.70" class="plusline">+     *</span><a href="#l6.70"></a>
+<span id="l6.71" class="plusline">+     * @param ch the char array</span><a href="#l6.71"></a>
+<span id="l6.72" class="plusline">+     * @param offset the offset</span><a href="#l6.72"></a>
+<span id="l6.73" class="plusline">+     * @param length the length</span><a href="#l6.73"></a>
+<span id="l6.74" class="plusline">+     */</span><a href="#l6.74"></a>
+<span id="l6.75" class="plusline">+    public void append(char[] ch, int offset, int length) {</span><a href="#l6.75"></a>
+<span id="l6.76" class="plusline">+        if (this.length + length &gt; this.ch.length) {</span><a href="#l6.76"></a>
+<span id="l6.77" class="plusline">+            int newLength = this.ch.length * 2 ;</span><a href="#l6.77"></a>
+<span id="l6.78" class="plusline">+            if(newLength &lt; this.ch.length + length + DEFAULT_SIZE){</span><a href="#l6.78"></a>
+<span id="l6.79" class="plusline">+                newLength = this.ch.length + length + DEFAULT_SIZE;</span><a href="#l6.79"></a>
+<span id="l6.80" class="plusline">+            }</span><a href="#l6.80"></a>
+<span id="l6.81" class="plusline">+            char[] newch = new char[newLength];</span><a href="#l6.81"></a>
+<span id="l6.82" class="plusline">+            System.arraycopy(this.ch, 0, newch, 0, this.length);</span><a href="#l6.82"></a>
+<span id="l6.83" class="plusline">+            this.ch = newch;</span><a href="#l6.83"></a>
+<span id="l6.84" class="plusline">+        }</span><a href="#l6.84"></a>
+<span id="l6.85" class="plusline">+        //making the code more robust as it would handle null or 0 length data,</span><a href="#l6.85"></a>
+<span id="l6.86" class="plusline">+        //add the data only when it contains some thing</span><a href="#l6.86"></a>
+<span id="l6.87" class="plusline">+        if(ch != null &amp;&amp; length &gt; 0){</span><a href="#l6.87"></a>
+<span id="l6.88" class="plusline">+            System.arraycopy(ch, offset, this.ch, this.length, length);</span><a href="#l6.88"></a>
+<span id="l6.89" class="plusline">+            this.length += length;</span><a href="#l6.89"></a>
+<span id="l6.90" class="plusline">+        }</span><a href="#l6.90"></a>
+<span id="l6.91" class="plusline">+    } // append(char[],int,int)</span><a href="#l6.91"></a>
+<span id="l6.92" class="plusline">+</span><a href="#l6.92"></a>
+<span id="l6.93" class="plusline">+    /**</span><a href="#l6.93"></a>
+<span id="l6.94" class="plusline">+     * Appends another buffer to this buffer</span><a href="#l6.94"></a>
+<span id="l6.95" class="plusline">+     *</span><a href="#l6.95"></a>
+<span id="l6.96" class="plusline">+     * @param s another buffer</span><a href="#l6.96"></a>
+<span id="l6.97" class="plusline">+     */</span><a href="#l6.97"></a>
+<span id="l6.98" class="plusline">+    public void append(XMLString s) {</span><a href="#l6.98"></a>
+<span id="l6.99" class="plusline">+        append(s.ch, s.offset, s.length);</span><a href="#l6.99"></a>
+<span id="l6.100" class="plusline">+    } // append(XMLString)</span><a href="#l6.100"></a>
+<span id="l6.101" class="plusline">+</span><a href="#l6.101"></a>
+<span id="l6.102"> } // class XMLString</span><a href="#l6.102"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

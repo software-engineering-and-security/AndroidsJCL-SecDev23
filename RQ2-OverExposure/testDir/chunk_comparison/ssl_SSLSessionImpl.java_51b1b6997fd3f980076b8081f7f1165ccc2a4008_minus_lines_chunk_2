@@ -1,0 +1,26 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /*
+2     * we only really need a single null session
+3     */
+4    static final SSLSessionImpl         nullSession = new SSLSessionImpl();
+5
+6     // compression methods
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /*
+2     * Table of application-specific session data indexed by an application
+3     * key and the calling security context. This is important since
+4     * sessions can be shared across different protection domains.
+5     */
+6    private Hashtable<SecureKey, Object> table = new Hashtable<>();
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

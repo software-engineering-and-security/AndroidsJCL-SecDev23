@@ -1,0 +1,28 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /** TSA timestamp of signed jar.  The newest timestamp is used.  If there
+2     *  was no TSA timestamp used when signed, current time is used ("null").
+3     */
+4    private Timestamp timestamp = null;
+5 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /** TSA timestamp of signed jar.  The newest timestamp is used.  If there
+2     *  was no TSA timestamp used when signed, current time is used ("null").
+3     */
+4    private Timestamp timestamp = null;
+5
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    /** ConstraintsParameters for checking disabled algorithms */
+2    private JarConstraintsParameters params;
+3 
+--------------------------------------------

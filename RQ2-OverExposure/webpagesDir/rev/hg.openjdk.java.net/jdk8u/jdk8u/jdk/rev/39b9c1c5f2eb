@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: 39b9c1c5f2eb</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/39b9c1c5f2eb">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/39b9c1c5f2eb">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/39b9c1c5f2eb">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/39b9c1c5f2eb">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/39b9c1c5f2eb.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/39b9c1c5f2eb.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/39b9c1c5f2eb.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 14533:39b9c1c5f2eb   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8254967: com.sun.net.HttpsServer spins on TLS session close
+Reviewed-by: dfuchs</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#100;&#111;&#101;&#114;&#114;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 13 Aug 2021 10:17:48 +0800</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/bb533a765f06">bb533a765f06</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/61729ad5f50e">61729ad5f50e</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/39b9c1c5f2eb/src/share/classes/sun/net/httpserver/SSLStreams.java">src/share/classes/sun/net/httpserver/SSLStreams.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 6 insertions(+), 1 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/net/httpserver/SSLStreams.java</a></td>
+    <td class="diffstat-total" align="right">7</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:85.7142857143%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:14.2857142857%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/net/httpserver/SSLStreams.java	Wed Aug 11 19:01:23 2021 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/net/httpserver/SSLStreams.java	Fri Aug 13 10:17:48 2021 +0800</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -430,11 +430,16 @@</span><a href="#l1.3"></a>
+<span id="l1.4">             handshaking.lock();</span><a href="#l1.4"></a>
+<span id="l1.5">             ByteBuffer tmp = allocate(BufType.APPLICATION);</span><a href="#l1.5"></a>
+<span id="l1.6">             WrapperResult r;</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+            Status st;</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            HandshakeStatus hs;</span><a href="#l1.8"></a>
+<span id="l1.9">             do {</span><a href="#l1.9"></a>
+<span id="l1.10">                 tmp.clear();</span><a href="#l1.10"></a>
+<span id="l1.11">                 tmp.flip ();</span><a href="#l1.11"></a>
+<span id="l1.12">                 r = wrapper.wrapAndSendX (tmp, true);</span><a href="#l1.12"></a>
+<span id="l1.13" class="minusline">-            } while (r.result.getStatus() != Status.CLOSED);</span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+                hs = r.result.getHandshakeStatus();</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+                st = r.result.getStatus();</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+            } while (st != Status.CLOSED &amp;&amp;</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+                        !(st == Status.OK &amp;&amp; hs == HandshakeStatus.NOT_HANDSHAKING));</span><a href="#l1.17"></a>
+<span id="l1.18">         } finally {</span><a href="#l1.18"></a>
+<span id="l1.19">             handshaking.unlock();</span><a href="#l1.19"></a>
+<span id="l1.20">         }</span><a href="#l1.20"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

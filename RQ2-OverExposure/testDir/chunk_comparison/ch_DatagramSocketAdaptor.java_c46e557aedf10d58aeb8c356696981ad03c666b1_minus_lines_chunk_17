@@ -1,0 +1,23 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 int result = dc.poll(Net.POLLIN, to);
+1                if (result > 0 &&
+2                        ((result & Net.POLLIN) != 0)) {
+3                     if ((sender = dc.receive(bb)) != null)
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                int result = dc.poll(Net.POLLIN, to);
+1                if (result > 0 &&
+2                        ((result & Net.POLLIN) != 0)) {
+3                    if ((sender = dc.receive(bb)) != null)
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                 int result = dc.poll(Net.POLLIN, to);
+1                if (result > 0 && ((result & Net.POLLIN) != 0)) {
+2                     if ((sender = dc.receive(bb)) != null)
+--------------------------------------------

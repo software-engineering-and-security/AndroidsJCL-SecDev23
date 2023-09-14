@@ -1,0 +1,23 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         return "ServerSocket[addr=" + getInetAddress() +
+1            //          ",port=" + getPort() +
+2                ",localport=" + getLocalPort()  + "]";
+3     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        return "ServerSocket[addr=" + getInetAddress() +
+1            //          ",port=" + getPort() +
+2                ",localport=" + getLocalPort()  + "]";
+3    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         return "ServerSocket[addr=" + getInetAddress() +
+1               ",localport=" + getLocalPort()  + "]";
+2     }
+--------------------------------------------

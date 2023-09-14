@@ -1,0 +1,29 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     public int hashCode() {
+1        StringBuilder sbuf = new StringBuilder();
+2        sbuf.append(algid.toString());
+3        sbuf.append(paramsToString());
+4        return sbuf.toString().hashCode();
+5     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    public int hashCode() {
+1        StringBuilder sbuf = new StringBuilder();
+2        sbuf.append(algid.toString());
+3        sbuf.append(paramsToString());
+4        return sbuf.toString().hashCode();
+5    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     public int hashCode() {
+1        int hashCode = algid.hashCode();
+2        hashCode = 31 * hashCode + Arrays.hashCode(encodedParams);
+3        return hashCode;
+4     }
+--------------------------------------------

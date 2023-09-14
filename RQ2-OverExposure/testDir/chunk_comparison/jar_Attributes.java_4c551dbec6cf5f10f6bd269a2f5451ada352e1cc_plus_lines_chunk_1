@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1import java.io.ByteArrayOutputStream;
+2 import java.io.DataInputStream;
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1import java.io.ByteArrayOutputStream;
+2import java.io.DataOutputStream;
+---------------------------------------------
+Differences:	['2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

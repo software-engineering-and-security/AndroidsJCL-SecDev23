@@ -1,0 +1,47 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     public AlgorithmChecker(TrustAnchor anchor, Date pkixdate, String variant) {
+1        this(anchor, certPathDefaultConstraints, pkixdate, null, variant);
+2    }
+3
+4    // Check this 'cert' for restrictions in the AnchorCertificates
+5    // trusted certificates list
+6    private static boolean checkFingerprint(X509Certificate cert) {
+7        if (!publicCALimits) {
+8            return false;
+9        }
+10
+11        if (debug != null) {
+12            debug.println("AlgorithmChecker.contains: " + cert.getSigAlgName());
+13        }
+14        return AnchorCertificates.contains(cert);
+15     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    public AlgorithmChecker(TrustAnchor anchor, Date pkixdate, String variant) {
+1        this(anchor, certPathDefaultConstraints, pkixdate, null, variant);
+2    }
+3
+4    // Check this 'cert' for restrictions in the AnchorCertificates
+5    // trusted certificates list
+6    private static boolean checkFingerprint(X509Certificate cert) {
+7        if (!publicCALimits) {
+8            return false;
+9        }
+10
+11        if (debug != null) {
+12            debug.println("AlgorithmChecker.contains: " + cert.getSigAlgName());
+13        }
+14        return AnchorCertificates.contains(cert);
+15    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     public AlgorithmChecker(TrustAnchor anchor, Date pkixdate, String variant) {
+1        this(anchor, certPathDefaultConstraints, pkixdate, variant);
+2     }
+--------------------------------------------

@@ -1,0 +1,34 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1            MessageDigest digest  = digests.get(i);
+2             byte [] manHash = manifestHashes.get(i);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1            MessageDigest digest  = digests.get(i);
+2            byte [] manHash = manifestHashes.get(i);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1            MessageDigest digest = digests.get(i);
+2            if (params != null) {
+3                try {
+4                    params.setExtendedExceptionMsg(JarFile.MANIFEST_NAME,
+5                        name + " entry");
+6                    DisabledAlgorithmConstraints.jarConstraints()
+7                           .permits(digest.getAlgorithm(), params);
+8                } catch (GeneralSecurityException e) {
+9                    if (debug != null) {
+10                        debug.println("Digest algorithm is restricted: " + e);
+11                    }
+12                    return null;
+13                }
+14            }
+15             byte [] manHash = manifestHashes.get(i);
+--------------------------------------------

@@ -1,0 +1,44 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     }
+1
+2    /**
+3     * Returns true if anchor is a JDK CA (a root CA that is included by
+4     * default in the cacerts keystore).
+5     */
+6    synchronized boolean isJdkCA() {
+7        if (!hasJdkCABeenChecked) {
+8            if (trustedCert != null) {
+9                jdkCA = AnchorCertificates.contains(trustedCert);
+10            }
+11            hasJdkCABeenChecked = true;
+12        }
+13        return jdkCA;
+14    }
+15 }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2    /**
+3     * Returns a formatted string describing the {@code TrustAnchor}.
+4     *
+5     * @return a formatted string describing the {@code TrustAnchor}
+6     */
+7    public String toString() {
+8        StringBuffer sb = new StringBuffer();
+9        sb.append("[\n");
+10        if (pubKey != null) {
+11            sb.append("  Trusted CA Public Key: " + pubKey.toString() + "\n");
+12            sb.append("  Trusted CA Issuer Name: "
+13                + String.valueOf(caName) + "\n");
+14        } else {
+15            sb.append("  Trusted CA cert: " + trustedCert.toString() + "\n");
+---------------------------------------------
+Differences:	['7', '8', '9', '10', '11', '12', '13', '14', '15']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: e8bc0c764294</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/e8bc0c764294">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/e8bc0c764294">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/e8bc0c764294">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/e8bc0c764294">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/e8bc0c764294.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/e8bc0c764294.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/e8bc0c764294.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 169:e8bc0c764294   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6588003: LayoutQueue shares mutable implementation across AppContexts
+Reviewed-by: alexp</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#112;&#101;&#116;&#101;&#114;&#122;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Tue, 05 May 2009 11:36:33 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/f6b4524ff699">f6b4524ff699</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/7e16c0508c8b">7e16c0508c8b</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/e8bc0c764294/src/share/classes/javax/swing/text/LayoutQueue.java">src/share/classes/javax/swing/text/LayoutQueue.java</a> <a href="/jdk6/jdk6/jdk/file/e8bc0c764294/test/javax/swing/text/LayoutQueue/Test6588003.java">test/javax/swing/text/LayoutQueue/Test6588003.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 74 insertions(+), 7 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/javax/swing/text/LayoutQueue.java</a></td>
+    <td class="diffstat-total" align="right">22</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:25.4237288136%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:11.8644067797%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">test/javax/swing/text/LayoutQueue/Test6588003.java</a></td>
+    <td class="diffstat-total" align="right">59</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/javax/swing/text/LayoutQueue.java	Mon May 04 13:45:21 2009 +0400</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/javax/swing/text/LayoutQueue.java	Tue May 05 11:36:33 2009 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -25,6 +25,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> package javax.swing.text;</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6"> import java.util.Vector;</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l1.7"></a>
+<span id="l1.8"> </span><a href="#l1.8"></a>
+<span id="l1.9"> /**</span><a href="#l1.9"></a>
+<span id="l1.10">  * A queue of text layout tasks.</span><a href="#l1.10"></a>
+<span id="l1.11" class="atline">@@ -35,10 +36,10 @@</span><a href="#l1.11"></a>
+<span id="l1.12">  */</span><a href="#l1.12"></a>
+<span id="l1.13"> public class LayoutQueue {</span><a href="#l1.13"></a>
+<span id="l1.14"> </span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-    Vector tasks;</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-    Thread worker;</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+    private static final Object DEFAULT_QUEUE = new Object();</span><a href="#l1.17"></a>
+<span id="l1.18"> </span><a href="#l1.18"></a>
+<span id="l1.19" class="minusline">-    static LayoutQueue defaultQueue;</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+    private Vector tasks;</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+    private Thread worker;</span><a href="#l1.21"></a>
+<span id="l1.22"> </span><a href="#l1.22"></a>
+<span id="l1.23">     /**</span><a href="#l1.23"></a>
+<span id="l1.24">      * Construct a layout queue.</span><a href="#l1.24"></a>
+<span id="l1.25" class="atline">@@ -51,10 +52,15 @@</span><a href="#l1.25"></a>
+<span id="l1.26">      * Fetch the default layout queue.</span><a href="#l1.26"></a>
+<span id="l1.27">      */</span><a href="#l1.27"></a>
+<span id="l1.28">     public static LayoutQueue getDefaultQueue() {</span><a href="#l1.28"></a>
+<span id="l1.29" class="minusline">-        if (defaultQueue == null) {</span><a href="#l1.29"></a>
+<span id="l1.30" class="minusline">-            defaultQueue = new LayoutQueue();</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+        AppContext ac = AppContext.getAppContext();</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+        synchronized (DEFAULT_QUEUE) {</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+            LayoutQueue defaultQueue = (LayoutQueue) ac.get(DEFAULT_QUEUE);</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+            if (defaultQueue == null) {</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+                defaultQueue = new LayoutQueue();</span><a href="#l1.35"></a>
+<span id="l1.36" class="plusline">+                ac.put(DEFAULT_QUEUE, defaultQueue);</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+            }</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+            return defaultQueue;</span><a href="#l1.38"></a>
+<span id="l1.39">         }</span><a href="#l1.39"></a>
+<span id="l1.40" class="minusline">-        return defaultQueue;</span><a href="#l1.40"></a>
+<span id="l1.41">     }</span><a href="#l1.41"></a>
+<span id="l1.42"> </span><a href="#l1.42"></a>
+<span id="l1.43">     /**</span><a href="#l1.43"></a>
+<span id="l1.44" class="atline">@@ -63,7 +69,9 @@</span><a href="#l1.44"></a>
+<span id="l1.45">      * @param q the new queue.</span><a href="#l1.45"></a>
+<span id="l1.46">      */</span><a href="#l1.46"></a>
+<span id="l1.47">     public static void setDefaultQueue(LayoutQueue q) {</span><a href="#l1.47"></a>
+<span id="l1.48" class="minusline">-        defaultQueue = q;</span><a href="#l1.48"></a>
+<span id="l1.49" class="plusline">+        synchronized (DEFAULT_QUEUE) {</span><a href="#l1.49"></a>
+<span id="l1.50" class="plusline">+            AppContext.getAppContext().put(DEFAULT_QUEUE, q);</span><a href="#l1.50"></a>
+<span id="l1.51" class="plusline">+        }</span><a href="#l1.51"></a>
+<span id="l1.52">     }</span><a href="#l1.52"></a>
+<span id="l1.53"> </span><a href="#l1.53"></a>
+<span id="l1.54">     /**</span><a href="#l1.54"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/test/javax/swing/text/LayoutQueue/Test6588003.java	Tue May 05 11:36:33 2009 +0400</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -0,0 +1,59 @@</span><a href="#l2.3"></a>
+<span id="l2.4" class="plusline">+/*</span><a href="#l2.4"></a>
+<span id="l2.5" class="plusline">+ * Copyright 2007 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+ *</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.8"></a>
+<span id="l2.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l2.9"></a>
+<span id="l2.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l2.10"></a>
+<span id="l2.11" class="plusline">+ *</span><a href="#l2.11"></a>
+<span id="l2.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l2.12"></a>
+<span id="l2.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+ * accompanied this code).</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+ *</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l2.18"></a>
+<span id="l2.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l2.19"></a>
+<span id="l2.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l2.20"></a>
+<span id="l2.21" class="plusline">+ *</span><a href="#l2.21"></a>
+<span id="l2.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l2.22"></a>
+<span id="l2.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l2.23"></a>
+<span id="l2.24" class="plusline">+ * have any questions.</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+ */</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+/* @test</span><a href="#l2.27"></a>
+<span id="l2.28" class="plusline">+   @bug 6588003</span><a href="#l2.28"></a>
+<span id="l2.29" class="plusline">+   @summary LayoutQueue should not share its DefaultQueue across AppContexts</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+   @author Peter Zhelezniakov</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+   @run main Test6588003</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+*/</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+</span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+import javax.swing.text.LayoutQueue;</span><a href="#l2.34"></a>
+<span id="l2.35" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l2.35"></a>
+<span id="l2.36" class="plusline">+</span><a href="#l2.36"></a>
+<span id="l2.37" class="plusline">+public class Test6588003 implements Runnable {</span><a href="#l2.37"></a>
+<span id="l2.38" class="plusline">+    private static final LayoutQueue DEFAULT = new LayoutQueue();</span><a href="#l2.38"></a>
+<span id="l2.39" class="plusline">+</span><a href="#l2.39"></a>
+<span id="l2.40" class="plusline">+    public static void main(String[] args) throws InterruptedException {</span><a href="#l2.40"></a>
+<span id="l2.41" class="plusline">+        LayoutQueue.setDefaultQueue(DEFAULT);</span><a href="#l2.41"></a>
+<span id="l2.42" class="plusline">+</span><a href="#l2.42"></a>
+<span id="l2.43" class="plusline">+        ThreadGroup group = new ThreadGroup(&quot;Test6588003&quot;);</span><a href="#l2.43"></a>
+<span id="l2.44" class="plusline">+        Thread thread = new Thread(group, new Test6588003());</span><a href="#l2.44"></a>
+<span id="l2.45" class="plusline">+        thread.start();</span><a href="#l2.45"></a>
+<span id="l2.46" class="plusline">+        thread.join();</span><a href="#l2.46"></a>
+<span id="l2.47" class="plusline">+</span><a href="#l2.47"></a>
+<span id="l2.48" class="plusline">+        if (LayoutQueue.getDefaultQueue() != DEFAULT) {</span><a href="#l2.48"></a>
+<span id="l2.49" class="plusline">+            throw new RuntimeException(&quot;Sharing detected&quot;);</span><a href="#l2.49"></a>
+<span id="l2.50" class="plusline">+        }</span><a href="#l2.50"></a>
+<span id="l2.51" class="plusline">+    }</span><a href="#l2.51"></a>
+<span id="l2.52" class="plusline">+</span><a href="#l2.52"></a>
+<span id="l2.53" class="plusline">+    public void run() {</span><a href="#l2.53"></a>
+<span id="l2.54" class="plusline">+        SunToolkit.createNewAppContext();</span><a href="#l2.54"></a>
+<span id="l2.55" class="plusline">+</span><a href="#l2.55"></a>
+<span id="l2.56" class="plusline">+        if (LayoutQueue.getDefaultQueue() == DEFAULT) {</span><a href="#l2.56"></a>
+<span id="l2.57" class="plusline">+            throw new RuntimeException(&quot;Sharing detected&quot;);</span><a href="#l2.57"></a>
+<span id="l2.58" class="plusline">+        }</span><a href="#l2.58"></a>
+<span id="l2.59" class="plusline">+</span><a href="#l2.59"></a>
+<span id="l2.60" class="plusline">+        LayoutQueue.setDefaultQueue(new LayoutQueue());</span><a href="#l2.60"></a>
+<span id="l2.61" class="plusline">+    }</span><a href="#l2.61"></a>
+<span id="l2.62" class="plusline">+}</span><a href="#l2.62"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

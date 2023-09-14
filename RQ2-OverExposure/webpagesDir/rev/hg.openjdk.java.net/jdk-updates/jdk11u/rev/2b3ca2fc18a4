@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk-updates/jdk11u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk-updates/jdk11u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk-updates/jdk11u/static/mercurial.js"></script>
+
+<title>jdk-updates/jdk11u: 2b3ca2fc18a4</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk-updates/jdk11u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/shortlog/2b3ca2fc18a4">log</a></li>
+ <li><a href="/jdk-updates/jdk11u/graph/2b3ca2fc18a4">graph</a></li>
+ <li><a href="/jdk-updates/jdk11u/tags">tags</a></li>
+ <li><a href="/jdk-updates/jdk11u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk-updates/jdk11u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk-updates/jdk11u/raw-rev/2b3ca2fc18a4">raw</a></li>
+ <li><a href="/jdk-updates/jdk11u/file/2b3ca2fc18a4">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk-updates/jdk11u/archive/2b3ca2fc18a4.zip">zip</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/2b3ca2fc18a4.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/2b3ca2fc18a4.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk-updates">jdk-updates</a> / <a href="/jdk-updates/jdk11u">jdk11u</a> </h2>
+<h3>changeset 52900:2b3ca2fc18a4   </h3>
+
+<form class="search" action="/jdk-updates/jdk11u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk-updates/jdk11u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8232581: Improve TLS verification
+Reviewed-by: xuelei, rhalade, mschoene</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#106;&#110;&#105;&#109;&#101;&#104;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 30 Oct 2019 13:15:21 -0700</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk-updates/jdk11u/rev/36975c9e57a3">36975c9e57a3</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk-updates/jdk11u/rev/944659721da5">944659721da5</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk-updates/jdk11u/file/2b3ca2fc18a4/src/java.base/share/classes/sun/security/ssl/Alert.java">src/java.base/share/classes/sun/security/ssl/Alert.java</a> <a href="/jdk-updates/jdk11u/file/2b3ca2fc18a4/src/java.base/share/classes/sun/security/ssl/ClientKeyExchange.java">src/java.base/share/classes/sun/security/ssl/ClientKeyExchange.java</a> <a href="/jdk-updates/jdk11u/file/2b3ca2fc18a4/src/java.base/share/classes/sun/security/ssl/Finished.java">src/java.base/share/classes/sun/security/ssl/Finished.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     3 files changed, 19 insertions(+), 3 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/java.base/share/classes/sun/security/ssl/Alert.java</a></td>
+    <td class="diffstat-total" align="right">8</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:50.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:30.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/java.base/share/classes/sun/security/ssl/ClientKeyExchange.java</a></td>
+    <td class="diffstat-total" align="right">10</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/java.base/share/classes/sun/security/ssl/Finished.java</a></td>
+    <td class="diffstat-total" align="right">4</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:40.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/Alert.java	Mon Oct 28 10:43:58 2019 -0700</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/Alert.java	Wed Oct 30 13:15:21 2019 -0700</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -265,7 +265,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">                     // It's OK to get a no_certificate alert from a client of</span><a href="#l1.4"></a>
+<span id="l1.5">                     // which we requested client authentication.  However,</span><a href="#l1.5"></a>
+<span id="l1.6">                     // if we required it, then this is not acceptable.</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-                     if (tc.sslConfig.isClientMode ||</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+                    if (tc.sslConfig.isClientMode ||</span><a href="#l1.8"></a>
+<span id="l1.9">                             alert != Alert.NO_CERTIFICATE ||</span><a href="#l1.9"></a>
+<span id="l1.10">                             (tc.sslConfig.clientAuthType !=</span><a href="#l1.10"></a>
+<span id="l1.11">                                     ClientAuthType.CLIENT_AUTH_REQUESTED)) {</span><a href="#l1.11"></a>
+<span id="l1.12" class="atline">@@ -273,8 +273,10 @@</span><a href="#l1.12"></a>
+<span id="l1.13">                             &quot;received handshake warning: &quot; + alert.description);</span><a href="#l1.13"></a>
+<span id="l1.14">                     } else {</span><a href="#l1.14"></a>
+<span id="l1.15">                         // Otherwise ignore the warning but remove the</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-                        // CertificateVerify handshake consumer so the state</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-                        // machine doesn't expect it.</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+                        // Certificate and CertificateVerify handshake</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+                        // consumer so the state machine doesn't expect it.</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+                        tc.handshakeContext.handshakeConsumers.remove(</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+                                SSLHandshake.CERTIFICATE.id);</span><a href="#l1.21"></a>
+<span id="l1.22">                         tc.handshakeContext.handshakeConsumers.remove(</span><a href="#l1.22"></a>
+<span id="l1.23">                                 SSLHandshake.CERTIFICATE_VERIFY.id);</span><a href="#l1.23"></a>
+<span id="l1.24">                     }</span><a href="#l1.24"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/ClientKeyExchange.java	Mon Oct 28 10:43:58 2019 -0700</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/ClientKeyExchange.java	Wed Oct 30 13:15:21 2019 -0700</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -90,6 +90,16 @@</span><a href="#l2.3"></a>
+<span id="l2.4">             ServerHandshakeContext shc = (ServerHandshakeContext)context;</span><a href="#l2.4"></a>
+<span id="l2.5">             // clean up this consumer</span><a href="#l2.5"></a>
+<span id="l2.6">             shc.handshakeConsumers.remove(SSLHandshake.CLIENT_KEY_EXCHANGE.id);</span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+            // Check for an unprocessed client Certificate message.  If that</span><a href="#l2.8"></a>
+<span id="l2.9" class="plusline">+            // handshake consumer is still present then that expected message</span><a href="#l2.9"></a>
+<span id="l2.10" class="plusline">+            // was not sent.</span><a href="#l2.10"></a>
+<span id="l2.11" class="plusline">+            if (shc.handshakeConsumers.containsKey(</span><a href="#l2.11"></a>
+<span id="l2.12" class="plusline">+                    SSLHandshake.CERTIFICATE.id)) {</span><a href="#l2.12"></a>
+<span id="l2.13" class="plusline">+                throw shc.conContext.fatal(Alert.UNEXPECTED_MESSAGE,</span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+                        &quot;Unexpected ClientKeyExchange handshake message.&quot;);</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+            }</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+</span><a href="#l2.16"></a>
+<span id="l2.17">             SSLKeyExchange ke = SSLKeyExchange.valueOf(</span><a href="#l2.17"></a>
+<span id="l2.18">                     shc.negotiatedCipherSuite.keyExchange,</span><a href="#l2.18"></a>
+<span id="l2.19">                     shc.negotiatedProtocol);</span><a href="#l2.19"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/Finished.java	Mon Oct 28 10:43:58 2019 -0700</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/Finished.java	Wed Oct 30 13:15:21 2019 -0700</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -885,6 +885,8 @@</span><a href="#l3.3"></a>
+<span id="l3.4">             // has been received and processed.</span><a href="#l3.4"></a>
+<span id="l3.5">             if (!chc.isResumption) {</span><a href="#l3.5"></a>
+<span id="l3.6">                 if (chc.handshakeConsumers.containsKey(</span><a href="#l3.6"></a>
+<span id="l3.7" class="plusline">+                        SSLHandshake.CERTIFICATE.id) ||</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+                    chc.handshakeConsumers.containsKey(</span><a href="#l3.8"></a>
+<span id="l3.9">                         SSLHandshake.CERTIFICATE_VERIFY.id)) {</span><a href="#l3.9"></a>
+<span id="l3.10">                     throw chc.conContext.fatal(Alert.UNEXPECTED_MESSAGE,</span><a href="#l3.10"></a>
+<span id="l3.11">                             &quot;Unexpected Finished handshake message&quot;);</span><a href="#l3.11"></a>
+<span id="l3.12" class="atline">@@ -1017,6 +1019,8 @@</span><a href="#l3.12"></a>
+<span id="l3.13">             // has been received and processed.</span><a href="#l3.13"></a>
+<span id="l3.14">             if (!shc.isResumption) {</span><a href="#l3.14"></a>
+<span id="l3.15">                 if (shc.handshakeConsumers.containsKey(</span><a href="#l3.15"></a>
+<span id="l3.16" class="plusline">+                        SSLHandshake.CERTIFICATE.id) ||</span><a href="#l3.16"></a>
+<span id="l3.17" class="plusline">+                    shc.handshakeConsumers.containsKey(</span><a href="#l3.17"></a>
+<span id="l3.18">                         SSLHandshake.CERTIFICATE_VERIFY.id)) {</span><a href="#l3.18"></a>
+<span id="l3.19">                     throw shc.conContext.fatal(Alert.UNEXPECTED_MESSAGE,</span><a href="#l3.19"></a>
+<span id="l3.20">                             &quot;Unexpected Finished handshake message&quot;);</span><a href="#l3.20"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

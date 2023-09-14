@@ -1,0 +1,56 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     }
+1
+2    /**
+3     * Verify all of the algorithms in the array of SignerInfos against the
+4     * constraints in the jdk.jar.disabledAlgorithms security property.
+5     *
+6     * @param infos array of SignerInfos
+7     * @param params constraint parameters
+8     * @param name the name of the signer's PKCS7 file
+9     * @return a set of algorithms that passed the checks and are not disabled
+10     */
+11    public static Set<String> verifyAlgorithms(SignerInfo[] infos,
+12        JarConstraintsParameters params, String name) throws SignatureException {
+13        Map<AlgorithmId, String> algorithms = new HashMap<>();
+14        for (SignerInfo info : infos) {
+15            algorithms.putAll(info.algorithms);
+16        }
+17
+18        Set<String> enabledAlgorithms = new HashSet<>();
+19        try {
+20            for (Map.Entry<AlgorithmId, String> algorithm : algorithms.entrySet()) {
+21                params.setExtendedExceptionMsg(name, algorithm.getValue());
+22                AlgorithmId algId = algorithm.getKey();
+23                JAR_DISABLED_CHECK.permits(algId.getName(),
+24                    algId.getParameters(), params);
+25                enabledAlgorithms.add(algId.getName());
+26            }
+27        } catch (CertPathValidatorException e) {
+28            throw new SignatureException(e);
+29        }
+30        return enabledAlgorithms;
+31    }
+32 }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0            "\n";
+1
+2        out += "\tencryptedDigest: " + "\n" +
+3            hexDump.encodeBuffer(encryptedDigest) + "\n";
+4        if (unauthenticatedAttributes != null) {
+5            out += "\tunauthenticatedAttributes: " +
+6                   unauthenticatedAttributes + "\n";
+7        }
+8        return out;
+9    }
+10}
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        // Get applicable constraints based off the signature algorithm
+2         private List<Constraint> getConstraints(String algorithm) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        // Get applicable constraints based off the signature algorithm
+2        private List<Constraint> getConstraints(String algorithm) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        // Get applicable constraints based off the algorithm
+2         private List<Constraint> getConstraints(String algorithm) {
+--------------------------------------------

@@ -1,0 +1,29 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         throws NoSuchAlgorithmException, SignatureException {
+1
+2        AlgorithmId digestAlgId = token.getHashAlgorithm();
+3        algorithms.put(digestAlgId, "TimestampToken digestAlgorithm field");
+4 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2}
+---------------------------------------------
+Differences:	['0', '2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         throws NoSuchAlgorithmException, SignatureException {
+1        String digestAlgname = token.getHashAlgorithm().getName();
+2        // check that algorithm is not restricted
+3        if (!JAR_DISABLED_CHECK.permits(DIGEST_PRIMITIVE_SET, digestAlgname,
+4                null)) {
+5            throw new SignatureException("Timestamp token digest check failed. " +
+6                    "Disabled algorithm used: " + digestAlgname);
+7        }
+8 
+--------------------------------------------

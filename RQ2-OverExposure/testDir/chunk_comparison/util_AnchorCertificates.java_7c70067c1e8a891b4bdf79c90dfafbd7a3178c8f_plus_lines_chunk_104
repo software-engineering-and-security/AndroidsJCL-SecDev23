@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 import java.util.Set;
+1import javax.security.auth.x500.X500Principal;
+2 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1import javax.security.auth.x500.X500Principal;
+2import sun.security.x509.X509CertImpl;
+---------------------------------------------
+Differences:	['0', '2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

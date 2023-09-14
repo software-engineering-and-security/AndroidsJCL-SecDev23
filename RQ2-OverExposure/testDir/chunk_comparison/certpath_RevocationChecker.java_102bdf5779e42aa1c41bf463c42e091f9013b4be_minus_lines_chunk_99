@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                             params.sigProvider(), certStores, reasonsMask,
+1                            anchors, null, params.variant()));
+2                 }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                            params.sigProvider(), certStores, reasonsMask,
+1                            anchors, null, params.variant()));
+2                }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                             params.sigProvider(), certStores, reasonsMask,
+1                            anchors, null, params.variant(), anchor));
+2                 }
+--------------------------------------------

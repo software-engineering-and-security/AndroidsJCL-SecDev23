@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1            Signature sig = Signature.getInstance(algname);
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1            Signature sig = Signature.getInstance(algname);
+2            sig.initVerify(key);
+---------------------------------------------
+Differences:	['2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1            Signature sig = Signature.getInstance(sigAlgName);
+2 
+--------------------------------------------

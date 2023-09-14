@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // (this is the invariant enforced with auto-growth)
+1        origlength = Math.max(origlength, (int)(elements / loadFactor) + 1);
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // (this is the invariant enforced with auto-growth)
+1        origlength = Math.max(origlength, (int)(elements / loadFactor) + 1);
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // (this is the invariant enforced with auto-growth)
+1        origlength = Math.max(origlength, (int)(elements / lf) + 1);
+2 
+--------------------------------------------

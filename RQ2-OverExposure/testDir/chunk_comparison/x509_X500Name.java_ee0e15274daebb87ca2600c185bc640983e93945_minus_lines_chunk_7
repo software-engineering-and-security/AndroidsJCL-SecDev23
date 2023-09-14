@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /** OID for the "OU=" attribute, denoting an organizational unit name */
+2        orgUnitName_oid = intern(ObjectIdentifier.newInternal(orgUnitName_data));
+3 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /** OID for the "OU=" attribute, denoting an organizational unit name */
+2        orgUnitName_oid = intern(ObjectIdentifier.newInternal(orgUnitName_data));
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // OID for the "STREET=" attribute, denoting a street address.
+2    public static final ObjectIdentifier streetAddress_oid =
+3            ObjectIdentifier.newInternal(streetAddress_data);
+4 
+--------------------------------------------

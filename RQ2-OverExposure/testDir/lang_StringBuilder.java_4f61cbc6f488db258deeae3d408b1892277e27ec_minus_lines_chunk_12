@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     extends AbstractStringBuilder
+1    implements java.io.Serializable, CharSequence
+2 {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    extends AbstractStringBuilder
+1    implements java.io.Serializable, CharSequence
+2{
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     extends AbstractStringBuilder
+1    implements Serializable, CharSequence
+2 {
+--------------------------------------------

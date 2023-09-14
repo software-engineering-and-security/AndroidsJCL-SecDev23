@@ -1,0 +1,23 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private static final DisabledAlgorithmConstraints JAR_DISABLED_CHECK =
+1            new DisabledAlgorithmConstraints(
+2                    DisabledAlgorithmConstraints.PROPERTY_JAR_DISABLED_ALGS);
+3 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    private static final DisabledAlgorithmConstraints JAR_DISABLED_CHECK =
+1            new DisabledAlgorithmConstraints(
+2                    DisabledAlgorithmConstraints.PROPERTY_JAR_DISABLED_ALGS);
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     private static final DisabledAlgorithmConstraints JAR_DISABLED_CHECK =
+1            DisabledAlgorithmConstraints.jarConstraints();
+2 
+--------------------------------------------

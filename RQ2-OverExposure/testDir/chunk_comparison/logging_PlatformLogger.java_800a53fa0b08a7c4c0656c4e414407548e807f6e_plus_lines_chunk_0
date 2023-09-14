@@ -1,0 +1,35 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         void doLog(int level, String msg, Object... params) {
+1            // only pass String objects to the j.u.l.Logger which may
+2            // be created by untrusted code
+3            int len = (params != null) ? params.length : 0;
+4            Object[] sparams = new String[len];
+5            for (int i = 0; i < len; i++) {
+6                sparams [i] = String.valueOf(params[i]);
+7            }
+8            LoggingSupport.log(javaLogger, levelObjects.get(level), msg, sparams);
+9         }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0            }
+1            // only pass String objects to the j.u.l.Logger which may
+2            // be created by untrusted code
+3            int len = (params != null) ? params.length : 0;
+4            Object[] sparams = new String[len];
+5            for (int i = 0; i < len; i++) {
+6                sparams [i] = String.valueOf(params[i]);
+7            }
+8            LoggingSupport.log(javaLogger, level.javaLevel, msg, sparams);
+9        }
+---------------------------------------------
+Differences:	['0', '8']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         void doLog(int level, String msg, Object... params) {
+1            LoggingSupport.log(javaLogger, levelObjects.get(level), msg, params);
+2         }
+--------------------------------------------

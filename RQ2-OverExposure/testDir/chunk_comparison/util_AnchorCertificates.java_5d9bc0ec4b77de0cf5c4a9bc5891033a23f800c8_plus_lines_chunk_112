@@ -1,0 +1,36 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * Checks if a JDK trust anchor is the issuer of a certificate.
+3     *
+4     * @param cert the certificate to check
+5     * @return true if the certificate is issued by a trust anchor
+6     */
+7    public static boolean issuerOf(X509Certificate cert) {
+8        return certIssuers.contains(cert.getIssuerX500Principal());
+9    }
+10
+11     private AnchorCertificates() {}
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * Checks if a certificate is a trust anchor.
+3     *
+4     * @param cert the certificate to check
+5     * @return true if the certificate is trusted.
+6     */
+7    public static boolean contains(X509Certificate cert) {
+8        String key = X509CertImpl.getFingerprint(HASH, cert);
+9        boolean result = certs.contains(key);
+10        if (result && debug != null) {
+11            debug.println("AnchorCertificate.contains: matched " +
+---------------------------------------------
+Differences:	['7', '8', '9', '10', '11']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

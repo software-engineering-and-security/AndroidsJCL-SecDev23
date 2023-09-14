@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        // Write out size again (maintained for backward compatibility)
+2         s.writeInt(size);
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1        // Write out size again (maintained for backward compatibility)
+2        s.writeInt(size);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0 
+1        // Write out size (number of Mappings)
+2         s.writeInt(size);
+--------------------------------------------

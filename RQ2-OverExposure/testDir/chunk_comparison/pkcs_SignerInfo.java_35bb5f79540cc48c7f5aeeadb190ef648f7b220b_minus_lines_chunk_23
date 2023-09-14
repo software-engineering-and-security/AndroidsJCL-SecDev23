@@ -1,0 +1,32 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1            // check if the public key is restricted
+2            if (!JAR_DISABLED_CHECK.permits(SIG_PRIMITIVE_SET, key)) {
+3                throw new SignatureException("Public key check failed. " +
+4                        "Disabled key used: " +
+5                        KeyUtil.getKeySize(key) + " bit " +
+6                        key.getAlgorithm());
+7            }
+8
+9             if (cert.hasUnsupportedCriticalExtension()) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1            // check if the public key is restricted
+2            if (!JAR_DISABLED_CHECK.permits(SIG_PRIMITIVE_SET, key)) {
+3                throw new SignatureException("Public key check failed. " +
+4                        "Disabled key used: " +
+5                        KeyUtil.getKeySize(key) + " bit " +
+6                        key.getAlgorithm());
+7            }
+8
+9            if (cert.hasUnsupportedCriticalExtension()) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

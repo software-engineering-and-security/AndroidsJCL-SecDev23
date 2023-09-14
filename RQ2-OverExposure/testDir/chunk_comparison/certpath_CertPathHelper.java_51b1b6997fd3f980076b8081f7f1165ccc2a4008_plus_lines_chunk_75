@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     }
+1
+2    public static boolean isJdkCA(TrustAnchor anchor) {
+3        return (anchor == null) ? false : instance.implIsJdkCA(anchor);
+4    }
+5 }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2    public static void setDateAndTime(X509CRLSelector sel, Date date, long skew) {
+3        instance.implSetDateAndTime(sel, date, skew);
+4    }
+5}
+---------------------------------------------
+Differences:	['2', '3']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

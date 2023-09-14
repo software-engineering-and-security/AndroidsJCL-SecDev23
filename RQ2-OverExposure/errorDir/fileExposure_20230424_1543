@@ -1,0 +1,53 @@
+xxxxxxxxxxxx Bad file regex
+xxxxxxxxxxxx Bad file regex
+xxxxxxxxxxxx Bad file regex
+xxxx Repo access not set up:	CVE-2021-35550: https://github.com/openjdk/jdk11u-dev/commit/af4b37301d33723806c38cf8ae5d85b7fa7ef39f
+xxxx Repo access not set up:	CVE-2021-35556: https://github.com/openjdk/jdk11u-dev/commit/8dd74193a5f0192e82c7da5e64f58d55c96f548d
+xxxx Repo access not set up:	CVE-2021-35559: https://github.com/openjdk/jdk11u-dev/commit/d68dd44f6109abd13d75b23aa2eeabff97b8ee05
+xxxx Repo access not set up:	CVE-2021-35561: https://github.com/openjdk/jdk11u-dev/commit/0eaadbd17cdde5f394f27ce7fa6a08ab6dc932d1
+xxxx Repo access not set up:	CVE-2021-35564: https://github.com/openjdk/jdk11u-dev/commit/24843ba1379615f6c032050e2cb057860d97c08a
+xxxx Repo access not set up:	CVE-2021-35565: https://github.com/openjdk/jdk11u-dev/commit/2696643c1dadf8cb61749a58a1a775951a78616f
+xxxx Repo access not set up:	CVE-2021-35567: https://github.com/openjdk/jdk11u-dev/commit/4ad48d913910b5f9972b92bbefcbf894f4ba08eb
+xxxx Repo access not set up:	CVE-2021-35578: https://github.com/openjdk/jdk11u-dev/commit/a1a52dbc3ba9ed7304798a0e3a42b249b18ad00d
+xxxx Repo access not set up:	CVE-2021-35586: https://github.com/openjdk/jdk11u-dev/commit/068ec8c9528699553865060a5198d60b81b7a9cb
+xxxx Repo access not set up:	CVE-2021-35603: https://github.com/openjdk/jdk11u-dev/commit/d5d203f9c5ae0979d60aa423c2a4409dd8ddcf1a
+xxxx Repo access not set up:	CVE-2022-21248: https://github.com/openjdk/jdk17u/commit/b1f8775f6bd56f85ab556ef1e78b3f842a666db2
+xxxx Repo access not set up:	CVE-2022-21248: https://github.com/openjdk/jdk11u-dev/commit/3393744851e30e514f85cc6c3ab529bcd3970d1b
+xxxx Repo access not set up:	CVE-2022-21277: https://github.com/openjdk/jdk17u/commit/757afdc5d4a8ec009529d35e0492edba13747570
+xxxx Repo access not set up:	CVE-2022-21277: https://github.com/openjdk/jdk11u-dev/commit/6895d4a8c958c6902d43fd60b2e7f85dd19ea2eb
+xxxx Repo access not set up:	CVE-2022-21282: https://github.com/openjdk/jdk17u/commit/592542fb28e26479ac591e9c08f83bd4a3988070
+xxxx Repo access not set up:	CVE-2022-21282: https://github.com/openjdk/jdk11u-dev/commit/62af7d0aaeb16107a5e8bb22b3f164be407f4499
+xxxx Repo access not set up:	CVE-2022-21283: https://github.com/openjdk/jdk17u/commit/536d1b6de57cce299e69fe6676938d132ee3b809
+xxxx Repo access not set up:	CVE-2022-21283: https://github.com/openjdk/jdk11u-dev/commit/b081b10184d20cba075c7532f96d5bd4c9ce7c9d
+xxxx Repo access not set up:	CVE-2022-21291: https://github.com/openjdk/jdk17u/commit/f8eb9abe034f7c6bea4da05a9ea42017b3f80730
+xxxx Repo access not set up:	CVE-2022-21291: https://github.com/openjdk/jdk11u-dev/commit/41825fa33d605f8501164f9296572e4378e8183b
+xxxx Repo access not set up:	CVE-2022-21293: https://github.com/openjdk/jdk17u/commit/aae2ae3cfbc1e44dd15d8aa55a5f5bc94fd5d1b0
+xxxx Repo access not set up:	CVE-2022-21293: https://github.com/openjdk/jdk11u-dev/commit/0755ba5001103e5f222a9bd7ad13629bd1e4a912
+xxxx Repo access not set up:	CVE-2022-21294: https://github.com/openjdk/jdk17u/commit/94f41162f4cb14cd48860e002a1c97e50f42a556
+xxxx Repo access not set up:	CVE-2022-21294: https://github.com/openjdk/jdk11u-dev/commit/33a7c689cbfe89a3dd3cf258f7776a35445e651b
+xxxx Repo access not set up:	CVE-2022-21296: https://github.com/openjdk/jdk17u/commit/f7f9a73a1e73576fd276fdc2a6305c136a2dde52
+xxxx Repo access not set up:	CVE-2022-21296: https://github.com/openjdk/jdk11u-dev/commit/55e5e04e8722cad921d1bef92ad6391486771dd2
+xxxx Repo access not set up:	CVE-2022-21299: https://github.com/openjdk/jdk17u/commit/6b74b1ba275deecb01a4f77e7c3d6270a0303131
+xxxx Repo access not set up:	CVE-2022-21299: https://github.com/openjdk/jdk11u-dev/commit/883ecfe002f796619aaaac2e1c622a6e4af43e80
+xxxx Repo access not set up:	CVE-2022-21305: https://github.com/openjdk/jdk17u/commit/268c0159253b3de5d72eb826ef2329b27bb33fea
+xxxx Repo access not set up:	CVE-2022-21305: https://github.com/openjdk/jdk11u-dev/commit/9a62b8af48af6c506d2fc4a3482116de26357f16
+xxxx Repo access not set up:	CVE-2022-21340: https://github.com/openjdk/jdk17u/commit/f2cb3d0f6cf16d12abd811b42484a0b7df8fd124
+xxxx Repo access not set up:	CVE-2022-21340: https://github.com/openjdk/jdk11u-dev/commit/c6780ba8cf65bdfbf65291a425bf636a7bca7a4e
+xxxx Repo access not set up:	CVE-2022-21341: https://github.com/openjdk/jdk17u/commit/6f3ace565330e3d0029600a50e206f08c462b552
+xxxx Repo access not set up:	CVE-2022-21341: https://github.com/openjdk/jdk11u-dev/commit/1e561513456470332642efc3ee99c749ff5f8d40
+xxxx Repo access not set up:	CVE-2022-21360: https://github.com/openjdk/jdk17u/commit/4583bb037c57d2d81fb51c9e6a03d5176e1bdffb
+xxxx Repo access not set up:	CVE-2022-21360: https://github.com/openjdk/jdk11u-dev/commit/1abce4779a596b7bf49cdd77b181c297de2baafc
+xxxx Repo access not set up:	CVE-2022-21365: https://github.com/openjdk/jdk17u/commit/ed4e3dbacd0ff08414fe8ec214a88507dd35f419
+xxxx Repo access not set up:	CVE-2022-21365: https://github.com/openjdk/jdk11u-dev/commit/8a80f1e2c12b49c20e3f97114dab7f1f5f5423be
+xxxx Repo access not set up:	CVE-2022-21366: https://github.com/openjdk/jdk17u/commit/b76b89eca55f61979d4596d085a1f21fe15df82f
+xxxx Repo access not set up:	CVE-2022-21366: https://github.com/openjdk/jdk11u-dev/commit/129fa0eaa0daff03db6bfc4ecf42101ae74c8db4
+xxxx Repo access not set up:	CVE-2022-21540: https://github.com/openjdk/jdk17u/commit/8be0fc09f0ba2dd1dbfd6627456fa929d5574b04
+xxxx Repo access not set up:	CVE-2022-21540: https://github.com/openjdk/jdk11u/commit/6c0ba0785a2f0900be301f72764cf4dcfa720991
+xxxx Repo access not set up:	CVE-2022-21540: https://github.com/openjdk/jdk8u/commit/1dafef08cc922ee85a8e216387100dc681a5484d
+xxxx Repo access not set up:	CVE-2022-21541: https://github.com/openjdk/jdk17u/commit/860464e46105b98ccf21e98abe2dc6e80155887c
+xxxx Repo access not set up:	CVE-2022-21541: https://github.com/openjdk/jdk11u/commit/132745902a4601dc64b2c8ca112ca30292feccb4
+xxxx Repo access not set up:	CVE-2022-21541: https://github.com/openjdk/jdk8u/commit/f14e35d20e1a4d0f507f05838844152f2242c6d3
+xxxx Repo access not set up:	CVE-2022-34169: https://github.com/openjdk/jdk17u/commit/9dcec4db4a6d8fdfc49eefe8028605d9f26848cc
+xxxx Repo access not set up:	CVE-2022-34169: https://github.com/openjdk/jdk11u/commit/13bf52c8d876528a43be7cb77a1f452d29a21492
+xxxx Repo access not set up:	CVE-2022-34169: https://github.com/openjdk/jdk8u/commit/3dca446d440e55cbb7dc3555392f4520ec9ff3bc
+x In 4.2, several versions of android are not checked for file matching

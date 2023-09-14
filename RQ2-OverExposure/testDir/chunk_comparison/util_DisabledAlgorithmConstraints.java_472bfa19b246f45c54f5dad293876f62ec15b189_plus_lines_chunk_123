@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 import java.io.PrintStream;
+1import java.security.AlgorithmParameters;
+2 import java.security.CryptoPrimitive;
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0import java.security.CryptoPrimitive;
+1import java.security.AlgorithmParameters;
+2import java.security.Key;
+---------------------------------------------
+Differences:	['0', '2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

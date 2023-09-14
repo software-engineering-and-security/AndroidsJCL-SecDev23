@@ -1,0 +1,45 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        // the time that the certificate validity period should be
+2        // checked against
+3        Date timeToCheck = null;
+4        // use timestamp if checking signed code that is timestamped, otherwise
+5        // use date parameter from PKIXParameters
+6        if ((params.variant() == Validator.VAR_CODE_SIGNING ||
+7             params.variant() == Validator.VAR_PLUGIN_CODE_SIGNING) &&
+8             params.timestamp() != null) {
+9            timeToCheck = params.timestamp().getTimestamp();
+10        } else {
+11            timeToCheck = params.date();
+12        }
+13        BasicChecker bc = new BasicChecker(anchor, timeToCheck,
+14                                            params.sigProvider(), false);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        // the time that the certificate validity period should be
+2        // checked against
+3        Date timeToCheck = null;
+4        // use timestamp if checking signed code that is timestamped, otherwise
+5        // use date parameter from PKIXParameters
+6        if ((params.variant() == Validator.VAR_CODE_SIGNING ||
+7             params.variant() == Validator.VAR_PLUGIN_CODE_SIGNING) &&
+8             params.timestamp() != null) {
+9            timeToCheck = params.timestamp().getTimestamp();
+10        } else {
+11            timeToCheck = params.date();
+12        }
+13        BasicChecker bc = new BasicChecker(anchor, timeToCheck,
+14                                           params.sigProvider(), false);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        BasicChecker bc = new BasicChecker(anchor, params.date(),
+2                                            params.sigProvider(), false);
+--------------------------------------------

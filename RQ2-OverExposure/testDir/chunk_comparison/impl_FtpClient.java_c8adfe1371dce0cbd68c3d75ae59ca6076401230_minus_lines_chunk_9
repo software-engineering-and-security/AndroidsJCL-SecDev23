@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             String s = m.group(1).replace(',', '.');
+1            dest = new InetSocketAddress(s, port);
+2         }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            String s = m.group(1).replace(',', '.');
+1            dest = new InetSocketAddress(s, port);
+2        }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0             String s = m.group(1).replace(',', '.');
+1            if (!IPAddressUtil.isIPv4LiteralAddress(s))
+2                throw new FtpProtocolException("PASV failed : "  + serverAnswer);
+3            if (acceptPasvAddressVal) {
+4                dest = new InetSocketAddress(s, port);
+5            } else {
+6                dest = validatePasvAddress(port, s, server.getInetAddress());
+7            }
+8         }
+--------------------------------------------

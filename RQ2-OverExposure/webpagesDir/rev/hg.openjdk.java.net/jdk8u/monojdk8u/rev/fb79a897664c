@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: fb79a897664c</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/fb79a897664c">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/fb79a897664c">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/fb79a897664c">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/fb79a897664c">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/fb79a897664c.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/fb79a897664c.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/fb79a897664c.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48811:fb79a897664c   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8270492: Better resolution of URIs
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#121;&#97;&#110;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 19 Jan 2022 01:09:15 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/22fe1e492c16">22fe1e492c16</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/76e7ac8ee6dd">76e7ac8ee6dd</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/fb79a897664c/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/dom/LoadDocument.java">jaxp/src/com/sun/org/apache/xalan/internal/xsltc/dom/LoadDocument.java</a> <a href="/jdk8u/monojdk8u/file/fb79a897664c/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/runtime/AbstractTranslet.java">jaxp/src/com/sun/org/apache/xalan/internal/xsltc/runtime/AbstractTranslet.java</a> <a href="/jdk8u/monojdk8u/file/fb79a897664c/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/trax/TransformerImpl.java">jaxp/src/com/sun/org/apache/xalan/internal/xsltc/trax/TransformerImpl.java</a> <a href="/jdk8u/monojdk8u/file/fb79a897664c/jaxp/src/com/sun/org/apache/xml/internal/utils/SystemIDResolver.java">jaxp/src/com/sun/org/apache/xml/internal/utils/SystemIDResolver.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     4 files changed, 55 insertions(+), 5 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jaxp/src/com/sun/org/apache/xalan/internal/xsltc/dom/LoadDocument.java</a></td>
+    <td class="diffstat-total" align="right">4</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:12.9032258065%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">jaxp/src/com/sun/org/apache/xalan/internal/xsltc/runtime/AbstractTranslet.java</a></td>
+    <td class="diffstat-total" align="right">18</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:58.064516129%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">jaxp/src/com/sun/org/apache/xalan/internal/xsltc/trax/TransformerImpl.java</a></td>
+    <td class="diffstat-total" align="right">31</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:93.5483870968%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.45161290323%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">jaxp/src/com/sun/org/apache/xml/internal/utils/SystemIDResolver.java</a></td>
+    <td class="diffstat-total" align="right">7</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:12.9032258065%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:9.67741935484%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/dom/LoadDocument.java	Wed Jan 05 00:54:23 2022 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/dom/LoadDocument.java	Wed Jan 19 01:09:15 2022 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -48,6 +48,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> </span><a href="#l1.4"></a>
+<span id="l1.5"> /**</span><a href="#l1.5"></a>
+<span id="l1.6">  * @author Morten Jorgensen</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+ * @LastModified: Sept 2021</span><a href="#l1.7"></a>
+<span id="l1.8">  */</span><a href="#l1.8"></a>
+<span id="l1.9"> public final class LoadDocument {</span><a href="#l1.9"></a>
+<span id="l1.10"> </span><a href="#l1.10"></a>
+<span id="l1.11" class="atline">@@ -198,6 +199,9 @@</span><a href="#l1.11"></a>
+<span id="l1.12">         if (cache != null) {</span><a href="#l1.12"></a>
+<span id="l1.13">             newdom = cache.retrieveDocument(base, originalUri, translet);</span><a href="#l1.13"></a>
+<span id="l1.14">             if (newdom == null) {</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+                if (translet.getAccessError() != null) {</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+                    throw new Exception(translet.getAccessError());</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+                }</span><a href="#l1.17"></a>
+<span id="l1.18">                 final Exception e = new FileNotFoundException(originalUri);</span><a href="#l1.18"></a>
+<span id="l1.19">                 throw new TransletException(e);</span><a href="#l1.19"></a>
+<span id="l1.20">             }</span><a href="#l1.20"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/runtime/AbstractTranslet.java	Wed Jan 05 00:54:23 2022 +0300</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/runtime/AbstractTranslet.java	Wed Jan 19 01:09:15 2022 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -58,6 +58,7 @@</span><a href="#l2.3"></a>
+<span id="l2.4">  * @author Morten Jorgensen</span><a href="#l2.4"></a>
+<span id="l2.5">  * @author G. Todd Miller</span><a href="#l2.5"></a>
+<span id="l2.6">  * @author John Howard, JohnH@schemasoft.com</span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+ * @LastModified: Sept 2021</span><a href="#l2.7"></a>
+<span id="l2.8">  */</span><a href="#l2.8"></a>
+<span id="l2.9"> public abstract class AbstractTranslet implements Translet {</span><a href="#l2.9"></a>
+<span id="l2.10"> </span><a href="#l2.10"></a>
+<span id="l2.11" class="atline">@@ -116,6 +117,9 @@</span><a href="#l2.11"></a>
+<span id="l2.12">      */</span><a href="#l2.12"></a>
+<span id="l2.13">     private String _accessExternalStylesheet = XalanConstants.EXTERNAL_ACCESS_DEFAULT;</span><a href="#l2.13"></a>
+<span id="l2.14"> </span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+    // The error message when access to exteranl resources is rejected</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+    private String _accessErr = null;</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+</span><a href="#l2.17"></a>
+<span id="l2.18">     /************************************************************************</span><a href="#l2.18"></a>
+<span id="l2.19">      * Debugging</span><a href="#l2.19"></a>
+<span id="l2.20">      ************************************************************************/</span><a href="#l2.20"></a>
+<span id="l2.21" class="atline">@@ -781,6 +785,20 @@</span><a href="#l2.21"></a>
+<span id="l2.22">         _accessExternalStylesheet = protocols;</span><a href="#l2.22"></a>
+<span id="l2.23">     }</span><a href="#l2.23"></a>
+<span id="l2.24"> </span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+    /**</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+     * Returns the access error.</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+     */</span><a href="#l2.27"></a>
+<span id="l2.28" class="plusline">+    public String getAccessError() {</span><a href="#l2.28"></a>
+<span id="l2.29" class="plusline">+        return _accessErr;</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+    }</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+    /**</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+     * Sets the access error.</span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+     */</span><a href="#l2.34"></a>
+<span id="l2.35" class="plusline">+    public void setAccessError(String accessErr) {</span><a href="#l2.35"></a>
+<span id="l2.36" class="plusline">+        this._accessErr = accessErr;</span><a href="#l2.36"></a>
+<span id="l2.37" class="plusline">+    }</span><a href="#l2.37"></a>
+<span id="l2.38" class="plusline">+</span><a href="#l2.38"></a>
+<span id="l2.39">     /************************************************************************</span><a href="#l2.39"></a>
+<span id="l2.40">      * DOMImplementation caching for basis library</span><a href="#l2.40"></a>
+<span id="l2.41">      ************************************************************************/</span><a href="#l2.41"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/trax/TransformerImpl.java	Wed Jan 05 00:54:23 2022 +0300</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xalan/internal/xsltc/trax/TransformerImpl.java	Wed Jan 19 01:09:15 2022 +0000</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -25,6 +25,7 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> </span><a href="#l3.4"></a>
+<span id="l3.5"> import com.sun.org.apache.xalan.internal.XalanConstants;</span><a href="#l3.5"></a>
+<span id="l3.6"> import com.sun.org.apache.xalan.internal.utils.XMLSecurityManager;</span><a href="#l3.6"></a>
+<span id="l3.7" class="plusline">+import com.sun.org.apache.xalan.internal.utils.SecuritySupport;</span><a href="#l3.7"></a>
+<span id="l3.8"> import com.sun.org.apache.xalan.internal.xsltc.DOM;</span><a href="#l3.8"></a>
+<span id="l3.9"> import com.sun.org.apache.xalan.internal.xsltc.DOMCache;</span><a href="#l3.9"></a>
+<span id="l3.10"> import com.sun.org.apache.xalan.internal.xsltc.StripFilter;</span><a href="#l3.10"></a>
+<span id="l3.11" class="atline">@@ -90,6 +91,7 @@</span><a href="#l3.11"></a>
+<span id="l3.12">  * @author Morten Jorgensen</span><a href="#l3.12"></a>
+<span id="l3.13">  * @author G. Todd Miller</span><a href="#l3.13"></a>
+<span id="l3.14">  * @author Santiago Pericas-Geertsen</span><a href="#l3.14"></a>
+<span id="l3.15" class="plusline">+ * @LastModified: Sept 2021</span><a href="#l3.15"></a>
+<span id="l3.16">  */</span><a href="#l3.16"></a>
+<span id="l3.17"> public final class TransformerImpl extends Transformer</span><a href="#l3.17"></a>
+<span id="l3.18">     implements DOMCache, ErrorListener</span><a href="#l3.18"></a>
+<span id="l3.19" class="atline">@@ -1280,8 +1282,33 @@</span><a href="#l3.19"></a>
+<span id="l3.20">              */</span><a href="#l3.20"></a>
+<span id="l3.21">             Source resolvedSource = _uriResolver.resolve(href, baseURI);</span><a href="#l3.21"></a>
+<span id="l3.22">             if (resolvedSource == null)  {</span><a href="#l3.22"></a>
+<span id="l3.23" class="minusline">-                StreamSource streamSource = new StreamSource(</span><a href="#l3.23"></a>
+<span id="l3.24" class="minusline">-                     SystemIDResolver.getAbsoluteURI(href, baseURI));</span><a href="#l3.24"></a>
+<span id="l3.25" class="plusline">+                /**</span><a href="#l3.25"></a>
+<span id="l3.26" class="plusline">+                 * Uses the translet to carry over error msg.</span><a href="#l3.26"></a>
+<span id="l3.27" class="plusline">+                 * Performs the access check without any interface changes</span><a href="#l3.27"></a>
+<span id="l3.28" class="plusline">+                 * (e.g. Translet and DOMCache).</span><a href="#l3.28"></a>
+<span id="l3.29" class="plusline">+                 */</span><a href="#l3.29"></a>
+<span id="l3.30" class="plusline">+                @SuppressWarnings(&quot;unchecked&quot;) //AbstractTranslet is the sole impl.</span><a href="#l3.30"></a>
+<span id="l3.31" class="plusline">+                AbstractTranslet t = (AbstractTranslet)translet;</span><a href="#l3.31"></a>
+<span id="l3.32" class="plusline">+                String systemId = SystemIDResolver.getAbsoluteURI(href, baseURI);</span><a href="#l3.32"></a>
+<span id="l3.33" class="plusline">+                String errMsg = null;</span><a href="#l3.33"></a>
+<span id="l3.34" class="plusline">+                try {</span><a href="#l3.34"></a>
+<span id="l3.35" class="plusline">+                    String accessError = SecuritySupport.checkAccess(systemId,</span><a href="#l3.35"></a>
+<span id="l3.36" class="plusline">+                            t.getAllowedProtocols(),</span><a href="#l3.36"></a>
+<span id="l3.37" class="plusline">+                            XalanConstants.ACCESS_EXTERNAL_ALL);</span><a href="#l3.37"></a>
+<span id="l3.38" class="plusline">+                    if (accessError != null) {</span><a href="#l3.38"></a>
+<span id="l3.39" class="plusline">+                        ErrorMsg msg = new ErrorMsg(ErrorMsg.ACCESSING_XSLT_TARGET_ERR,</span><a href="#l3.39"></a>
+<span id="l3.40" class="plusline">+                                SecuritySupport.sanitizePath(href), accessError);</span><a href="#l3.40"></a>
+<span id="l3.41" class="plusline">+                        errMsg = msg.toString();</span><a href="#l3.41"></a>
+<span id="l3.42" class="plusline">+                    }</span><a href="#l3.42"></a>
+<span id="l3.43" class="plusline">+                } catch (IOException ioe) {</span><a href="#l3.43"></a>
+<span id="l3.44" class="plusline">+                    errMsg = ioe.getMessage();</span><a href="#l3.44"></a>
+<span id="l3.45" class="plusline">+                }</span><a href="#l3.45"></a>
+<span id="l3.46" class="plusline">+                if (errMsg != null) {</span><a href="#l3.46"></a>
+<span id="l3.47" class="plusline">+                    t.setAccessError(errMsg);</span><a href="#l3.47"></a>
+<span id="l3.48" class="plusline">+                    return null;</span><a href="#l3.48"></a>
+<span id="l3.49" class="plusline">+                }</span><a href="#l3.49"></a>
+<span id="l3.50" class="plusline">+</span><a href="#l3.50"></a>
+<span id="l3.51" class="plusline">+                StreamSource streamSource = new StreamSource(systemId);</span><a href="#l3.51"></a>
+<span id="l3.52">                 return getDOM(streamSource) ;</span><a href="#l3.52"></a>
+<span id="l3.53">             }</span><a href="#l3.53"></a>
+<span id="l3.54"> </span><a href="#l3.54"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xml/internal/utils/SystemIDResolver.java	Wed Jan 05 00:54:23 2022 +0300</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xml/internal/utils/SystemIDResolver.java	Wed Jan 19 01:09:15 2022 +0000</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -1,6 +1,5 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> /*</span><a href="#l4.4"></a>
+<span id="l4.5" class="minusline">- * reserved comment block</span><a href="#l4.5"></a>
+<span id="l4.6" class="minusline">- * DO NOT REMOVE OR ALTER!</span><a href="#l4.6"></a>
+<span id="l4.7" class="plusline">+ * Copyright (c) 2021, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.7"></a>
+<span id="l4.8">  */</span><a href="#l4.8"></a>
+<span id="l4.9"> /*</span><a href="#l4.9"></a>
+<span id="l4.10">  * Copyright 1999-2004 The Apache Software Foundation.</span><a href="#l4.10"></a>
+<span id="l4.11" class="atline">@@ -36,6 +35,8 @@</span><a href="#l4.11"></a>
+<span id="l4.12">  * fact that it's declared to throw TransformerException.  Please</span><a href="#l4.12"></a>
+<span id="l4.13">  * see code comments for details on how resolution is performed.&lt;/p&gt;</span><a href="#l4.13"></a>
+<span id="l4.14">  * @xsl.usage internal</span><a href="#l4.14"></a>
+<span id="l4.15" class="plusline">+ *</span><a href="#l4.15"></a>
+<span id="l4.16" class="plusline">+ * @LastModified: Sept 2021</span><a href="#l4.16"></a>
+<span id="l4.17">  */</span><a href="#l4.17"></a>
+<span id="l4.18"> public class SystemIDResolver</span><a href="#l4.18"></a>
+<span id="l4.19"> {</span><a href="#l4.19"></a>
+<span id="l4.20" class="atline">@@ -276,7 +277,7 @@</span><a href="#l4.20"></a>
+<span id="l4.21">   public static String getAbsoluteURI(String urlString, String base)</span><a href="#l4.21"></a>
+<span id="l4.22">           throws TransformerException</span><a href="#l4.22"></a>
+<span id="l4.23">   {</span><a href="#l4.23"></a>
+<span id="l4.24" class="minusline">-    if (base == null)</span><a href="#l4.24"></a>
+<span id="l4.25" class="plusline">+    if (base == null || base.length() == 0)</span><a href="#l4.25"></a>
+<span id="l4.26">       return getAbsoluteURI(urlString);</span><a href="#l4.26"></a>
+<span id="l4.27"> </span><a href="#l4.27"></a>
+<span id="l4.28">     String absoluteBase = getAbsoluteURI(base);</span><a href="#l4.28"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     public AlgorithmChecker(TrustAnchor anchor,
+1            AlgorithmConstraints constraints, Date pkixdate,
+2            Timestamp jarTimestamp, String variant) {
+3 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    public AlgorithmChecker(TrustAnchor anchor,
+1            AlgorithmConstraints constraints, Date pkixdate,
+2            Timestamp jarTimestamp, String variant) {
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0     public AlgorithmChecker(TrustAnchor anchor,
+1            AlgorithmConstraints constraints, Date date, String variant) {
+2 
+--------------------------------------------

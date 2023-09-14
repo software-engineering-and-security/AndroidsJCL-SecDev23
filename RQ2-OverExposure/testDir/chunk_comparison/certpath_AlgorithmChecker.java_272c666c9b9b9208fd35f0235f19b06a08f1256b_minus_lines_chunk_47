@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      * @param constraints the algorithm constraints (or null)
+1     * @param jarTimestamp Timestamp passed for JAR timestamp constraint
+2     *                     checking. Set to null if not applicable.
+3     * @param variant is the Validator variants of the operation. A null value
+4      *                passed will set it to Validator.GENERIC.
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     *
+1     * @param jarTimestamp Timestamp passed for JAR timestamp constraint
+2     *                     checking. Set to null if not applicable.
+3     */
+4    public AlgorithmChecker(Timestamp jarTimestamp) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      * @param constraints the algorithm constraints (or null)
+1     * @param variant the Validator variant of the operation. A null value
+2      *                passed will set it to Validator.GENERIC.
+--------------------------------------------

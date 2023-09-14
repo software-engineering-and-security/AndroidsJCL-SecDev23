@@ -1,0 +1,30 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /*
+2     * Domain component OID from RFC 1274, RFC 2247, RFC 5280
+3     */
+4 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /*
+2     * OID for "DC=" domain component attributes, used with DNSNames in DN
+3     * format
+4     */
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // Domain component OID from RFC 1274, RFC 2247, RFC 5280.
+2    //
+3    // OID for "DC=" domain component attributes, used with DNSNames in DN
+4    // format.
+5    public static final ObjectIdentifier DOMAIN_COMPONENT_OID =
+6            ObjectIdentifier.newInternal(DOMAIN_COMPONENT_DATA);
+7 
+--------------------------------------------

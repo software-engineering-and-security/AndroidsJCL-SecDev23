@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                         while (list.hasMoreElements()) {
+1                            String alias = list.nextElement();
+2                             // Check if this cert is labeled a trust anchor.
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0                        while (list.hasMoreElements()) {
+1                            String alias = list.nextElement();
+2                            // Check if this cert is labeled a trust anchor.
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0                         while (list.hasMoreElements()) {
+1                            alias = list.nextElement();
+2                             // Check if this cert is labeled a trust anchor.
+--------------------------------------------

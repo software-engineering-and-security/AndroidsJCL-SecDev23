@@ -1,0 +1,38 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1            Timestamp timestamp = null;
+2            try {
+3                timestamp = getTimestamp();
+4            } catch (Exception ignore) {
+5            }
+6
+7            ConstraintsParameters cparams =
+8                    new ConstraintsParameters(timestamp);
+9            String digestAlgname = getDigestAlgorithmId().getName();
+10 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1            Timestamp timestamp = null;
+2            try {
+3                timestamp = getTimestamp();
+4            } catch (Exception ignore) {
+5            }
+6
+7            ConstraintsParameters cparams =
+8                    new ConstraintsParameters(timestamp);
+9            String digestAlgname = getDigestAlgorithmId().getName();
+10
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1            String digestAlgName = digestAlgorithmId.getName();
+2            algorithms.put(digestAlgorithmId, "SignerInfo digestAlgorithm field");
+3 
+--------------------------------------------

@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk7u/jdk7u/hotspot/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk7u/jdk7u/hotspot/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk7u/jdk7u/hotspot/static/mercurial.js"></script>
+
+<title>jdk7u/jdk7u/hotspot: 848481af9003</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk7u/jdk7u/hotspot/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk7u/jdk7u/hotspot/shortlog/848481af9003">log</a></li>
+ <li><a href="/jdk7u/jdk7u/hotspot/graph/848481af9003">graph</a></li>
+ <li><a href="/jdk7u/jdk7u/hotspot/tags">tags</a></li>
+ <li><a href="/jdk7u/jdk7u/hotspot/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk7u/jdk7u/hotspot/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk7u/jdk7u/hotspot/raw-rev/848481af9003">raw</a></li>
+ <li><a href="/jdk7u/jdk7u/hotspot/file/848481af9003">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk7u/jdk7u/hotspot/archive/848481af9003.zip">zip</a>
+</li>
+<li>
+<a href="/jdk7u/jdk7u/hotspot/archive/848481af9003.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk7u/jdk7u/hotspot/archive/848481af9003.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk7u/jdk7u/hotspot/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u/hotspot">hotspot</a> </h2>
+<h3>changeset 5160:848481af9003  <span class="tag">jdk7u65-b04</span>  </h3>
+
+<form class="search" action="/jdk7u/jdk7u/hotspot/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk7u/jdk7u/hotspot/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8034985: Better form for Lambda Forms
+Summary: Only allow classes loaded by boot or extensions class loaders, or anonymous classes, to access privileged annotations.
+Reviewed-by: coleenp, ahgross, twisti</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#104;&#115;&#101;&#105;&#103;&#101;&#108;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 20 Mar 2014 08:46:41 -0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk7u/jdk7u/hotspot/rev/458f18560343">458f18560343</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk7u/jdk7u/hotspot/rev/dd49b20b15f4">dd49b20b15f4</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk7u/jdk7u/hotspot/file/848481af9003/src/share/vm/classfile/classFileParser.cpp">src/share/vm/classfile/classFileParser.cpp</a> <a href="/jdk7u/jdk7u/hotspot/file/848481af9003/src/share/vm/classfile/classFileParser.hpp">src/share/vm/classfile/classFileParser.hpp</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 37 insertions(+), 21 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/vm/classfile/classFileParser.cpp</a></td>
+    <td class="diffstat-total" align="right">41</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:68.2926829268%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:31.7073170732%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/vm/classfile/classFileParser.hpp</a></td>
+    <td class="diffstat-total" align="right">17</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:21.9512195122%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:19.512195122%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/vm/classfile/classFileParser.cpp	Wed Mar 19 18:04:09 2014 -0400</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/vm/classfile/classFileParser.cpp	Thu Mar 20 08:46:41 2014 -0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1698,7 +1698,8 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> }</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6"> // Sift through annotations, looking for those significant to the VM:</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-void ClassFileParser::parse_annotations(u1* buffer, int limit,</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+void ClassFileParser::parse_annotations(Handle class_loader,</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+                                        u1* buffer, int limit,</span><a href="#l1.9"></a>
+<span id="l1.10">                                         constantPoolHandle cp,</span><a href="#l1.10"></a>
+<span id="l1.11">                                         ClassFileParser::AnnotationCollector* coll,</span><a href="#l1.11"></a>
+<span id="l1.12">                                         TRAPS) {</span><a href="#l1.12"></a>
+<span id="l1.13" class="atline">@@ -1736,7 +1737,7 @@</span><a href="#l1.13"></a>
+<span id="l1.14">     }</span><a href="#l1.14"></a>
+<span id="l1.15"> </span><a href="#l1.15"></a>
+<span id="l1.16">     // Here is where parsing particular annotations will take place.</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-    AnnotationCollector::ID id = coll-&gt;annotation_index(aname);</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+    AnnotationCollector::ID id = coll-&gt;annotation_index(class_loader, is_anonymous(), aname);</span><a href="#l1.18"></a>
+<span id="l1.19">     if (id == AnnotationCollector::_unknown)  continue;</span><a href="#l1.19"></a>
+<span id="l1.20">     coll-&gt;set_annotation(id);</span><a href="#l1.20"></a>
+<span id="l1.21">     // If there are no values, just set the bit and move on:</span><a href="#l1.21"></a>
+<span id="l1.22" class="atline">@@ -1765,20 +1766,30 @@</span><a href="#l1.22"></a>
+<span id="l1.23">   }</span><a href="#l1.23"></a>
+<span id="l1.24"> }</span><a href="#l1.24"></a>
+<span id="l1.25"> </span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-ClassFileParser::AnnotationCollector::ID ClassFileParser::AnnotationCollector::annotation_index(Symbol* name) {</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+ClassFileParser::AnnotationCollector::ID ClassFileParser::AnnotationCollector::annotation_index(Handle class_loader,</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+                                                                                                bool is_anonymous,</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+                                                                                                Symbol* name) {</span><a href="#l1.29"></a>
+<span id="l1.30">   vmSymbols::SID sid = vmSymbols::find_sid(name);</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+  // Privileged code can use all annotations.  Other code silently drops some.</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+  const bool privileged = class_loader.is_null() || is_anonymous ||</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+                          class_loader()-&gt;klass()-&gt;klass_part()-&gt;name() ==</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+                            vmSymbols::sun_misc_Launcher_ExtClassLoader();</span><a href="#l1.34"></a>
+<span id="l1.35">   switch (sid) {</span><a href="#l1.35"></a>
+<span id="l1.36">   case vmSymbols::VM_SYMBOL_ENUM_NAME(java_lang_invoke_ForceInline_signature):</span><a href="#l1.36"></a>
+<span id="l1.37">     if (_location != _in_method)  break;  // only allow for methods</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+    if (!privileged)              break;  // only allow in privileged code</span><a href="#l1.38"></a>
+<span id="l1.39">     return _method_ForceInline;</span><a href="#l1.39"></a>
+<span id="l1.40">   case vmSymbols::VM_SYMBOL_ENUM_NAME(java_lang_invoke_DontInline_signature):</span><a href="#l1.40"></a>
+<span id="l1.41">     if (_location != _in_method)  break;  // only allow for methods</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+    if (!privileged)              break;  // only allow in privileged code</span><a href="#l1.42"></a>
+<span id="l1.43">     return _method_DontInline;</span><a href="#l1.43"></a>
+<span id="l1.44">   case vmSymbols::VM_SYMBOL_ENUM_NAME(java_lang_invoke_LambdaForm_Compiled_signature):</span><a href="#l1.44"></a>
+<span id="l1.45">     if (_location != _in_method)  break;  // only allow for methods</span><a href="#l1.45"></a>
+<span id="l1.46" class="plusline">+    if (!privileged)              break;  // only allow in privileged code</span><a href="#l1.46"></a>
+<span id="l1.47">     return _method_LambdaForm_Compiled;</span><a href="#l1.47"></a>
+<span id="l1.48">   case vmSymbols::VM_SYMBOL_ENUM_NAME(java_lang_invoke_LambdaForm_Hidden_signature):</span><a href="#l1.48"></a>
+<span id="l1.49">     if (_location != _in_method)  break;  // only allow for methods</span><a href="#l1.49"></a>
+<span id="l1.50" class="plusline">+    if (!privileged)              break;  // only allow in privileged code</span><a href="#l1.50"></a>
+<span id="l1.51">     return _method_LambdaForm_Hidden;</span><a href="#l1.51"></a>
+<span id="l1.52">   default: break;</span><a href="#l1.52"></a>
+<span id="l1.53">   }</span><a href="#l1.53"></a>
+<span id="l1.54" class="atline">@@ -1818,8 +1829,8 @@</span><a href="#l1.54"></a>
+<span id="l1.55"> // from the method back up to the containing klass. These flag values</span><a href="#l1.55"></a>
+<span id="l1.56"> // are added to klass's access_flags.</span><a href="#l1.56"></a>
+<span id="l1.57"> </span><a href="#l1.57"></a>
+<span id="l1.58" class="minusline">-methodHandle ClassFileParser::parse_method(constantPoolHandle cp, bool is_interface,</span><a href="#l1.58"></a>
+<span id="l1.59" class="minusline">-                                           AccessFlags *promoted_flags,</span><a href="#l1.59"></a>
+<span id="l1.60" class="plusline">+methodHandle ClassFileParser::parse_method(Handle class_loader, constantPoolHandle cp,</span><a href="#l1.60"></a>
+<span id="l1.61" class="plusline">+                                           bool is_interface, AccessFlags *promoted_flags,</span><a href="#l1.61"></a>
+<span id="l1.62">                                            typeArrayHandle* method_annotations,</span><a href="#l1.62"></a>
+<span id="l1.63">                                            typeArrayHandle* method_parameter_annotations,</span><a href="#l1.63"></a>
+<span id="l1.64">                                            typeArrayHandle* method_default_annotations,</span><a href="#l1.64"></a>
+<span id="l1.65" class="atline">@@ -2128,7 +2139,7 @@</span><a href="#l1.65"></a>
+<span id="l1.66">         runtime_visible_annotations_length = method_attribute_length;</span><a href="#l1.66"></a>
+<span id="l1.67">         runtime_visible_annotations = cfs-&gt;get_u1_buffer();</span><a href="#l1.67"></a>
+<span id="l1.68">         assert(runtime_visible_annotations != NULL, &quot;null visible annotations&quot;);</span><a href="#l1.68"></a>
+<span id="l1.69" class="minusline">-        parse_annotations(runtime_visible_annotations, runtime_visible_annotations_length, cp, &amp;parsed_annotations, CHECK_(nullHandle));</span><a href="#l1.69"></a>
+<span id="l1.70" class="plusline">+        parse_annotations(class_loader, runtime_visible_annotations, runtime_visible_annotations_length, cp, &amp;parsed_annotations, CHECK_(nullHandle));</span><a href="#l1.70"></a>
+<span id="l1.71">         cfs-&gt;skip_u1(runtime_visible_annotations_length, CHECK_(nullHandle));</span><a href="#l1.71"></a>
+<span id="l1.72">       } else if (PreserveAllAnnotations &amp;&amp; method_attribute_name == vmSymbols::tag_runtime_invisible_annotations()) {</span><a href="#l1.72"></a>
+<span id="l1.73">         runtime_invisible_annotations_length = method_attribute_length;</span><a href="#l1.73"></a>
+<span id="l1.74" class="atline">@@ -2357,8 +2368,8 @@</span><a href="#l1.74"></a>
+<span id="l1.75"> // from the methods back up to the containing klass. These flag values</span><a href="#l1.75"></a>
+<span id="l1.76"> // are added to klass's access_flags.</span><a href="#l1.76"></a>
+<span id="l1.77"> </span><a href="#l1.77"></a>
+<span id="l1.78" class="minusline">-objArrayHandle ClassFileParser::parse_methods(constantPoolHandle cp, bool is_interface,</span><a href="#l1.78"></a>
+<span id="l1.79" class="minusline">-                                              AccessFlags* promoted_flags,</span><a href="#l1.79"></a>
+<span id="l1.80" class="plusline">+objArrayHandle ClassFileParser::parse_methods(Handle class_loader, constantPoolHandle cp,</span><a href="#l1.80"></a>
+<span id="l1.81" class="plusline">+                                              bool is_interface, AccessFlags* promoted_flags,</span><a href="#l1.81"></a>
+<span id="l1.82">                                               bool* has_final_method,</span><a href="#l1.82"></a>
+<span id="l1.83">                                               objArrayOop* methods_annotations_oop,</span><a href="#l1.83"></a>
+<span id="l1.84">                                               objArrayOop* methods_parameter_annotations_oop,</span><a href="#l1.84"></a>
+<span id="l1.85" class="atline">@@ -2381,7 +2392,8 @@</span><a href="#l1.85"></a>
+<span id="l1.86">     objArrayHandle methods_parameter_annotations;</span><a href="#l1.86"></a>
+<span id="l1.87">     objArrayHandle methods_default_annotations;</span><a href="#l1.87"></a>
+<span id="l1.88">     for (int index = 0; index &lt; length; index++) {</span><a href="#l1.88"></a>
+<span id="l1.89" class="minusline">-      methodHandle method = parse_method(cp, is_interface,</span><a href="#l1.89"></a>
+<span id="l1.90" class="plusline">+      methodHandle method = parse_method(class_loader, cp,</span><a href="#l1.90"></a>
+<span id="l1.91" class="plusline">+                                         is_interface,</span><a href="#l1.91"></a>
+<span id="l1.92">                                          promoted_flags,</span><a href="#l1.92"></a>
+<span id="l1.93">                                          &amp;method_annotations,</span><a href="#l1.93"></a>
+<span id="l1.94">                                          &amp;method_parameter_annotations,</span><a href="#l1.94"></a>
+<span id="l1.95" class="atline">@@ -2727,7 +2739,8 @@</span><a href="#l1.95"></a>
+<span id="l1.96"> }</span><a href="#l1.96"></a>
+<span id="l1.97"> </span><a href="#l1.97"></a>
+<span id="l1.98"> </span><a href="#l1.98"></a>
+<span id="l1.99" class="minusline">-void ClassFileParser::parse_classfile_attributes(constantPoolHandle cp,</span><a href="#l1.99"></a>
+<span id="l1.100" class="plusline">+void ClassFileParser::parse_classfile_attributes(Handle class_loader,</span><a href="#l1.100"></a>
+<span id="l1.101" class="plusline">+                                                 constantPoolHandle cp,</span><a href="#l1.101"></a>
+<span id="l1.102">                                                  ClassFileParser::ClassAnnotationCollector* parsed_annotations,</span><a href="#l1.102"></a>
+<span id="l1.103">                                                  TRAPS) {</span><a href="#l1.103"></a>
+<span id="l1.104">   ClassFileStream* cfs = stream();</span><a href="#l1.104"></a>
+<span id="l1.105" class="atline">@@ -2810,7 +2823,8 @@</span><a href="#l1.105"></a>
+<span id="l1.106">         runtime_visible_annotations_length = attribute_length;</span><a href="#l1.106"></a>
+<span id="l1.107">         runtime_visible_annotations = cfs-&gt;get_u1_buffer();</span><a href="#l1.107"></a>
+<span id="l1.108">         assert(runtime_visible_annotations != NULL, &quot;null visible annotations&quot;);</span><a href="#l1.108"></a>
+<span id="l1.109" class="minusline">-        parse_annotations(runtime_visible_annotations,</span><a href="#l1.109"></a>
+<span id="l1.110" class="plusline">+        parse_annotations(class_loader,</span><a href="#l1.110"></a>
+<span id="l1.111" class="plusline">+                          runtime_visible_annotations,</span><a href="#l1.111"></a>
+<span id="l1.112">                           runtime_visible_annotations_length,</span><a href="#l1.112"></a>
+<span id="l1.113">                           cp,</span><a href="#l1.113"></a>
+<span id="l1.114">                           parsed_annotations,</span><a href="#l1.114"></a>
+<span id="l1.115" class="atline">@@ -3173,7 +3187,8 @@</span><a href="#l1.115"></a>
+<span id="l1.116">     objArrayOop methods_annotations_oop = NULL;</span><a href="#l1.116"></a>
+<span id="l1.117">     objArrayOop methods_parameter_annotations_oop = NULL;</span><a href="#l1.117"></a>
+<span id="l1.118">     objArrayOop methods_default_annotations_oop = NULL;</span><a href="#l1.118"></a>
+<span id="l1.119" class="minusline">-    objArrayHandle methods = parse_methods(cp, access_flags.is_interface(),</span><a href="#l1.119"></a>
+<span id="l1.120" class="plusline">+    objArrayHandle methods = parse_methods(class_loader, cp,</span><a href="#l1.120"></a>
+<span id="l1.121" class="plusline">+                                           access_flags.is_interface(),</span><a href="#l1.121"></a>
+<span id="l1.122">                                            &amp;promoted_flags,</span><a href="#l1.122"></a>
+<span id="l1.123">                                            &amp;has_final_method,</span><a href="#l1.123"></a>
+<span id="l1.124">                                            &amp;methods_annotations_oop,</span><a href="#l1.124"></a>
+<span id="l1.125" class="atline">@@ -3187,7 +3202,7 @@</span><a href="#l1.125"></a>
+<span id="l1.126"> </span><a href="#l1.126"></a>
+<span id="l1.127">     // Additional attributes</span><a href="#l1.127"></a>
+<span id="l1.128">     ClassAnnotationCollector parsed_annotations;</span><a href="#l1.128"></a>
+<span id="l1.129" class="minusline">-    parse_classfile_attributes(cp, &amp;parsed_annotations, CHECK_(nullHandle));</span><a href="#l1.129"></a>
+<span id="l1.130" class="plusline">+    parse_classfile_attributes(class_loader, cp, &amp;parsed_annotations, CHECK_(nullHandle));</span><a href="#l1.130"></a>
+<span id="l1.131"> </span><a href="#l1.131"></a>
+<span id="l1.132">     // Make sure this is the end of class file stream</span><a href="#l1.132"></a>
+<span id="l1.133">     guarantee_property(cfs-&gt;at_eos(), &quot;Extra bytes at the end of class file %s&quot;, CHECK_(nullHandle));</span><a href="#l1.133"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/vm/classfile/classFileParser.hpp	Wed Mar 19 18:04:09 2014 -0400</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/vm/classfile/classFileParser.hpp	Thu Mar 20 08:46:41 2014 -0400</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright (c) 1997, 2012, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright (c) 1997, 2014, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -102,7 +102,7 @@</span><a href="#l2.10"></a>
+<span id="l2.11">       assert((int)_annotation_LIMIT &lt;= (int)sizeof(_annotations_present) * BitsPerByte, &quot;&quot;);</span><a href="#l2.11"></a>
+<span id="l2.12">     }</span><a href="#l2.12"></a>
+<span id="l2.13">     // If this annotation name has an ID, report it (or _none).</span><a href="#l2.13"></a>
+<span id="l2.14" class="minusline">-    ID annotation_index(Symbol* name);</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+    ID annotation_index(Handle class_loader, bool is_anonymous, Symbol* name);</span><a href="#l2.15"></a>
+<span id="l2.16">     // Set the annotation name:</span><a href="#l2.16"></a>
+<span id="l2.17">     void set_annotation(ID id) {</span><a href="#l2.17"></a>
+<span id="l2.18">       assert((int)id &gt;= 0 &amp;&amp; (int)id &lt; (int)_annotation_LIMIT, &quot;oob&quot;);</span><a href="#l2.18"></a>
+<span id="l2.19" class="atline">@@ -169,14 +169,14 @@</span><a href="#l2.19"></a>
+<span id="l2.20">                                u2* java_fields_count_ptr, TRAPS);</span><a href="#l2.20"></a>
+<span id="l2.21"> </span><a href="#l2.21"></a>
+<span id="l2.22">   // Method parsing</span><a href="#l2.22"></a>
+<span id="l2.23" class="minusline">-  methodHandle parse_method(constantPoolHandle cp, bool is_interface,</span><a href="#l2.23"></a>
+<span id="l2.24" class="minusline">-                            AccessFlags* promoted_flags,</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+  methodHandle parse_method(Handle class_loader, constantPoolHandle cp,</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+                            bool is_interface, AccessFlags* promoted_flags,</span><a href="#l2.26"></a>
+<span id="l2.27">                             typeArrayHandle* method_annotations,</span><a href="#l2.27"></a>
+<span id="l2.28">                             typeArrayHandle* method_parameter_annotations,</span><a href="#l2.28"></a>
+<span id="l2.29">                             typeArrayHandle* method_default_annotations,</span><a href="#l2.29"></a>
+<span id="l2.30">                             TRAPS);</span><a href="#l2.30"></a>
+<span id="l2.31" class="minusline">-  objArrayHandle parse_methods (constantPoolHandle cp, bool is_interface,</span><a href="#l2.31"></a>
+<span id="l2.32" class="minusline">-                                AccessFlags* promoted_flags,</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+  objArrayHandle parse_methods (Handle class_loader, constantPoolHandle cp,</span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+                                bool is_interface, AccessFlags* promoted_flags,</span><a href="#l2.34"></a>
+<span id="l2.35">                                 bool* has_final_method,</span><a href="#l2.35"></a>
+<span id="l2.36">                                 objArrayOop* methods_annotations_oop,</span><a href="#l2.36"></a>
+<span id="l2.37">                                 objArrayOop* methods_parameter_annotations_oop,</span><a href="#l2.37"></a>
+<span id="l2.38" class="atline">@@ -210,7 +210,8 @@</span><a href="#l2.38"></a>
+<span id="l2.39">                                                u2 enclosing_method_method_index,</span><a href="#l2.39"></a>
+<span id="l2.40">                                                constantPoolHandle cp,</span><a href="#l2.40"></a>
+<span id="l2.41">                                                TRAPS);</span><a href="#l2.41"></a>
+<span id="l2.42" class="minusline">-  void parse_classfile_attributes(constantPoolHandle cp,</span><a href="#l2.42"></a>
+<span id="l2.43" class="plusline">+  void parse_classfile_attributes(Handle class_loader,</span><a href="#l2.43"></a>
+<span id="l2.44" class="plusline">+                                  constantPoolHandle cp,</span><a href="#l2.44"></a>
+<span id="l2.45">                                   ClassAnnotationCollector* parsed_annotations,</span><a href="#l2.45"></a>
+<span id="l2.46">                                   TRAPS);</span><a href="#l2.46"></a>
+<span id="l2.47">   void parse_classfile_synthetic_attribute(constantPoolHandle cp, TRAPS);</span><a href="#l2.47"></a>
+<span id="l2.48" class="atline">@@ -224,7 +225,7 @@</span><a href="#l2.48"></a>
+<span id="l2.49">                                        int runtime_invisible_annotations_length, TRAPS);</span><a href="#l2.49"></a>
+<span id="l2.50">   int skip_annotation(u1* buffer, int limit, int index);</span><a href="#l2.50"></a>
+<span id="l2.51">   int skip_annotation_value(u1* buffer, int limit, int index);</span><a href="#l2.51"></a>
+<span id="l2.52" class="minusline">-  void parse_annotations(u1* buffer, int limit, constantPoolHandle cp,</span><a href="#l2.52"></a>
+<span id="l2.53" class="plusline">+  void parse_annotations(Handle class_loader, u1* buffer, int limit, constantPoolHandle cp,</span><a href="#l2.53"></a>
+<span id="l2.54">                          /* Results (currently, only one result is supported): */</span><a href="#l2.54"></a>
+<span id="l2.55">                          AnnotationCollector* result,</span><a href="#l2.55"></a>
+<span id="l2.56">                          TRAPS);</span><a href="#l2.56"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

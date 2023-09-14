@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk7u/jdk7u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk7u/jdk7u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk7u/jdk7u/jdk/static/mercurial.js"></script>
+
+<title>jdk7u/jdk7u/jdk: d8fc2b8d4e09</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk7u/jdk7u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk7u/jdk7u/jdk/shortlog/d8fc2b8d4e09">log</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/graph/d8fc2b8d4e09">graph</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/tags">tags</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk7u/jdk7u/jdk/raw-rev/d8fc2b8d4e09">raw</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/file/d8fc2b8d4e09">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/d8fc2b8d4e09.zip">zip</a>
+</li>
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/d8fc2b8d4e09.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/d8fc2b8d4e09.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk7u/jdk7u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u/jdk">jdk</a> </h2>
+<h3>changeset 9006:d8fc2b8d4e09   </h3>
+
+<form class="search" action="/jdk7u/jdk7u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk7u/jdk7u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8236201: Better Scanner conversions
+Reviewed-by: ahgross, rhalade, rriggs, skoivu, smarks, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#105;&#103;&#101;&#114;&#97;&#115;&#105;&#109;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Mon, 13 Apr 2020 05:08:41 +0100</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk7u/jdk7u/jdk/rev/41d764523117">41d764523117</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk7u/jdk7u/jdk/rev/ab6cd5af67f0">ab6cd5af67f0</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk7u/jdk7u/jdk/file/d8fc2b8d4e09/src/share/classes/java/util/Scanner.java">src/share/classes/java/util/Scanner.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 11 insertions(+), 11 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/util/Scanner.java</a></td>
+    <td class="diffstat-total" align="right">22</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:50.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:50.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/util/Scanner.java	Mon Apr 13 04:58:22 2020 +0100</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/util/Scanner.java	Mon Apr 13 05:08:41 2020 +0100</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 2003, 2020, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -473,7 +473,7 @@</span><a href="#l1.10"></a>
+<span id="l1.11">         // here but what can we do? The final authority will be</span><a href="#l1.11"></a>
+<span id="l1.12">         // whatever parse method is invoked, so ultimately the</span><a href="#l1.12"></a>
+<span id="l1.13">         // Scanner will do the right thing</span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-        String digit = &quot;((?i)[&quot;+radixDigits+&quot;]|\\p{javaDigit})&quot;;</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+        String digit = &quot;((?i)[&quot;+radixDigits+&quot;\\p{javaDigit}])&quot;;</span><a href="#l1.15"></a>
+<span id="l1.16">         String groupedNumeral = &quot;(&quot;+non0Digit+digit+&quot;?&quot;+digit+&quot;?(&quot;+</span><a href="#l1.16"></a>
+<span id="l1.17">                                 groupSeparator+digit+digit+digit+&quot;)+)&quot;;</span><a href="#l1.17"></a>
+<span id="l1.18">         // digit++ is the possessive form which is necessary for reducing</span><a href="#l1.18"></a>
+<span id="l1.19" class="atline">@@ -523,7 +523,7 @@</span><a href="#l1.19"></a>
+<span id="l1.20">     private Pattern decimalPattern;</span><a href="#l1.20"></a>
+<span id="l1.21">     private void buildFloatAndDecimalPattern() {</span><a href="#l1.21"></a>
+<span id="l1.22">         // \\p{javaDigit} may not be perfect, see above</span><a href="#l1.22"></a>
+<span id="l1.23" class="minusline">-        String digit = &quot;([0-9]|(\\p{javaDigit}))&quot;;</span><a href="#l1.23"></a>
+<span id="l1.24" class="plusline">+        String digit = &quot;(([0-9\\p{javaDigit}]))&quot;;</span><a href="#l1.24"></a>
+<span id="l1.25">         String exponent = &quot;([eE][+-]?&quot;+digit+&quot;+)?&quot;;</span><a href="#l1.25"></a>
+<span id="l1.26">         String groupedNumeral = &quot;(&quot;+non0Digit+digit+&quot;?&quot;+digit+&quot;?(&quot;+</span><a href="#l1.26"></a>
+<span id="l1.27">                                 groupSeparator+digit+digit+digit+&quot;)+)&quot;;</span><a href="#l1.27"></a>
+<span id="l1.28" class="atline">@@ -1237,25 +1237,25 @@</span><a href="#l1.28"></a>
+<span id="l1.29"> </span><a href="#l1.29"></a>
+<span id="l1.30">         // These must be literalized to avoid collision with regex</span><a href="#l1.30"></a>
+<span id="l1.31">         // metacharacters such as dot or parenthesis</span><a href="#l1.31"></a>
+<span id="l1.32" class="minusline">-        groupSeparator =   &quot;\\&quot; + dfs.getGroupingSeparator();</span><a href="#l1.32"></a>
+<span id="l1.33" class="minusline">-        decimalSeparator = &quot;\\&quot; + dfs.getDecimalSeparator();</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+        groupSeparator =   &quot;\\x{&quot; + Integer.toHexString(dfs.getGroupingSeparator()) + &quot;}&quot;;</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+        decimalSeparator = &quot;\\x{&quot; + Integer.toHexString(dfs.getDecimalSeparator()) + &quot;}&quot;;</span><a href="#l1.35"></a>
+<span id="l1.36"> </span><a href="#l1.36"></a>
+<span id="l1.37">         // Quoting the nonzero length locale-specific things</span><a href="#l1.37"></a>
+<span id="l1.38">         // to avoid potential conflict with metacharacters</span><a href="#l1.38"></a>
+<span id="l1.39" class="minusline">-        nanString = &quot;\\Q&quot; + dfs.getNaN() + &quot;\\E&quot;;</span><a href="#l1.39"></a>
+<span id="l1.40" class="minusline">-        infinityString = &quot;\\Q&quot; + dfs.getInfinity() + &quot;\\E&quot;;</span><a href="#l1.40"></a>
+<span id="l1.41" class="plusline">+        nanString = Pattern.quote(dfs.getNaN());</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+        infinityString = Pattern.quote(dfs.getInfinity());</span><a href="#l1.42"></a>
+<span id="l1.43">         positivePrefix = df.getPositivePrefix();</span><a href="#l1.43"></a>
+<span id="l1.44">         if (positivePrefix.length() &gt; 0)</span><a href="#l1.44"></a>
+<span id="l1.45" class="minusline">-            positivePrefix = &quot;\\Q&quot; + positivePrefix + &quot;\\E&quot;;</span><a href="#l1.45"></a>
+<span id="l1.46" class="plusline">+            positivePrefix = Pattern.quote(positivePrefix);</span><a href="#l1.46"></a>
+<span id="l1.47">         negativePrefix = df.getNegativePrefix();</span><a href="#l1.47"></a>
+<span id="l1.48">         if (negativePrefix.length() &gt; 0)</span><a href="#l1.48"></a>
+<span id="l1.49" class="minusline">-            negativePrefix = &quot;\\Q&quot; + negativePrefix + &quot;\\E&quot;;</span><a href="#l1.49"></a>
+<span id="l1.50" class="plusline">+            negativePrefix = Pattern.quote(negativePrefix);</span><a href="#l1.50"></a>
+<span id="l1.51">         positiveSuffix = df.getPositiveSuffix();</span><a href="#l1.51"></a>
+<span id="l1.52">         if (positiveSuffix.length() &gt; 0)</span><a href="#l1.52"></a>
+<span id="l1.53" class="minusline">-            positiveSuffix = &quot;\\Q&quot; + positiveSuffix + &quot;\\E&quot;;</span><a href="#l1.53"></a>
+<span id="l1.54" class="plusline">+            positiveSuffix = Pattern.quote(positiveSuffix);</span><a href="#l1.54"></a>
+<span id="l1.55">         negativeSuffix = df.getNegativeSuffix();</span><a href="#l1.55"></a>
+<span id="l1.56">         if (negativeSuffix.length() &gt; 0)</span><a href="#l1.56"></a>
+<span id="l1.57" class="minusline">-            negativeSuffix = &quot;\\Q&quot; + negativeSuffix + &quot;\\E&quot;;</span><a href="#l1.57"></a>
+<span id="l1.58" class="plusline">+            negativeSuffix = Pattern.quote(negativeSuffix);</span><a href="#l1.58"></a>
+<span id="l1.59"> </span><a href="#l1.59"></a>
+<span id="l1.60">         // Force rebuilding and recompilation of locale dependent</span><a href="#l1.60"></a>
+<span id="l1.61">         // primitive patterns</span><a href="#l1.61"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

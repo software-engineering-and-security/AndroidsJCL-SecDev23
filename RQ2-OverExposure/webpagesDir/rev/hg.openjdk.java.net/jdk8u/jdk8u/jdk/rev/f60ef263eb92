@@ -1,0 +1,1151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: f60ef263eb92</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/f60ef263eb92">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/f60ef263eb92">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/f60ef263eb92">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/f60ef263eb92">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/f60ef263eb92.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/f60ef263eb92.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/f60ef263eb92.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 14554:f60ef263eb92   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8163326: Update the default enabled cipher suites preference
+Reviewed-by: avoitylov, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#98;&#97;&#108;&#97;&#111;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 01 Jul 2021 07:04:53 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/7ca196c6cebe">7ca196c6cebe</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/6573d0696a48">6573d0696a48</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/f60ef263eb92/src/share/classes/sun/security/ssl/CipherSuite.java">src/share/classes/sun/security/ssl/CipherSuite.java</a> <a href="/jdk8u/jdk8u/jdk/file/f60ef263eb92/test/javax/net/ssl/sanity/ciphersuites/CheckCipherSuites.java">test/javax/net/ssl/sanity/ciphersuites/CheckCipherSuites.java</a> <a href="/jdk8u/jdk8u/jdk/file/f60ef263eb92/test/javax/net/ssl/sanity/ciphersuites/CipherSuitesInOrder.java">test/javax/net/ssl/sanity/ciphersuites/CipherSuitesInOrder.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     3 files changed, 491 insertions(+), 307 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/security/ssl/CipherSuite.java</a></td>
+    <td class="diffstat-total" align="right">300</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:59.6666666667%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:40.3333333333%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">test/javax/net/ssl/sanity/ciphersuites/CheckCipherSuites.java</a></td>
+    <td class="diffstat-total" align="right">236</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:53.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:25.6666666667%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">test/javax/net/ssl/sanity/ciphersuites/CipherSuitesInOrder.java</a></td>
+    <td class="diffstat-total" align="right">262</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:51.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:36.3333333333%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/security/ssl/CipherSuite.java	Thu Aug 05 10:00:55 2021 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/security/ssl/CipherSuite.java	Thu Jul 01 07:04:53 2021 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -56,20 +56,22 @@</span><a href="#l1.3"></a>
+<span id="l1.4">     // the following criteria:</span><a href="#l1.4"></a>
+<span id="l1.5">     // 1. Prefer Suite B compliant cipher suites, see RFC6460 (To be</span><a href="#l1.5"></a>
+<span id="l1.6">     //    changed later, see below).</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-    // 2. Prefer the stronger bulk cipher, in the order of AES_256(GCM),</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+    // 2. Prefer forward secrecy cipher suites.</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+    // 3. Prefer the stronger bulk cipher, in the order of AES_256(GCM),</span><a href="#l1.9"></a>
+<span id="l1.10">     //    AES_128(GCM), AES_256, AES_128, 3DES-EDE.</span><a href="#l1.10"></a>
+<span id="l1.11" class="minusline">-    // 3. Prefer the stronger MAC algorithm, in the order of SHA384,</span><a href="#l1.11"></a>
+<span id="l1.12" class="plusline">+    // 4. Prefer the stronger MAC algorithm, in the order of SHA384,</span><a href="#l1.12"></a>
+<span id="l1.13">     //    SHA256, SHA, MD5.</span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-    // 4. Prefer the better performance of key exchange and digital</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+    // 5. Prefer the better performance of key exchange and digital</span><a href="#l1.15"></a>
+<span id="l1.16">     //    signature algorithm, in the order of ECDHE-ECDSA, ECDHE-RSA,</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-    //    RSA, ECDH-ECDSA, ECDH-RSA, DHE-RSA, DHE-DSS.</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+    //    DHE-RSA, DHE-DSS, ECDH-ECDSA, ECDH-RSA, RSA.</span><a href="#l1.18"></a>
+<span id="l1.19"> </span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+    // TLS 1.3 cipher suites.</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+    TLS_AES_256_GCM_SHA384(</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+            0x1302, true, &quot;TLS_AES_256_GCM_SHA384&quot;,</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_13, B_AES_256_GCM_IV, H_SHA384),</span><a href="#l1.23"></a>
+<span id="l1.24">     TLS_AES_128_GCM_SHA256(</span><a href="#l1.24"></a>
+<span id="l1.25">             0x1301, true, &quot;TLS_AES_128_GCM_SHA256&quot;,</span><a href="#l1.25"></a>
+<span id="l1.26">             ProtocolVersion.PROTOCOLS_OF_13, B_AES_128_GCM_IV, H_SHA256),</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-    TLS_AES_256_GCM_SHA384(</span><a href="#l1.27"></a>
+<span id="l1.28" class="minusline">-            0x1302, true, &quot;TLS_AES_256_GCM_SHA384&quot;,</span><a href="#l1.28"></a>
+<span id="l1.29" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_13, B_AES_256_GCM_IV, H_SHA384),</span><a href="#l1.29"></a>
+<span id="l1.30"> </span><a href="#l1.30"></a>
+<span id="l1.31">     // Suite B compliant cipher suites, see RFC 6460.</span><a href="#l1.31"></a>
+<span id="l1.32">     //</span><a href="#l1.32"></a>
+<span id="l1.33" class="atline">@@ -87,23 +89,23 @@</span><a href="#l1.33"></a>
+<span id="l1.34">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.34"></a>
+<span id="l1.35">             K_ECDHE_ECDSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.35"></a>
+<span id="l1.36"> </span><a href="#l1.36"></a>
+<span id="l1.37" class="minusline">-    // AES_256(GCM)</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+    //</span><a href="#l1.38"></a>
+<span id="l1.39" class="plusline">+    // Forward screcy cipher suites.</span><a href="#l1.39"></a>
+<span id="l1.40" class="plusline">+    //</span><a href="#l1.40"></a>
+<span id="l1.41" class="plusline">+</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+    // AES_256(GCM) - ECDHE</span><a href="#l1.42"></a>
+<span id="l1.43">     TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384(</span><a href="#l1.43"></a>
+<span id="l1.44">             0xC030, true, &quot;TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;, &quot;&quot;,</span><a href="#l1.44"></a>
+<span id="l1.45">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.45"></a>
+<span id="l1.46">             K_ECDHE_RSA, B_AES_256_GCM, M_NULL, H_SHA384),</span><a href="#l1.46"></a>
+<span id="l1.47" class="minusline">-    TLS_RSA_WITH_AES_256_GCM_SHA384(</span><a href="#l1.47"></a>
+<span id="l1.48" class="minusline">-            0x009D, true, &quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;, &quot;&quot;,</span><a href="#l1.48"></a>
+<span id="l1.49" class="plusline">+</span><a href="#l1.49"></a>
+<span id="l1.50" class="plusline">+    // AES_128(GCM) - ECDHE</span><a href="#l1.50"></a>
+<span id="l1.51" class="plusline">+    TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.51"></a>
+<span id="l1.52" class="plusline">+            0xC02F, true, &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.52"></a>
+<span id="l1.53">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.53"></a>
+<span id="l1.54" class="minusline">-            K_RSA, B_AES_256_GCM, M_NULL, H_SHA384),</span><a href="#l1.54"></a>
+<span id="l1.55" class="minusline">-    TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384(</span><a href="#l1.55"></a>
+<span id="l1.56" class="minusline">-            0xC02E, true, &quot;TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384&quot;, &quot;&quot;,</span><a href="#l1.56"></a>
+<span id="l1.57" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.57"></a>
+<span id="l1.58" class="minusline">-            K_ECDH_ECDSA, B_AES_256_GCM, M_NULL, H_SHA384),</span><a href="#l1.58"></a>
+<span id="l1.59" class="minusline">-    TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384(</span><a href="#l1.59"></a>
+<span id="l1.60" class="minusline">-            0xC032, true, &quot;TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384&quot;, &quot;&quot;,</span><a href="#l1.60"></a>
+<span id="l1.61" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.61"></a>
+<span id="l1.62" class="minusline">-            K_ECDH_RSA, B_AES_256_GCM, M_NULL, H_SHA384),</span><a href="#l1.62"></a>
+<span id="l1.63" class="plusline">+            K_ECDHE_RSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.63"></a>
+<span id="l1.64" class="plusline">+</span><a href="#l1.64"></a>
+<span id="l1.65" class="plusline">+    // AES_256(GCM) - DHE</span><a href="#l1.65"></a>
+<span id="l1.66">     TLS_DHE_RSA_WITH_AES_256_GCM_SHA384(</span><a href="#l1.66"></a>
+<span id="l1.67">             0x009F, true, &quot;TLS_DHE_RSA_WITH_AES_256_GCM_SHA384&quot;, &quot;&quot;,</span><a href="#l1.67"></a>
+<span id="l1.68">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.68"></a>
+<span id="l1.69" class="atline">@@ -113,23 +115,7 @@</span><a href="#l1.69"></a>
+<span id="l1.70">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.70"></a>
+<span id="l1.71">             K_DHE_DSS, B_AES_256_GCM, M_NULL, H_SHA384),</span><a href="#l1.71"></a>
+<span id="l1.72"> </span><a href="#l1.72"></a>
+<span id="l1.73" class="minusline">-    // AES_128(GCM)</span><a href="#l1.73"></a>
+<span id="l1.74" class="minusline">-    TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.74"></a>
+<span id="l1.75" class="minusline">-            0xC02F, true, &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.75"></a>
+<span id="l1.76" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.76"></a>
+<span id="l1.77" class="minusline">-            K_ECDHE_RSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.77"></a>
+<span id="l1.78" class="minusline">-    TLS_RSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.78"></a>
+<span id="l1.79" class="minusline">-            0x009C, true, &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.79"></a>
+<span id="l1.80" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.80"></a>
+<span id="l1.81" class="minusline">-            K_RSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.81"></a>
+<span id="l1.82" class="minusline">-    TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.82"></a>
+<span id="l1.83" class="minusline">-            0xC02D, true, &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.83"></a>
+<span id="l1.84" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.84"></a>
+<span id="l1.85" class="minusline">-            K_ECDH_ECDSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.85"></a>
+<span id="l1.86" class="minusline">-    TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.86"></a>
+<span id="l1.87" class="minusline">-            0xC031, true, &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.87"></a>
+<span id="l1.88" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.88"></a>
+<span id="l1.89" class="minusline">-            K_ECDH_RSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.89"></a>
+<span id="l1.90" class="plusline">+    // AES_128(GCM) - DHE</span><a href="#l1.90"></a>
+<span id="l1.91">     TLS_DHE_RSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.91"></a>
+<span id="l1.92">             0x009E, true, &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.92"></a>
+<span id="l1.93">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.93"></a>
+<span id="l1.94" class="atline">@@ -139,7 +125,7 @@</span><a href="#l1.94"></a>
+<span id="l1.95">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.95"></a>
+<span id="l1.96">             K_DHE_DSS, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.96"></a>
+<span id="l1.97"> </span><a href="#l1.97"></a>
+<span id="l1.98" class="minusline">-    // AES_256(CBC)</span><a href="#l1.98"></a>
+<span id="l1.99" class="plusline">+    // AES_256(CBC) - ECDHE</span><a href="#l1.99"></a>
+<span id="l1.100">     TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384(</span><a href="#l1.100"></a>
+<span id="l1.101">             0xC024, true, &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384&quot;, &quot;&quot;,</span><a href="#l1.101"></a>
+<span id="l1.102">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.102"></a>
+<span id="l1.103" class="atline">@@ -148,18 +134,18 @@</span><a href="#l1.103"></a>
+<span id="l1.104">             0xC028, true, &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;, &quot;&quot;,</span><a href="#l1.104"></a>
+<span id="l1.105">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.105"></a>
+<span id="l1.106">             K_ECDHE_RSA, B_AES_256, M_SHA384, H_SHA384),</span><a href="#l1.106"></a>
+<span id="l1.107" class="minusline">-    TLS_RSA_WITH_AES_256_CBC_SHA256(</span><a href="#l1.107"></a>
+<span id="l1.108" class="minusline">-            0x003D, true, &quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.108"></a>
+<span id="l1.109" class="plusline">+</span><a href="#l1.109"></a>
+<span id="l1.110" class="plusline">+    // AES_128(CBC) - ECDHE</span><a href="#l1.110"></a>
+<span id="l1.111" class="plusline">+    TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.111"></a>
+<span id="l1.112" class="plusline">+            0xC023, true, &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.112"></a>
+<span id="l1.113">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.113"></a>
+<span id="l1.114" class="minusline">-            K_RSA, B_AES_256, M_SHA256, H_SHA256),</span><a href="#l1.114"></a>
+<span id="l1.115" class="minusline">-    TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384(</span><a href="#l1.115"></a>
+<span id="l1.116" class="minusline">-            0xC026, true, &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384&quot;, &quot;&quot;,</span><a href="#l1.116"></a>
+<span id="l1.117" class="plusline">+            K_ECDHE_ECDSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.117"></a>
+<span id="l1.118" class="plusline">+    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.118"></a>
+<span id="l1.119" class="plusline">+            0xC027, true, &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.119"></a>
+<span id="l1.120">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.120"></a>
+<span id="l1.121" class="minusline">-            K_ECDH_ECDSA, B_AES_256, M_SHA384, H_SHA384),</span><a href="#l1.121"></a>
+<span id="l1.122" class="minusline">-    TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384(</span><a href="#l1.122"></a>
+<span id="l1.123" class="minusline">-            0xC02A, true, &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384&quot;, &quot;&quot;,</span><a href="#l1.123"></a>
+<span id="l1.124" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.124"></a>
+<span id="l1.125" class="minusline">-            K_ECDH_RSA, B_AES_256, M_SHA384, H_SHA384),</span><a href="#l1.125"></a>
+<span id="l1.126" class="plusline">+            K_ECDHE_RSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.126"></a>
+<span id="l1.127" class="plusline">+</span><a href="#l1.127"></a>
+<span id="l1.128" class="plusline">+    // AES_256(CBC) - DHE</span><a href="#l1.128"></a>
+<span id="l1.129">     TLS_DHE_RSA_WITH_AES_256_CBC_SHA256(</span><a href="#l1.129"></a>
+<span id="l1.130">             0x006B, true, &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.130"></a>
+<span id="l1.131">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.131"></a>
+<span id="l1.132" class="atline">@@ -169,6 +155,65 @@</span><a href="#l1.132"></a>
+<span id="l1.133">             ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.133"></a>
+<span id="l1.134">             K_DHE_DSS, B_AES_256, M_SHA256, H_SHA256),</span><a href="#l1.134"></a>
+<span id="l1.135"> </span><a href="#l1.135"></a>
+<span id="l1.136" class="plusline">+    // AES_128(CBC) - DHE</span><a href="#l1.136"></a>
+<span id="l1.137" class="plusline">+    TLS_DHE_RSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.137"></a>
+<span id="l1.138" class="plusline">+            0x0067, true, &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.138"></a>
+<span id="l1.139" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.139"></a>
+<span id="l1.140" class="plusline">+            K_DHE_RSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.140"></a>
+<span id="l1.141" class="plusline">+    TLS_DHE_DSS_WITH_AES_128_CBC_SHA256(</span><a href="#l1.141"></a>
+<span id="l1.142" class="plusline">+            0x0040, true, &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.142"></a>
+<span id="l1.143" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.143"></a>
+<span id="l1.144" class="plusline">+            K_DHE_DSS, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.144"></a>
+<span id="l1.145" class="plusline">+</span><a href="#l1.145"></a>
+<span id="l1.146" class="plusline">+    //</span><a href="#l1.146"></a>
+<span id="l1.147" class="plusline">+    // not forward screcy cipher suites.</span><a href="#l1.147"></a>
+<span id="l1.148" class="plusline">+    //</span><a href="#l1.148"></a>
+<span id="l1.149" class="plusline">+</span><a href="#l1.149"></a>
+<span id="l1.150" class="plusline">+    // AES_256(GCM)</span><a href="#l1.150"></a>
+<span id="l1.151" class="plusline">+    TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384(</span><a href="#l1.151"></a>
+<span id="l1.152" class="plusline">+            0xC02E, true, &quot;TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384&quot;, &quot;&quot;,</span><a href="#l1.152"></a>
+<span id="l1.153" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.153"></a>
+<span id="l1.154" class="plusline">+            K_ECDH_ECDSA, B_AES_256_GCM, M_NULL, H_SHA384),</span><a href="#l1.154"></a>
+<span id="l1.155" class="plusline">+    TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384(</span><a href="#l1.155"></a>
+<span id="l1.156" class="plusline">+            0xC032, true, &quot;TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384&quot;, &quot;&quot;,</span><a href="#l1.156"></a>
+<span id="l1.157" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.157"></a>
+<span id="l1.158" class="plusline">+            K_ECDH_RSA, B_AES_256_GCM, M_NULL, H_SHA384),</span><a href="#l1.158"></a>
+<span id="l1.159" class="plusline">+</span><a href="#l1.159"></a>
+<span id="l1.160" class="plusline">+    // AES_128(GCM)</span><a href="#l1.160"></a>
+<span id="l1.161" class="plusline">+    TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.161"></a>
+<span id="l1.162" class="plusline">+            0xC02D, true, &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.162"></a>
+<span id="l1.163" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.163"></a>
+<span id="l1.164" class="plusline">+            K_ECDH_ECDSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.164"></a>
+<span id="l1.165" class="plusline">+    TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.165"></a>
+<span id="l1.166" class="plusline">+            0xC031, true, &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.166"></a>
+<span id="l1.167" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.167"></a>
+<span id="l1.168" class="plusline">+            K_ECDH_RSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.168"></a>
+<span id="l1.169" class="plusline">+</span><a href="#l1.169"></a>
+<span id="l1.170" class="plusline">+    // AES_256(CBC)</span><a href="#l1.170"></a>
+<span id="l1.171" class="plusline">+    TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384(</span><a href="#l1.171"></a>
+<span id="l1.172" class="plusline">+            0xC026, true, &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384&quot;, &quot;&quot;,</span><a href="#l1.172"></a>
+<span id="l1.173" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.173"></a>
+<span id="l1.174" class="plusline">+            K_ECDH_ECDSA, B_AES_256, M_SHA384, H_SHA384),</span><a href="#l1.174"></a>
+<span id="l1.175" class="plusline">+    TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384(</span><a href="#l1.175"></a>
+<span id="l1.176" class="plusline">+            0xC02A, true, &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384&quot;, &quot;&quot;,</span><a href="#l1.176"></a>
+<span id="l1.177" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.177"></a>
+<span id="l1.178" class="plusline">+            K_ECDH_RSA, B_AES_256, M_SHA384, H_SHA384),</span><a href="#l1.178"></a>
+<span id="l1.179" class="plusline">+</span><a href="#l1.179"></a>
+<span id="l1.180" class="plusline">+    // AES_128(CBC)</span><a href="#l1.180"></a>
+<span id="l1.181" class="plusline">+    TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.181"></a>
+<span id="l1.182" class="plusline">+            0xC025, true, &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.182"></a>
+<span id="l1.183" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.183"></a>
+<span id="l1.184" class="plusline">+            K_ECDH_ECDSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.184"></a>
+<span id="l1.185" class="plusline">+    TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.185"></a>
+<span id="l1.186" class="plusline">+            0xC029, true, &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.186"></a>
+<span id="l1.187" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.187"></a>
+<span id="l1.188" class="plusline">+            K_ECDH_RSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.188"></a>
+<span id="l1.189" class="plusline">+</span><a href="#l1.189"></a>
+<span id="l1.190" class="plusline">+    //</span><a href="#l1.190"></a>
+<span id="l1.191" class="plusline">+    // Legacy, used for compatibility</span><a href="#l1.191"></a>
+<span id="l1.192" class="plusline">+    //</span><a href="#l1.192"></a>
+<span id="l1.193" class="plusline">+</span><a href="#l1.193"></a>
+<span id="l1.194" class="plusline">+    // AES_256(CBC) - ECDHE - Using SHA</span><a href="#l1.194"></a>
+<span id="l1.195">     TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA(</span><a href="#l1.195"></a>
+<span id="l1.196">             0xC00A, true, &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.196"></a>
+<span id="l1.197">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.197"></a>
+<span id="l1.198" class="atline">@@ -177,18 +222,18 @@</span><a href="#l1.198"></a>
+<span id="l1.199">             0xC014, true, &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.199"></a>
+<span id="l1.200">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.200"></a>
+<span id="l1.201">             K_ECDHE_RSA, B_AES_256, M_SHA, H_SHA256),</span><a href="#l1.201"></a>
+<span id="l1.202" class="minusline">-    TLS_RSA_WITH_AES_256_CBC_SHA(</span><a href="#l1.202"></a>
+<span id="l1.203" class="minusline">-            0x0035, true, &quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.203"></a>
+<span id="l1.204" class="plusline">+</span><a href="#l1.204"></a>
+<span id="l1.205" class="plusline">+    // AES_128(CBC) - ECDHE - using SHA</span><a href="#l1.205"></a>
+<span id="l1.206" class="plusline">+    TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.206"></a>
+<span id="l1.207" class="plusline">+            0xC009, true, &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.207"></a>
+<span id="l1.208">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.208"></a>
+<span id="l1.209" class="minusline">-            K_RSA, B_AES_256, M_SHA, H_SHA256),</span><a href="#l1.209"></a>
+<span id="l1.210" class="minusline">-    TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA(</span><a href="#l1.210"></a>
+<span id="l1.211" class="minusline">-            0xC005, true, &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.211"></a>
+<span id="l1.212" class="plusline">+            K_ECDHE_ECDSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.212"></a>
+<span id="l1.213" class="plusline">+    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.213"></a>
+<span id="l1.214" class="plusline">+            0xC013, true, &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.214"></a>
+<span id="l1.215">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.215"></a>
+<span id="l1.216" class="minusline">-            K_ECDH_ECDSA, B_AES_256, M_SHA, H_SHA256),</span><a href="#l1.216"></a>
+<span id="l1.217" class="minusline">-    TLS_ECDH_RSA_WITH_AES_256_CBC_SHA(</span><a href="#l1.217"></a>
+<span id="l1.218" class="minusline">-            0xC00F, true, &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.218"></a>
+<span id="l1.219" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.219"></a>
+<span id="l1.220" class="minusline">-            K_ECDH_RSA, B_AES_256, M_SHA, H_SHA256),</span><a href="#l1.220"></a>
+<span id="l1.221" class="plusline">+            K_ECDHE_RSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.221"></a>
+<span id="l1.222" class="plusline">+</span><a href="#l1.222"></a>
+<span id="l1.223" class="plusline">+    // AES_256(CBC) - DHE - Using SHA</span><a href="#l1.223"></a>
+<span id="l1.224">     TLS_DHE_RSA_WITH_AES_256_CBC_SHA(</span><a href="#l1.224"></a>
+<span id="l1.225">             0x0039, true, &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.225"></a>
+<span id="l1.226">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.226"></a>
+<span id="l1.227" class="atline">@@ -198,56 +243,7 @@</span><a href="#l1.227"></a>
+<span id="l1.228">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.228"></a>
+<span id="l1.229">             K_DHE_DSS, B_AES_256, M_SHA, H_SHA256),</span><a href="#l1.229"></a>
+<span id="l1.230"> </span><a href="#l1.230"></a>
+<span id="l1.231" class="minusline">-    // AES_128(CBC)</span><a href="#l1.231"></a>
+<span id="l1.232" class="minusline">-    TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.232"></a>
+<span id="l1.233" class="minusline">-            0xC023, true, &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.233"></a>
+<span id="l1.234" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.234"></a>
+<span id="l1.235" class="minusline">-            K_ECDHE_ECDSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.235"></a>
+<span id="l1.236" class="minusline">-    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.236"></a>
+<span id="l1.237" class="minusline">-            0xC027, true, &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.237"></a>
+<span id="l1.238" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.238"></a>
+<span id="l1.239" class="minusline">-            K_ECDHE_RSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.239"></a>
+<span id="l1.240" class="minusline">-    TLS_RSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.240"></a>
+<span id="l1.241" class="minusline">-            0x003C, true, &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.241"></a>
+<span id="l1.242" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.242"></a>
+<span id="l1.243" class="minusline">-            K_RSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.243"></a>
+<span id="l1.244" class="minusline">-    TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.244"></a>
+<span id="l1.245" class="minusline">-            0xC025, true, &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.245"></a>
+<span id="l1.246" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.246"></a>
+<span id="l1.247" class="minusline">-            K_ECDH_ECDSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.247"></a>
+<span id="l1.248" class="minusline">-    TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.248"></a>
+<span id="l1.249" class="minusline">-            0xC029, true, &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.249"></a>
+<span id="l1.250" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.250"></a>
+<span id="l1.251" class="minusline">-            K_ECDH_RSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.251"></a>
+<span id="l1.252" class="minusline">-    TLS_DHE_RSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.252"></a>
+<span id="l1.253" class="minusline">-            0x0067, true, &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.253"></a>
+<span id="l1.254" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.254"></a>
+<span id="l1.255" class="minusline">-            K_DHE_RSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.255"></a>
+<span id="l1.256" class="minusline">-    TLS_DHE_DSS_WITH_AES_128_CBC_SHA256(</span><a href="#l1.256"></a>
+<span id="l1.257" class="minusline">-            0x0040, true, &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.257"></a>
+<span id="l1.258" class="minusline">-            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.258"></a>
+<span id="l1.259" class="minusline">-            K_DHE_DSS, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.259"></a>
+<span id="l1.260" class="minusline">-</span><a href="#l1.260"></a>
+<span id="l1.261" class="minusline">-    TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.261"></a>
+<span id="l1.262" class="minusline">-            0xC009, true, &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.262"></a>
+<span id="l1.263" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.263"></a>
+<span id="l1.264" class="minusline">-            K_ECDHE_ECDSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.264"></a>
+<span id="l1.265" class="minusline">-    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.265"></a>
+<span id="l1.266" class="minusline">-            0xC013, true, &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.266"></a>
+<span id="l1.267" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.267"></a>
+<span id="l1.268" class="minusline">-            K_ECDHE_RSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.268"></a>
+<span id="l1.269" class="minusline">-    TLS_RSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.269"></a>
+<span id="l1.270" class="minusline">-            0x002F, true, &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.270"></a>
+<span id="l1.271" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.271"></a>
+<span id="l1.272" class="minusline">-            K_RSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.272"></a>
+<span id="l1.273" class="minusline">-    TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.273"></a>
+<span id="l1.274" class="minusline">-            0xC004, true, &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.274"></a>
+<span id="l1.275" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.275"></a>
+<span id="l1.276" class="minusline">-            K_ECDH_ECDSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.276"></a>
+<span id="l1.277" class="minusline">-    TLS_ECDH_RSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.277"></a>
+<span id="l1.278" class="minusline">-            0xC00E, true, &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.278"></a>
+<span id="l1.279" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.279"></a>
+<span id="l1.280" class="minusline">-            K_ECDH_RSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.280"></a>
+<span id="l1.281" class="plusline">+    // AES_128(CBC) - DHE - using SHA</span><a href="#l1.281"></a>
+<span id="l1.282">     TLS_DHE_RSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.282"></a>
+<span id="l1.283">             0x0033, true, &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.283"></a>
+<span id="l1.284">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.284"></a>
+<span id="l1.285" class="atline">@@ -257,7 +253,67 @@</span><a href="#l1.285"></a>
+<span id="l1.286">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.286"></a>
+<span id="l1.287">             K_DHE_DSS, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.287"></a>
+<span id="l1.288"> </span><a href="#l1.288"></a>
+<span id="l1.289" class="minusline">-    // 3DES_EDE</span><a href="#l1.289"></a>
+<span id="l1.290" class="plusline">+    // AES_256(CBC) - using SHA, not forward screcy</span><a href="#l1.290"></a>
+<span id="l1.291" class="plusline">+    TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA(</span><a href="#l1.291"></a>
+<span id="l1.292" class="plusline">+            0xC005, true, &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.292"></a>
+<span id="l1.293" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.293"></a>
+<span id="l1.294" class="plusline">+            K_ECDH_ECDSA, B_AES_256, M_SHA, H_SHA256),</span><a href="#l1.294"></a>
+<span id="l1.295" class="plusline">+    TLS_ECDH_RSA_WITH_AES_256_CBC_SHA(</span><a href="#l1.295"></a>
+<span id="l1.296" class="plusline">+            0xC00F, true, &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.296"></a>
+<span id="l1.297" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.297"></a>
+<span id="l1.298" class="plusline">+            K_ECDH_RSA, B_AES_256, M_SHA, H_SHA256),</span><a href="#l1.298"></a>
+<span id="l1.299" class="plusline">+</span><a href="#l1.299"></a>
+<span id="l1.300" class="plusline">+    // AES_128(CBC) - using SHA, not forward screcy</span><a href="#l1.300"></a>
+<span id="l1.301" class="plusline">+    TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.301"></a>
+<span id="l1.302" class="plusline">+            0xC004, true, &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.302"></a>
+<span id="l1.303" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.303"></a>
+<span id="l1.304" class="plusline">+            K_ECDH_ECDSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.304"></a>
+<span id="l1.305" class="plusline">+    TLS_ECDH_RSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.305"></a>
+<span id="l1.306" class="plusline">+            0xC00E, true, &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.306"></a>
+<span id="l1.307" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.307"></a>
+<span id="l1.308" class="plusline">+            K_ECDH_RSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.308"></a>
+<span id="l1.309" class="plusline">+</span><a href="#l1.309"></a>
+<span id="l1.310" class="plusline">+    //</span><a href="#l1.310"></a>
+<span id="l1.311" class="plusline">+    // deprecated, used for compatibility</span><a href="#l1.311"></a>
+<span id="l1.312" class="plusline">+    //</span><a href="#l1.312"></a>
+<span id="l1.313" class="plusline">+</span><a href="#l1.313"></a>
+<span id="l1.314" class="plusline">+    // RSA, AES_256(GCM)</span><a href="#l1.314"></a>
+<span id="l1.315" class="plusline">+    TLS_RSA_WITH_AES_256_GCM_SHA384(</span><a href="#l1.315"></a>
+<span id="l1.316" class="plusline">+            0x009D, true, &quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;, &quot;&quot;,</span><a href="#l1.316"></a>
+<span id="l1.317" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.317"></a>
+<span id="l1.318" class="plusline">+            K_RSA, B_AES_256_GCM, M_NULL, H_SHA384),</span><a href="#l1.318"></a>
+<span id="l1.319" class="plusline">+</span><a href="#l1.319"></a>
+<span id="l1.320" class="plusline">+    // RSA, AES_128(GCM)</span><a href="#l1.320"></a>
+<span id="l1.321" class="plusline">+    TLS_RSA_WITH_AES_128_GCM_SHA256(</span><a href="#l1.321"></a>
+<span id="l1.322" class="plusline">+            0x009C, true, &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;, &quot;&quot;,</span><a href="#l1.322"></a>
+<span id="l1.323" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.323"></a>
+<span id="l1.324" class="plusline">+            K_RSA, B_AES_128_GCM, M_NULL, H_SHA256),</span><a href="#l1.324"></a>
+<span id="l1.325" class="plusline">+</span><a href="#l1.325"></a>
+<span id="l1.326" class="plusline">+    // RSA, AES_256(CBC)</span><a href="#l1.326"></a>
+<span id="l1.327" class="plusline">+    TLS_RSA_WITH_AES_256_CBC_SHA256(</span><a href="#l1.327"></a>
+<span id="l1.328" class="plusline">+            0x003D, true, &quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.328"></a>
+<span id="l1.329" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.329"></a>
+<span id="l1.330" class="plusline">+            K_RSA, B_AES_256, M_SHA256, H_SHA256),</span><a href="#l1.330"></a>
+<span id="l1.331" class="plusline">+</span><a href="#l1.331"></a>
+<span id="l1.332" class="plusline">+    // RSA, AES_128(CBC)</span><a href="#l1.332"></a>
+<span id="l1.333" class="plusline">+    TLS_RSA_WITH_AES_128_CBC_SHA256(</span><a href="#l1.333"></a>
+<span id="l1.334" class="plusline">+            0x003C, true, &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;, &quot;&quot;,</span><a href="#l1.334"></a>
+<span id="l1.335" class="plusline">+            ProtocolVersion.PROTOCOLS_OF_12,</span><a href="#l1.335"></a>
+<span id="l1.336" class="plusline">+            K_RSA, B_AES_128, M_SHA256, H_SHA256),</span><a href="#l1.336"></a>
+<span id="l1.337" class="plusline">+</span><a href="#l1.337"></a>
+<span id="l1.338" class="plusline">+    // RSA, AES_256(CBC) - using SHA, not forward screcy</span><a href="#l1.338"></a>
+<span id="l1.339" class="plusline">+    TLS_RSA_WITH_AES_256_CBC_SHA(</span><a href="#l1.339"></a>
+<span id="l1.340" class="plusline">+            0x0035, true, &quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.340"></a>
+<span id="l1.341" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.341"></a>
+<span id="l1.342" class="plusline">+            K_RSA, B_AES_256, M_SHA, H_SHA256),</span><a href="#l1.342"></a>
+<span id="l1.343" class="plusline">+</span><a href="#l1.343"></a>
+<span id="l1.344" class="plusline">+    // RSA, AES_128(CBC) - using SHA, not forward screcy</span><a href="#l1.344"></a>
+<span id="l1.345" class="plusline">+    TLS_RSA_WITH_AES_128_CBC_SHA(</span><a href="#l1.345"></a>
+<span id="l1.346" class="plusline">+            0x002F, true, &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.346"></a>
+<span id="l1.347" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.347"></a>
+<span id="l1.348" class="plusline">+            K_RSA, B_AES_128, M_SHA, H_SHA256),</span><a href="#l1.348"></a>
+<span id="l1.349" class="plusline">+</span><a href="#l1.349"></a>
+<span id="l1.350" class="plusline">+    // 3DES_EDE, forward secrecy.</span><a href="#l1.350"></a>
+<span id="l1.351">     TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA(</span><a href="#l1.351"></a>
+<span id="l1.352">             0xC008, true, &quot;TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.352"></a>
+<span id="l1.353">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.353"></a>
+<span id="l1.354" class="atline">@@ -266,19 +322,6 @@</span><a href="#l1.354"></a>
+<span id="l1.355">             0xC012, true, &quot;TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.355"></a>
+<span id="l1.356">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.356"></a>
+<span id="l1.357">             K_ECDHE_RSA, B_3DES, M_SHA, H_SHA256),</span><a href="#l1.357"></a>
+<span id="l1.358" class="minusline">-    SSL_RSA_WITH_3DES_EDE_CBC_SHA(</span><a href="#l1.358"></a>
+<span id="l1.359" class="minusline">-            0x000A, true, &quot;SSL_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l1.359"></a>
+<span id="l1.360" class="minusline">-                          &quot;TLS_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l1.360"></a>
+<span id="l1.361" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.361"></a>
+<span id="l1.362" class="minusline">-            K_RSA, B_3DES, M_SHA, H_SHA256),</span><a href="#l1.362"></a>
+<span id="l1.363" class="minusline">-    TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA(</span><a href="#l1.363"></a>
+<span id="l1.364" class="minusline">-            0xC003, true, &quot;TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.364"></a>
+<span id="l1.365" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.365"></a>
+<span id="l1.366" class="minusline">-            K_ECDH_ECDSA, B_3DES, M_SHA, H_SHA256),</span><a href="#l1.366"></a>
+<span id="l1.367" class="minusline">-    TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA(</span><a href="#l1.367"></a>
+<span id="l1.368" class="minusline">-            0xC00D, true, &quot;TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.368"></a>
+<span id="l1.369" class="minusline">-            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.369"></a>
+<span id="l1.370" class="minusline">-            K_ECDH_RSA, B_3DES, M_SHA, H_SHA256),</span><a href="#l1.370"></a>
+<span id="l1.371">     SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA(</span><a href="#l1.371"></a>
+<span id="l1.372">             0x0016, true, &quot;SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l1.372"></a>
+<span id="l1.373">                           &quot;TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l1.373"></a>
+<span id="l1.374" class="atline">@@ -290,6 +333,21 @@</span><a href="#l1.374"></a>
+<span id="l1.375">             ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.375"></a>
+<span id="l1.376">             K_DHE_DSS, B_3DES, M_SHA, H_SHA256),</span><a href="#l1.376"></a>
+<span id="l1.377"> </span><a href="#l1.377"></a>
+<span id="l1.378" class="plusline">+    // 3DES_EDE, not forward secrecy.</span><a href="#l1.378"></a>
+<span id="l1.379" class="plusline">+    TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA(</span><a href="#l1.379"></a>
+<span id="l1.380" class="plusline">+            0xC003, true, &quot;TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.380"></a>
+<span id="l1.381" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.381"></a>
+<span id="l1.382" class="plusline">+            K_ECDH_ECDSA, B_3DES, M_SHA, H_SHA256),</span><a href="#l1.382"></a>
+<span id="l1.383" class="plusline">+    TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA(</span><a href="#l1.383"></a>
+<span id="l1.384" class="plusline">+            0xC00D, true, &quot;TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA&quot;, &quot;&quot;,</span><a href="#l1.384"></a>
+<span id="l1.385" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.385"></a>
+<span id="l1.386" class="plusline">+            K_ECDH_RSA, B_3DES, M_SHA, H_SHA256),</span><a href="#l1.386"></a>
+<span id="l1.387" class="plusline">+    SSL_RSA_WITH_3DES_EDE_CBC_SHA(</span><a href="#l1.387"></a>
+<span id="l1.388" class="plusline">+            0x000A, true, &quot;SSL_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l1.388"></a>
+<span id="l1.389" class="plusline">+                          &quot;TLS_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l1.389"></a>
+<span id="l1.390" class="plusline">+            ProtocolVersion.PROTOCOLS_TO_12,</span><a href="#l1.390"></a>
+<span id="l1.391" class="plusline">+            K_RSA, B_3DES, M_SHA, H_SHA256),</span><a href="#l1.391"></a>
+<span id="l1.392" class="plusline">+</span><a href="#l1.392"></a>
+<span id="l1.393">     // Renegotiation protection request Signalling Cipher Suite Value (SCSV).</span><a href="#l1.393"></a>
+<span id="l1.394">     TLS_EMPTY_RENEGOTIATION_INFO_SCSV(        //  RFC 5746, TLS 1.2 and prior</span><a href="#l1.394"></a>
+<span id="l1.395">             0x00FF, true, &quot;TLS_EMPTY_RENEGOTIATION_INFO_SCSV&quot;, &quot;&quot;,</span><a href="#l1.395"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/test/javax/net/ssl/sanity/ciphersuites/CheckCipherSuites.java	Thu Aug 05 10:00:55 2021 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/test/javax/net/ssl/sanity/ciphersuites/CheckCipherSuites.java	Thu Jul 01 07:04:53 2021 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -23,7 +23,7 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> </span><a href="#l2.4"></a>
+<span id="l2.5"> /*</span><a href="#l2.5"></a>
+<span id="l2.6">  * @test</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">- * @bug 4750141 4895631 8217579</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+ * @bug 4750141 4895631 8217579 8163326</span><a href="#l2.8"></a>
+<span id="l2.9">  * @summary Check enabled and supported ciphersuites are correct</span><a href="#l2.9"></a>
+<span id="l2.10">  * @run main/othervm -Djdk.tls.client.protocols=&quot;TLSv1.3,TLSv1.2,TLSv1.1,TLSv1,SSLv3&quot; CheckCipherSuites default</span><a href="#l2.10"></a>
+<span id="l2.11">  * @run main/othervm -Djdk.tls.client.protocols=&quot;TLSv1.3,TLSv1.2,TLSv1.1,TLSv1,SSLv3&quot; CheckCipherSuites limited</span><a href="#l2.11"></a>
+<span id="l2.12" class="atline">@@ -38,50 +38,91 @@</span><a href="#l2.12"></a>
+<span id="l2.13">     // List of enabled cipher suites when the &quot;crypto.policy&quot; security</span><a href="#l2.13"></a>
+<span id="l2.14">     // property is set to &quot;unlimited&quot; (the default value).</span><a href="#l2.14"></a>
+<span id="l2.15">     private final static String[] ENABLED_DEFAULT = {</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+        // TLS 1.3 cipher suites</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+        &quot;TLS_AES_256_GCM_SHA384&quot;,</span><a href="#l2.17"></a>
+<span id="l2.18">         &quot;TLS_AES_128_GCM_SHA256&quot;,</span><a href="#l2.18"></a>
+<span id="l2.19" class="minusline">-        &quot;TLS_AES_256_GCM_SHA384&quot;,</span><a href="#l2.19"></a>
+<span id="l2.20" class="plusline">+</span><a href="#l2.20"></a>
+<span id="l2.21" class="plusline">+        // Suite B compliant cipher suites</span><a href="#l2.21"></a>
+<span id="l2.22">         &quot;TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.22"></a>
+<span id="l2.23">         &quot;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.23"></a>
+<span id="l2.24" class="plusline">+</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+        // AES_256(GCM) - ECDHE - forward screcy</span><a href="#l2.25"></a>
+<span id="l2.26">         &quot;TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.26"></a>
+<span id="l2.27" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.27"></a>
+<span id="l2.28" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.28"></a>
+<span id="l2.29" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+        // AES_128(GCM) - ECDHE - forward screcy</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+        &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+</span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+        // AES_256(GCM) - DHE - forward screcy</span><a href="#l2.34"></a>
+<span id="l2.35">         &quot;TLS_DHE_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.35"></a>
+<span id="l2.36">         &quot;TLS_DHE_DSS_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.36"></a>
+<span id="l2.37" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.37"></a>
+<span id="l2.38" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.38"></a>
+<span id="l2.39" class="plusline">+</span><a href="#l2.39"></a>
+<span id="l2.40" class="plusline">+        // AES_128(GCM) - DHE - forward screcy</span><a href="#l2.40"></a>
+<span id="l2.41" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.41"></a>
+<span id="l2.42" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.42"></a>
+<span id="l2.43" class="plusline">+</span><a href="#l2.43"></a>
+<span id="l2.44" class="plusline">+        // AES_256(CBC) - ECDHE - forward screcy</span><a href="#l2.44"></a>
+<span id="l2.45" class="plusline">+        &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.45"></a>
+<span id="l2.46" class="plusline">+        &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.46"></a>
+<span id="l2.47" class="plusline">+</span><a href="#l2.47"></a>
+<span id="l2.48" class="plusline">+        // AES_256(CBC) - ECDHE - forward screcy</span><a href="#l2.48"></a>
+<span id="l2.49" class="plusline">+        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.49"></a>
+<span id="l2.50" class="plusline">+        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.50"></a>
+<span id="l2.51" class="plusline">+</span><a href="#l2.51"></a>
+<span id="l2.52" class="plusline">+        // AES_256(CBC) - DHE - forward screcy</span><a href="#l2.52"></a>
+<span id="l2.53" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.53"></a>
+<span id="l2.54" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.54"></a>
+<span id="l2.55" class="plusline">+</span><a href="#l2.55"></a>
+<span id="l2.56" class="plusline">+        // AES_128(CBC) - DHE - forward screcy</span><a href="#l2.56"></a>
+<span id="l2.57" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.57"></a>
+<span id="l2.58" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.58"></a>
+<span id="l2.59" class="plusline">+</span><a href="#l2.59"></a>
+<span id="l2.60" class="plusline">+        // AES_256(GCM) - not forward screcy</span><a href="#l2.60"></a>
+<span id="l2.61" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.61"></a>
+<span id="l2.62" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.62"></a>
+<span id="l2.63" class="plusline">+</span><a href="#l2.63"></a>
+<span id="l2.64" class="plusline">+        // AES_128(GCM) - not forward screcy</span><a href="#l2.64"></a>
+<span id="l2.65">         &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.65"></a>
+<span id="l2.66">         &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.66"></a>
+<span id="l2.67" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.67"></a>
+<span id="l2.68" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.68"></a>
+<span id="l2.69" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.69"></a>
+<span id="l2.70" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.70"></a>
+<span id="l2.71" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.71"></a>
+<span id="l2.72" class="plusline">+</span><a href="#l2.72"></a>
+<span id="l2.73" class="plusline">+        // AES_256(CBC) - not forward screcy</span><a href="#l2.73"></a>
+<span id="l2.74">         &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.74"></a>
+<span id="l2.75">         &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.75"></a>
+<span id="l2.76" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.76"></a>
+<span id="l2.77" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.77"></a>
+<span id="l2.78" class="plusline">+</span><a href="#l2.78"></a>
+<span id="l2.79" class="plusline">+        // AES_128(CBC) - not forward screcy</span><a href="#l2.79"></a>
+<span id="l2.80" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.80"></a>
+<span id="l2.81" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.81"></a>
+<span id="l2.82" class="plusline">+</span><a href="#l2.82"></a>
+<span id="l2.83" class="plusline">+        // AES_256(CBC) - ECDHE - using SHA</span><a href="#l2.83"></a>
+<span id="l2.84">         &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.84"></a>
+<span id="l2.85">         &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.85"></a>
+<span id="l2.86" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.86"></a>
+<span id="l2.87" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.87"></a>
+<span id="l2.88" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.88"></a>
+<span id="l2.89" class="plusline">+</span><a href="#l2.89"></a>
+<span id="l2.90" class="plusline">+        // AES_128(CBC) - ECDHE - using SHA</span><a href="#l2.90"></a>
+<span id="l2.91" class="plusline">+        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.91"></a>
+<span id="l2.92" class="plusline">+        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.92"></a>
+<span id="l2.93" class="plusline">+</span><a href="#l2.93"></a>
+<span id="l2.94" class="plusline">+        // AES_256(CBC) - DHE - using SHA</span><a href="#l2.94"></a>
+<span id="l2.95">         &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.95"></a>
+<span id="l2.96">         &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.96"></a>
+<span id="l2.97" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.97"></a>
+<span id="l2.98" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.98"></a>
+<span id="l2.99" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.99"></a>
+<span id="l2.100" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.100"></a>
+<span id="l2.101" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.101"></a>
+<span id="l2.102" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.102"></a>
+<span id="l2.103" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.103"></a>
+<span id="l2.104" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.104"></a>
+<span id="l2.105" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.105"></a>
+<span id="l2.106" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.106"></a>
+<span id="l2.107" class="plusline">+</span><a href="#l2.107"></a>
+<span id="l2.108" class="plusline">+        // AES_128(CBC) - DHE - using SHA</span><a href="#l2.108"></a>
+<span id="l2.109" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.109"></a>
+<span id="l2.110" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.110"></a>
+<span id="l2.111" class="plusline">+</span><a href="#l2.111"></a>
+<span id="l2.112" class="plusline">+        // AES_256(CBC) - using SHA, not forward screcy</span><a href="#l2.112"></a>
+<span id="l2.113" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.113"></a>
+<span id="l2.114" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.114"></a>
+<span id="l2.115" class="plusline">+</span><a href="#l2.115"></a>
+<span id="l2.116" class="plusline">+        // AES_128(CBC) - using SHA, not forward screcy</span><a href="#l2.116"></a>
+<span id="l2.117">         &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.117"></a>
+<span id="l2.118">         &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.118"></a>
+<span id="l2.119" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.119"></a>
+<span id="l2.120" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.120"></a>
+<span id="l2.121" class="plusline">+</span><a href="#l2.121"></a>
+<span id="l2.122" class="plusline">+        // deprecated</span><a href="#l2.122"></a>
+<span id="l2.123" class="plusline">+        &quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.123"></a>
+<span id="l2.124" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.124"></a>
+<span id="l2.125" class="plusline">+        &quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.125"></a>
+<span id="l2.126" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.126"></a>
+<span id="l2.127" class="plusline">+        &quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.127"></a>
+<span id="l2.128" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.128"></a>
+<span id="l2.129">         &quot;TLS_EMPTY_RENEGOTIATION_INFO_SCSV&quot;</span><a href="#l2.129"></a>
+<span id="l2.130">     };</span><a href="#l2.130"></a>
+<span id="l2.131"> </span><a href="#l2.131"></a>
+<span id="l2.132" class="atline">@@ -91,75 +132,116 @@</span><a href="#l2.132"></a>
+<span id="l2.133">         &quot;TLS_AES_128_GCM_SHA256&quot;,</span><a href="#l2.133"></a>
+<span id="l2.134">         &quot;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.134"></a>
+<span id="l2.135">         &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.135"></a>
+<span id="l2.136" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.136"></a>
+<span id="l2.137" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.137"></a>
+<span id="l2.138" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.138"></a>
+<span id="l2.139">         &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.139"></a>
+<span id="l2.140">         &quot;TLS_DHE_DSS_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.140"></a>
+<span id="l2.141">         &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.141"></a>
+<span id="l2.142">         &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.142"></a>
+<span id="l2.143" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.143"></a>
+<span id="l2.144" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.144"></a>
+<span id="l2.145" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.145"></a>
+<span id="l2.146">         &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.146"></a>
+<span id="l2.147">         &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.147"></a>
+<span id="l2.148" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.148"></a>
+<span id="l2.149" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.149"></a>
+<span id="l2.150" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.150"></a>
+<span id="l2.151" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.151"></a>
+<span id="l2.152">         &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.152"></a>
+<span id="l2.153">         &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.153"></a>
+<span id="l2.154" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.154"></a>
+<span id="l2.155" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.155"></a>
+<span id="l2.156" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.156"></a>
+<span id="l2.157">         &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.157"></a>
+<span id="l2.158">         &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.158"></a>
+<span id="l2.159" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.159"></a>
+<span id="l2.160" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.160"></a>
+<span id="l2.161" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.161"></a>
+<span id="l2.162" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.162"></a>
+<span id="l2.163" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.163"></a>
+<span id="l2.164">         &quot;TLS_EMPTY_RENEGOTIATION_INFO_SCSV&quot;</span><a href="#l2.164"></a>
+<span id="l2.165">     };</span><a href="#l2.165"></a>
+<span id="l2.166"> </span><a href="#l2.166"></a>
+<span id="l2.167">     // List of supported cipher suites when the &quot;crypto.policy&quot; security</span><a href="#l2.167"></a>
+<span id="l2.168">     // property is set to &quot;unlimited&quot; (the default value).</span><a href="#l2.168"></a>
+<span id="l2.169">     private final static String[] SUPPORTED_DEFAULT = {</span><a href="#l2.169"></a>
+<span id="l2.170" class="plusline">+         // TLS 1.3 cipher suites</span><a href="#l2.170"></a>
+<span id="l2.171" class="plusline">+        &quot;TLS_AES_256_GCM_SHA384&quot;,</span><a href="#l2.171"></a>
+<span id="l2.172">         &quot;TLS_AES_128_GCM_SHA256&quot;,</span><a href="#l2.172"></a>
+<span id="l2.173" class="minusline">-        &quot;TLS_AES_256_GCM_SHA384&quot;,</span><a href="#l2.173"></a>
+<span id="l2.174" class="plusline">+</span><a href="#l2.174"></a>
+<span id="l2.175" class="plusline">+        // Suite B compliant cipher suites</span><a href="#l2.175"></a>
+<span id="l2.176">         &quot;TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.176"></a>
+<span id="l2.177">         &quot;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.177"></a>
+<span id="l2.178" class="plusline">+</span><a href="#l2.178"></a>
+<span id="l2.179" class="plusline">+        // AES_256(GCM) - ECDHE - forward screcy</span><a href="#l2.179"></a>
+<span id="l2.180">         &quot;TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.180"></a>
+<span id="l2.181" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.181"></a>
+<span id="l2.182" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.182"></a>
+<span id="l2.183" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.183"></a>
+<span id="l2.184" class="plusline">+</span><a href="#l2.184"></a>
+<span id="l2.185" class="plusline">+        // AES_128(GCM) - ECDHE - forward screcy</span><a href="#l2.185"></a>
+<span id="l2.186" class="plusline">+        &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.186"></a>
+<span id="l2.187" class="plusline">+</span><a href="#l2.187"></a>
+<span id="l2.188" class="plusline">+        // AES_256(GCM) - DHE - forward screcy</span><a href="#l2.188"></a>
+<span id="l2.189">         &quot;TLS_DHE_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.189"></a>
+<span id="l2.190">         &quot;TLS_DHE_DSS_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.190"></a>
+<span id="l2.191" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.191"></a>
+<span id="l2.192" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.192"></a>
+<span id="l2.193" class="plusline">+</span><a href="#l2.193"></a>
+<span id="l2.194" class="plusline">+        // AES_128(GCM) - DHE - forward screcy</span><a href="#l2.194"></a>
+<span id="l2.195" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.195"></a>
+<span id="l2.196" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.196"></a>
+<span id="l2.197" class="plusline">+</span><a href="#l2.197"></a>
+<span id="l2.198" class="plusline">+        // AES_256(CBC) - ECDHE - forward screcy</span><a href="#l2.198"></a>
+<span id="l2.199" class="plusline">+        &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.199"></a>
+<span id="l2.200" class="plusline">+        &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.200"></a>
+<span id="l2.201" class="plusline">+</span><a href="#l2.201"></a>
+<span id="l2.202" class="plusline">+        // AES_256(CBC) - ECDHE - forward screcy</span><a href="#l2.202"></a>
+<span id="l2.203" class="plusline">+        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.203"></a>
+<span id="l2.204" class="plusline">+        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.204"></a>
+<span id="l2.205" class="plusline">+</span><a href="#l2.205"></a>
+<span id="l2.206" class="plusline">+        // AES_256(CBC) - DHE - forward screcy</span><a href="#l2.206"></a>
+<span id="l2.207" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.207"></a>
+<span id="l2.208" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.208"></a>
+<span id="l2.209" class="plusline">+</span><a href="#l2.209"></a>
+<span id="l2.210" class="plusline">+        // AES_128(CBC) - DHE - forward screcy</span><a href="#l2.210"></a>
+<span id="l2.211" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.211"></a>
+<span id="l2.212" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.212"></a>
+<span id="l2.213" class="plusline">+</span><a href="#l2.213"></a>
+<span id="l2.214" class="plusline">+        // AES_256(GCM) - not forward screcy</span><a href="#l2.214"></a>
+<span id="l2.215" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.215"></a>
+<span id="l2.216" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.216"></a>
+<span id="l2.217" class="plusline">+</span><a href="#l2.217"></a>
+<span id="l2.218" class="plusline">+        // AES_128(GCM) - not forward screcy</span><a href="#l2.218"></a>
+<span id="l2.219">         &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.219"></a>
+<span id="l2.220">         &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.220"></a>
+<span id="l2.221" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.221"></a>
+<span id="l2.222" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.222"></a>
+<span id="l2.223" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.223"></a>
+<span id="l2.224" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.224"></a>
+<span id="l2.225" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.225"></a>
+<span id="l2.226" class="plusline">+</span><a href="#l2.226"></a>
+<span id="l2.227" class="plusline">+        // AES_256(CBC) - not forward screcy</span><a href="#l2.227"></a>
+<span id="l2.228">         &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.228"></a>
+<span id="l2.229">         &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l2.229"></a>
+<span id="l2.230" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.230"></a>
+<span id="l2.231" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.231"></a>
+<span id="l2.232" class="plusline">+</span><a href="#l2.232"></a>
+<span id="l2.233" class="plusline">+        // AES_128(CBC) - not forward screcy</span><a href="#l2.233"></a>
+<span id="l2.234" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.234"></a>
+<span id="l2.235" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.235"></a>
+<span id="l2.236" class="plusline">+</span><a href="#l2.236"></a>
+<span id="l2.237" class="plusline">+        // AES_256(CBC) - ECDHE - using SHA</span><a href="#l2.237"></a>
+<span id="l2.238">         &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.238"></a>
+<span id="l2.239">         &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.239"></a>
+<span id="l2.240" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.240"></a>
+<span id="l2.241" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.241"></a>
+<span id="l2.242" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.242"></a>
+<span id="l2.243" class="plusline">+</span><a href="#l2.243"></a>
+<span id="l2.244" class="plusline">+        // AES_128(CBC) - ECDHE - using SHA</span><a href="#l2.244"></a>
+<span id="l2.245" class="plusline">+        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.245"></a>
+<span id="l2.246" class="plusline">+        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.246"></a>
+<span id="l2.247" class="plusline">+</span><a href="#l2.247"></a>
+<span id="l2.248" class="plusline">+        // AES_256(CBC) - DHE - using SHA</span><a href="#l2.248"></a>
+<span id="l2.249">         &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.249"></a>
+<span id="l2.250">         &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.250"></a>
+<span id="l2.251" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.251"></a>
+<span id="l2.252" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.252"></a>
+<span id="l2.253" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.253"></a>
+<span id="l2.254" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.254"></a>
+<span id="l2.255" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.255"></a>
+<span id="l2.256" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.256"></a>
+<span id="l2.257" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.257"></a>
+<span id="l2.258" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.258"></a>
+<span id="l2.259" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.259"></a>
+<span id="l2.260" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.260"></a>
+<span id="l2.261" class="plusline">+</span><a href="#l2.261"></a>
+<span id="l2.262" class="plusline">+        // AES_128(CBC) - DHE - using SHA</span><a href="#l2.262"></a>
+<span id="l2.263" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.263"></a>
+<span id="l2.264" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.264"></a>
+<span id="l2.265" class="plusline">+</span><a href="#l2.265"></a>
+<span id="l2.266" class="plusline">+        // AES_256(CBC) - using SHA, not forward screcy</span><a href="#l2.266"></a>
+<span id="l2.267" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.267"></a>
+<span id="l2.268" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.268"></a>
+<span id="l2.269" class="plusline">+</span><a href="#l2.269"></a>
+<span id="l2.270" class="plusline">+        // AES_128(CBC) - using SHA, not forward screcy</span><a href="#l2.270"></a>
+<span id="l2.271">         &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.271"></a>
+<span id="l2.272">         &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.272"></a>
+<span id="l2.273" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.273"></a>
+<span id="l2.274" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.274"></a>
+<span id="l2.275" class="plusline">+</span><a href="#l2.275"></a>
+<span id="l2.276" class="plusline">+        // deprecated</span><a href="#l2.276"></a>
+<span id="l2.277" class="plusline">+        &quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l2.277"></a>
+<span id="l2.278" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.278"></a>
+<span id="l2.279" class="plusline">+        &quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l2.279"></a>
+<span id="l2.280" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.280"></a>
+<span id="l2.281" class="plusline">+        &quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l2.281"></a>
+<span id="l2.282" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.282"></a>
+<span id="l2.283">         &quot;TLS_EMPTY_RENEGOTIATION_INFO_SCSV&quot;</span><a href="#l2.283"></a>
+<span id="l2.284">     };</span><a href="#l2.284"></a>
+<span id="l2.285"> </span><a href="#l2.285"></a>
+<span id="l2.286" class="atline">@@ -169,25 +251,25 @@</span><a href="#l2.286"></a>
+<span id="l2.287">         &quot;TLS_AES_128_GCM_SHA256&quot;,</span><a href="#l2.287"></a>
+<span id="l2.288">         &quot;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.288"></a>
+<span id="l2.289">         &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.289"></a>
+<span id="l2.290" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.290"></a>
+<span id="l2.291" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.291"></a>
+<span id="l2.292" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.292"></a>
+<span id="l2.293">         &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.293"></a>
+<span id="l2.294">         &quot;TLS_DHE_DSS_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.294"></a>
+<span id="l2.295">         &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.295"></a>
+<span id="l2.296">         &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.296"></a>
+<span id="l2.297" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.297"></a>
+<span id="l2.298" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.298"></a>
+<span id="l2.299" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.299"></a>
+<span id="l2.300">         &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.300"></a>
+<span id="l2.301">         &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.301"></a>
+<span id="l2.302" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.302"></a>
+<span id="l2.303" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.303"></a>
+<span id="l2.304" class="plusline">+        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.304"></a>
+<span id="l2.305" class="plusline">+        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.305"></a>
+<span id="l2.306">         &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.306"></a>
+<span id="l2.307">         &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.307"></a>
+<span id="l2.308" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.308"></a>
+<span id="l2.309" class="plusline">+        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.309"></a>
+<span id="l2.310" class="plusline">+        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.310"></a>
+<span id="l2.311">         &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.311"></a>
+<span id="l2.312">         &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.312"></a>
+<span id="l2.313" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.313"></a>
+<span id="l2.314" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.314"></a>
+<span id="l2.315" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l2.315"></a>
+<span id="l2.316" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l2.316"></a>
+<span id="l2.317" class="plusline">+        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l2.317"></a>
+<span id="l2.318">         &quot;TLS_EMPTY_RENEGOTIATION_INFO_SCSV&quot;</span><a href="#l2.318"></a>
+<span id="l2.319">     };</span><a href="#l2.319"></a>
+<span id="l2.320"> </span><a href="#l2.320"></a>
+<span id="l2.321" class="atline">@@ -220,7 +302,8 @@</span><a href="#l2.321"></a>
+<span id="l2.322">             throw new Exception(&quot;Illegal argument&quot;);</span><a href="#l2.322"></a>
+<span id="l2.323">         }</span><a href="#l2.323"></a>
+<span id="l2.324"> </span><a href="#l2.324"></a>
+<span id="l2.325" class="minusline">-        SSLSocketFactory factory = (SSLSocketFactory)SSLSocketFactory.getDefault();</span><a href="#l2.325"></a>
+<span id="l2.326" class="plusline">+        SSLSocketFactory factory =</span><a href="#l2.326"></a>
+<span id="l2.327" class="plusline">+                (SSLSocketFactory)SSLSocketFactory.getDefault();</span><a href="#l2.327"></a>
+<span id="l2.328">         SSLSocket socket = (SSLSocket)factory.createSocket();</span><a href="#l2.328"></a>
+<span id="l2.329">         String[] enabled = socket.getEnabledCipherSuites();</span><a href="#l2.329"></a>
+<span id="l2.330"> </span><a href="#l2.330"></a>
+<span id="l2.331" class="atline">@@ -249,5 +332,4 @@</span><a href="#l2.331"></a>
+<span id="l2.332">         long end = System.currentTimeMillis();</span><a href="#l2.332"></a>
+<span id="l2.333">         System.out.println(&quot;Done (&quot; + (end - start) + &quot; ms).&quot;);</span><a href="#l2.333"></a>
+<span id="l2.334">     }</span><a href="#l2.334"></a>
+<span id="l2.335" class="minusline">-</span><a href="#l2.335"></a>
+<span id="l2.336"> }</span><a href="#l2.336"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/test/javax/net/ssl/sanity/ciphersuites/CipherSuitesInOrder.java	Thu Aug 05 10:00:55 2021 +0000</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/test/javax/net/ssl/sanity/ciphersuites/CipherSuitesInOrder.java	Thu Jul 01 07:04:53 2021 +0000</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -41,115 +41,159 @@</span><a href="#l3.3"></a>
+<span id="l3.4">     // Supported ciphersuites</span><a href="#l3.4"></a>
+<span id="l3.5">     private final static List&lt;String&gt; supportedCipherSuites</span><a href="#l3.5"></a>
+<span id="l3.6">             = Arrays.&lt;String&gt;asList(</span><a href="#l3.6"></a>
+<span id="l3.7" class="minusline">-        &quot;TLS_AES_128_GCM_SHA256&quot;,</span><a href="#l3.7"></a>
+<span id="l3.8" class="minusline">-        &quot;TLS_AES_256_GCM_SHA384&quot;,</span><a href="#l3.8"></a>
+<span id="l3.9" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.9"></a>
+<span id="l3.10" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.10"></a>
+<span id="l3.11" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.11"></a>
+<span id="l3.12" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.12"></a>
+<span id="l3.13" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.13"></a>
+<span id="l3.14" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.14"></a>
+<span id="l3.15" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.15"></a>
+<span id="l3.16" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.16"></a>
+<span id="l3.17" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.17"></a>
+<span id="l3.18" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.18"></a>
+<span id="l3.19" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.19"></a>
+<span id="l3.20" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.20"></a>
+<span id="l3.21" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.21"></a>
+<span id="l3.22" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.22"></a>
+<span id="l3.23" class="minusline">-</span><a href="#l3.23"></a>
+<span id="l3.24" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l3.24"></a>
+<span id="l3.25" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l3.25"></a>
+<span id="l3.26" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l3.26"></a>
+<span id="l3.27" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l3.27"></a>
+<span id="l3.28" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l3.28"></a>
+<span id="l3.29" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l3.29"></a>
+<span id="l3.30" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l3.30"></a>
+<span id="l3.31" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.31"></a>
+<span id="l3.32" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.32"></a>
+<span id="l3.33" class="minusline">-        &quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.33"></a>
+<span id="l3.34" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.34"></a>
+<span id="l3.35" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.35"></a>
+<span id="l3.36" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.36"></a>
+<span id="l3.37" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.37"></a>
+<span id="l3.38" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.38"></a>
+<span id="l3.39" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.39"></a>
+<span id="l3.40" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.40"></a>
+<span id="l3.41" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.41"></a>
+<span id="l3.42" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.42"></a>
+<span id="l3.43" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.43"></a>
+<span id="l3.44" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.44"></a>
+<span id="l3.45" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.45"></a>
+<span id="l3.46" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.46"></a>
+<span id="l3.47" class="minusline">-        &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.47"></a>
+<span id="l3.48" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.48"></a>
+<span id="l3.49" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.49"></a>
+<span id="l3.50" class="minusline">-        &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.50"></a>
+<span id="l3.51" class="minusline">-        &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.51"></a>
+<span id="l3.52" class="minusline">-</span><a href="#l3.52"></a>
+<span id="l3.53" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.53"></a>
+<span id="l3.54" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.54"></a>
+<span id="l3.55" class="minusline">-        &quot;SSL_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.55"></a>
+<span id="l3.56" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.56"></a>
+<span id="l3.57" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.57"></a>
+<span id="l3.58" class="minusline">-        &quot;SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.58"></a>
+<span id="l3.59" class="minusline">-        &quot;SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.59"></a>
+<span id="l3.60" class="plusline">+                    // TLS 1.3 cipher suites.</span><a href="#l3.60"></a>
+<span id="l3.61" class="plusline">+                    &quot;TLS_AES_256_GCM_SHA384&quot;,</span><a href="#l3.61"></a>
+<span id="l3.62" class="plusline">+                    &quot;TLS_AES_128_GCM_SHA256&quot;,</span><a href="#l3.62"></a>
+<span id="l3.63" class="plusline">+                    // Suite B compliant cipher suites, see RFC 6460.</span><a href="#l3.63"></a>
+<span id="l3.64" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.64"></a>
+<span id="l3.65" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.65"></a>
+<span id="l3.66" class="plusline">+                    //</span><a href="#l3.66"></a>
+<span id="l3.67" class="plusline">+                    // Forward secrecy cipher suites.</span><a href="#l3.67"></a>
+<span id="l3.68" class="plusline">+                    //</span><a href="#l3.68"></a>
+<span id="l3.69" class="plusline">+                    // AES_256(GCM) - ECDHE</span><a href="#l3.69"></a>
+<span id="l3.70" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.70"></a>
+<span id="l3.71" class="plusline">+                    // AES_128(GCM) - ECDHE</span><a href="#l3.71"></a>
+<span id="l3.72" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.72"></a>
+<span id="l3.73" class="plusline">+                    // AES_256(GCM) - DHE</span><a href="#l3.73"></a>
+<span id="l3.74" class="plusline">+                    &quot;TLS_DHE_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.74"></a>
+<span id="l3.75" class="plusline">+                    &quot;TLS_DHE_DSS_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.75"></a>
+<span id="l3.76" class="plusline">+                    // AES_128(GCM) - DHE</span><a href="#l3.76"></a>
+<span id="l3.77" class="plusline">+                    &quot;TLS_DHE_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.77"></a>
+<span id="l3.78" class="plusline">+                    &quot;TLS_DHE_DSS_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.78"></a>
+<span id="l3.79" class="plusline">+                    // AES_256(CBC) - ECDHE</span><a href="#l3.79"></a>
+<span id="l3.80" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l3.80"></a>
+<span id="l3.81" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l3.81"></a>
+<span id="l3.82" class="plusline">+                    // AES_128(CBC) - ECDHE</span><a href="#l3.82"></a>
+<span id="l3.83" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.83"></a>
+<span id="l3.84" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.84"></a>
+<span id="l3.85" class="plusline">+                    // AES_256(CBC) - DHE</span><a href="#l3.85"></a>
+<span id="l3.86" class="plusline">+                    &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l3.86"></a>
+<span id="l3.87" class="plusline">+                    &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l3.87"></a>
+<span id="l3.88" class="plusline">+                    // AES_128(CBC) - DHE</span><a href="#l3.88"></a>
+<span id="l3.89" class="plusline">+                    &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.89"></a>
+<span id="l3.90" class="plusline">+                    &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.90"></a>
+<span id="l3.91" class="plusline">+                    //</span><a href="#l3.91"></a>
+<span id="l3.92" class="plusline">+                    // Not forward secret cipher suites.</span><a href="#l3.92"></a>
+<span id="l3.93" class="plusline">+                    //</span><a href="#l3.93"></a>
+<span id="l3.94" class="plusline">+                    // AES_256(GCM)</span><a href="#l3.94"></a>
+<span id="l3.95" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.95"></a>
+<span id="l3.96" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.96"></a>
+<span id="l3.97" class="plusline">+                    // AES_128(GCM)</span><a href="#l3.97"></a>
+<span id="l3.98" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.98"></a>
+<span id="l3.99" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.99"></a>
+<span id="l3.100" class="plusline">+                    // AES_256(CBC)</span><a href="#l3.100"></a>
+<span id="l3.101" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l3.101"></a>
+<span id="l3.102" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384&quot;,</span><a href="#l3.102"></a>
+<span id="l3.103" class="plusline">+                    // AES_128(CBC)</span><a href="#l3.103"></a>
+<span id="l3.104" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.104"></a>
+<span id="l3.105" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.105"></a>
+<span id="l3.106" class="plusline">+                    //</span><a href="#l3.106"></a>
+<span id="l3.107" class="plusline">+                    // Legacy, used for compatibility</span><a href="#l3.107"></a>
+<span id="l3.108" class="plusline">+                    //</span><a href="#l3.108"></a>
+<span id="l3.109" class="plusline">+                    // AES_256(CBC) - ECDHE - Using SHA</span><a href="#l3.109"></a>
+<span id="l3.110" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.110"></a>
+<span id="l3.111" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.111"></a>
+<span id="l3.112" class="plusline">+                    // AES_128(CBC) - ECDHE - using SHA</span><a href="#l3.112"></a>
+<span id="l3.113" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.113"></a>
+<span id="l3.114" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.114"></a>
+<span id="l3.115" class="plusline">+                    // AES_256(CBC) - DHE - Using SHA</span><a href="#l3.115"></a>
+<span id="l3.116" class="plusline">+                    &quot;TLS_DHE_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.116"></a>
+<span id="l3.117" class="plusline">+                    &quot;TLS_DHE_DSS_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.117"></a>
+<span id="l3.118" class="plusline">+                    // AES_128(CBC) - DHE - using SHA</span><a href="#l3.118"></a>
+<span id="l3.119" class="plusline">+                    &quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.119"></a>
+<span id="l3.120" class="plusline">+                    &quot;TLS_DHE_DSS_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.120"></a>
+<span id="l3.121" class="plusline">+                    // AES_256(CBC) - using SHA, not forward secrecy</span><a href="#l3.121"></a>
+<span id="l3.122" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.122"></a>
+<span id="l3.123" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.123"></a>
+<span id="l3.124" class="plusline">+                    // AES_128(CBC) - using SHA, not forward secrecy</span><a href="#l3.124"></a>
+<span id="l3.125" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.125"></a>
+<span id="l3.126" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.126"></a>
+<span id="l3.127" class="plusline">+                    //</span><a href="#l3.127"></a>
+<span id="l3.128" class="plusline">+                    // Deprecated, used for compatibility</span><a href="#l3.128"></a>
+<span id="l3.129" class="plusline">+                    //</span><a href="#l3.129"></a>
+<span id="l3.130" class="plusline">+                    // RSA, AES_256(GCM)</span><a href="#l3.130"></a>
+<span id="l3.131" class="plusline">+                    &quot;TLS_RSA_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.131"></a>
+<span id="l3.132" class="plusline">+                    // RSA, AES_128(GCM)</span><a href="#l3.132"></a>
+<span id="l3.133" class="plusline">+                    &quot;TLS_RSA_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.133"></a>
+<span id="l3.134" class="plusline">+                    // RSA, AES_256(CBC)</span><a href="#l3.134"></a>
+<span id="l3.135" class="plusline">+                    &quot;TLS_RSA_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l3.135"></a>
+<span id="l3.136" class="plusline">+                    // RSA, AES_128(CBC)</span><a href="#l3.136"></a>
+<span id="l3.137" class="plusline">+                    &quot;TLS_RSA_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.137"></a>
+<span id="l3.138" class="plusline">+                    // RSA, AES_256(CBC) - using SHA, not forward secrecy</span><a href="#l3.138"></a>
+<span id="l3.139" class="plusline">+                    &quot;TLS_RSA_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.139"></a>
+<span id="l3.140" class="plusline">+                    // RSA, AES_128(CBC) - using SHA, not forward secrecy</span><a href="#l3.140"></a>
+<span id="l3.141" class="plusline">+                    &quot;TLS_RSA_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.141"></a>
+<span id="l3.142" class="plusline">+                    // 3DES_EDE, forward secrecy.</span><a href="#l3.142"></a>
+<span id="l3.143" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.143"></a>
+<span id="l3.144" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.144"></a>
+<span id="l3.145" class="plusline">+                    &quot;SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.145"></a>
+<span id="l3.146" class="plusline">+                    &quot;SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.146"></a>
+<span id="l3.147" class="plusline">+                    // 3DES_EDE, not forward secrecy.</span><a href="#l3.147"></a>
+<span id="l3.148" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.148"></a>
+<span id="l3.149" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.149"></a>
+<span id="l3.150" class="plusline">+                    &quot;SSL_RSA_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.150"></a>
+<span id="l3.151" class="plusline">+                    // Renegotiation protection request Signalling</span><a href="#l3.151"></a>
+<span id="l3.152" class="plusline">+                    // Cipher Suite Value (SCSV).</span><a href="#l3.152"></a>
+<span id="l3.153" class="plusline">+                    &quot;TLS_EMPTY_RENEGOTIATION_INFO_SCSV&quot;,</span><a href="#l3.153"></a>
+<span id="l3.154" class="plusline">+                    // Definition of the Cipher Suites that are supported but not</span><a href="#l3.154"></a>
+<span id="l3.155" class="plusline">+                    // enabled by default.</span><a href="#l3.155"></a>
+<span id="l3.156" class="plusline">+                    &quot;TLS_DH_anon_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.156"></a>
+<span id="l3.157" class="plusline">+                    &quot;TLS_DH_anon_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.157"></a>
+<span id="l3.158" class="plusline">+                    &quot;TLS_DH_anon_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l3.158"></a>
+<span id="l3.159" class="plusline">+                    &quot;TLS_ECDH_anon_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.159"></a>
+<span id="l3.160" class="plusline">+                    &quot;TLS_DH_anon_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.160"></a>
+<span id="l3.161" class="plusline">+                    &quot;TLS_DH_anon_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.161"></a>
+<span id="l3.162" class="plusline">+                    &quot;TLS_ECDH_anon_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.162"></a>
+<span id="l3.163" class="plusline">+                    &quot;TLS_DH_anon_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.163"></a>
+<span id="l3.164" class="plusline">+                    &quot;TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.164"></a>
+<span id="l3.165" class="plusline">+                    &quot;SSL_DH_anon_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.165"></a>
+<span id="l3.166" class="plusline">+                    // RC4</span><a href="#l3.166"></a>
+<span id="l3.167" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.167"></a>
+<span id="l3.168" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.168"></a>
+<span id="l3.169" class="plusline">+                    &quot;SSL_RSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.169"></a>
+<span id="l3.170" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.170"></a>
+<span id="l3.171" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.171"></a>
+<span id="l3.172" class="plusline">+                    &quot;SSL_RSA_WITH_RC4_128_MD5&quot;,</span><a href="#l3.172"></a>
+<span id="l3.173" class="plusline">+                    &quot;TLS_ECDH_anon_WITH_RC4_128_SHA&quot;,</span><a href="#l3.173"></a>
+<span id="l3.174" class="plusline">+                    &quot;SSL_DH_anon_WITH_RC4_128_MD5&quot;,</span><a href="#l3.174"></a>
+<span id="l3.175" class="plusline">+                    // Weak cipher suites obsoleted in TLS 1.2 [RFC 5246]</span><a href="#l3.175"></a>
+<span id="l3.176" class="plusline">+                    &quot;SSL_RSA_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.176"></a>
+<span id="l3.177" class="plusline">+                    &quot;SSL_DHE_RSA_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.177"></a>
+<span id="l3.178" class="plusline">+                    &quot;SSL_DHE_DSS_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.178"></a>
+<span id="l3.179" class="plusline">+                    &quot;SSL_DH_anon_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.179"></a>
+<span id="l3.180" class="plusline">+                    // Weak cipher suites obsoleted in TLS 1.1  [RFC 4346]</span><a href="#l3.180"></a>
+<span id="l3.181" class="plusline">+                    &quot;SSL_RSA_EXPORT_WITH_DES40_CBC_SHA&quot;,</span><a href="#l3.181"></a>
+<span id="l3.182" class="plusline">+                    &quot;SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA&quot;,</span><a href="#l3.182"></a>
+<span id="l3.183" class="plusline">+                    &quot;SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA&quot;,</span><a href="#l3.183"></a>
+<span id="l3.184" class="plusline">+                    &quot;SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA&quot;,</span><a href="#l3.184"></a>
+<span id="l3.185" class="plusline">+                    &quot;SSL_RSA_EXPORT_WITH_RC4_40_MD5&quot;,</span><a href="#l3.185"></a>
+<span id="l3.186" class="plusline">+                    &quot;SSL_DH_anon_EXPORT_WITH_RC4_40_MD5&quot;,</span><a href="#l3.186"></a>
+<span id="l3.187" class="plusline">+                    // No traffic encryption cipher suites</span><a href="#l3.187"></a>
+<span id="l3.188" class="plusline">+                    &quot;TLS_RSA_WITH_NULL_SHA256&quot;,</span><a href="#l3.188"></a>
+<span id="l3.189" class="plusline">+                    &quot;TLS_ECDHE_ECDSA_WITH_NULL_SHA&quot;,</span><a href="#l3.189"></a>
+<span id="l3.190" class="plusline">+                    &quot;TLS_ECDHE_RSA_WITH_NULL_SHA&quot;,</span><a href="#l3.190"></a>
+<span id="l3.191" class="plusline">+                    &quot;SSL_RSA_WITH_NULL_SHA&quot;,</span><a href="#l3.191"></a>
+<span id="l3.192" class="plusline">+                    &quot;TLS_ECDH_ECDSA_WITH_NULL_SHA&quot;,</span><a href="#l3.192"></a>
+<span id="l3.193" class="plusline">+                    &quot;TLS_ECDH_RSA_WITH_NULL_SHA&quot;,</span><a href="#l3.193"></a>
+<span id="l3.194" class="plusline">+                    &quot;TLS_ECDH_anon_WITH_NULL_SHA&quot;,</span><a href="#l3.194"></a>
+<span id="l3.195" class="plusline">+                    &quot;SSL_RSA_WITH_NULL_MD5&quot;,</span><a href="#l3.195"></a>
+<span id="l3.196"> </span><a href="#l3.196"></a>
+<span id="l3.197" class="minusline">-        &quot;TLS_EMPTY_RENEGOTIATION_INFO_SCSV&quot;,</span><a href="#l3.197"></a>
+<span id="l3.198" class="minusline">-</span><a href="#l3.198"></a>
+<span id="l3.199" class="minusline">-        &quot;TLS_DH_anon_WITH_AES_256_GCM_SHA384&quot;,</span><a href="#l3.199"></a>
+<span id="l3.200" class="minusline">-        &quot;TLS_DH_anon_WITH_AES_128_GCM_SHA256&quot;,</span><a href="#l3.200"></a>
+<span id="l3.201" class="minusline">-</span><a href="#l3.201"></a>
+<span id="l3.202" class="minusline">-        &quot;TLS_DH_anon_WITH_AES_256_CBC_SHA256&quot;,</span><a href="#l3.202"></a>
+<span id="l3.203" class="minusline">-        &quot;TLS_ECDH_anon_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.203"></a>
+<span id="l3.204" class="minusline">-        &quot;TLS_DH_anon_WITH_AES_256_CBC_SHA&quot;,</span><a href="#l3.204"></a>
+<span id="l3.205" class="minusline">-        &quot;TLS_DH_anon_WITH_AES_128_CBC_SHA256&quot;,</span><a href="#l3.205"></a>
+<span id="l3.206" class="minusline">-        &quot;TLS_ECDH_anon_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.206"></a>
+<span id="l3.207" class="minusline">-        &quot;TLS_DH_anon_WITH_AES_128_CBC_SHA&quot;,</span><a href="#l3.207"></a>
+<span id="l3.208" class="minusline">-        &quot;TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.208"></a>
+<span id="l3.209" class="minusline">-        &quot;SSL_DH_anon_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.209"></a>
+<span id="l3.210" class="minusline">-</span><a href="#l3.210"></a>
+<span id="l3.211" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.211"></a>
+<span id="l3.212" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.212"></a>
+<span id="l3.213" class="minusline">-        &quot;SSL_RSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.213"></a>
+<span id="l3.214" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.214"></a>
+<span id="l3.215" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_RC4_128_SHA&quot;,</span><a href="#l3.215"></a>
+<span id="l3.216" class="minusline">-        &quot;SSL_RSA_WITH_RC4_128_MD5&quot;,</span><a href="#l3.216"></a>
+<span id="l3.217" class="minusline">-        &quot;TLS_ECDH_anon_WITH_RC4_128_SHA&quot;,</span><a href="#l3.217"></a>
+<span id="l3.218" class="minusline">-        &quot;SSL_DH_anon_WITH_RC4_128_MD5&quot;,</span><a href="#l3.218"></a>
+<span id="l3.219" class="minusline">-</span><a href="#l3.219"></a>
+<span id="l3.220" class="minusline">-        &quot;SSL_RSA_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.220"></a>
+<span id="l3.221" class="minusline">-        &quot;SSL_DHE_RSA_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.221"></a>
+<span id="l3.222" class="minusline">-        &quot;SSL_DHE_DSS_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.222"></a>
+<span id="l3.223" class="minusline">-        &quot;SSL_DH_anon_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.223"></a>
+<span id="l3.224" class="minusline">-        &quot;SSL_RSA_EXPORT_WITH_DES40_CBC_SHA&quot;,</span><a href="#l3.224"></a>
+<span id="l3.225" class="minusline">-        &quot;SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA&quot;,</span><a href="#l3.225"></a>
+<span id="l3.226" class="minusline">-        &quot;SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA&quot;,</span><a href="#l3.226"></a>
+<span id="l3.227" class="minusline">-        &quot;SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA&quot;,</span><a href="#l3.227"></a>
+<span id="l3.228" class="minusline">-</span><a href="#l3.228"></a>
+<span id="l3.229" class="minusline">-        &quot;SSL_RSA_EXPORT_WITH_RC4_40_MD5&quot;,</span><a href="#l3.229"></a>
+<span id="l3.230" class="minusline">-        &quot;SSL_DH_anon_EXPORT_WITH_RC4_40_MD5&quot;,</span><a href="#l3.230"></a>
+<span id="l3.231" class="minusline">-</span><a href="#l3.231"></a>
+<span id="l3.232" class="minusline">-        &quot;TLS_RSA_WITH_NULL_SHA256&quot;,</span><a href="#l3.232"></a>
+<span id="l3.233" class="minusline">-        &quot;TLS_ECDHE_ECDSA_WITH_NULL_SHA&quot;,</span><a href="#l3.233"></a>
+<span id="l3.234" class="minusline">-        &quot;TLS_ECDHE_RSA_WITH_NULL_SHA&quot;,</span><a href="#l3.234"></a>
+<span id="l3.235" class="minusline">-        &quot;SSL_RSA_WITH_NULL_SHA&quot;,</span><a href="#l3.235"></a>
+<span id="l3.236" class="minusline">-        &quot;TLS_ECDH_ECDSA_WITH_NULL_SHA&quot;,</span><a href="#l3.236"></a>
+<span id="l3.237" class="minusline">-        &quot;TLS_ECDH_RSA_WITH_NULL_SHA&quot;,</span><a href="#l3.237"></a>
+<span id="l3.238" class="minusline">-        &quot;TLS_ECDH_anon_WITH_NULL_SHA&quot;,</span><a href="#l3.238"></a>
+<span id="l3.239" class="minusline">-        &quot;SSL_RSA_WITH_NULL_MD5&quot;,</span><a href="#l3.239"></a>
+<span id="l3.240" class="minusline">-</span><a href="#l3.240"></a>
+<span id="l3.241" class="minusline">-        &quot;TLS_KRB5_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.241"></a>
+<span id="l3.242" class="minusline">-        &quot;TLS_KRB5_WITH_3DES_EDE_CBC_MD5&quot;,</span><a href="#l3.242"></a>
+<span id="l3.243" class="minusline">-        &quot;TLS_KRB5_WITH_RC4_128_SHA&quot;,</span><a href="#l3.243"></a>
+<span id="l3.244" class="minusline">-        &quot;TLS_KRB5_WITH_RC4_128_MD5&quot;,</span><a href="#l3.244"></a>
+<span id="l3.245" class="minusline">-        &quot;TLS_KRB5_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.245"></a>
+<span id="l3.246" class="minusline">-        &quot;TLS_KRB5_WITH_DES_CBC_MD5&quot;,</span><a href="#l3.246"></a>
+<span id="l3.247" class="minusline">-        &quot;TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA&quot;,</span><a href="#l3.247"></a>
+<span id="l3.248" class="minusline">-        &quot;TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5&quot;,</span><a href="#l3.248"></a>
+<span id="l3.249" class="minusline">-        &quot;TLS_KRB5_EXPORT_WITH_RC4_40_SHA&quot;,</span><a href="#l3.249"></a>
+<span id="l3.250" class="minusline">-        &quot;TLS_KRB5_EXPORT_WITH_RC4_40_MD5&quot;</span><a href="#l3.250"></a>
+<span id="l3.251" class="minusline">-    );</span><a href="#l3.251"></a>
+<span id="l3.252" class="plusline">+                    &quot;TLS_KRB5_WITH_3DES_EDE_CBC_SHA&quot;,</span><a href="#l3.252"></a>
+<span id="l3.253" class="plusline">+                    &quot;TLS_KRB5_WITH_3DES_EDE_CBC_MD5&quot;,</span><a href="#l3.253"></a>
+<span id="l3.254" class="plusline">+                    &quot;TLS_KRB5_WITH_RC4_128_SHA&quot;,</span><a href="#l3.254"></a>
+<span id="l3.255" class="plusline">+                    &quot;TLS_KRB5_WITH_RC4_128_MD5&quot;,</span><a href="#l3.255"></a>
+<span id="l3.256" class="plusline">+                    &quot;TLS_KRB5_WITH_DES_CBC_SHA&quot;,</span><a href="#l3.256"></a>
+<span id="l3.257" class="plusline">+                    &quot;TLS_KRB5_WITH_DES_CBC_MD5&quot;,</span><a href="#l3.257"></a>
+<span id="l3.258" class="plusline">+                    &quot;TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA&quot;,</span><a href="#l3.258"></a>
+<span id="l3.259" class="plusline">+                    &quot;TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5&quot;,</span><a href="#l3.259"></a>
+<span id="l3.260" class="plusline">+                    &quot;TLS_KRB5_EXPORT_WITH_RC4_40_SHA&quot;,</span><a href="#l3.260"></a>
+<span id="l3.261" class="plusline">+                    &quot;TLS_KRB5_EXPORT_WITH_RC4_40_MD5&quot;,</span><a href="#l3.261"></a>
+<span id="l3.262" class="plusline">+                    // Definition of the cipher suites that are not supported but the names</span><a href="#l3.262"></a>
+<span id="l3.263" class="plusline">+                    // are known.</span><a href="#l3.263"></a>
+<span id="l3.264" class="plusline">+                    &quot;TLS_CHACHA20_POLY1305_SHA256&quot;,</span><a href="#l3.264"></a>
+<span id="l3.265" class="plusline">+                    &quot;TLS_AES_128_CCM_SHA256&quot;,</span><a href="#l3.265"></a>
+<span id="l3.266" class="plusline">+                    &quot;TLS_AES_128_CCM_8_SHA256&quot;</span><a href="#l3.266"></a>
+<span id="l3.267" class="plusline">+            );</span><a href="#l3.267"></a>
+<span id="l3.268"> </span><a href="#l3.268"></a>
+<span id="l3.269">     private final static String[] protocols = {</span><a href="#l3.269"></a>
+<span id="l3.270">         &quot;&quot;, &quot;SSL&quot;, &quot;TLS&quot;, &quot;SSLv3&quot;, &quot;TLSv1&quot;, &quot;TLSv1.1&quot;, &quot;TLSv1.2&quot;, &quot;TLSv1.3&quot;</span><a href="#l3.270"></a>
+<span id="l3.271" class="atline">@@ -159,7 +203,7 @@</span><a href="#l3.271"></a>
+<span id="l3.272">     public static void main(String[] args) throws Exception {</span><a href="#l3.272"></a>
+<span id="l3.273">         // show all of the supported cipher suites</span><a href="#l3.273"></a>
+<span id="l3.274">         showSuites(supportedCipherSuites.toArray(new String[0]),</span><a href="#l3.274"></a>
+<span id="l3.275" class="minusline">-                 &quot;All supported cipher suites&quot;);</span><a href="#l3.275"></a>
+<span id="l3.276" class="plusline">+                &quot;All supported cipher suites&quot;);</span><a href="#l3.276"></a>
+<span id="l3.277"> </span><a href="#l3.277"></a>
+<span id="l3.278">         for (String protocol : protocols) {</span><a href="#l3.278"></a>
+<span id="l3.279">             System.out.println(&quot;//&quot;);</span><a href="#l3.279"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

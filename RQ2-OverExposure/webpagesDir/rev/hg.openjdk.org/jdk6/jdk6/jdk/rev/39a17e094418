@@ -1,0 +1,1504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: 39a17e094418</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/39a17e094418">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/39a17e094418">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/39a17e094418">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/39a17e094418">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/39a17e094418.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/39a17e094418.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/39a17e094418.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 219:39a17e094418   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6664512: Component and [Default]KeyboardFocusManager pass security sensitive objects to loggers
+Summary: toString is called on security sensitive objects
+Reviewed-by: art, hawtin</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#100;&#99;&#104;&#101;&#114;&#101;&#112;&#97;&#110;&#111;&#118;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 20 Aug 2009 18:20:07 +0400</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/39a8e48517ce">39a8e48517ce</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/9b95de10b74e">9b95de10b74e</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/39a17e094418/src/share/classes/java/awt/Component.java">src/share/classes/java/awt/Component.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/share/classes/java/awt/DefaultKeyboardFocusManager.java">src/share/classes/java/awt/DefaultKeyboardFocusManager.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/share/classes/java/awt/KeyboardFocusManager.java">src/share/classes/java/awt/KeyboardFocusManager.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/share/classes/sun/awt/DebugSettings.java">src/share/classes/sun/awt/DebugSettings.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XBaseWindow.java">src/solaris/classes/sun/awt/X11/XBaseWindow.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XCheckboxMenuItemPeer.java">src/solaris/classes/sun/awt/X11/XCheckboxMenuItemPeer.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XComponentPeer.java">src/solaris/classes/sun/awt/X11/XComponentPeer.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XContentWindow.java">src/solaris/classes/sun/awt/X11/XContentWindow.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XDecoratedPeer.java">src/solaris/classes/sun/awt/X11/XDecoratedPeer.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XDropTargetProtocol.java">src/solaris/classes/sun/awt/X11/XDropTargetProtocol.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XFocusProxyWindow.java">src/solaris/classes/sun/awt/X11/XFocusProxyWindow.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XFramePeer.java">src/solaris/classes/sun/awt/X11/XFramePeer.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XIconWindow.java">src/solaris/classes/sun/awt/X11/XIconWindow.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XInputMethod.java">src/solaris/classes/sun/awt/X11/XInputMethod.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XMenuItemPeer.java">src/solaris/classes/sun/awt/X11/XMenuItemPeer.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XNETProtocol.java">src/solaris/classes/sun/awt/X11/XNETProtocol.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XProtocol.java">src/solaris/classes/sun/awt/X11/XProtocol.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XQueryTree.java">src/solaris/classes/sun/awt/X11/XQueryTree.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XToolkit.java">src/solaris/classes/sun/awt/X11/XToolkit.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XTrayIconPeer.java">src/solaris/classes/sun/awt/X11/XTrayIconPeer.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XWM.java">src/solaris/classes/sun/awt/X11/XWM.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XWindow.java">src/solaris/classes/sun/awt/X11/XWindow.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11/XWindowPeer.java">src/solaris/classes/sun/awt/X11/XWindowPeer.java</a> <a href="/jdk6/jdk6/jdk/file/39a17e094418/src/solaris/classes/sun/awt/X11InputMethod.java">src/solaris/classes/sun/awt/X11InputMethod.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     24 files changed, 319 insertions(+), 143 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/awt/Component.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.69491525424%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.69491525424%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/java/awt/DefaultKeyboardFocusManager.java</a></td>
+    <td class="diffstat-total" align="right">58</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:67.7966101695%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:30.5084745763%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/java/awt/KeyboardFocusManager.java</a></td>
+    <td class="diffstat-total" align="right">22</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:18.6440677966%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:18.6440677966%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/share/classes/sun/awt/DebugSettings.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:1.69491525424%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.69491525424%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">src/solaris/classes/sun/awt/X11/XBaseWindow.java</a></td>
+    <td class="diffstat-total" align="right">17</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:20.3389830508%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:8.47457627119%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l6.1">src/solaris/classes/sun/awt/X11/XCheckboxMenuItemPeer.java</a></td>
+    <td class="diffstat-total" align="right">4</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:6.77966101695%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l7.1">src/solaris/classes/sun/awt/X11/XComponentPeer.java</a></td>
+    <td class="diffstat-total" align="right">22</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:28.813559322%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:8.47457627119%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l8.1">src/solaris/classes/sun/awt/X11/XContentWindow.java</a></td>
+    <td class="diffstat-total" align="right">6</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.77966101695%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.38983050847%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l9.1">src/solaris/classes/sun/awt/X11/XDecoratedPeer.java</a></td>
+    <td class="diffstat-total" align="right">58</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:74.5762711864%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:23.7288135593%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l10.1">src/solaris/classes/sun/awt/X11/XDropTargetProtocol.java</a></td>
+    <td class="diffstat-total" align="right">5</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:5.08474576271%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.38983050847%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l11.1">src/solaris/classes/sun/awt/X11/XFocusProxyWindow.java</a></td>
+    <td class="diffstat-total" align="right">1</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.69491525424%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l12.1">src/solaris/classes/sun/awt/X11/XFramePeer.java</a></td>
+    <td class="diffstat-total" align="right">5</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.77966101695%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.69491525424%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l13.1">src/solaris/classes/sun/awt/X11/XIconWindow.java</a></td>
+    <td class="diffstat-total" align="right">13</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:16.9491525424%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:5.08474576271%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l14.1">src/solaris/classes/sun/awt/X11/XInputMethod.java</a></td>
+    <td class="diffstat-total" align="right">6</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.77966101695%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.38983050847%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l15.1">src/solaris/classes/sun/awt/X11/XMenuItemPeer.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.38983050847%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l16.1">src/solaris/classes/sun/awt/X11/XNETProtocol.java</a></td>
+    <td class="diffstat-total" align="right">26</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:35.593220339%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:8.47457627119%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l17.1">src/solaris/classes/sun/awt/X11/XProtocol.java</a></td>
+    <td class="diffstat-total" align="right">5</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:6.77966101695%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.69491525424%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l18.1">src/solaris/classes/sun/awt/X11/XQueryTree.java</a></td>
+    <td class="diffstat-total" align="right">1</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.69491525424%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l19.1">src/solaris/classes/sun/awt/X11/XToolkit.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:15.2542372881%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:8.47457627119%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l20.1">src/solaris/classes/sun/awt/X11/XTrayIconPeer.java</a></td>
+    <td class="diffstat-total" align="right">53</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:49.1525423729%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:40.6779661017%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l21.1">src/solaris/classes/sun/awt/X11/XWM.java</a></td>
+    <td class="diffstat-total" align="right">48</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:61.0169491525%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:20.3389830508%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l22.1">src/solaris/classes/sun/awt/X11/XWindow.java</a></td>
+    <td class="diffstat-total" align="right">26</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:32.2033898305%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:11.8644067797%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l23.1">src/solaris/classes/sun/awt/X11/XWindowPeer.java</a></td>
+    <td class="diffstat-total" align="right">59</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:76.2711864407%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:23.7288135593%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l24.1">src/solaris/classes/sun/awt/X11InputMethod.java</a></td>
+    <td class="diffstat-total" align="right">7</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:8.47457627119%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.38983050847%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/awt/Component.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/awt/Component.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -4307,7 +4307,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">         }</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6">         if (eventLog.isLoggable(Level.FINEST)) {</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-            eventLog.log(Level.FINEST, &quot;{0}&quot;, e);</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            eventLog.log(Level.FINEST, &quot;{0}&quot;, String.valueOf(e));</span><a href="#l1.8"></a>
+<span id="l1.9">         }</span><a href="#l1.9"></a>
+<span id="l1.10"> </span><a href="#l1.10"></a>
+<span id="l1.11">         /*</span><a href="#l1.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/java/awt/DefaultKeyboardFocusManager.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/java/awt/DefaultKeyboardFocusManager.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -379,7 +379,7 @@</span><a href="#l2.3"></a>
+<span id="l2.4">                     // should receive focus first</span><a href="#l2.4"></a>
+<span id="l2.5">                     if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l2.5"></a>
+<span id="l2.6">                         focusLog.log(Level.FINER, &quot;tempLost {0}, toFocus {1}&quot;,</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-                                     new Object[]{tempLost, toFocus});</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+                                     new Object[]{String.valueOf(tempLost), String.valueOf(toFocus)});</span><a href="#l2.8"></a>
+<span id="l2.9">                     }</span><a href="#l2.9"></a>
+<span id="l2.10">                     if (tempLost != null) {</span><a href="#l2.10"></a>
+<span id="l2.11">                         tempLost.requestFocusInWindow(CausedFocusEvent.Cause.ACTIVATION);</span><a href="#l2.11"></a>
+<span id="l2.12" class="atline">@@ -447,7 +447,8 @@</span><a href="#l2.12"></a>
+<span id="l2.13">                 Component newFocusOwner = fe.getComponent();</span><a href="#l2.13"></a>
+<span id="l2.14">                 if (oldFocusOwner == newFocusOwner) {</span><a href="#l2.14"></a>
+<span id="l2.15">                     if (focusLog.isLoggable(Level.FINE)) {</span><a href="#l2.15"></a>
+<span id="l2.16" class="minusline">-                        focusLog.log(Level.FINE, &quot;Skipping {0} because focus owner is the same&quot;, new Object[] {e});</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+                        focusLog.log(Level.FINE, &quot;Skipping {0} because focus owner is the same&quot;,</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+                                                 new Object[] {String.valueOf(e)});</span><a href="#l2.18"></a>
+<span id="l2.19">                     }</span><a href="#l2.19"></a>
+<span id="l2.20">                     // We can't just drop the event - there could be</span><a href="#l2.20"></a>
+<span id="l2.21">                     // type-ahead markers associated with it.</span><a href="#l2.21"></a>
+<span id="l2.22" class="atline">@@ -554,16 +555,20 @@</span><a href="#l2.22"></a>
+<span id="l2.23">                 FocusEvent fe = (FocusEvent)e;</span><a href="#l2.23"></a>
+<span id="l2.24">                 Component currentFocusOwner = getGlobalFocusOwner();</span><a href="#l2.24"></a>
+<span id="l2.25">                 if (currentFocusOwner == null) {</span><a href="#l2.25"></a>
+<span id="l2.26" class="minusline">-                    if (focusLog.isLoggable(Level.FINE)) focusLog.log(Level.FINE, &quot;Skipping {0} because focus owner is null&quot;,</span><a href="#l2.26"></a>
+<span id="l2.27" class="minusline">-                                                                        new Object[] {e});</span><a href="#l2.27"></a>
+<span id="l2.28" class="plusline">+                    if (focusLog.isLoggable(Level.FINE)) {</span><a href="#l2.28"></a>
+<span id="l2.29" class="plusline">+                        focusLog.log(Level.FINE, &quot;Skipping {0} because focus owner is null&quot;,</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+                                                 new Object[] {String.valueOf(e)});</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+                    }</span><a href="#l2.31"></a>
+<span id="l2.32">                     break;</span><a href="#l2.32"></a>
+<span id="l2.33">                 }</span><a href="#l2.33"></a>
+<span id="l2.34">                 // Ignore cases where a Component loses focus to itself.</span><a href="#l2.34"></a>
+<span id="l2.35">                 // If we make a mistake because of retargeting, then the</span><a href="#l2.35"></a>
+<span id="l2.36">                 // FOCUS_GAINED handler will correct it.</span><a href="#l2.36"></a>
+<span id="l2.37">                 if (currentFocusOwner == fe.getOppositeComponent()) {</span><a href="#l2.37"></a>
+<span id="l2.38" class="minusline">-                    if (focusLog.isLoggable(Level.FINE)) focusLog.log(Level.FINE, &quot;Skipping {0} because current focus owner is equal to opposite&quot;,</span><a href="#l2.38"></a>
+<span id="l2.39" class="minusline">-                                                                      new Object[] {e});</span><a href="#l2.39"></a>
+<span id="l2.40" class="plusline">+                    if (focusLog.isLoggable(Level.FINE)) {</span><a href="#l2.40"></a>
+<span id="l2.41" class="plusline">+                        focusLog.log(Level.FINE, &quot;Skipping {0} because current focus owner is equal to opposite&quot;,</span><a href="#l2.41"></a>
+<span id="l2.42" class="plusline">+                                                 new Object[] {String.valueOf(e)});</span><a href="#l2.42"></a>
+<span id="l2.43" class="plusline">+                    }</span><a href="#l2.43"></a>
+<span id="l2.44">                     break;</span><a href="#l2.44"></a>
+<span id="l2.45">                 }</span><a href="#l2.45"></a>
+<span id="l2.46"> </span><a href="#l2.46"></a>
+<span id="l2.47" class="atline">@@ -631,9 +636,11 @@</span><a href="#l2.47"></a>
+<span id="l2.48">                 Window losingFocusWindow = we.getWindow();</span><a href="#l2.48"></a>
+<span id="l2.49">                 Window activeWindow = getGlobalActiveWindow();</span><a href="#l2.49"></a>
+<span id="l2.50">                 Window oppositeWindow = we.getOppositeWindow();</span><a href="#l2.50"></a>
+<span id="l2.51" class="minusline">-                if (focusLog.isLoggable(Level.FINE)) focusLog.log(Level.FINE, &quot;Active {0}, Current focused {1}, losing focus {2} opposite {3}&quot;,</span><a href="#l2.51"></a>
+<span id="l2.52" class="minusline">-                                                                  new Object[] {activeWindow, currentFocusedWindow,</span><a href="#l2.52"></a>
+<span id="l2.53" class="minusline">-                                                                                losingFocusWindow, oppositeWindow});</span><a href="#l2.53"></a>
+<span id="l2.54" class="plusline">+                if (focusLog.isLoggable(Level.FINE)) {</span><a href="#l2.54"></a>
+<span id="l2.55" class="plusline">+                    focusLog.log(Level.FINE, &quot;Active {0}, Current focused {1}, losing focus {2} opposite {3}&quot;,</span><a href="#l2.55"></a>
+<span id="l2.56" class="plusline">+                                             new Object[] {String.valueOf(activeWindow), String.valueOf(currentFocusedWindow),</span><a href="#l2.56"></a>
+<span id="l2.57" class="plusline">+                                                           String.valueOf(losingFocusWindow), String.valueOf(oppositeWindow)});</span><a href="#l2.57"></a>
+<span id="l2.58" class="plusline">+                }</span><a href="#l2.58"></a>
+<span id="l2.59">                 if (currentFocusedWindow == null) {</span><a href="#l2.59"></a>
+<span id="l2.60">                     break;</span><a href="#l2.60"></a>
+<span id="l2.61">                 }</span><a href="#l2.61"></a>
+<span id="l2.62" class="atline">@@ -818,7 +825,10 @@</span><a href="#l2.62"></a>
+<span id="l2.63">                         }</span><a href="#l2.63"></a>
+<span id="l2.64">                     }</span><a href="#l2.64"></a>
+<span id="l2.65">                     if (ke != null) {</span><a href="#l2.65"></a>
+<span id="l2.66" class="minusline">-                        focusLog.log(Level.FINER, &quot;Pumping approved event {0}&quot;, new Object[] {ke});</span><a href="#l2.66"></a>
+<span id="l2.67" class="plusline">+                        if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l2.67"></a>
+<span id="l2.68" class="plusline">+                            focusLog.log(Level.FINER, &quot;Pumping approved event {0}&quot;,</span><a href="#l2.68"></a>
+<span id="l2.69" class="plusline">+                                                      new Object[] {String.valueOf(ke)});</span><a href="#l2.69"></a>
+<span id="l2.70" class="plusline">+                        }</span><a href="#l2.70"></a>
+<span id="l2.71">                         enqueuedKeyEvents.removeFirst();</span><a href="#l2.71"></a>
+<span id="l2.72">                     }</span><a href="#l2.72"></a>
+<span id="l2.73">                 }</span><a href="#l2.73"></a>
+<span id="l2.74" class="atline">@@ -840,7 +850,7 @@</span><a href="#l2.74"></a>
+<span id="l2.75">                     Iterator iter = typeAheadMarkers.iterator();</span><a href="#l2.75"></a>
+<span id="l2.76">                     while (iter.hasNext()) {</span><a href="#l2.76"></a>
+<span id="l2.77">                         TypeAheadMarker marker = (TypeAheadMarker)iter.next();</span><a href="#l2.77"></a>
+<span id="l2.78" class="minusline">-                        focusLog.log(Level.FINEST, &quot;    {0}&quot;, marker);</span><a href="#l2.78"></a>
+<span id="l2.79" class="plusline">+                        focusLog.log(Level.FINEST, &quot;    {0}&quot;, String.valueOf(marker));</span><a href="#l2.79"></a>
+<span id="l2.80">                     }</span><a href="#l2.80"></a>
+<span id="l2.81">                 }</span><a href="#l2.81"></a>
+<span id="l2.82">             }</span><a href="#l2.82"></a>
+<span id="l2.83" class="atline">@@ -868,7 +878,10 @@</span><a href="#l2.83"></a>
+<span id="l2.84">                         // The fix is rolled out.</span><a href="#l2.84"></a>
+<span id="l2.85"> </span><a href="#l2.85"></a>
+<span id="l2.86">                         if (ke.getWhen() &gt; marker.after) {</span><a href="#l2.86"></a>
+<span id="l2.87" class="minusline">-                            focusLog.log(Level.FINER, &quot;Storing event {0} because of marker {1}&quot;, new Object[] {ke, marker});</span><a href="#l2.87"></a>
+<span id="l2.88" class="plusline">+                            if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l2.88"></a>
+<span id="l2.89" class="plusline">+                                focusLog.log(Level.FINER, &quot;Storing event {0} because of marker {1}&quot;,</span><a href="#l2.89"></a>
+<span id="l2.90" class="plusline">+                                                          new Object[] {String.valueOf(ke), String.valueOf(marker)});</span><a href="#l2.90"></a>
+<span id="l2.91" class="plusline">+                            }</span><a href="#l2.91"></a>
+<span id="l2.92">                             enqueuedKeyEvents.addLast(ke);</span><a href="#l2.92"></a>
+<span id="l2.93">                             return true;</span><a href="#l2.93"></a>
+<span id="l2.94">                         }</span><a href="#l2.94"></a>
+<span id="l2.95" class="atline">@@ -880,7 +893,10 @@</span><a href="#l2.95"></a>
+<span id="l2.96">             }</span><a href="#l2.96"></a>
+<span id="l2.97"> </span><a href="#l2.97"></a>
+<span id="l2.98">             case FocusEvent.FOCUS_GAINED:</span><a href="#l2.98"></a>
+<span id="l2.99" class="minusline">-                focusLog.log(Level.FINEST, &quot;Markers before FOCUS_GAINED on {0}&quot;, new Object[] {target});</span><a href="#l2.99"></a>
+<span id="l2.100" class="plusline">+                if (focusLog.isLoggable(Level.FINEST)) {</span><a href="#l2.100"></a>
+<span id="l2.101" class="plusline">+                    focusLog.log(Level.FINEST, &quot;Markers before FOCUS_GAINED on {0}&quot;,</span><a href="#l2.101"></a>
+<span id="l2.102" class="plusline">+                                 new Object[] {String.valueOf(target)});</span><a href="#l2.102"></a>
+<span id="l2.103" class="plusline">+                }</span><a href="#l2.103"></a>
+<span id="l2.104">                 dumpMarkers();</span><a href="#l2.104"></a>
+<span id="l2.105">                 // Search the marker list for the first marker tied to</span><a href="#l2.105"></a>
+<span id="l2.106">                 // the Component which just gained focus. Then remove</span><a href="#l2.106"></a>
+<span id="l2.107" class="atline">@@ -909,7 +925,9 @@</span><a href="#l2.107"></a>
+<span id="l2.108">                         }</span><a href="#l2.108"></a>
+<span id="l2.109">                     } else {</span><a href="#l2.109"></a>
+<span id="l2.110">                         // Exception condition - event without marker</span><a href="#l2.110"></a>
+<span id="l2.111" class="minusline">-                        focusLog.log(Level.FINER, &quot;Event without marker {0}&quot;, e);</span><a href="#l2.111"></a>
+<span id="l2.112" class="plusline">+                        if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l2.112"></a>
+<span id="l2.113" class="plusline">+                            focusLog.log(Level.FINER, &quot;Event without marker {0}&quot;, String.valueOf(e));</span><a href="#l2.113"></a>
+<span id="l2.114" class="plusline">+                        }</span><a href="#l2.114"></a>
+<span id="l2.115">                     }</span><a href="#l2.115"></a>
+<span id="l2.116">                 }</span><a href="#l2.116"></a>
+<span id="l2.117">                 focusLog.log(Level.FINEST, &quot;Markers after FOCUS_GAINED&quot;);</span><a href="#l2.117"></a>
+<span id="l2.118" class="atline">@@ -1146,8 +1164,10 @@</span><a href="#l2.118"></a>
+<span id="l2.119">             return;</span><a href="#l2.119"></a>
+<span id="l2.120">         }</span><a href="#l2.120"></a>
+<span id="l2.121"> </span><a href="#l2.121"></a>
+<span id="l2.122" class="minusline">-        focusLog.log(Level.FINER, &quot;Enqueue at {0} for {1}&quot;,</span><a href="#l2.122"></a>
+<span id="l2.123" class="minusline">-                     new Object[] {after, untilFocused});</span><a href="#l2.123"></a>
+<span id="l2.124" class="plusline">+        if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l2.124"></a>
+<span id="l2.125" class="plusline">+            focusLog.log(Level.FINER, &quot;Enqueue at {0} for {1}&quot;,</span><a href="#l2.125"></a>
+<span id="l2.126" class="plusline">+                         new Object[] {after, String.valueOf(untilFocused)});</span><a href="#l2.126"></a>
+<span id="l2.127" class="plusline">+        }</span><a href="#l2.127"></a>
+<span id="l2.128"> </span><a href="#l2.128"></a>
+<span id="l2.129">         int insertionIndex = 0,</span><a href="#l2.129"></a>
+<span id="l2.130">             i = typeAheadMarkers.size();</span><a href="#l2.130"></a>
+<span id="l2.131" class="atline">@@ -1186,8 +1206,10 @@</span><a href="#l2.131"></a>
+<span id="l2.132">             return;</span><a href="#l2.132"></a>
+<span id="l2.133">         }</span><a href="#l2.133"></a>
+<span id="l2.134"> </span><a href="#l2.134"></a>
+<span id="l2.135" class="minusline">-        focusLog.log(Level.FINER, &quot;Dequeue at {0} for {1}&quot;,</span><a href="#l2.135"></a>
+<span id="l2.136" class="minusline">-                     new Object[] {after, untilFocused});</span><a href="#l2.136"></a>
+<span id="l2.137" class="plusline">+        if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l2.137"></a>
+<span id="l2.138" class="plusline">+            focusLog.log(Level.FINER, &quot;Dequeue at {0} for {1}&quot;,</span><a href="#l2.138"></a>
+<span id="l2.139" class="plusline">+                         new Object[] {after, String.valueOf(untilFocused)});</span><a href="#l2.139"></a>
+<span id="l2.140" class="plusline">+        }</span><a href="#l2.140"></a>
+<span id="l2.141"> </span><a href="#l2.141"></a>
+<span id="l2.142">         TypeAheadMarker marker;</span><a href="#l2.142"></a>
+<span id="l2.143">         ListIterator iter = typeAheadMarkers.listIterator</span><a href="#l2.143"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/java/awt/KeyboardFocusManager.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/java/awt/KeyboardFocusManager.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -586,7 +586,7 @@</span><a href="#l3.3"></a>
+<span id="l3.4">     void setNativeFocusOwner(Component comp) {</span><a href="#l3.4"></a>
+<span id="l3.5">         if (focusLog.isLoggable(Level.FINEST)) {</span><a href="#l3.5"></a>
+<span id="l3.6">             focusLog.log(Level.FINEST, &quot;Calling peer {0} setCurrentFocusOwner for {1}&quot;,</span><a href="#l3.6"></a>
+<span id="l3.7" class="minusline">-                         new Object[] {peer, comp});</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+                         new Object[] {String.valueOf(peer), String.valueOf(comp)});</span><a href="#l3.8"></a>
+<span id="l3.9">         }</span><a href="#l3.9"></a>
+<span id="l3.10">         peer.setCurrentFocusOwner(comp);</span><a href="#l3.10"></a>
+<span id="l3.11">     }</span><a href="#l3.11"></a>
+<span id="l3.12" class="atline">@@ -2338,20 +2338,20 @@</span><a href="#l3.12"></a>
+<span id="l3.13">         Window nativeFocusedWindow = thisManager.getNativeFocusedWindow();</span><a href="#l3.13"></a>
+<span id="l3.14">         if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l3.14"></a>
+<span id="l3.15">             focusLog.log(Level.FINER, &quot;SNFH for {0} in {1}&quot;,</span><a href="#l3.15"></a>
+<span id="l3.16" class="minusline">-                         new Object[] {descendant, heavyweight});</span><a href="#l3.16"></a>
+<span id="l3.17" class="plusline">+                         new Object[] {String.valueOf(descendant), String.valueOf(heavyweight)});</span><a href="#l3.17"></a>
+<span id="l3.18">         }</span><a href="#l3.18"></a>
+<span id="l3.19">         if (focusLog.isLoggable(Level.FINEST)) {</span><a href="#l3.19"></a>
+<span id="l3.20">             focusLog.log(Level.FINEST, &quot;0. Current focus owner {0}&quot;,</span><a href="#l3.20"></a>
+<span id="l3.21" class="minusline">-                         currentFocusOwner);</span><a href="#l3.21"></a>
+<span id="l3.22" class="plusline">+                         String.valueOf(currentFocusOwner));</span><a href="#l3.22"></a>
+<span id="l3.23">             focusLog.log(Level.FINEST, &quot;0. Native focus owner {0}&quot;,</span><a href="#l3.23"></a>
+<span id="l3.24" class="minusline">-                         nativeFocusOwner);</span><a href="#l3.24"></a>
+<span id="l3.25" class="plusline">+                         String.valueOf(nativeFocusOwner));</span><a href="#l3.25"></a>
+<span id="l3.26">             focusLog.log(Level.FINEST, &quot;0. Native focused window {0}&quot;,</span><a href="#l3.26"></a>
+<span id="l3.27" class="minusline">-                         nativeFocusedWindow);</span><a href="#l3.27"></a>
+<span id="l3.28" class="plusline">+                         String.valueOf(nativeFocusedWindow));</span><a href="#l3.28"></a>
+<span id="l3.29">         }</span><a href="#l3.29"></a>
+<span id="l3.30">         synchronized (heavyweightRequests) {</span><a href="#l3.30"></a>
+<span id="l3.31">             HeavyweightFocusRequest hwFocusRequest = getLastHWRequest();</span><a href="#l3.31"></a>
+<span id="l3.32">             if (focusLog.isLoggable(Level.FINEST)) {</span><a href="#l3.32"></a>
+<span id="l3.33" class="minusline">-                focusLog.log(Level.FINEST, &quot;Request {0}&quot;, hwFocusRequest);</span><a href="#l3.33"></a>
+<span id="l3.34" class="plusline">+                focusLog.log(Level.FINEST, &quot;Request {0}&quot;, String.valueOf(hwFocusRequest));</span><a href="#l3.34"></a>
+<span id="l3.35">             }</span><a href="#l3.35"></a>
+<span id="l3.36">             if (hwFocusRequest == null &amp;&amp;</span><a href="#l3.36"></a>
+<span id="l3.37">                 heavyweight == nativeFocusOwner)</span><a href="#l3.37"></a>
+<span id="l3.38" class="atline">@@ -2360,7 +2360,7 @@</span><a href="#l3.38"></a>
+<span id="l3.39">                     // Redundant request.</span><a href="#l3.39"></a>
+<span id="l3.40">                     if (focusLog.isLoggable(Level.FINEST))</span><a href="#l3.40"></a>
+<span id="l3.41">                         focusLog.log(Level.FINEST, &quot;1. SNFH_FAILURE for {0}&quot;,</span><a href="#l3.41"></a>
+<span id="l3.42" class="minusline">-                                     descendant);</span><a href="#l3.42"></a>
+<span id="l3.43" class="plusline">+                                     String.valueOf(descendant));</span><a href="#l3.43"></a>
+<span id="l3.44">                     return SNFH_FAILURE;</span><a href="#l3.44"></a>
+<span id="l3.45">                 }</span><a href="#l3.45"></a>
+<span id="l3.46"> </span><a href="#l3.46"></a>
+<span id="l3.47" class="atline">@@ -2393,7 +2393,7 @@</span><a href="#l3.47"></a>
+<span id="l3.48">                 SunToolkit.postEvent(descendant.appContext, newFocusOwnerEvent);</span><a href="#l3.48"></a>
+<span id="l3.49"> </span><a href="#l3.49"></a>
+<span id="l3.50">                 if (focusLog.isLoggable(Level.FINEST))</span><a href="#l3.50"></a>
+<span id="l3.51" class="minusline">-                    focusLog.log(Level.FINEST, &quot;2. SNFH_HANDLED for {0}&quot;, descendant);</span><a href="#l3.51"></a>
+<span id="l3.52" class="plusline">+                    focusLog.log(Level.FINEST, &quot;2. SNFH_HANDLED for {0}&quot;, String.valueOf(descendant));</span><a href="#l3.52"></a>
+<span id="l3.53">                 return SNFH_SUCCESS_HANDLED;</span><a href="#l3.53"></a>
+<span id="l3.54">             } else if (hwFocusRequest != null &amp;&amp;</span><a href="#l3.54"></a>
+<span id="l3.55">                        hwFocusRequest.heavyweight == heavyweight) {</span><a href="#l3.55"></a>
+<span id="l3.56" class="atline">@@ -2900,11 +2900,11 @@</span><a href="#l3.56"></a>
+<span id="l3.57">         KeyboardFocusManager manager = getCurrentKeyboardFocusManager();</span><a href="#l3.57"></a>
+<span id="l3.58">         if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l3.58"></a>
+<span id="l3.59">             if (event instanceof FocusEvent || event instanceof WindowEvent) {</span><a href="#l3.59"></a>
+<span id="l3.60" class="minusline">-                focusLog.log(Level.FINER, &quot;&gt;&gt;&gt; {0}&quot;, new Object[] {event});</span><a href="#l3.60"></a>
+<span id="l3.61" class="plusline">+                focusLog.log(Level.FINER, &quot;&gt;&gt;&gt; {0}&quot;, new Object[] {String.valueOf(event)});</span><a href="#l3.61"></a>
+<span id="l3.62">             }</span><a href="#l3.62"></a>
+<span id="l3.63">             if (focusLog.isLoggable(Level.FINER) &amp;&amp; event instanceof KeyEvent) {</span><a href="#l3.63"></a>
+<span id="l3.64" class="minusline">-                focusLog.log(Level.FINER, &quot;    focus owner is {0}&quot;, new Object[] {manager.getGlobalFocusOwner()});</span><a href="#l3.64"></a>
+<span id="l3.65" class="minusline">-                focusLog.log(Level.FINER, &quot;&gt;&gt;&gt; {0}&quot;, new Object[] {event});</span><a href="#l3.65"></a>
+<span id="l3.66" class="plusline">+                focusLog.log(Level.FINER, &quot;    focus owner is {0}&quot;, new Object[] {String.valueOf(manager.getGlobalFocusOwner())});</span><a href="#l3.66"></a>
+<span id="l3.67" class="plusline">+                focusLog.log(Level.FINER, &quot;&gt;&gt;&gt; {0}&quot;, new Object[] {String.valueOf(event)});</span><a href="#l3.67"></a>
+<span id="l3.68">             }</span><a href="#l3.68"></a>
+<span id="l3.69">         }</span><a href="#l3.69"></a>
+<span id="l3.70"> </span><a href="#l3.70"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/share/classes/sun/awt/DebugSettings.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/share/classes/sun/awt/DebugSettings.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -129,7 +129,7 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> </span><a href="#l4.4"></a>
+<span id="l4.5">         // echo the initial property settings to stdout</span><a href="#l4.5"></a>
+<span id="l4.6">         if (log.isLoggable(Level.FINE)) {</span><a href="#l4.6"></a>
+<span id="l4.7" class="minusline">-            log.log(Level.FINE, &quot;DebugSettings:\n{0}&quot;, this);</span><a href="#l4.7"></a>
+<span id="l4.8" class="plusline">+            log.log(Level.FINE, &quot;DebugSettings:\n{0}&quot;, String.valueOf(this));</span><a href="#l4.8"></a>
+<span id="l4.9">         }</span><a href="#l4.9"></a>
+<span id="l4.10">     }</span><a href="#l4.10"></a>
+<span id="l4.11"> </span><a href="#l4.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XBaseWindow.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XBaseWindow.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -824,7 +824,9 @@</span><a href="#l5.3"></a>
+<span id="l5.4">      * The active grab overrides activated automatic grab.</span><a href="#l5.4"></a>
+<span id="l5.5">      */</span><a href="#l5.5"></a>
+<span id="l5.6">     public boolean grabInput() {</span><a href="#l5.6"></a>
+<span id="l5.7" class="minusline">-        grabLog.log(Level.FINE, &quot;Grab input on {0}&quot;, new Object[] {this});</span><a href="#l5.7"></a>
+<span id="l5.8" class="plusline">+        if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l5.8"></a>
+<span id="l5.9" class="plusline">+            grabLog.log(Level.FINE, &quot;Grab input on {0}&quot;, new Object[] {String.valueOf(this)});</span><a href="#l5.9"></a>
+<span id="l5.10" class="plusline">+        }</span><a href="#l5.10"></a>
+<span id="l5.11"> </span><a href="#l5.11"></a>
+<span id="l5.12">         XToolkit.awtLock();</span><a href="#l5.12"></a>
+<span id="l5.13">         try {</span><a href="#l5.13"></a>
+<span id="l5.14" class="atline">@@ -879,7 +881,10 @@</span><a href="#l5.14"></a>
+<span id="l5.15">         XToolkit.awtLock();</span><a href="#l5.15"></a>
+<span id="l5.16">         try {</span><a href="#l5.16"></a>
+<span id="l5.17">             XBaseWindow grabWindow = XAwtState.getGrabWindow();</span><a href="#l5.17"></a>
+<span id="l5.18" class="minusline">-            grabLog.log(Level.FINE, &quot;UnGrab input on {0}&quot;, new Object[] {grabWindow});</span><a href="#l5.18"></a>
+<span id="l5.19" class="plusline">+            if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l5.19"></a>
+<span id="l5.20" class="plusline">+                grabLog.log(Level.FINE, &quot;UnGrab input on {0}&quot;,</span><a href="#l5.20"></a>
+<span id="l5.21" class="plusline">+                            new Object[] {String.valueOf(grabWindow)});</span><a href="#l5.21"></a>
+<span id="l5.22" class="plusline">+            }</span><a href="#l5.22"></a>
+<span id="l5.23">             if (grabWindow != null) {</span><a href="#l5.23"></a>
+<span id="l5.24">                 grabWindow.ungrabInputImpl();</span><a href="#l5.24"></a>
+<span id="l5.25">                 XlibWrapper.XUngrabPointer(XToolkit.getDisplay(), CurrentTime);</span><a href="#l5.25"></a>
+<span id="l5.26" class="atline">@@ -930,7 +935,7 @@</span><a href="#l5.26"></a>
+<span id="l5.27">             XPropertyCache.clearCache(window, XAtom.get(msg.get_atom()));</span><a href="#l5.27"></a>
+<span id="l5.28">         }</span><a href="#l5.28"></a>
+<span id="l5.29">         if (eventLog.isLoggable(Level.FINER)) {</span><a href="#l5.29"></a>
+<span id="l5.30" class="minusline">-            eventLog.log(Level.FINER, &quot;{0}&quot;, new Object[] {msg});</span><a href="#l5.30"></a>
+<span id="l5.31" class="plusline">+            eventLog.log(Level.FINER, &quot;{0}&quot;, new Object[] {String.valueOf(msg)});</span><a href="#l5.31"></a>
+<span id="l5.32">         }</span><a href="#l5.32"></a>
+<span id="l5.33">     }</span><a href="#l5.33"></a>
+<span id="l5.34"> </span><a href="#l5.34"></a>
+<span id="l5.35" class="atline">@@ -1000,8 +1005,10 @@</span><a href="#l5.35"></a>
+<span id="l5.36">     }</span><a href="#l5.36"></a>
+<span id="l5.37">     public void handleConfigureNotifyEvent(XEvent xev) {</span><a href="#l5.37"></a>
+<span id="l5.38">         XConfigureEvent xe = xev.get_xconfigure();</span><a href="#l5.38"></a>
+<span id="l5.39" class="minusline">-        insLog.log(Level.FINER, &quot;Configure, {0}&quot;,</span><a href="#l5.39"></a>
+<span id="l5.40" class="minusline">-                   new Object[] {xe});</span><a href="#l5.40"></a>
+<span id="l5.41" class="plusline">+        if (insLog.isLoggable(Level.FINER)) {</span><a href="#l5.41"></a>
+<span id="l5.42" class="plusline">+            insLog.log(Level.FINER, &quot;Configure, {0}&quot;,</span><a href="#l5.42"></a>
+<span id="l5.43" class="plusline">+                       new Object[] {String.valueOf(xe)});</span><a href="#l5.43"></a>
+<span id="l5.44" class="plusline">+        }</span><a href="#l5.44"></a>
+<span id="l5.45">         x = xe.get_x();</span><a href="#l5.45"></a>
+<span id="l5.46">         y = xe.get_y();</span><a href="#l5.46"></a>
+<span id="l5.47">         width = xe.get_width();</span><a href="#l5.47"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l6.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XCheckboxMenuItemPeer.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l6.1"></a>
+<span id="l6.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XCheckboxMenuItemPeer.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l6.2"></a>
+<span id="l6.3" class="atline">@@ -29,8 +29,6 @@</span><a href="#l6.3"></a>
+<span id="l6.4"> import java.awt.peer.*;</span><a href="#l6.4"></a>
+<span id="l6.5"> import java.awt.event.*;</span><a href="#l6.5"></a>
+<span id="l6.6"> </span><a href="#l6.6"></a>
+<span id="l6.7" class="minusline">-import java.util.logging.*;</span><a href="#l6.7"></a>
+<span id="l6.8" class="minusline">-</span><a href="#l6.8"></a>
+<span id="l6.9"> import java.lang.reflect.Field;</span><a href="#l6.9"></a>
+<span id="l6.10"> import sun.awt.SunToolkit;</span><a href="#l6.10"></a>
+<span id="l6.11"> </span><a href="#l6.11"></a>
+<span id="l6.12" class="atline">@@ -42,8 +40,6 @@</span><a href="#l6.12"></a>
+<span id="l6.13">      *</span><a href="#l6.13"></a>
+<span id="l6.14">      ************************************************/</span><a href="#l6.14"></a>
+<span id="l6.15"> </span><a href="#l6.15"></a>
+<span id="l6.16" class="minusline">-    private static Logger log = Logger.getLogger(&quot;sun.awt.X11.XCheckboxMenuItemPeer&quot;);</span><a href="#l6.16"></a>
+<span id="l6.17" class="minusline">-</span><a href="#l6.17"></a>
+<span id="l6.18">     /*</span><a href="#l6.18"></a>
+<span id="l6.19">      * CheckboxMenuItem's fields</span><a href="#l6.19"></a>
+<span id="l6.20">      */</span><a href="#l6.20"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l7.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XComponentPeer.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l7.1"></a>
+<span id="l7.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XComponentPeer.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l7.2"></a>
+<span id="l7.3" class="atline">@@ -261,7 +261,9 @@</span><a href="#l7.3"></a>
+<span id="l7.4">      * Called when component receives focus</span><a href="#l7.4"></a>
+<span id="l7.5">      */</span><a href="#l7.5"></a>
+<span id="l7.6">     public void focusGained(FocusEvent e) {</span><a href="#l7.6"></a>
+<span id="l7.7" class="minusline">-        focusLog.log(Level.FINE, &quot;{0}&quot;, new Object[] {e});</span><a href="#l7.7"></a>
+<span id="l7.8" class="plusline">+        if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l7.8"></a>
+<span id="l7.9" class="plusline">+            focusLog.log(Level.FINER, &quot;{0}&quot;, new Object[] {String.valueOf(e)});</span><a href="#l7.9"></a>
+<span id="l7.10" class="plusline">+        }</span><a href="#l7.10"></a>
+<span id="l7.11">         bHasFocus = true;</span><a href="#l7.11"></a>
+<span id="l7.12">     }</span><a href="#l7.12"></a>
+<span id="l7.13"> </span><a href="#l7.13"></a>
+<span id="l7.14" class="atline">@@ -269,7 +271,9 @@</span><a href="#l7.14"></a>
+<span id="l7.15">      * Called when component loses focus</span><a href="#l7.15"></a>
+<span id="l7.16">      */</span><a href="#l7.16"></a>
+<span id="l7.17">     public void focusLost(FocusEvent e) {</span><a href="#l7.17"></a>
+<span id="l7.18" class="minusline">-        focusLog.log(Level.FINE, &quot;{0}&quot;, new Object[] {e});</span><a href="#l7.18"></a>
+<span id="l7.19" class="plusline">+        if (focusLog.isLoggable(Level.FINE)) {</span><a href="#l7.19"></a>
+<span id="l7.20" class="plusline">+            focusLog.log(Level.FINE, &quot;{0}&quot;, new Object[] {String.valueOf(e)});</span><a href="#l7.20"></a>
+<span id="l7.21" class="plusline">+        }</span><a href="#l7.21"></a>
+<span id="l7.22">         bHasFocus = false;</span><a href="#l7.22"></a>
+<span id="l7.23">     }</span><a href="#l7.23"></a>
+<span id="l7.24"> </span><a href="#l7.24"></a>
+<span id="l7.25" class="atline">@@ -511,7 +515,10 @@</span><a href="#l7.25"></a>
+<span id="l7.26">      * @see java.awt.peer.ComponentPeer</span><a href="#l7.26"></a>
+<span id="l7.27">      */</span><a href="#l7.27"></a>
+<span id="l7.28">     public void setEnabled(boolean value) {</span><a href="#l7.28"></a>
+<span id="l7.29" class="minusline">-        enableLog.log(Level.FINE, &quot;{0}ing {1}&quot;, new Object[] {(value?&quot;Enabl&quot;:&quot;Disabl&quot;), this});</span><a href="#l7.29"></a>
+<span id="l7.30" class="plusline">+        if (enableLog.isLoggable(Level.FINE)) {</span><a href="#l7.30"></a>
+<span id="l7.31" class="plusline">+            enableLog.log(Level.FINE, &quot;{0}ing {1}&quot;,</span><a href="#l7.31"></a>
+<span id="l7.32" class="plusline">+                          new Object[] {(value?&quot;Enabl&quot;:&quot;Disabl&quot;), String.valueOf(this)});</span><a href="#l7.32"></a>
+<span id="l7.33" class="plusline">+        }</span><a href="#l7.33"></a>
+<span id="l7.34">         boolean repaintNeeded = (enabled != value);</span><a href="#l7.34"></a>
+<span id="l7.35">         enabled = value;</span><a href="#l7.35"></a>
+<span id="l7.36">         if (target instanceof Container) {</span><a href="#l7.36"></a>
+<span id="l7.37" class="atline">@@ -1346,7 +1353,10 @@</span><a href="#l7.37"></a>
+<span id="l7.38">      * ButtonPress, ButtonRelease, KeyPress, KeyRelease, EnterNotify, LeaveNotify, MotionNotify</span><a href="#l7.38"></a>
+<span id="l7.39">      */</span><a href="#l7.39"></a>
+<span id="l7.40">     protected boolean isEventDisabled(XEvent e) {</span><a href="#l7.40"></a>
+<span id="l7.41" class="minusline">-        enableLog.log(Level.FINEST, &quot;Component is {1}, checking for disabled event {0}&quot;, new Object[] {e, (isEnabled()?&quot;enabled&quot;:&quot;disable&quot;)});</span><a href="#l7.41"></a>
+<span id="l7.42" class="plusline">+        if (enableLog.isLoggable(Level.FINEST)) {</span><a href="#l7.42"></a>
+<span id="l7.43" class="plusline">+            enableLog.log(Level.FINEST, &quot;Component is {1}, checking for disabled event {0}&quot;,</span><a href="#l7.43"></a>
+<span id="l7.44" class="plusline">+                          new Object[] {String.valueOf(e), (isEnabled()?&quot;enabled&quot;:&quot;disable&quot;)});</span><a href="#l7.44"></a>
+<span id="l7.45" class="plusline">+        }</span><a href="#l7.45"></a>
+<span id="l7.46">         if (!isEnabled()) {</span><a href="#l7.46"></a>
+<span id="l7.47">             switch (e.get_type()) {</span><a href="#l7.47"></a>
+<span id="l7.48">               case ButtonPress:</span><a href="#l7.48"></a>
+<span id="l7.49" class="atline">@@ -1356,7 +1366,9 @@</span><a href="#l7.49"></a>
+<span id="l7.50">               case EnterNotify:</span><a href="#l7.50"></a>
+<span id="l7.51">               case LeaveNotify:</span><a href="#l7.51"></a>
+<span id="l7.52">               case MotionNotify:</span><a href="#l7.52"></a>
+<span id="l7.53" class="minusline">-                  enableLog.log(Level.FINER, &quot;Event {0} is disable&quot;, new Object[] {e});</span><a href="#l7.53"></a>
+<span id="l7.54" class="plusline">+                  if (enableLog.isLoggable(Level.FINER)) {</span><a href="#l7.54"></a>
+<span id="l7.55" class="plusline">+                      enableLog.log(Level.FINER, &quot;Event {0} is disable&quot;, new Object[] {String.valueOf(e)});</span><a href="#l7.55"></a>
+<span id="l7.56" class="plusline">+                  }</span><a href="#l7.56"></a>
+<span id="l7.57">                   return true;</span><a href="#l7.57"></a>
+<span id="l7.58">             }</span><a href="#l7.58"></a>
+<span id="l7.59">         }</span><a href="#l7.59"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l8.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XContentWindow.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l8.1"></a>
+<span id="l8.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XContentWindow.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l8.2"></a>
+<span id="l8.3" class="atline">@@ -98,8 +98,10 @@</span><a href="#l8.3"></a>
+<span id="l8.4">             if (in != null) {</span><a href="#l8.4"></a>
+<span id="l8.5">                 newBounds.setLocation(-in.left, -in.top);</span><a href="#l8.5"></a>
+<span id="l8.6">             }</span><a href="#l8.6"></a>
+<span id="l8.7" class="minusline">-            if (insLog.isLoggable(Level.FINE)) insLog.log(Level.FINE, &quot;Setting content bounds {0}, old bounds {1}&quot;,</span><a href="#l8.7"></a>
+<span id="l8.8" class="minusline">-                                                          new Object[] {newBounds, getBounds()});</span><a href="#l8.8"></a>
+<span id="l8.9" class="plusline">+            if (insLog.isLoggable(Level.FINE)) {</span><a href="#l8.9"></a>
+<span id="l8.10" class="plusline">+                insLog.log(Level.FINE, &quot;Setting content bounds {0}, old bounds {1}&quot;,</span><a href="#l8.10"></a>
+<span id="l8.11" class="plusline">+                           new Object[] {String.valueOf(newBounds), String.valueOf(getBounds())});</span><a href="#l8.11"></a>
+<span id="l8.12" class="plusline">+            }</span><a href="#l8.12"></a>
+<span id="l8.13">             // Fix for 5023533:</span><a href="#l8.13"></a>
+<span id="l8.14">             // Change in the size of the content window means, well, change of the size</span><a href="#l8.14"></a>
+<span id="l8.15">             // Change in the location of the content window means change in insets</span><a href="#l8.15"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l9.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XDecoratedPeer.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l9.1"></a>
+<span id="l9.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XDecoratedPeer.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l9.2"></a>
+<span id="l9.3" class="atline">@@ -84,7 +84,11 @@</span><a href="#l9.3"></a>
+<span id="l9.4">         Rectangle bounds = (Rectangle)params.get(BOUNDS);</span><a href="#l9.4"></a>
+<span id="l9.5">         dimensions = new WindowDimensions(bounds, getRealInsets(), false);</span><a href="#l9.5"></a>
+<span id="l9.6">         params.put(BOUNDS, dimensions.getClientRect());</span><a href="#l9.6"></a>
+<span id="l9.7" class="minusline">-        insLog.log(Level.FINE, &quot;Initial dimensions {0}&quot;, new Object[] { dimensions });</span><a href="#l9.7"></a>
+<span id="l9.8" class="plusline">+</span><a href="#l9.8"></a>
+<span id="l9.9" class="plusline">+        if (insLog.isLoggable(Level.FINE)) {</span><a href="#l9.9"></a>
+<span id="l9.10" class="plusline">+            insLog.log(Level.FINE, &quot;Initial dimensions {0}&quot;,</span><a href="#l9.10"></a>
+<span id="l9.11" class="plusline">+                       new Object[] { String.valueOf(dimensions) });</span><a href="#l9.11"></a>
+<span id="l9.12" class="plusline">+        }</span><a href="#l9.12"></a>
+<span id="l9.13"> </span><a href="#l9.13"></a>
+<span id="l9.14">         // Deny default processing of these events on the shell - proxy will take care of</span><a href="#l9.14"></a>
+<span id="l9.15">         // them instead</span><a href="#l9.15"></a>
+<span id="l9.16" class="atline">@@ -313,7 +317,10 @@</span><a href="#l9.16"></a>
+<span id="l9.17">                 // Check if we have insets provided by the WM</span><a href="#l9.17"></a>
+<span id="l9.18">                 Insets correctWM = getWMSetInsets(null);</span><a href="#l9.18"></a>
+<span id="l9.19">                 if (correctWM != null) {</span><a href="#l9.19"></a>
+<span id="l9.20" class="minusline">-                    insLog.log(Level.FINER, &quot;wm-provided insets {0}&quot;, new Object[]{correctWM});</span><a href="#l9.20"></a>
+<span id="l9.21" class="plusline">+                    if (insLog.isLoggable(Level.FINER)) {</span><a href="#l9.21"></a>
+<span id="l9.22" class="plusline">+                        insLog.log(Level.FINER, &quot;wm-provided insets {0}&quot;,</span><a href="#l9.22"></a>
+<span id="l9.23" class="plusline">+                                   new Object[]{String.valueOf(correctWM)});</span><a href="#l9.23"></a>
+<span id="l9.24" class="plusline">+                    }</span><a href="#l9.24"></a>
+<span id="l9.25">                     // If these insets are equal to our current insets - no actions are necessary</span><a href="#l9.25"></a>
+<span id="l9.26">                     Insets dimInsets = dimensions.getInsets();</span><a href="#l9.26"></a>
+<span id="l9.27">                     if (correctWM.equals(dimInsets)) {</span><a href="#l9.27"></a>
+<span id="l9.28" class="atline">@@ -327,7 +334,10 @@</span><a href="#l9.28"></a>
+<span id="l9.29">                     correctWM = XWM.getWM().getInsets(this, xe.get_window(), xe.get_parent());</span><a href="#l9.29"></a>
+<span id="l9.30"> </span><a href="#l9.30"></a>
+<span id="l9.31">                     if (correctWM != null) {</span><a href="#l9.31"></a>
+<span id="l9.32" class="minusline">-                        insLog.log(Level.FINER, &quot;correctWM {0}&quot;, new Object[] {correctWM});</span><a href="#l9.32"></a>
+<span id="l9.33" class="plusline">+                        if (insLog.isLoggable(Level.FINER)) {</span><a href="#l9.33"></a>
+<span id="l9.34" class="plusline">+                            insLog.log(Level.FINER, &quot;correctWM {0}&quot;,</span><a href="#l9.34"></a>
+<span id="l9.35" class="plusline">+                                       new Object[] {String.valueOf(correctWM)});</span><a href="#l9.35"></a>
+<span id="l9.36" class="plusline">+                        }</span><a href="#l9.36"></a>
+<span id="l9.37">                     } else {</span><a href="#l9.37"></a>
+<span id="l9.38">                         insLog.log(Level.FINER, &quot;correctWM insets are not available, waiting for configureNotify&quot;);</span><a href="#l9.38"></a>
+<span id="l9.39">                     }</span><a href="#l9.39"></a>
+<span id="l9.40" class="atline">@@ -350,7 +360,9 @@</span><a href="#l9.40"></a>
+<span id="l9.41">              * initial insets were wrong (most likely they were).</span><a href="#l9.41"></a>
+<span id="l9.42">              */</span><a href="#l9.42"></a>
+<span id="l9.43">             Insets correction = difference(correctWM, currentInsets);</span><a href="#l9.43"></a>
+<span id="l9.44" class="minusline">-            insLog.log(Level.FINEST, &quot;Corrention {0}&quot;, new Object[] {correction});</span><a href="#l9.44"></a>
+<span id="l9.45" class="plusline">+            if (insLog.isLoggable(Level.FINEST)) {</span><a href="#l9.45"></a>
+<span id="l9.46" class="plusline">+                insLog.log(Level.FINEST, &quot;Corrention {0}&quot;, new Object[] {String.valueOf(correction)});</span><a href="#l9.46"></a>
+<span id="l9.47" class="plusline">+            }</span><a href="#l9.47"></a>
+<span id="l9.48">             if (!isNull(correction)) {</span><a href="#l9.48"></a>
+<span id="l9.49">                 /*</span><a href="#l9.49"></a>
+<span id="l9.50">                  * Actual insets account for menubar/warning label,</span><a href="#l9.50"></a>
+<span id="l9.51" class="atline">@@ -440,7 +452,10 @@</span><a href="#l9.51"></a>
+<span id="l9.52">     public Insets getInsets() {</span><a href="#l9.52"></a>
+<span id="l9.53">         Insets in = copy(getRealInsets());</span><a href="#l9.53"></a>
+<span id="l9.54">         in.top += getMenuBarHeight() + getWarningWindowHeight();</span><a href="#l9.54"></a>
+<span id="l9.55" class="minusline">-        if (insLog.isLoggable(Level.FINEST)) insLog.log(Level.FINEST, &quot;Get insets returns {0}&quot;, new Object[] {in});</span><a href="#l9.55"></a>
+<span id="l9.56" class="plusline">+        if (insLog.isLoggable(Level.FINEST)) {</span><a href="#l9.56"></a>
+<span id="l9.57" class="plusline">+            insLog.log(Level.FINEST, &quot;Get insets returns {0}&quot;,</span><a href="#l9.57"></a>
+<span id="l9.58" class="plusline">+                       new Object[] {String.valueOf(in)});</span><a href="#l9.58"></a>
+<span id="l9.59" class="plusline">+        }</span><a href="#l9.59"></a>
+<span id="l9.60">         return in;</span><a href="#l9.60"></a>
+<span id="l9.61">     }</span><a href="#l9.61"></a>
+<span id="l9.62"> </span><a href="#l9.62"></a>
+<span id="l9.63" class="atline">@@ -589,8 +604,10 @@</span><a href="#l9.63"></a>
+<span id="l9.64">               dims.setSize(width, height);</span><a href="#l9.64"></a>
+<span id="l9.65">               break;</span><a href="#l9.65"></a>
+<span id="l9.66">         }</span><a href="#l9.66"></a>
+<span id="l9.67" class="minusline">-        if (insLog.isLoggable(Level.FINE)) insLog.log(Level.FINE, &quot;For the operation {0} new dimensions are {1}&quot;,</span><a href="#l9.67"></a>
+<span id="l9.68" class="minusline">-                                                      new Object[] {operationToString(operation), dims});</span><a href="#l9.68"></a>
+<span id="l9.69" class="plusline">+        if (insLog.isLoggable(Level.FINE)) {</span><a href="#l9.69"></a>
+<span id="l9.70" class="plusline">+            insLog.log(Level.FINE, &quot;For the operation {0} new dimensions are {1}&quot;,</span><a href="#l9.70"></a>
+<span id="l9.71" class="plusline">+                       new Object[] {operationToString(operation), String.valueOf(dims)});</span><a href="#l9.71"></a>
+<span id="l9.72" class="plusline">+        }</span><a href="#l9.72"></a>
+<span id="l9.73"> </span><a href="#l9.73"></a>
+<span id="l9.74">         reshape(dims, operation, userReshape);</span><a href="#l9.74"></a>
+<span id="l9.75">     }</span><a href="#l9.75"></a>
+<span id="l9.76" class="atline">@@ -660,7 +677,10 @@</span><a href="#l9.76"></a>
+<span id="l9.77">     public void handleConfigureNotifyEvent(XEvent xev) {</span><a href="#l9.77"></a>
+<span id="l9.78">         assert (SunToolkit.isAWTLockHeldByCurrentThread());</span><a href="#l9.78"></a>
+<span id="l9.79">         XConfigureEvent xe = xev.get_xconfigure();</span><a href="#l9.79"></a>
+<span id="l9.80" class="minusline">-        insLog.log(Level.FINE, &quot;Configure notify {0}&quot;, new Object[] {xe});</span><a href="#l9.80"></a>
+<span id="l9.81" class="plusline">+        if (insLog.isLoggable(Level.FINE)) {</span><a href="#l9.81"></a>
+<span id="l9.82" class="plusline">+            insLog.log(Level.FINE, &quot;Configure notify {0}&quot;,</span><a href="#l9.82"></a>
+<span id="l9.83" class="plusline">+                       new Object[] {String.valueOf(xe)});</span><a href="#l9.83"></a>
+<span id="l9.84" class="plusline">+        }</span><a href="#l9.84"></a>
+<span id="l9.85"> </span><a href="#l9.85"></a>
+<span id="l9.86">         // XXX: should really only consider synthetic events, but</span><a href="#l9.86"></a>
+<span id="l9.87">         if (isReparented()) {</span><a href="#l9.87"></a>
+<span id="l9.88" class="atline">@@ -752,7 +772,9 @@</span><a href="#l9.88"></a>
+<span id="l9.89">                 case XWM.SAWFISH_WM:</span><a href="#l9.89"></a>
+<span id="l9.90">                 {</span><a href="#l9.90"></a>
+<span id="l9.91">                     Point xlocation = queryXLocation();</span><a href="#l9.91"></a>
+<span id="l9.92" class="minusline">-                    if (log.isLoggable(Level.FINE)) log.log(Level.FINE, &quot;New X location: {0}&quot;, new Object[]{xlocation});</span><a href="#l9.92"></a>
+<span id="l9.93" class="plusline">+                    if (log.isLoggable(Level.FINE)) {</span><a href="#l9.93"></a>
+<span id="l9.94" class="plusline">+                        log.log(Level.FINE, &quot;New X location: {0}&quot;, new Object[]{String.valueOf(xlocation)});</span><a href="#l9.94"></a>
+<span id="l9.95" class="plusline">+                    }</span><a href="#l9.95"></a>
+<span id="l9.96">                     if (xlocation != null) {</span><a href="#l9.96"></a>
+<span id="l9.97">                         newLocation = xlocation;</span><a href="#l9.97"></a>
+<span id="l9.98">                     }</span><a href="#l9.98"></a>
+<span id="l9.99" class="atline">@@ -769,8 +791,10 @@</span><a href="#l9.99"></a>
+<span id="l9.100">                 copy(currentInsets),</span><a href="#l9.100"></a>
+<span id="l9.101">                 true);</span><a href="#l9.101"></a>
+<span id="l9.102"> </span><a href="#l9.102"></a>
+<span id="l9.103" class="minusline">-        insLog.log(Level.FINER, &quot;Insets are {0}, new dimensions {1}&quot;,</span><a href="#l9.103"></a>
+<span id="l9.104" class="minusline">-                new Object[] {currentInsets, newDimensions});</span><a href="#l9.104"></a>
+<span id="l9.105" class="plusline">+        if (insLog.isLoggable(Level.FINER)) {</span><a href="#l9.105"></a>
+<span id="l9.106" class="plusline">+            insLog.log(Level.FINER, &quot;Insets are {0}, new dimensions {1}&quot;,</span><a href="#l9.106"></a>
+<span id="l9.107" class="plusline">+                    new Object[] {String.valueOf(currentInsets), String.valueOf(newDimensions)});</span><a href="#l9.107"></a>
+<span id="l9.108" class="plusline">+        }</span><a href="#l9.108"></a>
+<span id="l9.109"> </span><a href="#l9.109"></a>
+<span id="l9.110">         checkIfOnNewScreen(newDimensions.getBounds());</span><a href="#l9.110"></a>
+<span id="l9.111"> </span><a href="#l9.111"></a>
+<span id="l9.112" class="atline">@@ -935,7 +959,7 @@</span><a href="#l9.112"></a>
+<span id="l9.113">                 Point location = target.getLocation();</span><a href="#l9.113"></a>
+<span id="l9.114">                 if (insLog.isLoggable(Level.FINE))</span><a href="#l9.114"></a>
+<span id="l9.115">                     insLog.log(Level.FINE, &quot;getLocationOnScreen {0} not reparented: {1} &quot;,</span><a href="#l9.115"></a>
+<span id="l9.116" class="minusline">-                               new Object[] {this, location});</span><a href="#l9.116"></a>
+<span id="l9.117" class="plusline">+                               new Object[] {String.valueOf(this), String.valueOf(location)});</span><a href="#l9.117"></a>
+<span id="l9.118">                 return location;</span><a href="#l9.118"></a>
+<span id="l9.119">             }</span><a href="#l9.119"></a>
+<span id="l9.120">         } finally {</span><a href="#l9.120"></a>
+<span id="l9.121" class="atline">@@ -972,7 +996,10 @@</span><a href="#l9.121"></a>
+<span id="l9.122">     }</span><a href="#l9.122"></a>
+<span id="l9.123"> </span><a href="#l9.123"></a>
+<span id="l9.124">     public void setVisible(boolean vis) {</span><a href="#l9.124"></a>
+<span id="l9.125" class="minusline">-        log.log(Level.FINER, &quot;Setting {0} to visible {1}&quot;, new Object[] {this, Boolean.valueOf(vis)});</span><a href="#l9.125"></a>
+<span id="l9.126" class="plusline">+        if (log.isLoggable(Level.FINER)) {</span><a href="#l9.126"></a>
+<span id="l9.127" class="plusline">+            log.log(Level.FINER, &quot;Setting {0} to visible {1}&quot;,</span><a href="#l9.127"></a>
+<span id="l9.128" class="plusline">+                    new Object[] {String.valueOf(this), Boolean.valueOf(vis)});</span><a href="#l9.128"></a>
+<span id="l9.129" class="plusline">+        }</span><a href="#l9.129"></a>
+<span id="l9.130">         if (vis &amp;&amp; !isVisible()) {</span><a href="#l9.130"></a>
+<span id="l9.131">             XWM.setShellDecor(this);</span><a href="#l9.131"></a>
+<span id="l9.132">             super.setVisible(vis);</span><a href="#l9.132"></a>
+<span id="l9.133" class="atline">@@ -1027,7 +1054,10 @@</span><a href="#l9.133"></a>
+<span id="l9.134">     }</span><a href="#l9.134"></a>
+<span id="l9.135"> </span><a href="#l9.135"></a>
+<span id="l9.136">     private void handleWmTakeFocus(XClientMessageEvent cl) {</span><a href="#l9.136"></a>
+<span id="l9.137" class="minusline">-        focusLog.log(Level.FINE, &quot;WM_TAKE_FOCUS on {0}&quot;, new Object[]{this});</span><a href="#l9.137"></a>
+<span id="l9.138" class="plusline">+        if (focusLog.isLoggable(Level.FINE)) {</span><a href="#l9.138"></a>
+<span id="l9.139" class="plusline">+            focusLog.log(Level.FINE, &quot;WM_TAKE_FOCUS on {0}&quot;,</span><a href="#l9.139"></a>
+<span id="l9.140" class="plusline">+                         new Object[]{String.valueOf(this)});</span><a href="#l9.140"></a>
+<span id="l9.141" class="plusline">+        }</span><a href="#l9.141"></a>
+<span id="l9.142">         requestWindowFocus(cl.get_data(1), true);</span><a href="#l9.142"></a>
+<span id="l9.143">     }</span><a href="#l9.143"></a>
+<span id="l9.144"> </span><a href="#l9.144"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l10.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XDropTargetProtocol.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l10.1"></a>
+<span id="l10.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XDropTargetProtocol.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l10.2"></a>
+<span id="l10.3" class="atline">@@ -117,7 +117,7 @@</span><a href="#l10.3"></a>
+<span id="l10.4">         EmbedderRegistryEntry entry = getEmbedderRegistryEntry(toplevel);</span><a href="#l10.4"></a>
+<span id="l10.5"> </span><a href="#l10.5"></a>
+<span id="l10.6">         if (logger.isLoggable(Level.FINEST)) {</span><a href="#l10.6"></a>
+<span id="l10.7" class="minusline">-            logger.log(Level.FINEST, &quot;        entry={0}&quot;, new Object[] {entry});</span><a href="#l10.7"></a>
+<span id="l10.8" class="plusline">+            logger.log(Level.FINEST, &quot;        entry={0}&quot;, new Object[] {String.valueOf(entry)});</span><a href="#l10.8"></a>
+<span id="l10.9">         }</span><a href="#l10.9"></a>
+<span id="l10.10">         // Window not registered as an embedder for this protocol.</span><a href="#l10.10"></a>
+<span id="l10.11">         if (entry == null) {</span><a href="#l10.11"></a>
+<span id="l10.12" class="atline">@@ -138,7 +138,8 @@</span><a href="#l10.12"></a>
+<span id="l10.13">         long proxy = entry.getProxy();</span><a href="#l10.13"></a>
+<span id="l10.14"> </span><a href="#l10.14"></a>
+<span id="l10.15">         if (logger.isLoggable(Level.FINEST)) {</span><a href="#l10.15"></a>
+<span id="l10.16" class="minusline">-            logger.log(Level.FINEST, &quot;        proxy={0} toplevel={1}&quot;, new Object[] {proxy, toplevel});</span><a href="#l10.16"></a>
+<span id="l10.17" class="plusline">+            logger.log(Level.FINEST, &quot;        proxy={0} toplevel={1}&quot;,</span><a href="#l10.17"></a>
+<span id="l10.18" class="plusline">+                       new Object[] {String.valueOf(proxy), String.valueOf(toplevel)});</span><a href="#l10.18"></a>
+<span id="l10.19">         }</span><a href="#l10.19"></a>
+<span id="l10.20">         if (proxy == 0) {</span><a href="#l10.20"></a>
+<span id="l10.21">             proxy = toplevel;</span><a href="#l10.21"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l11.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XFocusProxyWindow.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l11.1"></a>
+<span id="l11.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XFocusProxyWindow.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l11.2"></a>
+<span id="l11.3" class="atline">@@ -34,7 +34,6 @@</span><a href="#l11.3"></a>
+<span id="l11.4">  * and therefore X doesn't control focus after we have set it to proxy.</span><a href="#l11.4"></a>
+<span id="l11.5">  */</span><a href="#l11.5"></a>
+<span id="l11.6"> public class XFocusProxyWindow extends XBaseWindow {</span><a href="#l11.6"></a>
+<span id="l11.7" class="minusline">-    private static final Logger focusLog = Logger.getLogger(&quot;sun.awt.X11.focus.XFocusProxyWindow&quot;);</span><a href="#l11.7"></a>
+<span id="l11.8">     XWindowPeer owner;</span><a href="#l11.8"></a>
+<span id="l11.9"> </span><a href="#l11.9"></a>
+<span id="l11.10">     public XFocusProxyWindow(XWindowPeer owner) {</span><a href="#l11.10"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l12.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XFramePeer.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l12.1"></a>
+<span id="l12.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XFramePeer.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l12.2"></a>
+<span id="l12.3" class="atline">@@ -281,7 +281,10 @@</span><a href="#l12.3"></a>
+<span id="l12.4">         super.handlePropertyNotify(xev);</span><a href="#l12.4"></a>
+<span id="l12.5">         XPropertyEvent ev = xev.get_xproperty();</span><a href="#l12.5"></a>
+<span id="l12.6"> </span><a href="#l12.6"></a>
+<span id="l12.7" class="minusline">-        log.log(Level.FINER, &quot;Property change {0}&quot;, new Object[] {ev});</span><a href="#l12.7"></a>
+<span id="l12.8" class="plusline">+        if (log.isLoggable(Level.FINER)) {</span><a href="#l12.8"></a>
+<span id="l12.9" class="plusline">+            log.log(Level.FINER, &quot;Property change {0}&quot;, new Object[] {String.valueOf(ev)});</span><a href="#l12.9"></a>
+<span id="l12.10" class="plusline">+        }</span><a href="#l12.10"></a>
+<span id="l12.11" class="plusline">+</span><a href="#l12.11"></a>
+<span id="l12.12">         /*</span><a href="#l12.12"></a>
+<span id="l12.13">          * Let's see if this is a window state protocol message, and</span><a href="#l12.13"></a>
+<span id="l12.14">          * if it is - decode a new state in terms of java constants.</span><a href="#l12.14"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l13.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XIconWindow.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l13.1"></a>
+<span id="l13.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XIconWindow.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l13.2"></a>
+<span id="l13.3" class="atline">@@ -75,7 +75,10 @@</span><a href="#l13.3"></a>
+<span id="l13.4">             XIconSize[] res = new XIconSize[count];</span><a href="#l13.4"></a>
+<span id="l13.5">             for (int i = 0; i &lt; count; i++, sizes_ptr += XIconSize.getSize()) {</span><a href="#l13.5"></a>
+<span id="l13.6">                 res[i] = new XIconSize(sizes_ptr);</span><a href="#l13.6"></a>
+<span id="l13.7" class="minusline">-                log.log(Level.FINEST, &quot;sizes_ptr[{1}] = {0}&quot;, new Object[] {res[i], Integer.valueOf(i)});</span><a href="#l13.7"></a>
+<span id="l13.8" class="plusline">+                if (log.isLoggable(Level.FINEST)) {</span><a href="#l13.8"></a>
+<span id="l13.9" class="plusline">+                    log.log(Level.FINEST, &quot;sizes_ptr[{1}] = {0}&quot;,</span><a href="#l13.9"></a>
+<span id="l13.10" class="plusline">+                            new Object[] {String.valueOf(res[i]), Integer.valueOf(i)});</span><a href="#l13.10"></a>
+<span id="l13.11" class="plusline">+                }</span><a href="#l13.11"></a>
+<span id="l13.12">             }</span><a href="#l13.12"></a>
+<span id="l13.13">             return res;</span><a href="#l13.13"></a>
+<span id="l13.14">         } finally {</span><a href="#l13.14"></a>
+<span id="l13.15" class="atline">@@ -92,7 +95,9 @@</span><a href="#l13.15"></a>
+<span id="l13.16">         }</span><a href="#l13.16"></a>
+<span id="l13.17"> </span><a href="#l13.17"></a>
+<span id="l13.18">         XIconSize[] sizeList = getIconSizes();</span><a href="#l13.18"></a>
+<span id="l13.19" class="minusline">-        log.log(Level.FINEST, &quot;Icon sizes: {0}&quot;, new Object[] {sizeList});</span><a href="#l13.19"></a>
+<span id="l13.20" class="plusline">+        if (log.isLoggable(Level.FINEST)) {</span><a href="#l13.20"></a>
+<span id="l13.21" class="plusline">+            log.log(Level.FINEST, &quot;Icon sizes: {0}&quot;, new Object[] {String.valueOf(sizeList)});</span><a href="#l13.21"></a>
+<span id="l13.22" class="plusline">+        }</span><a href="#l13.22"></a>
+<span id="l13.23">         if (sizeList == null) {</span><a href="#l13.23"></a>
+<span id="l13.24">             // No icon sizes so we simply fall back to 16x16</span><a href="#l13.24"></a>
+<span id="l13.25">             return new Dimension(16, 16);</span><a href="#l13.25"></a>
+<span id="l13.26" class="atline">@@ -444,7 +449,9 @@</span><a href="#l13.26"></a>
+<span id="l13.27">             }</span><a href="#l13.27"></a>
+<span id="l13.28">             Dimension iconSize = getIconSize(width, height);</span><a href="#l13.28"></a>
+<span id="l13.29">             if (iconSize != null) {</span><a href="#l13.29"></a>
+<span id="l13.30" class="minusline">-                log.log(Level.FINEST, &quot;Icon size: {0}&quot;, iconSize);</span><a href="#l13.30"></a>
+<span id="l13.31" class="plusline">+                if (log.isLoggable(Level.FINEST)) {</span><a href="#l13.31"></a>
+<span id="l13.32" class="plusline">+                    log.log(Level.FINEST, &quot;Icon size: {0}&quot;, String.valueOf(iconSize));</span><a href="#l13.32"></a>
+<span id="l13.33" class="plusline">+                }</span><a href="#l13.33"></a>
+<span id="l13.34">                 iconWidth = iconSize.width;</span><a href="#l13.34"></a>
+<span id="l13.35">                 iconHeight = iconSize.height;</span><a href="#l13.35"></a>
+<span id="l13.36">             } else {</span><a href="#l13.36"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l14.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XInputMethod.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l14.1"></a>
+<span id="l14.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XInputMethod.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l14.2"></a>
+<span id="l14.3" class="atline">@@ -108,8 +108,10 @@</span><a href="#l14.3"></a>
+<span id="l14.4">             client = getParent(client);</span><a href="#l14.4"></a>
+<span id="l14.5">             peer = (XComponentPeer)XToolkit.targetToPeer(client);</span><a href="#l14.5"></a>
+<span id="l14.6">         }</span><a href="#l14.6"></a>
+<span id="l14.7" class="minusline">-        log.log(Level.FINE, &quot;Peer is {0}, client is {1}&quot;, new Object[] {peer, client});</span><a href="#l14.7"></a>
+<span id="l14.8" class="minusline">-</span><a href="#l14.8"></a>
+<span id="l14.9" class="plusline">+        if (log.isLoggable(Level.FINE)) {</span><a href="#l14.9"></a>
+<span id="l14.10" class="plusline">+            log.log(Level.FINE, &quot;Peer is {0}, client is {1}&quot;,</span><a href="#l14.10"></a>
+<span id="l14.11" class="plusline">+                    new Object[] {String.valueOf(peer), String.valueOf(client)});</span><a href="#l14.11"></a>
+<span id="l14.12" class="plusline">+        }</span><a href="#l14.12"></a>
+<span id="l14.13">         if (peer != null)</span><a href="#l14.13"></a>
+<span id="l14.14">             return peer;</span><a href="#l14.14"></a>
+<span id="l14.15"> </span><a href="#l14.15"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l15.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XMenuItemPeer.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l15.1"></a>
+<span id="l15.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XMenuItemPeer.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l15.2"></a>
+<span id="l15.3" class="atline">@@ -43,8 +43,6 @@</span><a href="#l15.3"></a>
+<span id="l15.4">      *</span><a href="#l15.4"></a>
+<span id="l15.5">      ************************************************/</span><a href="#l15.5"></a>
+<span id="l15.6"> </span><a href="#l15.6"></a>
+<span id="l15.7" class="minusline">-    private static Logger log = Logger.getLogger(&quot;sun.awt.X11.XMenuItemPeer&quot;);</span><a href="#l15.7"></a>
+<span id="l15.8" class="minusline">-</span><a href="#l15.8"></a>
+<span id="l15.9">     /*</span><a href="#l15.9"></a>
+<span id="l15.10">      * Primary members</span><a href="#l15.10"></a>
+<span id="l15.11">      */</span><a href="#l15.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l16.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XNETProtocol.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l16.1"></a>
+<span id="l16.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XNETProtocol.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l16.2"></a>
+<span id="l16.3" class="atline">@@ -56,7 +56,11 @@</span><a href="#l16.3"></a>
+<span id="l16.4"> </span><a href="#l16.4"></a>
+<span id="l16.5">     private void setInitialState(XWindowPeer window, int state) {</span><a href="#l16.5"></a>
+<span id="l16.6">         XAtomList old_state = window.getNETWMState();</span><a href="#l16.6"></a>
+<span id="l16.7" class="minusline">-        log.log(Level.FINE, &quot;Current state of the window {0} is {1}&quot;, new Object[] {window, old_state});</span><a href="#l16.7"></a>
+<span id="l16.8" class="plusline">+</span><a href="#l16.8"></a>
+<span id="l16.9" class="plusline">+        if (log.isLoggable(Level.FINE)) {</span><a href="#l16.9"></a>
+<span id="l16.10" class="plusline">+            log.log(Level.FINE, &quot;Current state of the window {0} is {1}&quot;,</span><a href="#l16.10"></a>
+<span id="l16.11" class="plusline">+                    new Object[] {String.valueOf(window), String.valueOf(old_state)});</span><a href="#l16.11"></a>
+<span id="l16.12" class="plusline">+        }</span><a href="#l16.12"></a>
+<span id="l16.13">         if ((state &amp; Frame.MAXIMIZED_VERT) != 0) {</span><a href="#l16.13"></a>
+<span id="l16.14">             old_state.add(XA_NET_WM_STATE_MAXIMIZED_VERT);</span><a href="#l16.14"></a>
+<span id="l16.15">         } else {</span><a href="#l16.15"></a>
+<span id="l16.16" class="atline">@@ -67,7 +71,10 @@</span><a href="#l16.16"></a>
+<span id="l16.17">         } else {</span><a href="#l16.17"></a>
+<span id="l16.18">             old_state.remove(XA_NET_WM_STATE_MAXIMIZED_HORZ);</span><a href="#l16.18"></a>
+<span id="l16.19">         }</span><a href="#l16.19"></a>
+<span id="l16.20" class="minusline">-        log.log(Level.FINE, &quot;Setting initial state of the window {0} to {1}&quot;, new Object[] {window, old_state});</span><a href="#l16.20"></a>
+<span id="l16.21" class="plusline">+        if (log.isLoggable(Level.FINE)) {</span><a href="#l16.21"></a>
+<span id="l16.22" class="plusline">+            log.log(Level.FINE, &quot;Setting initial state of the window {0} to {1}&quot;,</span><a href="#l16.22"></a>
+<span id="l16.23" class="plusline">+                                new Object[] {String.valueOf(window), String.valueOf(old_state)});</span><a href="#l16.23"></a>
+<span id="l16.24" class="plusline">+        }</span><a href="#l16.24"></a>
+<span id="l16.25">         window.setNETWMState(old_state);</span><a href="#l16.25"></a>
+<span id="l16.26">     }</span><a href="#l16.26"></a>
+<span id="l16.27"> </span><a href="#l16.27"></a>
+<span id="l16.28" class="atline">@@ -191,7 +198,10 @@</span><a href="#l16.28"></a>
+<span id="l16.29">                 req.set_format(32);</span><a href="#l16.29"></a>
+<span id="l16.30">                 req.set_data(0, (!set) ? _NET_WM_STATE_REMOVE : _NET_WM_STATE_ADD);</span><a href="#l16.30"></a>
+<span id="l16.31">                 req.set_data(1, state.getAtom());</span><a href="#l16.31"></a>
+<span id="l16.32" class="minusline">-                log.log(Level.FINE, &quot;Setting _NET_STATE atom {0} on {1} for {2}&quot;, new Object[] {state, window, Boolean.valueOf(set)});</span><a href="#l16.32"></a>
+<span id="l16.33" class="plusline">+                if (log.isLoggable(Level.FINE)) {</span><a href="#l16.33"></a>
+<span id="l16.34" class="plusline">+                    log.log(Level.FINE, &quot;Setting _NET_STATE atom {0} on {1} for {2}&quot;,</span><a href="#l16.34"></a>
+<span id="l16.35" class="plusline">+                            new Object[] {String.valueOf(state), String.valueOf(window), Boolean.valueOf(set)});</span><a href="#l16.35"></a>
+<span id="l16.36" class="plusline">+                }</span><a href="#l16.36"></a>
+<span id="l16.37">                 XToolkit.awtLock();</span><a href="#l16.37"></a>
+<span id="l16.38">                 try {</span><a href="#l16.38"></a>
+<span id="l16.39">                     XlibWrapper.XSendEvent(XToolkit.getDisplay(),</span><a href="#l16.39"></a>
+<span id="l16.40" class="atline">@@ -208,13 +218,19 @@</span><a href="#l16.40"></a>
+<span id="l16.41">             }</span><a href="#l16.41"></a>
+<span id="l16.42">         } else {</span><a href="#l16.42"></a>
+<span id="l16.43">             XAtomList net_wm_state = window.getNETWMState();</span><a href="#l16.43"></a>
+<span id="l16.44" class="minusline">-            log.log(Level.FINE, &quot;Current state on {0} is {1}&quot;, new Object[] {window, net_wm_state});</span><a href="#l16.44"></a>
+<span id="l16.45" class="plusline">+            if (log.isLoggable(Level.FINE)) {</span><a href="#l16.45"></a>
+<span id="l16.46" class="plusline">+                log.log(Level.FINE, &quot;Current state on {0} is {1}&quot;,</span><a href="#l16.46"></a>
+<span id="l16.47" class="plusline">+                        new Object[] {String.valueOf(window), String.valueOf(net_wm_state)});</span><a href="#l16.47"></a>
+<span id="l16.48" class="plusline">+            }</span><a href="#l16.48"></a>
+<span id="l16.49">             if (!set) {</span><a href="#l16.49"></a>
+<span id="l16.50">                 net_wm_state.remove(state);</span><a href="#l16.50"></a>
+<span id="l16.51">             } else {</span><a href="#l16.51"></a>
+<span id="l16.52">                 net_wm_state.add(state);</span><a href="#l16.52"></a>
+<span id="l16.53">             }</span><a href="#l16.53"></a>
+<span id="l16.54" class="minusline">-            log.log(Level.FINE, &quot;Setting states on {0} to {1}&quot;, new Object[] {window, net_wm_state});</span><a href="#l16.54"></a>
+<span id="l16.55" class="plusline">+            if (log.isLoggable(Level.FINE)) {</span><a href="#l16.55"></a>
+<span id="l16.56" class="plusline">+                log.log(Level.FINE, &quot;Setting states on {0} to {1}&quot;,</span><a href="#l16.56"></a>
+<span id="l16.57" class="plusline">+                        new Object[] {String.valueOf(window), String.valueOf(net_wm_state)});</span><a href="#l16.57"></a>
+<span id="l16.58" class="plusline">+            }</span><a href="#l16.58"></a>
+<span id="l16.59">             window.setNETWMState(net_wm_state);</span><a href="#l16.59"></a>
+<span id="l16.60">         }</span><a href="#l16.60"></a>
+<span id="l16.61">         XToolkit.XSync();</span><a href="#l16.61"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l17.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XProtocol.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l17.1"></a>
+<span id="l17.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XProtocol.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l17.2"></a>
+<span id="l17.3" class="atline">@@ -68,7 +68,10 @@</span><a href="#l17.3"></a>
+<span id="l17.4">         } finally {</span><a href="#l17.4"></a>
+<span id="l17.5">             if (firstCheck) {</span><a href="#l17.5"></a>
+<span id="l17.6">                 firstCheck = false;</span><a href="#l17.6"></a>
+<span id="l17.7" class="minusline">-                log.log(Level.FINE, &quot;{0}:{1} supports {2}&quot;, new Object[] {this, listName, protocols});</span><a href="#l17.7"></a>
+<span id="l17.8" class="plusline">+                if (log.isLoggable(Level.FINE)) {</span><a href="#l17.8"></a>
+<span id="l17.9" class="plusline">+                    log.log(Level.FINE, &quot;{0}:{1} supports {2}&quot;,</span><a href="#l17.9"></a>
+<span id="l17.10" class="plusline">+                            new Object[] {String.valueOf(this), String.valueOf(listName), String.valueOf(protocols)});</span><a href="#l17.10"></a>
+<span id="l17.11" class="plusline">+                }</span><a href="#l17.11"></a>
+<span id="l17.12">             }</span><a href="#l17.12"></a>
+<span id="l17.13">         }</span><a href="#l17.13"></a>
+<span id="l17.14">     }</span><a href="#l17.14"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l18.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XQueryTree.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l18.1"></a>
+<span id="l18.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XQueryTree.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l18.2"></a>
+<span id="l18.3" class="atline">@@ -32,7 +32,6 @@</span><a href="#l18.3"></a>
+<span id="l18.4"> </span><a href="#l18.4"></a>
+<span id="l18.5"> public class XQueryTree {</span><a href="#l18.5"></a>
+<span id="l18.6">         private static Unsafe unsafe = XlibWrapper.unsafe;</span><a href="#l18.6"></a>
+<span id="l18.7" class="minusline">-    private static final Logger log = Logger.getLogger(&quot;sun.awt.X11.XQueryTree&quot;);</span><a href="#l18.7"></a>
+<span id="l18.8">         private boolean __executed = false;</span><a href="#l18.8"></a>
+<span id="l18.9">         long _w;</span><a href="#l18.9"></a>
+<span id="l18.10">         long root_ptr = unsafe.allocateMemory(Native.getLongSize());</span><a href="#l18.10"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l19.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XToolkit.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l19.1"></a>
+<span id="l19.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XToolkit.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l19.2"></a>
+<span id="l19.3" class="atline">@@ -555,7 +555,7 @@</span><a href="#l19.3"></a>
+<span id="l19.4">                 }</span><a href="#l19.4"></a>
+<span id="l19.5"> </span><a href="#l19.5"></a>
+<span id="l19.6">                 if (eventLog.isLoggable(Level.FINER)) {</span><a href="#l19.6"></a>
+<span id="l19.7" class="minusline">-                    eventLog.log(Level.FINER, &quot;{0}&quot;, ev);</span><a href="#l19.7"></a>
+<span id="l19.8" class="plusline">+                    eventLog.log(Level.FINER, &quot;{0}&quot;, String.valueOf(ev));</span><a href="#l19.8"></a>
+<span id="l19.9">                 }</span><a href="#l19.9"></a>
+<span id="l19.10"> </span><a href="#l19.10"></a>
+<span id="l19.11">                 // Check if input method consumes the event</span><a href="#l19.11"></a>
+<span id="l19.12" class="atline">@@ -1668,8 +1668,10 @@</span><a href="#l19.12"></a>
+<span id="l19.13">             if (timeoutTaskLog.isLoggable(Level.FINER)) {</span><a href="#l19.13"></a>
+<span id="l19.14">                 timeoutTaskLog.log(Level.FINER, &quot;XToolkit.schedule(): current time={0}&quot; +</span><a href="#l19.14"></a>
+<span id="l19.15">                                    &quot;;  interval={1}&quot; +</span><a href="#l19.15"></a>
+<span id="l19.16" class="minusline">-                                   &quot;;  task being added={2}&quot; + &quot;;  tasks before addition={3}&quot;, new Object[] {</span><a href="#l19.16"></a>
+<span id="l19.17" class="minusline">-                                   Long.valueOf(System.currentTimeMillis()), Long.valueOf(interval), task, timeoutTasks});</span><a href="#l19.17"></a>
+<span id="l19.18" class="plusline">+                                   &quot;;  task being added={2}&quot; + &quot;;  tasks before addition={3}&quot;,</span><a href="#l19.18"></a>
+<span id="l19.19" class="plusline">+                                   new Object[] { Long.valueOf(System.currentTimeMillis()),</span><a href="#l19.19"></a>
+<span id="l19.20" class="plusline">+                                                  Long.valueOf(interval), String.valueOf(task),</span><a href="#l19.20"></a>
+<span id="l19.21" class="plusline">+                                                  String.valueOf(timeoutTasks)});</span><a href="#l19.21"></a>
+<span id="l19.22">             }</span><a href="#l19.22"></a>
+<span id="l19.23"> </span><a href="#l19.23"></a>
+<span id="l19.24">             if (timeoutTasks == null) {</span><a href="#l19.24"></a>
+<span id="l19.25" class="atline">@@ -1714,7 +1716,8 @@</span><a href="#l19.25"></a>
+<span id="l19.26">     private static void callTimeoutTasks() {</span><a href="#l19.26"></a>
+<span id="l19.27">         if (timeoutTaskLog.isLoggable(Level.FINER)) {</span><a href="#l19.27"></a>
+<span id="l19.28">             timeoutTaskLog.log(Level.FINER, &quot;XToolkit.callTimeoutTasks(): current time={0}&quot; +</span><a href="#l19.28"></a>
+<span id="l19.29" class="minusline">-                               &quot;;  tasks={1}&quot;,  new Object[] {Long.valueOf(System.currentTimeMillis()), timeoutTasks});</span><a href="#l19.29"></a>
+<span id="l19.30" class="plusline">+                               &quot;;  tasks={1}&quot;,  new Object[] {Long.valueOf(System.currentTimeMillis()),</span><a href="#l19.30"></a>
+<span id="l19.31" class="plusline">+                                                              String.valueOf(timeoutTasks)});</span><a href="#l19.31"></a>
+<span id="l19.32">         }</span><a href="#l19.32"></a>
+<span id="l19.33"> </span><a href="#l19.33"></a>
+<span id="l19.34">         if (timeoutTasks == null || timeoutTasks.isEmpty()) {</span><a href="#l19.34"></a>
+<span id="l19.35" class="atline">@@ -1732,7 +1735,8 @@</span><a href="#l19.35"></a>
+<span id="l19.36"> </span><a href="#l19.36"></a>
+<span id="l19.37">                 if (timeoutTaskLog.isLoggable(Level.FINER)) {</span><a href="#l19.37"></a>
+<span id="l19.38">                     timeoutTaskLog.log(Level.FINER, &quot;XToolkit.callTimeoutTasks(): current time={0}&quot; +</span><a href="#l19.38"></a>
+<span id="l19.39" class="minusline">-                                       &quot;;  about to run task={1}&quot;, new Object[] {Long.valueOf(currentTime), task});</span><a href="#l19.39"></a>
+<span id="l19.40" class="plusline">+                                       &quot;;  about to run task={1}&quot;,</span><a href="#l19.40"></a>
+<span id="l19.41" class="plusline">+                                       new Object[] {Long.valueOf(currentTime), String.valueOf(task)});</span><a href="#l19.41"></a>
+<span id="l19.42">                 }</span><a href="#l19.42"></a>
+<span id="l19.43"> </span><a href="#l19.43"></a>
+<span id="l19.44">                 try {</span><a href="#l19.44"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l20.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XTrayIconPeer.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l20.1"></a>
+<span id="l20.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XTrayIconPeer.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l20.2"></a>
+<span id="l20.3" class="atline">@@ -106,10 +106,11 @@</span><a href="#l20.3"></a>
+<span id="l20.4">                     }</span><a href="#l20.4"></a>
+<span id="l20.5"> </span><a href="#l20.5"></a>
+<span id="l20.6">                     XConfigureEvent ce = ev.get_xconfigure();</span><a href="#l20.6"></a>
+<span id="l20.7" class="minusline">-</span><a href="#l20.7"></a>
+<span id="l20.8" class="minusline">-                    ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}: {1}x{2}+{3}+{4} (old: {5}+{6})&quot;,</span><a href="#l20.8"></a>
+<span id="l20.9" class="minusline">-                               new Object[] { XTrayIconPeer.this, ce.get_width(), ce.get_height(),</span><a href="#l20.9"></a>
+<span id="l20.10" class="minusline">-                                              ce.get_x(), ce.get_y(), old_x, old_y });</span><a href="#l20.10"></a>
+<span id="l20.11" class="plusline">+                    if (ctrLog.isLoggable(Level.FINE)) {</span><a href="#l20.11"></a>
+<span id="l20.12" class="plusline">+                        ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}: {1}x{2}+{3}+{4} (old: {5}+{6})&quot;,</span><a href="#l20.12"></a>
+<span id="l20.13" class="plusline">+                                   new Object[] { String.valueOf(XTrayIconPeer.this), ce.get_width(), ce.get_height(),</span><a href="#l20.13"></a>
+<span id="l20.14" class="plusline">+                                                  ce.get_x(), ce.get_y(), old_x, old_y });</span><a href="#l20.14"></a>
+<span id="l20.15" class="plusline">+                    }</span><a href="#l20.15"></a>
+<span id="l20.16"> </span><a href="#l20.16"></a>
+<span id="l20.17">                     // A workaround for Gnome/Metacity (it doesn't affect the behaviour on KDE).</span><a href="#l20.17"></a>
+<span id="l20.18">                     // On Metacity the EmbeddedFrame's parent window bounds are larger</span><a href="#l20.18"></a>
+<span id="l20.19" class="atline">@@ -129,15 +130,17 @@</span><a href="#l20.19"></a>
+<span id="l20.20">                         // If both the height and the width differ from the fixed size then WM</span><a href="#l20.20"></a>
+<span id="l20.21">                         // must level at least one side to the fixed size. For some reason it may take</span><a href="#l20.21"></a>
+<span id="l20.22">                         // a few hops (even after reparenting) and we have to skip the intermediate ones.</span><a href="#l20.22"></a>
+<span id="l20.23" class="minusline">-                        ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Skipping as intermediate resizing.&quot;,</span><a href="#l20.23"></a>
+<span id="l20.24" class="minusline">-                                   XTrayIconPeer.this);</span><a href="#l20.24"></a>
+<span id="l20.25" class="plusline">+                        if (ctrLog.isLoggable(Level.FINE)) {</span><a href="#l20.25"></a>
+<span id="l20.26" class="plusline">+                            ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Skipping as intermediate resizing.&quot;,</span><a href="#l20.26"></a>
+<span id="l20.27" class="plusline">+                                       String.valueOf(XTrayIconPeer.this));</span><a href="#l20.27"></a>
+<span id="l20.28" class="plusline">+                        }</span><a href="#l20.28"></a>
+<span id="l20.29">                         return;</span><a href="#l20.29"></a>
+<span id="l20.30"> </span><a href="#l20.30"></a>
+<span id="l20.31">                     } else if (ce.get_height() &gt; TRAY_ICON_HEIGHT) {</span><a href="#l20.31"></a>
+<span id="l20.32" class="minusline">-</span><a href="#l20.32"></a>
+<span id="l20.33" class="minusline">-                        ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Centering by \&quot;Y\&quot;.&quot;,</span><a href="#l20.33"></a>
+<span id="l20.34" class="minusline">-                                   XTrayIconPeer.this);</span><a href="#l20.34"></a>
+<span id="l20.35" class="minusline">-</span><a href="#l20.35"></a>
+<span id="l20.36" class="plusline">+                        if (ctrLog.isLoggable(Level.FINE)) {</span><a href="#l20.36"></a>
+<span id="l20.37" class="plusline">+                            ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Centering by \&quot;Y\&quot;.&quot;,</span><a href="#l20.37"></a>
+<span id="l20.38" class="plusline">+                                       String.valueOf(XTrayIconPeer.this));</span><a href="#l20.38"></a>
+<span id="l20.39" class="plusline">+                        }</span><a href="#l20.39"></a>
+<span id="l20.40">                         XlibWrapper.XMoveResizeWindow(XToolkit.getDisplay(), eframeParentID,</span><a href="#l20.40"></a>
+<span id="l20.41">                                                       ce.get_x(),</span><a href="#l20.41"></a>
+<span id="l20.42">                                                       ce.get_y()+ce.get_height()/2-TRAY_ICON_HEIGHT/2,</span><a href="#l20.42"></a>
+<span id="l20.43" class="atline">@@ -147,10 +150,10 @@</span><a href="#l20.43"></a>
+<span id="l20.44">                         ex_width = 0;</span><a href="#l20.44"></a>
+<span id="l20.45"> </span><a href="#l20.45"></a>
+<span id="l20.46">                     } else if (ce.get_width() &gt; TRAY_ICON_WIDTH) {</span><a href="#l20.46"></a>
+<span id="l20.47" class="minusline">-</span><a href="#l20.47"></a>
+<span id="l20.48" class="minusline">-                        ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Centering by \&quot;X\&quot;.&quot;,</span><a href="#l20.48"></a>
+<span id="l20.49" class="minusline">-                                   XTrayIconPeer.this);</span><a href="#l20.49"></a>
+<span id="l20.50" class="minusline">-</span><a href="#l20.50"></a>
+<span id="l20.51" class="plusline">+                        if (ctrLog.isLoggable(Level.FINE)) {</span><a href="#l20.51"></a>
+<span id="l20.52" class="plusline">+                            ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Centering by \&quot;X\&quot;.&quot;,</span><a href="#l20.52"></a>
+<span id="l20.53" class="plusline">+                                       String.valueOf(XTrayIconPeer.this));</span><a href="#l20.53"></a>
+<span id="l20.54" class="plusline">+                        }</span><a href="#l20.54"></a>
+<span id="l20.55">                         XlibWrapper.XMoveResizeWindow(XToolkit.getDisplay(), eframeParentID,</span><a href="#l20.55"></a>
+<span id="l20.56">                                                       ce.get_x()+ce.get_width()/2 - TRAY_ICON_WIDTH/2,</span><a href="#l20.56"></a>
+<span id="l20.57">                                                       ce.get_y(),</span><a href="#l20.57"></a>
+<span id="l20.58" class="atline">@@ -165,25 +168,27 @@</span><a href="#l20.58"></a>
+<span id="l20.59">                         // In this case the parent window also lose centering. We have to restore it.</span><a href="#l20.59"></a>
+<span id="l20.60"> </span><a href="#l20.60"></a>
+<span id="l20.61">                         if (ex_height != 0) {</span><a href="#l20.61"></a>
+<span id="l20.62" class="minusline">-</span><a href="#l20.62"></a>
+<span id="l20.63" class="minusline">-                            ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Move detected. Centering by \&quot;Y\&quot;.&quot;,</span><a href="#l20.63"></a>
+<span id="l20.64" class="minusline">-                                       XTrayIconPeer.this);</span><a href="#l20.64"></a>
+<span id="l20.65" class="minusline">-</span><a href="#l20.65"></a>
+<span id="l20.66" class="plusline">+                            if (ctrLog.isLoggable(Level.FINE)) {</span><a href="#l20.66"></a>
+<span id="l20.67" class="plusline">+                                ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Move detected. Centering by \&quot;Y\&quot;.&quot;,</span><a href="#l20.67"></a>
+<span id="l20.68" class="plusline">+                                           String.valueOf(XTrayIconPeer.this));</span><a href="#l20.68"></a>
+<span id="l20.69" class="plusline">+                            }</span><a href="#l20.69"></a>
+<span id="l20.70">                             XlibWrapper.XMoveWindow(XToolkit.getDisplay(), eframeParentID,</span><a href="#l20.70"></a>
+<span id="l20.71">                                                     ce.get_x(),</span><a href="#l20.71"></a>
+<span id="l20.72">                                                     ce.get_y() + ex_height/2 - TRAY_ICON_HEIGHT/2);</span><a href="#l20.72"></a>
+<span id="l20.73"> </span><a href="#l20.73"></a>
+<span id="l20.74">                         } else if (ex_width != 0) {</span><a href="#l20.74"></a>
+<span id="l20.75" class="minusline">-</span><a href="#l20.75"></a>
+<span id="l20.76" class="minusline">-                            ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Move detected. Centering by \&quot;X\&quot;.&quot;,</span><a href="#l20.76"></a>
+<span id="l20.77" class="minusline">-                                       XTrayIconPeer.this);</span><a href="#l20.77"></a>
+<span id="l20.78" class="minusline">-</span><a href="#l20.78"></a>
+<span id="l20.79" class="plusline">+                            if (ctrLog.isLoggable(Level.FINE)) {</span><a href="#l20.79"></a>
+<span id="l20.80" class="plusline">+                                ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Move detected. Centering by \&quot;X\&quot;.&quot;,</span><a href="#l20.80"></a>
+<span id="l20.81" class="plusline">+                                           String.valueOf(XTrayIconPeer.this));</span><a href="#l20.81"></a>
+<span id="l20.82" class="plusline">+                            }</span><a href="#l20.82"></a>
+<span id="l20.83">                             XlibWrapper.XMoveWindow(XToolkit.getDisplay(), eframeParentID,</span><a href="#l20.83"></a>
+<span id="l20.84">                                                     ce.get_x() + ex_width/2 - TRAY_ICON_WIDTH/2,</span><a href="#l20.84"></a>
+<span id="l20.85">                                                     ce.get_y());</span><a href="#l20.85"></a>
+<span id="l20.86">                         } else {</span><a href="#l20.86"></a>
+<span id="l20.87" class="minusline">-                            ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Move detected. Skipping.&quot;,</span><a href="#l20.87"></a>
+<span id="l20.88" class="minusline">-                                       XTrayIconPeer.this);</span><a href="#l20.88"></a>
+<span id="l20.89" class="plusline">+                            if (ctrLog.isLoggable(Level.FINE)) {</span><a href="#l20.89"></a>
+<span id="l20.90" class="plusline">+                                ctrLog.log(Level.FINE, &quot;ConfigureNotify on parent of {0}. Move detected. Skipping.&quot;,</span><a href="#l20.90"></a>
+<span id="l20.91" class="plusline">+                                           String.valueOf(XTrayIconPeer.this));</span><a href="#l20.91"></a>
+<span id="l20.92" class="plusline">+                            }</span><a href="#l20.92"></a>
+<span id="l20.93">                         }</span><a href="#l20.93"></a>
+<span id="l20.94">                     }</span><a href="#l20.94"></a>
+<span id="l20.95">                     old_x = ce.get_x();</span><a href="#l20.95"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l21.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XWM.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l21.1"></a>
+<span id="l21.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XWM.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l21.2"></a>
+<span id="l21.3" class="atline">@@ -398,7 +398,10 @@</span><a href="#l21.3"></a>
+<span id="l21.4">     static boolean isCDE() {</span><a href="#l21.4"></a>
+<span id="l21.5"> </span><a href="#l21.5"></a>
+<span id="l21.6">         if (!XA_DT_SM_WINDOW_INFO.isInterned()) {</span><a href="#l21.6"></a>
+<span id="l21.7" class="minusline">-            log.log(Level.FINER, &quot;{0} is not interned&quot;, new Object[] {XA_DT_SM_WINDOW_INFO});</span><a href="#l21.7"></a>
+<span id="l21.8" class="plusline">+            if (log.isLoggable(Level.FINER)) {</span><a href="#l21.8"></a>
+<span id="l21.9" class="plusline">+                log.log(Level.FINER, &quot;{0} is not interned&quot;,</span><a href="#l21.9"></a>
+<span id="l21.10" class="plusline">+                        new Object[] {String.valueOf(XA_DT_SM_WINDOW_INFO)});</span><a href="#l21.10"></a>
+<span id="l21.11" class="plusline">+            }</span><a href="#l21.11"></a>
+<span id="l21.12">             return false;</span><a href="#l21.12"></a>
+<span id="l21.13">         }</span><a href="#l21.13"></a>
+<span id="l21.14"> </span><a href="#l21.14"></a>
+<span id="l21.15" class="atline">@@ -429,7 +432,10 @@</span><a href="#l21.15"></a>
+<span id="l21.16"> </span><a href="#l21.16"></a>
+<span id="l21.17">             /* Now check that this window has _DT_SM_STATE_INFO (ignore contents) */</span><a href="#l21.17"></a>
+<span id="l21.18">             if (!XA_DT_SM_STATE_INFO.isInterned()) {</span><a href="#l21.18"></a>
+<span id="l21.19" class="minusline">-                log.log(Level.FINER, &quot;{0} is not interned&quot;, new Object[] {XA_DT_SM_STATE_INFO});</span><a href="#l21.19"></a>
+<span id="l21.20" class="plusline">+                if (log.isLoggable(Level.FINER)) {</span><a href="#l21.20"></a>
+<span id="l21.21" class="plusline">+                    log.log(Level.FINER, &quot;{0} is not interned&quot;,</span><a href="#l21.21"></a>
+<span id="l21.22" class="plusline">+                            new Object[] {String.valueOf(XA_DT_SM_STATE_INFO)});</span><a href="#l21.22"></a>
+<span id="l21.23" class="plusline">+                }</span><a href="#l21.23"></a>
+<span id="l21.24">                 return false;</span><a href="#l21.24"></a>
+<span id="l21.25">             }</span><a href="#l21.25"></a>
+<span id="l21.26">             WindowPropertyGetter getter2 =</span><a href="#l21.26"></a>
+<span id="l21.27" class="atline">@@ -608,7 +614,10 @@</span><a href="#l21.27"></a>
+<span id="l21.28">          */</span><a href="#l21.28"></a>
+<span id="l21.29"> </span><a href="#l21.29"></a>
+<span id="l21.30">         if (!XA_ICEWM_WINOPTHINT.isInterned()) {</span><a href="#l21.30"></a>
+<span id="l21.31" class="minusline">-            log.log(Level.FINER, &quot;{0} is not interned&quot;, new Object[] {XA_ICEWM_WINOPTHINT});</span><a href="#l21.31"></a>
+<span id="l21.32" class="plusline">+            if (log.isLoggable(Level.FINER)) {</span><a href="#l21.32"></a>
+<span id="l21.33" class="plusline">+                log.log(Level.FINER, &quot;{0} is not interned&quot;,</span><a href="#l21.33"></a>
+<span id="l21.34" class="plusline">+                        new Object[] {String.valueOf(XA_ICEWM_WINOPTHINT)});</span><a href="#l21.34"></a>
+<span id="l21.35" class="plusline">+            }</span><a href="#l21.35"></a>
+<span id="l21.36">             return false;</span><a href="#l21.36"></a>
+<span id="l21.37">         }</span><a href="#l21.37"></a>
+<span id="l21.38"> </span><a href="#l21.38"></a>
+<span id="l21.39" class="atline">@@ -641,7 +650,10 @@</span><a href="#l21.39"></a>
+<span id="l21.40">      */</span><a href="#l21.40"></a>
+<span id="l21.41">     static boolean isIceWM() {</span><a href="#l21.41"></a>
+<span id="l21.42">         if (!XA_ICEWM_WINOPTHINT.isInterned()) {</span><a href="#l21.42"></a>
+<span id="l21.43" class="minusline">-            log.log(Level.FINER, &quot;{0} is not interned&quot;, new Object[] {XA_ICEWM_WINOPTHINT});</span><a href="#l21.43"></a>
+<span id="l21.44" class="plusline">+            if (log.isLoggable(Level.FINER)) {</span><a href="#l21.44"></a>
+<span id="l21.45" class="plusline">+                log.log(Level.FINER, &quot;{0} is not interned&quot;,</span><a href="#l21.45"></a>
+<span id="l21.46" class="plusline">+                        new Object[] {String.valueOf(XA_ICEWM_WINOPTHINT)});</span><a href="#l21.46"></a>
+<span id="l21.47" class="plusline">+            }</span><a href="#l21.47"></a>
+<span id="l21.48">             return false;</span><a href="#l21.48"></a>
+<span id="l21.49">         }</span><a href="#l21.49"></a>
+<span id="l21.50"> </span><a href="#l21.50"></a>
+<span id="l21.51" class="atline">@@ -1376,8 +1388,9 @@</span><a href="#l21.51"></a>
+<span id="l21.52">         XNETProtocol net_protocol = getWM().getNETProtocol();</span><a href="#l21.52"></a>
+<span id="l21.53">         if (net_protocol != null &amp;&amp; net_protocol.active()) {</span><a href="#l21.53"></a>
+<span id="l21.54">             Insets insets = getInsetsFromProp(window, XA_NET_FRAME_EXTENTS);</span><a href="#l21.54"></a>
+<span id="l21.55" class="minusline">-            insLog.log(Level.FINE, &quot;_NET_FRAME_EXTENTS: {0}&quot;, insets);</span><a href="#l21.55"></a>
+<span id="l21.56" class="minusline">-</span><a href="#l21.56"></a>
+<span id="l21.57" class="plusline">+            if (insLog.isLoggable(Level.FINE)) {</span><a href="#l21.57"></a>
+<span id="l21.58" class="plusline">+                insLog.log(Level.FINE, &quot;_NET_FRAME_EXTENTS: {0}&quot;, String.valueOf(insets));</span><a href="#l21.58"></a>
+<span id="l21.59" class="plusline">+            }</span><a href="#l21.59"></a>
+<span id="l21.60">             if (insets != null) {</span><a href="#l21.60"></a>
+<span id="l21.61">                 return insets;</span><a href="#l21.61"></a>
+<span id="l21.62">             }</span><a href="#l21.62"></a>
+<span id="l21.63" class="atline">@@ -1515,7 +1528,9 @@</span><a href="#l21.63"></a>
+<span id="l21.64">          *       [mwm, e!, kwin, fvwm2 ... ]</span><a href="#l21.64"></a>
+<span id="l21.65">          */</span><a href="#l21.65"></a>
+<span id="l21.66">         Insets correctWM = XWM.getInsetsFromExtents(window);</span><a href="#l21.66"></a>
+<span id="l21.67" class="minusline">-        insLog.log(Level.FINER, &quot;Got insets from property: {0}&quot;, correctWM);</span><a href="#l21.67"></a>
+<span id="l21.68" class="plusline">+        if (insLog.isLoggable(Level.FINER)) {</span><a href="#l21.68"></a>
+<span id="l21.69" class="plusline">+            insLog.log(Level.FINER, &quot;Got insets from property: {0}&quot;, String.valueOf(correctWM));</span><a href="#l21.69"></a>
+<span id="l21.70" class="plusline">+        }</span><a href="#l21.70"></a>
+<span id="l21.71"> </span><a href="#l21.71"></a>
+<span id="l21.72">         if (correctWM == null) {</span><a href="#l21.72"></a>
+<span id="l21.73">             correctWM = new Insets(0,0,0,0);</span><a href="#l21.73"></a>
+<span id="l21.74" class="atline">@@ -1576,7 +1591,10 @@</span><a href="#l21.74"></a>
+<span id="l21.75">                   }</span><a href="#l21.75"></a>
+<span id="l21.76">                   case XWM.OTHER_WM:</span><a href="#l21.76"></a>
+<span id="l21.77">                   default: {                /* this is very similar to the E! case above */</span><a href="#l21.77"></a>
+<span id="l21.78" class="minusline">-                      insLog.log(Level.FINEST, &quot;Getting correct insets for OTHER_WM/default, parent: {0}&quot;, parent);</span><a href="#l21.78"></a>
+<span id="l21.79" class="plusline">+                      if (insLog.isLoggable(Level.FINEST)) {</span><a href="#l21.79"></a>
+<span id="l21.80" class="plusline">+                          insLog.log(Level.FINEST, &quot;Getting correct insets for OTHER_WM/default, parent: {0}&quot;,</span><a href="#l21.80"></a>
+<span id="l21.81" class="plusline">+                                                   String.valueOf(parent));</span><a href="#l21.81"></a>
+<span id="l21.82" class="plusline">+                      }</span><a href="#l21.82"></a>
+<span id="l21.83">                       syncTopLevelPos(parent, lwinAttr);</span><a href="#l21.83"></a>
+<span id="l21.84">                       int status = XlibWrapper.XGetWindowAttributes(XToolkit.getDisplay(),</span><a href="#l21.84"></a>
+<span id="l21.85">                                                                     window, lwinAttr.pData);</span><a href="#l21.85"></a>
+<span id="l21.86" class="atline">@@ -1603,8 +1621,11 @@</span><a href="#l21.86"></a>
+<span id="l21.87">                           &amp;&amp; lwinAttr.get_width()+2*lwinAttr.get_border_width() == pattr.get_width()</span><a href="#l21.87"></a>
+<span id="l21.88">                           &amp;&amp; lwinAttr.get_height()+2*lwinAttr.get_border_width() == pattr.get_height())</span><a href="#l21.88"></a>
+<span id="l21.89">                       {</span><a href="#l21.89"></a>
+<span id="l21.90" class="minusline">-                          insLog.log(Level.FINEST, &quot;Double reparenting detected, pattr({2})={0}, lwinAttr({3})={1}&quot;,</span><a href="#l21.90"></a>
+<span id="l21.91" class="minusline">-                                     new Object[] {lwinAttr, pattr, parent, window});</span><a href="#l21.91"></a>
+<span id="l21.92" class="plusline">+                          if (insLog.isLoggable(Level.FINEST)) {</span><a href="#l21.92"></a>
+<span id="l21.93" class="plusline">+                              insLog.log(Level.FINEST, &quot;Double reparenting detected, pattr({2})={0}, lwinAttr({3})={1}&quot;,</span><a href="#l21.93"></a>
+<span id="l21.94" class="plusline">+                                         new Object[] {String.valueOf(lwinAttr), String.valueOf(pattr),</span><a href="#l21.94"></a>
+<span id="l21.95" class="plusline">+                                                       String.valueOf(parent), String.valueOf(window)});</span><a href="#l21.95"></a>
+<span id="l21.96" class="plusline">+                          }</span><a href="#l21.96"></a>
+<span id="l21.97">                           lwinAttr.set_x(pattr.get_x());</span><a href="#l21.97"></a>
+<span id="l21.98">                           lwinAttr.set_y(pattr.get_y());</span><a href="#l21.98"></a>
+<span id="l21.99">                           lwinAttr.set_border_width(lwinAttr.get_border_width()+pattr.get_border_width());</span><a href="#l21.99"></a>
+<span id="l21.100" class="atline">@@ -1631,8 +1652,11 @@</span><a href="#l21.100"></a>
+<span id="l21.101">                        * widths and inner/outer distinction, so for the time</span><a href="#l21.101"></a>
+<span id="l21.102">                        * being, just ignore it.</span><a href="#l21.102"></a>
+<span id="l21.103">                        */</span><a href="#l21.103"></a>
+<span id="l21.104" class="minusline">-                      insLog.log(Level.FINEST, &quot;Attrs before calculation: pattr({2})={0}, lwinAttr({3})={1}&quot;,</span><a href="#l21.104"></a>
+<span id="l21.105" class="minusline">-                                 new Object[] {lwinAttr, pattr, parent, window});</span><a href="#l21.105"></a>
+<span id="l21.106" class="plusline">+                      if (insLog.isLoggable(Level.FINEST)) {</span><a href="#l21.106"></a>
+<span id="l21.107" class="plusline">+                          insLog.log(Level.FINEST, &quot;Attrs before calculation: pattr({2})={0}, lwinAttr({3})={1}&quot;,</span><a href="#l21.107"></a>
+<span id="l21.108" class="plusline">+                                     new Object[] {String.valueOf(lwinAttr), String.valueOf(pattr),</span><a href="#l21.108"></a>
+<span id="l21.109" class="plusline">+                                                   String.valueOf(parent), String.valueOf(window)});</span><a href="#l21.109"></a>
+<span id="l21.110" class="plusline">+                      }</span><a href="#l21.110"></a>
+<span id="l21.111">                       correctWM = new Insets(lwinAttr.get_y() + lwinAttr.get_border_width(),</span><a href="#l21.111"></a>
+<span id="l21.112">                                              lwinAttr.get_x() + lwinAttr.get_border_width(),</span><a href="#l21.112"></a>
+<span id="l21.113">                                              pattr.get_height() - (lwinAttr.get_y() + lwinAttr.get_height() + 2*lwinAttr.get_border_width()),</span><a href="#l21.113"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l22.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XWindow.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l22.1"></a>
+<span id="l22.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XWindow.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l22.2"></a>
+<span id="l22.3" class="atline">@@ -901,8 +901,10 @@</span><a href="#l22.3"></a>
+<span id="l22.4">         Rectangle oldBounds = getBounds();</span><a href="#l22.4"></a>
+<span id="l22.5"> </span><a href="#l22.5"></a>
+<span id="l22.6">         super.handleConfigureNotifyEvent(xev);</span><a href="#l22.6"></a>
+<span id="l22.7" class="minusline">-        insLog.log(Level.FINER, &quot;Configure, {0}, event disabled: {1}&quot;,</span><a href="#l22.7"></a>
+<span id="l22.8" class="minusline">-                   new Object[] {xev, isEventDisabled(xev)});</span><a href="#l22.8"></a>
+<span id="l22.9" class="plusline">+        if (insLog.isLoggable(Level.FINER)) {</span><a href="#l22.9"></a>
+<span id="l22.10" class="plusline">+            insLog.log(Level.FINER, &quot;Configure, {0}, event disabled: {1}&quot;,</span><a href="#l22.10"></a>
+<span id="l22.11" class="plusline">+                       new Object[] {String.valueOf(xev), isEventDisabled(xev)});</span><a href="#l22.11"></a>
+<span id="l22.12" class="plusline">+        }</span><a href="#l22.12"></a>
+<span id="l22.13">         if (isEventDisabled(xev)) {</span><a href="#l22.13"></a>
+<span id="l22.14">             return;</span><a href="#l22.14"></a>
+<span id="l22.15">         }</span><a href="#l22.15"></a>
+<span id="l22.16" class="atline">@@ -923,7 +925,9 @@</span><a href="#l22.16"></a>
+<span id="l22.17"> </span><a href="#l22.17"></a>
+<span id="l22.18">     public void handleMapNotifyEvent(XEvent xev) {</span><a href="#l22.18"></a>
+<span id="l22.19">         super.handleMapNotifyEvent(xev);</span><a href="#l22.19"></a>
+<span id="l22.20" class="minusline">-        log.log(Level.FINE, &quot;Mapped {0}&quot;, new Object[] {this});</span><a href="#l22.20"></a>
+<span id="l22.21" class="plusline">+        if (log.isLoggable(Level.FINE)) {</span><a href="#l22.21"></a>
+<span id="l22.22" class="plusline">+            log.log(Level.FINE, &quot;Mapped {0}&quot;, new Object[] {String.valueOf(this)});</span><a href="#l22.22"></a>
+<span id="l22.23" class="plusline">+        }</span><a href="#l22.23"></a>
+<span id="l22.24">         if (isEventDisabled(xev)) {</span><a href="#l22.24"></a>
+<span id="l22.25">             return;</span><a href="#l22.25"></a>
+<span id="l22.26">         }</span><a href="#l22.26"></a>
+<span id="l22.27" class="atline">@@ -1151,10 +1155,14 @@</span><a href="#l22.27"></a>
+<span id="l22.28">     void updateSizeHints(int x, int y, int width, int height) {</span><a href="#l22.28"></a>
+<span id="l22.29">         long flags = XlibWrapper.PSize | (isLocationByPlatform() ? 0 : (XlibWrapper.PPosition | XlibWrapper.USPosition));</span><a href="#l22.29"></a>
+<span id="l22.30">         if (!isResizable()) {</span><a href="#l22.30"></a>
+<span id="l22.31" class="minusline">-            log.log(Level.FINER, &quot;Window {0} is not resizable&quot;, new Object[] {this});</span><a href="#l22.31"></a>
+<span id="l22.32" class="plusline">+            if (log.isLoggable(Level.FINER)) {</span><a href="#l22.32"></a>
+<span id="l22.33" class="plusline">+                log.log(Level.FINER, &quot;Window {0} is not resizable&quot;, new Object[] {String.valueOf(this)});</span><a href="#l22.33"></a>
+<span id="l22.34" class="plusline">+            }</span><a href="#l22.34"></a>
+<span id="l22.35">             flags |= XlibWrapper.PMinSize | XlibWrapper.PMaxSize;</span><a href="#l22.35"></a>
+<span id="l22.36">         } else {</span><a href="#l22.36"></a>
+<span id="l22.37" class="minusline">-            log.log(Level.FINER, &quot;Window {0} is resizable&quot;, new Object[] {this});</span><a href="#l22.37"></a>
+<span id="l22.38" class="plusline">+            if (log.isLoggable(Level.FINER)) {</span><a href="#l22.38"></a>
+<span id="l22.39" class="plusline">+                log.log(Level.FINER, &quot;Window {0} is resizable&quot;, new Object[] {String.valueOf(this)});</span><a href="#l22.39"></a>
+<span id="l22.40" class="plusline">+            }</span><a href="#l22.40"></a>
+<span id="l22.41">         }</span><a href="#l22.41"></a>
+<span id="l22.42">         setSizeHints(flags, x, y, width, height);</span><a href="#l22.42"></a>
+<span id="l22.43">     }</span><a href="#l22.43"></a>
+<span id="l22.44" class="atline">@@ -1162,10 +1170,14 @@</span><a href="#l22.44"></a>
+<span id="l22.45">     void updateSizeHints(int x, int y) {</span><a href="#l22.45"></a>
+<span id="l22.46">         long flags = isLocationByPlatform() ? 0 : (XlibWrapper.PPosition | XlibWrapper.USPosition);</span><a href="#l22.46"></a>
+<span id="l22.47">         if (!isResizable()) {</span><a href="#l22.47"></a>
+<span id="l22.48" class="minusline">-            log.log(Level.FINER, &quot;Window {0} is not resizable&quot;, new Object[] {this});</span><a href="#l22.48"></a>
+<span id="l22.49" class="plusline">+            if (log.isLoggable(Level.FINER)) {</span><a href="#l22.49"></a>
+<span id="l22.50" class="plusline">+                log.log(Level.FINER, &quot;Window {0} is not resizable&quot;, new Object[] {String.valueOf(this)});</span><a href="#l22.50"></a>
+<span id="l22.51" class="plusline">+            }</span><a href="#l22.51"></a>
+<span id="l22.52">             flags |= XlibWrapper.PMinSize | XlibWrapper.PMaxSize | XlibWrapper.PSize;</span><a href="#l22.52"></a>
+<span id="l22.53">         } else {</span><a href="#l22.53"></a>
+<span id="l22.54" class="minusline">-            log.log(Level.FINER, &quot;Window {0} is resizable&quot;, new Object[] {this});</span><a href="#l22.54"></a>
+<span id="l22.55" class="plusline">+            if (log.isLoggable(Level.FINER)) {</span><a href="#l22.55"></a>
+<span id="l22.56" class="plusline">+                log.log(Level.FINER, &quot;Window {0} is resizable&quot;, new Object[] {String.valueOf(this)});</span><a href="#l22.56"></a>
+<span id="l22.57" class="plusline">+            }</span><a href="#l22.57"></a>
+<span id="l22.58">         }</span><a href="#l22.58"></a>
+<span id="l22.59">         setSizeHints(flags, x, y, width, height);</span><a href="#l22.59"></a>
+<span id="l22.60">     }</span><a href="#l22.60"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l23.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11/XWindowPeer.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l23.1"></a>
+<span id="l23.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11/XWindowPeer.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l23.2"></a>
+<span id="l23.3" class="atline">@@ -376,7 +376,7 @@</span><a href="#l23.3"></a>
+<span id="l23.4">         if (iconLog.isLoggable(Level.FINEST)) {</span><a href="#l23.4"></a>
+<span id="l23.5">             iconLog.log(Level.FINEST, &quot;&gt;&gt;&gt; Sizes of icon images:&quot;);</span><a href="#l23.5"></a>
+<span id="l23.6">             for (Iterator&lt;XIconInfo&gt; i = icons.iterator(); i.hasNext(); ) {</span><a href="#l23.6"></a>
+<span id="l23.7" class="minusline">-                iconLog.log(Level.FINEST, &quot;    {0}&quot;, i.next());</span><a href="#l23.7"></a>
+<span id="l23.8" class="plusline">+                iconLog.log(Level.FINEST, &quot;    {0}&quot;, String.valueOf(i.next()));</span><a href="#l23.8"></a>
+<span id="l23.9">             }</span><a href="#l23.9"></a>
+<span id="l23.10">         }</span><a href="#l23.10"></a>
+<span id="l23.11">     }</span><a href="#l23.11"></a>
+<span id="l23.12" class="atline">@@ -826,7 +826,9 @@</span><a href="#l23.12"></a>
+<span id="l23.13">     public void handleFocusEvent(XEvent xev) {</span><a href="#l23.13"></a>
+<span id="l23.14">         XFocusChangeEvent xfe = xev.get_xfocus();</span><a href="#l23.14"></a>
+<span id="l23.15">         FocusEvent fe;</span><a href="#l23.15"></a>
+<span id="l23.16" class="minusline">-        focusLog.log(Level.FINE, &quot;{0}&quot;, new Object[] {xfe});</span><a href="#l23.16"></a>
+<span id="l23.17" class="plusline">+        if (focusLog.isLoggable(Level.FINER)) {</span><a href="#l23.17"></a>
+<span id="l23.18" class="plusline">+            focusLog.log(Level.FINER, &quot;{0}&quot;, new Object[] {String.valueOf(xfe)});</span><a href="#l23.18"></a>
+<span id="l23.19" class="plusline">+        }</span><a href="#l23.19"></a>
+<span id="l23.20">         if (isEventDisabled(xev)) {</span><a href="#l23.20"></a>
+<span id="l23.21">             return;</span><a href="#l23.21"></a>
+<span id="l23.22">         }</span><a href="#l23.22"></a>
+<span id="l23.23" class="atline">@@ -1438,7 +1440,10 @@</span><a href="#l23.23"></a>
+<span id="l23.24">             synchronized(getStateLock()) {</span><a href="#l23.24"></a>
+<span id="l23.25">                 XDialogPeer blockerPeer = (XDialogPeer) ComponentAccessor.getPeer(d);</span><a href="#l23.25"></a>
+<span id="l23.26">                 if (blocked) {</span><a href="#l23.26"></a>
+<span id="l23.27" class="minusline">-                    log.log(Level.FINE, &quot;{0} is blocked by {1}&quot;, new Object[] { this, blockerPeer});</span><a href="#l23.27"></a>
+<span id="l23.28" class="plusline">+                    if (log.isLoggable(Level.FINE)) {</span><a href="#l23.28"></a>
+<span id="l23.29" class="plusline">+                        log.log(Level.FINE, &quot;{0} is blocked by {1}&quot;,</span><a href="#l23.29"></a>
+<span id="l23.30" class="plusline">+                                new Object[] { String.valueOf(this), String.valueOf(blockerPeer)});</span><a href="#l23.30"></a>
+<span id="l23.31" class="plusline">+                    }</span><a href="#l23.31"></a>
+<span id="l23.32">                     modalBlocker = d;</span><a href="#l23.32"></a>
+<span id="l23.33"> </span><a href="#l23.33"></a>
+<span id="l23.34">                     if (isReparented() || XWM.isNonReparentingWM()) {</span><a href="#l23.34"></a>
+<span id="l23.35" class="atline">@@ -1899,7 +1904,9 @@</span><a href="#l23.35"></a>
+<span id="l23.36">             wm_set_insets = XWM.getInsetsFromProp(getWindow(), changedAtom);</span><a href="#l23.36"></a>
+<span id="l23.37">         }</span><a href="#l23.37"></a>
+<span id="l23.38"> </span><a href="#l23.38"></a>
+<span id="l23.39" class="minusline">-        insLog.log(Level.FINER, &quot;FRAME_EXTENTS: {0}&quot;, new Object[]{wm_set_insets});</span><a href="#l23.39"></a>
+<span id="l23.40" class="plusline">+        if (insLog.isLoggable(Level.FINER)) {</span><a href="#l23.40"></a>
+<span id="l23.41" class="plusline">+            insLog.log(Level.FINER, &quot;FRAME_EXTENTS: {0}&quot;, new Object[]{String.valueOf(wm_set_insets)});</span><a href="#l23.41"></a>
+<span id="l23.42" class="plusline">+        }</span><a href="#l23.42"></a>
+<span id="l23.43"> </span><a href="#l23.43"></a>
+<span id="l23.44">         if (wm_set_insets != null) {</span><a href="#l23.44"></a>
+<span id="l23.45">             handleWMSetInsets(wm_set_insets);</span><a href="#l23.45"></a>
+<span id="l23.46" class="atline">@@ -1942,7 +1949,8 @@</span><a href="#l23.46"></a>
+<span id="l23.47">         XCrossingEvent xce = xev.get_xcrossing();</span><a href="#l23.47"></a>
+<span id="l23.48">         if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l23.48"></a>
+<span id="l23.49">             grabLog.log(Level.FINE, &quot;{0}, when grabbed {1}, contains {2}&quot;,</span><a href="#l23.49"></a>
+<span id="l23.50" class="minusline">-                        new Object[] {xce, isGrabbed(), containsGlobal(xce.get_x_root(), xce.get_y_root())});</span><a href="#l23.50"></a>
+<span id="l23.51" class="plusline">+                        new Object[] {String.valueOf(xce), isGrabbed(),</span><a href="#l23.51"></a>
+<span id="l23.52" class="plusline">+                                      containsGlobal(xce.get_x_root(), xce.get_y_root())});</span><a href="#l23.52"></a>
+<span id="l23.53">         }</span><a href="#l23.53"></a>
+<span id="l23.54">         if (isGrabbed()) {</span><a href="#l23.54"></a>
+<span id="l23.55">             // When window is grabbed, all events are dispatched to</span><a href="#l23.55"></a>
+<span id="l23.56" class="atline">@@ -1953,7 +1961,10 @@</span><a href="#l23.56"></a>
+<span id="l23.57">             // since it generates MOUSE_ENTERED/MOUSE_EXITED for frame and dialog.</span><a href="#l23.57"></a>
+<span id="l23.58">             // (fix for 6390326)</span><a href="#l23.58"></a>
+<span id="l23.59">             XBaseWindow target = XToolkit.windowToXWindow(xce.get_window());</span><a href="#l23.59"></a>
+<span id="l23.60" class="minusline">-            grabLog.log(Level.FINER, &quot;  -  Grab event target {0}&quot;, new Object[] {target});</span><a href="#l23.60"></a>
+<span id="l23.61" class="plusline">+            if (grabLog.isLoggable(Level.FINER)) {</span><a href="#l23.61"></a>
+<span id="l23.62" class="plusline">+                grabLog.log(Level.FINER, &quot;  -  Grab event target {0}&quot;,</span><a href="#l23.62"></a>
+<span id="l23.63" class="plusline">+                            new Object[] {String.valueOf(target)});</span><a href="#l23.63"></a>
+<span id="l23.64" class="plusline">+            }</span><a href="#l23.64"></a>
+<span id="l23.65">             if (target != null &amp;&amp; target != this) {</span><a href="#l23.65"></a>
+<span id="l23.66">                 target.dispatchEvent(xev);</span><a href="#l23.66"></a>
+<span id="l23.67">                 return;</span><a href="#l23.67"></a>
+<span id="l23.68" class="atline">@@ -1966,7 +1977,8 @@</span><a href="#l23.68"></a>
+<span id="l23.69">         XMotionEvent xme = xev.get_xmotion();</span><a href="#l23.69"></a>
+<span id="l23.70">         if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l23.70"></a>
+<span id="l23.71">             grabLog.log(Level.FINER, &quot;{0}, when grabbed {1}, contains {2}&quot;,</span><a href="#l23.71"></a>
+<span id="l23.72" class="minusline">-                        new Object[] {xme, isGrabbed(), containsGlobal(xme.get_x_root(), xme.get_y_root())});</span><a href="#l23.72"></a>
+<span id="l23.73" class="plusline">+                        new Object[] {String.valueOf(xme), isGrabbed(),</span><a href="#l23.73"></a>
+<span id="l23.74" class="plusline">+                                      containsGlobal(xme.get_x_root(), xme.get_y_root())});</span><a href="#l23.74"></a>
+<span id="l23.75">         }</span><a href="#l23.75"></a>
+<span id="l23.76">         if (isGrabbed()) {</span><a href="#l23.76"></a>
+<span id="l23.77">             boolean dragging = (xme.get_state() &amp; (Button1Mask | Button2Mask | Button3Mask)) != 0;</span><a href="#l23.77"></a>
+<span id="l23.78" class="atline">@@ -1986,7 +1998,10 @@</span><a href="#l23.78"></a>
+<span id="l23.79">                 xme.set_x(xme.get_x_root() - target.getX());</span><a href="#l23.79"></a>
+<span id="l23.80">                 xme.set_y(xme.get_y_root() - target.getY());</span><a href="#l23.80"></a>
+<span id="l23.81">             }</span><a href="#l23.81"></a>
+<span id="l23.82" class="minusline">-            grabLog.log(Level.FINER, &quot;  -  Grab event target {0}&quot;, new Object[] {target});</span><a href="#l23.82"></a>
+<span id="l23.83" class="plusline">+            if (grabLog.isLoggable(Level.FINER)) {</span><a href="#l23.83"></a>
+<span id="l23.84" class="plusline">+                grabLog.log(Level.FINER, &quot;  -  Grab event target {0}&quot;,</span><a href="#l23.84"></a>
+<span id="l23.85" class="plusline">+                            new Object[] {String.valueOf(target)});</span><a href="#l23.85"></a>
+<span id="l23.86" class="plusline">+            }</span><a href="#l23.86"></a>
+<span id="l23.87">             if (target != null) {</span><a href="#l23.87"></a>
+<span id="l23.88">                 if (target != getContentXWindow() &amp;&amp; target != this) {</span><a href="#l23.88"></a>
+<span id="l23.89">                     target.dispatchEvent(xev);</span><a href="#l23.89"></a>
+<span id="l23.90" class="atline">@@ -2011,7 +2026,8 @@</span><a href="#l23.90"></a>
+<span id="l23.91">         XButtonEvent xbe = xev.get_xbutton();</span><a href="#l23.91"></a>
+<span id="l23.92">         if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l23.92"></a>
+<span id="l23.93">             grabLog.log(Level.FINE, &quot;{0}, when grabbed {1}, contains {2} ({3}, {4}, {5}x{6})&quot;,</span><a href="#l23.93"></a>
+<span id="l23.94" class="minusline">-                        new Object[] {xbe, isGrabbed(), containsGlobal(xbe.get_x_root(), xbe.get_y_root()), getAbsoluteX(), getAbsoluteY(), getWidth(), getHeight()});</span><a href="#l23.94"></a>
+<span id="l23.95" class="plusline">+                        new Object[] {String.valueOf(xbe), isGrabbed(), containsGlobal(xbe.get_x_root(),</span><a href="#l23.95"></a>
+<span id="l23.96" class="plusline">+                                      xbe.get_y_root()), getAbsoluteX(), getAbsoluteY(), getWidth(), getHeight()});</span><a href="#l23.96"></a>
+<span id="l23.97">         }</span><a href="#l23.97"></a>
+<span id="l23.98">         if (isGrabbed()) {</span><a href="#l23.98"></a>
+<span id="l23.99">             // When window is grabbed, all events are dispatched to</span><a href="#l23.99"></a>
+<span id="l23.100" class="atline">@@ -2020,7 +2036,10 @@</span><a href="#l23.100"></a>
+<span id="l23.101">             // translation)</span><a href="#l23.101"></a>
+<span id="l23.102">             XBaseWindow target = XToolkit.windowToXWindow(xbe.get_window());</span><a href="#l23.102"></a>
+<span id="l23.103">             try {</span><a href="#l23.103"></a>
+<span id="l23.104" class="minusline">-                grabLog.log(Level.FINER, &quot;  -  Grab event target {0} (press target {1})&quot;, new Object[] {target, pressTarget});</span><a href="#l23.104"></a>
+<span id="l23.105" class="plusline">+                if (grabLog.isLoggable(Level.FINER)) {</span><a href="#l23.105"></a>
+<span id="l23.106" class="plusline">+                    grabLog.log(Level.FINER, &quot;  -  Grab event target {0} (press target {1})&quot;,</span><a href="#l23.106"></a>
+<span id="l23.107" class="plusline">+                                new Object[] {String.valueOf(target), String.valueOf(pressTarget)});</span><a href="#l23.107"></a>
+<span id="l23.108" class="plusline">+                }</span><a href="#l23.108"></a>
+<span id="l23.109">                 if (xbe.get_type() == XConstants.ButtonPress</span><a href="#l23.109"></a>
+<span id="l23.110">                     &amp;&amp; xbe.get_button() == XlibWrapper.Button1)</span><a href="#l23.110"></a>
+<span id="l23.111">                 {</span><a href="#l23.111"></a>
+<span id="l23.112" class="atline">@@ -2052,7 +2071,10 @@</span><a href="#l23.112"></a>
+<span id="l23.113">                         // Outside this toplevel hierarchy</span><a href="#l23.113"></a>
+<span id="l23.114">                         // According to the specification of UngrabEvent, post it</span><a href="#l23.114"></a>
+<span id="l23.115">                         // when press occurs outside of the window and not on its owned windows</span><a href="#l23.115"></a>
+<span id="l23.116" class="minusline">-                        grabLog.log(Level.FINE, &quot;Generating UngrabEvent on {0} because not inside of shell&quot;, this);</span><a href="#l23.116"></a>
+<span id="l23.117" class="plusline">+                        if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l23.117"></a>
+<span id="l23.118" class="plusline">+                            grabLog.log(Level.FINE, &quot;Generating UngrabEvent on {0} because not inside of shell&quot;,</span><a href="#l23.118"></a>
+<span id="l23.119" class="plusline">+                                        String.valueOf(this));</span><a href="#l23.119"></a>
+<span id="l23.120" class="plusline">+                        }</span><a href="#l23.120"></a>
+<span id="l23.121">                         postEventToEventQueue(new sun.awt.UngrabEvent(getEventSource()));</span><a href="#l23.121"></a>
+<span id="l23.122">                         return;</span><a href="#l23.122"></a>
+<span id="l23.123">                     }</span><a href="#l23.123"></a>
+<span id="l23.124" class="atline">@@ -2070,18 +2092,27 @@</span><a href="#l23.124"></a>
+<span id="l23.125">                             // toplevel == null - outside of</span><a href="#l23.125"></a>
+<span id="l23.126">                             // hierarchy, toplevel is Dialog - should</span><a href="#l23.126"></a>
+<span id="l23.127">                             // send ungrab (but shouldn't for Window)</span><a href="#l23.127"></a>
+<span id="l23.128" class="minusline">-                            grabLog.log(Level.FINE, &quot;Generating UngrabEvent on {0} because hierarchy ended&quot;, this);</span><a href="#l23.128"></a>
+<span id="l23.129" class="plusline">+                            if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l23.129"></a>
+<span id="l23.130" class="plusline">+                                grabLog.log(Level.FINE, &quot;Generating UngrabEvent on {0} because hierarchy ended&quot;,</span><a href="#l23.130"></a>
+<span id="l23.131" class="plusline">+                                            String.valueOf(this));</span><a href="#l23.131"></a>
+<span id="l23.132" class="plusline">+                            }</span><a href="#l23.132"></a>
+<span id="l23.133">                             postEventToEventQueue(new sun.awt.UngrabEvent(getEventSource()));</span><a href="#l23.133"></a>
+<span id="l23.134">                         }</span><a href="#l23.134"></a>
+<span id="l23.135">                     } else {</span><a href="#l23.135"></a>
+<span id="l23.136">                         // toplevel is null - outside of hierarchy</span><a href="#l23.136"></a>
+<span id="l23.137" class="minusline">-                        grabLog.log(Level.FINE, &quot;Generating UngrabEvent on {0} because toplevel is null&quot;, this);</span><a href="#l23.137"></a>
+<span id="l23.138" class="plusline">+                        if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l23.138"></a>
+<span id="l23.139" class="plusline">+                            grabLog.log(Level.FINE, &quot;Generating UngrabEvent on {0} because toplevel is null&quot;,</span><a href="#l23.139"></a>
+<span id="l23.140" class="plusline">+                                        String.valueOf(this));</span><a href="#l23.140"></a>
+<span id="l23.141" class="plusline">+                        }</span><a href="#l23.141"></a>
+<span id="l23.142">                         postEventToEventQueue(new sun.awt.UngrabEvent(getEventSource()));</span><a href="#l23.142"></a>
+<span id="l23.143">                         return;</span><a href="#l23.143"></a>
+<span id="l23.144">                     }</span><a href="#l23.144"></a>
+<span id="l23.145">                 } else {</span><a href="#l23.145"></a>
+<span id="l23.146">                     // target doesn't map to XAWT window - outside of hierarchy</span><a href="#l23.146"></a>
+<span id="l23.147" class="minusline">-                    grabLog.log(Level.FINE, &quot;Generating UngrabEvent on because target is null {0}&quot;, this);</span><a href="#l23.147"></a>
+<span id="l23.148" class="plusline">+                    if (grabLog.isLoggable(Level.FINE)) {</span><a href="#l23.148"></a>
+<span id="l23.149" class="plusline">+                        grabLog.log(Level.FINE, &quot;Generating UngrabEvent on because target is null {0}&quot;,</span><a href="#l23.149"></a>
+<span id="l23.150" class="plusline">+                                    String.valueOf(this));</span><a href="#l23.150"></a>
+<span id="l23.151" class="plusline">+                    }</span><a href="#l23.151"></a>
+<span id="l23.152">                     postEventToEventQueue(new sun.awt.UngrabEvent(getEventSource()));</span><a href="#l23.152"></a>
+<span id="l23.153">                     return;</span><a href="#l23.153"></a>
+<span id="l23.154">                 }</span><a href="#l23.154"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l24.1" class="minusline">--- a/src/solaris/classes/sun/awt/X11InputMethod.java	Tue Aug 18 11:13:57 2009 +0800</span><a href="#l24.1"></a>
+<span id="l24.2" class="plusline">+++ b/src/solaris/classes/sun/awt/X11InputMethod.java	Thu Aug 20 18:20:07 2009 +0400</span><a href="#l24.2"></a>
+<span id="l24.3" class="atline">@@ -324,8 +324,11 @@</span><a href="#l24.3"></a>
+<span id="l24.4">             return;</span><a href="#l24.4"></a>
+<span id="l24.5"> </span><a href="#l24.5"></a>
+<span id="l24.6">         if (lastXICFocussedComponent != null){</span><a href="#l24.6"></a>
+<span id="l24.7" class="minusline">-            if (log.isLoggable(Level.FINE)) log.log(Level.FINE, &quot;XICFocused {0}, AWTFocused {1}&quot;, new Object[] {</span><a href="#l24.7"></a>
+<span id="l24.8" class="minusline">-                lastXICFocussedComponent, awtFocussedComponent});</span><a href="#l24.8"></a>
+<span id="l24.9" class="plusline">+            if (log.isLoggable(Level.FINE)) {</span><a href="#l24.9"></a>
+<span id="l24.10" class="plusline">+                log.log(Level.FINE, &quot;XICFocused {0}, AWTFocused {1}&quot;,</span><a href="#l24.10"></a>
+<span id="l24.11" class="plusline">+                        new Object[] { String.valueOf(lastXICFocussedComponent),</span><a href="#l24.11"></a>
+<span id="l24.12" class="plusline">+                                       String.valueOf(awtFocussedComponent)});</span><a href="#l24.12"></a>
+<span id="l24.13" class="plusline">+            }</span><a href="#l24.13"></a>
+<span id="l24.14">         }</span><a href="#l24.14"></a>
+<span id="l24.15"> </span><a href="#l24.15"></a>
+<span id="l24.16">         if (pData == 0) {</span><a href="#l24.16"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

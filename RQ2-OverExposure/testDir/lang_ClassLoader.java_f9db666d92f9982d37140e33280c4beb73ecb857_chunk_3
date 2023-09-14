@@ -1,0 +1,51 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     protected ClassLoader() {
+1        SecurityManager security = System.getSecurityManager();
+2        if (security != null) {
+3            security.checkCreateClassLoader();
+4        }
+5        this.parent = getSystemClassLoader();
+6        if (parallelLoaders.contains(this.getClass())) {
+7            parallelLockMap = new ConcurrentHashMap<String, Object>();
+8            package2certs = new ConcurrentHashMap<String, Certificate[]>();
+9            domains =
+10                Collections.synchronizedSet(new HashSet<ProtectionDomain>());
+11            assertionLock = new Object();
+12        } else {
+13            // no finer-grained lock; lock on the classloader instance
+14            parallelLockMap = null;
+15            package2certs = new Hashtable<String, Certificate[]>();
+16            domains = new HashSet<ProtectionDomain>();
+17            assertionLock = this;
+18        }
+19        initialized = true;
+20     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    private static Void checkCreateClassLoader() {
+1        SecurityManager security = System.getSecurityManager();
+2        if (security != null) {
+3            security.checkCreateClassLoader();
+4        }
+5        return null;
+6    }
+7
+8    private ClassLoader(Void unused, ClassLoader parent) {
+9        this.parent = parent;
+10        if (ParallelLoaders.isRegistered(this.getClass())) {
+11            parallelLockMap = new ConcurrentHashMap<>();
+12            package2certs = new ConcurrentHashMap<>();
+13            domains =
+14                Collections.synchronizedSet(new HashSet<ProtectionDomain>());
+15            assertionLock = new Object();
+16        } else {
+17            // no finer-grained lock; lock on the classloader instance
+18            parallelLockMap = null;
+19            package2certs = new Hashtable<>();
+20            domains = new HashSet<>();
+---------------------------------------------
+Differences:	['0', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+--	--	--	--	--
+Match Status: None

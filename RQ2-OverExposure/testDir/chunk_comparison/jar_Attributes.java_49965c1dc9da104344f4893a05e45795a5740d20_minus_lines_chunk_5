@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 }
+1                value = new String(buf, 0, buf.length, "UTF8");
+2                lastline = null;
+3             } else {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                }
+1                value = new String(buf, 0, buf.length, "UTF8");
+2                lastline = null;
+3            } else {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                 }
+1                value = fullLine.toString("UTF8");
+2                fullLine.reset();
+3             } else {
+--------------------------------------------

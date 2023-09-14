@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // to avoid potential conflict with metacharacters
+1        nanString = "\\Q" + dfs.getNaN() + "\\E";
+2        infinityString = "\\Q" + dfs.getInfinity() + "\\E";
+3         positivePrefix = df.getPositivePrefix();
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // to avoid potential conflict with metacharacters
+1        nanString = "\\Q" + dfs.getNaN() + "\\E";
+2        infinityString = "\\Q" + dfs.getInfinity() + "\\E";
+3        positivePrefix = df.getPositivePrefix();
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // to avoid potential conflict with metacharacters
+1        nanString = Pattern.quote(dfs.getNaN());
+2        infinityString = Pattern.quote(dfs.getInfinity());
+3         positivePrefix = df.getPositivePrefix();
+--------------------------------------------

@@ -1,0 +1,40 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     /*
+1     * Maybe return a preallocated OID, to reduce storage costs
+2     * and speed recognition of common X.500 attributes.
+3     */
+4    static ObjectIdentifier intern(ObjectIdentifier oid) {
+5        ObjectIdentifier interned = internedOIDs.putIfAbsent(oid, oid);
+6        return (interned == null) ? oid : interned;
+7    }
+8
+9    private static final Map<ObjectIdentifier,ObjectIdentifier> internedOIDs
+10                        = new HashMap<ObjectIdentifier,ObjectIdentifier>();
+11
+12    /*
+13      * Selected OIDs from X.520
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    /*
+1     * Maybe return a preallocated OID, to reduce storage costs
+2     * and speed recognition of common X.500 attributes.
+3     */
+4    static ObjectIdentifier intern(ObjectIdentifier oid) {
+5        ObjectIdentifier interned = internedOIDs.get(oid);
+6        if (interned != null) {
+7            return interned;
+8        }
+9        internedOIDs.put(oid, oid);
+10        return oid;
+11    }
+12
+13    private static final Map<ObjectIdentifier,ObjectIdentifier> internedOIDs
+---------------------------------------------
+Differences:	['5', '6', '7', '8', '9', '10', '11', '12', '13']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

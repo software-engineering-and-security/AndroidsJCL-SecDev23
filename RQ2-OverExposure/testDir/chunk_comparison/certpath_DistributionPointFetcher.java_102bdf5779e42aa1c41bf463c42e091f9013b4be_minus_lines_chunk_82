@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                         reasonsMask, signFlag, prevKey, prevCert, provider,
+1                        trustAnchors, certStores, validity, variant)) {
+2                     crls.add(crl);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                        reasonsMask, signFlag, prevKey, prevCert, provider,
+1                        trustAnchors, certStores, validity, variant)) {
+2                    crls.add(crl);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                         reasonsMask, signFlag, prevKey, prevCert, provider,
+1                        trustAnchors, certStores, validity, variant, anchor)) {
+2                     crls.add(crl);
+--------------------------------------------

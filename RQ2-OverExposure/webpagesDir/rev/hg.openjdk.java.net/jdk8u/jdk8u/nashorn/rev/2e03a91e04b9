@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/nashorn/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/nashorn/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/nashorn/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/nashorn: 2e03a91e04b9</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/nashorn/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/nashorn/shortlog/2e03a91e04b9">log</a></li>
+ <li><a href="/jdk8u/jdk8u/nashorn/graph/2e03a91e04b9">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/nashorn/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/nashorn/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/nashorn/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/nashorn/raw-rev/2e03a91e04b9">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/nashorn/file/2e03a91e04b9">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/nashorn/archive/2e03a91e04b9.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/nashorn/archive/2e03a91e04b9.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/nashorn/archive/2e03a91e04b9.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/nashorn/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/nashorn">nashorn</a> </h2>
+<h3>changeset 2508:2e03a91e04b9   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/nashorn/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/nashorn/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8223898: Forward references to Nashorn
+Reviewed-by: sundar, mschoene, rhalade</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#104;&#97;&#110;&#110;&#101;&#115;&#119;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 06 Nov 2019 17:13:21 +0100</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/nashorn/rev/5fc91c4182b0">5fc91c4182b0</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/nashorn/rev/2f5ad880fd33">2f5ad880fd33</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/nashorn/file/2e03a91e04b9/src/jdk/nashorn/internal/runtime/regexp/RegExpScanner.java">src/jdk/nashorn/internal/runtime/regexp/RegExpScanner.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 3 insertions(+), 3 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/jdk/nashorn/internal/runtime/regexp/RegExpScanner.java</a></td>
+    <td class="diffstat-total" align="right">6</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:50.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:50.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/jdk/nashorn/internal/runtime/regexp/RegExpScanner.java	Fri Mar 27 05:14:35 2020 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/jdk/nashorn/internal/runtime/regexp/RegExpScanner.java	Wed Nov 06 17:13:21 2019 +0100</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 2010, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 2010, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -141,14 +141,14 @@</span><a href="#l1.10"></a>
+<span id="l1.11">             throw new PatternSyntaxException(e.getMessage(), string, scanner.position);</span><a href="#l1.11"></a>
+<span id="l1.12">         }</span><a href="#l1.12"></a>
+<span id="l1.13"> </span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-        scanner.processForwardReferences();</span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-</span><a href="#l1.15"></a>
+<span id="l1.16">         // Throw syntax error unless we parsed the entire JavaScript regexp without syntax errors</span><a href="#l1.16"></a>
+<span id="l1.17">         if (scanner.position != string.length()) {</span><a href="#l1.17"></a>
+<span id="l1.18">             final String p = scanner.getStringBuilder().toString();</span><a href="#l1.18"></a>
+<span id="l1.19">             throw new PatternSyntaxException(string, p, p.length() + 1);</span><a href="#l1.19"></a>
+<span id="l1.20">         }</span><a href="#l1.20"></a>
+<span id="l1.21"> </span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+        scanner.processForwardReferences();</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+</span><a href="#l1.23"></a>
+<span id="l1.24">         return scanner;</span><a href="#l1.24"></a>
+<span id="l1.25">     }</span><a href="#l1.25"></a>
+<span id="l1.26"> </span><a href="#l1.26"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

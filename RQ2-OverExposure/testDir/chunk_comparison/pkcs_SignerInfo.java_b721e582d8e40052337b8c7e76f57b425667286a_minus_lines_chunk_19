@@ -1,0 +1,22 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                     return null;
+1                for (int i = 0; i < messageDigest.length; i++) {
+2                    if (messageDigest[i] != computedMessageDigest[i])
+3                        return null;
+4                 }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                    return null;
+1                for (int i = 0; i < messageDigest.length; i++) {
+2                    if (messageDigest[i] != computedMessageDigest[i])
+3                        return null;
+4                }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

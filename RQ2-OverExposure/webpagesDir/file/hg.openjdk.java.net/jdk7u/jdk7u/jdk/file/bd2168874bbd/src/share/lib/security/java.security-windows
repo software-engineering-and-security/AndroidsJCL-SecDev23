@@ -1,0 +1,1018 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk7u/jdk7u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk7u/jdk7u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk7u/jdk7u/jdk/static/mercurial.js"></script>
+
+<title>jdk7u/jdk7u/jdk: bd2168874bbd src/share/lib/security/java.security-windows</title>
+</head>
+<body>
+
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk7u/jdk7u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+<li><a href="/jdk7u/jdk7u/jdk/shortlog/bd2168874bbd">log</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/graph/bd2168874bbd">graph</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/tags">tags</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+<li><a href="/jdk7u/jdk7u/jdk/rev/bd2168874bbd">changeset</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/file/bd2168874bbd/src/share/lib/security/">browse</a></li>
+</ul>
+<ul>
+<li class="active">file</li>
+<li><a href="/jdk7u/jdk7u/jdk/file/tip/src/share/lib/security/java.security-windows">latest</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/diff/bd2168874bbd/src/share/lib/security/java.security-windows">diff</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/comparison/bd2168874bbd/src/share/lib/security/java.security-windows">comparison</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/annotate/bd2168874bbd/src/share/lib/security/java.security-windows">annotate</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/log/bd2168874bbd/src/share/lib/security/java.security-windows">file log</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/raw-file/bd2168874bbd/src/share/lib/security/java.security-windows">raw</a></li>
+</ul>
+<ul>
+<li><a href="/jdk7u/jdk7u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u/jdk">jdk</a> </h2>
+<h3>view src/share/lib/security/java.security-windows @ 8938:bd2168874bbd</h3>
+
+<form class="search" action="/jdk7u/jdk7u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk7u/jdk7u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8231422: Better serial filter handling
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#108;&#118;&#100;&#97;&#118;&#105;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 23 Jan 2020 04:45:42 +0000</td>
+</tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk7u/jdk7u/jdk/file/23be5195bc56/src/share/lib/security/java.security-windows">23be5195bc56</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"><a href="/jdk7u/jdk7u/jdk/file/c9f5e12d700c/src/share/lib/security/java.security-windows">c9f5e12d700c</a> </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line source</div>
+<pre class="sourcelines stripes4 wrap">
+<span id="l1">#</span><a href="#l1"></a>
+<span id="l2"># This is the &quot;master security properties file&quot;.</span><a href="#l2"></a>
+<span id="l3">#</span><a href="#l3"></a>
+<span id="l4"># In this file, various security properties are set for use by</span><a href="#l4"></a>
+<span id="l5"># java.security classes. This is where users can statically register</span><a href="#l5"></a>
+<span id="l6"># Cryptography Package Providers (&quot;providers&quot; for short). The term</span><a href="#l6"></a>
+<span id="l7"># &quot;provider&quot; refers to a package or set of packages that supply a</span><a href="#l7"></a>
+<span id="l8"># concrete implementation of a subset of the cryptography aspects of</span><a href="#l8"></a>
+<span id="l9"># the Java Security API. A provider may, for example, implement one or</span><a href="#l9"></a>
+<span id="l10"># more digital signature algorithms or message digest algorithms.</span><a href="#l10"></a>
+<span id="l11">#</span><a href="#l11"></a>
+<span id="l12"># Each provider must implement a subclass of the Provider class.</span><a href="#l12"></a>
+<span id="l13"># To register a provider in this master security properties file,</span><a href="#l13"></a>
+<span id="l14"># specify the Provider subclass name and priority in the format</span><a href="#l14"></a>
+<span id="l15">#</span><a href="#l15"></a>
+<span id="l16">#    security.provider.&lt;n&gt;=&lt;className&gt;</span><a href="#l16"></a>
+<span id="l17">#</span><a href="#l17"></a>
+<span id="l18"># This declares a provider, and specifies its preference</span><a href="#l18"></a>
+<span id="l19"># order n. The preference order is the order in which providers are</span><a href="#l19"></a>
+<span id="l20"># searched for requested algorithms (when no specific provider is</span><a href="#l20"></a>
+<span id="l21"># requested). The order is 1-based; 1 is the most preferred, followed</span><a href="#l21"></a>
+<span id="l22"># by 2, and so on.</span><a href="#l22"></a>
+<span id="l23">#</span><a href="#l23"></a>
+<span id="l24"># &lt;className&gt; must specify the subclass of the Provider class whose</span><a href="#l24"></a>
+<span id="l25"># constructor sets the values of various properties that are required</span><a href="#l25"></a>
+<span id="l26"># for the Java Security API to look up the algorithms or other</span><a href="#l26"></a>
+<span id="l27"># facilities implemented by the provider.</span><a href="#l27"></a>
+<span id="l28">#</span><a href="#l28"></a>
+<span id="l29"># There must be at least one provider specification in java.security.</span><a href="#l29"></a>
+<span id="l30"># There is a default provider that comes standard with the JDK. It</span><a href="#l30"></a>
+<span id="l31"># is called the &quot;SUN&quot; provider, and its Provider subclass</span><a href="#l31"></a>
+<span id="l32"># named Sun appears in the sun.security.provider package. Thus, the</span><a href="#l32"></a>
+<span id="l33"># &quot;SUN&quot; provider is registered via the following:</span><a href="#l33"></a>
+<span id="l34">#</span><a href="#l34"></a>
+<span id="l35">#    security.provider.1=sun.security.provider.Sun</span><a href="#l35"></a>
+<span id="l36">#</span><a href="#l36"></a>
+<span id="l37"># (The number 1 is used for the default provider.)</span><a href="#l37"></a>
+<span id="l38">#</span><a href="#l38"></a>
+<span id="l39"># Note: Providers can be dynamically registered instead by calls to</span><a href="#l39"></a>
+<span id="l40"># either the addProvider or insertProviderAt method in the Security</span><a href="#l40"></a>
+<span id="l41"># class.</span><a href="#l41"></a>
+<span id="l42"></span><a href="#l42"></a>
+<span id="l43">#</span><a href="#l43"></a>
+<span id="l44"># List of providers and their preference orders (see above):</span><a href="#l44"></a>
+<span id="l45">#</span><a href="#l45"></a>
+<span id="l46">security.provider.1=sun.security.provider.Sun</span><a href="#l46"></a>
+<span id="l47">security.provider.2=sun.security.rsa.SunRsaSign</span><a href="#l47"></a>
+<span id="l48">security.provider.3=sun.security.ec.SunEC</span><a href="#l48"></a>
+<span id="l49">security.provider.4=com.sun.net.ssl.internal.ssl.Provider</span><a href="#l49"></a>
+<span id="l50">security.provider.5=com.sun.crypto.provider.SunJCE</span><a href="#l50"></a>
+<span id="l51">security.provider.6=sun.security.jgss.SunProvider</span><a href="#l51"></a>
+<span id="l52">security.provider.7=com.sun.security.sasl.Provider</span><a href="#l52"></a>
+<span id="l53">security.provider.8=org.jcp.xml.dsig.internal.dom.XMLDSigRI</span><a href="#l53"></a>
+<span id="l54">security.provider.9=sun.security.smartcardio.SunPCSC</span><a href="#l54"></a>
+<span id="l55">security.provider.10=sun.security.mscapi.SunMSCAPI</span><a href="#l55"></a>
+<span id="l56"></span><a href="#l56"></a>
+<span id="l57">#</span><a href="#l57"></a>
+<span id="l58"># Select the source of seed data for SecureRandom. By default an</span><a href="#l58"></a>
+<span id="l59"># attempt is made to use the entropy gathering device specified by</span><a href="#l59"></a>
+<span id="l60"># the securerandom.source property. If an exception occurs when</span><a href="#l60"></a>
+<span id="l61"># accessing the URL then the traditional system/thread activity</span><a href="#l61"></a>
+<span id="l62"># algorithm is used.</span><a href="#l62"></a>
+<span id="l63">#</span><a href="#l63"></a>
+<span id="l64"># On Solaris and Linux systems, if file:/dev/urandom is specified and it</span><a href="#l64"></a>
+<span id="l65"># exists, a special SecureRandom implementation is activated by default.</span><a href="#l65"></a>
+<span id="l66"># This &quot;NativePRNG&quot; reads random bytes directly from /dev/urandom.</span><a href="#l66"></a>
+<span id="l67">#</span><a href="#l67"></a>
+<span id="l68"># On Windows systems, the URLs file:/dev/random and file:/dev/urandom</span><a href="#l68"></a>
+<span id="l69"># enables use of the Microsoft CryptoAPI seed functionality.</span><a href="#l69"></a>
+<span id="l70">#</span><a href="#l70"></a>
+<span id="l71">securerandom.source=file:/dev/urandom</span><a href="#l71"></a>
+<span id="l72">#</span><a href="#l72"></a>
+<span id="l73"># The entropy gathering device is described as a URL and can also</span><a href="#l73"></a>
+<span id="l74"># be specified with the system property &quot;java.security.egd&quot;. For example,</span><a href="#l74"></a>
+<span id="l75">#   -Djava.security.egd=file:/dev/urandom</span><a href="#l75"></a>
+<span id="l76"># Specifying this system property will override the securerandom.source</span><a href="#l76"></a>
+<span id="l77"># setting.</span><a href="#l77"></a>
+<span id="l78"></span><a href="#l78"></a>
+<span id="l79">#</span><a href="#l79"></a>
+<span id="l80"># Class to instantiate as the javax.security.auth.login.Configuration</span><a href="#l80"></a>
+<span id="l81"># provider.</span><a href="#l81"></a>
+<span id="l82">#</span><a href="#l82"></a>
+<span id="l83">login.configuration.provider=com.sun.security.auth.login.ConfigFile</span><a href="#l83"></a>
+<span id="l84"></span><a href="#l84"></a>
+<span id="l85">#</span><a href="#l85"></a>
+<span id="l86"># Default login configuration file</span><a href="#l86"></a>
+<span id="l87">#</span><a href="#l87"></a>
+<span id="l88">#login.config.url.1=file:${user.home}/.java.login.config</span><a href="#l88"></a>
+<span id="l89"></span><a href="#l89"></a>
+<span id="l90">#</span><a href="#l90"></a>
+<span id="l91"># Class to instantiate as the system Policy. This is the name of the class</span><a href="#l91"></a>
+<span id="l92"># that will be used as the Policy object.</span><a href="#l92"></a>
+<span id="l93">#</span><a href="#l93"></a>
+<span id="l94">policy.provider=sun.security.provider.PolicyFile</span><a href="#l94"></a>
+<span id="l95"></span><a href="#l95"></a>
+<span id="l96"># The default is to have a single system-wide policy file,</span><a href="#l96"></a>
+<span id="l97"># and a policy file in the user's home directory.</span><a href="#l97"></a>
+<span id="l98">policy.url.1=file:${java.home}/lib/security/java.policy</span><a href="#l98"></a>
+<span id="l99">policy.url.2=file:${user.home}/.java.policy</span><a href="#l99"></a>
+<span id="l100"></span><a href="#l100"></a>
+<span id="l101"># whether or not we expand properties in the policy file</span><a href="#l101"></a>
+<span id="l102"># if this is set to false, properties (${...}) will not be expanded in policy</span><a href="#l102"></a>
+<span id="l103"># files.</span><a href="#l103"></a>
+<span id="l104">policy.expandProperties=true</span><a href="#l104"></a>
+<span id="l105"></span><a href="#l105"></a>
+<span id="l106"># whether or not we allow an extra policy to be passed on the command line</span><a href="#l106"></a>
+<span id="l107"># with -Djava.security.policy=somefile. Comment out this line to disable</span><a href="#l107"></a>
+<span id="l108"># this feature.</span><a href="#l108"></a>
+<span id="l109">policy.allowSystemProperty=true</span><a href="#l109"></a>
+<span id="l110"></span><a href="#l110"></a>
+<span id="l111"># whether or not we look into the IdentityScope for trusted Identities</span><a href="#l111"></a>
+<span id="l112"># when encountering a 1.1 signed JAR file. If the identity is found</span><a href="#l112"></a>
+<span id="l113"># and is trusted, we grant it AllPermission.</span><a href="#l113"></a>
+<span id="l114">policy.ignoreIdentityScope=false</span><a href="#l114"></a>
+<span id="l115"></span><a href="#l115"></a>
+<span id="l116">#</span><a href="#l116"></a>
+<span id="l117"># Default keystore type.</span><a href="#l117"></a>
+<span id="l118">#</span><a href="#l118"></a>
+<span id="l119">keystore.type=jks</span><a href="#l119"></a>
+<span id="l120"></span><a href="#l120"></a>
+<span id="l121">#</span><a href="#l121"></a>
+<span id="l122"># Controls compatibility mode for the JKS keystore type.</span><a href="#l122"></a>
+<span id="l123">#</span><a href="#l123"></a>
+<span id="l124"># When set to 'true', the JKS keystore type supports loading</span><a href="#l124"></a>
+<span id="l125"># keystore files in either JKS or PKCS12 format. When set to 'false'</span><a href="#l125"></a>
+<span id="l126"># it supports loading only JKS keystore files.</span><a href="#l126"></a>
+<span id="l127">#</span><a href="#l127"></a>
+<span id="l128">keystore.type.compat=true</span><a href="#l128"></a>
+<span id="l129"></span><a href="#l129"></a>
+<span id="l130">#</span><a href="#l130"></a>
+<span id="l131"># List of comma-separated packages that start with or equal this string</span><a href="#l131"></a>
+<span id="l132"># will cause a security exception to be thrown when</span><a href="#l132"></a>
+<span id="l133"># passed to checkPackageAccess unless the</span><a href="#l133"></a>
+<span id="l134"># corresponding RuntimePermission (&quot;accessClassInPackage.&quot;+package) has</span><a href="#l134"></a>
+<span id="l135"># been granted.</span><a href="#l135"></a>
+<span id="l136">package.access=sun.,\</span><a href="#l136"></a>
+<span id="l137">               com.sun.xml.internal.,\</span><a href="#l137"></a>
+<span id="l138">               com.sun.imageio.,\</span><a href="#l138"></a>
+<span id="l139">               com.sun.istack.internal.,\</span><a href="#l139"></a>
+<span id="l140">               com.sun.jmx.,\</span><a href="#l140"></a>
+<span id="l141">               com.sun.naming.internal.,\</span><a href="#l141"></a>
+<span id="l142">               com.sun.proxy.,\</span><a href="#l142"></a>
+<span id="l143">               com.sun.corba.se.,\</span><a href="#l143"></a>
+<span id="l144">               com.sun.script.,\</span><a href="#l144"></a>
+<span id="l145">               com.sun.org.apache.bcel.internal.,\</span><a href="#l145"></a>
+<span id="l146">               com.sun.org.apache.regexp.internal.,\</span><a href="#l146"></a>
+<span id="l147">               com.sun.org.apache.xerces.internal.,\</span><a href="#l147"></a>
+<span id="l148">               com.sun.org.apache.xpath.internal.,\</span><a href="#l148"></a>
+<span id="l149">               com.sun.org.apache.xalan.internal.extensions.,\</span><a href="#l149"></a>
+<span id="l150">               com.sun.org.apache.xalan.internal.lib.,\</span><a href="#l150"></a>
+<span id="l151">               com.sun.org.apache.xalan.internal.res.,\</span><a href="#l151"></a>
+<span id="l152">               com.sun.org.apache.xalan.internal.templates.,\</span><a href="#l152"></a>
+<span id="l153">               com.sun.org.apache.xalan.internal.utils.,\</span><a href="#l153"></a>
+<span id="l154">               com.sun.org.apache.xalan.internal.xslt.,\</span><a href="#l154"></a>
+<span id="l155">               com.sun.org.apache.xalan.internal.xsltc.cmdline.,\</span><a href="#l155"></a>
+<span id="l156">               com.sun.org.apache.xalan.internal.xsltc.compiler.,\</span><a href="#l156"></a>
+<span id="l157">               com.sun.org.apache.xalan.internal.xsltc.trax.,\</span><a href="#l157"></a>
+<span id="l158">               com.sun.org.apache.xalan.internal.xsltc.util.,\</span><a href="#l158"></a>
+<span id="l159">               com.sun.org.apache.xml.internal.res.,\</span><a href="#l159"></a>
+<span id="l160">               com.sun.org.apache.xml.internal.resolver.helpers.,\</span><a href="#l160"></a>
+<span id="l161">               com.sun.org.apache.xml.internal.resolver.readers.,\</span><a href="#l161"></a>
+<span id="l162">               com.sun.org.apache.xml.internal.security.,\</span><a href="#l162"></a>
+<span id="l163">               com.sun.org.apache.xml.internal.serializer.utils.,\</span><a href="#l163"></a>
+<span id="l164">               com.sun.org.apache.xml.internal.utils.,\</span><a href="#l164"></a>
+<span id="l165">               com.sun.org.glassfish.,\</span><a href="#l165"></a>
+<span id="l166">               jdk.xml.internal.,\</span><a href="#l166"></a>
+<span id="l167">               oracle.jrockit.jfr.,\</span><a href="#l167"></a>
+<span id="l168">               org.jcp.xml.dsig.internal.,\</span><a href="#l168"></a>
+<span id="l169">               com.sun.java.accessibility.</span><a href="#l169"></a>
+<span id="l170"></span><a href="#l170"></a>
+<span id="l171">#</span><a href="#l171"></a>
+<span id="l172"># List of comma-separated packages that start with or equal this string</span><a href="#l172"></a>
+<span id="l173"># will cause a security exception to be thrown when</span><a href="#l173"></a>
+<span id="l174"># passed to checkPackageDefinition unless the</span><a href="#l174"></a>
+<span id="l175"># corresponding RuntimePermission (&quot;defineClassInPackage.&quot;+package) has</span><a href="#l175"></a>
+<span id="l176"># been granted.</span><a href="#l176"></a>
+<span id="l177">#</span><a href="#l177"></a>
+<span id="l178"># by default, none of the class loaders supplied with the JDK call</span><a href="#l178"></a>
+<span id="l179"># checkPackageDefinition.</span><a href="#l179"></a>
+<span id="l180">#</span><a href="#l180"></a>
+<span id="l181">package.definition=sun.,\</span><a href="#l181"></a>
+<span id="l182">                   com.sun.xml.internal.,\</span><a href="#l182"></a>
+<span id="l183">                   com.sun.imageio.,\</span><a href="#l183"></a>
+<span id="l184">                   com.sun.istack.internal.,\</span><a href="#l184"></a>
+<span id="l185">                   com.sun.jmx.,\</span><a href="#l185"></a>
+<span id="l186">                   com.sun.naming.internal.,\</span><a href="#l186"></a>
+<span id="l187">                   com.sun.proxy.,\</span><a href="#l187"></a>
+<span id="l188">                   com.sun.corba.se.,\</span><a href="#l188"></a>
+<span id="l189">                   com.sun.script.,\</span><a href="#l189"></a>
+<span id="l190">                   com.sun.org.apache.bcel.internal.,\</span><a href="#l190"></a>
+<span id="l191">                   com.sun.org.apache.regexp.internal.,\</span><a href="#l191"></a>
+<span id="l192">                   com.sun.org.apache.xerces.internal.,\</span><a href="#l192"></a>
+<span id="l193">                   com.sun.org.apache.xpath.internal.,\</span><a href="#l193"></a>
+<span id="l194">                   com.sun.org.apache.xalan.internal.extensions.,\</span><a href="#l194"></a>
+<span id="l195">                   com.sun.org.apache.xalan.internal.lib.,\</span><a href="#l195"></a>
+<span id="l196">                   com.sun.org.apache.xalan.internal.res.,\</span><a href="#l196"></a>
+<span id="l197">                   com.sun.org.apache.xalan.internal.templates.,\</span><a href="#l197"></a>
+<span id="l198">                   com.sun.org.apache.xalan.internal.utils.,\</span><a href="#l198"></a>
+<span id="l199">                   com.sun.org.apache.xalan.internal.xslt.,\</span><a href="#l199"></a>
+<span id="l200">                   com.sun.org.apache.xalan.internal.xsltc.cmdline.,\</span><a href="#l200"></a>
+<span id="l201">                   com.sun.org.apache.xalan.internal.xsltc.compiler.,\</span><a href="#l201"></a>
+<span id="l202">                   com.sun.org.apache.xalan.internal.xsltc.trax.,\</span><a href="#l202"></a>
+<span id="l203">                   com.sun.org.apache.xalan.internal.xsltc.util.,\</span><a href="#l203"></a>
+<span id="l204">                   com.sun.org.apache.xml.internal.res.,\</span><a href="#l204"></a>
+<span id="l205">                   com.sun.org.apache.xml.internal.resolver.helpers.,\</span><a href="#l205"></a>
+<span id="l206">                   com.sun.org.apache.xml.internal.resolver.readers.,\</span><a href="#l206"></a>
+<span id="l207">                   com.sun.org.apache.xml.internal.security.,\</span><a href="#l207"></a>
+<span id="l208">                   com.sun.org.apache.xml.internal.serializer.utils.,\</span><a href="#l208"></a>
+<span id="l209">                   com.sun.org.apache.xml.internal.utils.,\</span><a href="#l209"></a>
+<span id="l210">                   com.sun.org.glassfish.,\</span><a href="#l210"></a>
+<span id="l211">                   jdk.xml.internal.,\</span><a href="#l211"></a>
+<span id="l212">                   oracle.jrockit.jfr.,\</span><a href="#l212"></a>
+<span id="l213">                   org.jcp.xml.dsig.internal.,\</span><a href="#l213"></a>
+<span id="l214">                   com.sun.java.accessibility.</span><a href="#l214"></a>
+<span id="l215"></span><a href="#l215"></a>
+<span id="l216">#</span><a href="#l216"></a>
+<span id="l217"># Determines whether this properties file can be appended to</span><a href="#l217"></a>
+<span id="l218"># or overridden on the command line via -Djava.security.properties</span><a href="#l218"></a>
+<span id="l219">#</span><a href="#l219"></a>
+<span id="l220">security.overridePropertiesFile=true</span><a href="#l220"></a>
+<span id="l221"></span><a href="#l221"></a>
+<span id="l222">#</span><a href="#l222"></a>
+<span id="l223"># Determines the default key and trust manager factory algorithms for</span><a href="#l223"></a>
+<span id="l224"># the javax.net.ssl package.</span><a href="#l224"></a>
+<span id="l225">#</span><a href="#l225"></a>
+<span id="l226">ssl.KeyManagerFactory.algorithm=SunX509</span><a href="#l226"></a>
+<span id="l227">ssl.TrustManagerFactory.algorithm=PKIX</span><a href="#l227"></a>
+<span id="l228"></span><a href="#l228"></a>
+<span id="l229">#</span><a href="#l229"></a>
+<span id="l230"># The Java-level namelookup cache policy for successful lookups:</span><a href="#l230"></a>
+<span id="l231">#</span><a href="#l231"></a>
+<span id="l232"># any negative value: caching forever</span><a href="#l232"></a>
+<span id="l233"># any positive value: the number of seconds to cache an address for</span><a href="#l233"></a>
+<span id="l234"># zero: do not cache</span><a href="#l234"></a>
+<span id="l235">#</span><a href="#l235"></a>
+<span id="l236"># default value is forever (FOREVER). For security reasons, this</span><a href="#l236"></a>
+<span id="l237"># caching is made forever when a security manager is set. When a security</span><a href="#l237"></a>
+<span id="l238"># manager is not set, the default behavior in this implementation</span><a href="#l238"></a>
+<span id="l239"># is to cache for 30 seconds.</span><a href="#l239"></a>
+<span id="l240">#</span><a href="#l240"></a>
+<span id="l241"># NOTE: setting this to anything other than the default value can have</span><a href="#l241"></a>
+<span id="l242">#       serious security implications. Do not set it unless</span><a href="#l242"></a>
+<span id="l243">#       you are sure you are not exposed to DNS spoofing attack.</span><a href="#l243"></a>
+<span id="l244">#</span><a href="#l244"></a>
+<span id="l245">#networkaddress.cache.ttl=-1</span><a href="#l245"></a>
+<span id="l246"></span><a href="#l246"></a>
+<span id="l247"># The Java-level namelookup cache policy for failed lookups:</span><a href="#l247"></a>
+<span id="l248">#</span><a href="#l248"></a>
+<span id="l249"># any negative value: cache forever</span><a href="#l249"></a>
+<span id="l250"># any positive value: the number of seconds to cache negative lookup results</span><a href="#l250"></a>
+<span id="l251"># zero: do not cache</span><a href="#l251"></a>
+<span id="l252">#</span><a href="#l252"></a>
+<span id="l253"># In some Microsoft Windows networking environments that employ</span><a href="#l253"></a>
+<span id="l254"># the WINS name service in addition to DNS, name service lookups</span><a href="#l254"></a>
+<span id="l255"># that fail may take a noticeably long time to return (approx. 5 seconds).</span><a href="#l255"></a>
+<span id="l256"># For this reason the default caching policy is to maintain these</span><a href="#l256"></a>
+<span id="l257"># results for 10 seconds.</span><a href="#l257"></a>
+<span id="l258">#</span><a href="#l258"></a>
+<span id="l259">#</span><a href="#l259"></a>
+<span id="l260">networkaddress.cache.negative.ttl=10</span><a href="#l260"></a>
+<span id="l261"></span><a href="#l261"></a>
+<span id="l262">#</span><a href="#l262"></a>
+<span id="l263"># Properties to configure OCSP for certificate revocation checking</span><a href="#l263"></a>
+<span id="l264">#</span><a href="#l264"></a>
+<span id="l265"></span><a href="#l265"></a>
+<span id="l266"># Enable OCSP</span><a href="#l266"></a>
+<span id="l267">#</span><a href="#l267"></a>
+<span id="l268"># By default, OCSP is not used for certificate revocation checking.</span><a href="#l268"></a>
+<span id="l269"># This property enables the use of OCSP when set to the value &quot;true&quot;.</span><a href="#l269"></a>
+<span id="l270">#</span><a href="#l270"></a>
+<span id="l271"># NOTE: SocketPermission is required to connect to an OCSP responder.</span><a href="#l271"></a>
+<span id="l272">#</span><a href="#l272"></a>
+<span id="l273"># Example,</span><a href="#l273"></a>
+<span id="l274">#   ocsp.enable=true</span><a href="#l274"></a>
+<span id="l275"></span><a href="#l275"></a>
+<span id="l276">#</span><a href="#l276"></a>
+<span id="l277"># Location of the OCSP responder</span><a href="#l277"></a>
+<span id="l278">#</span><a href="#l278"></a>
+<span id="l279"># By default, the location of the OCSP responder is determined implicitly</span><a href="#l279"></a>
+<span id="l280"># from the certificate being validated. This property explicitly specifies</span><a href="#l280"></a>
+<span id="l281"># the location of the OCSP responder. The property is used when the</span><a href="#l281"></a>
+<span id="l282"># Authority Information Access extension (defined in RFC 3280) is absent</span><a href="#l282"></a>
+<span id="l283"># from the certificate or when it requires overriding.</span><a href="#l283"></a>
+<span id="l284">#</span><a href="#l284"></a>
+<span id="l285"># Example,</span><a href="#l285"></a>
+<span id="l286">#   ocsp.responderURL=http://ocsp.example.net:80</span><a href="#l286"></a>
+<span id="l287"></span><a href="#l287"></a>
+<span id="l288">#</span><a href="#l288"></a>
+<span id="l289"># Subject name of the OCSP responder's certificate</span><a href="#l289"></a>
+<span id="l290">#</span><a href="#l290"></a>
+<span id="l291"># By default, the certificate of the OCSP responder is that of the issuer</span><a href="#l291"></a>
+<span id="l292"># of the certificate being validated. This property identifies the certificate</span><a href="#l292"></a>
+<span id="l293"># of the OCSP responder when the default does not apply. Its value is a string</span><a href="#l293"></a>
+<span id="l294"># distinguished name (defined in RFC 2253) which identifies a certificate in</span><a href="#l294"></a>
+<span id="l295"># the set of certificates supplied during cert path validation. In cases where</span><a href="#l295"></a>
+<span id="l296"># the subject name alone is not sufficient to uniquely identify the certificate</span><a href="#l296"></a>
+<span id="l297"># then both the &quot;ocsp.responderCertIssuerName&quot; and</span><a href="#l297"></a>
+<span id="l298"># &quot;ocsp.responderCertSerialNumber&quot; properties must be used instead. When this</span><a href="#l298"></a>
+<span id="l299"># property is set then those two properties are ignored.</span><a href="#l299"></a>
+<span id="l300">#</span><a href="#l300"></a>
+<span id="l301"># Example,</span><a href="#l301"></a>
+<span id="l302">#   ocsp.responderCertSubjectName=&quot;CN=OCSP Responder, O=XYZ Corp&quot;</span><a href="#l302"></a>
+<span id="l303"></span><a href="#l303"></a>
+<span id="l304">#</span><a href="#l304"></a>
+<span id="l305"># Issuer name of the OCSP responder's certificate</span><a href="#l305"></a>
+<span id="l306">#</span><a href="#l306"></a>
+<span id="l307"># By default, the certificate of the OCSP responder is that of the issuer</span><a href="#l307"></a>
+<span id="l308"># of the certificate being validated. This property identifies the certificate</span><a href="#l308"></a>
+<span id="l309"># of the OCSP responder when the default does not apply. Its value is a string</span><a href="#l309"></a>
+<span id="l310"># distinguished name (defined in RFC 2253) which identifies a certificate in</span><a href="#l310"></a>
+<span id="l311"># the set of certificates supplied during cert path validation. When this</span><a href="#l311"></a>
+<span id="l312"># property is set then the &quot;ocsp.responderCertSerialNumber&quot; property must also</span><a href="#l312"></a>
+<span id="l313"># be set. When the &quot;ocsp.responderCertSubjectName&quot; property is set then this</span><a href="#l313"></a>
+<span id="l314"># property is ignored.</span><a href="#l314"></a>
+<span id="l315">#</span><a href="#l315"></a>
+<span id="l316"># Example,</span><a href="#l316"></a>
+<span id="l317">#   ocsp.responderCertIssuerName=&quot;CN=Enterprise CA, O=XYZ Corp&quot;</span><a href="#l317"></a>
+<span id="l318"></span><a href="#l318"></a>
+<span id="l319">#</span><a href="#l319"></a>
+<span id="l320"># Serial number of the OCSP responder's certificate</span><a href="#l320"></a>
+<span id="l321">#</span><a href="#l321"></a>
+<span id="l322"># By default, the certificate of the OCSP responder is that of the issuer</span><a href="#l322"></a>
+<span id="l323"># of the certificate being validated. This property identifies the certificate</span><a href="#l323"></a>
+<span id="l324"># of the OCSP responder when the default does not apply. Its value is a string</span><a href="#l324"></a>
+<span id="l325"># of hexadecimal digits (colon or space separators may be present) which</span><a href="#l325"></a>
+<span id="l326"># identifies a certificate in the set of certificates supplied during cert path</span><a href="#l326"></a>
+<span id="l327"># validation. When this property is set then the &quot;ocsp.responderCertIssuerName&quot;</span><a href="#l327"></a>
+<span id="l328"># property must also be set. When the &quot;ocsp.responderCertSubjectName&quot; property</span><a href="#l328"></a>
+<span id="l329"># is set then this property is ignored.</span><a href="#l329"></a>
+<span id="l330">#</span><a href="#l330"></a>
+<span id="l331"># Example,</span><a href="#l331"></a>
+<span id="l332">#   ocsp.responderCertSerialNumber=2A:FF:00</span><a href="#l332"></a>
+<span id="l333"></span><a href="#l333"></a>
+<span id="l334">#</span><a href="#l334"></a>
+<span id="l335"># Policy for failed Kerberos KDC lookups:</span><a href="#l335"></a>
+<span id="l336">#</span><a href="#l336"></a>
+<span id="l337"># When a KDC is unavailable (network error, service failure, etc), it is</span><a href="#l337"></a>
+<span id="l338"># put inside a blacklist and accessed less often for future requests. The</span><a href="#l338"></a>
+<span id="l339"># value (case-insensitive) for this policy can be:</span><a href="#l339"></a>
+<span id="l340">#</span><a href="#l340"></a>
+<span id="l341"># tryLast</span><a href="#l341"></a>
+<span id="l342">#    KDCs in the blacklist are always tried after those not on the list.</span><a href="#l342"></a>
+<span id="l343">#</span><a href="#l343"></a>
+<span id="l344"># tryLess[:max_retries,timeout]</span><a href="#l344"></a>
+<span id="l345">#    KDCs in the blacklist are still tried by their order in the configuration,</span><a href="#l345"></a>
+<span id="l346">#    but with smaller max_retries and timeout values. max_retries and timeout</span><a href="#l346"></a>
+<span id="l347">#    are optional numerical parameters (default 1 and 5000, which means once</span><a href="#l347"></a>
+<span id="l348">#    and 5 seconds). Please notes that if any of the values defined here is</span><a href="#l348"></a>
+<span id="l349">#    more than what is defined in krb5.conf, it will be ignored.</span><a href="#l349"></a>
+<span id="l350">#</span><a href="#l350"></a>
+<span id="l351"># Whenever a KDC is detected as available, it is removed from the blacklist.</span><a href="#l351"></a>
+<span id="l352"># The blacklist is reset when krb5.conf is reloaded. You can add</span><a href="#l352"></a>
+<span id="l353"># refreshKrb5Config=true to a JAAS configuration file so that krb5.conf is</span><a href="#l353"></a>
+<span id="l354"># reloaded whenever a JAAS authentication is attempted.</span><a href="#l354"></a>
+<span id="l355">#</span><a href="#l355"></a>
+<span id="l356"># Example,</span><a href="#l356"></a>
+<span id="l357">#   krb5.kdc.bad.policy = tryLast</span><a href="#l357"></a>
+<span id="l358">#   krb5.kdc.bad.policy = tryLess:2,2000</span><a href="#l358"></a>
+<span id="l359">krb5.kdc.bad.policy = tryLast</span><a href="#l359"></a>
+<span id="l360"></span><a href="#l360"></a>
+<span id="l361"># Algorithm restrictions for certification path (CertPath) processing</span><a href="#l361"></a>
+<span id="l362">#</span><a href="#l362"></a>
+<span id="l363"># In some environments, certain algorithms or key lengths may be undesirable</span><a href="#l363"></a>
+<span id="l364"># for certification path building and validation.  For example, &quot;MD2&quot; is</span><a href="#l364"></a>
+<span id="l365"># generally no longer considered to be a secure hash algorithm.  This section</span><a href="#l365"></a>
+<span id="l366"># describes the mechanism for disabling algorithms based on algorithm name</span><a href="#l366"></a>
+<span id="l367"># and/or key length.  This includes algorithms used in certificates, as well</span><a href="#l367"></a>
+<span id="l368"># as revocation information such as CRLs and signed OCSP Responses.</span><a href="#l368"></a>
+<span id="l369"># The syntax of the disabled algorithm string is described as follows:</span><a href="#l369"></a>
+<span id="l370">#   DisabledAlgorithms:</span><a href="#l370"></a>
+<span id="l371">#       &quot; DisabledAlgorithm { , DisabledAlgorithm } &quot;</span><a href="#l371"></a>
+<span id="l372">#</span><a href="#l372"></a>
+<span id="l373">#   DisabledAlgorithm:</span><a href="#l373"></a>
+<span id="l374">#       AlgorithmName [Constraint] { '&amp;' Constraint }</span><a href="#l374"></a>
+<span id="l375">#</span><a href="#l375"></a>
+<span id="l376">#   AlgorithmName:</span><a href="#l376"></a>
+<span id="l377">#       (see below)</span><a href="#l377"></a>
+<span id="l378">#</span><a href="#l378"></a>
+<span id="l379">#   Constraint:</span><a href="#l379"></a>
+<span id="l380">#       KeySizeConstraint | CAConstraint | DenyAfterConstraint |</span><a href="#l380"></a>
+<span id="l381">#       UsageConstraint</span><a href="#l381"></a>
+<span id="l382">#</span><a href="#l382"></a>
+<span id="l383">#   KeySizeConstraint:</span><a href="#l383"></a>
+<span id="l384">#       keySize Operator KeyLength</span><a href="#l384"></a>
+<span id="l385">#</span><a href="#l385"></a>
+<span id="l386">#   Operator:</span><a href="#l386"></a>
+<span id="l387">#       &lt;= | &lt; | == | != | &gt;= | &gt;</span><a href="#l387"></a>
+<span id="l388">#</span><a href="#l388"></a>
+<span id="l389">#   KeyLength:</span><a href="#l389"></a>
+<span id="l390">#       Integer value of the algorithm's key length in bits</span><a href="#l390"></a>
+<span id="l391">#</span><a href="#l391"></a>
+<span id="l392">#   CAConstraint:</span><a href="#l392"></a>
+<span id="l393">#       jdkCA</span><a href="#l393"></a>
+<span id="l394">#</span><a href="#l394"></a>
+<span id="l395">#   DenyAfterConstraint:</span><a href="#l395"></a>
+<span id="l396">#       denyAfter YYYY-MM-DD</span><a href="#l396"></a>
+<span id="l397">#</span><a href="#l397"></a>
+<span id="l398">#   UsageConstraint:</span><a href="#l398"></a>
+<span id="l399">#       usage [TLSServer] [TLSClient] [SignedJAR]</span><a href="#l399"></a>
+<span id="l400">#</span><a href="#l400"></a>
+<span id="l401"># The &quot;AlgorithmName&quot; is the standard algorithm name of the disabled</span><a href="#l401"></a>
+<span id="l402"># algorithm. See &quot;Java Cryptography Architecture Standard Algorithm Name</span><a href="#l402"></a>
+<span id="l403"># Documentation&quot; for information about Standard Algorithm Names.  Matching</span><a href="#l403"></a>
+<span id="l404"># is performed using a case-insensitive sub-element matching rule.  (For</span><a href="#l404"></a>
+<span id="l405"># example, in &quot;SHA1withECDSA&quot; the sub-elements are &quot;SHA1&quot; for hashing and</span><a href="#l405"></a>
+<span id="l406"># &quot;ECDSA&quot; for signatures.)  If the assertion &quot;AlgorithmName&quot; is a</span><a href="#l406"></a>
+<span id="l407"># sub-element of the certificate algorithm name, the algorithm will be</span><a href="#l407"></a>
+<span id="l408"># rejected during certification path building and validation.  For example,</span><a href="#l408"></a>
+<span id="l409"># the assertion algorithm name &quot;DSA&quot; will disable all certificate algorithms</span><a href="#l409"></a>
+<span id="l410"># that rely on DSA, such as NONEwithDSA, SHA1withDSA.  However, the assertion</span><a href="#l410"></a>
+<span id="l411"># will not disable algorithms related to &quot;ECDSA&quot;.</span><a href="#l411"></a>
+<span id="l412">#</span><a href="#l412"></a>
+<span id="l413"># A &quot;Constraint&quot; defines restrictions on the keys and/or certificates for</span><a href="#l413"></a>
+<span id="l414"># a specified AlgorithmName:</span><a href="#l414"></a>
+<span id="l415">#</span><a href="#l415"></a>
+<span id="l416">#   KeySizeConstraint:</span><a href="#l416"></a>
+<span id="l417">#     keySize Operator KeyLength</span><a href="#l417"></a>
+<span id="l418">#       The constraint requires a key of a valid size range if the</span><a href="#l418"></a>
+<span id="l419">#       &quot;AlgorithmName&quot; is of a key algorithm.  The &quot;KeyLength&quot; indicates</span><a href="#l419"></a>
+<span id="l420">#       the key size specified in number of bits.  For example,</span><a href="#l420"></a>
+<span id="l421">#       &quot;RSA keySize &lt;= 1024&quot; indicates that any RSA key with key size less</span><a href="#l421"></a>
+<span id="l422">#       than or equal to 1024 bits should be disabled, and</span><a href="#l422"></a>
+<span id="l423">#       &quot;RSA keySize &lt; 1024, RSA keySize &gt; 2048&quot; indicates that any RSA key</span><a href="#l423"></a>
+<span id="l424">#       with key size less than 1024 or greater than 2048 should be disabled.</span><a href="#l424"></a>
+<span id="l425">#       This constraint is only used on algorithms that have a key size.</span><a href="#l425"></a>
+<span id="l426">#</span><a href="#l426"></a>
+<span id="l427">#   CAConstraint:</span><a href="#l427"></a>
+<span id="l428">#     jdkCA</span><a href="#l428"></a>
+<span id="l429">#       This constraint prohibits the specified algorithm only if the</span><a href="#l429"></a>
+<span id="l430">#       algorithm is used in a certificate chain that terminates at a marked</span><a href="#l430"></a>
+<span id="l431">#       trust anchor in the lib/security/cacerts keystore.  If the jdkCA</span><a href="#l431"></a>
+<span id="l432">#       constraint is not set, then all chains using the specified algorithm</span><a href="#l432"></a>
+<span id="l433">#       are restricted.  jdkCA may only be used once in a DisabledAlgorithm</span><a href="#l433"></a>
+<span id="l434">#       expression.</span><a href="#l434"></a>
+<span id="l435">#       Example:  To apply this constraint to SHA-1 certificates, include</span><a href="#l435"></a>
+<span id="l436">#       the following:  &quot;SHA1 jdkCA&quot;</span><a href="#l436"></a>
+<span id="l437">#</span><a href="#l437"></a>
+<span id="l438">#   DenyAfterConstraint:</span><a href="#l438"></a>
+<span id="l439">#     denyAfter YYYY-MM-DD</span><a href="#l439"></a>
+<span id="l440">#       This constraint prohibits a certificate with the specified algorithm</span><a href="#l440"></a>
+<span id="l441">#       from being used after the date regardless of the certificate's</span><a href="#l441"></a>
+<span id="l442">#       validity.  JAR files that are signed and timestamped before the</span><a href="#l442"></a>
+<span id="l443">#       constraint date with certificates containing the disabled algorithm</span><a href="#l443"></a>
+<span id="l444">#       will not be restricted.  The date is processed in the UTC timezone.</span><a href="#l444"></a>
+<span id="l445">#       This constraint can only be used once in a DisabledAlgorithm</span><a href="#l445"></a>
+<span id="l446">#       expression.</span><a href="#l446"></a>
+<span id="l447">#       Example:  To deny usage of RSA 2048 bit certificates after Feb 3 2020,</span><a href="#l447"></a>
+<span id="l448">#       use the following:  &quot;RSA keySize == 2048 &amp; denyAfter 2020-02-03&quot;</span><a href="#l448"></a>
+<span id="l449">#</span><a href="#l449"></a>
+<span id="l450">#   UsageConstraint:</span><a href="#l450"></a>
+<span id="l451">#     usage [TLSServer] [TLSClient] [SignedJAR]</span><a href="#l451"></a>
+<span id="l452">#       This constraint prohibits the specified algorithm for</span><a href="#l452"></a>
+<span id="l453">#       a specified usage.  This should be used when disabling an algorithm</span><a href="#l453"></a>
+<span id="l454">#       for all usages is not practical. 'TLSServer' restricts the algorithm</span><a href="#l454"></a>
+<span id="l455">#       in TLS server certificate chains when server authentication is</span><a href="#l455"></a>
+<span id="l456">#       performed. 'TLSClient' restricts the algorithm in TLS client</span><a href="#l456"></a>
+<span id="l457">#       certificate chains when client authentication is performed.</span><a href="#l457"></a>
+<span id="l458">#       'SignedJAR' constrains use of certificates in signed jar files.</span><a href="#l458"></a>
+<span id="l459">#       The usage type follows the keyword and more than one usage type can</span><a href="#l459"></a>
+<span id="l460">#       be specified with a whitespace delimiter.</span><a href="#l460"></a>
+<span id="l461">#       Example:  &quot;SHA1 usage TLSServer TLSClient&quot;</span><a href="#l461"></a>
+<span id="l462">#</span><a href="#l462"></a>
+<span id="l463"># When an algorithm must satisfy more than one constraint, it must be</span><a href="#l463"></a>
+<span id="l464"># delimited by an ampersand '&amp;'.  For example, to restrict certificates in a</span><a href="#l464"></a>
+<span id="l465"># chain that terminate at a distribution provided trust anchor and contain</span><a href="#l465"></a>
+<span id="l466"># RSA keys that are less than or equal to 1024 bits, add the following</span><a href="#l466"></a>
+<span id="l467"># constraint:  &quot;RSA keySize &lt;= 1024 &amp; jdkCA&quot;.</span><a href="#l467"></a>
+<span id="l468">#</span><a href="#l468"></a>
+<span id="l469"># All DisabledAlgorithms expressions are processed in the order defined in the</span><a href="#l469"></a>
+<span id="l470"># property.  This requires lower keysize constraints to be specified</span><a href="#l470"></a>
+<span id="l471"># before larger keysize constraints of the same algorithm.  For example:</span><a href="#l471"></a>
+<span id="l472"># &quot;RSA keySize &lt; 1024 &amp; jdkCA, RSA keySize &lt; 2048&quot;.</span><a href="#l472"></a>
+<span id="l473">#</span><a href="#l473"></a>
+<span id="l474"># Note: The algorithm restrictions do not apply to trust anchors or</span><a href="#l474"></a>
+<span id="l475"># self-signed certificates.</span><a href="#l475"></a>
+<span id="l476">#</span><a href="#l476"></a>
+<span id="l477"># Note: This property is currently used by Oracle's PKIX implementation. It</span><a href="#l477"></a>
+<span id="l478"># is not guaranteed to be examined and used by other implementations.</span><a href="#l478"></a>
+<span id="l479">#</span><a href="#l479"></a>
+<span id="l480"># Example:</span><a href="#l480"></a>
+<span id="l481">#   jdk.certpath.disabledAlgorithms=MD2, DSA, RSA keySize &lt; 2048</span><a href="#l481"></a>
+<span id="l482">#</span><a href="#l482"></a>
+<span id="l483">#</span><a href="#l483"></a>
+<span id="l484">jdk.certpath.disabledAlgorithms=MD2, MD5, SHA1 jdkCA &amp; usage TLSServer, \</span><a href="#l484"></a>
+<span id="l485">    RSA keySize &lt; 1024, DSA keySize &lt; 1024, EC keySize &lt; 224</span><a href="#l485"></a>
+<span id="l486"></span><a href="#l486"></a>
+<span id="l487">#</span><a href="#l487"></a>
+<span id="l488"># Algorithm restrictions for signed JAR files</span><a href="#l488"></a>
+<span id="l489">#</span><a href="#l489"></a>
+<span id="l490"># In some environments, certain algorithms or key lengths may be undesirable</span><a href="#l490"></a>
+<span id="l491"># for signed JAR validation.  For example, &quot;MD2&quot; is generally no longer</span><a href="#l491"></a>
+<span id="l492"># considered to be a secure hash algorithm.  This section describes the</span><a href="#l492"></a>
+<span id="l493"># mechanism for disabling algorithms based on algorithm name and/or key length.</span><a href="#l493"></a>
+<span id="l494"># JARs signed with any of the disabled algorithms or key sizes will be treated</span><a href="#l494"></a>
+<span id="l495"># as unsigned.</span><a href="#l495"></a>
+<span id="l496">#</span><a href="#l496"></a>
+<span id="l497"># The syntax of the disabled algorithm string is described as follows:</span><a href="#l497"></a>
+<span id="l498">#   DisabledAlgorithms:</span><a href="#l498"></a>
+<span id="l499">#       &quot; DisabledAlgorithm { , DisabledAlgorithm } &quot;</span><a href="#l499"></a>
+<span id="l500">#</span><a href="#l500"></a>
+<span id="l501">#   DisabledAlgorithm:</span><a href="#l501"></a>
+<span id="l502">#       AlgorithmName [Constraint] { '&amp;' Constraint }</span><a href="#l502"></a>
+<span id="l503">#</span><a href="#l503"></a>
+<span id="l504">#   AlgorithmName:</span><a href="#l504"></a>
+<span id="l505">#       (see below)</span><a href="#l505"></a>
+<span id="l506">#</span><a href="#l506"></a>
+<span id="l507">#   Constraint:</span><a href="#l507"></a>
+<span id="l508">#       KeySizeConstraint | DenyAfterConstraint</span><a href="#l508"></a>
+<span id="l509">#</span><a href="#l509"></a>
+<span id="l510">#   KeySizeConstraint:</span><a href="#l510"></a>
+<span id="l511">#       keySize Operator KeyLength</span><a href="#l511"></a>
+<span id="l512">#</span><a href="#l512"></a>
+<span id="l513">#   DenyAfterConstraint:</span><a href="#l513"></a>
+<span id="l514">#       denyAfter YYYY-MM-DD</span><a href="#l514"></a>
+<span id="l515">#</span><a href="#l515"></a>
+<span id="l516">#   Operator:</span><a href="#l516"></a>
+<span id="l517">#       &lt;= | &lt; | == | != | &gt;= | &gt;</span><a href="#l517"></a>
+<span id="l518">#</span><a href="#l518"></a>
+<span id="l519">#   KeyLength:</span><a href="#l519"></a>
+<span id="l520">#       Integer value of the algorithm's key length in bits</span><a href="#l520"></a>
+<span id="l521">#</span><a href="#l521"></a>
+<span id="l522"># Note: This property is currently used by the JDK Reference</span><a href="#l522"></a>
+<span id="l523"># implementation. It is not guaranteed to be examined and used by other</span><a href="#l523"></a>
+<span id="l524"># implementations.</span><a href="#l524"></a>
+<span id="l525">#</span><a href="#l525"></a>
+<span id="l526"># See &quot;jdk.certpath.disabledAlgorithms&quot; for syntax descriptions.</span><a href="#l526"></a>
+<span id="l527">#</span><a href="#l527"></a>
+<span id="l528">jdk.jar.disabledAlgorithms=MD2, MD5, RSA keySize &lt; 1024, DSA keySize &lt; 1024</span><a href="#l528"></a>
+<span id="l529"></span><a href="#l529"></a>
+<span id="l530">#</span><a href="#l530"></a>
+<span id="l531"># Algorithm restrictions for Secure Socket Layer/Transport Layer Security</span><a href="#l531"></a>
+<span id="l532"># (SSL/TLS) processing</span><a href="#l532"></a>
+<span id="l533">#</span><a href="#l533"></a>
+<span id="l534"># In some environments, certain algorithms or key lengths may be undesirable</span><a href="#l534"></a>
+<span id="l535"># when using SSL/TLS.  This section describes the mechanism for disabling</span><a href="#l535"></a>
+<span id="l536"># algorithms during SSL/TLS security parameters negotiation, including</span><a href="#l536"></a>
+<span id="l537"># protocol version negotiation, cipher suites selection, peer authentication</span><a href="#l537"></a>
+<span id="l538"># and key exchange mechanisms.</span><a href="#l538"></a>
+<span id="l539">#</span><a href="#l539"></a>
+<span id="l540"># Disabled algorithms will not be negotiated for SSL/TLS connections, even</span><a href="#l540"></a>
+<span id="l541"># if they are enabled explicitly in an application.</span><a href="#l541"></a>
+<span id="l542">#</span><a href="#l542"></a>
+<span id="l543"># For PKI-based peer authentication and key exchange mechanisms, this list</span><a href="#l543"></a>
+<span id="l544"># of disabled algorithms will also be checked during certification path</span><a href="#l544"></a>
+<span id="l545"># building and validation, including algorithms used in certificates, as</span><a href="#l545"></a>
+<span id="l546"># well as revocation information such as CRLs and signed OCSP Responses.</span><a href="#l546"></a>
+<span id="l547"># This is in addition to the jdk.certpath.disabledAlgorithms property above.</span><a href="#l547"></a>
+<span id="l548">#</span><a href="#l548"></a>
+<span id="l549"># See the specification of &quot;jdk.certpath.disabledAlgorithms&quot; for the</span><a href="#l549"></a>
+<span id="l550"># syntax of the disabled algorithm string.</span><a href="#l550"></a>
+<span id="l551">#</span><a href="#l551"></a>
+<span id="l552"># Note: The algorithm restrictions do not apply to trust anchors or</span><a href="#l552"></a>
+<span id="l553"># self-signed certificates.</span><a href="#l553"></a>
+<span id="l554">#</span><a href="#l554"></a>
+<span id="l555"># Note: This property is currently used by the JDK Reference implementation.</span><a href="#l555"></a>
+<span id="l556"># It is not guaranteed to be examined and used by other implementations.</span><a href="#l556"></a>
+<span id="l557">#</span><a href="#l557"></a>
+<span id="l558"># Example:</span><a href="#l558"></a>
+<span id="l559">#   jdk.tls.disabledAlgorithms=MD5, SSLv3, DSA, RSA keySize &lt; 2048</span><a href="#l559"></a>
+<span id="l560">jdk.tls.disabledAlgorithms=SSLv3, DES, MD5withRSA, DH keySize &lt; 1024, \</span><a href="#l560"></a>
+<span id="l561">    EC keySize &lt; 224, RC4_40, 3DES_EDE_CBC, anon, NULL</span><a href="#l561"></a>
+<span id="l562"></span><a href="#l562"></a>
+<span id="l563"># Legacy algorithms for Secure Socket Layer/Transport Layer Security (SSL/TLS)</span><a href="#l563"></a>
+<span id="l564"># processing in JSSE implementation.</span><a href="#l564"></a>
+<span id="l565">#</span><a href="#l565"></a>
+<span id="l566"># In some environments, a certain algorithm may be undesirable but it</span><a href="#l566"></a>
+<span id="l567"># cannot be disabled because of its use in legacy applications.  Legacy</span><a href="#l567"></a>
+<span id="l568"># algorithms may still be supported, but applications should not use them</span><a href="#l568"></a>
+<span id="l569"># as the security strength of legacy algorithms are usually not strong enough</span><a href="#l569"></a>
+<span id="l570"># in practice.</span><a href="#l570"></a>
+<span id="l571">#</span><a href="#l571"></a>
+<span id="l572"># During SSL/TLS security parameters negotiation, legacy algorithms will</span><a href="#l572"></a>
+<span id="l573"># not be negotiated unless there are no other candidates.</span><a href="#l573"></a>
+<span id="l574">#</span><a href="#l574"></a>
+<span id="l575"># The syntax of the legacy algorithms string is described as this Java</span><a href="#l575"></a>
+<span id="l576"># BNF-style:</span><a href="#l576"></a>
+<span id="l577">#   LegacyAlgorithms:</span><a href="#l577"></a>
+<span id="l578">#       &quot; LegacyAlgorithm { , LegacyAlgorithm } &quot;</span><a href="#l578"></a>
+<span id="l579">#</span><a href="#l579"></a>
+<span id="l580">#   LegacyAlgorithm:</span><a href="#l580"></a>
+<span id="l581">#       AlgorithmName (standard JSSE algorithm name)</span><a href="#l581"></a>
+<span id="l582">#</span><a href="#l582"></a>
+<span id="l583"># See the specification of security property &quot;jdk.certpath.disabledAlgorithms&quot;</span><a href="#l583"></a>
+<span id="l584"># for the syntax and description of the &quot;AlgorithmName&quot; notation.</span><a href="#l584"></a>
+<span id="l585">#</span><a href="#l585"></a>
+<span id="l586"># Per SSL/TLS specifications, cipher suites have the form:</span><a href="#l586"></a>
+<span id="l587">#       SSL_KeyExchangeAlg_WITH_CipherAlg_MacAlg</span><a href="#l587"></a>
+<span id="l588"># or</span><a href="#l588"></a>
+<span id="l589">#       TLS_KeyExchangeAlg_WITH_CipherAlg_MacAlg</span><a href="#l589"></a>
+<span id="l590">#</span><a href="#l590"></a>
+<span id="l591"># For example, the cipher suite TLS_RSA_WITH_AES_128_CBC_SHA uses RSA as the</span><a href="#l591"></a>
+<span id="l592"># key exchange algorithm, AES_128_CBC (128 bits AES cipher algorithm in CBC</span><a href="#l592"></a>
+<span id="l593"># mode) as the cipher (encryption) algorithm, and SHA-1 as the message digest</span><a href="#l593"></a>
+<span id="l594"># algorithm for HMAC.</span><a href="#l594"></a>
+<span id="l595">#</span><a href="#l595"></a>
+<span id="l596"># The LegacyAlgorithm can be one of the following standard algorithm names:</span><a href="#l596"></a>
+<span id="l597">#     1. JSSE cipher suite name, e.g., TLS_RSA_WITH_AES_128_CBC_SHA</span><a href="#l597"></a>
+<span id="l598">#     2. JSSE key exchange algorithm name, e.g., RSA</span><a href="#l598"></a>
+<span id="l599">#     3. JSSE cipher (encryption) algorithm name, e.g., AES_128_CBC</span><a href="#l599"></a>
+<span id="l600">#     4. JSSE message digest algorithm name, e.g., SHA</span><a href="#l600"></a>
+<span id="l601">#</span><a href="#l601"></a>
+<span id="l602"># See SSL/TLS specifications and &quot;Java Cryptography Architecture Standard</span><a href="#l602"></a>
+<span id="l603"># Algorithm Name Documentation&quot; for information about the algorithm names.</span><a href="#l603"></a>
+<span id="l604">#</span><a href="#l604"></a>
+<span id="l605"># Note: This property is currently used by the JDK Reference implementation.</span><a href="#l605"></a>
+<span id="l606"># It is not guaranteed to be examined and used by other implementations.</span><a href="#l606"></a>
+<span id="l607"># There is no guarantee the property will continue to exist or be of the</span><a href="#l607"></a>
+<span id="l608"># same syntax in future releases.</span><a href="#l608"></a>
+<span id="l609">#</span><a href="#l609"></a>
+<span id="l610"># Example:</span><a href="#l610"></a>
+<span id="l611">#   jdk.tls.legacyAlgorithms=DH_anon, DES_CBC, SSL_RSA_WITH_RC4_128_MD5</span><a href="#l611"></a>
+<span id="l612">#</span><a href="#l612"></a>
+<span id="l613">jdk.tls.legacyAlgorithms= \</span><a href="#l613"></a>
+<span id="l614">        K_NULL, C_NULL, M_NULL, \</span><a href="#l614"></a>
+<span id="l615">        DH_anon, ECDH_anon, \</span><a href="#l615"></a>
+<span id="l616">        RC4_128, RC4_40, DES_CBC, DES40_CBC, \</span><a href="#l616"></a>
+<span id="l617">        3DES_EDE_CBC</span><a href="#l617"></a>
+<span id="l618"></span><a href="#l618"></a>
+<span id="l619"># The pre-defined default finite field Diffie-Hellman ephemeral (DHE)</span><a href="#l619"></a>
+<span id="l620"># parameters for Transport Layer Security (SSL/TLS/DTLS) processing.</span><a href="#l620"></a>
+<span id="l621">#</span><a href="#l621"></a>
+<span id="l622"># In traditional SSL/TLS/DTLS connections where finite field DHE parameters</span><a href="#l622"></a>
+<span id="l623"># negotiation mechanism is not used, the server offers the client group</span><a href="#l623"></a>
+<span id="l624"># parameters, base generator g and prime modulus p, for DHE key exchange.</span><a href="#l624"></a>
+<span id="l625"># It is recommended to use dynamic group parameters.  This property defines</span><a href="#l625"></a>
+<span id="l626"># a mechanism that allows you to specify custom group parameters.</span><a href="#l626"></a>
+<span id="l627">#</span><a href="#l627"></a>
+<span id="l628"># The syntax of this property string is described as this Java BNF-style:</span><a href="#l628"></a>
+<span id="l629">#   DefaultDHEParameters:</span><a href="#l629"></a>
+<span id="l630">#       DefinedDHEParameters { , DefinedDHEParameters }</span><a href="#l630"></a>
+<span id="l631">#</span><a href="#l631"></a>
+<span id="l632">#   DefinedDHEParameters:</span><a href="#l632"></a>
+<span id="l633">#       &quot;{&quot; DHEPrimeModulus , DHEBaseGenerator &quot;}&quot;</span><a href="#l633"></a>
+<span id="l634">#</span><a href="#l634"></a>
+<span id="l635">#   DHEPrimeModulus:</span><a href="#l635"></a>
+<span id="l636">#       HexadecimalDigits</span><a href="#l636"></a>
+<span id="l637">#</span><a href="#l637"></a>
+<span id="l638">#   DHEBaseGenerator:</span><a href="#l638"></a>
+<span id="l639">#       HexadecimalDigits</span><a href="#l639"></a>
+<span id="l640">#</span><a href="#l640"></a>
+<span id="l641">#   HexadecimalDigits:</span><a href="#l641"></a>
+<span id="l642">#       HexadecimalDigit { HexadecimalDigit }</span><a href="#l642"></a>
+<span id="l643">#</span><a href="#l643"></a>
+<span id="l644">#   HexadecimalDigit: one of</span><a href="#l644"></a>
+<span id="l645">#       0 1 2 3 4 5 6 7 8 9 A B C D E F a b c d e f</span><a href="#l645"></a>
+<span id="l646">#</span><a href="#l646"></a>
+<span id="l647"># Whitespace characters are ignored.</span><a href="#l647"></a>
+<span id="l648">#</span><a href="#l648"></a>
+<span id="l649"># The &quot;DefinedDHEParameters&quot; defines the custom group parameters, prime</span><a href="#l649"></a>
+<span id="l650"># modulus p and base generator g, for a particular size of prime modulus p.</span><a href="#l650"></a>
+<span id="l651"># The &quot;DHEPrimeModulus&quot; defines the hexadecimal prime modulus p, and the</span><a href="#l651"></a>
+<span id="l652"># &quot;DHEBaseGenerator&quot; defines the hexadecimal base generator g of a group</span><a href="#l652"></a>
+<span id="l653"># parameter.  It is recommended to use safe primes for the custom group</span><a href="#l653"></a>
+<span id="l654"># parameters.</span><a href="#l654"></a>
+<span id="l655">#</span><a href="#l655"></a>
+<span id="l656"># If this property is not defined or the value is empty, the underlying JSSE</span><a href="#l656"></a>
+<span id="l657"># provider's default group parameter is used for each connection.</span><a href="#l657"></a>
+<span id="l658">#</span><a href="#l658"></a>
+<span id="l659"># If the property value does not follow the grammar, or a particular group</span><a href="#l659"></a>
+<span id="l660"># parameter is not valid, the connection will fall back and use the</span><a href="#l660"></a>
+<span id="l661"># underlying JSSE provider's default group parameter.</span><a href="#l661"></a>
+<span id="l662">#</span><a href="#l662"></a>
+<span id="l663"># Note: This property is currently used by OpenJDK's JSSE implementation. It</span><a href="#l663"></a>
+<span id="l664"># is not guaranteed to be examined and used by other implementations.</span><a href="#l664"></a>
+<span id="l665">#</span><a href="#l665"></a>
+<span id="l666"># Example:</span><a href="#l666"></a>
+<span id="l667">#   jdk.tls.server.defaultDHEParameters=</span><a href="#l667"></a>
+<span id="l668">#       { \</span><a href="#l668"></a>
+<span id="l669">#       FFFFFFFF FFFFFFFF C90FDAA2 2168C234 C4C6628B 80DC1CD1 \</span><a href="#l669"></a>
+<span id="l670">#       29024E08 8A67CC74 020BBEA6 3B139B22 514A0879 8E3404DD \</span><a href="#l670"></a>
+<span id="l671">#       EF9519B3 CD3A431B 302B0A6D F25F1437 4FE1356D 6D51C245 \</span><a href="#l671"></a>
+<span id="l672">#       E485B576 625E7EC6 F44C42E9 A637ED6B 0BFF5CB6 F406B7ED \</span><a href="#l672"></a>
+<span id="l673">#       EE386BFB 5A899FA5 AE9F2411 7C4B1FE6 49286651 ECE65381 \</span><a href="#l673"></a>
+<span id="l674">#       FFFFFFFF FFFFFFFF, 2}</span><a href="#l674"></a>
+<span id="l675"></span><a href="#l675"></a>
+<span id="l676"># Cryptographic Jurisdiction Policy defaults</span><a href="#l676"></a>
+<span id="l677">#</span><a href="#l677"></a>
+<span id="l678"># Import and export control rules on cryptographic software vary from</span><a href="#l678"></a>
+<span id="l679"># country to country.  By default, the JDK provides two different sets of</span><a href="#l679"></a>
+<span id="l680"># cryptographic policy files:</span><a href="#l680"></a>
+<span id="l681">#</span><a href="#l681"></a>
+<span id="l682">#     unlimited:  These policy files contain no restrictions on cryptographic</span><a href="#l682"></a>
+<span id="l683">#                 strengths or algorithms.</span><a href="#l683"></a>
+<span id="l684">#</span><a href="#l684"></a>
+<span id="l685">#     limited:    These policy files contain more restricted cryptographic</span><a href="#l685"></a>
+<span id="l686">#                 strengths, and are still available if your country or</span><a href="#l686"></a>
+<span id="l687">#                 usage requires the traditional restrictive policy.</span><a href="#l687"></a>
+<span id="l688">#</span><a href="#l688"></a>
+<span id="l689"># The JDK JCE framework uses the unlimited policy files by default.</span><a href="#l689"></a>
+<span id="l690"># However the user may explicitly choose a set either by defining the</span><a href="#l690"></a>
+<span id="l691"># &quot;crypto.policy&quot; Security property or by installing valid JCE policy</span><a href="#l691"></a>
+<span id="l692"># jar files into the traditional JDK installation location.  To better</span><a href="#l692"></a>
+<span id="l693"># support older JDK Update releases, the &quot;crypto.policy&quot; property is not</span><a href="#l693"></a>
+<span id="l694"># defined by default.  See below for more information.</span><a href="#l694"></a>
+<span id="l695">#</span><a href="#l695"></a>
+<span id="l696"># The following logic determines which policy files are used:</span><a href="#l696"></a>
+<span id="l697">#</span><a href="#l697"></a>
+<span id="l698">#         &lt;java-home&gt; refers to the directory where the JRE was</span><a href="#l698"></a>
+<span id="l699">#         installed and may be determined using the &quot;java.home&quot;</span><a href="#l699"></a>
+<span id="l700">#         System property.</span><a href="#l700"></a>
+<span id="l701">#</span><a href="#l701"></a>
+<span id="l702"># 1.  If the Security property &quot;crypto.policy&quot; has been defined,</span><a href="#l702"></a>
+<span id="l703">#     then the following mechanism is used:</span><a href="#l703"></a>
+<span id="l704">#</span><a href="#l704"></a>
+<span id="l705">#     The policy files are stored as jar files in subdirectories of</span><a href="#l705"></a>
+<span id="l706"># &lt;java-home&gt;/lib/security/policy.  Each directory contains a complete</span><a href="#l706"></a>
+<span id="l707"># set of policy files.</span><a href="#l707"></a>
+<span id="l708">#</span><a href="#l708"></a>
+<span id="l709">#     The &quot;crypto.policy&quot; Security property controls the directory</span><a href="#l709"></a>
+<span id="l710">#     selection, and thus the effective cryptographic policy.</span><a href="#l710"></a>
+<span id="l711">#</span><a href="#l711"></a>
+<span id="l712"># The default set of directories is:</span><a href="#l712"></a>
+<span id="l713">#</span><a href="#l713"></a>
+<span id="l714">#     limited | unlimited</span><a href="#l714"></a>
+<span id="l715">#</span><a href="#l715"></a>
+<span id="l716"># 2.  If the &quot;crypto.policy&quot; property is not set and the traditional</span><a href="#l716"></a>
+<span id="l717">#     US_export_policy.jar and local_policy.jar files</span><a href="#l717"></a>
+<span id="l718">#     (e.g. limited/unlimited) are found in the legacy</span><a href="#l718"></a>
+<span id="l719">#     &lt;java-home&gt;/lib/security directory, then the rules embedded within</span><a href="#l719"></a>
+<span id="l720">#     those jar files will be used. This helps preserve compatibility</span><a href="#l720"></a>
+<span id="l721"># for users upgrading from an older installation.</span><a href="#l721"></a>
+<span id="l722">#</span><a href="#l722"></a>
+<span id="l723"># 3.  If the jar files are not present in the legacy location</span><a href="#l723"></a>
+<span id="l724">#     and the &quot;crypto.policy&quot; Security property is not defined,</span><a href="#l724"></a>
+<span id="l725">#     then the JDK will use the unlimited settings (equivalent to</span><a href="#l725"></a>
+<span id="l726">#     crypto.policy=unlimited)</span><a href="#l726"></a>
+<span id="l727">#</span><a href="#l727"></a>
+<span id="l728"># Please see the JCA documentation for additional information on these</span><a href="#l728"></a>
+<span id="l729"># files and formats.</span><a href="#l729"></a>
+<span id="l730">#</span><a href="#l730"></a>
+<span id="l731"># YOU ARE ADVISED TO CONSULT YOUR EXPORT/IMPORT CONTROL COUNSEL OR ATTORNEY</span><a href="#l731"></a>
+<span id="l732"># TO DETERMINE THE EXACT REQUIREMENTS.</span><a href="#l732"></a>
+<span id="l733">#</span><a href="#l733"></a>
+<span id="l734"># Please note that the JCE for Java SE, including the JCE framework,</span><a href="#l734"></a>
+<span id="l735"># cryptographic policy files, and standard JCE providers provided with</span><a href="#l735"></a>
+<span id="l736"># the Java SE, have been reviewed and approved for export as mass market</span><a href="#l736"></a>
+<span id="l737"># encryption item by the US Bureau of Industry and Security.</span><a href="#l737"></a>
+<span id="l738">#</span><a href="#l738"></a>
+<span id="l739"># Note: This property is currently used by the JDK Reference implementation.</span><a href="#l739"></a>
+<span id="l740"># It is not guaranteed to be examined and used by other implementations.</span><a href="#l740"></a>
+<span id="l741">#</span><a href="#l741"></a>
+<span id="l742">#crypto.policy=unlimited</span><a href="#l742"></a>
+<span id="l743"></span><a href="#l743"></a>
+<span id="l744">#</span><a href="#l744"></a>
+<span id="l745"># The policy for the XML Signature secure validation mode. The mode is</span><a href="#l745"></a>
+<span id="l746"># enabled by setting the property &quot;org.jcp.xml.dsig.secureValidation&quot; to</span><a href="#l746"></a>
+<span id="l747"># true with the javax.xml.crypto.XMLCryptoContext.setProperty() method,</span><a href="#l747"></a>
+<span id="l748"># or by running the code with a SecurityManager.</span><a href="#l748"></a>
+<span id="l749">#</span><a href="#l749"></a>
+<span id="l750">#   Policy:</span><a href="#l750"></a>
+<span id="l751">#       Constraint {&quot;,&quot; Constraint }</span><a href="#l751"></a>
+<span id="l752">#   Constraint:</span><a href="#l752"></a>
+<span id="l753">#       AlgConstraint | MaxTransformsConstraint | MaxReferencesConstraint |</span><a href="#l753"></a>
+<span id="l754">#       ReferenceUriSchemeConstraint | KeySizeConstraint | OtherConstraint</span><a href="#l754"></a>
+<span id="l755">#   AlgConstraint</span><a href="#l755"></a>
+<span id="l756">#       &quot;disallowAlg&quot; Uri</span><a href="#l756"></a>
+<span id="l757">#   MaxTransformsConstraint:</span><a href="#l757"></a>
+<span id="l758">#       &quot;maxTransforms&quot; Integer</span><a href="#l758"></a>
+<span id="l759">#   MaxReferencesConstraint:</span><a href="#l759"></a>
+<span id="l760">#       &quot;maxReferences&quot; Integer</span><a href="#l760"></a>
+<span id="l761">#   ReferenceUriSchemeConstraint:</span><a href="#l761"></a>
+<span id="l762">#       &quot;disallowReferenceUriSchemes&quot; String { String }</span><a href="#l762"></a>
+<span id="l763">#   KeySizeConstraint:</span><a href="#l763"></a>
+<span id="l764">#       &quot;minKeySize&quot; KeyAlg Integer</span><a href="#l764"></a>
+<span id="l765">#   OtherConstraint:</span><a href="#l765"></a>
+<span id="l766">#       &quot;noDuplicateIds&quot; | &quot;noRetrievalMethodLoops&quot;</span><a href="#l766"></a>
+<span id="l767">#</span><a href="#l767"></a>
+<span id="l768"># For AlgConstraint, Uri is the algorithm URI String that is not allowed.</span><a href="#l768"></a>
+<span id="l769"># See the XML Signature Recommendation for more information on algorithm</span><a href="#l769"></a>
+<span id="l770"># URI Identifiers. For KeySizeConstraint, KeyAlg is the standard algorithm</span><a href="#l770"></a>
+<span id="l771"># name of the key type (ex: &quot;RSA&quot;). If the MaxTransformsConstraint,</span><a href="#l771"></a>
+<span id="l772"># MaxReferencesConstraint or KeySizeConstraint (for the same key type) is</span><a href="#l772"></a>
+<span id="l773"># specified more than once, only the last entry is enforced.</span><a href="#l773"></a>
+<span id="l774">#</span><a href="#l774"></a>
+<span id="l775"># Note: This property is currently used by the JDK Reference implementation. It</span><a href="#l775"></a>
+<span id="l776"># is not guaranteed to be examined and used by other implementations.</span><a href="#l776"></a>
+<span id="l777">#</span><a href="#l777"></a>
+<span id="l778">jdk.xml.dsig.secureValidationPolicy=\</span><a href="#l778"></a>
+<span id="l779">    disallowAlg http://www.w3.org/TR/1999/REC-xslt-19991116,\</span><a href="#l779"></a>
+<span id="l780">    disallowAlg http://www.w3.org/2001/04/xmldsig-more#rsa-md5,\</span><a href="#l780"></a>
+<span id="l781">    disallowAlg http://www.w3.org/2001/04/xmldsig-more#hmac-md5,\</span><a href="#l781"></a>
+<span id="l782">    disallowAlg http://www.w3.org/2001/04/xmldsig-more#md5,\</span><a href="#l782"></a>
+<span id="l783">    maxTransforms 5,\</span><a href="#l783"></a>
+<span id="l784">    maxReferences 30,\</span><a href="#l784"></a>
+<span id="l785">    disallowReferenceUriSchemes file http https,\</span><a href="#l785"></a>
+<span id="l786">    minKeySize RSA 1024,\</span><a href="#l786"></a>
+<span id="l787">    minKeySize DSA 1024,\</span><a href="#l787"></a>
+<span id="l788">    minKeySize EC 224,\</span><a href="#l788"></a>
+<span id="l789">    noDuplicateIds,\</span><a href="#l789"></a>
+<span id="l790">    noRetrievalMethodLoops</span><a href="#l790"></a>
+<span id="l791"></span><a href="#l791"></a>
+<span id="l792">#</span><a href="#l792"></a>
+<span id="l793"># Serialization process-wide filter</span><a href="#l793"></a>
+<span id="l794">#</span><a href="#l794"></a>
+<span id="l795"># A filter, if configured, is used by java.io.ObjectInputStream during</span><a href="#l795"></a>
+<span id="l796"># deserialization to check the contents of the stream.</span><a href="#l796"></a>
+<span id="l797"># A filter is configured as a sequence of patterns, each pattern is either</span><a href="#l797"></a>
+<span id="l798"># matched against the name of a class in the stream or defines a limit.</span><a href="#l798"></a>
+<span id="l799"># Patterns are separated by &quot;;&quot; (semicolon).</span><a href="#l799"></a>
+<span id="l800"># Whitespace is significant and is considered part of the pattern.</span><a href="#l800"></a>
+<span id="l801">#</span><a href="#l801"></a>
+<span id="l802"># If the system property jdk.serialFilter is also specified on the command</span><a href="#l802"></a>
+<span id="l803"># line, it supersedes the security property value defined here.</span><a href="#l803"></a>
+<span id="l804">#</span><a href="#l804"></a>
+<span id="l805"># If a pattern includes a &quot;=&quot;, it sets a limit.</span><a href="#l805"></a>
+<span id="l806"># If a limit appears more than once the last value is used.</span><a href="#l806"></a>
+<span id="l807"># Limits are checked before classes regardless of the order in the sequence of patterns.</span><a href="#l807"></a>
+<span id="l808"># If any of the limits are exceeded, the filter status is REJECTED.</span><a href="#l808"></a>
+<span id="l809">#</span><a href="#l809"></a>
+<span id="l810">#   maxdepth=value - the maximum depth of a graph</span><a href="#l810"></a>
+<span id="l811">#   maxrefs=value  - the maximum number of internal references</span><a href="#l811"></a>
+<span id="l812">#   maxbytes=value - the maximum number of bytes in the input stream</span><a href="#l812"></a>
+<span id="l813">#   maxarray=value - the maximum array length allowed</span><a href="#l813"></a>
+<span id="l814">#</span><a href="#l814"></a>
+<span id="l815"># Other patterns, from left to right, match the class or package name as</span><a href="#l815"></a>
+<span id="l816"># returned from Class.getName.</span><a href="#l816"></a>
+<span id="l817"># If the class is an array type, the class or package to be matched is the element type.</span><a href="#l817"></a>
+<span id="l818"># Arrays of any number of dimensions are treated the same as the element type.</span><a href="#l818"></a>
+<span id="l819"># For example, a pattern of &quot;!example.Foo&quot;, rejects creation of any instance or</span><a href="#l819"></a>
+<span id="l820"># array of example.Foo.</span><a href="#l820"></a>
+<span id="l821">#</span><a href="#l821"></a>
+<span id="l822"># If the pattern starts with &quot;!&quot;, the status is REJECTED if the remaining pattern</span><a href="#l822"></a>
+<span id="l823">#   is matched; otherwise the status is ALLOWED if the pattern matches.</span><a href="#l823"></a>
+<span id="l824"># If the pattern ends with &quot;.**&quot; it matches any class in the package and all subpackages.</span><a href="#l824"></a>
+<span id="l825"># If the pattern ends with &quot;.*&quot; it matches any class in the package.</span><a href="#l825"></a>
+<span id="l826"># If the pattern ends with &quot;*&quot;, it matches any class with the pattern as a prefix.</span><a href="#l826"></a>
+<span id="l827"># If the pattern is equal to the class name, it matches.</span><a href="#l827"></a>
+<span id="l828"># Otherwise, the status is UNDECIDED.</span><a href="#l828"></a>
+<span id="l829">#</span><a href="#l829"></a>
+<span id="l830">#jdk.serialFilter=pattern;pattern</span><a href="#l830"></a>
+<span id="l831"></span><a href="#l831"></a>
+<span id="l832">#</span><a href="#l832"></a>
+<span id="l833"># RMI Registry Serial Filter</span><a href="#l833"></a>
+<span id="l834">#</span><a href="#l834"></a>
+<span id="l835"># The filter pattern uses the same format as jdk.serialFilter.</span><a href="#l835"></a>
+<span id="l836"># This filter can override the builtin filter if additional types need to be</span><a href="#l836"></a>
+<span id="l837"># allowed or rejected from the RMI Registry.</span><a href="#l837"></a>
+<span id="l838">#</span><a href="#l838"></a>
+<span id="l839">#sun.rmi.registry.registryFilter=pattern;pattern</span><a href="#l839"></a>
+<span id="l840"></span><a href="#l840"></a>
+<span id="l841">#</span><a href="#l841"></a>
+<span id="l842"># RMI Distributed Garbage Collector (DGC) Serial Filter</span><a href="#l842"></a>
+<span id="l843">#</span><a href="#l843"></a>
+<span id="l844"># The filter pattern uses the same format as jdk.serialFilter.</span><a href="#l844"></a>
+<span id="l845"># This filter can override the builtin filter if additional types need to be</span><a href="#l845"></a>
+<span id="l846"># allowed or rejected from the RMI DGC.</span><a href="#l846"></a>
+<span id="l847">#</span><a href="#l847"></a>
+<span id="l848"># The builtin DGC filter can approximately be represented as the filter pattern:</span><a href="#l848"></a>
+<span id="l849">#</span><a href="#l849"></a>
+<span id="l850">#sun.rmi.transport.dgcFilter=\</span><a href="#l850"></a>
+<span id="l851">#    java.rmi.server.ObjID;\</span><a href="#l851"></a>
+<span id="l852">#    java.rmi.server.UID;\</span><a href="#l852"></a>
+<span id="l853">#    java.rmi.dgc.VMID;\</span><a href="#l853"></a>
+<span id="l854">#    java.rmi.dgc.Lease;\</span><a href="#l854"></a>
+<span id="l855">#    maxdepth=5;maxarray=10000</span><a href="#l855"></a>
+<span id="l856"></span><a href="#l856"></a>
+<span id="l857"># CORBA ORBIorTypeCheckRegistryFilter</span><a href="#l857"></a>
+<span id="l858"># Type check enhancement for ORB::string_to_object processing</span><a href="#l858"></a>
+<span id="l859">#</span><a href="#l859"></a>
+<span id="l860"># An IOR type check filter, if configured, is used by an ORB during</span><a href="#l860"></a>
+<span id="l861"># an ORB::string_to_object invocation to check the veracity of the type encoded</span><a href="#l861"></a>
+<span id="l862"># in the ior string.</span><a href="#l862"></a>
+<span id="l863">#</span><a href="#l863"></a>
+<span id="l864"># The filter pattern consists of a semi-colon separated list of class names.</span><a href="#l864"></a>
+<span id="l865"># The configured list contains the binary class names of the IDL interface types</span><a href="#l865"></a>
+<span id="l866"># corresponding to the IDL stub class to be instantiated.</span><a href="#l866"></a>
+<span id="l867"># As such, a filter specifies a list of IDL stub classes that will be</span><a href="#l867"></a>
+<span id="l868"># allowed by an ORB when an ORB::string_to_object is invoked.</span><a href="#l868"></a>
+<span id="l869"># It is used to specify a white list configuration of acceptable</span><a href="#l869"></a>
+<span id="l870"># IDL stub types which may be contained in a stringified IOR</span><a href="#l870"></a>
+<span id="l871"># parameter passed as input to an ORB::string_to_object method.</span><a href="#l871"></a>
+<span id="l872">#</span><a href="#l872"></a>
+<span id="l873"># Note: This property is currently used by the JDK Reference implementation.</span><a href="#l873"></a>
+<span id="l874"># It is not guaranteed to be examined and used by other implementations.</span><a href="#l874"></a>
+<span id="l875">#</span><a href="#l875"></a>
+<span id="l876">#com.sun.CORBA.ORBIorTypeCheckRegistryFilter=binary_class_name;binary_class_name</span><a href="#l876"></a>
+<span id="l877"></span><a href="#l877"></a>
+<span id="l878">#</span><a href="#l878"></a>
+<span id="l879"># JCEKS Encrypted Key Serial Filter</span><a href="#l879"></a>
+<span id="l880">#</span><a href="#l880"></a>
+<span id="l881"># This filter, if configured, is used by the JCEKS KeyStore during the</span><a href="#l881"></a>
+<span id="l882"># deserialization of the encrypted Key object stored inside a key entry.</span><a href="#l882"></a>
+<span id="l883"># If not configured or the filter result is UNDECIDED (i.e. none of the patterns</span><a href="#l883"></a>
+<span id="l884"># matches), the filter configured by jdk.serialFilter will be consulted.</span><a href="#l884"></a>
+<span id="l885">#</span><a href="#l885"></a>
+<span id="l886"># If the system property jceks.key.serialFilter is also specified, it supersedes</span><a href="#l886"></a>
+<span id="l887"># the security property value defined here.</span><a href="#l887"></a>
+<span id="l888">#</span><a href="#l888"></a>
+<span id="l889"># The filter pattern uses the same format as jdk.serialFilter. The default</span><a href="#l889"></a>
+<span id="l890"># pattern allows java.lang.Enum, java.security.KeyRep, java.security.KeyRep$Type,</span><a href="#l890"></a>
+<span id="l891"># and javax.crypto.spec.SecretKeySpec and rejects all the others.</span><a href="#l891"></a>
+<span id="l892">jceks.key.serialFilter = java.lang.Enum;java.security.KeyRep;\</span><a href="#l892"></a>
+<span id="l893">  java.security.KeyRep$Type;javax.crypto.spec.SecretKeySpec;!*</span><a href="#l893"></a>
+<span id="l894"></span><a href="#l894"></a>
+<span id="l895">#</span><a href="#l895"></a>
+<span id="l896"># Policies for distrusting Certificate Authorities (CAs).</span><a href="#l896"></a>
+<span id="l897">#</span><a href="#l897"></a>
+<span id="l898"># This is a comma separated value of one or more case-sensitive strings, each</span><a href="#l898"></a>
+<span id="l899"># of which represents a policy for determining if a CA should be distrusted.</span><a href="#l899"></a>
+<span id="l900"># The supported values are:</span><a href="#l900"></a>
+<span id="l901">#</span><a href="#l901"></a>
+<span id="l902">#</span><a href="#l902"></a>
+<span id="l903">#   SYMANTEC_TLS : Distrust TLS Server certificates anchored by a Symantec</span><a href="#l903"></a>
+<span id="l904">#   root CA and issued after April 16, 2019 unless issued by one of the</span><a href="#l904"></a>
+<span id="l905">#   following subordinate CAs which have a later distrust date:</span><a href="#l905"></a>
+<span id="l906">#     1. Apple IST CA 2 - G1, SHA-256 fingerprint:</span><a href="#l906"></a>
+<span id="l907">#        AC2B922ECFD5E01711772FEA8ED372DE9D1E2245FCE3F57A9CDBEC77296A424B</span><a href="#l907"></a>
+<span id="l908">#        Distrust after December 31, 2019.</span><a href="#l908"></a>
+<span id="l909">#     2. Apple IST CA 8 - G1, SHA-256 fingerprint:</span><a href="#l909"></a>
+<span id="l910">#        A4FE7C7F15155F3F0AEF7AAA83CF6E06DEB97CA3F909DF920AC1490882D488ED</span><a href="#l910"></a>
+<span id="l911">#        Distrust after December 31, 2019.</span><a href="#l911"></a>
+<span id="l912"># Leading and trailing whitespace surrounding each value are ignored.</span><a href="#l912"></a>
+<span id="l913"># Unknown values are ignored. If the property is commented out or set to the</span><a href="#l913"></a>
+<span id="l914"># empty String, no policies are enforced.</span><a href="#l914"></a>
+<span id="l915">#</span><a href="#l915"></a>
+<span id="l916"># Note: This property is currently used by the JDK Reference implementation.</span><a href="#l916"></a>
+<span id="l917"># It is not guaranteed to be supported by other SE implementations. Also, this</span><a href="#l917"></a>
+<span id="l918"># property does not override other security properties which can restrict</span><a href="#l918"></a>
+<span id="l919"># certificates such as jdk.tls.disabledAlgorithms or</span><a href="#l919"></a>
+<span id="l920"># jdk.certpath.disabledAlgorithms; those restrictions are still enforced even</span><a href="#l920"></a>
+<span id="l921"># if this property is not enabled.</span><a href="#l921"></a>
+<span id="l922">#</span><a href="#l922"></a>
+<span id="l923">jdk.security.caDistrustPolicies=SYMANTEC_TLS</span><a href="#l923"></a></pre>
+<div class="sourcelast"></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    boolean permittedCheck(String key, String algorithm) {
+2         Boolean permitted = permittedAlgs.get(algorithm);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    boolean permittedCheck(String key, String algorithm) {
+2        Boolean permitted = permittedAlgs.get(algorithm);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      */
+1    private boolean permittedCheck(String key, String algorithm) {
+2         Boolean permitted = permittedAlgs.get(algorithm);
+--------------------------------------------

@@ -1,0 +1,32 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1            if (cp.getJARTimestamp() != null) {
+2                currentDate = cp.getJARTimestamp().getTimestamp();
+3                errmsg = "JAR Timestamp date: ";
+4            } else if (cp.getPKIXParamDate() != null) {
+5                currentDate = cp.getPKIXParamDate();
+6                errmsg = "PKIXParameter date: ";
+7             } else {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1            if (cp.getJARTimestamp() != null) {
+2                currentDate = cp.getJARTimestamp().getTimestamp();
+3                errmsg = "JAR Timestamp date: ";
+4            } else if (cp.getPKIXParamDate() != null) {
+5                currentDate = cp.getPKIXParamDate();
+6                errmsg = "PKIXParameter date: ";
+7            } else {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1            if (cp.getDate() != null) {
+2                currentDate = cp.getDate();
+3             } else {
+--------------------------------------------

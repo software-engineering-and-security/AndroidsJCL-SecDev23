@@ -1,0 +1,37 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 throw new ClosedChannelException();
+1            if (blocking == block)
+2                return this;
+3            if (block && haveValidKeys())
+4                throw new IllegalBlockingModeException();
+5            implConfigureBlocking(block);
+6            blocking = block;
+7         }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                throw new ClosedChannelException();
+1            if (blocking == block)
+2                return this;
+3            if (block && haveValidKeys())
+4                throw new IllegalBlockingModeException();
+5            implConfigureBlocking(block);
+6            blocking = block;
+7        }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                 throw new ClosedChannelException();
+1            boolean blocking = !nonBlocking;
+2            if (block != blocking) {
+3                if (block && haveValidKeys())
+4                    throw new IllegalBlockingModeException();
+5                implConfigureBlocking(block);
+6                nonBlocking = !block;
+7            }
+8         }
+--------------------------------------------

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // Scanner will do the right thing
+1        String digit = "((?i)["+radixDigits+"\\p{javaDigit}])";
+2         String groupedNumeral = "("+non0Digit+digit+"?"+digit+"?("+
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        // Scanner will do the right thing
+1        String digit = "((?i)["+radixDigits+"\\p{javaDigit}])";
+2        String groupedNumeral = "("+non0Digit+digit+"?"+digit+"?("+
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0         // Scanner will do the right thing
+1        String digit = "((?i)["+radixDigits+"]|\\p{javaDigit})";
+2         String groupedNumeral = "("+non0Digit+digit+"?"+digit+"?("+
+--------------------------------------------

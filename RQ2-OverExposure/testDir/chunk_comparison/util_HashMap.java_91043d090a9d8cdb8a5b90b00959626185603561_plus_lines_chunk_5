@@ -1,0 +1,35 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         int mappings = s.readInt(); // Read number of mappings (size)
+1        if (mappings < 0) {
+2            throw new InvalidObjectException("Illegal mappings count: " + mappings);
+3        } else if (mappings == 0) {
+4            // use defaults
+5        } else if (mappings > 0) {
+6             float fc = (float)mappings / lf + 1.0f;
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        int mappings = s.readInt(); // Read number of mappings (size)
+1        if (mappings < 0) {
+2            throw new InvalidObjectException("Illegal mappings count: " + mappings);
+3        } else if (mappings == 0) {
+4            // use defaults
+5        } else if (mappings > 0) {
+6            float fc = (float)mappings / lf + 1.0f;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0         int mappings = s.readInt(); // Read number of mappings (size)
+1        if (mappings < 0)
+2            throw new InvalidObjectException("Illegal mappings count: " +
+3                                             mappings);
+4        else if (mappings > 0) { // (if zero, use defaults)
+5            // Size the table using given load factor only if within
+6            // range of 0.25...4.0
+7            float lf = Math.min(Math.max(0.25f, loadFactor), 4.0f);
+8             float fc = (float)mappings / lf + 1.0f;
+--------------------------------------------

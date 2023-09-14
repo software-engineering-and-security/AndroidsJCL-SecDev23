@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1            // Check chain has a trust anchor in cacerts
+2            if (cp.isTrustedMatch()) {
+3                 if (next(cp)) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1            // Check chain has a trust anchor in cacerts
+2            if (cp.isTrustedMatch()) {
+3                if (next(cp)) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1            // Check if any certs chain back to at least one trust anchor in
+2            // cacerts
+3            if (cp.anchorIsJdkCA()) {
+4                 if (next(cp)) {
+--------------------------------------------

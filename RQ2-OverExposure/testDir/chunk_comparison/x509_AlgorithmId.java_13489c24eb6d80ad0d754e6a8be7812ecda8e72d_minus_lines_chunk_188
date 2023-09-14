@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // Decode (parse) the parameters
+1        algParams.init(params.toByteArray());
+2     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // Decode (parse) the parameters
+1        algParams.init(params.toByteArray());
+2    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // Decode (parse) the parameters
+1        algParams.init(encodedParams.clone());
+2     }
+--------------------------------------------

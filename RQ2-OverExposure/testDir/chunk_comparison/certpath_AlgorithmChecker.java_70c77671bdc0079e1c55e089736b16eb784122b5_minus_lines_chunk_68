@@ -1,0 +1,28 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    static void check(PublicKey key, AlgorithmId algorithmId, String variant)
+2                        throws CertPathValidatorException {
+3        String sigAlgName = algorithmId.getName();
+4        AlgorithmParameters sigAlgParams = algorithmId.getParameters();
+5 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    static void check(PublicKey key, AlgorithmId algorithmId, String variant)
+2                        throws CertPathValidatorException {
+3        String sigAlgName = algorithmId.getName();
+4        AlgorithmParameters sigAlgParams = algorithmId.getParameters();
+5
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      */
+1    static void check(PublicKey key, AlgorithmId algorithmId, String variant,
+2                      TrustAnchor anchor) throws CertPathValidatorException {
+3 
+--------------------------------------------

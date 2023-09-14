@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                                     0,
+1                                    this.remaining(),
+2                                    this.remaining(),
+3                                    offset + this.position());
+4     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                                    this.remaining(),
+1                                    this.remaining(),
+2                                    offset + this.position());
+3    }
+4
+---------------------------------------------
+Differences:	['0', '2', '3', '4']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0                                     0,
+1                                    rem,
+2                                    rem,
+3                                    offset + pos);
+4     }
+--------------------------------------------

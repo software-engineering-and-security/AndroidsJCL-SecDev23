@@ -1,0 +1,36 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /*
+2     * OIDs from other sources which show up in X.500 names we
+3     * expect to deal with often
+4     */
+5    /** OID for "IP=" IP address attributes, used with SKIP. */
+6        ipAddress_oid = intern(ObjectIdentifier.newInternal(ipAddress_data));
+7 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /*
+2     * OID for "DC=" domain component attributes, used with DNSNames in DN
+3     * format
+4     */
+5        DOMAIN_COMPONENT_OID =
+6            intern(ObjectIdentifier.newInternal(DOMAIN_COMPONENT_DATA));
+7
+---------------------------------------------
+Differences:	['6']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1    // OIDs from other sources which show up in X.500 names we
+2    // expect to deal with often.
+3    //
+4    // OID for "IP=" IP address attributes, used with SKIP.
+5    public static final ObjectIdentifier ipAddress_oid =
+6            ObjectIdentifier.newInternal(ipAddress_data);
+7 
+--------------------------------------------

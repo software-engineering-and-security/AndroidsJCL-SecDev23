@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                             usage + " check failed: " + algorithm +
+1                            extendedMsg(cp),
+2                             null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                            usage + " check failed: " + algorithm +
+1                            extendedMsg(cp),
+2                            null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                             usage + " check failed: " + algorithm +
+1                            cp.extendedExceptionMsg(),
+2                             null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+--------------------------------------------

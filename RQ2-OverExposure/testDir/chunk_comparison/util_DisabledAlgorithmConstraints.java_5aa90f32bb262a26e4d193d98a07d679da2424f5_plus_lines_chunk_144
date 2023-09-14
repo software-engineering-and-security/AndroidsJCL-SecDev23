@@ -1,0 +1,22 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             }
+1
+2             // Check all applicable constraints
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0}
+1
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0             }
+1            if (cp.getKey() != null) {
+2                algorithms.add(cp.getKey().getAlgorithm());
+3            }
+4             // Check all applicable constraints
+--------------------------------------------

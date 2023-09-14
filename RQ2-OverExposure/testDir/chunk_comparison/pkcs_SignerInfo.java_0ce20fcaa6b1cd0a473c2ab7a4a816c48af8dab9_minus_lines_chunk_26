@@ -1,0 +1,26 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             }
+1        } catch (IOException e) {
+2            throw new SignatureException("IO error verifying signature:\n" +
+3                                         e.getMessage());
+4         }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        } catch (IOException e) {
+2            throw new SignatureException("IO error verifying signature:\n" +
+3                                         e.getMessage());
+4
+---------------------------------------------
+Differences:	['0', '4']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0             }
+1        } catch (IOException | CertificateException e) {
+2            throw new SignatureException("Error verifying signature", e);
+3         }
+--------------------------------------------

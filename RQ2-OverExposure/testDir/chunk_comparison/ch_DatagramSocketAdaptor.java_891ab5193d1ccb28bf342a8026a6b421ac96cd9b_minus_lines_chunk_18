@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                     throw new SocketTimeoutException();
+1
+2             }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0       public Object getOption(int optID) throws SocketException { return null;}
+1
+2       public void setOption(int optID, Object value) throws SocketException {}
+---------------------------------------------
+Differences:	['0', '2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

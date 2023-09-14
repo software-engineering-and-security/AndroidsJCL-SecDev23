@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             try {
+1
+2                 if (timeout == 0) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2    // Android-added: for testing and internal use.
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

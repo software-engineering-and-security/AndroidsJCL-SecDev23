@@ -1,0 +1,43 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    public final void permits(ConstraintsParameters cp)
+2            throws CertPathValidatorException {
+3        permits(cp.getAlgorithm(), cp);
+4     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    public final void permits(ConstraintsParameters cp)
+2            throws CertPathValidatorException {
+3        permits(cp.getAlgorithm(), cp);
+4    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    public final void permits(String algorithm, AlgorithmParameters ap,
+2        ConstraintsParameters cp) throws CertPathValidatorException {
+3
+4        permits(algorithm, cp);
+5        if (ap != null) {
+6            permits(ap, cp);
+7        }
+8    }
+9
+10    private void permits(AlgorithmParameters ap, ConstraintsParameters cp)
+11        throws CertPathValidatorException {
+12
+13        switch (ap.getAlgorithm().toUpperCase(Locale.ENGLISH)) {
+14            case "RSASSA-PSS":
+15                permitsPSSParams(ap, cp);
+16                break;
+17            default:
+18                // unknown algorithm, just ignore
+19        }
+20     }
+--------------------------------------------

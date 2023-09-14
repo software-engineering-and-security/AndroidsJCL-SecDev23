@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: 2c2aa634c373</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/2c2aa634c373">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/2c2aa634c373">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/2c2aa634c373">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/2c2aa634c373">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2c2aa634c373.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2c2aa634c373.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/2c2aa634c373.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 13780:2c2aa634c373   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8226352: Improve Kerberos interop capabilities
+Reviewed-by: ahgross, mullan, valeriep</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#119;&#101;&#105;&#106;&#117;&#110;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Sun, 12 Jan 2020 06:09:15 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/1057e0b4042a">1057e0b4042a</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/2c97a7a401c6">2c97a7a401c6</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/2c2aa634c373/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Base.java">src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Base.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c2aa634c373/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Client.java">src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Client.java</a> <a href="/jdk8u/jdk8u/jdk/file/2c2aa634c373/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Server.java">src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Server.java</a> test/sun/security/krb5/auto/SaslGSS.java </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     4 files changed, 30 insertions(+), 143 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Base.java</a></td>
+    <td class="diffstat-total" align="right">24</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:16.0583941606%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.4598540146%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Client.java</a></td>
+    <td class="diffstat-total" align="right">6</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.9197080292%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.4598540146%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Server.java</a></td>
+    <td class="diffstat-total" align="right">6</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.9197080292%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.4598540146%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">test/sun/security/krb5/auto/SaslGSS.java</a></td>
+    <td class="diffstat-total" align="right">137</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:100.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Base.java	Sun Jan 12 05:59:10 2020 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Base.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright (c) 2003, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright (c) 2003, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -73,8 +73,12 @@</span><a href="#l1.10"></a>
+<span id="l1.11">         }</span><a href="#l1.11"></a>
+<span id="l1.12"> </span><a href="#l1.12"></a>
+<span id="l1.13">         try {</span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-            MessageProp msgProp = new MessageProp(JGSS_QOP, privacy);</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+            MessageProp msgProp = new MessageProp(JGSS_QOP, false);</span><a href="#l1.15"></a>
+<span id="l1.16">             byte[] answer = secCtx.unwrap(incoming, start, len, msgProp);</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+            if (privacy &amp;&amp; !msgProp.getPrivacy()) {</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+                throw new SaslException(&quot;Privacy not protected&quot;);</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+            }</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+            checkMessageProp(&quot;&quot;, msgProp);</span><a href="#l1.20"></a>
+<span id="l1.21">             if (logger.isLoggable(Level.FINEST)) {</span><a href="#l1.21"></a>
+<span id="l1.22">                 traceOutput(myClassName, &quot;KRB501:Unwrap&quot;, &quot;incoming: &quot;,</span><a href="#l1.22"></a>
+<span id="l1.23">                     incoming, start, len);</span><a href="#l1.23"></a>
+<span id="l1.24" class="atline">@@ -128,4 +132,20 @@</span><a href="#l1.24"></a>
+<span id="l1.25">     protected void finalize() throws Throwable {</span><a href="#l1.25"></a>
+<span id="l1.26">         dispose();</span><a href="#l1.26"></a>
+<span id="l1.27">     }</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+    void checkMessageProp(String label, MessageProp msgProp)</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+            throws SaslException {</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+        if (msgProp.isDuplicateToken()) {</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+            throw new SaslException(label + &quot;Duplicate token&quot;);</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+        }</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+        if (msgProp.isGapToken()) {</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+            throw new SaslException(label + &quot;Gap token&quot;);</span><a href="#l1.35"></a>
+<span id="l1.36" class="plusline">+        }</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+        if (msgProp.isOldToken()) {</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+            throw new SaslException(label + &quot;Old token&quot;);</span><a href="#l1.38"></a>
+<span id="l1.39" class="plusline">+        }</span><a href="#l1.39"></a>
+<span id="l1.40" class="plusline">+        if (msgProp.isUnseqToken()) {</span><a href="#l1.40"></a>
+<span id="l1.41" class="plusline">+            throw new SaslException(label + &quot;Token not in sequence&quot;);</span><a href="#l1.41"></a>
+<span id="l1.42" class="plusline">+        }</span><a href="#l1.42"></a>
+<span id="l1.43" class="plusline">+    }</span><a href="#l1.43"></a>
+<span id="l1.44"> }</span><a href="#l1.44"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Client.java	Sun Jan 12 05:59:10 2020 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Client.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -230,8 +230,10 @@</span><a href="#l2.10"></a>
+<span id="l2.11"> </span><a href="#l2.11"></a>
+<span id="l2.12">             // Received S1 (security layer, server max recv size)</span><a href="#l2.12"></a>
+<span id="l2.13"> </span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+            MessageProp msgProp = new MessageProp(false);</span><a href="#l2.14"></a>
+<span id="l2.15">             byte[] gssOutToken = secCtx.unwrap(challengeData, 0,</span><a href="#l2.15"></a>
+<span id="l2.16" class="minusline">-                challengeData.length, new MessageProp(0, false));</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+                challengeData.length, msgProp);</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+            checkMessageProp(&quot;Handshake failure: &quot;, msgProp);</span><a href="#l2.18"></a>
+<span id="l2.19"> </span><a href="#l2.19"></a>
+<span id="l2.20">             // First octet is a bit-mask specifying the protections</span><a href="#l2.20"></a>
+<span id="l2.21">             // supported by the server</span><a href="#l2.21"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Server.java	Sun Jan 12 05:59:10 2020 +0000</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/com/sun/security/sasl/gsskerb/GssKrb5Server.java	Sun Jan 12 06:09:15 2020 +0000</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> /*</span><a href="#l3.4"></a>
+<span id="l3.5" class="minusline">- * Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l3.5"></a>
+<span id="l3.6" class="plusline">+ * Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l3.6"></a>
+<span id="l3.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l3.7"></a>
+<span id="l3.8">  *</span><a href="#l3.8"></a>
+<span id="l3.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l3.9"></a>
+<span id="l3.10" class="atline">@@ -250,8 +250,10 @@</span><a href="#l3.10"></a>
+<span id="l3.11">         try {</span><a href="#l3.11"></a>
+<span id="l3.12">             // Expecting 4 octets from client selected protection</span><a href="#l3.12"></a>
+<span id="l3.13">             // and client's receive buffer size</span><a href="#l3.13"></a>
+<span id="l3.14" class="plusline">+            MessageProp msgProp = new MessageProp(false);</span><a href="#l3.14"></a>
+<span id="l3.15">             byte[] gssOutToken = secCtx.unwrap(responseData, 0,</span><a href="#l3.15"></a>
+<span id="l3.16" class="minusline">-                responseData.length, new MessageProp(0, false));</span><a href="#l3.16"></a>
+<span id="l3.17" class="plusline">+                responseData.length, msgProp);</span><a href="#l3.17"></a>
+<span id="l3.18" class="plusline">+            checkMessageProp(&quot;Handshake failure: &quot;, msgProp);</span><a href="#l3.18"></a>
+<span id="l3.19"> </span><a href="#l3.19"></a>
+<span id="l3.20">             if (logger.isLoggable(Level.FINER)) {</span><a href="#l3.20"></a>
+<span id="l3.21">                 traceOutput(MY_CLASS_NAME, &quot;doHandshake2&quot;,</span><a href="#l3.21"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/test/sun/security/krb5/auto/SaslGSS.java	Sun Jan 12 05:59:10 2020 +0000</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -1,137 +0,0 @@</span><a href="#l4.3"></a>
+<span id="l4.4" class="minusline">-/*</span><a href="#l4.4"></a>
+<span id="l4.5" class="minusline">- * Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.5"></a>
+<span id="l4.6" class="minusline">- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l4.6"></a>
+<span id="l4.7" class="minusline">- *</span><a href="#l4.7"></a>
+<span id="l4.8" class="minusline">- * This code is free software; you can redistribute it and/or modify it</span><a href="#l4.8"></a>
+<span id="l4.9" class="minusline">- * under the terms of the GNU General Public License version 2 only, as</span><a href="#l4.9"></a>
+<span id="l4.10" class="minusline">- * published by the Free Software Foundation.</span><a href="#l4.10"></a>
+<span id="l4.11" class="minusline">- *</span><a href="#l4.11"></a>
+<span id="l4.12" class="minusline">- * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l4.12"></a>
+<span id="l4.13" class="minusline">- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l4.13"></a>
+<span id="l4.14" class="minusline">- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l4.14"></a>
+<span id="l4.15" class="minusline">- * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l4.15"></a>
+<span id="l4.16" class="minusline">- * accompanied this code).</span><a href="#l4.16"></a>
+<span id="l4.17" class="minusline">- *</span><a href="#l4.17"></a>
+<span id="l4.18" class="minusline">- * You should have received a copy of the GNU General Public License version</span><a href="#l4.18"></a>
+<span id="l4.19" class="minusline">- * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l4.19"></a>
+<span id="l4.20" class="minusline">- * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l4.20"></a>
+<span id="l4.21" class="minusline">- *</span><a href="#l4.21"></a>
+<span id="l4.22" class="minusline">- * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA</span><a href="#l4.22"></a>
+<span id="l4.23" class="minusline">- * or visit www.oracle.com if you need additional information or have any</span><a href="#l4.23"></a>
+<span id="l4.24" class="minusline">- * questions.</span><a href="#l4.24"></a>
+<span id="l4.25" class="minusline">- */</span><a href="#l4.25"></a>
+<span id="l4.26" class="minusline">-</span><a href="#l4.26"></a>
+<span id="l4.27" class="minusline">-/*</span><a href="#l4.27"></a>
+<span id="l4.28" class="minusline">- * @test</span><a href="#l4.28"></a>
+<span id="l4.29" class="minusline">- * @bug 8012082 8019267</span><a href="#l4.29"></a>
+<span id="l4.30" class="minusline">- * @summary SASL: auth-conf negotiated, but unencrypted data is accepted,</span><a href="#l4.30"></a>
+<span id="l4.31" class="minusline">-  *         reset to unencrypt</span><a href="#l4.31"></a>
+<span id="l4.32" class="minusline">- * @compile -XDignore.symbol.file SaslGSS.java</span><a href="#l4.32"></a>
+<span id="l4.33" class="minusline">- * @run main/othervm -Dsun.net.spi.nameservice.provider.1=ns,mock SaslGSS</span><a href="#l4.33"></a>
+<span id="l4.34" class="minusline">- */</span><a href="#l4.34"></a>
+<span id="l4.35" class="minusline">-</span><a href="#l4.35"></a>
+<span id="l4.36" class="minusline">-import javax.security.auth.callback.Callback;</span><a href="#l4.36"></a>
+<span id="l4.37" class="minusline">-import javax.security.auth.callback.CallbackHandler;</span><a href="#l4.37"></a>
+<span id="l4.38" class="minusline">-import javax.security.auth.callback.UnsupportedCallbackException;</span><a href="#l4.38"></a>
+<span id="l4.39" class="minusline">-import javax.security.sasl.AuthorizeCallback;</span><a href="#l4.39"></a>
+<span id="l4.40" class="minusline">-import javax.security.sasl.RealmCallback;</span><a href="#l4.40"></a>
+<span id="l4.41" class="minusline">-import javax.security.sasl.Sasl;</span><a href="#l4.41"></a>
+<span id="l4.42" class="minusline">-import javax.security.sasl.SaslServer;</span><a href="#l4.42"></a>
+<span id="l4.43" class="minusline">-import java.io.ByteArrayOutputStream;</span><a href="#l4.43"></a>
+<span id="l4.44" class="minusline">-import java.io.IOException;</span><a href="#l4.44"></a>
+<span id="l4.45" class="minusline">-import java.io.PrintStream;</span><a href="#l4.45"></a>
+<span id="l4.46" class="minusline">-import java.util.HashMap;</span><a href="#l4.46"></a>
+<span id="l4.47" class="minusline">-import java.util.Locale;</span><a href="#l4.47"></a>
+<span id="l4.48" class="minusline">-import java.util.logging.ConsoleHandler;</span><a href="#l4.48"></a>
+<span id="l4.49" class="minusline">-import java.util.logging.Handler;</span><a href="#l4.49"></a>
+<span id="l4.50" class="minusline">-import java.util.logging.Level;</span><a href="#l4.50"></a>
+<span id="l4.51" class="minusline">-import java.util.logging.Logger;</span><a href="#l4.51"></a>
+<span id="l4.52" class="minusline">-</span><a href="#l4.52"></a>
+<span id="l4.53" class="minusline">-import org.ietf.jgss.*;</span><a href="#l4.53"></a>
+<span id="l4.54" class="minusline">-import sun.security.jgss.GSSUtil;</span><a href="#l4.54"></a>
+<span id="l4.55" class="minusline">-</span><a href="#l4.55"></a>
+<span id="l4.56" class="minusline">-public class SaslGSS {</span><a href="#l4.56"></a>
+<span id="l4.57" class="minusline">-</span><a href="#l4.57"></a>
+<span id="l4.58" class="minusline">-    public static void main(String[] args) throws Exception {</span><a href="#l4.58"></a>
+<span id="l4.59" class="minusline">-</span><a href="#l4.59"></a>
+<span id="l4.60" class="minusline">-        String name = &quot;host.&quot; + OneKDC.REALM.toLowerCase(Locale.US);</span><a href="#l4.60"></a>
+<span id="l4.61" class="minusline">-</span><a href="#l4.61"></a>
+<span id="l4.62" class="minusline">-        new OneKDC(null).writeJAASConf();</span><a href="#l4.62"></a>
+<span id="l4.63" class="minusline">-        System.setProperty(&quot;javax.security.auth.useSubjectCredsOnly&quot;, &quot;false&quot;);</span><a href="#l4.63"></a>
+<span id="l4.64" class="minusline">-</span><a href="#l4.64"></a>
+<span id="l4.65" class="minusline">-        // Client in JGSS so that it can control wrap privacy mode</span><a href="#l4.65"></a>
+<span id="l4.66" class="minusline">-        GSSManager m = GSSManager.getInstance();</span><a href="#l4.66"></a>
+<span id="l4.67" class="minusline">-        GSSContext sc = m.createContext(</span><a href="#l4.67"></a>
+<span id="l4.68" class="minusline">-                        m.createName(OneKDC.SERVER, GSSUtil.NT_GSS_KRB5_PRINCIPAL),</span><a href="#l4.68"></a>
+<span id="l4.69" class="minusline">-                        GSSUtil.GSS_KRB5_MECH_OID,</span><a href="#l4.69"></a>
+<span id="l4.70" class="minusline">-                        null,</span><a href="#l4.70"></a>
+<span id="l4.71" class="minusline">-                        GSSContext.DEFAULT_LIFETIME);</span><a href="#l4.71"></a>
+<span id="l4.72" class="minusline">-        sc.requestMutualAuth(false);</span><a href="#l4.72"></a>
+<span id="l4.73" class="minusline">-</span><a href="#l4.73"></a>
+<span id="l4.74" class="minusline">-        // Server in SASL</span><a href="#l4.74"></a>
+<span id="l4.75" class="minusline">-        final HashMap props = new HashMap();</span><a href="#l4.75"></a>
+<span id="l4.76" class="minusline">-        props.put(Sasl.QOP, &quot;auth-conf&quot;);</span><a href="#l4.76"></a>
+<span id="l4.77" class="minusline">-        SaslServer ss = Sasl.createSaslServer(&quot;GSSAPI&quot;, &quot;server&quot;,</span><a href="#l4.77"></a>
+<span id="l4.78" class="minusline">-                name, props,</span><a href="#l4.78"></a>
+<span id="l4.79" class="minusline">-                new CallbackHandler() {</span><a href="#l4.79"></a>
+<span id="l4.80" class="minusline">-                    public void handle(Callback[] callbacks)</span><a href="#l4.80"></a>
+<span id="l4.81" class="minusline">-                            throws IOException, UnsupportedCallbackException {</span><a href="#l4.81"></a>
+<span id="l4.82" class="minusline">-                        for (Callback cb : callbacks) {</span><a href="#l4.82"></a>
+<span id="l4.83" class="minusline">-                            if (cb instanceof RealmCallback) {</span><a href="#l4.83"></a>
+<span id="l4.84" class="minusline">-                                ((RealmCallback) cb).setText(OneKDC.REALM);</span><a href="#l4.84"></a>
+<span id="l4.85" class="minusline">-                            } else if (cb instanceof AuthorizeCallback) {</span><a href="#l4.85"></a>
+<span id="l4.86" class="minusline">-                                ((AuthorizeCallback) cb).setAuthorized(true);</span><a href="#l4.86"></a>
+<span id="l4.87" class="minusline">-                            }</span><a href="#l4.87"></a>
+<span id="l4.88" class="minusline">-                        }</span><a href="#l4.88"></a>
+<span id="l4.89" class="minusline">-                    }</span><a href="#l4.89"></a>
+<span id="l4.90" class="minusline">-                });</span><a href="#l4.90"></a>
+<span id="l4.91" class="minusline">-</span><a href="#l4.91"></a>
+<span id="l4.92" class="minusline">-        ByteArrayOutputStream bout = new ByteArrayOutputStream();</span><a href="#l4.92"></a>
+<span id="l4.93" class="minusline">-        PrintStream oldErr = System.err;</span><a href="#l4.93"></a>
+<span id="l4.94" class="minusline">-        System.setErr(new PrintStream(bout));</span><a href="#l4.94"></a>
+<span id="l4.95" class="minusline">-</span><a href="#l4.95"></a>
+<span id="l4.96" class="minusline">-        Logger.getLogger(&quot;javax.security.sasl&quot;).setLevel(Level.ALL);</span><a href="#l4.96"></a>
+<span id="l4.97" class="minusline">-        Handler h = new ConsoleHandler();</span><a href="#l4.97"></a>
+<span id="l4.98" class="minusline">-        h.setLevel(Level.ALL);</span><a href="#l4.98"></a>
+<span id="l4.99" class="minusline">-        Logger.getLogger(&quot;javax.security.sasl&quot;).addHandler(h);</span><a href="#l4.99"></a>
+<span id="l4.100" class="minusline">-</span><a href="#l4.100"></a>
+<span id="l4.101" class="minusline">-        byte[] token = new byte[0];</span><a href="#l4.101"></a>
+<span id="l4.102" class="minusline">-</span><a href="#l4.102"></a>
+<span id="l4.103" class="minusline">-        try {</span><a href="#l4.103"></a>
+<span id="l4.104" class="minusline">-            // Handshake</span><a href="#l4.104"></a>
+<span id="l4.105" class="minusline">-            token = sc.initSecContext(token, 0, token.length);</span><a href="#l4.105"></a>
+<span id="l4.106" class="minusline">-            token = ss.evaluateResponse(token);</span><a href="#l4.106"></a>
+<span id="l4.107" class="minusline">-            token = sc.unwrap(token, 0, token.length, new MessageProp(0, false));</span><a href="#l4.107"></a>
+<span id="l4.108" class="minusline">-            token[0] = (byte)(((token[0] &amp; 4) != 0) ? 4 : 2);</span><a href="#l4.108"></a>
+<span id="l4.109" class="minusline">-            token = sc.wrap(token, 0, token.length, new MessageProp(0, false));</span><a href="#l4.109"></a>
+<span id="l4.110" class="minusline">-            ss.evaluateResponse(token);</span><a href="#l4.110"></a>
+<span id="l4.111" class="minusline">-        } finally {</span><a href="#l4.111"></a>
+<span id="l4.112" class="minusline">-            System.setErr(oldErr);</span><a href="#l4.112"></a>
+<span id="l4.113" class="minusline">-        }</span><a href="#l4.113"></a>
+<span id="l4.114" class="minusline">-</span><a href="#l4.114"></a>
+<span id="l4.115" class="minusline">-        // Talk</span><a href="#l4.115"></a>
+<span id="l4.116" class="minusline">-        // 1. Client sends a auth-int message</span><a href="#l4.116"></a>
+<span id="l4.117" class="minusline">-        byte[] hello = &quot;hello&quot;.getBytes();</span><a href="#l4.117"></a>
+<span id="l4.118" class="minusline">-        MessageProp qop = new MessageProp(0, false);</span><a href="#l4.118"></a>
+<span id="l4.119" class="minusline">-        token = sc.wrap(hello, 0, hello.length, qop);</span><a href="#l4.119"></a>
+<span id="l4.120" class="minusline">-        // 2. Server accepts it anyway</span><a href="#l4.120"></a>
+<span id="l4.121" class="minusline">-        ss.unwrap(token, 0, token.length);</span><a href="#l4.121"></a>
+<span id="l4.122" class="minusline">-        // 3. Server sends a message</span><a href="#l4.122"></a>
+<span id="l4.123" class="minusline">-        token = ss.wrap(hello, 0, hello.length);</span><a href="#l4.123"></a>
+<span id="l4.124" class="minusline">-        // 4. Client accepts, should be auth-conf</span><a href="#l4.124"></a>
+<span id="l4.125" class="minusline">-        sc.unwrap(token, 0, token.length, qop);</span><a href="#l4.125"></a>
+<span id="l4.126" class="minusline">-        if (!qop.getPrivacy()) {</span><a href="#l4.126"></a>
+<span id="l4.127" class="minusline">-            throw new Exception();</span><a href="#l4.127"></a>
+<span id="l4.128" class="minusline">-        }</span><a href="#l4.128"></a>
+<span id="l4.129" class="minusline">-</span><a href="#l4.129"></a>
+<span id="l4.130" class="minusline">-        for (String s: bout.toString().split(&quot;\\n&quot;)) {</span><a href="#l4.130"></a>
+<span id="l4.131" class="minusline">-            if (s.contains(&quot;KRB5SRV04&quot;) &amp;&amp; s.contains(&quot;NULL&quot;)) {</span><a href="#l4.131"></a>
+<span id="l4.132" class="minusline">-                return;</span><a href="#l4.132"></a>
+<span id="l4.133" class="minusline">-            }</span><a href="#l4.133"></a>
+<span id="l4.134" class="minusline">-        }</span><a href="#l4.134"></a>
+<span id="l4.135" class="minusline">-        System.out.println(&quot;=======================&quot;);</span><a href="#l4.135"></a>
+<span id="l4.136" class="minusline">-        System.out.println(bout.toString());</span><a href="#l4.136"></a>
+<span id="l4.137" class="minusline">-        System.out.println(&quot;=======================&quot;);</span><a href="#l4.137"></a>
+<span id="l4.138" class="minusline">-        throw new Exception(&quot;Haven't seen KRB5SRV04 with NULL&quot;);</span><a href="#l4.138"></a>
+<span id="l4.139" class="minusline">-    }</span><a href="#l4.139"></a>
+<span id="l4.140" class="minusline">-}</span><a href="#l4.140"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

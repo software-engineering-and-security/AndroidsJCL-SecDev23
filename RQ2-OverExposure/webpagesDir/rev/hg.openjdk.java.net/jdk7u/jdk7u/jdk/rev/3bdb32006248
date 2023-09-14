@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk7u/jdk7u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk7u/jdk7u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk7u/jdk7u/jdk/static/mercurial.js"></script>
+
+<title>jdk7u/jdk7u/jdk: 3bdb32006248</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk7u/jdk7u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk7u/jdk7u/jdk/shortlog/3bdb32006248">log</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/graph/3bdb32006248">graph</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/tags">tags</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk7u/jdk7u/jdk/raw-rev/3bdb32006248">raw</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/file/3bdb32006248">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/3bdb32006248.zip">zip</a>
+</li>
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/3bdb32006248.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/3bdb32006248.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk7u/jdk7u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u/jdk">jdk</a> </h2>
+<h3>changeset 9004:3bdb32006248   </h3>
+
+<form class="search" action="/jdk7u/jdk7u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk7u/jdk7u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8234841: Enhance buffering of byte buffers
+Reviewed-by: alanb, ahgross, rhalade, psandoz</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#114;&#111;&#98;&#109;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Mon, 30 Mar 2020 05:13:42 +0100</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk7u/jdk7u/jdk/rev/562298bad83c">562298bad83c</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk7u/jdk7u/jdk/rev/41d764523117">41d764523117</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk7u/jdk7u/jdk/file/3bdb32006248/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template">src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template</a> <a href="/jdk7u/jdk7u/jdk/file/3bdb32006248/src/share/classes/java/nio/Direct-X-Buffer.java.template">src/share/classes/java/nio/Direct-X-Buffer.java.template</a> <a href="/jdk7u/jdk7u/jdk/file/3bdb32006248/src/share/classes/java/nio/Heap-X-Buffer.java.template">src/share/classes/java/nio/Heap-X-Buffer.java.template</a> <a href="/jdk7u/jdk7u/jdk/file/3bdb32006248/src/share/classes/java/nio/StringCharBuffer.java">src/share/classes/java/nio/StringCharBuffer.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     4 files changed, 10 insertions(+), 7 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template</a></td>
+    <td class="diffstat-total" align="right">1</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:11.1111111111%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/java/nio/Direct-X-Buffer.java.template</a></td>
+    <td class="diffstat-total" align="right">1</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:11.1111111111%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/java/nio/Heap-X-Buffer.java.template</a></td>
+    <td class="diffstat-total" align="right">6</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:44.4444444444%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:22.2222222222%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/share/classes/java/nio/StringCharBuffer.java</a></td>
+    <td class="diffstat-total" align="right">9</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:66.6666666667%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:33.3333333333%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template	Mon Apr 06 03:06:09 2020 +0100</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template	Mon Mar 30 05:13:42 2020 +0100</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -72,7 +72,6 @@</span><a href="#l1.3"></a>
+<span id="l1.4">     public $Type$Buffer slice() {</span><a href="#l1.4"></a>
+<span id="l1.5">         int pos = this.position();</span><a href="#l1.5"></a>
+<span id="l1.6">         int lim = this.limit();</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-        assert (pos &lt;= lim);</span><a href="#l1.7"></a>
+<span id="l1.8">         int rem = (pos &lt;= lim ? lim - pos : 0);</span><a href="#l1.8"></a>
+<span id="l1.9">         int off = (pos &lt;&lt; $LG_BYTES_PER_VALUE$) + offset;</span><a href="#l1.9"></a>
+<span id="l1.10">         assert (off &gt;= 0);</span><a href="#l1.10"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/java/nio/Direct-X-Buffer.java.template	Mon Apr 06 03:06:09 2020 +0100</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/java/nio/Direct-X-Buffer.java.template	Mon Mar 30 05:13:42 2020 +0100</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -206,7 +206,6 @@</span><a href="#l2.3"></a>
+<span id="l2.4">     public $Type$Buffer slice() {</span><a href="#l2.4"></a>
+<span id="l2.5">         int pos = this.position();</span><a href="#l2.5"></a>
+<span id="l2.6">         int lim = this.limit();</span><a href="#l2.6"></a>
+<span id="l2.7" class="minusline">-        assert (pos &lt;= lim);</span><a href="#l2.7"></a>
+<span id="l2.8">         int rem = (pos &lt;= lim ? lim - pos : 0);</span><a href="#l2.8"></a>
+<span id="l2.9">         int off = (pos &lt;&lt; $LG_BYTES_PER_VALUE$);</span><a href="#l2.9"></a>
+<span id="l2.10">         assert (off &gt;= 0);</span><a href="#l2.10"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/java/nio/Heap-X-Buffer.java.template	Mon Apr 06 03:06:09 2020 +0100</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/java/nio/Heap-X-Buffer.java.template	Mon Mar 30 05:13:42 2020 +0100</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -95,13 +95,15 @@</span><a href="#l3.3"></a>
+<span id="l3.4">     }</span><a href="#l3.4"></a>
+<span id="l3.5"> </span><a href="#l3.5"></a>
+<span id="l3.6">     public $Type$Buffer slice() {</span><a href="#l3.6"></a>
+<span id="l3.7" class="minusline">-        int rem = this.remaining();</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+        int pos = this.position();</span><a href="#l3.8"></a>
+<span id="l3.9" class="plusline">+        int lim = this.limit();</span><a href="#l3.9"></a>
+<span id="l3.10" class="plusline">+        int rem = (pos &lt;= lim ? lim - pos : 0);</span><a href="#l3.10"></a>
+<span id="l3.11">         return new Heap$Type$Buffer$RW$(hb,</span><a href="#l3.11"></a>
+<span id="l3.12">                                         -1,</span><a href="#l3.12"></a>
+<span id="l3.13">                                         0,</span><a href="#l3.13"></a>
+<span id="l3.14">                                         rem,</span><a href="#l3.14"></a>
+<span id="l3.15">                                         rem,</span><a href="#l3.15"></a>
+<span id="l3.16" class="minusline">-                                        this.position() + offset);</span><a href="#l3.16"></a>
+<span id="l3.17" class="plusline">+                                        pos + offset);</span><a href="#l3.17"></a>
+<span id="l3.18">     }</span><a href="#l3.18"></a>
+<span id="l3.19"> </span><a href="#l3.19"></a>
+<span id="l3.20">     public $Type$Buffer duplicate() {</span><a href="#l3.20"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/share/classes/java/nio/StringCharBuffer.java	Mon Apr 06 03:06:09 2020 +0100</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/share/classes/java/nio/StringCharBuffer.java	Mon Mar 30 05:13:42 2020 +0100</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -42,12 +42,15 @@</span><a href="#l4.3"></a>
+<span id="l4.4">     }</span><a href="#l4.4"></a>
+<span id="l4.5"> </span><a href="#l4.5"></a>
+<span id="l4.6">     public CharBuffer slice() {</span><a href="#l4.6"></a>
+<span id="l4.7" class="plusline">+        int pos = this.position();</span><a href="#l4.7"></a>
+<span id="l4.8" class="plusline">+        int lim = this.limit();</span><a href="#l4.8"></a>
+<span id="l4.9" class="plusline">+        int rem = (pos &lt;= lim ? lim - pos : 0);</span><a href="#l4.9"></a>
+<span id="l4.10">         return new StringCharBuffer(str,</span><a href="#l4.10"></a>
+<span id="l4.11">                                     -1,</span><a href="#l4.11"></a>
+<span id="l4.12">                                     0,</span><a href="#l4.12"></a>
+<span id="l4.13" class="minusline">-                                    this.remaining(),</span><a href="#l4.13"></a>
+<span id="l4.14" class="minusline">-                                    this.remaining(),</span><a href="#l4.14"></a>
+<span id="l4.15" class="minusline">-                                    offset + this.position());</span><a href="#l4.15"></a>
+<span id="l4.16" class="plusline">+                                    rem,</span><a href="#l4.16"></a>
+<span id="l4.17" class="plusline">+                                    rem,</span><a href="#l4.17"></a>
+<span id="l4.18" class="plusline">+                                    offset + pos);</span><a href="#l4.18"></a>
+<span id="l4.19">     }</span><a href="#l4.19"></a>
+<span id="l4.20"> </span><a href="#l4.20"></a>
+<span id="l4.21">     private StringCharBuffer(CharSequence s,</span><a href="#l4.21"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

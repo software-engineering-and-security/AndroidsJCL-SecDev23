@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     {
+1        // Read in the threshold and loadFactor
+2        s.defaultReadObject();
+3 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            throws IOException, ClassNotFoundException {
+1        // Read in the threshold and loadFactor
+2        s.defaultReadObject();
+3
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0     {
+1
+2        ObjectInputStream.GetField fields = s.readFields();
+3 
+--------------------------------------------

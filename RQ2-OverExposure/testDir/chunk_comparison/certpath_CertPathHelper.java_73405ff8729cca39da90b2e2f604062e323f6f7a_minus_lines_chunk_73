@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 /**
+1 * Helper class that allows access to Sun specific known-public methods in the
+2  * java.security.cert package. It relies on a subclass in the
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0/**
+1 * Helper class that allows access to Sun specific known-public methods in the
+2 * java.security.cert package. It relies on a subclass in the
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 /**
+1 * Helper class that allows access to JDK specific known-public methods in the
+2  * java.security.cert package. It relies on a subclass in the
+--------------------------------------------

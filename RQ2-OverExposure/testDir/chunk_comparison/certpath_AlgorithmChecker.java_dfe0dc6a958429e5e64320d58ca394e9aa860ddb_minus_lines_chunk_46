@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      * Note that this constructor can initialize a variation of situations where
+1     * the AlgorithmConstraints, Timestamp, or Variant maybe known.
+2      *
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     * Note that this constructor can initialize a variation of situations where
+1     * the AlgorithmConstraints, Timestamp, or Variant maybe known.
+2     *
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      * Note that this constructor can initialize a variation of situations where
+1     * the AlgorithmConstraints or Variant maybe known.
+2      *
+--------------------------------------------

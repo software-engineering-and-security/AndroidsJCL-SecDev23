@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: 795e9800622a</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/795e9800622a">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/795e9800622a">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/795e9800622a">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/795e9800622a">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/795e9800622a.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/795e9800622a.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/795e9800622a.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 188:795e9800622a   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6657695: AbstractSaslImpl.logger is a static mutable (findbugs)
+Reviewed-by: alanb</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#118;&#105;&#110;&#110;&#105;&#101;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 15 Jul 2009 16:18:48 +0100</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/0e38a6d0b9a0">0e38a6d0b9a0</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/75ddec763ddc">75ddec763ddc</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/795e9800622a/src/share/classes/com/sun/security/sasl/util/AbstractSaslImpl.java">src/share/classes/com/sun/security/sasl/util/AbstractSaslImpl.java</a> <a href="/jdk6/jdk6/jdk/file/795e9800622a/test/com/sun/security/sasl/util/CheckAccess.java">test/com/sun/security/sasl/util/CheckAccess.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 52 insertions(+), 15 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/com/sun/security/sasl/util/AbstractSaslImpl.java</a></td>
+    <td class="diffstat-total" align="right">21</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:13.0434782609%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:32.6086956522%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">test/com/sun/security/sasl/util/CheckAccess.java</a></td>
+    <td class="diffstat-total" align="right">46</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/com/sun/security/sasl/util/AbstractSaslImpl.java	Wed Jul 15 15:58:01 2009 +0100</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/com/sun/security/sasl/util/AbstractSaslImpl.java	Wed Jul 15 16:18:48 2009 +0100</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> /*</span><a href="#l1.4"></a>
+<span id="l1.5" class="minusline">- * Copyright 2000-2003 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.5"></a>
+<span id="l1.6" class="plusline">+ * Copyright 2000-2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l1.6"></a>
+<span id="l1.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l1.7"></a>
+<span id="l1.8">  *</span><a href="#l1.8"></a>
+<span id="l1.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l1.9"></a>
+<span id="l1.10" class="atline">@@ -48,10 +48,6 @@</span><a href="#l1.10"></a>
+<span id="l1.11">  * @author Rosanna Lee</span><a href="#l1.11"></a>
+<span id="l1.12">  */</span><a href="#l1.12"></a>
+<span id="l1.13"> public abstract class AbstractSaslImpl {</span><a href="#l1.13"></a>
+<span id="l1.14" class="minusline">-    /**</span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-     * Logger for debug messages</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-     */</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-    protected static Logger logger;  // set in initLogger(); lazily loads logger</span><a href="#l1.17"></a>
+<span id="l1.18"> </span><a href="#l1.18"></a>
+<span id="l1.19">     protected boolean completed = false;</span><a href="#l1.19"></a>
+<span id="l1.20">     protected boolean privacy = false;</span><a href="#l1.20"></a>
+<span id="l1.21" class="atline">@@ -68,7 +64,6 @@</span><a href="#l1.21"></a>
+<span id="l1.22">     protected String myClassName;</span><a href="#l1.22"></a>
+<span id="l1.23"> </span><a href="#l1.23"></a>
+<span id="l1.24">     protected AbstractSaslImpl(Map props, String className) throws SaslException {</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-        initLogger();</span><a href="#l1.25"></a>
+<span id="l1.26">         myClassName = className;</span><a href="#l1.26"></a>
+<span id="l1.27"> </span><a href="#l1.27"></a>
+<span id="l1.28">         // Parse properties  to set desired context options</span><a href="#l1.28"></a>
+<span id="l1.29" class="atline">@@ -325,19 +320,15 @@</span><a href="#l1.29"></a>
+<span id="l1.30">         }</span><a href="#l1.30"></a>
+<span id="l1.31">     }</span><a href="#l1.31"></a>
+<span id="l1.32"> </span><a href="#l1.32"></a>
+<span id="l1.33" class="minusline">-    /**</span><a href="#l1.33"></a>
+<span id="l1.34" class="minusline">-     * Sets logger field.</span><a href="#l1.34"></a>
+<span id="l1.35" class="minusline">-     */</span><a href="#l1.35"></a>
+<span id="l1.36" class="minusline">-    private static synchronized void initLogger() {</span><a href="#l1.36"></a>
+<span id="l1.37" class="minusline">-        if (logger == null) {</span><a href="#l1.37"></a>
+<span id="l1.38" class="minusline">-            logger = Logger.getLogger(SASL_LOGGER_NAME);</span><a href="#l1.38"></a>
+<span id="l1.39" class="minusline">-        }</span><a href="#l1.39"></a>
+<span id="l1.40" class="minusline">-    }</span><a href="#l1.40"></a>
+<span id="l1.41" class="minusline">-</span><a href="#l1.41"></a>
+<span id="l1.42">     // ---------------- Constants  -----------------</span><a href="#l1.42"></a>
+<span id="l1.43">     private static final String SASL_LOGGER_NAME = &quot;javax.security.sasl&quot;;</span><a href="#l1.43"></a>
+<span id="l1.44">     protected static final String MAX_SEND_BUF = &quot;javax.security.sasl.sendmaxbuffer&quot;;</span><a href="#l1.44"></a>
+<span id="l1.45"> </span><a href="#l1.45"></a>
+<span id="l1.46" class="plusline">+    /** </span><a href="#l1.46"></a>
+<span id="l1.47" class="plusline">+     * Logger for debug messages </span><a href="#l1.47"></a>
+<span id="l1.48" class="plusline">+     */</span><a href="#l1.48"></a>
+<span id="l1.49" class="plusline">+    protected static final Logger logger = Logger.getLogger(SASL_LOGGER_NAME);</span><a href="#l1.49"></a>
+<span id="l1.50" class="plusline">+</span><a href="#l1.50"></a>
+<span id="l1.51">     // default 0 (no protection); 1 (integrity only)</span><a href="#l1.51"></a>
+<span id="l1.52">     protected static final byte NO_PROTECTION = (byte)1;</span><a href="#l1.52"></a>
+<span id="l1.53">     protected static final byte INTEGRITY_ONLY_PROTECTION = (byte)2;</span><a href="#l1.53"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/test/com/sun/security/sasl/util/CheckAccess.java	Wed Jul 15 16:18:48 2009 +0100</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -0,0 +1,46 @@</span><a href="#l2.3"></a>
+<span id="l2.4" class="plusline">+/*</span><a href="#l2.4"></a>
+<span id="l2.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+ *</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.8"></a>
+<span id="l2.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l2.9"></a>
+<span id="l2.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l2.10"></a>
+<span id="l2.11" class="plusline">+ *</span><a href="#l2.11"></a>
+<span id="l2.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l2.12"></a>
+<span id="l2.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l2.13"></a>
+<span id="l2.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+ * accompanied this code).</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+ *</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l2.18"></a>
+<span id="l2.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l2.19"></a>
+<span id="l2.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l2.20"></a>
+<span id="l2.21" class="plusline">+ *</span><a href="#l2.21"></a>
+<span id="l2.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l2.22"></a>
+<span id="l2.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l2.23"></a>
+<span id="l2.24" class="plusline">+ * have any questions.</span><a href="#l2.24"></a>
+<span id="l2.25" class="plusline">+ */</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+/**</span><a href="#l2.27"></a>
+<span id="l2.28" class="plusline">+ * @test</span><a href="#l2.28"></a>
+<span id="l2.29" class="plusline">+ * @bug 6657695</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+ * @summary AbstractSaslImpl.logger is a static mutable (findbugs)</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+ * @author Vincent Ryan</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+ */</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+ </span><a href="#l2.33"></a>
+<span id="l2.34" class="plusline">+import java.lang.reflect.*;</span><a href="#l2.34"></a>
+<span id="l2.35" class="plusline">+ </span><a href="#l2.35"></a>
+<span id="l2.36" class="plusline">+/*</span><a href="#l2.36"></a>
+<span id="l2.37" class="plusline">+ * Check that the 'logger' class member is immutable.</span><a href="#l2.37"></a>
+<span id="l2.38" class="plusline">+ */</span><a href="#l2.38"></a>
+<span id="l2.39" class="plusline">+public class CheckAccess {</span><a href="#l2.39"></a>
+<span id="l2.40" class="plusline">+    public static final void main(String[] args) throws Exception {</span><a href="#l2.40"></a>
+<span id="l2.41" class="plusline">+            Class clazz = </span><a href="#l2.41"></a>
+<span id="l2.42" class="plusline">+                Class.forName(&quot;com.sun.security.sasl.util.AbstractSaslImpl&quot;);</span><a href="#l2.42"></a>
+<span id="l2.43" class="plusline">+            Field field = clazz.getDeclaredField(&quot;logger&quot;);</span><a href="#l2.43"></a>
+<span id="l2.44" class="plusline">+            if (! Modifier.isFinal(field.getModifiers())) {</span><a href="#l2.44"></a>
+<span id="l2.45" class="plusline">+                throw new Exception(</span><a href="#l2.45"></a>
+<span id="l2.46" class="plusline">+                    &quot;class member 'logger' must be immutable&quot;);</span><a href="#l2.46"></a>
+<span id="l2.47" class="plusline">+            }</span><a href="#l2.47"></a>
+<span id="l2.48" class="plusline">+    }</span><a href="#l2.48"></a>
+<span id="l2.49" class="plusline">+}</span><a href="#l2.49"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

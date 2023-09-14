@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: 7c8c4a447fe4</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/7c8c4a447fe4">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/7c8c4a447fe4">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/7c8c4a447fe4">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/7c8c4a447fe4">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/7c8c4a447fe4.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/7c8c4a447fe4.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/7c8c4a447fe4.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48825:7c8c4a447fe4   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8273756: Enhance BMP image support
+Reviewed-by: andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#98;&#97;&#101;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 23 Sep 2021 13:29:37 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/1189d9ea5725">1189d9ea5725</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/f75aee4df47a">f75aee4df47a</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/7c8c4a447fe4/jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java">jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 32 insertions(+), 8 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java</a></td>
+    <td class="diffstat-total" align="right">40</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:80.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:20.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java	Thu Jan 06 15:44:41 2022 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java	Thu Sep 23 13:29:37 2021 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -66,6 +66,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> import java.security.PrivilegedAction;</span><a href="#l1.4"></a>
+<span id="l1.5"> import java.util.ArrayList;</span><a href="#l1.5"></a>
+<span id="l1.6"> import java.util.Iterator;</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+import java.util.List;</span><a href="#l1.7"></a>
+<span id="l1.8"> import java.util.StringTokenizer;</span><a href="#l1.8"></a>
+<span id="l1.9"> </span><a href="#l1.9"></a>
+<span id="l1.10"> import com.sun.imageio.plugins.common.ImageUtil;</span><a href="#l1.10"></a>
+<span id="l1.11" class="atline">@@ -214,6 +215,33 @@</span><a href="#l1.11"></a>
+<span id="l1.12">         }</span><a href="#l1.12"></a>
+<span id="l1.13">     }</span><a href="#l1.13"></a>
+<span id="l1.14"> </span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+    private void readColorPalette(int sizeOfPalette) throws IOException {</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+        final int UNIT_SIZE = 1024000;</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+        if (sizeOfPalette &lt; UNIT_SIZE) {</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+            palette = new byte[sizeOfPalette];</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+            iis.readFully(palette, 0, sizeOfPalette);</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+        } else {</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+            int bytesToRead = sizeOfPalette;</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+            int bytesRead = 0;</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+            List&lt;byte[]&gt; bufs = new ArrayList&lt;&gt;();</span><a href="#l1.23"></a>
+<span id="l1.24" class="plusline">+            while (bytesToRead != 0) {</span><a href="#l1.24"></a>
+<span id="l1.25" class="plusline">+                int sz = Math.min(bytesToRead, UNIT_SIZE);</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+                byte[] unit = new byte[sz];</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+                iis.readFully(unit, 0, sz);</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+                bufs.add(unit);</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+                bytesRead += sz;</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+                bytesToRead -= sz;</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+            }</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+            byte[] paletteData = new byte[bytesRead];</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+            int copiedBytes = 0;</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+            for (byte[] ba : bufs) {</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+                System.arraycopy(ba, 0, paletteData, copiedBytes, ba.length);</span><a href="#l1.35"></a>
+<span id="l1.36" class="plusline">+                copiedBytes += ba.length;</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+            }</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+            palette = paletteData;</span><a href="#l1.38"></a>
+<span id="l1.39" class="plusline">+        }</span><a href="#l1.39"></a>
+<span id="l1.40" class="plusline">+    }</span><a href="#l1.40"></a>
+<span id="l1.41" class="plusline">+</span><a href="#l1.41"></a>
+<span id="l1.42">     /**</span><a href="#l1.42"></a>
+<span id="l1.43">      * Process the image header.</span><a href="#l1.43"></a>
+<span id="l1.44">      *</span><a href="#l1.44"></a>
+<span id="l1.45" class="atline">@@ -294,8 +322,7 @@</span><a href="#l1.45"></a>
+<span id="l1.46">             // Read in the palette</span><a href="#l1.46"></a>
+<span id="l1.47">             int numberOfEntries = (int)((bitmapOffset - 14 - size) / 3);</span><a href="#l1.47"></a>
+<span id="l1.48">             int sizeOfPalette = numberOfEntries*3;</span><a href="#l1.48"></a>
+<span id="l1.49" class="minusline">-            palette = new byte[sizeOfPalette];</span><a href="#l1.49"></a>
+<span id="l1.50" class="minusline">-            iis.readFully(palette, 0, sizeOfPalette);</span><a href="#l1.50"></a>
+<span id="l1.51" class="plusline">+            readColorPalette(sizeOfPalette);</span><a href="#l1.51"></a>
+<span id="l1.52">             metadata.palette = palette;</span><a href="#l1.52"></a>
+<span id="l1.53">             metadata.paletteSize = numberOfEntries;</span><a href="#l1.53"></a>
+<span id="l1.54">         } else {</span><a href="#l1.54"></a>
+<span id="l1.55" class="atline">@@ -332,8 +359,7 @@</span><a href="#l1.55"></a>
+<span id="l1.56">                     }</span><a href="#l1.56"></a>
+<span id="l1.57">                     int numberOfEntries = (int)((bitmapOffset-14-size) / 4);</span><a href="#l1.57"></a>
+<span id="l1.58">                     int sizeOfPalette = numberOfEntries * 4;</span><a href="#l1.58"></a>
+<span id="l1.59" class="minusline">-                    palette = new byte[sizeOfPalette];</span><a href="#l1.59"></a>
+<span id="l1.60" class="minusline">-                    iis.readFully(palette, 0, sizeOfPalette);</span><a href="#l1.60"></a>
+<span id="l1.61" class="plusline">+                    readColorPalette(sizeOfPalette);</span><a href="#l1.61"></a>
+<span id="l1.62"> </span><a href="#l1.62"></a>
+<span id="l1.63">                     metadata.palette = palette;</span><a href="#l1.63"></a>
+<span id="l1.64">                     metadata.paletteSize = numberOfEntries;</span><a href="#l1.64"></a>
+<span id="l1.65" class="atline">@@ -387,8 +413,7 @@</span><a href="#l1.65"></a>
+<span id="l1.66">                     if (colorsUsed != 0) {</span><a href="#l1.66"></a>
+<span id="l1.67">                         // there is a palette</span><a href="#l1.67"></a>
+<span id="l1.68">                         sizeOfPalette = (int)colorsUsed*4;</span><a href="#l1.68"></a>
+<span id="l1.69" class="minusline">-                        palette = new byte[sizeOfPalette];</span><a href="#l1.69"></a>
+<span id="l1.70" class="minusline">-                        iis.readFully(palette, 0, sizeOfPalette);</span><a href="#l1.70"></a>
+<span id="l1.71" class="plusline">+                        readColorPalette(sizeOfPalette);</span><a href="#l1.71"></a>
+<span id="l1.72"> </span><a href="#l1.72"></a>
+<span id="l1.73">                         metadata.palette = palette;</span><a href="#l1.73"></a>
+<span id="l1.74">                         metadata.paletteSize = (int)colorsUsed;</span><a href="#l1.74"></a>
+<span id="l1.75" class="atline">@@ -455,8 +480,7 @@</span><a href="#l1.75"></a>
+<span id="l1.76">                 // Read in the palette</span><a href="#l1.76"></a>
+<span id="l1.77">                 int numberOfEntries = (int)((bitmapOffset-14-size) / 4);</span><a href="#l1.77"></a>
+<span id="l1.78">                 int sizeOfPalette = numberOfEntries*4;</span><a href="#l1.78"></a>
+<span id="l1.79" class="minusline">-                palette = new byte[sizeOfPalette];</span><a href="#l1.79"></a>
+<span id="l1.80" class="minusline">-                iis.readFully(palette, 0, sizeOfPalette);</span><a href="#l1.80"></a>
+<span id="l1.81" class="plusline">+                readColorPalette(sizeOfPalette);</span><a href="#l1.81"></a>
+<span id="l1.82">                 metadata.palette = palette;</span><a href="#l1.82"></a>
+<span id="l1.83">                 metadata.paletteSize = numberOfEntries;</span><a href="#l1.83"></a>
+<span id="l1.84"> </span><a href="#l1.84"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             // "jdk.certpath.disabledAlgorithms".
+1            AlgorithmChecker.check(signerCert.getPublicKey(), sigAlgId, variant);
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            // "jdk.certpath.disabledAlgorithms".
+1            AlgorithmChecker.check(signerCert.getPublicKey(), sigAlgId, variant);
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0             // "jdk.certpath.disabledAlgorithms".
+1            AlgorithmChecker.check(signerCert.getPublicKey(), sigAlgId, variant,
+2                    signedByTrustedResponder
+3                        ? new TrustAnchor(responderCert, null)
+4                        : issuerInfo.getAnchor());
+5 
+--------------------------------------------

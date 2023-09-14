@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk7u/jdk7u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk7u/jdk7u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk7u/jdk7u/jdk/static/mercurial.js"></script>
+
+<title>jdk7u/jdk7u/jdk: 3bdb32006248 src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template</title>
+</head>
+<body>
+
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk7u/jdk7u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+<li><a href="/jdk7u/jdk7u/jdk/shortlog/3bdb32006248">log</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/graph/3bdb32006248">graph</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/tags">tags</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+<li><a href="/jdk7u/jdk7u/jdk/rev/3bdb32006248">changeset</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/file/3bdb32006248/src/share/classes/java/nio/">browse</a></li>
+</ul>
+<ul>
+<li class="active">file</li>
+<li><a href="/jdk7u/jdk7u/jdk/file/tip/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template">latest</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/diff/3bdb32006248/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template">diff</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/comparison/3bdb32006248/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template">comparison</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/annotate/3bdb32006248/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template">annotate</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/log/3bdb32006248/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template">file log</a></li>
+<li><a href="/jdk7u/jdk7u/jdk/raw-file/3bdb32006248/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template">raw</a></li>
+</ul>
+<ul>
+<li><a href="/jdk7u/jdk7u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u/jdk">jdk</a> </h2>
+<h3>view src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template @ 9004:3bdb32006248</h3>
+
+<form class="search" action="/jdk7u/jdk7u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk7u/jdk7u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8234841: Enhance buffering of byte buffers
+Reviewed-by: alanb, ahgross, rhalade, psandoz</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#114;&#111;&#98;&#109;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Mon, 30 Mar 2020 05:13:42 +0100</td>
+</tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk7u/jdk7u/jdk/file/00cd9dc3c2b5/src/share/classes/java/nio/ByteBufferAs-X-Buffer.java.template">00cd9dc3c2b5</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"></td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line source</div>
+<pre class="sourcelines stripes4 wrap">
+<span id="l1">/*</span><a href="#l1"></a>
+<span id="l2"> * Copyright (c) 2000, 2008, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2"></a>
+<span id="l3"> * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l3"></a>
+<span id="l4"> *</span><a href="#l4"></a>
+<span id="l5"> * This code is free software; you can redistribute it and/or modify it</span><a href="#l5"></a>
+<span id="l6"> * under the terms of the GNU General Public License version 2 only, as</span><a href="#l6"></a>
+<span id="l7"> * published by the Free Software Foundation.  Oracle designates this</span><a href="#l7"></a>
+<span id="l8"> * particular file as subject to the &quot;Classpath&quot; exception as provided</span><a href="#l8"></a>
+<span id="l9"> * by Oracle in the LICENSE file that accompanied this code.</span><a href="#l9"></a>
+<span id="l10"> *</span><a href="#l10"></a>
+<span id="l11"> * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l11"></a>
+<span id="l12"> * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l12"></a>
+<span id="l13"> * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l13"></a>
+<span id="l14"> * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l14"></a>
+<span id="l15"> * accompanied this code).</span><a href="#l15"></a>
+<span id="l16"> *</span><a href="#l16"></a>
+<span id="l17"> * You should have received a copy of the GNU General Public License version</span><a href="#l17"></a>
+<span id="l18"> * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l18"></a>
+<span id="l19"> * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l19"></a>
+<span id="l20"> *</span><a href="#l20"></a>
+<span id="l21"> * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA</span><a href="#l21"></a>
+<span id="l22"> * or visit www.oracle.com if you need additional information or have any</span><a href="#l22"></a>
+<span id="l23"> * questions.</span><a href="#l23"></a>
+<span id="l24"> */</span><a href="#l24"></a>
+<span id="l25"></span><a href="#l25"></a>
+<span id="l26">#warn This file is preprocessed before being compiled</span><a href="#l26"></a>
+<span id="l27"></span><a href="#l27"></a>
+<span id="l28">package java.nio;</span><a href="#l28"></a>
+<span id="l29"></span><a href="#l29"></a>
+<span id="l30"></span><a href="#l30"></a>
+<span id="l31">class ByteBufferAs$Type$Buffer$RW$$BO$                  // package-private</span><a href="#l31"></a>
+<span id="l32">    extends {#if[ro]?ByteBufferAs}$Type$Buffer{#if[ro]?$BO$}</span><a href="#l32"></a>
+<span id="l33">{</span><a href="#l33"></a>
+<span id="l34"></span><a href="#l34"></a>
+<span id="l35">#if[rw]</span><a href="#l35"></a>
+<span id="l36"></span><a href="#l36"></a>
+<span id="l37">    protected final ByteBuffer bb;</span><a href="#l37"></a>
+<span id="l38">    protected final int offset;</span><a href="#l38"></a>
+<span id="l39"></span><a href="#l39"></a>
+<span id="l40">#end[rw]</span><a href="#l40"></a>
+<span id="l41"></span><a href="#l41"></a>
+<span id="l42">    ByteBufferAs$Type$Buffer$RW$$BO$(ByteBuffer bb) {   // package-private</span><a href="#l42"></a>
+<span id="l43">#if[rw]</span><a href="#l43"></a>
+<span id="l44">        super(-1, 0,</span><a href="#l44"></a>
+<span id="l45">              bb.remaining() &gt;&gt; $LG_BYTES_PER_VALUE$,</span><a href="#l45"></a>
+<span id="l46">              bb.remaining() &gt;&gt; $LG_BYTES_PER_VALUE$);</span><a href="#l46"></a>
+<span id="l47">        this.bb = bb;</span><a href="#l47"></a>
+<span id="l48">        // enforce limit == capacity</span><a href="#l48"></a>
+<span id="l49">        int cap = this.capacity();</span><a href="#l49"></a>
+<span id="l50">        this.limit(cap);</span><a href="#l50"></a>
+<span id="l51">        int pos = this.position();</span><a href="#l51"></a>
+<span id="l52">        assert (pos &lt;= cap);</span><a href="#l52"></a>
+<span id="l53">        offset = pos;</span><a href="#l53"></a>
+<span id="l54">#else[rw]</span><a href="#l54"></a>
+<span id="l55">        super(bb);</span><a href="#l55"></a>
+<span id="l56">#end[rw]</span><a href="#l56"></a>
+<span id="l57">    }</span><a href="#l57"></a>
+<span id="l58"></span><a href="#l58"></a>
+<span id="l59">    ByteBufferAs$Type$Buffer$RW$$BO$(ByteBuffer bb,</span><a href="#l59"></a>
+<span id="l60">                                     int mark, int pos, int lim, int cap,</span><a href="#l60"></a>
+<span id="l61">                                     int off)</span><a href="#l61"></a>
+<span id="l62">    {</span><a href="#l62"></a>
+<span id="l63">#if[rw]</span><a href="#l63"></a>
+<span id="l64">        super(mark, pos, lim, cap);</span><a href="#l64"></a>
+<span id="l65">        this.bb = bb;</span><a href="#l65"></a>
+<span id="l66">        offset = off;</span><a href="#l66"></a>
+<span id="l67">#else[rw]</span><a href="#l67"></a>
+<span id="l68">        super(bb, mark, pos, lim, cap, off);</span><a href="#l68"></a>
+<span id="l69">#end[rw]</span><a href="#l69"></a>
+<span id="l70">    }</span><a href="#l70"></a>
+<span id="l71"></span><a href="#l71"></a>
+<span id="l72">    public $Type$Buffer slice() {</span><a href="#l72"></a>
+<span id="l73">        int pos = this.position();</span><a href="#l73"></a>
+<span id="l74">        int lim = this.limit();</span><a href="#l74"></a>
+<span id="l75">        int rem = (pos &lt;= lim ? lim - pos : 0);</span><a href="#l75"></a>
+<span id="l76">        int off = (pos &lt;&lt; $LG_BYTES_PER_VALUE$) + offset;</span><a href="#l76"></a>
+<span id="l77">        assert (off &gt;= 0);</span><a href="#l77"></a>
+<span id="l78">        return new ByteBufferAs$Type$Buffer$RW$$BO$(bb, -1, 0, rem, rem, off);</span><a href="#l78"></a>
+<span id="l79">    }</span><a href="#l79"></a>
+<span id="l80"></span><a href="#l80"></a>
+<span id="l81">    public $Type$Buffer duplicate() {</span><a href="#l81"></a>
+<span id="l82">        return new ByteBufferAs$Type$Buffer$RW$$BO$(bb,</span><a href="#l82"></a>
+<span id="l83">                                                    this.markValue(),</span><a href="#l83"></a>
+<span id="l84">                                                    this.position(),</span><a href="#l84"></a>
+<span id="l85">                                                    this.limit(),</span><a href="#l85"></a>
+<span id="l86">                                                    this.capacity(),</span><a href="#l86"></a>
+<span id="l87">                                                    offset);</span><a href="#l87"></a>
+<span id="l88">    }</span><a href="#l88"></a>
+<span id="l89"></span><a href="#l89"></a>
+<span id="l90">    public $Type$Buffer asReadOnlyBuffer() {</span><a href="#l90"></a>
+<span id="l91">#if[rw]</span><a href="#l91"></a>
+<span id="l92">        return new ByteBufferAs$Type$BufferR$BO$(bb,</span><a href="#l92"></a>
+<span id="l93">                                                 this.markValue(),</span><a href="#l93"></a>
+<span id="l94">                                                 this.position(),</span><a href="#l94"></a>
+<span id="l95">                                                 this.limit(),</span><a href="#l95"></a>
+<span id="l96">                                                 this.capacity(),</span><a href="#l96"></a>
+<span id="l97">                                                 offset);</span><a href="#l97"></a>
+<span id="l98">#else[rw]</span><a href="#l98"></a>
+<span id="l99">        return duplicate();</span><a href="#l99"></a>
+<span id="l100">#end[rw]</span><a href="#l100"></a>
+<span id="l101">    }</span><a href="#l101"></a>
+<span id="l102"></span><a href="#l102"></a>
+<span id="l103">#if[rw]</span><a href="#l103"></a>
+<span id="l104"></span><a href="#l104"></a>
+<span id="l105">    protected int ix(int i) {</span><a href="#l105"></a>
+<span id="l106">        return (i &lt;&lt; $LG_BYTES_PER_VALUE$) + offset;</span><a href="#l106"></a>
+<span id="l107">    }</span><a href="#l107"></a>
+<span id="l108"></span><a href="#l108"></a>
+<span id="l109">    public $type$ get() {</span><a href="#l109"></a>
+<span id="l110">        return Bits.get$Type$$BO$(bb, ix(nextGetIndex()));</span><a href="#l110"></a>
+<span id="l111">    }</span><a href="#l111"></a>
+<span id="l112"></span><a href="#l112"></a>
+<span id="l113">    public $type$ get(int i) {</span><a href="#l113"></a>
+<span id="l114">        return Bits.get$Type$$BO$(bb, ix(checkIndex(i)));</span><a href="#l114"></a>
+<span id="l115">    }</span><a href="#l115"></a>
+<span id="l116"></span><a href="#l116"></a>
+<span id="l117">#end[rw]</span><a href="#l117"></a>
+<span id="l118"></span><a href="#l118"></a>
+<span id="l119">    public $Type$Buffer put($type$ x) {</span><a href="#l119"></a>
+<span id="l120">#if[rw]</span><a href="#l120"></a>
+<span id="l121">        Bits.put$Type$$BO$(bb, ix(nextPutIndex()), x);</span><a href="#l121"></a>
+<span id="l122">        return this;</span><a href="#l122"></a>
+<span id="l123">#else[rw]</span><a href="#l123"></a>
+<span id="l124">        throw new ReadOnlyBufferException();</span><a href="#l124"></a>
+<span id="l125">#end[rw]</span><a href="#l125"></a>
+<span id="l126">    }</span><a href="#l126"></a>
+<span id="l127"></span><a href="#l127"></a>
+<span id="l128">    public $Type$Buffer put(int i, $type$ x) {</span><a href="#l128"></a>
+<span id="l129">#if[rw]</span><a href="#l129"></a>
+<span id="l130">        Bits.put$Type$$BO$(bb, ix(checkIndex(i)), x);</span><a href="#l130"></a>
+<span id="l131">        return this;</span><a href="#l131"></a>
+<span id="l132">#else[rw]</span><a href="#l132"></a>
+<span id="l133">        throw new ReadOnlyBufferException();</span><a href="#l133"></a>
+<span id="l134">#end[rw]</span><a href="#l134"></a>
+<span id="l135">    }</span><a href="#l135"></a>
+<span id="l136"></span><a href="#l136"></a>
+<span id="l137">    public $Type$Buffer compact() {</span><a href="#l137"></a>
+<span id="l138">#if[rw]</span><a href="#l138"></a>
+<span id="l139">        int pos = position();</span><a href="#l139"></a>
+<span id="l140">        int lim = limit();</span><a href="#l140"></a>
+<span id="l141">        assert (pos &lt;= lim);</span><a href="#l141"></a>
+<span id="l142">        int rem = (pos &lt;= lim ? lim - pos : 0);</span><a href="#l142"></a>
+<span id="l143"></span><a href="#l143"></a>
+<span id="l144">        ByteBuffer db = bb.duplicate();</span><a href="#l144"></a>
+<span id="l145">        db.limit(ix(lim));</span><a href="#l145"></a>
+<span id="l146">        db.position(ix(0));</span><a href="#l146"></a>
+<span id="l147">        ByteBuffer sb = db.slice();</span><a href="#l147"></a>
+<span id="l148">        sb.position(pos &lt;&lt; $LG_BYTES_PER_VALUE$);</span><a href="#l148"></a>
+<span id="l149">        sb.compact();</span><a href="#l149"></a>
+<span id="l150">        position(rem);</span><a href="#l150"></a>
+<span id="l151">        limit(capacity());</span><a href="#l151"></a>
+<span id="l152">        discardMark();</span><a href="#l152"></a>
+<span id="l153">        return this;</span><a href="#l153"></a>
+<span id="l154">#else[rw]</span><a href="#l154"></a>
+<span id="l155">        throw new ReadOnlyBufferException();</span><a href="#l155"></a>
+<span id="l156">#end[rw]</span><a href="#l156"></a>
+<span id="l157">    }</span><a href="#l157"></a>
+<span id="l158"></span><a href="#l158"></a>
+<span id="l159">    public boolean isDirect() {</span><a href="#l159"></a>
+<span id="l160">        return bb.isDirect();</span><a href="#l160"></a>
+<span id="l161">    }</span><a href="#l161"></a>
+<span id="l162"></span><a href="#l162"></a>
+<span id="l163">    public boolean isReadOnly() {</span><a href="#l163"></a>
+<span id="l164">        return {#if[rw]?false:true};</span><a href="#l164"></a>
+<span id="l165">    }</span><a href="#l165"></a>
+<span id="l166"></span><a href="#l166"></a>
+<span id="l167">#if[char]</span><a href="#l167"></a>
+<span id="l168"></span><a href="#l168"></a>
+<span id="l169">    public String toString(int start, int end) {</span><a href="#l169"></a>
+<span id="l170">        if ((end &gt; limit()) || (start &gt; end))</span><a href="#l170"></a>
+<span id="l171">            throw new IndexOutOfBoundsException();</span><a href="#l171"></a>
+<span id="l172">        try {</span><a href="#l172"></a>
+<span id="l173">            int len = end - start;</span><a href="#l173"></a>
+<span id="l174">            char[] ca = new char[len];</span><a href="#l174"></a>
+<span id="l175">            CharBuffer cb = CharBuffer.wrap(ca);</span><a href="#l175"></a>
+<span id="l176">            CharBuffer db = this.duplicate();</span><a href="#l176"></a>
+<span id="l177">            db.position(start);</span><a href="#l177"></a>
+<span id="l178">            db.limit(end);</span><a href="#l178"></a>
+<span id="l179">            cb.put(db);</span><a href="#l179"></a>
+<span id="l180">            return new String(ca);</span><a href="#l180"></a>
+<span id="l181">        } catch (StringIndexOutOfBoundsException x) {</span><a href="#l181"></a>
+<span id="l182">            throw new IndexOutOfBoundsException();</span><a href="#l182"></a>
+<span id="l183">        }</span><a href="#l183"></a>
+<span id="l184">    }</span><a href="#l184"></a>
+<span id="l185"></span><a href="#l185"></a>
+<span id="l186"></span><a href="#l186"></a>
+<span id="l187">    // --- Methods to support CharSequence ---</span><a href="#l187"></a>
+<span id="l188"></span><a href="#l188"></a>
+<span id="l189">    public CharBuffer subSequence(int start, int end) {</span><a href="#l189"></a>
+<span id="l190">        int pos = position();</span><a href="#l190"></a>
+<span id="l191">        int lim = limit();</span><a href="#l191"></a>
+<span id="l192">        assert (pos &lt;= lim);</span><a href="#l192"></a>
+<span id="l193">        pos = (pos &lt;= lim ? pos : lim);</span><a href="#l193"></a>
+<span id="l194">        int len = lim - pos;</span><a href="#l194"></a>
+<span id="l195"></span><a href="#l195"></a>
+<span id="l196">        if ((start &lt; 0) || (end &gt; len) || (start &gt; end))</span><a href="#l196"></a>
+<span id="l197">            throw new IndexOutOfBoundsException();</span><a href="#l197"></a>
+<span id="l198">        return new ByteBufferAsCharBuffer$RW$$BO$(bb,</span><a href="#l198"></a>
+<span id="l199">                                                  -1,</span><a href="#l199"></a>
+<span id="l200">                                                  pos + start,</span><a href="#l200"></a>
+<span id="l201">                                                  pos + end,</span><a href="#l201"></a>
+<span id="l202">                                                  capacity(),</span><a href="#l202"></a>
+<span id="l203">                                                  offset);</span><a href="#l203"></a>
+<span id="l204">    }</span><a href="#l204"></a>
+<span id="l205"></span><a href="#l205"></a>
+<span id="l206">#end[char]</span><a href="#l206"></a>
+<span id="l207"></span><a href="#l207"></a>
+<span id="l208"></span><a href="#l208"></a>
+<span id="l209">    public ByteOrder order() {</span><a href="#l209"></a>
+<span id="l210">#if[boB]</span><a href="#l210"></a>
+<span id="l211">        return ByteOrder.BIG_ENDIAN;</span><a href="#l211"></a>
+<span id="l212">#end[boB]</span><a href="#l212"></a>
+<span id="l213">#if[boL]</span><a href="#l213"></a>
+<span id="l214">        return ByteOrder.LITTLE_ENDIAN;</span><a href="#l214"></a>
+<span id="l215">#end[boL]</span><a href="#l215"></a>
+<span id="l216">    }</span><a href="#l216"></a>
+<span id="l217"></span><a href="#l217"></a>
+<span id="l218">}</span><a href="#l218"></a></pre>
+<div class="sourcelast"></div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

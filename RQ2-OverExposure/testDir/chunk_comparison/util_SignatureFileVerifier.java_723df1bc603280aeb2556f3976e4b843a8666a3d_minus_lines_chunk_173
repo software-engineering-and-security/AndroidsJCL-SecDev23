@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    private static final DisabledAlgorithmConstraints JAR_DISABLED_CHECK =
+2            new DisabledAlgorithmConstraints(
+3                    DisabledAlgorithmConstraints.PROPERTY_JAR_DISABLED_ALGS);
+4
+5     private ArrayList<CodeSigner[]> signerCache;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    private static final DisabledAlgorithmConstraints JAR_DISABLED_CHECK =
+2            new DisabledAlgorithmConstraints(
+3                    DisabledAlgorithmConstraints.PROPERTY_JAR_DISABLED_ALGS);
+4
+5    private ArrayList<CodeSigner[]> signerCache;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

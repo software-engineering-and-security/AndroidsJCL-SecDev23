@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: 0dc979a234d0</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/0dc979a234d0">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/0dc979a234d0">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/0dc979a234d0">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/0dc979a234d0">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/0dc979a234d0.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/0dc979a234d0.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/0dc979a234d0.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48820:0dc979a234d0   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8272236: Improve serial forms for transport
+Reviewed-by: bchristi, rhalade, smarks, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#118;&#111;&#105;&#116;&#121;&#108;&#111;&#118;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 26 Nov 2021 15:04:05 +0300</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/4d7261097cd3">4d7261097cd3</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/f429db02113e">f429db02113e</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/0dc979a234d0/jdk/src/share/classes/java/io/ObjectInputStream.java">jdk/src/share/classes/java/io/ObjectInputStream.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 7 insertions(+), 0 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jdk/src/share/classes/java/io/ObjectInputStream.java</a></td>
+    <td class="diffstat-total" align="right">7</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jdk/src/share/classes/java/io/ObjectInputStream.java	Fri Nov 26 14:57:43 2021 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jdk/src/share/classes/java/io/ObjectInputStream.java	Fri Nov 26 15:04:05 2021 +0300</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -2449,6 +2449,13 @@</span><a href="#l1.3"></a>
+<span id="l1.4">             throw new InternalError();</span><a href="#l1.4"></a>
+<span id="l1.5">         }</span><a href="#l1.5"></a>
+<span id="l1.6">         clear();</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+        // Check that an object follows the TC_EXCEPTION typecode</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+        byte tc = bin.peekByte();</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+        if (tc != TC_OBJECT &amp;&amp;</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+            tc != TC_REFERENCE) {</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+            throw new StreamCorruptedException(</span><a href="#l1.11"></a>
+<span id="l1.12" class="plusline">+                    String.format(&quot;invalid type code: %02X&quot;, tc));</span><a href="#l1.12"></a>
+<span id="l1.13" class="plusline">+        }</span><a href="#l1.13"></a>
+<span id="l1.14">         return (IOException) readObject0(Object.class, false);</span><a href="#l1.14"></a>
+<span id="l1.15">     }</span><a href="#l1.15"></a>
+<span id="l1.16"> </span><a href="#l1.16"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

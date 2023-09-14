@@ -1,0 +1,52 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    // Support for resetting final field during deserializing
+2    private static final class UnsafeHolder {
+3        private UnsafeHolder() { throw new InternalError(); }
+4        private static final sun.misc.Unsafe unsafe
+5                = sun.misc.Unsafe.getUnsafe();
+6        private static final long LF_OFFSET;
+7        static {
+8            try {
+9                LF_OFFSET = unsafe.objectFieldOffset(HashMap.class.getDeclaredField("loadFactor"));
+10            } catch (NoSuchFieldException nfe) {
+11                throw new InternalError();
+12            }
+13        }
+14        static void putLoadFactor(HashMap<?, ?> map, float lf) {
+15            unsafe.putFloat(map, LF_OFFSET, lf);
+16        }
+17    }
+18
+19     /* ------------------------------------------------------------ */
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    // Support for resetting final field during deserializing
+2    private static final class UnsafeHolder {
+3        private UnsafeHolder() { throw new InternalError(); }
+4        private static final jdk.internal.misc.Unsafe unsafe
+5                = jdk.internal.misc.Unsafe.getUnsafe();
+6        private static final long LF_OFFSET
+7                = unsafe.objectFieldOffset(HashMap.class, "loadFactor");
+8        static void putLoadFactor(HashMap<?, ?> map, float lf) {
+9            unsafe.putFloat(map, LF_OFFSET, lf);
+10        }
+11    }
+12
+13    /* ------------------------------------------------------------ */
+14    // iterators
+15
+16    abstract class HashIterator {
+17        Node<K,V> next;        // next entry to return
+18        Node<K,V> current;     // current entry
+19        int expectedModCount;  // for fast-fail
+---------------------------------------------
+Differences:	['4', '5', '6', '7', '8', '9', '10', '11', '12', '15', '16', '17', '18']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

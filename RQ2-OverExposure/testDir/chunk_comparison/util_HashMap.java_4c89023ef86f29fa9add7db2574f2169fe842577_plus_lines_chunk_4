@@ -1,0 +1,23 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         reinitialize();
+1
+2         s.readInt();                // Read and ignore number of buckets
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2    // These methods are used when serializing HashSets
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         reinitialize();
+1        if (loadFactor <= 0 || Float.isNaN(loadFactor))
+2            throw new InvalidObjectException("Illegal load factor: " +
+3                                             loadFactor);
+4         s.readInt();                // Read and ignore number of buckets
+--------------------------------------------

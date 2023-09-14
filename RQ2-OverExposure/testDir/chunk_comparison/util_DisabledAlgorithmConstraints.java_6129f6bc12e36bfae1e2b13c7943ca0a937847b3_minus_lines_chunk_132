@@ -1,0 +1,32 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    public final void permits(String algorithm, Key key,
+2            AlgorithmParameters params, String variant)
+3            throws CertPathValidatorException {
+4        permits(algorithm, new ConstraintsParameters(algorithm, params, key,
+5                (variant == null) ? Validator.VAR_GENERIC : variant));
+6    }
+7 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    public final void permits(String algorithm, Key key,
+2            AlgorithmParameters params, String variant)
+3            throws CertPathValidatorException {
+4        permits(algorithm, new ConstraintsParameters(algorithm, params, key,
+5                (variant == null) ? Validator.VAR_GENERIC : variant));
+6    }
+7
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    private void permitsPSSParams(AlgorithmParameters ap,
+2        ConstraintsParameters cp) throws CertPathValidatorException {
+3 
+--------------------------------------------

@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     public $Type$Buffer slice() {
+1        int pos = this.position();
+2        int lim = this.limit();
+3        int rem = (pos <= lim ? lim - pos : 0);
+4         return new Heap$Type$Buffer$RW$(hb,
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    public $Type$Buffer slice() {
+1        int pos = this.position();
+2        int lim = this.limit();
+3        int rem = (pos <= lim ? lim - pos : 0);
+4        return new Heap$Type$Buffer$RW$(hb,
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0     public $Type$Buffer slice() {
+1        int rem = this.remaining();
+2         return new Heap$Type$Buffer$RW$(hb,
+--------------------------------------------

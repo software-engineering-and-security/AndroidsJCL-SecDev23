@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk6/jdk6/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk6/jdk6/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk6/jdk6/jdk/static/mercurial.js"></script>
+
+<title>jdk6/jdk6/jdk: f1250cd32531</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk6/jdk6/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/shortlog/f1250cd32531">log</a></li>
+ <li><a href="/jdk6/jdk6/jdk/graph/f1250cd32531">graph</a></li>
+ <li><a href="/jdk6/jdk6/jdk/tags">tags</a></li>
+ <li><a href="/jdk6/jdk6/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk6/jdk6/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk6/jdk6/jdk/raw-rev/f1250cd32531">raw</a></li>
+ <li><a href="/jdk6/jdk6/jdk/file/f1250cd32531">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk6/jdk6/jdk/archive/f1250cd32531.zip">zip</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/f1250cd32531.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk6/jdk6/jdk/archive/f1250cd32531.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk6/jdk6/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk6">jdk6</a> / <a href="/jdk6/jdk6">jdk6</a> / <a href="/jdk6/jdk6/jdk">jdk</a> </h2>
+<h3>changeset 171:f1250cd32531   </h3>
+
+<form class="search" action="/jdk6/jdk6/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk6/jdk6/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6736293: OpenType checks can be bypassed through finalizer resurrection
+Reviewed-by: hawtin</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#101;&#109;&#99;&#109;&#97;&#110;&#117;&#115;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 07 May 2009 15:39:08 +0200</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk6/jdk6/jdk/rev/7e16c0508c8b">7e16c0508c8b</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk6/jdk6/jdk/rev/94dbd520b832">94dbd520b832</a> <a href="/jdk6/jdk6/jdk/rev/3977b505bba4">3977b505bba4</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk6/jdk6/jdk/file/f1250cd32531/src/share/classes/javax/management/openmbean/OpenMBeanAttributeInfoSupport.java">src/share/classes/javax/management/openmbean/OpenMBeanAttributeInfoSupport.java</a> <a href="/jdk6/jdk6/jdk/file/f1250cd32531/src/share/classes/javax/management/openmbean/OpenType.java">src/share/classes/javax/management/openmbean/OpenType.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 9 insertions(+), 5 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/javax/management/openmbean/OpenMBeanAttributeInfoSupport.java</a></td>
+    <td class="diffstat-total" align="right">9</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:44.4444444444%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:55.5555555556%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/javax/management/openmbean/OpenType.java</a></td>
+    <td class="diffstat-total" align="right">5</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:55.5555555556%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/javax/management/openmbean/OpenMBeanAttributeInfoSupport.java	Tue May 05 10:59:36 2009 +0200</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/javax/management/openmbean/OpenMBeanAttributeInfoSupport.java	Thu May 07 15:39:08 2009 +0200</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -690,7 +690,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">     private static &lt;T&gt; T convertFromString(String s, OpenType&lt;T&gt; openType) {</span><a href="#l1.4"></a>
+<span id="l1.5">         Class&lt;T&gt; c;</span><a href="#l1.5"></a>
+<span id="l1.6">         try {</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-            c = cast(Class.forName(openType.getClassName()));</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            c = cast(Class.forName(openType.safeGetClassName()));</span><a href="#l1.8"></a>
+<span id="l1.9">         } catch (ClassNotFoundException e) {</span><a href="#l1.9"></a>
+<span id="l1.10">             throw new NoClassDefFoundError(e.toString());  // can't happen</span><a href="#l1.10"></a>
+<span id="l1.11">         }</span><a href="#l1.11"></a>
+<span id="l1.12" class="atline">@@ -711,7 +711,7 @@</span><a href="#l1.12"></a>
+<span id="l1.13">             } catch (Exception e) {</span><a href="#l1.13"></a>
+<span id="l1.14">                 final String msg =</span><a href="#l1.14"></a>
+<span id="l1.15">                     &quot;Could not convert \&quot;&quot; + s + &quot;\&quot; using method: &quot; + valueOf;</span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-                throw new IllegalArgumentException(msg);</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+                throw new IllegalArgumentException(msg, e);</span><a href="#l1.17"></a>
+<span id="l1.18">             }</span><a href="#l1.18"></a>
+<span id="l1.19">         }</span><a href="#l1.19"></a>
+<span id="l1.20"> </span><a href="#l1.20"></a>
+<span id="l1.21" class="atline">@@ -728,7 +728,7 @@</span><a href="#l1.21"></a>
+<span id="l1.22">             } catch (Exception e) {</span><a href="#l1.22"></a>
+<span id="l1.23">                 final String msg =</span><a href="#l1.23"></a>
+<span id="l1.24">                     &quot;Could not convert \&quot;&quot; + s + &quot;\&quot; using constructor: &quot; + con;</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-                throw new IllegalArgumentException(msg);</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+                throw new IllegalArgumentException(msg, e);</span><a href="#l1.26"></a>
+<span id="l1.27">             }</span><a href="#l1.27"></a>
+<span id="l1.28">         }</span><a href="#l1.28"></a>
+<span id="l1.29"> </span><a href="#l1.29"></a>
+<span id="l1.30" class="atline">@@ -757,7 +757,7 @@</span><a href="#l1.30"></a>
+<span id="l1.31">             stringArrayClass =</span><a href="#l1.31"></a>
+<span id="l1.32">                 Class.forName(squareBrackets + &quot;Ljava.lang.String;&quot;);</span><a href="#l1.32"></a>
+<span id="l1.33">             targetArrayClass =</span><a href="#l1.33"></a>
+<span id="l1.34" class="minusline">-                Class.forName(squareBrackets + &quot;L&quot; + baseType.getClassName() +</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+                Class.forName(squareBrackets + &quot;L&quot; + baseType.safeGetClassName() +</span><a href="#l1.35"></a>
+<span id="l1.36">                               &quot;;&quot;);</span><a href="#l1.36"></a>
+<span id="l1.37">         } catch (ClassNotFoundException e) {</span><a href="#l1.37"></a>
+<span id="l1.38">             throw new NoClassDefFoundError(e.toString());  // can't happen</span><a href="#l1.38"></a>
+<span id="l1.39" class="atline">@@ -769,7 +769,6 @@</span><a href="#l1.39"></a>
+<span id="l1.40">                 &quot;array with same dimensions&quot;;</span><a href="#l1.40"></a>
+<span id="l1.41">             throw new IllegalArgumentException(msg);</span><a href="#l1.41"></a>
+<span id="l1.42">         }</span><a href="#l1.42"></a>
+<span id="l1.43" class="minusline">-        Class&lt;?&gt; targetComponentClass = targetArrayClass.getComponentType();</span><a href="#l1.43"></a>
+<span id="l1.44">         OpenType&lt;?&gt; componentOpenType;</span><a href="#l1.44"></a>
+<span id="l1.45">         if (dim == 1)</span><a href="#l1.45"></a>
+<span id="l1.46">             componentOpenType = baseType;</span><a href="#l1.46"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/javax/management/openmbean/OpenType.java	Tue May 05 10:59:36 2009 +0200</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/javax/management/openmbean/OpenType.java	Thu May 07 15:39:08 2009 +0200</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -304,7 +304,12 @@</span><a href="#l2.3"></a>
+<span id="l2.4">      * @return the class name.</span><a href="#l2.4"></a>
+<span id="l2.5">      */</span><a href="#l2.5"></a>
+<span id="l2.6">     public String getClassName() {</span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+        return className;</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+    }</span><a href="#l2.8"></a>
+<span id="l2.9"> </span><a href="#l2.9"></a>
+<span id="l2.10" class="plusline">+    // A version of getClassName() that can only be called from within this</span><a href="#l2.10"></a>
+<span id="l2.11" class="plusline">+    // package and that cannot be overridden.</span><a href="#l2.11"></a>
+<span id="l2.12" class="plusline">+    String safeGetClassName() {</span><a href="#l2.12"></a>
+<span id="l2.13">         return className;</span><a href="#l2.13"></a>
+<span id="l2.14">     }</span><a href="#l2.14"></a>
+<span id="l2.15"> </span><a href="#l2.15"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

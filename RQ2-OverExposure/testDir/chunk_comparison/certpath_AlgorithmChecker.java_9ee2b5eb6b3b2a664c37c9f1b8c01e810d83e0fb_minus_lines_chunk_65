@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    static void check(PublicKey key, X509CRL crl, String variant)
+2                        throws CertPathValidatorException {
+3 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    static void check(PublicKey key, X509CRL crl, String variant)
+2                        throws CertPathValidatorException {
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      */
+1    static void check(PublicKey key, X509CRL crl, String variant,
+2                      TrustAnchor anchor) throws CertPathValidatorException {
+3 
+--------------------------------------------

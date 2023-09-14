@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private PublicKey prevPubKey;
+1    private final Timestamp jarTimestamp;
+2     private final String variant;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    private PublicKey prevPubKey;
+1    private final Timestamp jarTimestamp;
+2    private final String variant;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

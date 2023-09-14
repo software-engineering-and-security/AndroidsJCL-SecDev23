@@ -1,0 +1,1203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8/jdk8/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8/jdk8/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8/jdk8/jdk/static/mercurial.js"></script>
+
+<title>jdk8/jdk8/jdk: d4dc3a2acdaa</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8/jdk8/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8/jdk8/jdk/shortlog/d4dc3a2acdaa">log</a></li>
+ <li><a href="/jdk8/jdk8/jdk/graph/d4dc3a2acdaa">graph</a></li>
+ <li><a href="/jdk8/jdk8/jdk/tags">tags</a></li>
+ <li><a href="/jdk8/jdk8/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8/jdk8/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8/jdk8/jdk/raw-rev/d4dc3a2acdaa">raw</a></li>
+ <li><a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8/jdk8/jdk/archive/d4dc3a2acdaa.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8/jdk8/jdk/archive/d4dc3a2acdaa.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8/jdk8/jdk/archive/d4dc3a2acdaa.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8/jdk8/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8">jdk8</a> / <a href="/jdk8/jdk8">jdk8</a> / <a href="/jdk8/jdk8/jdk">jdk</a> </h2>
+<h3>changeset 1859:d4dc3a2acdaa   </h3>
+
+<form class="search" action="/jdk8/jdk8/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8/jdk8/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">6657138: Mutable statics in Windows PL&amp;F (findbugs)
+Reviewed-by: peterz, hawtin</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#108;&#101;&#120;&#112;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Fri, 06 Nov 2009 19:48:09 +0300</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8/jdk8/jdk/rev/f243cf590b18">f243cf590b18</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8/jdk8/jdk/rev/0355c370f1d1">0355c370f1d1</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/motif/MotifButtonUI.java">src/share/classes/com/sun/java/swing/plaf/motif/MotifButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/motif/MotifCheckBoxUI.java">src/share/classes/com/sun/java/swing/plaf/motif/MotifCheckBoxUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/motif/MotifLabelUI.java">src/share/classes/com/sun/java/swing/plaf/motif/MotifLabelUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/motif/MotifRadioButtonUI.java">src/share/classes/com/sun/java/swing/plaf/motif/MotifRadioButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/motif/MotifToggleButtonUI.java">src/share/classes/com/sun/java/swing/plaf/motif/MotifToggleButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/windows/WindowsButtonUI.java">src/share/classes/com/sun/java/swing/plaf/windows/WindowsButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/windows/WindowsCheckBoxUI.java">src/share/classes/com/sun/java/swing/plaf/windows/WindowsCheckBoxUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/windows/WindowsLabelUI.java">src/share/classes/com/sun/java/swing/plaf/windows/WindowsLabelUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/windows/WindowsRadioButtonUI.java">src/share/classes/com/sun/java/swing/plaf/windows/WindowsRadioButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/com/sun/java/swing/plaf/windows/WindowsToggleButtonUI.java">src/share/classes/com/sun/java/swing/plaf/windows/WindowsToggleButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/basic/BasicButtonUI.java">src/share/classes/javax/swing/plaf/basic/BasicButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/basic/BasicCheckBoxUI.java">src/share/classes/javax/swing/plaf/basic/BasicCheckBoxUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/basic/BasicLabelUI.java">src/share/classes/javax/swing/plaf/basic/BasicLabelUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/basic/BasicRadioButtonUI.java">src/share/classes/javax/swing/plaf/basic/BasicRadioButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/basic/BasicToggleButtonUI.java">src/share/classes/javax/swing/plaf/basic/BasicToggleButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/metal/MetalButtonUI.java">src/share/classes/javax/swing/plaf/metal/MetalButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/metal/MetalCheckBoxUI.java">src/share/classes/javax/swing/plaf/metal/MetalCheckBoxUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/metal/MetalLabelUI.java">src/share/classes/javax/swing/plaf/metal/MetalLabelUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/metal/MetalRadioButtonUI.java">src/share/classes/javax/swing/plaf/metal/MetalRadioButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/src/share/classes/javax/swing/plaf/metal/MetalToggleButtonUI.java">src/share/classes/javax/swing/plaf/metal/MetalToggleButtonUI.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/test/javax/swing/Security/6657138/ComponentTest.java">test/javax/swing/Security/6657138/ComponentTest.java</a> <a href="/jdk8/jdk8/jdk/file/d4dc3a2acdaa/test/javax/swing/Security/6657138/bug6657138.java">test/javax/swing/Security/6657138/bug6657138.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     22 files changed, 394 insertions(+), 42 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/com/sun/java/swing/plaf/motif/MotifButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">15</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:11.6504854369%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.91262135922%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/com/sun/java/swing/plaf/motif/MotifCheckBoxUI.java</a></td>
+    <td class="diffstat-total" align="right">13</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:10.6796116505%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.94174757282%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/com/sun/java/swing/plaf/motif/MotifLabelUI.java</a></td>
+    <td class="diffstat-total" align="right">13</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:10.6796116505%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.94174757282%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/share/classes/com/sun/java/swing/plaf/motif/MotifRadioButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">src/share/classes/com/sun/java/swing/plaf/motif/MotifToggleButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l6.1">src/share/classes/com/sun/java/swing/plaf/windows/WindowsButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">15</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:10.6796116505%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.88349514563%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l7.1">src/share/classes/com/sun/java/swing/plaf/windows/WindowsCheckBoxUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l8.1">src/share/classes/com/sun/java/swing/plaf/windows/WindowsLabelUI.java</a></td>
+    <td class="diffstat-total" align="right">13</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:10.6796116505%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:1.94174757282%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l9.1">src/share/classes/com/sun/java/swing/plaf/windows/WindowsRadioButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l10.1">src/share/classes/com/sun/java/swing/plaf/windows/WindowsToggleButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">19</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:13.5922330097%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:4.85436893204%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l11.1">src/share/classes/javax/swing/plaf/basic/BasicButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:10.6796116505%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.91262135922%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l12.1">src/share/classes/javax/swing/plaf/basic/BasicCheckBoxUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l13.1">src/share/classes/javax/swing/plaf/basic/BasicLabelUI.java</a></td>
+    <td class="diffstat-total" align="right">16</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:11.6504854369%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.88349514563%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l14.1">src/share/classes/javax/swing/plaf/basic/BasicRadioButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">10</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:8.73786407767%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l15.1">src/share/classes/javax/swing/plaf/basic/BasicToggleButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l16.1">src/share/classes/javax/swing/plaf/metal/MetalButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">14</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:10.6796116505%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.91262135922%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l17.1">src/share/classes/javax/swing/plaf/metal/MetalCheckBoxUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l18.1">src/share/classes/javax/swing/plaf/metal/MetalLabelUI.java</a></td>
+    <td class="diffstat-total" align="right">16</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:11.6504854369%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:3.88349514563%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l19.1">src/share/classes/javax/swing/plaf/metal/MetalRadioButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l20.1">src/share/classes/javax/swing/plaf/metal/MetalToggleButtonUI.java</a></td>
+    <td class="diffstat-total" align="right">11</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:9.70873786408%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.970873786408%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l21.1">test/javax/swing/Security/6657138/ComponentTest.java</a></td>
+    <td class="diffstat-total" align="right">76</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:73.786407767%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l22.1">test/javax/swing/Security/6657138/bug6657138.java</a></td>
+    <td class="diffstat-total" align="right">103</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/motif/MotifButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/motif/MotifButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> </span><a href="#l1.4"></a>
+<span id="l1.5"> package com.sun.java.swing.plaf.motif;</span><a href="#l1.5"></a>
+<span id="l1.6"> </span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+</span><a href="#l1.8"></a>
+<span id="l1.9"> import javax.swing.*;</span><a href="#l1.9"></a>
+<span id="l1.10"> import javax.swing.border.*;</span><a href="#l1.10"></a>
+<span id="l1.11"> import javax.swing.plaf.basic.*;</span><a href="#l1.11"></a>
+<span id="l1.12" class="atline">@@ -46,16 +48,23 @@</span><a href="#l1.12"></a>
+<span id="l1.13">  */</span><a href="#l1.13"></a>
+<span id="l1.14"> public class MotifButtonUI extends BasicButtonUI {</span><a href="#l1.14"></a>
+<span id="l1.15"> </span><a href="#l1.15"></a>
+<span id="l1.16" class="minusline">-    private final static MotifButtonUI motifButtonUI = new MotifButtonUI();</span><a href="#l1.16"></a>
+<span id="l1.17" class="minusline">-</span><a href="#l1.17"></a>
+<span id="l1.18">     protected Color selectColor;</span><a href="#l1.18"></a>
+<span id="l1.19"> </span><a href="#l1.19"></a>
+<span id="l1.20">     private boolean defaults_initialized = false;</span><a href="#l1.20"></a>
+<span id="l1.21"> </span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+    private static final Object MOTIF_BUTTON_UI_KEY = new Object();</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+</span><a href="#l1.23"></a>
+<span id="l1.24">     // ********************************</span><a href="#l1.24"></a>
+<span id="l1.25">     //          Create PLAF</span><a href="#l1.25"></a>
+<span id="l1.26">     // ********************************</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-    public static ComponentUI createUI(JComponent c){</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+    public static ComponentUI createUI(JComponent c) {</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+        MotifButtonUI motifButtonUI =</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+                (MotifButtonUI) appContext.get(MOTIF_BUTTON_UI_KEY);</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+        if (motifButtonUI == null) {</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+            motifButtonUI = new MotifButtonUI();</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+            appContext.put(MOTIF_BUTTON_UI_KEY, motifButtonUI);</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+        }</span><a href="#l1.35"></a>
+<span id="l1.36">         return motifButtonUI;</span><a href="#l1.36"></a>
+<span id="l1.37">     }</span><a href="#l1.37"></a>
+<span id="l1.38"> </span><a href="#l1.38"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/motif/MotifCheckBoxUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/motif/MotifCheckBoxUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> </span><a href="#l2.4"></a>
+<span id="l2.5"> package com.sun.java.swing.plaf.motif;</span><a href="#l2.5"></a>
+<span id="l2.6"> </span><a href="#l2.6"></a>
+<span id="l2.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l2.7"></a>
+<span id="l2.8" class="plusline">+</span><a href="#l2.8"></a>
+<span id="l2.9"> import javax.swing.*;</span><a href="#l2.9"></a>
+<span id="l2.10"> </span><a href="#l2.10"></a>
+<span id="l2.11"> import javax.swing.plaf.*;</span><a href="#l2.11"></a>
+<span id="l2.12" class="atline">@@ -45,7 +47,7 @@</span><a href="#l2.12"></a>
+<span id="l2.13">  */</span><a href="#l2.13"></a>
+<span id="l2.14"> public class MotifCheckBoxUI extends MotifRadioButtonUI {</span><a href="#l2.14"></a>
+<span id="l2.15"> </span><a href="#l2.15"></a>
+<span id="l2.16" class="minusline">-    private static final MotifCheckBoxUI motifCheckBoxUI = new MotifCheckBoxUI();</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+    private static final Object MOTIF_CHECK_BOX_UI_KEY = new Object();</span><a href="#l2.17"></a>
+<span id="l2.18"> </span><a href="#l2.18"></a>
+<span id="l2.19">     private final static String propertyPrefix = &quot;CheckBox&quot; + &quot;.&quot;;</span><a href="#l2.19"></a>
+<span id="l2.20"> </span><a href="#l2.20"></a>
+<span id="l2.21" class="atline">@@ -55,7 +57,14 @@</span><a href="#l2.21"></a>
+<span id="l2.22">     // ********************************</span><a href="#l2.22"></a>
+<span id="l2.23">     //         Create PLAF</span><a href="#l2.23"></a>
+<span id="l2.24">     // ********************************</span><a href="#l2.24"></a>
+<span id="l2.25" class="minusline">-    public static ComponentUI createUI(JComponent c){</span><a href="#l2.25"></a>
+<span id="l2.26" class="plusline">+    public static ComponentUI createUI(JComponent c) {</span><a href="#l2.26"></a>
+<span id="l2.27" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l2.27"></a>
+<span id="l2.28" class="plusline">+        MotifCheckBoxUI motifCheckBoxUI =</span><a href="#l2.28"></a>
+<span id="l2.29" class="plusline">+                (MotifCheckBoxUI) appContext.get(MOTIF_CHECK_BOX_UI_KEY);</span><a href="#l2.29"></a>
+<span id="l2.30" class="plusline">+        if (motifCheckBoxUI == null) {</span><a href="#l2.30"></a>
+<span id="l2.31" class="plusline">+            motifCheckBoxUI = new MotifCheckBoxUI();</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+            appContext.put(MOTIF_CHECK_BOX_UI_KEY, motifCheckBoxUI);</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+        }</span><a href="#l2.33"></a>
+<span id="l2.34">         return motifCheckBoxUI;</span><a href="#l2.34"></a>
+<span id="l2.35">     }</span><a href="#l2.35"></a>
+<span id="l2.36"> </span><a href="#l2.36"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/motif/MotifLabelUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/motif/MotifLabelUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> </span><a href="#l3.4"></a>
+<span id="l3.5"> package com.sun.java.swing.plaf.motif;</span><a href="#l3.5"></a>
+<span id="l3.6"> </span><a href="#l3.6"></a>
+<span id="l3.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l3.7"></a>
+<span id="l3.8" class="plusline">+</span><a href="#l3.8"></a>
+<span id="l3.9"> import javax.swing.*;</span><a href="#l3.9"></a>
+<span id="l3.10"> import javax.swing.plaf.basic.BasicLabelUI;</span><a href="#l3.10"></a>
+<span id="l3.11"> import javax.swing.plaf.ComponentUI;</span><a href="#l3.11"></a>
+<span id="l3.12" class="atline">@@ -44,9 +46,16 @@</span><a href="#l3.12"></a>
+<span id="l3.13">  */</span><a href="#l3.13"></a>
+<span id="l3.14"> public class MotifLabelUI extends BasicLabelUI</span><a href="#l3.14"></a>
+<span id="l3.15"> {</span><a href="#l3.15"></a>
+<span id="l3.16" class="minusline">-    static MotifLabelUI sharedInstance = new MotifLabelUI();</span><a href="#l3.16"></a>
+<span id="l3.17" class="plusline">+    private static final Object MOTIF_LABEL_UI_KEY = new Object();</span><a href="#l3.17"></a>
+<span id="l3.18"> </span><a href="#l3.18"></a>
+<span id="l3.19">     public static ComponentUI createUI(JComponent c) {</span><a href="#l3.19"></a>
+<span id="l3.20" class="minusline">-        return sharedInstance;</span><a href="#l3.20"></a>
+<span id="l3.21" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l3.21"></a>
+<span id="l3.22" class="plusline">+        MotifLabelUI motifLabelUI =</span><a href="#l3.22"></a>
+<span id="l3.23" class="plusline">+                (MotifLabelUI) appContext.get(MOTIF_LABEL_UI_KEY);</span><a href="#l3.23"></a>
+<span id="l3.24" class="plusline">+        if (motifLabelUI == null) {</span><a href="#l3.24"></a>
+<span id="l3.25" class="plusline">+            motifLabelUI = new MotifLabelUI();</span><a href="#l3.25"></a>
+<span id="l3.26" class="plusline">+            appContext.put(MOTIF_LABEL_UI_KEY, motifLabelUI);</span><a href="#l3.26"></a>
+<span id="l3.27" class="plusline">+        }</span><a href="#l3.27"></a>
+<span id="l3.28" class="plusline">+        return motifLabelUI;</span><a href="#l3.28"></a>
+<span id="l3.29">     }</span><a href="#l3.29"></a>
+<span id="l3.30"> }</span><a href="#l3.30"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/motif/MotifRadioButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/motif/MotifRadioButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> </span><a href="#l4.4"></a>
+<span id="l4.5"> package com.sun.java.swing.plaf.motif;</span><a href="#l4.5"></a>
+<span id="l4.6"> </span><a href="#l4.6"></a>
+<span id="l4.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l4.7"></a>
+<span id="l4.8" class="plusline">+</span><a href="#l4.8"></a>
+<span id="l4.9"> import javax.swing.*;</span><a href="#l4.9"></a>
+<span id="l4.10"> import javax.swing.border.*;</span><a href="#l4.10"></a>
+<span id="l4.11"> import javax.swing.plaf.basic.BasicRadioButtonUI;</span><a href="#l4.11"></a>
+<span id="l4.12" class="atline">@@ -47,7 +49,7 @@</span><a href="#l4.12"></a>
+<span id="l4.13">  */</span><a href="#l4.13"></a>
+<span id="l4.14"> public class MotifRadioButtonUI extends BasicRadioButtonUI {</span><a href="#l4.14"></a>
+<span id="l4.15"> </span><a href="#l4.15"></a>
+<span id="l4.16" class="minusline">-    private static final MotifRadioButtonUI motifRadioButtonUI = new MotifRadioButtonUI();</span><a href="#l4.16"></a>
+<span id="l4.17" class="plusline">+    private static final Object MOTIF_RADIO_BUTTON_UI_KEY = new Object();</span><a href="#l4.17"></a>
+<span id="l4.18"> </span><a href="#l4.18"></a>
+<span id="l4.19">     protected Color focusColor;</span><a href="#l4.19"></a>
+<span id="l4.20"> </span><a href="#l4.20"></a>
+<span id="l4.21" class="atline">@@ -57,6 +59,13 @@</span><a href="#l4.21"></a>
+<span id="l4.22">     //         Create PLAF</span><a href="#l4.22"></a>
+<span id="l4.23">     // ********************************</span><a href="#l4.23"></a>
+<span id="l4.24">     public static ComponentUI createUI(JComponent c) {</span><a href="#l4.24"></a>
+<span id="l4.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l4.25"></a>
+<span id="l4.26" class="plusline">+        MotifRadioButtonUI motifRadioButtonUI =</span><a href="#l4.26"></a>
+<span id="l4.27" class="plusline">+                (MotifRadioButtonUI) appContext.get(MOTIF_RADIO_BUTTON_UI_KEY);</span><a href="#l4.27"></a>
+<span id="l4.28" class="plusline">+        if (motifRadioButtonUI == null) {</span><a href="#l4.28"></a>
+<span id="l4.29" class="plusline">+            motifRadioButtonUI = new MotifRadioButtonUI();</span><a href="#l4.29"></a>
+<span id="l4.30" class="plusline">+            appContext.put(MOTIF_RADIO_BUTTON_UI_KEY, motifRadioButtonUI);</span><a href="#l4.30"></a>
+<span id="l4.31" class="plusline">+        }</span><a href="#l4.31"></a>
+<span id="l4.32">         return motifRadioButtonUI;</span><a href="#l4.32"></a>
+<span id="l4.33">     }</span><a href="#l4.33"></a>
+<span id="l4.34"> </span><a href="#l4.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/motif/MotifToggleButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/motif/MotifToggleButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l5.3"></a>
+<span id="l5.4"> </span><a href="#l5.4"></a>
+<span id="l5.5"> package com.sun.java.swing.plaf.motif;</span><a href="#l5.5"></a>
+<span id="l5.6"> </span><a href="#l5.6"></a>
+<span id="l5.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l5.7"></a>
+<span id="l5.8" class="plusline">+</span><a href="#l5.8"></a>
+<span id="l5.9"> import java.awt.*;</span><a href="#l5.9"></a>
+<span id="l5.10"> import java.awt.event.*;</span><a href="#l5.10"></a>
+<span id="l5.11"> </span><a href="#l5.11"></a>
+<span id="l5.12" class="atline">@@ -48,7 +50,7 @@</span><a href="#l5.12"></a>
+<span id="l5.13">  */</span><a href="#l5.13"></a>
+<span id="l5.14"> public class MotifToggleButtonUI extends BasicToggleButtonUI</span><a href="#l5.14"></a>
+<span id="l5.15"> {</span><a href="#l5.15"></a>
+<span id="l5.16" class="minusline">-    private final static MotifToggleButtonUI motifToggleButtonUI = new MotifToggleButtonUI();</span><a href="#l5.16"></a>
+<span id="l5.17" class="plusline">+    private static final Object MOTIF_TOGGLE_BUTTON_UI_KEY = new Object();</span><a href="#l5.17"></a>
+<span id="l5.18"> </span><a href="#l5.18"></a>
+<span id="l5.19">     protected Color selectColor;</span><a href="#l5.19"></a>
+<span id="l5.20"> </span><a href="#l5.20"></a>
+<span id="l5.21" class="atline">@@ -58,6 +60,13 @@</span><a href="#l5.21"></a>
+<span id="l5.22">     //         Create PLAF</span><a href="#l5.22"></a>
+<span id="l5.23">     // ********************************</span><a href="#l5.23"></a>
+<span id="l5.24">     public static ComponentUI createUI(JComponent b) {</span><a href="#l5.24"></a>
+<span id="l5.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l5.25"></a>
+<span id="l5.26" class="plusline">+        MotifToggleButtonUI motifToggleButtonUI =</span><a href="#l5.26"></a>
+<span id="l5.27" class="plusline">+                (MotifToggleButtonUI) appContext.get(MOTIF_TOGGLE_BUTTON_UI_KEY);</span><a href="#l5.27"></a>
+<span id="l5.28" class="plusline">+        if (motifToggleButtonUI == null) {</span><a href="#l5.28"></a>
+<span id="l5.29" class="plusline">+            motifToggleButtonUI = new MotifToggleButtonUI();</span><a href="#l5.29"></a>
+<span id="l5.30" class="plusline">+            appContext.put(MOTIF_TOGGLE_BUTTON_UI_KEY, motifToggleButtonUI);</span><a href="#l5.30"></a>
+<span id="l5.31" class="plusline">+        }</span><a href="#l5.31"></a>
+<span id="l5.32">         return motifToggleButtonUI;</span><a href="#l5.32"></a>
+<span id="l5.33">     }</span><a href="#l5.33"></a>
+<span id="l5.34"> </span><a href="#l5.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l6.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/windows/WindowsButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l6.1"></a>
+<span id="l6.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/windows/WindowsButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l6.2"></a>
+<span id="l6.3" class="atline">@@ -35,6 +35,7 @@</span><a href="#l6.3"></a>
+<span id="l6.4"> import static com.sun.java.swing.plaf.windows.TMSchema.*;</span><a href="#l6.4"></a>
+<span id="l6.5"> import static com.sun.java.swing.plaf.windows.TMSchema.Part.*;</span><a href="#l6.5"></a>
+<span id="l6.6"> import static com.sun.java.swing.plaf.windows.XPStyle.Skin;</span><a href="#l6.6"></a>
+<span id="l6.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l6.7"></a>
+<span id="l6.8"> </span><a href="#l6.8"></a>
+<span id="l6.9"> </span><a href="#l6.9"></a>
+<span id="l6.10"> /**</span><a href="#l6.10"></a>
+<span id="l6.11" class="atline">@@ -52,8 +53,6 @@</span><a href="#l6.11"></a>
+<span id="l6.12">  */</span><a href="#l6.12"></a>
+<span id="l6.13"> public class WindowsButtonUI extends BasicButtonUI</span><a href="#l6.13"></a>
+<span id="l6.14"> {</span><a href="#l6.14"></a>
+<span id="l6.15" class="minusline">-    private final static WindowsButtonUI windowsButtonUI = new WindowsButtonUI();</span><a href="#l6.15"></a>
+<span id="l6.16" class="minusline">-</span><a href="#l6.16"></a>
+<span id="l6.17">     protected int dashedRectGapX;</span><a href="#l6.17"></a>
+<span id="l6.18">     protected int dashedRectGapY;</span><a href="#l6.18"></a>
+<span id="l6.19">     protected int dashedRectGapWidth;</span><a href="#l6.19"></a>
+<span id="l6.20" class="atline">@@ -63,11 +62,19 @@</span><a href="#l6.20"></a>
+<span id="l6.21"> </span><a href="#l6.21"></a>
+<span id="l6.22">     private boolean defaults_initialized = false;</span><a href="#l6.22"></a>
+<span id="l6.23"> </span><a href="#l6.23"></a>
+<span id="l6.24" class="plusline">+    private static final Object WINDOWS_BUTTON_UI_KEY = new Object();</span><a href="#l6.24"></a>
+<span id="l6.25"> </span><a href="#l6.25"></a>
+<span id="l6.26">     // ********************************</span><a href="#l6.26"></a>
+<span id="l6.27">     //          Create PLAF</span><a href="#l6.27"></a>
+<span id="l6.28">     // ********************************</span><a href="#l6.28"></a>
+<span id="l6.29" class="minusline">-    public static ComponentUI createUI(JComponent c){</span><a href="#l6.29"></a>
+<span id="l6.30" class="plusline">+    public static ComponentUI createUI(JComponent c) {</span><a href="#l6.30"></a>
+<span id="l6.31" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l6.31"></a>
+<span id="l6.32" class="plusline">+        WindowsButtonUI windowsButtonUI =</span><a href="#l6.32"></a>
+<span id="l6.33" class="plusline">+                (WindowsButtonUI) appContext.get(WINDOWS_BUTTON_UI_KEY);</span><a href="#l6.33"></a>
+<span id="l6.34" class="plusline">+        if (windowsButtonUI == null) {</span><a href="#l6.34"></a>
+<span id="l6.35" class="plusline">+            windowsButtonUI = new WindowsButtonUI();</span><a href="#l6.35"></a>
+<span id="l6.36" class="plusline">+            appContext.put(WINDOWS_BUTTON_UI_KEY, windowsButtonUI);</span><a href="#l6.36"></a>
+<span id="l6.37" class="plusline">+        }</span><a href="#l6.37"></a>
+<span id="l6.38">         return windowsButtonUI;</span><a href="#l6.38"></a>
+<span id="l6.39">     }</span><a href="#l6.39"></a>
+<span id="l6.40"> </span><a href="#l6.40"></a>
+<span id="l6.41" class="atline">@@ -151,7 +158,7 @@</span><a href="#l6.41"></a>
+<span id="l6.42">      * allocating them in each paint call substantially reduced the time</span><a href="#l6.42"></a>
+<span id="l6.43">      * it took paint to run.  Obviously, this method can't be re-entered.</span><a href="#l6.43"></a>
+<span id="l6.44">      */</span><a href="#l6.44"></a>
+<span id="l6.45" class="minusline">-    private static Rectangle viewRect = new Rectangle();</span><a href="#l6.45"></a>
+<span id="l6.46" class="plusline">+    private Rectangle viewRect = new Rectangle();</span><a href="#l6.46"></a>
+<span id="l6.47"> </span><a href="#l6.47"></a>
+<span id="l6.48">     public void paint(Graphics g, JComponent c) {</span><a href="#l6.48"></a>
+<span id="l6.49">         if (XPStyle.getXP() != null) {</span><a href="#l6.49"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l7.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/windows/WindowsCheckBoxUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l7.1"></a>
+<span id="l7.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/windows/WindowsCheckBoxUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l7.2"></a>
+<span id="l7.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l7.3"></a>
+<span id="l7.4"> </span><a href="#l7.4"></a>
+<span id="l7.5"> package com.sun.java.swing.plaf.windows;</span><a href="#l7.5"></a>
+<span id="l7.6"> </span><a href="#l7.6"></a>
+<span id="l7.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l7.7"></a>
+<span id="l7.8" class="plusline">+</span><a href="#l7.8"></a>
+<span id="l7.9"> import javax.swing.plaf.basic.*;</span><a href="#l7.9"></a>
+<span id="l7.10"> import javax.swing.*;</span><a href="#l7.10"></a>
+<span id="l7.11"> import javax.swing.plaf.*;</span><a href="#l7.11"></a>
+<span id="l7.12" class="atline">@@ -49,7 +51,7 @@</span><a href="#l7.12"></a>
+<span id="l7.13">     // of BasicCheckBoxUI because we want to pick up all the</span><a href="#l7.13"></a>
+<span id="l7.14">     // painting changes made in MetalRadioButtonUI.</span><a href="#l7.14"></a>
+<span id="l7.15"> </span><a href="#l7.15"></a>
+<span id="l7.16" class="minusline">-    private static final WindowsCheckBoxUI windowsCheckBoxUI = new WindowsCheckBoxUI();</span><a href="#l7.16"></a>
+<span id="l7.17" class="plusline">+    private static final Object WINDOWS_CHECK_BOX_UI_KEY = new Object();</span><a href="#l7.17"></a>
+<span id="l7.18"> </span><a href="#l7.18"></a>
+<span id="l7.19">     private final static String propertyPrefix = &quot;CheckBox&quot; + &quot;.&quot;;</span><a href="#l7.19"></a>
+<span id="l7.20"> </span><a href="#l7.20"></a>
+<span id="l7.21" class="atline">@@ -59,6 +61,13 @@</span><a href="#l7.21"></a>
+<span id="l7.22">     //          Create PLAF</span><a href="#l7.22"></a>
+<span id="l7.23">     // ********************************</span><a href="#l7.23"></a>
+<span id="l7.24">     public static ComponentUI createUI(JComponent c) {</span><a href="#l7.24"></a>
+<span id="l7.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l7.25"></a>
+<span id="l7.26" class="plusline">+        WindowsCheckBoxUI windowsCheckBoxUI =</span><a href="#l7.26"></a>
+<span id="l7.27" class="plusline">+                (WindowsCheckBoxUI) appContext.get(WINDOWS_CHECK_BOX_UI_KEY);</span><a href="#l7.27"></a>
+<span id="l7.28" class="plusline">+        if (windowsCheckBoxUI == null) {</span><a href="#l7.28"></a>
+<span id="l7.29" class="plusline">+            windowsCheckBoxUI = new WindowsCheckBoxUI();</span><a href="#l7.29"></a>
+<span id="l7.30" class="plusline">+            appContext.put(WINDOWS_CHECK_BOX_UI_KEY, windowsCheckBoxUI);</span><a href="#l7.30"></a>
+<span id="l7.31" class="plusline">+        }</span><a href="#l7.31"></a>
+<span id="l7.32">         return windowsCheckBoxUI;</span><a href="#l7.32"></a>
+<span id="l7.33">     }</span><a href="#l7.33"></a>
+<span id="l7.34"> </span><a href="#l7.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l8.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/windows/WindowsLabelUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l8.1"></a>
+<span id="l8.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/windows/WindowsLabelUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l8.2"></a>
+<span id="l8.3" class="atline">@@ -26,6 +26,8 @@</span><a href="#l8.3"></a>
+<span id="l8.4"> package com.sun.java.swing.plaf.windows;</span><a href="#l8.4"></a>
+<span id="l8.5"> </span><a href="#l8.5"></a>
+<span id="l8.6"> import sun.swing.SwingUtilities2;</span><a href="#l8.6"></a>
+<span id="l8.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l8.7"></a>
+<span id="l8.8" class="plusline">+</span><a href="#l8.8"></a>
+<span id="l8.9"> import java.awt.Color;</span><a href="#l8.9"></a>
+<span id="l8.10"> import java.awt.Graphics;</span><a href="#l8.10"></a>
+<span id="l8.11"> </span><a href="#l8.11"></a>
+<span id="l8.12" class="atline">@@ -51,12 +53,19 @@</span><a href="#l8.12"></a>
+<span id="l8.13">  */</span><a href="#l8.13"></a>
+<span id="l8.14"> public class WindowsLabelUI extends BasicLabelUI {</span><a href="#l8.14"></a>
+<span id="l8.15"> </span><a href="#l8.15"></a>
+<span id="l8.16" class="minusline">-    private final static WindowsLabelUI windowsLabelUI = new WindowsLabelUI();</span><a href="#l8.16"></a>
+<span id="l8.17" class="plusline">+    private static final Object WINDOWS_LABEL_UI_KEY = new Object();</span><a href="#l8.17"></a>
+<span id="l8.18"> </span><a href="#l8.18"></a>
+<span id="l8.19">     // ********************************</span><a href="#l8.19"></a>
+<span id="l8.20">     //          Create PLAF</span><a href="#l8.20"></a>
+<span id="l8.21">     // ********************************</span><a href="#l8.21"></a>
+<span id="l8.22" class="minusline">-    public static ComponentUI createUI(JComponent c){</span><a href="#l8.22"></a>
+<span id="l8.23" class="plusline">+    public static ComponentUI createUI(JComponent c) {</span><a href="#l8.23"></a>
+<span id="l8.24" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l8.24"></a>
+<span id="l8.25" class="plusline">+        WindowsLabelUI windowsLabelUI =</span><a href="#l8.25"></a>
+<span id="l8.26" class="plusline">+                (WindowsLabelUI) appContext.get(WINDOWS_LABEL_UI_KEY);</span><a href="#l8.26"></a>
+<span id="l8.27" class="plusline">+        if (windowsLabelUI == null) {</span><a href="#l8.27"></a>
+<span id="l8.28" class="plusline">+            windowsLabelUI = new WindowsLabelUI();</span><a href="#l8.28"></a>
+<span id="l8.29" class="plusline">+            appContext.put(WINDOWS_LABEL_UI_KEY, windowsLabelUI);</span><a href="#l8.29"></a>
+<span id="l8.30" class="plusline">+        }</span><a href="#l8.30"></a>
+<span id="l8.31">         return windowsLabelUI;</span><a href="#l8.31"></a>
+<span id="l8.32">     }</span><a href="#l8.32"></a>
+<span id="l8.33"> </span><a href="#l8.33"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l9.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/windows/WindowsRadioButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l9.1"></a>
+<span id="l9.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/windows/WindowsRadioButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l9.2"></a>
+<span id="l9.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l9.3"></a>
+<span id="l9.4"> </span><a href="#l9.4"></a>
+<span id="l9.5"> package com.sun.java.swing.plaf.windows;</span><a href="#l9.5"></a>
+<span id="l9.6"> </span><a href="#l9.6"></a>
+<span id="l9.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l9.7"></a>
+<span id="l9.8" class="plusline">+</span><a href="#l9.8"></a>
+<span id="l9.9"> import javax.swing.plaf.basic.*;</span><a href="#l9.9"></a>
+<span id="l9.10"> import javax.swing.*;</span><a href="#l9.10"></a>
+<span id="l9.11"> import javax.swing.plaf.*;</span><a href="#l9.11"></a>
+<span id="l9.12" class="atline">@@ -44,7 +46,7 @@</span><a href="#l9.12"></a>
+<span id="l9.13">  */</span><a href="#l9.13"></a>
+<span id="l9.14"> public class WindowsRadioButtonUI extends BasicRadioButtonUI</span><a href="#l9.14"></a>
+<span id="l9.15"> {</span><a href="#l9.15"></a>
+<span id="l9.16" class="minusline">-    private static final WindowsRadioButtonUI windowsRadioButtonUI = new WindowsRadioButtonUI();</span><a href="#l9.16"></a>
+<span id="l9.17" class="plusline">+    private static final Object WINDOWS_RADIO_BUTTON_UI_KEY = new Object();</span><a href="#l9.17"></a>
+<span id="l9.18"> </span><a href="#l9.18"></a>
+<span id="l9.19">     protected int dashedRectGapX;</span><a href="#l9.19"></a>
+<span id="l9.20">     protected int dashedRectGapY;</span><a href="#l9.20"></a>
+<span id="l9.21" class="atline">@@ -59,6 +61,13 @@</span><a href="#l9.21"></a>
+<span id="l9.22">     //          Create PLAF</span><a href="#l9.22"></a>
+<span id="l9.23">     // ********************************</span><a href="#l9.23"></a>
+<span id="l9.24">     public static ComponentUI createUI(JComponent c) {</span><a href="#l9.24"></a>
+<span id="l9.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l9.25"></a>
+<span id="l9.26" class="plusline">+        WindowsRadioButtonUI windowsRadioButtonUI =</span><a href="#l9.26"></a>
+<span id="l9.27" class="plusline">+                (WindowsRadioButtonUI) appContext.get(WINDOWS_RADIO_BUTTON_UI_KEY);</span><a href="#l9.27"></a>
+<span id="l9.28" class="plusline">+        if (windowsRadioButtonUI == null) {</span><a href="#l9.28"></a>
+<span id="l9.29" class="plusline">+            windowsRadioButtonUI = new WindowsRadioButtonUI();</span><a href="#l9.29"></a>
+<span id="l9.30" class="plusline">+            appContext.put(WINDOWS_RADIO_BUTTON_UI_KEY, windowsRadioButtonUI);</span><a href="#l9.30"></a>
+<span id="l9.31" class="plusline">+        }</span><a href="#l9.31"></a>
+<span id="l9.32">         return windowsRadioButtonUI;</span><a href="#l9.32"></a>
+<span id="l9.33">     }</span><a href="#l9.33"></a>
+<span id="l9.34"> </span><a href="#l9.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l10.1" class="minusline">--- a/src/share/classes/com/sun/java/swing/plaf/windows/WindowsToggleButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l10.1"></a>
+<span id="l10.2" class="plusline">+++ b/src/share/classes/com/sun/java/swing/plaf/windows/WindowsToggleButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l10.2"></a>
+<span id="l10.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l10.3"></a>
+<span id="l10.4"> </span><a href="#l10.4"></a>
+<span id="l10.5"> package com.sun.java.swing.plaf.windows;</span><a href="#l10.5"></a>
+<span id="l10.6"> </span><a href="#l10.6"></a>
+<span id="l10.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l10.7"></a>
+<span id="l10.8" class="plusline">+</span><a href="#l10.8"></a>
+<span id="l10.9"> import javax.swing.plaf.basic.*;</span><a href="#l10.9"></a>
+<span id="l10.10"> import javax.swing.border.*;</span><a href="#l10.10"></a>
+<span id="l10.11"> import javax.swing.plaf.*;</span><a href="#l10.11"></a>
+<span id="l10.12" class="atline">@@ -49,18 +51,25 @@</span><a href="#l10.12"></a>
+<span id="l10.13">  */</span><a href="#l10.13"></a>
+<span id="l10.14"> public class WindowsToggleButtonUI extends BasicToggleButtonUI</span><a href="#l10.14"></a>
+<span id="l10.15"> {</span><a href="#l10.15"></a>
+<span id="l10.16" class="minusline">-    protected static int dashedRectGapX;</span><a href="#l10.16"></a>
+<span id="l10.17" class="minusline">-    protected static int dashedRectGapY;</span><a href="#l10.17"></a>
+<span id="l10.18" class="minusline">-    protected static int dashedRectGapWidth;</span><a href="#l10.18"></a>
+<span id="l10.19" class="minusline">-    protected static int dashedRectGapHeight;</span><a href="#l10.19"></a>
+<span id="l10.20" class="plusline">+    protected int dashedRectGapX;</span><a href="#l10.20"></a>
+<span id="l10.21" class="plusline">+    protected int dashedRectGapY;</span><a href="#l10.21"></a>
+<span id="l10.22" class="plusline">+    protected int dashedRectGapWidth;</span><a href="#l10.22"></a>
+<span id="l10.23" class="plusline">+    protected int dashedRectGapHeight;</span><a href="#l10.23"></a>
+<span id="l10.24"> </span><a href="#l10.24"></a>
+<span id="l10.25">     protected Color focusColor;</span><a href="#l10.25"></a>
+<span id="l10.26"> </span><a href="#l10.26"></a>
+<span id="l10.27" class="minusline">-    private final static WindowsToggleButtonUI windowsToggleButtonUI = new WindowsToggleButtonUI();</span><a href="#l10.27"></a>
+<span id="l10.28" class="plusline">+    private static final Object WINDOWS_TOGGLE_BUTTON_UI_KEY = new Object();</span><a href="#l10.28"></a>
+<span id="l10.29"> </span><a href="#l10.29"></a>
+<span id="l10.30">     private boolean defaults_initialized = false;</span><a href="#l10.30"></a>
+<span id="l10.31"> </span><a href="#l10.31"></a>
+<span id="l10.32">     public static ComponentUI createUI(JComponent b) {</span><a href="#l10.32"></a>
+<span id="l10.33" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l10.33"></a>
+<span id="l10.34" class="plusline">+        WindowsToggleButtonUI windowsToggleButtonUI =</span><a href="#l10.34"></a>
+<span id="l10.35" class="plusline">+                (WindowsToggleButtonUI) appContext.get(WINDOWS_TOGGLE_BUTTON_UI_KEY);</span><a href="#l10.35"></a>
+<span id="l10.36" class="plusline">+        if (windowsToggleButtonUI == null) {</span><a href="#l10.36"></a>
+<span id="l10.37" class="plusline">+            windowsToggleButtonUI = new WindowsToggleButtonUI();</span><a href="#l10.37"></a>
+<span id="l10.38" class="plusline">+            appContext.put(WINDOWS_TOGGLE_BUTTON_UI_KEY, windowsToggleButtonUI);</span><a href="#l10.38"></a>
+<span id="l10.39" class="plusline">+        }</span><a href="#l10.39"></a>
+<span id="l10.40">         return windowsToggleButtonUI;</span><a href="#l10.40"></a>
+<span id="l10.41">     }</span><a href="#l10.41"></a>
+<span id="l10.42"> </span><a href="#l10.42"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l11.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/basic/BasicButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l11.1"></a>
+<span id="l11.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/basic/BasicButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l11.2"></a>
+<span id="l11.3" class="atline">@@ -26,6 +26,8 @@</span><a href="#l11.3"></a>
+<span id="l11.4"> package javax.swing.plaf.basic;</span><a href="#l11.4"></a>
+<span id="l11.5"> </span><a href="#l11.5"></a>
+<span id="l11.6"> import sun.swing.SwingUtilities2;</span><a href="#l11.6"></a>
+<span id="l11.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l11.7"></a>
+<span id="l11.8" class="plusline">+</span><a href="#l11.8"></a>
+<span id="l11.9"> import java.awt.*;</span><a href="#l11.9"></a>
+<span id="l11.10"> import java.awt.event.*;</span><a href="#l11.10"></a>
+<span id="l11.11"> import java.io.Serializable;</span><a href="#l11.11"></a>
+<span id="l11.12" class="atline">@@ -44,9 +46,6 @@</span><a href="#l11.12"></a>
+<span id="l11.13">  * @author Jeff Dinkins</span><a href="#l11.13"></a>
+<span id="l11.14">  */</span><a href="#l11.14"></a>
+<span id="l11.15"> public class BasicButtonUI extends ButtonUI{</span><a href="#l11.15"></a>
+<span id="l11.16" class="minusline">-    // Shared UI object</span><a href="#l11.16"></a>
+<span id="l11.17" class="minusline">-    private final static BasicButtonUI buttonUI = new BasicButtonUI();</span><a href="#l11.17"></a>
+<span id="l11.18" class="minusline">-</span><a href="#l11.18"></a>
+<span id="l11.19">     // Visual constants</span><a href="#l11.19"></a>
+<span id="l11.20">     // NOTE: This is not used or set any where. Were we allowed to remove</span><a href="#l11.20"></a>
+<span id="l11.21">     // fields, this would be removed.</span><a href="#l11.21"></a>
+<span id="l11.22" class="atline">@@ -61,10 +60,19 @@</span><a href="#l11.22"></a>
+<span id="l11.23"> </span><a href="#l11.23"></a>
+<span id="l11.24">     private final static String propertyPrefix = &quot;Button&quot; + &quot;.&quot;;</span><a href="#l11.24"></a>
+<span id="l11.25"> </span><a href="#l11.25"></a>
+<span id="l11.26" class="plusline">+    private static final Object BASIC_BUTTON_UI_KEY = new Object();</span><a href="#l11.26"></a>
+<span id="l11.27" class="plusline">+</span><a href="#l11.27"></a>
+<span id="l11.28">     // ********************************</span><a href="#l11.28"></a>
+<span id="l11.29">     //          Create PLAF</span><a href="#l11.29"></a>
+<span id="l11.30">     // ********************************</span><a href="#l11.30"></a>
+<span id="l11.31">     public static ComponentUI createUI(JComponent c) {</span><a href="#l11.31"></a>
+<span id="l11.32" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l11.32"></a>
+<span id="l11.33" class="plusline">+        BasicButtonUI buttonUI =</span><a href="#l11.33"></a>
+<span id="l11.34" class="plusline">+                (BasicButtonUI) appContext.get(BASIC_BUTTON_UI_KEY);</span><a href="#l11.34"></a>
+<span id="l11.35" class="plusline">+        if (buttonUI == null) {</span><a href="#l11.35"></a>
+<span id="l11.36" class="plusline">+            buttonUI = new BasicButtonUI();</span><a href="#l11.36"></a>
+<span id="l11.37" class="plusline">+            appContext.put(BASIC_BUTTON_UI_KEY, buttonUI);</span><a href="#l11.37"></a>
+<span id="l11.38" class="plusline">+        }</span><a href="#l11.38"></a>
+<span id="l11.39">         return buttonUI;</span><a href="#l11.39"></a>
+<span id="l11.40">     }</span><a href="#l11.40"></a>
+<span id="l11.41"> </span><a href="#l11.41"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l12.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/basic/BasicCheckBoxUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l12.1"></a>
+<span id="l12.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/basic/BasicCheckBoxUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l12.2"></a>
+<span id="l12.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l12.3"></a>
+<span id="l12.4"> </span><a href="#l12.4"></a>
+<span id="l12.5"> package javax.swing.plaf.basic;</span><a href="#l12.5"></a>
+<span id="l12.6"> </span><a href="#l12.6"></a>
+<span id="l12.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l12.7"></a>
+<span id="l12.8" class="plusline">+</span><a href="#l12.8"></a>
+<span id="l12.9"> import javax.swing.*;</span><a href="#l12.9"></a>
+<span id="l12.10"> </span><a href="#l12.10"></a>
+<span id="l12.11"> import java.awt.*;</span><a href="#l12.11"></a>
+<span id="l12.12" class="atline">@@ -49,7 +51,7 @@</span><a href="#l12.12"></a>
+<span id="l12.13">  */</span><a href="#l12.13"></a>
+<span id="l12.14"> public class BasicCheckBoxUI extends BasicRadioButtonUI {</span><a href="#l12.14"></a>
+<span id="l12.15"> </span><a href="#l12.15"></a>
+<span id="l12.16" class="minusline">-    private final static BasicCheckBoxUI checkboxUI = new BasicCheckBoxUI();</span><a href="#l12.16"></a>
+<span id="l12.17" class="plusline">+    private static final Object BASIC_CHECK_BOX_UI_KEY = new Object();</span><a href="#l12.17"></a>
+<span id="l12.18"> </span><a href="#l12.18"></a>
+<span id="l12.19">     private final static String propertyPrefix = &quot;CheckBox&quot; + &quot;.&quot;;</span><a href="#l12.19"></a>
+<span id="l12.20"> </span><a href="#l12.20"></a>
+<span id="l12.21" class="atline">@@ -57,6 +59,13 @@</span><a href="#l12.21"></a>
+<span id="l12.22">     //            Create PLAF</span><a href="#l12.22"></a>
+<span id="l12.23">     // ********************************</span><a href="#l12.23"></a>
+<span id="l12.24">     public static ComponentUI createUI(JComponent b) {</span><a href="#l12.24"></a>
+<span id="l12.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l12.25"></a>
+<span id="l12.26" class="plusline">+        BasicCheckBoxUI checkboxUI =</span><a href="#l12.26"></a>
+<span id="l12.27" class="plusline">+                (BasicCheckBoxUI) appContext.get(BASIC_CHECK_BOX_UI_KEY);</span><a href="#l12.27"></a>
+<span id="l12.28" class="plusline">+        if (checkboxUI == null) {</span><a href="#l12.28"></a>
+<span id="l12.29" class="plusline">+            checkboxUI = new BasicCheckBoxUI();</span><a href="#l12.29"></a>
+<span id="l12.30" class="plusline">+            appContext.put(BASIC_CHECK_BOX_UI_KEY, checkboxUI);</span><a href="#l12.30"></a>
+<span id="l12.31" class="plusline">+        }</span><a href="#l12.31"></a>
+<span id="l12.32">         return checkboxUI;</span><a href="#l12.32"></a>
+<span id="l12.33">     }</span><a href="#l12.33"></a>
+<span id="l12.34"> </span><a href="#l12.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l13.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/basic/BasicLabelUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l13.1"></a>
+<span id="l13.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/basic/BasicLabelUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l13.2"></a>
+<span id="l13.3" class="atline">@@ -28,6 +28,8 @@</span><a href="#l13.3"></a>
+<span id="l13.4"> import sun.swing.SwingUtilities2;</span><a href="#l13.4"></a>
+<span id="l13.5"> import sun.swing.DefaultLookup;</span><a href="#l13.5"></a>
+<span id="l13.6"> import sun.swing.UIAction;</span><a href="#l13.6"></a>
+<span id="l13.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l13.7"></a>
+<span id="l13.8" class="plusline">+</span><a href="#l13.8"></a>
+<span id="l13.9"> import javax.swing.*;</span><a href="#l13.9"></a>
+<span id="l13.10"> import javax.swing.plaf.*;</span><a href="#l13.10"></a>
+<span id="l13.11"> import javax.swing.text.View;</span><a href="#l13.11"></a>
+<span id="l13.12" class="atline">@@ -63,7 +65,7 @@</span><a href="#l13.12"></a>
+<span id="l13.13">     * name in defaults table under the key &quot;LabelUI&quot;.</span><a href="#l13.13"></a>
+<span id="l13.14">     */</span><a href="#l13.14"></a>
+<span id="l13.15">     protected static BasicLabelUI labelUI = new BasicLabelUI();</span><a href="#l13.15"></a>
+<span id="l13.16" class="minusline">-    private final static BasicLabelUI SAFE_BASIC_LABEL_UI = new BasicLabelUI();</span><a href="#l13.16"></a>
+<span id="l13.17" class="plusline">+    private static final Object BASIC_LABEL_UI_KEY = new Object();</span><a href="#l13.17"></a>
+<span id="l13.18"> </span><a href="#l13.18"></a>
+<span id="l13.19">     private Rectangle paintIconR = new Rectangle();</span><a href="#l13.19"></a>
+<span id="l13.20">     private Rectangle paintTextR = new Rectangle();</span><a href="#l13.20"></a>
+<span id="l13.21" class="atline">@@ -394,10 +396,16 @@</span><a href="#l13.21"></a>
+<span id="l13.22"> </span><a href="#l13.22"></a>
+<span id="l13.23">     public static ComponentUI createUI(JComponent c) {</span><a href="#l13.23"></a>
+<span id="l13.24">         if (System.getSecurityManager() != null) {</span><a href="#l13.24"></a>
+<span id="l13.25" class="minusline">-            return SAFE_BASIC_LABEL_UI;</span><a href="#l13.25"></a>
+<span id="l13.26" class="minusline">-        } else {</span><a href="#l13.26"></a>
+<span id="l13.27" class="minusline">-            return labelUI;</span><a href="#l13.27"></a>
+<span id="l13.28" class="plusline">+            AppContext appContext = AppContext.getAppContext();</span><a href="#l13.28"></a>
+<span id="l13.29" class="plusline">+            BasicLabelUI safeBasicLabelUI =</span><a href="#l13.29"></a>
+<span id="l13.30" class="plusline">+                    (BasicLabelUI) appContext.get(BASIC_LABEL_UI_KEY);</span><a href="#l13.30"></a>
+<span id="l13.31" class="plusline">+            if (safeBasicLabelUI == null) {</span><a href="#l13.31"></a>
+<span id="l13.32" class="plusline">+                safeBasicLabelUI = new BasicLabelUI();</span><a href="#l13.32"></a>
+<span id="l13.33" class="plusline">+                appContext.put(BASIC_LABEL_UI_KEY, safeBasicLabelUI);</span><a href="#l13.33"></a>
+<span id="l13.34" class="plusline">+            }</span><a href="#l13.34"></a>
+<span id="l13.35" class="plusline">+            return safeBasicLabelUI;</span><a href="#l13.35"></a>
+<span id="l13.36">         }</span><a href="#l13.36"></a>
+<span id="l13.37" class="plusline">+        return labelUI;</span><a href="#l13.37"></a>
+<span id="l13.38">     }</span><a href="#l13.38"></a>
+<span id="l13.39"> </span><a href="#l13.39"></a>
+<span id="l13.40">     public void propertyChange(PropertyChangeEvent e) {</span><a href="#l13.40"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l14.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/basic/BasicRadioButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l14.1"></a>
+<span id="l14.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/basic/BasicRadioButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l14.2"></a>
+<span id="l14.3" class="atline">@@ -32,6 +32,7 @@</span><a href="#l14.3"></a>
+<span id="l14.4"> import javax.swing.plaf.*;</span><a href="#l14.4"></a>
+<span id="l14.5"> import javax.swing.text.View;</span><a href="#l14.5"></a>
+<span id="l14.6"> import sun.swing.SwingUtilities2;</span><a href="#l14.6"></a>
+<span id="l14.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l14.7"></a>
+<span id="l14.8"> </span><a href="#l14.8"></a>
+<span id="l14.9"> </span><a href="#l14.9"></a>
+<span id="l14.10"> /**</span><a href="#l14.10"></a>
+<span id="l14.11" class="atline">@@ -41,7 +42,7 @@</span><a href="#l14.11"></a>
+<span id="l14.12">  */</span><a href="#l14.12"></a>
+<span id="l14.13"> public class BasicRadioButtonUI extends BasicToggleButtonUI</span><a href="#l14.13"></a>
+<span id="l14.14"> {</span><a href="#l14.14"></a>
+<span id="l14.15" class="minusline">-    private final static BasicRadioButtonUI radioButtonUI = new BasicRadioButtonUI();</span><a href="#l14.15"></a>
+<span id="l14.16" class="plusline">+    private static final Object BASIC_RADIO_BUTTON_UI_KEY = new Object();</span><a href="#l14.16"></a>
+<span id="l14.17"> </span><a href="#l14.17"></a>
+<span id="l14.18">     protected Icon icon;</span><a href="#l14.18"></a>
+<span id="l14.19"> </span><a href="#l14.19"></a>
+<span id="l14.20" class="atline">@@ -53,6 +54,13 @@</span><a href="#l14.20"></a>
+<span id="l14.21">     //        Create PLAF</span><a href="#l14.21"></a>
+<span id="l14.22">     // ********************************</span><a href="#l14.22"></a>
+<span id="l14.23">     public static ComponentUI createUI(JComponent b) {</span><a href="#l14.23"></a>
+<span id="l14.24" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l14.24"></a>
+<span id="l14.25" class="plusline">+        BasicRadioButtonUI radioButtonUI =</span><a href="#l14.25"></a>
+<span id="l14.26" class="plusline">+                (BasicRadioButtonUI) appContext.get(BASIC_RADIO_BUTTON_UI_KEY);</span><a href="#l14.26"></a>
+<span id="l14.27" class="plusline">+        if (radioButtonUI == null) {</span><a href="#l14.27"></a>
+<span id="l14.28" class="plusline">+            radioButtonUI = new BasicRadioButtonUI();</span><a href="#l14.28"></a>
+<span id="l14.29" class="plusline">+            appContext.put(BASIC_RADIO_BUTTON_UI_KEY, radioButtonUI);</span><a href="#l14.29"></a>
+<span id="l14.30" class="plusline">+        }</span><a href="#l14.30"></a>
+<span id="l14.31">         return radioButtonUI;</span><a href="#l14.31"></a>
+<span id="l14.32">     }</span><a href="#l14.32"></a>
+<span id="l14.33"> </span><a href="#l14.33"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l15.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/basic/BasicToggleButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l15.1"></a>
+<span id="l15.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/basic/BasicToggleButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l15.2"></a>
+<span id="l15.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l15.3"></a>
+<span id="l15.4"> </span><a href="#l15.4"></a>
+<span id="l15.5"> package javax.swing.plaf.basic;</span><a href="#l15.5"></a>
+<span id="l15.6"> </span><a href="#l15.6"></a>
+<span id="l15.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l15.7"></a>
+<span id="l15.8" class="plusline">+</span><a href="#l15.8"></a>
+<span id="l15.9"> import java.awt.*;</span><a href="#l15.9"></a>
+<span id="l15.10"> import java.awt.event.*;</span><a href="#l15.10"></a>
+<span id="l15.11"> </span><a href="#l15.11"></a>
+<span id="l15.12" class="atline">@@ -43,7 +45,7 @@</span><a href="#l15.12"></a>
+<span id="l15.13">  */</span><a href="#l15.13"></a>
+<span id="l15.14"> public class BasicToggleButtonUI extends BasicButtonUI {</span><a href="#l15.14"></a>
+<span id="l15.15"> </span><a href="#l15.15"></a>
+<span id="l15.16" class="minusline">-    private final static BasicToggleButtonUI toggleButtonUI = new BasicToggleButtonUI();</span><a href="#l15.16"></a>
+<span id="l15.17" class="plusline">+    private static final Object BASIC_TOGGLE_BUTTON_UI_KEY = new Object();</span><a href="#l15.17"></a>
+<span id="l15.18"> </span><a href="#l15.18"></a>
+<span id="l15.19">     private final static String propertyPrefix = &quot;ToggleButton&quot; + &quot;.&quot;;</span><a href="#l15.19"></a>
+<span id="l15.20"> </span><a href="#l15.20"></a>
+<span id="l15.21" class="atline">@@ -51,6 +53,13 @@</span><a href="#l15.21"></a>
+<span id="l15.22">     //          Create PLAF</span><a href="#l15.22"></a>
+<span id="l15.23">     // ********************************</span><a href="#l15.23"></a>
+<span id="l15.24">     public static ComponentUI createUI(JComponent b) {</span><a href="#l15.24"></a>
+<span id="l15.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l15.25"></a>
+<span id="l15.26" class="plusline">+        BasicToggleButtonUI toggleButtonUI =</span><a href="#l15.26"></a>
+<span id="l15.27" class="plusline">+                (BasicToggleButtonUI) appContext.get(BASIC_TOGGLE_BUTTON_UI_KEY);</span><a href="#l15.27"></a>
+<span id="l15.28" class="plusline">+        if (toggleButtonUI == null) {</span><a href="#l15.28"></a>
+<span id="l15.29" class="plusline">+            toggleButtonUI = new BasicToggleButtonUI();</span><a href="#l15.29"></a>
+<span id="l15.30" class="plusline">+            appContext.put(BASIC_TOGGLE_BUTTON_UI_KEY, toggleButtonUI);</span><a href="#l15.30"></a>
+<span id="l15.31" class="plusline">+        }</span><a href="#l15.31"></a>
+<span id="l15.32">         return toggleButtonUI;</span><a href="#l15.32"></a>
+<span id="l15.33">     }</span><a href="#l15.33"></a>
+<span id="l15.34"> </span><a href="#l15.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l16.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/metal/MetalButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l16.1"></a>
+<span id="l16.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/metal/MetalButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l16.2"></a>
+<span id="l16.3" class="atline">@@ -26,6 +26,8 @@</span><a href="#l16.3"></a>
+<span id="l16.4"> package javax.swing.plaf.metal;</span><a href="#l16.4"></a>
+<span id="l16.5"> </span><a href="#l16.5"></a>
+<span id="l16.6"> import sun.swing.SwingUtilities2;</span><a href="#l16.6"></a>
+<span id="l16.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l16.7"></a>
+<span id="l16.8" class="plusline">+</span><a href="#l16.8"></a>
+<span id="l16.9"> import javax.swing.*;</span><a href="#l16.9"></a>
+<span id="l16.10"> import javax.swing.border.*;</span><a href="#l16.10"></a>
+<span id="l16.11"> import javax.swing.plaf.basic.*;</span><a href="#l16.11"></a>
+<span id="l16.12" class="atline">@@ -49,19 +51,25 @@</span><a href="#l16.12"></a>
+<span id="l16.13">  * @author Tom Santos</span><a href="#l16.13"></a>
+<span id="l16.14">  */</span><a href="#l16.14"></a>
+<span id="l16.15"> public class MetalButtonUI extends BasicButtonUI {</span><a href="#l16.15"></a>
+<span id="l16.16" class="minusline">-</span><a href="#l16.16"></a>
+<span id="l16.17" class="minusline">-    private final static MetalButtonUI metalButtonUI = new MetalButtonUI();</span><a href="#l16.17"></a>
+<span id="l16.18" class="minusline">-</span><a href="#l16.18"></a>
+<span id="l16.19">     // NOTE: These are not really needed, but at this point we can't pull</span><a href="#l16.19"></a>
+<span id="l16.20">     // them. Their values are updated purely for historical reasons.</span><a href="#l16.20"></a>
+<span id="l16.21">     protected Color focusColor;</span><a href="#l16.21"></a>
+<span id="l16.22">     protected Color selectColor;</span><a href="#l16.22"></a>
+<span id="l16.23">     protected Color disabledTextColor;</span><a href="#l16.23"></a>
+<span id="l16.24"> </span><a href="#l16.24"></a>
+<span id="l16.25" class="plusline">+    private static final Object METAL_BUTTON_UI_KEY = new Object();</span><a href="#l16.25"></a>
+<span id="l16.26" class="plusline">+</span><a href="#l16.26"></a>
+<span id="l16.27">     // ********************************</span><a href="#l16.27"></a>
+<span id="l16.28">     //          Create PLAF</span><a href="#l16.28"></a>
+<span id="l16.29">     // ********************************</span><a href="#l16.29"></a>
+<span id="l16.30">     public static ComponentUI createUI(JComponent c) {</span><a href="#l16.30"></a>
+<span id="l16.31" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l16.31"></a>
+<span id="l16.32" class="plusline">+        MetalButtonUI metalButtonUI =</span><a href="#l16.32"></a>
+<span id="l16.33" class="plusline">+                (MetalButtonUI) appContext.get(METAL_BUTTON_UI_KEY);</span><a href="#l16.33"></a>
+<span id="l16.34" class="plusline">+        if (metalButtonUI == null) {</span><a href="#l16.34"></a>
+<span id="l16.35" class="plusline">+            metalButtonUI = new MetalButtonUI();</span><a href="#l16.35"></a>
+<span id="l16.36" class="plusline">+            appContext.put(METAL_BUTTON_UI_KEY, metalButtonUI);</span><a href="#l16.36"></a>
+<span id="l16.37" class="plusline">+        }</span><a href="#l16.37"></a>
+<span id="l16.38">         return metalButtonUI;</span><a href="#l16.38"></a>
+<span id="l16.39">     }</span><a href="#l16.39"></a>
+<span id="l16.40"> </span><a href="#l16.40"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l17.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/metal/MetalCheckBoxUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l17.1"></a>
+<span id="l17.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/metal/MetalCheckBoxUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l17.2"></a>
+<span id="l17.3" class="atline">@@ -25,6 +25,8 @@</span><a href="#l17.3"></a>
+<span id="l17.4"> </span><a href="#l17.4"></a>
+<span id="l17.5"> package javax.swing.plaf.metal;</span><a href="#l17.5"></a>
+<span id="l17.6"> </span><a href="#l17.6"></a>
+<span id="l17.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l17.7"></a>
+<span id="l17.8" class="plusline">+</span><a href="#l17.8"></a>
+<span id="l17.9"> import javax.swing.*;</span><a href="#l17.9"></a>
+<span id="l17.10"> import javax.swing.plaf.basic.BasicCheckBoxUI;</span><a href="#l17.10"></a>
+<span id="l17.11"> </span><a href="#l17.11"></a>
+<span id="l17.12" class="atline">@@ -55,7 +57,7 @@</span><a href="#l17.12"></a>
+<span id="l17.13">     // of BasicCheckBoxUI because we want to pick up all the</span><a href="#l17.13"></a>
+<span id="l17.14">     // painting changes made in MetalRadioButtonUI.</span><a href="#l17.14"></a>
+<span id="l17.15"> </span><a href="#l17.15"></a>
+<span id="l17.16" class="minusline">-    private final static MetalCheckBoxUI checkboxUI = new MetalCheckBoxUI();</span><a href="#l17.16"></a>
+<span id="l17.17" class="plusline">+    private static final Object METAL_CHECK_BOX_UI_KEY = new Object();</span><a href="#l17.17"></a>
+<span id="l17.18"> </span><a href="#l17.18"></a>
+<span id="l17.19">     private final static String propertyPrefix = &quot;CheckBox&quot; + &quot;.&quot;;</span><a href="#l17.19"></a>
+<span id="l17.20"> </span><a href="#l17.20"></a>
+<span id="l17.21" class="atline">@@ -65,6 +67,13 @@</span><a href="#l17.21"></a>
+<span id="l17.22">     //         Create PlAF</span><a href="#l17.22"></a>
+<span id="l17.23">     // ********************************</span><a href="#l17.23"></a>
+<span id="l17.24">     public static ComponentUI createUI(JComponent b) {</span><a href="#l17.24"></a>
+<span id="l17.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l17.25"></a>
+<span id="l17.26" class="plusline">+        MetalCheckBoxUI checkboxUI =</span><a href="#l17.26"></a>
+<span id="l17.27" class="plusline">+                (MetalCheckBoxUI) appContext.get(METAL_CHECK_BOX_UI_KEY);</span><a href="#l17.27"></a>
+<span id="l17.28" class="plusline">+        if (checkboxUI == null) {</span><a href="#l17.28"></a>
+<span id="l17.29" class="plusline">+            checkboxUI = new MetalCheckBoxUI();</span><a href="#l17.29"></a>
+<span id="l17.30" class="plusline">+            appContext.put(METAL_CHECK_BOX_UI_KEY, checkboxUI);</span><a href="#l17.30"></a>
+<span id="l17.31" class="plusline">+        }</span><a href="#l17.31"></a>
+<span id="l17.32">         return checkboxUI;</span><a href="#l17.32"></a>
+<span id="l17.33">     }</span><a href="#l17.33"></a>
+<span id="l17.34"> </span><a href="#l17.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l18.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/metal/MetalLabelUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l18.1"></a>
+<span id="l18.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/metal/MetalLabelUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l18.2"></a>
+<span id="l18.3" class="atline">@@ -26,6 +26,8 @@</span><a href="#l18.3"></a>
+<span id="l18.4"> package javax.swing.plaf.metal;</span><a href="#l18.4"></a>
+<span id="l18.5"> </span><a href="#l18.5"></a>
+<span id="l18.6"> import sun.swing.SwingUtilities2;</span><a href="#l18.6"></a>
+<span id="l18.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l18.7"></a>
+<span id="l18.8" class="plusline">+</span><a href="#l18.8"></a>
+<span id="l18.9"> import javax.swing.*;</span><a href="#l18.9"></a>
+<span id="l18.10"> import javax.swing.plaf.*;</span><a href="#l18.10"></a>
+<span id="l18.11"> import javax.swing.plaf.basic.*;</span><a href="#l18.11"></a>
+<span id="l18.12" class="atline">@@ -51,15 +53,21 @@</span><a href="#l18.12"></a>
+<span id="l18.13">     * name in defaults table under the key &quot;LabelUI&quot;.</span><a href="#l18.13"></a>
+<span id="l18.14">     */</span><a href="#l18.14"></a>
+<span id="l18.15">     protected static MetalLabelUI metalLabelUI = new MetalLabelUI();</span><a href="#l18.15"></a>
+<span id="l18.16" class="minusline">-    private final static MetalLabelUI SAFE_METAL_LABEL_UI = new MetalLabelUI();</span><a href="#l18.16"></a>
+<span id="l18.17"> </span><a href="#l18.17"></a>
+<span id="l18.18" class="plusline">+    private static final Object METAL_LABEL_UI_KEY = new Object();</span><a href="#l18.18"></a>
+<span id="l18.19"> </span><a href="#l18.19"></a>
+<span id="l18.20">     public static ComponentUI createUI(JComponent c) {</span><a href="#l18.20"></a>
+<span id="l18.21">         if (System.getSecurityManager() != null) {</span><a href="#l18.21"></a>
+<span id="l18.22" class="minusline">-            return SAFE_METAL_LABEL_UI;</span><a href="#l18.22"></a>
+<span id="l18.23" class="minusline">-        } else {</span><a href="#l18.23"></a>
+<span id="l18.24" class="minusline">-            return metalLabelUI;</span><a href="#l18.24"></a>
+<span id="l18.25" class="plusline">+            AppContext appContext = AppContext.getAppContext();</span><a href="#l18.25"></a>
+<span id="l18.26" class="plusline">+            MetalLabelUI safeMetalLabelUI =</span><a href="#l18.26"></a>
+<span id="l18.27" class="plusline">+                    (MetalLabelUI) appContext.get(METAL_LABEL_UI_KEY);</span><a href="#l18.27"></a>
+<span id="l18.28" class="plusline">+            if (safeMetalLabelUI == null) {</span><a href="#l18.28"></a>
+<span id="l18.29" class="plusline">+                safeMetalLabelUI = new MetalLabelUI();</span><a href="#l18.29"></a>
+<span id="l18.30" class="plusline">+                appContext.put(METAL_LABEL_UI_KEY, safeMetalLabelUI);</span><a href="#l18.30"></a>
+<span id="l18.31" class="plusline">+            }</span><a href="#l18.31"></a>
+<span id="l18.32" class="plusline">+            return safeMetalLabelUI;</span><a href="#l18.32"></a>
+<span id="l18.33">         }</span><a href="#l18.33"></a>
+<span id="l18.34" class="plusline">+        return metalLabelUI;</span><a href="#l18.34"></a>
+<span id="l18.35">     }</span><a href="#l18.35"></a>
+<span id="l18.36"> </span><a href="#l18.36"></a>
+<span id="l18.37">     /**</span><a href="#l18.37"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l19.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/metal/MetalRadioButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l19.1"></a>
+<span id="l19.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/metal/MetalRadioButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l19.2"></a>
+<span id="l19.3" class="atline">@@ -26,6 +26,8 @@</span><a href="#l19.3"></a>
+<span id="l19.4"> package javax.swing.plaf.metal;</span><a href="#l19.4"></a>
+<span id="l19.5"> </span><a href="#l19.5"></a>
+<span id="l19.6"> import sun.swing.SwingUtilities2;</span><a href="#l19.6"></a>
+<span id="l19.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l19.7"></a>
+<span id="l19.8" class="plusline">+</span><a href="#l19.8"></a>
+<span id="l19.9"> import java.awt.*;</span><a href="#l19.9"></a>
+<span id="l19.10"> import java.awt.event.*;</span><a href="#l19.10"></a>
+<span id="l19.11"> import javax.swing.*;</span><a href="#l19.11"></a>
+<span id="l19.12" class="atline">@@ -53,7 +55,7 @@</span><a href="#l19.12"></a>
+<span id="l19.13">  */</span><a href="#l19.13"></a>
+<span id="l19.14"> public class MetalRadioButtonUI extends BasicRadioButtonUI {</span><a href="#l19.14"></a>
+<span id="l19.15"> </span><a href="#l19.15"></a>
+<span id="l19.16" class="minusline">-    private static final MetalRadioButtonUI metalRadioButtonUI = new MetalRadioButtonUI();</span><a href="#l19.16"></a>
+<span id="l19.17" class="plusline">+    private static final Object METAL_RADIO_BUTTON_UI_KEY = new Object();</span><a href="#l19.17"></a>
+<span id="l19.18"> </span><a href="#l19.18"></a>
+<span id="l19.19">     protected Color focusColor;</span><a href="#l19.19"></a>
+<span id="l19.20">     protected Color selectColor;</span><a href="#l19.20"></a>
+<span id="l19.21" class="atline">@@ -65,6 +67,13 @@</span><a href="#l19.21"></a>
+<span id="l19.22">     //        Create PlAF</span><a href="#l19.22"></a>
+<span id="l19.23">     // ********************************</span><a href="#l19.23"></a>
+<span id="l19.24">     public static ComponentUI createUI(JComponent c) {</span><a href="#l19.24"></a>
+<span id="l19.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l19.25"></a>
+<span id="l19.26" class="plusline">+        MetalRadioButtonUI metalRadioButtonUI =</span><a href="#l19.26"></a>
+<span id="l19.27" class="plusline">+                (MetalRadioButtonUI) appContext.get(METAL_RADIO_BUTTON_UI_KEY);</span><a href="#l19.27"></a>
+<span id="l19.28" class="plusline">+        if (metalRadioButtonUI == null) {</span><a href="#l19.28"></a>
+<span id="l19.29" class="plusline">+            metalRadioButtonUI = new MetalRadioButtonUI();</span><a href="#l19.29"></a>
+<span id="l19.30" class="plusline">+            appContext.put(METAL_RADIO_BUTTON_UI_KEY, metalRadioButtonUI);</span><a href="#l19.30"></a>
+<span id="l19.31" class="plusline">+        }</span><a href="#l19.31"></a>
+<span id="l19.32">         return metalRadioButtonUI;</span><a href="#l19.32"></a>
+<span id="l19.33">     }</span><a href="#l19.33"></a>
+<span id="l19.34"> </span><a href="#l19.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l20.1" class="minusline">--- a/src/share/classes/javax/swing/plaf/metal/MetalToggleButtonUI.java	Wed Nov 04 10:13:52 2009 -0800</span><a href="#l20.1"></a>
+<span id="l20.2" class="plusline">+++ b/src/share/classes/javax/swing/plaf/metal/MetalToggleButtonUI.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l20.2"></a>
+<span id="l20.3" class="atline">@@ -26,6 +26,8 @@</span><a href="#l20.3"></a>
+<span id="l20.4"> package javax.swing.plaf.metal;</span><a href="#l20.4"></a>
+<span id="l20.5"> </span><a href="#l20.5"></a>
+<span id="l20.6"> import sun.swing.SwingUtilities2;</span><a href="#l20.6"></a>
+<span id="l20.7" class="plusline">+import sun.awt.AppContext;</span><a href="#l20.7"></a>
+<span id="l20.8" class="plusline">+</span><a href="#l20.8"></a>
+<span id="l20.9"> import java.awt.*;</span><a href="#l20.9"></a>
+<span id="l20.10"> import java.awt.event.*;</span><a href="#l20.10"></a>
+<span id="l20.11"> import java.lang.ref.*;</span><a href="#l20.11"></a>
+<span id="l20.12" class="atline">@@ -55,7 +57,7 @@</span><a href="#l20.12"></a>
+<span id="l20.13">  */</span><a href="#l20.13"></a>
+<span id="l20.14"> public class MetalToggleButtonUI extends BasicToggleButtonUI {</span><a href="#l20.14"></a>
+<span id="l20.15"> </span><a href="#l20.15"></a>
+<span id="l20.16" class="minusline">-    private static final MetalToggleButtonUI metalToggleButtonUI = new MetalToggleButtonUI();</span><a href="#l20.16"></a>
+<span id="l20.17" class="plusline">+    private static final Object METAL_TOGGLE_BUTTON_UI_KEY = new Object();</span><a href="#l20.17"></a>
+<span id="l20.18"> </span><a href="#l20.18"></a>
+<span id="l20.19">     protected Color focusColor;</span><a href="#l20.19"></a>
+<span id="l20.20">     protected Color selectColor;</span><a href="#l20.20"></a>
+<span id="l20.21" class="atline">@@ -67,6 +69,13 @@</span><a href="#l20.21"></a>
+<span id="l20.22">     //        Create PLAF</span><a href="#l20.22"></a>
+<span id="l20.23">     // ********************************</span><a href="#l20.23"></a>
+<span id="l20.24">     public static ComponentUI createUI(JComponent b) {</span><a href="#l20.24"></a>
+<span id="l20.25" class="plusline">+        AppContext appContext = AppContext.getAppContext();</span><a href="#l20.25"></a>
+<span id="l20.26" class="plusline">+        MetalToggleButtonUI metalToggleButtonUI =</span><a href="#l20.26"></a>
+<span id="l20.27" class="plusline">+                (MetalToggleButtonUI) appContext.get(METAL_TOGGLE_BUTTON_UI_KEY);</span><a href="#l20.27"></a>
+<span id="l20.28" class="plusline">+        if (metalToggleButtonUI == null) {</span><a href="#l20.28"></a>
+<span id="l20.29" class="plusline">+            metalToggleButtonUI = new MetalToggleButtonUI();</span><a href="#l20.29"></a>
+<span id="l20.30" class="plusline">+            appContext.put(METAL_TOGGLE_BUTTON_UI_KEY, metalToggleButtonUI);</span><a href="#l20.30"></a>
+<span id="l20.31" class="plusline">+        }</span><a href="#l20.31"></a>
+<span id="l20.32">         return metalToggleButtonUI;</span><a href="#l20.32"></a>
+<span id="l20.33">     }</span><a href="#l20.33"></a>
+<span id="l20.34"> </span><a href="#l20.34"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l21.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l21.1"></a>
+<span id="l21.2" class="plusline">+++ b/test/javax/swing/Security/6657138/ComponentTest.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l21.2"></a>
+<span id="l21.3" class="atline">@@ -0,0 +1,76 @@</span><a href="#l21.3"></a>
+<span id="l21.4" class="plusline">+/*</span><a href="#l21.4"></a>
+<span id="l21.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l21.5"></a>
+<span id="l21.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l21.6"></a>
+<span id="l21.7" class="plusline">+ *</span><a href="#l21.7"></a>
+<span id="l21.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l21.8"></a>
+<span id="l21.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l21.9"></a>
+<span id="l21.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l21.10"></a>
+<span id="l21.11" class="plusline">+ *</span><a href="#l21.11"></a>
+<span id="l21.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l21.12"></a>
+<span id="l21.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l21.13"></a>
+<span id="l21.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l21.14"></a>
+<span id="l21.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l21.15"></a>
+<span id="l21.16" class="plusline">+ * accompanied this code).</span><a href="#l21.16"></a>
+<span id="l21.17" class="plusline">+ *</span><a href="#l21.17"></a>
+<span id="l21.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l21.18"></a>
+<span id="l21.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l21.19"></a>
+<span id="l21.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l21.20"></a>
+<span id="l21.21" class="plusline">+ *</span><a href="#l21.21"></a>
+<span id="l21.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l21.22"></a>
+<span id="l21.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l21.23"></a>
+<span id="l21.24" class="plusline">+ * have any questions.</span><a href="#l21.24"></a>
+<span id="l21.25" class="plusline">+ */</span><a href="#l21.25"></a>
+<span id="l21.26" class="plusline">+</span><a href="#l21.26"></a>
+<span id="l21.27" class="plusline">+/*</span><a href="#l21.27"></a>
+<span id="l21.28" class="plusline">+ * @test</span><a href="#l21.28"></a>
+<span id="l21.29" class="plusline">+ * @bug 6657138</span><a href="#l21.29"></a>
+<span id="l21.30" class="plusline">+ * @summary Verifies that buttons and labels work well after the fix for 6657138</span><a href="#l21.30"></a>
+<span id="l21.31" class="plusline">+ * @author Alexander Potochkin</span><a href="#l21.31"></a>
+<span id="l21.32" class="plusline">+ */</span><a href="#l21.32"></a>
+<span id="l21.33" class="plusline">+</span><a href="#l21.33"></a>
+<span id="l21.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l21.34"></a>
+<span id="l21.35" class="plusline">+</span><a href="#l21.35"></a>
+<span id="l21.36" class="plusline">+import javax.swing.*;</span><a href="#l21.36"></a>
+<span id="l21.37" class="plusline">+import java.awt.*;</span><a href="#l21.37"></a>
+<span id="l21.38" class="plusline">+</span><a href="#l21.38"></a>
+<span id="l21.39" class="plusline">+public class ComponentTest extends JFrame {</span><a href="#l21.39"></a>
+<span id="l21.40" class="plusline">+    private static JFrame frame;</span><a href="#l21.40"></a>
+<span id="l21.41" class="plusline">+</span><a href="#l21.41"></a>
+<span id="l21.42" class="plusline">+    public ComponentTest() {</span><a href="#l21.42"></a>
+<span id="l21.43" class="plusline">+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span><a href="#l21.43"></a>
+<span id="l21.44" class="plusline">+        setLayout(new FlowLayout());</span><a href="#l21.44"></a>
+<span id="l21.45" class="plusline">+        add(new JButton(&quot;JButton&quot;));</span><a href="#l21.45"></a>
+<span id="l21.46" class="plusline">+        add(new JToggleButton(&quot;JToggleButton&quot;));</span><a href="#l21.46"></a>
+<span id="l21.47" class="plusline">+        add(new JCheckBox(&quot;JCheckBox&quot;));</span><a href="#l21.47"></a>
+<span id="l21.48" class="plusline">+        add(new JRadioButton(&quot;JRadioButton&quot;));</span><a href="#l21.48"></a>
+<span id="l21.49" class="plusline">+        add(new JLabel(&quot;JLabel&quot;));</span><a href="#l21.49"></a>
+<span id="l21.50" class="plusline">+        pack();</span><a href="#l21.50"></a>
+<span id="l21.51" class="plusline">+        setLocationRelativeTo(null);</span><a href="#l21.51"></a>
+<span id="l21.52" class="plusline">+    }</span><a href="#l21.52"></a>
+<span id="l21.53" class="plusline">+</span><a href="#l21.53"></a>
+<span id="l21.54" class="plusline">+</span><a href="#l21.54"></a>
+<span id="l21.55" class="plusline">+    public static void main(String[] args) throws Exception {</span><a href="#l21.55"></a>
+<span id="l21.56" class="plusline">+        SunToolkit toolkit = (SunToolkit) Toolkit.getDefaultToolkit();</span><a href="#l21.56"></a>
+<span id="l21.57" class="plusline">+        SwingUtilities.invokeAndWait(new Runnable() {</span><a href="#l21.57"></a>
+<span id="l21.58" class="plusline">+            public void run() {</span><a href="#l21.58"></a>
+<span id="l21.59" class="plusline">+                frame = new ComponentTest();</span><a href="#l21.59"></a>
+<span id="l21.60" class="plusline">+                frame.setVisible(true);</span><a href="#l21.60"></a>
+<span id="l21.61" class="plusline">+            }</span><a href="#l21.61"></a>
+<span id="l21.62" class="plusline">+        });</span><a href="#l21.62"></a>
+<span id="l21.63" class="plusline">+        toolkit.realSync();</span><a href="#l21.63"></a>
+<span id="l21.64" class="plusline">+        UIManager.LookAndFeelInfo[] lafs = UIManager.getInstalledLookAndFeels();</span><a href="#l21.64"></a>
+<span id="l21.65" class="plusline">+        for (final UIManager.LookAndFeelInfo laf : lafs) {</span><a href="#l21.65"></a>
+<span id="l21.66" class="plusline">+            SwingUtilities.invokeAndWait(new Runnable() {</span><a href="#l21.66"></a>
+<span id="l21.67" class="plusline">+                public void run() {</span><a href="#l21.67"></a>
+<span id="l21.68" class="plusline">+                    try {</span><a href="#l21.68"></a>
+<span id="l21.69" class="plusline">+                        UIManager.setLookAndFeel(laf.getClassName());</span><a href="#l21.69"></a>
+<span id="l21.70" class="plusline">+                    } catch (Exception e) {</span><a href="#l21.70"></a>
+<span id="l21.71" class="plusline">+                        new RuntimeException(e);</span><a href="#l21.71"></a>
+<span id="l21.72" class="plusline">+                    }</span><a href="#l21.72"></a>
+<span id="l21.73" class="plusline">+                    SwingUtilities.updateComponentTreeUI(frame);</span><a href="#l21.73"></a>
+<span id="l21.74" class="plusline">+                }</span><a href="#l21.74"></a>
+<span id="l21.75" class="plusline">+            });</span><a href="#l21.75"></a>
+<span id="l21.76" class="plusline">+            toolkit.realSync();</span><a href="#l21.76"></a>
+<span id="l21.77" class="plusline">+        }</span><a href="#l21.77"></a>
+<span id="l21.78" class="plusline">+    }</span><a href="#l21.78"></a>
+<span id="l21.79" class="plusline">+}</span><a href="#l21.79"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l22.1" class="minusline">--- /dev/null	Thu Jan 01 00:00:00 1970 +0000</span><a href="#l22.1"></a>
+<span id="l22.2" class="plusline">+++ b/test/javax/swing/Security/6657138/bug6657138.java	Fri Nov 06 19:48:09 2009 +0300</span><a href="#l22.2"></a>
+<span id="l22.3" class="atline">@@ -0,0 +1,103 @@</span><a href="#l22.3"></a>
+<span id="l22.4" class="plusline">+/*</span><a href="#l22.4"></a>
+<span id="l22.5" class="plusline">+ * Copyright 2009 Sun Microsystems, Inc.  All Rights Reserved.</span><a href="#l22.5"></a>
+<span id="l22.6" class="plusline">+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l22.6"></a>
+<span id="l22.7" class="plusline">+ *</span><a href="#l22.7"></a>
+<span id="l22.8" class="plusline">+ * This code is free software; you can redistribute it and/or modify it</span><a href="#l22.8"></a>
+<span id="l22.9" class="plusline">+ * under the terms of the GNU General Public License version 2 only, as</span><a href="#l22.9"></a>
+<span id="l22.10" class="plusline">+ * published by the Free Software Foundation.</span><a href="#l22.10"></a>
+<span id="l22.11" class="plusline">+ *</span><a href="#l22.11"></a>
+<span id="l22.12" class="plusline">+ * This code is distributed in the hope that it will be useful, but WITHOUT</span><a href="#l22.12"></a>
+<span id="l22.13" class="plusline">+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or</span><a href="#l22.13"></a>
+<span id="l22.14" class="plusline">+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License</span><a href="#l22.14"></a>
+<span id="l22.15" class="plusline">+ * version 2 for more details (a copy is included in the LICENSE file that</span><a href="#l22.15"></a>
+<span id="l22.16" class="plusline">+ * accompanied this code).</span><a href="#l22.16"></a>
+<span id="l22.17" class="plusline">+ *</span><a href="#l22.17"></a>
+<span id="l22.18" class="plusline">+ * You should have received a copy of the GNU General Public License version</span><a href="#l22.18"></a>
+<span id="l22.19" class="plusline">+ * 2 along with this work; if not, write to the Free Software Foundation,</span><a href="#l22.19"></a>
+<span id="l22.20" class="plusline">+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.</span><a href="#l22.20"></a>
+<span id="l22.21" class="plusline">+ *</span><a href="#l22.21"></a>
+<span id="l22.22" class="plusline">+ * Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,</span><a href="#l22.22"></a>
+<span id="l22.23" class="plusline">+ * CA 95054 USA or visit www.sun.com if you need additional information or</span><a href="#l22.23"></a>
+<span id="l22.24" class="plusline">+ * have any questions.</span><a href="#l22.24"></a>
+<span id="l22.25" class="plusline">+ */</span><a href="#l22.25"></a>
+<span id="l22.26" class="plusline">+</span><a href="#l22.26"></a>
+<span id="l22.27" class="plusline">+/*</span><a href="#l22.27"></a>
+<span id="l22.28" class="plusline">+ * @test</span><a href="#l22.28"></a>
+<span id="l22.29" class="plusline">+ * @bug 6657138</span><a href="#l22.29"></a>
+<span id="l22.30" class="plusline">+ * @summary Verifies that buttons and labels don't share their ui's across appContexts</span><a href="#l22.30"></a>
+<span id="l22.31" class="plusline">+ * @author Alexander Potochkin</span><a href="#l22.31"></a>
+<span id="l22.32" class="plusline">+ */</span><a href="#l22.32"></a>
+<span id="l22.33" class="plusline">+</span><a href="#l22.33"></a>
+<span id="l22.34" class="plusline">+import sun.awt.SunToolkit;</span><a href="#l22.34"></a>
+<span id="l22.35" class="plusline">+</span><a href="#l22.35"></a>
+<span id="l22.36" class="plusline">+import javax.swing.*;</span><a href="#l22.36"></a>
+<span id="l22.37" class="plusline">+import javax.swing.plaf.ButtonUI;</span><a href="#l22.37"></a>
+<span id="l22.38" class="plusline">+import javax.swing.plaf.ComponentUI;</span><a href="#l22.38"></a>
+<span id="l22.39" class="plusline">+import java.util.Collections;</span><a href="#l22.39"></a>
+<span id="l22.40" class="plusline">+import java.util.HashMap;</span><a href="#l22.40"></a>
+<span id="l22.41" class="plusline">+import java.util.Map;</span><a href="#l22.41"></a>
+<span id="l22.42" class="plusline">+import java.util.Set;</span><a href="#l22.42"></a>
+<span id="l22.43" class="plusline">+</span><a href="#l22.43"></a>
+<span id="l22.44" class="plusline">+public class bug6657138 implements Runnable {</span><a href="#l22.44"></a>
+<span id="l22.45" class="plusline">+</span><a href="#l22.45"></a>
+<span id="l22.46" class="plusline">+    private static Map&lt;JComponent, Map&lt;String, ComponentUI&gt;&gt; componentMap =</span><a href="#l22.46"></a>
+<span id="l22.47" class="plusline">+            Collections.synchronizedMap(</span><a href="#l22.47"></a>
+<span id="l22.48" class="plusline">+            new HashMap&lt;JComponent, Map&lt;String, ComponentUI&gt;&gt;());</span><a href="#l22.48"></a>
+<span id="l22.49" class="plusline">+</span><a href="#l22.49"></a>
+<span id="l22.50" class="plusline">+    public void run() {</span><a href="#l22.50"></a>
+<span id="l22.51" class="plusline">+        SunToolkit.createNewAppContext();</span><a href="#l22.51"></a>
+<span id="l22.52" class="plusline">+        try {</span><a href="#l22.52"></a>
+<span id="l22.53" class="plusline">+            testUIMap();</span><a href="#l22.53"></a>
+<span id="l22.54" class="plusline">+        } catch (Exception e) {</span><a href="#l22.54"></a>
+<span id="l22.55" class="plusline">+            throw new RuntimeException(e);</span><a href="#l22.55"></a>
+<span id="l22.56" class="plusline">+        }</span><a href="#l22.56"></a>
+<span id="l22.57" class="plusline">+    }</span><a href="#l22.57"></a>
+<span id="l22.58" class="plusline">+</span><a href="#l22.58"></a>
+<span id="l22.59" class="plusline">+    private static void testUIMap() throws Exception {</span><a href="#l22.59"></a>
+<span id="l22.60" class="plusline">+        UIManager.LookAndFeelInfo[] lafs = UIManager.getInstalledLookAndFeels();</span><a href="#l22.60"></a>
+<span id="l22.61" class="plusline">+        Set&lt;JComponent&gt; components = componentMap.keySet();</span><a href="#l22.61"></a>
+<span id="l22.62" class="plusline">+        for (JComponent c : components) {</span><a href="#l22.62"></a>
+<span id="l22.63" class="plusline">+            Map&lt;String, ComponentUI&gt; uiMap = componentMap.get(c);</span><a href="#l22.63"></a>
+<span id="l22.64" class="plusline">+</span><a href="#l22.64"></a>
+<span id="l22.65" class="plusline">+            for (UIManager.LookAndFeelInfo laf : lafs) {</span><a href="#l22.65"></a>
+<span id="l22.66" class="plusline">+                if (&quot;Nimbus&quot;.equals(laf.getName())) {</span><a href="#l22.66"></a>
+<span id="l22.67" class="plusline">+                    // for some unclear reasons</span><a href="#l22.67"></a>
+<span id="l22.68" class="plusline">+                    // Nimbus ui delegate for a button is null</span><a href="#l22.68"></a>
+<span id="l22.69" class="plusline">+                    // when this method is called from the new AppContext</span><a href="#l22.69"></a>
+<span id="l22.70" class="plusline">+                    continue;</span><a href="#l22.70"></a>
+<span id="l22.71" class="plusline">+                }</span><a href="#l22.71"></a>
+<span id="l22.72" class="plusline">+                String className = laf.getClassName();</span><a href="#l22.72"></a>
+<span id="l22.73" class="plusline">+                UIManager.setLookAndFeel(className);</span><a href="#l22.73"></a>
+<span id="l22.74" class="plusline">+                ComponentUI ui = UIManager.getUI(c);</span><a href="#l22.74"></a>
+<span id="l22.75" class="plusline">+                if (ui == null) {</span><a href="#l22.75"></a>
+<span id="l22.76" class="plusline">+                    throw new RuntimeException(&quot;UI is null for &quot; + c);</span><a href="#l22.76"></a>
+<span id="l22.77" class="plusline">+                }</span><a href="#l22.77"></a>
+<span id="l22.78" class="plusline">+                if (ui == uiMap.get(laf.getName())) {</span><a href="#l22.78"></a>
+<span id="l22.79" class="plusline">+                    throw new RuntimeException(</span><a href="#l22.79"></a>
+<span id="l22.80" class="plusline">+                            &quot;Two AppContexts share the same UI delegate! \n&quot; +</span><a href="#l22.80"></a>
+<span id="l22.81" class="plusline">+                                    c + &quot;\n&quot; + ui);</span><a href="#l22.81"></a>
+<span id="l22.82" class="plusline">+                }</span><a href="#l22.82"></a>
+<span id="l22.83" class="plusline">+                uiMap.put(laf.getName(), ui);</span><a href="#l22.83"></a>
+<span id="l22.84" class="plusline">+            }</span><a href="#l22.84"></a>
+<span id="l22.85" class="plusline">+        }</span><a href="#l22.85"></a>
+<span id="l22.86" class="plusline">+    }</span><a href="#l22.86"></a>
+<span id="l22.87" class="plusline">+</span><a href="#l22.87"></a>
+<span id="l22.88" class="plusline">+    public static void main(String[] args) throws Exception {</span><a href="#l22.88"></a>
+<span id="l22.89" class="plusline">+        componentMap.put(new JButton(&quot;JButton&quot;),</span><a href="#l22.89"></a>
+<span id="l22.90" class="plusline">+                new HashMap&lt;String, ComponentUI&gt;());</span><a href="#l22.90"></a>
+<span id="l22.91" class="plusline">+        componentMap.put(new JToggleButton(&quot;JToggleButton&quot;),</span><a href="#l22.91"></a>
+<span id="l22.92" class="plusline">+                new HashMap&lt;String, ComponentUI&gt;());</span><a href="#l22.92"></a>
+<span id="l22.93" class="plusline">+        componentMap.put(new JRadioButton(&quot;JRadioButton&quot;),</span><a href="#l22.93"></a>
+<span id="l22.94" class="plusline">+                new HashMap&lt;String, ComponentUI&gt;());</span><a href="#l22.94"></a>
+<span id="l22.95" class="plusline">+        componentMap.put(new JCheckBox(&quot;JCheckBox&quot;),</span><a href="#l22.95"></a>
+<span id="l22.96" class="plusline">+                new HashMap&lt;String, ComponentUI&gt;());</span><a href="#l22.96"></a>
+<span id="l22.97" class="plusline">+        componentMap.put(new JCheckBox(&quot;JLabel&quot;),</span><a href="#l22.97"></a>
+<span id="l22.98" class="plusline">+                new HashMap&lt;String, ComponentUI&gt;());</span><a href="#l22.98"></a>
+<span id="l22.99" class="plusline">+        testUIMap();</span><a href="#l22.99"></a>
+<span id="l22.100" class="plusline">+        ThreadGroup group = new ThreadGroup(&quot;6657138&quot;);</span><a href="#l22.100"></a>
+<span id="l22.101" class="plusline">+        Thread thread = new Thread(group, new bug6657138());</span><a href="#l22.101"></a>
+<span id="l22.102" class="plusline">+        thread.start();</span><a href="#l22.102"></a>
+<span id="l22.103" class="plusline">+        thread.join();</span><a href="#l22.103"></a>
+<span id="l22.104" class="plusline">+    }</span><a href="#l22.104"></a>
+<span id="l22.105" class="plusline">+}</span><a href="#l22.105"></a>
+<span id="l22.106" class="plusline">+</span><a href="#l22.106"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

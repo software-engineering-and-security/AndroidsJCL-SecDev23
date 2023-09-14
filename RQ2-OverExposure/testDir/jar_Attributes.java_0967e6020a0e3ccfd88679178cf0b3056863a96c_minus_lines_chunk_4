@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 if (is.peek() == ' ') {
+1                    lastline = buf;
+2                     continue;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                if (is.peek() == ' ') {
+1                    lastline = buf;
+2                    continue;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

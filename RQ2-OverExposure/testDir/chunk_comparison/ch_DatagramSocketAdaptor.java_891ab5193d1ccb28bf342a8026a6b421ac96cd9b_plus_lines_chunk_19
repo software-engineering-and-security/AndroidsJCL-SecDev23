@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         } finally {
+1            try {
+2                 dc.configureBlocking(true);
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        if (sm != null) {
+1            try {
+2                sm.checkConnect(result.getHostAddress(), -1);
+---------------------------------------------
+Differences:	['0', '2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         } finally {
+1            if (dc.isOpen())
+2                 dc.configureBlocking(true);
+--------------------------------------------

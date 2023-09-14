@@ -1,0 +1,46 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1                String v = null;
+2                if (usage.compareToIgnoreCase("TLSServer") == 0) {
+3                    v = Validator.VAR_TLS_SERVER;
+4                } else if (usage.compareToIgnoreCase("TLSClient") == 0) {
+5                    v = Validator.VAR_TLS_CLIENT;
+6                } else if (usage.compareToIgnoreCase("SignedJAR") == 0) {
+7                    v = Validator.VAR_PLUGIN_CODE_SIGNING;
+8                 }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1                String v = null;
+2                if (usage.compareToIgnoreCase("TLSServer") == 0) {
+3                    v = Validator.VAR_TLS_SERVER;
+4                } else if (usage.compareToIgnoreCase("TLSClient") == 0) {
+5                    v = Validator.VAR_TLS_CLIENT;
+6                } else if (usage.compareToIgnoreCase("SignedJAR") == 0) {
+7                    v = Validator.VAR_PLUGIN_CODE_SIGNING;
+8                }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1                boolean match = false;
+2                switch (usage.toLowerCase()) {
+3                    case "tlsserver":
+4                        match = variant.equals(Validator.VAR_TLS_SERVER);
+5                        break;
+6                    case "tlsclient":
+7                        match = variant.equals(Validator.VAR_TLS_CLIENT);
+8                        break;
+9                    case "signedjar":
+10                        match =
+11                            variant.equals(Validator.VAR_PLUGIN_CODE_SIGNING) ||
+12                            variant.equals(Validator.VAR_CODE_SIGNING) ||
+13                            variant.equals(Validator.VAR_TSA_SERVER);
+14                        break;
+15                 }
+--------------------------------------------

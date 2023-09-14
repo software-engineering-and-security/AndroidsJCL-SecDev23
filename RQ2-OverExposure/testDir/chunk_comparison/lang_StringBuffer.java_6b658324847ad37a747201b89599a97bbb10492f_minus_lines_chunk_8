@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    private void readObject(java.io.ObjectInputStream s)
+2        throws java.io.IOException, ClassNotFoundException {
+3        java.io.ObjectInputStream.GetField fields = s.readFields();
+4         value = (char[])fields.get("value", null);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    private void readObject(java.io.ObjectInputStream s)
+2        throws java.io.IOException, ClassNotFoundException {
+3        java.io.ObjectInputStream.GetField fields = s.readFields();
+4        value = (char[])fields.get("value", null);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      */
+1    private void readObject(ObjectInputStream s)
+2        throws IOException, ClassNotFoundException {
+3        ObjectInputStream.GetField fields = s.readFields();
+4         value = (char[])fields.get("value", null);
+--------------------------------------------

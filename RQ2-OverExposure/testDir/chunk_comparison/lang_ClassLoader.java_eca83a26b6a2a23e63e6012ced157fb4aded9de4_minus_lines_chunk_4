@@ -1,0 +1,31 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     protected ClassLoader() {
+1        SecurityManager security = System.getSecurityManager();
+2        if (security != null) {
+3            security.checkCreateClassLoader();
+4        }
+5        this.parent = getSystemClassLoader();
+6        initialized = true;
+7     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    private static Void checkCreateClassLoader() {
+1        SecurityManager security = System.getSecurityManager();
+2        if (security != null) {
+3            security.checkCreateClassLoader();
+4        }
+5        return null;
+6    }
+7
+---------------------------------------------
+Differences:	['0', '5', '6', '7']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0     protected ClassLoader() {
+1	this(checkCreateClassLoader(), getSystemClassLoader());
+2     }
+--------------------------------------------

@@ -1,0 +1,29 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        // Validate loadFactor (ignore threshold - it will be re-computed)
+2        if (loadFactor <= 0 || Float.isNaN(loadFactor))
+3            throw new StreamCorruptedException("Illegal Load: " + loadFactor);
+4 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        // Validate loadFactor (ignore threshold - it will be re-computed)
+2        if (loadFactor <= 0 || Float.isNaN(loadFactor))
+3            throw new StreamCorruptedException("Illegal Load: " + loadFactor);
+4
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        // Read and validate loadFactor (ignore threshold - it will be re-computed)
+2        float lf = fields.get("loadFactor", 0.75f);
+3        if (lf <= 0 || Float.isNaN(lf))
+4            throw new StreamCorruptedException("Illegal load factor: " + lf);
+5        lf = Math.min(Math.max(0.25f, lf), 4.0f);
+6 
+--------------------------------------------

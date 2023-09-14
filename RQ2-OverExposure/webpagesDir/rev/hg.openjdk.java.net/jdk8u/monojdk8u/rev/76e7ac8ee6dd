@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: 76e7ac8ee6dd</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/76e7ac8ee6dd">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/76e7ac8ee6dd">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/76e7ac8ee6dd">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/76e7ac8ee6dd">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/76e7ac8ee6dd.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/76e7ac8ee6dd.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/76e7ac8ee6dd.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48812:76e7ac8ee6dd   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8270498: Improve SAX Parser configuration management
+Reviewed-by: mbalao, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#121;&#97;&#110;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 19 Jan 2022 01:15:09 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/fb79a897664c">fb79a897664c</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/725d71b428c3">725d71b428c3</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/76e7ac8ee6dd/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityManager.java">jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityManager.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 9 insertions(+), 10 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityManager.java</a></td>
+    <td class="diffstat-total" align="right">19</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:47.3684210526%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:52.6315789474%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityManager.java	Wed Jan 19 01:09:15 2022 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jaxp/src/com/sun/org/apache/xerces/internal/impl/XMLEntityManager.java	Wed Jan 19 01:15:09 2022 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -80,6 +80,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">  * @author K.Venugopal SUN Microsystems</span><a href="#l1.4"></a>
+<span id="l1.5">  * @author Neeraj Bajaj SUN Microsystems</span><a href="#l1.5"></a>
+<span id="l1.6">  * @author Sunitha Reddy SUN Microsystems</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+ * @LastModified: Aug 2021</span><a href="#l1.7"></a>
+<span id="l1.8">  */</span><a href="#l1.8"></a>
+<span id="l1.9"> public class XMLEntityManager implements XMLComponent, XMLEntityResolver {</span><a href="#l1.9"></a>
+<span id="l1.10"> </span><a href="#l1.10"></a>
+<span id="l1.11" class="atline">@@ -1141,7 +1142,7 @@</span><a href="#l1.11"></a>
+<span id="l1.12">             externalEntity = (Entity.ExternalEntity)entity;</span><a href="#l1.12"></a>
+<span id="l1.13">             extLitSysId = (externalEntity.entityLocation != null ? externalEntity.entityLocation.getLiteralSystemId() : null);</span><a href="#l1.13"></a>
+<span id="l1.14">             extBaseSysId = (externalEntity.entityLocation != null ? externalEntity.entityLocation.getBaseSystemId() : null);</span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-            expandedSystemId = expandSystemId(extLitSysId, extBaseSysId);</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+            expandedSystemId = expandSystemId(extLitSysId, extBaseSysId, fStrictURI);</span><a href="#l1.16"></a>
+<span id="l1.17">             boolean unparsed = entity.isUnparsed();</span><a href="#l1.17"></a>
+<span id="l1.18">             boolean parameter = entityName.startsWith(&quot;%&quot;);</span><a href="#l1.18"></a>
+<span id="l1.19">             boolean general = !parameter;</span><a href="#l1.19"></a>
+<span id="l1.20" class="atline">@@ -1218,15 +1219,13 @@</span><a href="#l1.20"></a>
+<span id="l1.21">              */</span><a href="#l1.21"></a>
+<span id="l1.22">             xmlInputSource = staxInputSource.getXMLInputSource() ;</span><a href="#l1.22"></a>
+<span id="l1.23">             if (!fISCreatedByResolver) {</span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-                //let the not-LoadExternalDTD or not-SupportDTD process to handle the situation</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-                if (fLoadExternalDTD) {</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-                    String accessError = SecuritySupport.checkAccess(expandedSystemId, fAccessExternalDTD, Constants.ACCESS_EXTERNAL_ALL);</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-                    if (accessError != null) {</span><a href="#l1.27"></a>
+<span id="l1.28" class="minusline">-                        fErrorReporter.reportError(this.getEntityScanner(),XMLMessageFormatter.XML_DOMAIN,</span><a href="#l1.28"></a>
+<span id="l1.29" class="minusline">-                                &quot;AccessExternalEntity&quot;,</span><a href="#l1.29"></a>
+<span id="l1.30" class="minusline">-                                new Object[] { SecuritySupport.sanitizePath(expandedSystemId), accessError },</span><a href="#l1.30"></a>
+<span id="l1.31" class="minusline">-                                XMLErrorReporter.SEVERITY_FATAL_ERROR);</span><a href="#l1.31"></a>
+<span id="l1.32" class="minusline">-                    }</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+                String accessError = SecuritySupport.checkAccess(expandedSystemId,</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+                        fAccessExternalDTD, Constants.ACCESS_EXTERNAL_ALL);</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+                if (accessError != null) {</span><a href="#l1.35"></a>
+<span id="l1.36" class="plusline">+                    fErrorReporter.reportError(this.getEntityScanner(),XMLMessageFormatter.XML_DOMAIN,</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+                            &quot;AccessExternalEntity&quot;,</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+                            new Object[] { SecuritySupport.sanitizePath(expandedSystemId), accessError },</span><a href="#l1.38"></a>
+<span id="l1.39" class="plusline">+                            XMLErrorReporter.SEVERITY_FATAL_ERROR);</span><a href="#l1.39"></a>
+<span id="l1.40">                 }</span><a href="#l1.40"></a>
+<span id="l1.41">             }</span><a href="#l1.41"></a>
+<span id="l1.42">         }</span><a href="#l1.42"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

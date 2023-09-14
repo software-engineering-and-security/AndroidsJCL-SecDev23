@@ -1,0 +1,45 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        // Assign deserialized values
+2        MethodType_init(returnType, parameterArray);
+3    }
+4
+5    // Initialization of state for deserialization only
+6    private void MethodType_init(Class<?> rtype, Class<?>[] ptypes) {
+7        // In order to communicate these values to readResolve, we must
+8        // store them into the implementation-specific final fields.
+9        checkRtype(rtype);
+10        checkPtypes(ptypes);
+11        UNSAFE.putObject(this, rtypeOffset, rtype);
+12        UNSAFE.putObject(this, ptypesOffset, ptypes);
+13     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        // Assign deserialized values
+2        MethodType_init(returnType, parameterArray);
+3    }
+4
+5    // Initialization of state for deserialization only
+6    private void MethodType_init(Class<?> rtype, Class<?>[] ptypes) {
+7        // In order to communicate these values to readResolve, we must
+8        // store them into the implementation-specific final fields.
+9        checkRtype(rtype);
+10        checkPtypes(ptypes);
+11        UNSAFE.putObject(this, rtypeOffset, rtype);
+12        UNSAFE.putObject(this, ptypesOffset, ptypes);
+13    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        // Verify all operands, and make sure ptypes is unshared
+2        // Cache the new MethodType for readResolve
+3        wrapAlt = new MethodType[]{MethodType.methodType(returnType, parameterArray)};
+4     }
+--------------------------------------------

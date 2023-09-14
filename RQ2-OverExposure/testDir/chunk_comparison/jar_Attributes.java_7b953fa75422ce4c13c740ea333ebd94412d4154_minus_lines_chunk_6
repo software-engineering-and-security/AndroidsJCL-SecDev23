@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 if (is.peek() == ' ') {
+1                    lastline = new byte[len - i];
+2                    System.arraycopy(lbuf, i, lastline, 0, len - i);
+3                     continue;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                if (is.peek() == ' ') {
+1                    lastline = new byte[len - i];
+2                    System.arraycopy(lbuf, i, lastline, 0, len - i);
+3                    continue;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                 if (is.peek() == ' ') {
+1                    fullLine.reset();
+2                    fullLine.write(lbuf, i, len - i);
+3                     continue;
+--------------------------------------------

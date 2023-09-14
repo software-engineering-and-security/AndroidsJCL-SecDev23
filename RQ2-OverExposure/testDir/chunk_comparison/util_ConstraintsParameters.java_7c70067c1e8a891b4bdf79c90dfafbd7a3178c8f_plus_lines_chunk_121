@@ -1,0 +1,38 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * Returns the Validator variant.
+3     */
+4    String getVariant();
+5 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * Returns an extended message used in exceptions. See
+3     * DisabledAlgorithmConstraints for usage.
+4     */
+5    String extendedExceptionMsg();
+---------------------------------------------
+Differences:	['5']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1    public String[] getNamedCurve() {
+2        return curveStr;
+3    }
+4
+5    public static String[] getNamedCurveFromKey(Key key) {
+6        if (key instanceof ECKey) {
+7            NamedCurve nc = CurveDB.lookup(((ECKey)key).getParams());
+8            return (nc == null ? EMPTYLIST : CurveDB.getNamesByOID(nc.getObjectId()));
+9        } else {
+10            return EMPTYLIST;
+11        }
+12    }
+13 
+--------------------------------------------

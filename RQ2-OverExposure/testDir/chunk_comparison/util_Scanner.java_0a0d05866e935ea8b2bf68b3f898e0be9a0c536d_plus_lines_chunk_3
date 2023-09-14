@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // metacharacters such as dot or parenthesis
+1        groupSeparator =   "\\x{" + Integer.toHexString(dfs.getGroupingSeparator()) + "}";
+2        decimalSeparator = "\\x{" + Integer.toHexString(dfs.getDecimalSeparator()) + "}";
+3 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        // metacharacters such as dot or parenthesis
+1        groupSeparator =   "\\x{" + Integer.toHexString(dfs.getGroupingSeparator()) + "}";
+2        decimalSeparator = "\\x{" + Integer.toHexString(dfs.getDecimalSeparator()) + "}";
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0         // metacharacters such as dot or parenthesis
+1        groupSeparator =   "\\" + dfs.getGroupingSeparator();
+2        decimalSeparator = "\\" + dfs.getDecimalSeparator();
+3 
+--------------------------------------------

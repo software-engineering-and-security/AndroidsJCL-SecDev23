@@ -1,0 +1,46 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * Returns the set of keys that should be checked against the
+3     * constraints, or an empty set if there are no keys to be checked.
+4     */
+5    Set<Key> getKeys();
+6 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * Returns an extended message used in exceptions. See
+3     * DisabledAlgorithmConstraints for usage.
+4     */
+5    String extendedExceptionMsg();
+6}
+---------------------------------------------
+Differences:	['5', '6']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1    public ConstraintsParameters(String algorithm, AlgorithmParameters params,
+2            Key key, String variant) {
+3        this.algorithm = algorithm;
+4        algParams = params;
+5        this.key = key;
+6        curveStr = getNamedCurveFromKey(key);
+7        cert = null;
+8        trustedMatch = false;
+9        pkixDate = null;
+10        jarTimestamp = null;
+11        this.variant = (variant == null ? Validator.VAR_GENERIC : variant);
+12    }
+13
+14
+15    public ConstraintsParameters(X509Certificate c) {
+16        this(c, false, null, null,
+17                Validator.VAR_GENERIC);
+18    }
+19 
+--------------------------------------------

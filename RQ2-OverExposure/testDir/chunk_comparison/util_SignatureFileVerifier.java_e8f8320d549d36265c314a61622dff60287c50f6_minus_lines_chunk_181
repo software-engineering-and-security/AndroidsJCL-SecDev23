@@ -1,0 +1,28 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0             try {
+1                JAR_DISABLED_CHECK.permits(algorithm,
+2                        new ConstraintsParameters(timestamp));
+3            } catch(GeneralSecurityException e) {
+4                 permittedAlgs.put(algorithm, Boolean.FALSE);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            try {
+1                JAR_DISABLED_CHECK.permits(algorithm,
+2                        new ConstraintsParameters(timestamp));
+3            } catch(GeneralSecurityException e) {
+4                permittedAlgs.put(algorithm, Boolean.FALSE);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0             try {
+1                params.setExtendedExceptionMsg(name + ".SF", key + " attribute");
+2                DisabledAlgorithmConstraints
+3                    .jarConstraints().permits(algorithm, params);
+4            } catch (GeneralSecurityException e) {
+5                 permittedAlgs.put(algorithm, Boolean.FALSE);
+--------------------------------------------

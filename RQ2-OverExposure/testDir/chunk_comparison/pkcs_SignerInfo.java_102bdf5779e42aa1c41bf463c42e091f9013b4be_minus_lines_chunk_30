@@ -1,0 +1,23 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        MessageDigest md =
+2            MessageDigest.getInstance(digestAlgname);
+3 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        MessageDigest md =
+2            MessageDigest.getInstance(digestAlgname);
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        MessageDigest md = MessageDigest.getInstance(digestAlgId.getName());
+2 
+--------------------------------------------

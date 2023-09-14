@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: 80ade7e8b392</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/80ade7e8b392">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/80ade7e8b392">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/80ade7e8b392">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/80ade7e8b392">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/80ade7e8b392.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/80ade7e8b392.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/80ade7e8b392.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 13797:80ade7e8b392   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8234037: Improve Object Identifier Processing
+Reviewed-by: weijun, mschoene, ssahoo</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#120;&#117;&#101;&#108;&#101;&#105;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Mon, 25 Nov 2019 16:55:54 -0800</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/cd9f7780d964">cd9f7780d964</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/034a65a05bfb">034a65a05bfb</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/80ade7e8b392/src/share/classes/sun/security/x509/AVA.java">src/share/classes/sun/security/x509/AVA.java</a> <a href="/jdk8u/jdk8u/jdk/file/80ade7e8b392/src/share/classes/sun/security/x509/X500Name.java">src/share/classes/sun/security/x509/X500Name.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     2 files changed, 65 insertions(+), 87 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/sun/security/x509/AVA.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.666666666667%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.666666666667%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/sun/security/x509/X500Name.java</a></td>
+    <td class="diffstat-total" align="right">150</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:42.6666666667%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:57.3333333333%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/sun/security/x509/AVA.java	Mon Jan 13 03:43:59 2020 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/sun/security/x509/AVA.java	Mon Nov 25 16:55:54 2019 -0800</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -599,7 +599,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">         if (derval.tag != DerValue.tag_Sequence) {</span><a href="#l1.4"></a>
+<span id="l1.5">             throw new IOException(&quot;AVA not a sequence&quot;);</span><a href="#l1.5"></a>
+<span id="l1.6">         }</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-        oid = X500Name.intern(derval.data.getOID());</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+        oid = derval.data.getOID();</span><a href="#l1.8"></a>
+<span id="l1.9">         value = derval.data.getDerValue();</span><a href="#l1.9"></a>
+<span id="l1.10"> </span><a href="#l1.10"></a>
+<span id="l1.11">         if (derval.data.available() != 0) {</span><a href="#l1.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/sun/security/x509/X500Name.java	Mon Jan 13 03:43:59 2020 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/sun/security/x509/X500Name.java	Mon Nov 25 16:55:54 2019 -0800</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright (c) 1996, 2014, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright (c) 1996, 2019, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -1104,18 +1104,6 @@</span><a href="#l2.10"></a>
+<span id="l2.11">     /****************************************************************/</span><a href="#l2.11"></a>
+<span id="l2.12"> </span><a href="#l2.12"></a>
+<span id="l2.13">     /*</span><a href="#l2.13"></a>
+<span id="l2.14" class="minusline">-     * Maybe return a preallocated OID, to reduce storage costs</span><a href="#l2.14"></a>
+<span id="l2.15" class="minusline">-     * and speed recognition of common X.500 attributes.</span><a href="#l2.15"></a>
+<span id="l2.16" class="minusline">-     */</span><a href="#l2.16"></a>
+<span id="l2.17" class="minusline">-    static ObjectIdentifier intern(ObjectIdentifier oid) {</span><a href="#l2.17"></a>
+<span id="l2.18" class="minusline">-        ObjectIdentifier interned = internedOIDs.putIfAbsent(oid, oid);</span><a href="#l2.18"></a>
+<span id="l2.19" class="minusline">-        return (interned == null) ? oid : interned;</span><a href="#l2.19"></a>
+<span id="l2.20" class="minusline">-    }</span><a href="#l2.20"></a>
+<span id="l2.21" class="minusline">-</span><a href="#l2.21"></a>
+<span id="l2.22" class="minusline">-    private static final Map&lt;ObjectIdentifier,ObjectIdentifier&gt; internedOIDs</span><a href="#l2.22"></a>
+<span id="l2.23" class="minusline">-                        = new HashMap&lt;ObjectIdentifier,ObjectIdentifier&gt;();</span><a href="#l2.23"></a>
+<span id="l2.24" class="minusline">-</span><a href="#l2.24"></a>
+<span id="l2.25" class="minusline">-    /*</span><a href="#l2.25"></a>
+<span id="l2.26">      * Selected OIDs from X.520</span><a href="#l2.26"></a>
+<span id="l2.27">      * Includes all those specified in RFC 5280 as MUST or SHOULD</span><a href="#l2.27"></a>
+<span id="l2.28">      * be recognized</span><a href="#l2.28"></a>
+<span id="l2.29" class="atline">@@ -1142,92 +1130,82 @@</span><a href="#l2.29"></a>
+<span id="l2.30">         { 0, 9, 2342, 19200300, 100, 1, 1 };</span><a href="#l2.30"></a>
+<span id="l2.31"> </span><a href="#l2.31"></a>
+<span id="l2.32"> </span><a href="#l2.32"></a>
+<span id="l2.33" class="minusline">-    public static final ObjectIdentifier commonName_oid;</span><a href="#l2.33"></a>
+<span id="l2.34" class="minusline">-    public static final ObjectIdentifier countryName_oid;</span><a href="#l2.34"></a>
+<span id="l2.35" class="minusline">-    public static final ObjectIdentifier localityName_oid;</span><a href="#l2.35"></a>
+<span id="l2.36" class="minusline">-    public static final ObjectIdentifier orgName_oid;</span><a href="#l2.36"></a>
+<span id="l2.37" class="minusline">-    public static final ObjectIdentifier orgUnitName_oid;</span><a href="#l2.37"></a>
+<span id="l2.38" class="minusline">-    public static final ObjectIdentifier stateName_oid;</span><a href="#l2.38"></a>
+<span id="l2.39" class="minusline">-    public static final ObjectIdentifier streetAddress_oid;</span><a href="#l2.39"></a>
+<span id="l2.40" class="minusline">-    public static final ObjectIdentifier title_oid;</span><a href="#l2.40"></a>
+<span id="l2.41" class="minusline">-    public static final ObjectIdentifier DNQUALIFIER_OID;</span><a href="#l2.41"></a>
+<span id="l2.42" class="minusline">-    public static final ObjectIdentifier SURNAME_OID;</span><a href="#l2.42"></a>
+<span id="l2.43" class="minusline">-    public static final ObjectIdentifier GIVENNAME_OID;</span><a href="#l2.43"></a>
+<span id="l2.44" class="minusline">-    public static final ObjectIdentifier INITIALS_OID;</span><a href="#l2.44"></a>
+<span id="l2.45" class="minusline">-    public static final ObjectIdentifier GENERATIONQUALIFIER_OID;</span><a href="#l2.45"></a>
+<span id="l2.46" class="minusline">-    public static final ObjectIdentifier ipAddress_oid;</span><a href="#l2.46"></a>
+<span id="l2.47" class="minusline">-    public static final ObjectIdentifier DOMAIN_COMPONENT_OID;</span><a href="#l2.47"></a>
+<span id="l2.48" class="minusline">-    public static final ObjectIdentifier userid_oid;</span><a href="#l2.48"></a>
+<span id="l2.49" class="minusline">-    public static final ObjectIdentifier SERIALNUMBER_OID;</span><a href="#l2.49"></a>
+<span id="l2.50" class="plusline">+    // OID for the &quot;CN=&quot; attribute, denoting a person's common name.</span><a href="#l2.50"></a>
+<span id="l2.51" class="plusline">+    public static final ObjectIdentifier commonName_oid =</span><a href="#l2.51"></a>
+<span id="l2.52" class="plusline">+            ObjectIdentifier.newInternal(commonName_data);</span><a href="#l2.52"></a>
+<span id="l2.53" class="plusline">+</span><a href="#l2.53"></a>
+<span id="l2.54" class="plusline">+    // OID for the &quot;SERIALNUMBER=&quot; attribute, denoting a serial number for.</span><a href="#l2.54"></a>
+<span id="l2.55" class="plusline">+    // a name. Do not confuse with PKCS#9 issuerAndSerialNumber or the</span><a href="#l2.55"></a>
+<span id="l2.56" class="plusline">+    // certificate serial number.</span><a href="#l2.56"></a>
+<span id="l2.57" class="plusline">+    public static final ObjectIdentifier SERIALNUMBER_OID =</span><a href="#l2.57"></a>
+<span id="l2.58" class="plusline">+            ObjectIdentifier.newInternal(SERIALNUMBER_DATA);</span><a href="#l2.58"></a>
+<span id="l2.59" class="plusline">+</span><a href="#l2.59"></a>
+<span id="l2.60" class="plusline">+    // OID for the &quot;C=&quot; attribute, denoting a country.</span><a href="#l2.60"></a>
+<span id="l2.61" class="plusline">+    public static final ObjectIdentifier countryName_oid =</span><a href="#l2.61"></a>
+<span id="l2.62" class="plusline">+            ObjectIdentifier.newInternal(countryName_data);</span><a href="#l2.62"></a>
+<span id="l2.63" class="plusline">+</span><a href="#l2.63"></a>
+<span id="l2.64" class="plusline">+    // OID for the &quot;L=&quot; attribute, denoting a locality (such as a city).</span><a href="#l2.64"></a>
+<span id="l2.65" class="plusline">+    public static final ObjectIdentifier localityName_oid =</span><a href="#l2.65"></a>
+<span id="l2.66" class="plusline">+            ObjectIdentifier.newInternal(localityName_data);</span><a href="#l2.66"></a>
+<span id="l2.67"> </span><a href="#l2.67"></a>
+<span id="l2.68" class="minusline">-    static {</span><a href="#l2.68"></a>
+<span id="l2.69" class="minusline">-    /** OID for the &quot;CN=&quot; attribute, denoting a person's common name. */</span><a href="#l2.69"></a>
+<span id="l2.70" class="minusline">-        commonName_oid = intern(ObjectIdentifier.newInternal(commonName_data));</span><a href="#l2.70"></a>
+<span id="l2.71" class="plusline">+    // OID for the &quot;O=&quot; attribute, denoting an organization name.</span><a href="#l2.71"></a>
+<span id="l2.72" class="plusline">+    public static final ObjectIdentifier orgName_oid =</span><a href="#l2.72"></a>
+<span id="l2.73" class="plusline">+            ObjectIdentifier.newInternal(orgName_data);</span><a href="#l2.73"></a>
+<span id="l2.74"> </span><a href="#l2.74"></a>
+<span id="l2.75" class="minusline">-    /** OID for the &quot;SERIALNUMBER=&quot; attribute, denoting a serial number for.</span><a href="#l2.75"></a>
+<span id="l2.76" class="minusline">-        a name. Do not confuse with PKCS#9 issuerAndSerialNumber or the</span><a href="#l2.76"></a>
+<span id="l2.77" class="minusline">-        certificate serial number. */</span><a href="#l2.77"></a>
+<span id="l2.78" class="minusline">-        SERIALNUMBER_OID = intern(ObjectIdentifier.newInternal(SERIALNUMBER_DATA));</span><a href="#l2.78"></a>
+<span id="l2.79" class="minusline">-</span><a href="#l2.79"></a>
+<span id="l2.80" class="minusline">-    /** OID for the &quot;C=&quot; attribute, denoting a country. */</span><a href="#l2.80"></a>
+<span id="l2.81" class="minusline">-        countryName_oid = intern(ObjectIdentifier.newInternal(countryName_data));</span><a href="#l2.81"></a>
+<span id="l2.82" class="plusline">+    // OID for the &quot;OU=&quot; attribute, denoting an organizational unit name.</span><a href="#l2.82"></a>
+<span id="l2.83" class="plusline">+    public static final ObjectIdentifier orgUnitName_oid =</span><a href="#l2.83"></a>
+<span id="l2.84" class="plusline">+            ObjectIdentifier.newInternal(orgUnitName_data);</span><a href="#l2.84"></a>
+<span id="l2.85"> </span><a href="#l2.85"></a>
+<span id="l2.86" class="minusline">-    /** OID for the &quot;L=&quot; attribute, denoting a locality (such as a city) */</span><a href="#l2.86"></a>
+<span id="l2.87" class="minusline">-        localityName_oid = intern(ObjectIdentifier.newInternal(localityName_data));</span><a href="#l2.87"></a>
+<span id="l2.88" class="minusline">-</span><a href="#l2.88"></a>
+<span id="l2.89" class="minusline">-    /** OID for the &quot;O=&quot; attribute, denoting an organization name */</span><a href="#l2.89"></a>
+<span id="l2.90" class="minusline">-        orgName_oid = intern(ObjectIdentifier.newInternal(orgName_data));</span><a href="#l2.90"></a>
+<span id="l2.91" class="plusline">+    // OID for the &quot;S=&quot; attribute, denoting a state (such as Delaware).</span><a href="#l2.91"></a>
+<span id="l2.92" class="plusline">+    public static final ObjectIdentifier stateName_oid =</span><a href="#l2.92"></a>
+<span id="l2.93" class="plusline">+            ObjectIdentifier.newInternal(stateName_data);</span><a href="#l2.93"></a>
+<span id="l2.94"> </span><a href="#l2.94"></a>
+<span id="l2.95" class="minusline">-    /** OID for the &quot;OU=&quot; attribute, denoting an organizational unit name */</span><a href="#l2.95"></a>
+<span id="l2.96" class="minusline">-        orgUnitName_oid = intern(ObjectIdentifier.newInternal(orgUnitName_data));</span><a href="#l2.96"></a>
+<span id="l2.97" class="plusline">+    // OID for the &quot;STREET=&quot; attribute, denoting a street address.</span><a href="#l2.97"></a>
+<span id="l2.98" class="plusline">+    public static final ObjectIdentifier streetAddress_oid =</span><a href="#l2.98"></a>
+<span id="l2.99" class="plusline">+            ObjectIdentifier.newInternal(streetAddress_data);</span><a href="#l2.99"></a>
+<span id="l2.100"> </span><a href="#l2.100"></a>
+<span id="l2.101" class="minusline">-    /** OID for the &quot;S=&quot; attribute, denoting a state (such as Delaware) */</span><a href="#l2.101"></a>
+<span id="l2.102" class="minusline">-        stateName_oid = intern(ObjectIdentifier.newInternal(stateName_data));</span><a href="#l2.102"></a>
+<span id="l2.103" class="plusline">+    // OID for the &quot;T=&quot; attribute, denoting a person's title.</span><a href="#l2.103"></a>
+<span id="l2.104" class="plusline">+    public static final ObjectIdentifier title_oid =</span><a href="#l2.104"></a>
+<span id="l2.105" class="plusline">+            ObjectIdentifier.newInternal(title_data);</span><a href="#l2.105"></a>
+<span id="l2.106"> </span><a href="#l2.106"></a>
+<span id="l2.107" class="minusline">-    /** OID for the &quot;STREET=&quot; attribute, denoting a street address. */</span><a href="#l2.107"></a>
+<span id="l2.108" class="minusline">-        streetAddress_oid = intern(ObjectIdentifier.newInternal(streetAddress_data));</span><a href="#l2.108"></a>
+<span id="l2.109" class="minusline">-</span><a href="#l2.109"></a>
+<span id="l2.110" class="minusline">-    /** OID for the &quot;T=&quot; attribute, denoting a person's title. */</span><a href="#l2.110"></a>
+<span id="l2.111" class="minusline">-        title_oid = intern(ObjectIdentifier.newInternal(title_data));</span><a href="#l2.111"></a>
+<span id="l2.112" class="plusline">+    // OID for the &quot;DNQUALIFIER=&quot; or &quot;DNQ=&quot; attribute, denoting DN</span><a href="#l2.112"></a>
+<span id="l2.113" class="plusline">+    // disambiguating information.</span><a href="#l2.113"></a>
+<span id="l2.114" class="plusline">+    public static final ObjectIdentifier DNQUALIFIER_OID =</span><a href="#l2.114"></a>
+<span id="l2.115" class="plusline">+            ObjectIdentifier.newInternal(DNQUALIFIER_DATA);</span><a href="#l2.115"></a>
+<span id="l2.116"> </span><a href="#l2.116"></a>
+<span id="l2.117" class="minusline">-    /** OID for the &quot;DNQUALIFIER=&quot; or &quot;DNQ=&quot; attribute, denoting DN</span><a href="#l2.117"></a>
+<span id="l2.118" class="minusline">-        disambiguating information.*/</span><a href="#l2.118"></a>
+<span id="l2.119" class="minusline">-        DNQUALIFIER_OID = intern(ObjectIdentifier.newInternal(DNQUALIFIER_DATA));</span><a href="#l2.119"></a>
+<span id="l2.120" class="plusline">+    // OID for the &quot;SURNAME=&quot; attribute, denoting a person's surname.</span><a href="#l2.120"></a>
+<span id="l2.121" class="plusline">+    public static final ObjectIdentifier SURNAME_OID =</span><a href="#l2.121"></a>
+<span id="l2.122" class="plusline">+            ObjectIdentifier.newInternal(SURNAME_DATA);</span><a href="#l2.122"></a>
+<span id="l2.123"> </span><a href="#l2.123"></a>
+<span id="l2.124" class="minusline">-    /** OID for the &quot;SURNAME=&quot; attribute, denoting a person's surname.*/</span><a href="#l2.124"></a>
+<span id="l2.125" class="minusline">-        SURNAME_OID = intern(ObjectIdentifier.newInternal(SURNAME_DATA));</span><a href="#l2.125"></a>
+<span id="l2.126" class="plusline">+    // OID for the &quot;GIVENNAME=&quot; attribute, denoting a person's given name.</span><a href="#l2.126"></a>
+<span id="l2.127" class="plusline">+    public static final ObjectIdentifier GIVENNAME_OID =</span><a href="#l2.127"></a>
+<span id="l2.128" class="plusline">+            ObjectIdentifier.newInternal(GIVENNAME_DATA);</span><a href="#l2.128"></a>
+<span id="l2.129"> </span><a href="#l2.129"></a>
+<span id="l2.130" class="minusline">-    /** OID for the &quot;GIVENNAME=&quot; attribute, denoting a person's given name.*/</span><a href="#l2.130"></a>
+<span id="l2.131" class="minusline">-        GIVENNAME_OID = intern(ObjectIdentifier.newInternal(GIVENNAME_DATA));</span><a href="#l2.131"></a>
+<span id="l2.132" class="minusline">-</span><a href="#l2.132"></a>
+<span id="l2.133" class="minusline">-    /** OID for the &quot;INITIALS=&quot; attribute, denoting a person's initials.*/</span><a href="#l2.133"></a>
+<span id="l2.134" class="minusline">-        INITIALS_OID = intern(ObjectIdentifier.newInternal(INITIALS_DATA));</span><a href="#l2.134"></a>
+<span id="l2.135" class="plusline">+    // OID for the &quot;INITIALS=&quot; attribute, denoting a person's initials.</span><a href="#l2.135"></a>
+<span id="l2.136" class="plusline">+    public static final ObjectIdentifier INITIALS_OID =</span><a href="#l2.136"></a>
+<span id="l2.137" class="plusline">+            ObjectIdentifier.newInternal(INITIALS_DATA);</span><a href="#l2.137"></a>
+<span id="l2.138"> </span><a href="#l2.138"></a>
+<span id="l2.139" class="minusline">-    /** OID for the &quot;GENERATION=&quot; attribute, denoting Jr., II, etc.*/</span><a href="#l2.139"></a>
+<span id="l2.140" class="minusline">-        GENERATIONQUALIFIER_OID =</span><a href="#l2.140"></a>
+<span id="l2.141" class="minusline">-            intern(ObjectIdentifier.newInternal(GENERATIONQUALIFIER_DATA));</span><a href="#l2.141"></a>
+<span id="l2.142" class="plusline">+    // OID for the &quot;GENERATION=&quot; attribute, denoting Jr., II, etc.</span><a href="#l2.142"></a>
+<span id="l2.143" class="plusline">+    public static final ObjectIdentifier GENERATIONQUALIFIER_OID =</span><a href="#l2.143"></a>
+<span id="l2.144" class="plusline">+            ObjectIdentifier.newInternal(GENERATIONQUALIFIER_DATA);</span><a href="#l2.144"></a>
+<span id="l2.145"> </span><a href="#l2.145"></a>
+<span id="l2.146" class="minusline">-    /*</span><a href="#l2.146"></a>
+<span id="l2.147" class="minusline">-     * OIDs from other sources which show up in X.500 names we</span><a href="#l2.147"></a>
+<span id="l2.148" class="minusline">-     * expect to deal with often</span><a href="#l2.148"></a>
+<span id="l2.149" class="minusline">-     */</span><a href="#l2.149"></a>
+<span id="l2.150" class="minusline">-    /** OID for &quot;IP=&quot; IP address attributes, used with SKIP. */</span><a href="#l2.150"></a>
+<span id="l2.151" class="minusline">-        ipAddress_oid = intern(ObjectIdentifier.newInternal(ipAddress_data));</span><a href="#l2.151"></a>
+<span id="l2.152" class="plusline">+    // OIDs from other sources which show up in X.500 names we</span><a href="#l2.152"></a>
+<span id="l2.153" class="plusline">+    // expect to deal with often.</span><a href="#l2.153"></a>
+<span id="l2.154" class="plusline">+    //</span><a href="#l2.154"></a>
+<span id="l2.155" class="plusline">+    // OID for &quot;IP=&quot; IP address attributes, used with SKIP.</span><a href="#l2.155"></a>
+<span id="l2.156" class="plusline">+    public static final ObjectIdentifier ipAddress_oid =</span><a href="#l2.156"></a>
+<span id="l2.157" class="plusline">+            ObjectIdentifier.newInternal(ipAddress_data);</span><a href="#l2.157"></a>
+<span id="l2.158"> </span><a href="#l2.158"></a>
+<span id="l2.159" class="minusline">-    /*</span><a href="#l2.159"></a>
+<span id="l2.160" class="minusline">-     * Domain component OID from RFC 1274, RFC 2247, RFC 5280</span><a href="#l2.160"></a>
+<span id="l2.161" class="minusline">-     */</span><a href="#l2.161"></a>
+<span id="l2.162" class="plusline">+    // Domain component OID from RFC 1274, RFC 2247, RFC 5280.</span><a href="#l2.162"></a>
+<span id="l2.163" class="plusline">+    //</span><a href="#l2.163"></a>
+<span id="l2.164" class="plusline">+    // OID for &quot;DC=&quot; domain component attributes, used with DNSNames in DN</span><a href="#l2.164"></a>
+<span id="l2.165" class="plusline">+    // format.</span><a href="#l2.165"></a>
+<span id="l2.166" class="plusline">+    public static final ObjectIdentifier DOMAIN_COMPONENT_OID =</span><a href="#l2.166"></a>
+<span id="l2.167" class="plusline">+            ObjectIdentifier.newInternal(DOMAIN_COMPONENT_DATA);</span><a href="#l2.167"></a>
+<span id="l2.168"> </span><a href="#l2.168"></a>
+<span id="l2.169" class="minusline">-    /*</span><a href="#l2.169"></a>
+<span id="l2.170" class="minusline">-     * OID for &quot;DC=&quot; domain component attributes, used with DNSNames in DN</span><a href="#l2.170"></a>
+<span id="l2.171" class="minusline">-     * format</span><a href="#l2.171"></a>
+<span id="l2.172" class="minusline">-     */</span><a href="#l2.172"></a>
+<span id="l2.173" class="minusline">-        DOMAIN_COMPONENT_OID =</span><a href="#l2.173"></a>
+<span id="l2.174" class="minusline">-            intern(ObjectIdentifier.newInternal(DOMAIN_COMPONENT_DATA));</span><a href="#l2.174"></a>
+<span id="l2.175" class="minusline">-</span><a href="#l2.175"></a>
+<span id="l2.176" class="minusline">-    /** OID for &quot;UID=&quot; denoting a user id, defined in RFCs 1274 &amp; 2798. */</span><a href="#l2.176"></a>
+<span id="l2.177" class="minusline">-        userid_oid = intern(ObjectIdentifier.newInternal(userid_data));</span><a href="#l2.177"></a>
+<span id="l2.178" class="minusline">-    }</span><a href="#l2.178"></a>
+<span id="l2.179" class="plusline">+    // OID for &quot;UID=&quot; denoting a user id, defined in RFCs 1274 &amp; 2798.</span><a href="#l2.179"></a>
+<span id="l2.180" class="plusline">+    public static final ObjectIdentifier userid_oid =</span><a href="#l2.180"></a>
+<span id="l2.181" class="plusline">+            ObjectIdentifier.newInternal(userid_data);</span><a href="#l2.181"></a>
+<span id="l2.182"> </span><a href="#l2.182"></a>
+<span id="l2.183">     /**</span><a href="#l2.183"></a>
+<span id="l2.184">      * Return constraint type:&lt;ul&gt;</span><a href="#l2.184"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

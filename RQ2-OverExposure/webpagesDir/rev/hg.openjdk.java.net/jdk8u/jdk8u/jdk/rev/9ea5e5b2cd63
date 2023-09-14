@@ -1,0 +1,600 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/jdk8u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/jdk8u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/jdk8u/jdk/static/mercurial.js"></script>
+
+<title>jdk8u/jdk8u/jdk: 9ea5e5b2cd63</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/jdk8u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/shortlog/9ea5e5b2cd63">log</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/graph/9ea5e5b2cd63">graph</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/tags">tags</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/jdk8u/jdk/raw-rev/9ea5e5b2cd63">raw</a></li>
+ <li><a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/9ea5e5b2cd63.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/9ea5e5b2cd63.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/jdk8u/jdk/archive/9ea5e5b2cd63.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/jdk8u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u">jdk8u</a> / <a href="/jdk8u/jdk8u/jdk">jdk</a> </h2>
+<h3>changeset 13794:9ea5e5b2cd63   </h3>
+
+<form class="search" action="/jdk8u/jdk8u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/jdk8u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8196956: (ch) More channels cleanup
+8231795: Enhance datagram socket support
+Reviewed-by: rriggs, prappo, bpb</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#108;&#97;&#110;&#98;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Thu, 08 Feb 2018 10:55:21 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/jdk8u/jdk/rev/a42cf24f8be7">a42cf24f8be7</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/jdk8u/jdk/rev/033462472c28">033462472c28</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63/src/share/classes/java/nio/channels/SelectableChannel.java">src/share/classes/java/nio/channels/SelectableChannel.java</a> <a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63/src/share/classes/java/nio/channels/spi/AbstractSelectableChannel.java">src/share/classes/java/nio/channels/spi/AbstractSelectableChannel.java</a> <a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63/src/share/classes/sun/nio/ch/DatagramChannelImpl.java">src/share/classes/sun/nio/ch/DatagramChannelImpl.java</a> <a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63/src/share/classes/sun/nio/ch/DatagramSocketAdaptor.java">src/share/classes/sun/nio/ch/DatagramSocketAdaptor.java</a> <a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63/src/share/classes/sun/nio/ch/ServerSocketAdaptor.java">src/share/classes/sun/nio/ch/ServerSocketAdaptor.java</a> <a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63/src/share/classes/sun/nio/ch/ServerSocketChannelImpl.java">src/share/classes/sun/nio/ch/ServerSocketChannelImpl.java</a> <a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63/src/share/classes/sun/nio/ch/SocketAdaptor.java">src/share/classes/sun/nio/ch/SocketAdaptor.java</a> <a href="/jdk8u/jdk8u/jdk/file/9ea5e5b2cd63/src/share/classes/sun/nio/ch/SocketChannelImpl.java">src/share/classes/sun/nio/ch/SocketChannelImpl.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     8 files changed, 106 insertions(+), 63 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/nio/channels/SelectableChannel.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.7027027027%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:2.7027027027%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l2.1">src/share/classes/java/nio/channels/spi/AbstractSelectableChannel.java</a></td>
+    <td class="diffstat-total" align="right">34</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:54.0540540541%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:37.8378378378%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l3.1">src/share/classes/sun/nio/ch/DatagramChannelImpl.java</a></td>
+    <td class="diffstat-total" align="right">26</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:43.2432432432%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:27.027027027%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l4.1">src/share/classes/sun/nio/ch/DatagramSocketAdaptor.java</a></td>
+    <td class="diffstat-total" align="right">30</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:54.0540540541%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:27.027027027%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l5.1">src/share/classes/sun/nio/ch/ServerSocketAdaptor.java</a></td>
+    <td class="diffstat-total" align="right">32</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:62.1621621622%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:24.3243243243%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l6.1">src/share/classes/sun/nio/ch/ServerSocketChannelImpl.java</a></td>
+    <td class="diffstat-total" align="right">5</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:2.7027027027%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:10.8108108108%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l7.1">src/share/classes/sun/nio/ch/SocketAdaptor.java</a></td>
+    <td class="diffstat-total" align="right">37</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:67.5675675676%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:32.4324324324%;">&nbsp;</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="diffstat-file"><a href="#l8.1">src/share/classes/sun/nio/ch/SocketChannelImpl.java</a></td>
+    <td class="diffstat-total" align="right">3</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:0.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:8.10810810811%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/nio/channels/SelectableChannel.java	Mon Jan 13 02:42:14 2020 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/nio/channels/SelectableChannel.java	Thu Feb 08 10:55:21 2018 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -121,7 +121,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">     //   keySet, may be empty but is never null, typ. a tiny array</span><a href="#l1.4"></a>
+<span id="l1.5">     //   boolean isRegistered, protected by key set</span><a href="#l1.5"></a>
+<span id="l1.6">     //   regLock, lock object to prevent duplicate registrations</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-    //   boolean isBlocking, protected by regLock</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+    //   blocking mode, protected by regLock</span><a href="#l1.8"></a>
+<span id="l1.9"> </span><a href="#l1.9"></a>
+<span id="l1.10">     /**</span><a href="#l1.10"></a>
+<span id="l1.11">      * Tells whether or not this channel is currently registered with any</span><a href="#l1.11"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l2.1" class="minusline">--- a/src/share/classes/java/nio/channels/spi/AbstractSelectableChannel.java	Mon Jan 13 02:42:14 2020 +0000</span><a href="#l2.1"></a>
+<span id="l2.2" class="plusline">+++ b/src/share/classes/java/nio/channels/spi/AbstractSelectableChannel.java	Thu Feb 08 10:55:21 2018 +0000</span><a href="#l2.2"></a>
+<span id="l2.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l2.3"></a>
+<span id="l2.4"> /*</span><a href="#l2.4"></a>
+<span id="l2.5" class="minusline">- * Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.5"></a>
+<span id="l2.6" class="plusline">+ * Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.</span><a href="#l2.6"></a>
+<span id="l2.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l2.7"></a>
+<span id="l2.8">  *</span><a href="#l2.8"></a>
+<span id="l2.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l2.9"></a>
+<span id="l2.10" class="atline">@@ -26,7 +26,14 @@</span><a href="#l2.10"></a>
+<span id="l2.11"> package java.nio.channels.spi;</span><a href="#l2.11"></a>
+<span id="l2.12"> </span><a href="#l2.12"></a>
+<span id="l2.13"> import java.io.IOException;</span><a href="#l2.13"></a>
+<span id="l2.14" class="minusline">-import java.nio.channels.*;</span><a href="#l2.14"></a>
+<span id="l2.15" class="plusline">+import java.nio.channels.CancelledKeyException;</span><a href="#l2.15"></a>
+<span id="l2.16" class="plusline">+import java.nio.channels.ClosedChannelException;</span><a href="#l2.16"></a>
+<span id="l2.17" class="plusline">+import java.nio.channels.ClosedSelectorException;</span><a href="#l2.17"></a>
+<span id="l2.18" class="plusline">+import java.nio.channels.IllegalBlockingModeException;</span><a href="#l2.18"></a>
+<span id="l2.19" class="plusline">+import java.nio.channels.IllegalSelectorException;</span><a href="#l2.19"></a>
+<span id="l2.20" class="plusline">+import java.nio.channels.SelectableChannel;</span><a href="#l2.20"></a>
+<span id="l2.21" class="plusline">+import java.nio.channels.SelectionKey;</span><a href="#l2.21"></a>
+<span id="l2.22" class="plusline">+import java.nio.channels.Selector;</span><a href="#l2.22"></a>
+<span id="l2.23"> </span><a href="#l2.23"></a>
+<span id="l2.24"> </span><a href="#l2.24"></a>
+<span id="l2.25"> /**</span><a href="#l2.25"></a>
+<span id="l2.26" class="atline">@@ -67,8 +74,8 @@</span><a href="#l2.26"></a>
+<span id="l2.27">     // Lock for registration and configureBlocking operations</span><a href="#l2.27"></a>
+<span id="l2.28">     private final Object regLock = new Object();</span><a href="#l2.28"></a>
+<span id="l2.29"> </span><a href="#l2.29"></a>
+<span id="l2.30" class="minusline">-    // Blocking mode, protected by regLock</span><a href="#l2.30"></a>
+<span id="l2.31" class="minusline">-    boolean blocking = true;</span><a href="#l2.31"></a>
+<span id="l2.32" class="plusline">+    // True when non-blocking, need regLock to change;</span><a href="#l2.32"></a>
+<span id="l2.33" class="plusline">+    private volatile boolean nonBlocking;</span><a href="#l2.33"></a>
+<span id="l2.34"> </span><a href="#l2.34"></a>
+<span id="l2.35">     /**</span><a href="#l2.35"></a>
+<span id="l2.36">      * Initializes a new instance of this class.</span><a href="#l2.36"></a>
+<span id="l2.37" class="atline">@@ -197,7 +204,7 @@</span><a href="#l2.37"></a>
+<span id="l2.38">                 throw new ClosedChannelException();</span><a href="#l2.38"></a>
+<span id="l2.39">             if ((ops &amp; ~validOps()) != 0)</span><a href="#l2.39"></a>
+<span id="l2.40">                 throw new IllegalArgumentException();</span><a href="#l2.40"></a>
+<span id="l2.41" class="minusline">-            if (blocking)</span><a href="#l2.41"></a>
+<span id="l2.42" class="plusline">+            if (isBlocking())</span><a href="#l2.42"></a>
+<span id="l2.43">                 throw new IllegalBlockingModeException();</span><a href="#l2.43"></a>
+<span id="l2.44">             SelectionKey k = findKey(sel);</span><a href="#l2.44"></a>
+<span id="l2.45">             if (k != null) {</span><a href="#l2.45"></a>
+<span id="l2.46" class="atline">@@ -264,9 +271,7 @@</span><a href="#l2.46"></a>
+<span id="l2.47">     // -- Blocking --</span><a href="#l2.47"></a>
+<span id="l2.48"> </span><a href="#l2.48"></a>
+<span id="l2.49">     public final boolean isBlocking() {</span><a href="#l2.49"></a>
+<span id="l2.50" class="minusline">-        synchronized (regLock) {</span><a href="#l2.50"></a>
+<span id="l2.51" class="minusline">-            return blocking;</span><a href="#l2.51"></a>
+<span id="l2.52" class="minusline">-        }</span><a href="#l2.52"></a>
+<span id="l2.53" class="plusline">+        return !nonBlocking;</span><a href="#l2.53"></a>
+<span id="l2.54">     }</span><a href="#l2.54"></a>
+<span id="l2.55"> </span><a href="#l2.55"></a>
+<span id="l2.56">     public final Object blockingLock() {</span><a href="#l2.56"></a>
+<span id="l2.57" class="atline">@@ -287,12 +292,13 @@</span><a href="#l2.57"></a>
+<span id="l2.58">         synchronized (regLock) {</span><a href="#l2.58"></a>
+<span id="l2.59">             if (!isOpen())</span><a href="#l2.59"></a>
+<span id="l2.60">                 throw new ClosedChannelException();</span><a href="#l2.60"></a>
+<span id="l2.61" class="minusline">-            if (blocking == block)</span><a href="#l2.61"></a>
+<span id="l2.62" class="minusline">-                return this;</span><a href="#l2.62"></a>
+<span id="l2.63" class="minusline">-            if (block &amp;&amp; haveValidKeys())</span><a href="#l2.63"></a>
+<span id="l2.64" class="minusline">-                throw new IllegalBlockingModeException();</span><a href="#l2.64"></a>
+<span id="l2.65" class="minusline">-            implConfigureBlocking(block);</span><a href="#l2.65"></a>
+<span id="l2.66" class="minusline">-            blocking = block;</span><a href="#l2.66"></a>
+<span id="l2.67" class="plusline">+            boolean blocking = !nonBlocking;</span><a href="#l2.67"></a>
+<span id="l2.68" class="plusline">+            if (block != blocking) {</span><a href="#l2.68"></a>
+<span id="l2.69" class="plusline">+                if (block &amp;&amp; haveValidKeys())</span><a href="#l2.69"></a>
+<span id="l2.70" class="plusline">+                    throw new IllegalBlockingModeException();</span><a href="#l2.70"></a>
+<span id="l2.71" class="plusline">+                implConfigureBlocking(block);</span><a href="#l2.71"></a>
+<span id="l2.72" class="plusline">+                nonBlocking = !block;</span><a href="#l2.72"></a>
+<span id="l2.73" class="plusline">+            }</span><a href="#l2.73"></a>
+<span id="l2.74">         }</span><a href="#l2.74"></a>
+<span id="l2.75">         return this;</span><a href="#l2.75"></a>
+<span id="l2.76">     }</span><a href="#l2.76"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l3.1" class="minusline">--- a/src/share/classes/sun/nio/ch/DatagramChannelImpl.java	Mon Jan 13 02:42:14 2020 +0000</span><a href="#l3.1"></a>
+<span id="l3.2" class="plusline">+++ b/src/share/classes/sun/nio/ch/DatagramChannelImpl.java	Thu Feb 08 10:55:21 2018 +0000</span><a href="#l3.2"></a>
+<span id="l3.3" class="atline">@@ -49,9 +49,6 @@</span><a href="#l3.3"></a>
+<span id="l3.4"> </span><a href="#l3.4"></a>
+<span id="l3.5">     // Our file descriptor</span><a href="#l3.5"></a>
+<span id="l3.6">     private final FileDescriptor fd;</span><a href="#l3.6"></a>
+<span id="l3.7" class="minusline">-</span><a href="#l3.7"></a>
+<span id="l3.8" class="minusline">-    // fd value needed for dev/poll. This value will remain valid</span><a href="#l3.8"></a>
+<span id="l3.9" class="minusline">-    // even after the value in the file descriptor object has been set to -1</span><a href="#l3.9"></a>
+<span id="l3.10">     private final int fdVal;</span><a href="#l3.10"></a>
+<span id="l3.11"> </span><a href="#l3.11"></a>
+<span id="l3.12">     // The protocol family of the socket</span><a href="#l3.12"></a>
+<span id="l3.13" class="atline">@@ -103,7 +100,6 @@</span><a href="#l3.13"></a>
+<span id="l3.14"> </span><a href="#l3.14"></a>
+<span id="l3.15">     // -- End of fields protected by stateLock</span><a href="#l3.15"></a>
+<span id="l3.16"> </span><a href="#l3.16"></a>
+<span id="l3.17" class="minusline">-</span><a href="#l3.17"></a>
+<span id="l3.18">     public DatagramChannelImpl(SelectorProvider sp)</span><a href="#l3.18"></a>
+<span id="l3.19">         throws IOException</span><a href="#l3.19"></a>
+<span id="l3.20">     {</span><a href="#l3.20"></a>
+<span id="l3.21" class="atline">@@ -138,16 +134,27 @@</span><a href="#l3.21"></a>
+<span id="l3.22">                 throw new UnsupportedOperationException(&quot;IPv6 not available&quot;);</span><a href="#l3.22"></a>
+<span id="l3.23">             }</span><a href="#l3.23"></a>
+<span id="l3.24">         }</span><a href="#l3.24"></a>
+<span id="l3.25" class="minusline">-        this.family = family;</span><a href="#l3.25"></a>
+<span id="l3.26" class="minusline">-        this.fd = Net.socket(family, false);</span><a href="#l3.26"></a>
+<span id="l3.27" class="minusline">-        this.fdVal = IOUtil.fdVal(fd);</span><a href="#l3.27"></a>
+<span id="l3.28" class="minusline">-        this.state = ST_UNCONNECTED;</span><a href="#l3.28"></a>
+<span id="l3.29" class="plusline">+</span><a href="#l3.29"></a>
+<span id="l3.30" class="plusline">+        ResourceManager.beforeUdpCreate();</span><a href="#l3.30"></a>
+<span id="l3.31" class="plusline">+        try {</span><a href="#l3.31"></a>
+<span id="l3.32" class="plusline">+            this.family = family;</span><a href="#l3.32"></a>
+<span id="l3.33" class="plusline">+            this.fd = Net.socket(family, false);</span><a href="#l3.33"></a>
+<span id="l3.34" class="plusline">+            this.fdVal = IOUtil.fdVal(fd);</span><a href="#l3.34"></a>
+<span id="l3.35" class="plusline">+            this.state = ST_UNCONNECTED;</span><a href="#l3.35"></a>
+<span id="l3.36" class="plusline">+        } catch (IOException ioe) {</span><a href="#l3.36"></a>
+<span id="l3.37" class="plusline">+            ResourceManager.afterUdpClose();</span><a href="#l3.37"></a>
+<span id="l3.38" class="plusline">+            throw ioe;</span><a href="#l3.38"></a>
+<span id="l3.39" class="plusline">+        }</span><a href="#l3.39"></a>
+<span id="l3.40">     }</span><a href="#l3.40"></a>
+<span id="l3.41"> </span><a href="#l3.41"></a>
+<span id="l3.42">     public DatagramChannelImpl(SelectorProvider sp, FileDescriptor fd)</span><a href="#l3.42"></a>
+<span id="l3.43">         throws IOException</span><a href="#l3.43"></a>
+<span id="l3.44">     {</span><a href="#l3.44"></a>
+<span id="l3.45">         super(sp);</span><a href="#l3.45"></a>
+<span id="l3.46" class="plusline">+</span><a href="#l3.46"></a>
+<span id="l3.47" class="plusline">+        // increment UDP count to match decrement when closing</span><a href="#l3.47"></a>
+<span id="l3.48" class="plusline">+        ResourceManager.beforeUdpCreate();</span><a href="#l3.48"></a>
+<span id="l3.49" class="plusline">+</span><a href="#l3.49"></a>
+<span id="l3.50">         this.family = Net.isIPv6Available() ?</span><a href="#l3.50"></a>
+<span id="l3.51">             StandardProtocolFamily.INET6 : StandardProtocolFamily.INET;</span><a href="#l3.51"></a>
+<span id="l3.52">         this.fd = fd;</span><a href="#l3.52"></a>
+<span id="l3.53" class="atline">@@ -742,10 +749,9 @@</span><a href="#l3.53"></a>
+<span id="l3.54">                     localAddress = Net.localAddress(fd);</span><a href="#l3.54"></a>
+<span id="l3.55"> </span><a href="#l3.55"></a>
+<span id="l3.56">                     // flush any packets already received.</span><a href="#l3.56"></a>
+<span id="l3.57" class="minusline">-                    boolean blocking = false;</span><a href="#l3.57"></a>
+<span id="l3.58">                     synchronized (blockingLock()) {</span><a href="#l3.58"></a>
+<span id="l3.59" class="plusline">+                        boolean blocking = isBlocking();</span><a href="#l3.59"></a>
+<span id="l3.60">                         try {</span><a href="#l3.60"></a>
+<span id="l3.61" class="minusline">-                            blocking = isBlocking();</span><a href="#l3.61"></a>
+<span id="l3.62">                             // remainder of each packet thrown away</span><a href="#l3.62"></a>
+<span id="l3.63">                             ByteBuffer tmpBuf = ByteBuffer.allocate(1);</span><a href="#l3.63"></a>
+<span id="l3.64">                             if (blocking) {</span><a href="#l3.64"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l4.1" class="minusline">--- a/src/share/classes/sun/nio/ch/DatagramSocketAdaptor.java	Mon Jan 13 02:42:14 2020 +0000</span><a href="#l4.1"></a>
+<span id="l4.2" class="plusline">+++ b/src/share/classes/sun/nio/ch/DatagramSocketAdaptor.java	Thu Feb 08 10:55:21 2018 +0000</span><a href="#l4.2"></a>
+<span id="l4.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l4.3"></a>
+<span id="l4.4"> /*</span><a href="#l4.4"></a>
+<span id="l4.5" class="minusline">- * Copyright (c) 2001, 2012, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.5"></a>
+<span id="l4.6" class="plusline">+ * Copyright (c) 2001, 2018, Oracle and/or its affiliates. All rights reserved.</span><a href="#l4.6"></a>
+<span id="l4.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l4.7"></a>
+<span id="l4.8">  *</span><a href="#l4.8"></a>
+<span id="l4.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l4.9"></a>
+<span id="l4.10" class="atline">@@ -25,10 +25,22 @@</span><a href="#l4.10"></a>
+<span id="l4.11"> </span><a href="#l4.11"></a>
+<span id="l4.12"> package sun.nio.ch;</span><a href="#l4.12"></a>
+<span id="l4.13"> </span><a href="#l4.13"></a>
+<span id="l4.14" class="minusline">-import java.io.*;</span><a href="#l4.14"></a>
+<span id="l4.15" class="minusline">-import java.net.*;</span><a href="#l4.15"></a>
+<span id="l4.16" class="minusline">-import java.nio.*;</span><a href="#l4.16"></a>
+<span id="l4.17" class="minusline">-import java.nio.channels.*;</span><a href="#l4.17"></a>
+<span id="l4.18" class="plusline">+import java.io.IOException;</span><a href="#l4.18"></a>
+<span id="l4.19" class="plusline">+import java.net.DatagramPacket;</span><a href="#l4.19"></a>
+<span id="l4.20" class="plusline">+import java.net.DatagramSocket;</span><a href="#l4.20"></a>
+<span id="l4.21" class="plusline">+import java.net.DatagramSocketImpl;</span><a href="#l4.21"></a>
+<span id="l4.22" class="plusline">+import java.net.InetAddress;</span><a href="#l4.22"></a>
+<span id="l4.23" class="plusline">+import java.net.InetSocketAddress;</span><a href="#l4.23"></a>
+<span id="l4.24" class="plusline">+import java.net.NetworkInterface;</span><a href="#l4.24"></a>
+<span id="l4.25" class="plusline">+import java.net.SocketAddress;</span><a href="#l4.25"></a>
+<span id="l4.26" class="plusline">+import java.net.SocketException;</span><a href="#l4.26"></a>
+<span id="l4.27" class="plusline">+import java.net.SocketOption;</span><a href="#l4.27"></a>
+<span id="l4.28" class="plusline">+import java.net.SocketTimeoutException;</span><a href="#l4.28"></a>
+<span id="l4.29" class="plusline">+import java.net.StandardSocketOptions;</span><a href="#l4.29"></a>
+<span id="l4.30" class="plusline">+import java.nio.ByteBuffer;</span><a href="#l4.30"></a>
+<span id="l4.31" class="plusline">+import java.nio.channels.ClosedChannelException;</span><a href="#l4.31"></a>
+<span id="l4.32" class="plusline">+import java.nio.channels.DatagramChannel;</span><a href="#l4.32"></a>
+<span id="l4.33" class="plusline">+import java.nio.channels.IllegalBlockingModeException;</span><a href="#l4.33"></a>
+<span id="l4.34"> </span><a href="#l4.34"></a>
+<span id="l4.35"> </span><a href="#l4.35"></a>
+<span id="l4.36"> // Make a datagram-socket channel look like a datagram socket.</span><a href="#l4.36"></a>
+<span id="l4.37" class="atline">@@ -178,7 +190,6 @@</span><a href="#l4.37"></a>
+<span id="l4.38"> </span><a href="#l4.38"></a>
+<span id="l4.39">         dc.configureBlocking(false);</span><a href="#l4.39"></a>
+<span id="l4.40">         try {</span><a href="#l4.40"></a>
+<span id="l4.41" class="minusline">-            int n;</span><a href="#l4.41"></a>
+<span id="l4.42">             SocketAddress sender;</span><a href="#l4.42"></a>
+<span id="l4.43">             if ((sender = dc.receive(bb)) != null)</span><a href="#l4.43"></a>
+<span id="l4.44">                 return sender;</span><a href="#l4.44"></a>
+<span id="l4.45" class="atline">@@ -188,19 +199,18 @@</span><a href="#l4.45"></a>
+<span id="l4.46">                      throw new ClosedChannelException();</span><a href="#l4.46"></a>
+<span id="l4.47">                 long st = System.currentTimeMillis();</span><a href="#l4.47"></a>
+<span id="l4.48">                 int result = dc.poll(Net.POLLIN, to);</span><a href="#l4.48"></a>
+<span id="l4.49" class="minusline">-                if (result &gt; 0 &amp;&amp;</span><a href="#l4.49"></a>
+<span id="l4.50" class="minusline">-                        ((result &amp; Net.POLLIN) != 0)) {</span><a href="#l4.50"></a>
+<span id="l4.51" class="plusline">+                if (result &gt; 0 &amp;&amp; ((result &amp; Net.POLLIN) != 0)) {</span><a href="#l4.51"></a>
+<span id="l4.52">                     if ((sender = dc.receive(bb)) != null)</span><a href="#l4.52"></a>
+<span id="l4.53">                         return sender;</span><a href="#l4.53"></a>
+<span id="l4.54">                 }</span><a href="#l4.54"></a>
+<span id="l4.55">                 to -= System.currentTimeMillis() - st;</span><a href="#l4.55"></a>
+<span id="l4.56">                 if (to &lt;= 0)</span><a href="#l4.56"></a>
+<span id="l4.57">                     throw new SocketTimeoutException();</span><a href="#l4.57"></a>
+<span id="l4.58" class="minusline">-</span><a href="#l4.58"></a>
+<span id="l4.59">             }</span><a href="#l4.59"></a>
+<span id="l4.60">         } finally {</span><a href="#l4.60"></a>
+<span id="l4.61" class="minusline">-            if (dc.isOpen())</span><a href="#l4.61"></a>
+<span id="l4.62" class="plusline">+            try {</span><a href="#l4.62"></a>
+<span id="l4.63">                 dc.configureBlocking(true);</span><a href="#l4.63"></a>
+<span id="l4.64" class="plusline">+            } catch (ClosedChannelException e) { }</span><a href="#l4.64"></a>
+<span id="l4.65">         }</span><a href="#l4.65"></a>
+<span id="l4.66">     }</span><a href="#l4.66"></a>
+<span id="l4.67"> </span><a href="#l4.67"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l5.1" class="minusline">--- a/src/share/classes/sun/nio/ch/ServerSocketAdaptor.java	Mon Jan 13 02:42:14 2020 +0000</span><a href="#l5.1"></a>
+<span id="l5.2" class="plusline">+++ b/src/share/classes/sun/nio/ch/ServerSocketAdaptor.java	Thu Feb 08 10:55:21 2018 +0000</span><a href="#l5.2"></a>
+<span id="l5.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l5.3"></a>
+<span id="l5.4"> /*</span><a href="#l5.4"></a>
+<span id="l5.5" class="minusline">- * Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.</span><a href="#l5.5"></a>
+<span id="l5.6" class="plusline">+ * Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.</span><a href="#l5.6"></a>
+<span id="l5.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l5.7"></a>
+<span id="l5.8">  *</span><a href="#l5.8"></a>
+<span id="l5.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l5.9"></a>
+<span id="l5.10" class="atline">@@ -25,9 +25,20 @@</span><a href="#l5.10"></a>
+<span id="l5.11"> </span><a href="#l5.11"></a>
+<span id="l5.12"> package sun.nio.ch;</span><a href="#l5.12"></a>
+<span id="l5.13"> </span><a href="#l5.13"></a>
+<span id="l5.14" class="minusline">-import java.io.*;</span><a href="#l5.14"></a>
+<span id="l5.15" class="minusline">-import java.net.*;</span><a href="#l5.15"></a>
+<span id="l5.16" class="minusline">-import java.nio.channels.*;</span><a href="#l5.16"></a>
+<span id="l5.17" class="plusline">+import java.io.IOException;</span><a href="#l5.17"></a>
+<span id="l5.18" class="plusline">+import java.net.InetAddress;</span><a href="#l5.18"></a>
+<span id="l5.19" class="plusline">+import java.net.InetSocketAddress;</span><a href="#l5.19"></a>
+<span id="l5.20" class="plusline">+import java.net.ServerSocket;</span><a href="#l5.20"></a>
+<span id="l5.21" class="plusline">+import java.net.Socket;</span><a href="#l5.21"></a>
+<span id="l5.22" class="plusline">+import java.net.SocketAddress;</span><a href="#l5.22"></a>
+<span id="l5.23" class="plusline">+import java.net.SocketException;</span><a href="#l5.23"></a>
+<span id="l5.24" class="plusline">+import java.net.SocketTimeoutException;</span><a href="#l5.24"></a>
+<span id="l5.25" class="plusline">+import java.net.StandardSocketOptions;</span><a href="#l5.25"></a>
+<span id="l5.26" class="plusline">+import java.nio.channels.ClosedChannelException;</span><a href="#l5.26"></a>
+<span id="l5.27" class="plusline">+import java.nio.channels.IllegalBlockingModeException;</span><a href="#l5.27"></a>
+<span id="l5.28" class="plusline">+import java.nio.channels.NotYetBoundException;</span><a href="#l5.28"></a>
+<span id="l5.29" class="plusline">+import java.nio.channels.ServerSocketChannel;</span><a href="#l5.29"></a>
+<span id="l5.30" class="plusline">+import java.nio.channels.SocketChannel;</span><a href="#l5.30"></a>
+<span id="l5.31"> </span><a href="#l5.31"></a>
+<span id="l5.32"> </span><a href="#l5.32"></a>
+<span id="l5.33"> // Make a server-socket channel look like a server socket.</span><a href="#l5.33"></a>
+<span id="l5.34" class="atline">@@ -37,7 +48,7 @@</span><a href="#l5.34"></a>
+<span id="l5.35"> // class.</span><a href="#l5.35"></a>
+<span id="l5.36"> //</span><a href="#l5.36"></a>
+<span id="l5.37"> </span><a href="#l5.37"></a>
+<span id="l5.38" class="minusline">-public class ServerSocketAdaptor                        // package-private</span><a href="#l5.38"></a>
+<span id="l5.39" class="plusline">+class ServerSocketAdaptor                        // package-private</span><a href="#l5.39"></a>
+<span id="l5.40">     extends ServerSocket</span><a href="#l5.40"></a>
+<span id="l5.41"> {</span><a href="#l5.41"></a>
+<span id="l5.42"> </span><a href="#l5.42"></a>
+<span id="l5.43" class="atline">@@ -97,12 +108,16 @@</span><a href="#l5.43"></a>
+<span id="l5.44">                 throw new IllegalBlockingModeException();</span><a href="#l5.44"></a>
+<span id="l5.45">             try {</span><a href="#l5.45"></a>
+<span id="l5.46">                 if (timeout == 0) {</span><a href="#l5.46"></a>
+<span id="l5.47" class="plusline">+                    // for compatibility reasons: accept connection if available</span><a href="#l5.47"></a>
+<span id="l5.48" class="plusline">+                    // when configured non-blocking</span><a href="#l5.48"></a>
+<span id="l5.49">                     SocketChannel sc = ssc.accept();</span><a href="#l5.49"></a>
+<span id="l5.50">                     if (sc == null &amp;&amp; !ssc.isBlocking())</span><a href="#l5.50"></a>
+<span id="l5.51">                         throw new IllegalBlockingModeException();</span><a href="#l5.51"></a>
+<span id="l5.52">                     return sc.socket();</span><a href="#l5.52"></a>
+<span id="l5.53">                 }</span><a href="#l5.53"></a>
+<span id="l5.54"> </span><a href="#l5.54"></a>
+<span id="l5.55" class="plusline">+                if (!ssc.isBlocking())</span><a href="#l5.55"></a>
+<span id="l5.56" class="plusline">+                    throw new IllegalBlockingModeException();</span><a href="#l5.56"></a>
+<span id="l5.57">                 ssc.configureBlocking(false);</span><a href="#l5.57"></a>
+<span id="l5.58">                 try {</span><a href="#l5.58"></a>
+<span id="l5.59">                     SocketChannel sc;</span><a href="#l5.59"></a>
+<span id="l5.60" class="atline">@@ -121,10 +136,10 @@</span><a href="#l5.60"></a>
+<span id="l5.61">                             throw new SocketTimeoutException();</span><a href="#l5.61"></a>
+<span id="l5.62">                     }</span><a href="#l5.62"></a>
+<span id="l5.63">                 } finally {</span><a href="#l5.63"></a>
+<span id="l5.64" class="minusline">-                    if (ssc.isOpen())</span><a href="#l5.64"></a>
+<span id="l5.65" class="plusline">+                    try {</span><a href="#l5.65"></a>
+<span id="l5.66">                         ssc.configureBlocking(true);</span><a href="#l5.66"></a>
+<span id="l5.67" class="plusline">+                    } catch (ClosedChannelException e) { }</span><a href="#l5.67"></a>
+<span id="l5.68">                 }</span><a href="#l5.68"></a>
+<span id="l5.69" class="minusline">-</span><a href="#l5.69"></a>
+<span id="l5.70">             } catch (Exception x) {</span><a href="#l5.70"></a>
+<span id="l5.71">                 Net.translateException(x);</span><a href="#l5.71"></a>
+<span id="l5.72">                 assert false;</span><a href="#l5.72"></a>
+<span id="l5.73" class="atline">@@ -178,8 +193,7 @@</span><a href="#l5.73"></a>
+<span id="l5.74">         if (!isBound())</span><a href="#l5.74"></a>
+<span id="l5.75">             return &quot;ServerSocket[unbound]&quot;;</span><a href="#l5.75"></a>
+<span id="l5.76">         return &quot;ServerSocket[addr=&quot; + getInetAddress() +</span><a href="#l5.76"></a>
+<span id="l5.77" class="minusline">-            //          &quot;,port=&quot; + getPort() +</span><a href="#l5.77"></a>
+<span id="l5.78" class="minusline">-                &quot;,localport=&quot; + getLocalPort()  + &quot;]&quot;;</span><a href="#l5.78"></a>
+<span id="l5.79" class="plusline">+               &quot;,localport=&quot; + getLocalPort()  + &quot;]&quot;;</span><a href="#l5.79"></a>
+<span id="l5.80">     }</span><a href="#l5.80"></a>
+<span id="l5.81"> </span><a href="#l5.81"></a>
+<span id="l5.82">     public void setReceiveBufferSize(int size) throws SocketException {</span><a href="#l5.82"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l6.1" class="minusline">--- a/src/share/classes/sun/nio/ch/ServerSocketChannelImpl.java	Mon Jan 13 02:42:14 2020 +0000</span><a href="#l6.1"></a>
+<span id="l6.2" class="plusline">+++ b/src/share/classes/sun/nio/ch/ServerSocketChannelImpl.java	Thu Feb 08 10:55:21 2018 +0000</span><a href="#l6.2"></a>
+<span id="l6.3" class="atline">@@ -48,10 +48,7 @@</span><a href="#l6.3"></a>
+<span id="l6.4"> </span><a href="#l6.4"></a>
+<span id="l6.5">     // Our file descriptor</span><a href="#l6.5"></a>
+<span id="l6.6">     private final FileDescriptor fd;</span><a href="#l6.6"></a>
+<span id="l6.7" class="minusline">-</span><a href="#l6.7"></a>
+<span id="l6.8" class="minusline">-    // fd value needed for dev/poll. This value will remain valid</span><a href="#l6.8"></a>
+<span id="l6.9" class="minusline">-    // even after the value in the file descriptor object has been set to -1</span><a href="#l6.9"></a>
+<span id="l6.10" class="minusline">-    private int fdVal;</span><a href="#l6.10"></a>
+<span id="l6.11" class="plusline">+    private final int fdVal;</span><a href="#l6.11"></a>
+<span id="l6.12"> </span><a href="#l6.12"></a>
+<span id="l6.13">     // ID of native thread currently blocked in this channel, for signalling</span><a href="#l6.13"></a>
+<span id="l6.14">     private volatile long thread = 0;</span><a href="#l6.14"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l7.1" class="minusline">--- a/src/share/classes/sun/nio/ch/SocketAdaptor.java	Mon Jan 13 02:42:14 2020 +0000</span><a href="#l7.1"></a>
+<span id="l7.2" class="plusline">+++ b/src/share/classes/sun/nio/ch/SocketAdaptor.java	Thu Feb 08 10:55:21 2018 +0000</span><a href="#l7.2"></a>
+<span id="l7.3" class="atline">@@ -1,5 +1,5 @@</span><a href="#l7.3"></a>
+<span id="l7.4"> /*</span><a href="#l7.4"></a>
+<span id="l7.5" class="minusline">- * Copyright (c) 2000, 2015, Oracle and/or its affiliates. All rights reserved.</span><a href="#l7.5"></a>
+<span id="l7.6" class="plusline">+ * Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.</span><a href="#l7.6"></a>
+<span id="l7.7">  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.</span><a href="#l7.7"></a>
+<span id="l7.8">  *</span><a href="#l7.8"></a>
+<span id="l7.9">  * This code is free software; you can redistribute it and/or modify it</span><a href="#l7.9"></a>
+<span id="l7.10" class="atline">@@ -25,11 +25,23 @@</span><a href="#l7.10"></a>
+<span id="l7.11"> </span><a href="#l7.11"></a>
+<span id="l7.12"> package sun.nio.ch;</span><a href="#l7.12"></a>
+<span id="l7.13"> </span><a href="#l7.13"></a>
+<span id="l7.14" class="minusline">-import java.io.*;</span><a href="#l7.14"></a>
+<span id="l7.15" class="minusline">-import java.lang.ref.*;</span><a href="#l7.15"></a>
+<span id="l7.16" class="minusline">-import java.net.*;</span><a href="#l7.16"></a>
+<span id="l7.17" class="minusline">-import java.nio.*;</span><a href="#l7.17"></a>
+<span id="l7.18" class="minusline">-import java.nio.channels.*;</span><a href="#l7.18"></a>
+<span id="l7.19" class="plusline">+import java.io.IOException;</span><a href="#l7.19"></a>
+<span id="l7.20" class="plusline">+import java.io.InputStream;</span><a href="#l7.20"></a>
+<span id="l7.21" class="plusline">+import java.io.OutputStream;</span><a href="#l7.21"></a>
+<span id="l7.22" class="plusline">+import java.net.InetAddress;</span><a href="#l7.22"></a>
+<span id="l7.23" class="plusline">+import java.net.InetSocketAddress;</span><a href="#l7.23"></a>
+<span id="l7.24" class="plusline">+import java.net.Socket;</span><a href="#l7.24"></a>
+<span id="l7.25" class="plusline">+import java.net.SocketAddress;</span><a href="#l7.25"></a>
+<span id="l7.26" class="plusline">+import java.net.SocketException;</span><a href="#l7.26"></a>
+<span id="l7.27" class="plusline">+import java.net.SocketImpl;</span><a href="#l7.27"></a>
+<span id="l7.28" class="plusline">+import java.net.SocketOption;</span><a href="#l7.28"></a>
+<span id="l7.29" class="plusline">+import java.net.SocketTimeoutException;</span><a href="#l7.29"></a>
+<span id="l7.30" class="plusline">+import java.net.StandardSocketOptions;</span><a href="#l7.30"></a>
+<span id="l7.31" class="plusline">+import java.nio.ByteBuffer;</span><a href="#l7.31"></a>
+<span id="l7.32" class="plusline">+import java.nio.channels.Channels;</span><a href="#l7.32"></a>
+<span id="l7.33" class="plusline">+import java.nio.channels.ClosedChannelException;</span><a href="#l7.33"></a>
+<span id="l7.34" class="plusline">+import java.nio.channels.IllegalBlockingModeException;</span><a href="#l7.34"></a>
+<span id="l7.35" class="plusline">+import java.nio.channels.SocketChannel;</span><a href="#l7.35"></a>
+<span id="l7.36"> import java.security.AccessController;</span><a href="#l7.36"></a>
+<span id="l7.37"> import java.security.PrivilegedExceptionAction;</span><a href="#l7.37"></a>
+<span id="l7.38"> import java.util.*;</span><a href="#l7.38"></a>
+<span id="l7.39" class="atline">@@ -47,7 +59,7 @@</span><a href="#l7.39"></a>
+<span id="l7.40"> // java.net.Socket so as to simplify tracking future changes to that class.</span><a href="#l7.40"></a>
+<span id="l7.41"> //</span><a href="#l7.41"></a>
+<span id="l7.42"> </span><a href="#l7.42"></a>
+<span id="l7.43" class="minusline">-public class SocketAdaptor</span><a href="#l7.43"></a>
+<span id="l7.44" class="plusline">+class SocketAdaptor</span><a href="#l7.44"></a>
+<span id="l7.45">     extends Socket</span><a href="#l7.45"></a>
+<span id="l7.46"> {</span><a href="#l7.46"></a>
+<span id="l7.47"> </span><a href="#l7.47"></a>
+<span id="l7.48" class="atline">@@ -91,7 +103,6 @@</span><a href="#l7.48"></a>
+<span id="l7.49">                 throw new IllegalBlockingModeException();</span><a href="#l7.49"></a>
+<span id="l7.50"> </span><a href="#l7.50"></a>
+<span id="l7.51">             try {</span><a href="#l7.51"></a>
+<span id="l7.52" class="minusline">-</span><a href="#l7.52"></a>
+<span id="l7.53">                 if (timeout == 0) {</span><a href="#l7.53"></a>
+<span id="l7.54">                     sc.connect(remote);</span><a href="#l7.54"></a>
+<span id="l7.55">                     return;</span><a href="#l7.55"></a>
+<span id="l7.56" class="atline">@@ -119,8 +130,9 @@</span><a href="#l7.56"></a>
+<span id="l7.57">                         }</span><a href="#l7.57"></a>
+<span id="l7.58">                     }</span><a href="#l7.58"></a>
+<span id="l7.59">                 } finally {</span><a href="#l7.59"></a>
+<span id="l7.60" class="minusline">-                    if (sc.isOpen())</span><a href="#l7.60"></a>
+<span id="l7.61" class="plusline">+                    try {</span><a href="#l7.61"></a>
+<span id="l7.62">                         sc.configureBlocking(true);</span><a href="#l7.62"></a>
+<span id="l7.63" class="plusline">+                    } catch (ClosedChannelException e) { }</span><a href="#l7.63"></a>
+<span id="l7.64">                 }</span><a href="#l7.64"></a>
+<span id="l7.65"> </span><a href="#l7.65"></a>
+<span id="l7.66">             } catch (Exception x) {</span><a href="#l7.66"></a>
+<span id="l7.67" class="atline">@@ -188,10 +200,11 @@</span><a href="#l7.67"></a>
+<span id="l7.68">             synchronized (sc.blockingLock()) {</span><a href="#l7.68"></a>
+<span id="l7.69">                 if (!sc.isBlocking())</span><a href="#l7.69"></a>
+<span id="l7.70">                     throw new IllegalBlockingModeException();</span><a href="#l7.70"></a>
+<span id="l7.71" class="plusline">+</span><a href="#l7.71"></a>
+<span id="l7.72">                 if (timeout == 0)</span><a href="#l7.72"></a>
+<span id="l7.73">                     return sc.read(bb);</span><a href="#l7.73"></a>
+<span id="l7.74" class="plusline">+</span><a href="#l7.74"></a>
+<span id="l7.75">                 sc.configureBlocking(false);</span><a href="#l7.75"></a>
+<span id="l7.76" class="minusline">-</span><a href="#l7.76"></a>
+<span id="l7.77">                 try {</span><a href="#l7.77"></a>
+<span id="l7.78">                     int n;</span><a href="#l7.78"></a>
+<span id="l7.79">                     if ((n = sc.read(bb)) != 0)</span><a href="#l7.79"></a>
+<span id="l7.80" class="atline">@@ -211,10 +224,10 @@</span><a href="#l7.80"></a>
+<span id="l7.81">                             throw new SocketTimeoutException();</span><a href="#l7.81"></a>
+<span id="l7.82">                     }</span><a href="#l7.82"></a>
+<span id="l7.83">                 } finally {</span><a href="#l7.83"></a>
+<span id="l7.84" class="minusline">-                    if (sc.isOpen())</span><a href="#l7.84"></a>
+<span id="l7.85" class="plusline">+                    try {</span><a href="#l7.85"></a>
+<span id="l7.86">                         sc.configureBlocking(true);</span><a href="#l7.86"></a>
+<span id="l7.87" class="plusline">+                    } catch (ClosedChannelException e) { }</span><a href="#l7.87"></a>
+<span id="l7.88">                 }</span><a href="#l7.88"></a>
+<span id="l7.89" class="minusline">-</span><a href="#l7.89"></a>
+<span id="l7.90">             }</span><a href="#l7.90"></a>
+<span id="l7.91">         }</span><a href="#l7.91"></a>
+<span id="l7.92">     }</span><a href="#l7.92"></a></pre></div><div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l8.1" class="minusline">--- a/src/share/classes/sun/nio/ch/SocketChannelImpl.java	Mon Jan 13 02:42:14 2020 +0000</span><a href="#l8.1"></a>
+<span id="l8.2" class="plusline">+++ b/src/share/classes/sun/nio/ch/SocketChannelImpl.java	Thu Feb 08 10:55:21 2018 +0000</span><a href="#l8.2"></a>
+<span id="l8.3" class="atline">@@ -50,9 +50,6 @@</span><a href="#l8.3"></a>
+<span id="l8.4"> </span><a href="#l8.4"></a>
+<span id="l8.5">     // Our file descriptor object</span><a href="#l8.5"></a>
+<span id="l8.6">     private final FileDescriptor fd;</span><a href="#l8.6"></a>
+<span id="l8.7" class="minusline">-</span><a href="#l8.7"></a>
+<span id="l8.8" class="minusline">-    // fd value needed for dev/poll. This value will remain valid</span><a href="#l8.8"></a>
+<span id="l8.9" class="minusline">-    // even after the value in the file descriptor object has been set to -1</span><a href="#l8.9"></a>
+<span id="l8.10">     private final int fdVal;</span><a href="#l8.10"></a>
+<span id="l8.11"> </span><a href="#l8.11"></a>
+<span id="l8.12">     // IDs of native threads doing reads and writes, for signalling</span><a href="#l8.12"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

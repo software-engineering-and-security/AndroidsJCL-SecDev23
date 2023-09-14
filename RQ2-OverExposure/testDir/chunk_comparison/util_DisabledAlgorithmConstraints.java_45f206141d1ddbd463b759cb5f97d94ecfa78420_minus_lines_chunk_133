@@ -1,0 +1,49 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /*
+2     * Check if a x509Certificate object is permitted.  Check if all
+3     * algorithms are allowed, certificate constraints, and the
+4     * public key against key constraints.
+5     *
+6     * Uses new style permit() which throws exceptions.
+7     */
+8 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /*
+2     * This class contains constraints dealing with the key size
+3     * support limits per algorithm.   e.g.  "keySize <= 1024"
+4     */
+5    private static class KeySizeConstraint extends Constraint {
+6
+7        private int minSize;            // the minimal available key size
+8        private int maxSize;            // the maximal available key size
+---------------------------------------------
+Differences:	['8']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1        try {
+2            PSSParameterSpec pssParams =
+3                ap.getParameterSpec(PSSParameterSpec.class);
+4            String digestAlg = pssParams.getDigestAlgorithm();
+5            permits(digestAlg, cp);
+6            AlgorithmParameterSpec mgfParams = pssParams.getMGFParameters();
+7            if (mgfParams instanceof MGF1ParameterSpec) {
+8                String mgfDigestAlg =
+9                    ((MGF1ParameterSpec)mgfParams).getDigestAlgorithm();
+10                if (!mgfDigestAlg.equalsIgnoreCase(digestAlg)) {
+11                    permits(mgfDigestAlg, cp);
+12                }
+13            }
+14        } catch (InvalidParameterSpecException ipse) {
+15            // ignore
+16        }
+17    }
+18 
+--------------------------------------------

@@ -1,0 +1,35 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         throws IOException, ClassNotFoundException {
+1
+2        ObjectInputStream.GetField fields = s.readFields();
+3
+4        // Read loadFactor (ignore threshold)
+5        float lf = fields.get("loadFactor", 0.75f);
+6        if (lf <= 0 || Float.isNaN(lf))
+7            throw new InvalidObjectException("Illegal load factor: " + lf);
+8
+9        lf = Math.min(Math.max(0.25f, lf), 4.0f);
+10        HashMap.UnsafeHolder.putLoadFactor(this, lf);
+11
+12         reinitialize();
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2    // These methods are used when serializing HashSets
+3    int   capacity()     { return table.length; }
+4    float loadFactor()   { return loadFactor;   }
+5}
+---------------------------------------------
+Differences:	['0', '3', '5']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         throws IOException, ClassNotFoundException {
+1        // Read in the threshold (ignored), loadfactor, and any hidden stuff
+2        s.defaultReadObject();
+3         reinitialize();
+--------------------------------------------

@@ -1,0 +1,52 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * Returns an extended message used in exceptions. See
+3     * DisabledAlgorithmConstraints for usage.
+4     */
+5    String extendedExceptionMsg();
+6 }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * Returns an extended message used in exceptions. See
+3     * DisabledAlgorithmConstraints for usage.
+4     */
+5    String extendedExceptionMsg();
+6}
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0 
+1    public String toString() {
+2        StringBuilder s = new StringBuilder();
+3        s.append("Cert:       ");
+4        if (cert != null) {
+5            s.append(cert.toString());
+6            s.append("\nSigAlgo:    ");
+7            s.append(cert.getSigAlgName());
+8        } else {
+9            s.append("None");
+10        }
+11        s.append("\nAlgParams:  ");
+12        if (getAlgParams() != null) {
+13            getAlgParams().toString();
+14        } else {
+15            s.append("None");
+16        }
+17        s.append("\nNamedCurves: ");
+18        for (String c : getNamedCurve()) {
+19            s.append(c + " ");
+20        }
+21        s.append("\nVariant:    " + getVariant());
+22        return s.toString();
+23    }
+24
+25 }
+--------------------------------------------

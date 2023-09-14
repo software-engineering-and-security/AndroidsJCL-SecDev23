@@ -1,0 +1,29 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 /**
+1 * This interface contains parameters for checking against constraints that
+2 * extend past the publicly available parameters in
+3 * java.security.AlgorithmConstraints.
+4  */
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0/**
+1 * This interface contains parameters for checking against constraints that
+2 * extend past the publicly available parameters in
+3 * java.security.AlgorithmConstraints.
+4 */
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0 /**
+1 * This class contains parameters for checking against constraints that extend
+2 * past the publicly available parameters in java.security.AlgorithmConstraints.
+3
+4 * This is currently on passed between  between PKIX, AlgorithmChecker,
+5 * and DisabledAlgorithmConstraints.
+6  */
+--------------------------------------------

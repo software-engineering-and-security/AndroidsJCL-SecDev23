@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk7u/jdk7u/jdk/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk7u/jdk7u/jdk/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk7u/jdk7u/jdk/static/mercurial.js"></script>
+
+<title>jdk7u/jdk7u/jdk: 1a95d48e5ff1</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk7u/jdk7u/jdk/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk7u/jdk7u/jdk/shortlog/1a95d48e5ff1">log</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/graph/1a95d48e5ff1">graph</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/tags">tags</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk7u/jdk7u/jdk/raw-rev/1a95d48e5ff1">raw</a></li>
+ <li><a href="/jdk7u/jdk7u/jdk/file/1a95d48e5ff1">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/1a95d48e5ff1.zip">zip</a>
+</li>
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/1a95d48e5ff1.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk7u/jdk7u/jdk/archive/1a95d48e5ff1.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk7u/jdk7u/jdk/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u">jdk7u</a> / <a href="/jdk7u/jdk7u/jdk">jdk</a> </h2>
+<h3>changeset 8993:1a95d48e5ff1   </h3>
+
+<form class="search" action="/jdk7u/jdk7u/jdk/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk7u/jdk7u/jdk/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8224549: Less Blocking Array Queues
+Reviewed-by: mbalao</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#110;&#100;&#114;&#101;&#119;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Tue, 07 Apr 2020 23:47:10 +0100</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk7u/jdk7u/jdk/rev/c39602abdf2f">c39602abdf2f</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk7u/jdk7u/jdk/rev/1ca2034e7079">1ca2034e7079</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk7u/jdk7u/jdk/file/1a95d48e5ff1/src/share/classes/java/io/ObjectStreamClass.java">src/share/classes/java/io/ObjectStreamClass.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 3 insertions(+), 0 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/share/classes/java/io/ObjectStreamClass.java</a></td>
+    <td class="diffstat-total" align="right">3</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/share/classes/java/io/ObjectStreamClass.java	Tue Jan 21 10:56:30 2020 -0800</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/share/classes/java/io/ObjectStreamClass.java	Tue Apr 07 23:47:10 2020 +0100</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1133,6 +1133,9 @@</span><a href="#l1.3"></a>
+<span id="l1.4">             } catch (IllegalAccessException ex) {</span><a href="#l1.4"></a>
+<span id="l1.5">                 // should not occur, as access checks have been suppressed</span><a href="#l1.5"></a>
+<span id="l1.6">                 throw new InternalError();</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+            } catch (InstantiationError err) {</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+                throw (InstantiationException)</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+                    new InstantiationException().initCause(err);</span><a href="#l1.9"></a>
+<span id="l1.10">             }</span><a href="#l1.10"></a>
+<span id="l1.11">         } else {</span><a href="#l1.11"></a>
+<span id="l1.12">             throw new UnsupportedOperationException();</span><a href="#l1.12"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

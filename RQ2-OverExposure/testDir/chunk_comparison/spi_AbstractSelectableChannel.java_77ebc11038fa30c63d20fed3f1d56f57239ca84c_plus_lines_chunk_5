@@ -1,0 +1,23 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     public final boolean isBlocking() {
+1        return !nonBlocking;
+2     }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    public final boolean isBlocking() {
+1        return !nonBlocking;
+2    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0     public final boolean isBlocking() {
+1        synchronized (regLock) {
+2            return blocking;
+3        }
+4     }
+--------------------------------------------

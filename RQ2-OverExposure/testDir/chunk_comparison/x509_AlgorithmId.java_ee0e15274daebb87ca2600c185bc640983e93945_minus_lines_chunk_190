@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         if (constructedFromDer == false) {
+1            if (algParams != null) {
+2                params = new DerValue(algParams.getEncoded());
+3             } else {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        if (constructedFromDer == false) {
+1            if (algParams != null) {
+2                params = new DerValue(algParams.getEncoded());
+3            } else {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         if (constructedFromDer == false) {
+1            if (encodedParams != null) {
+2                params = new DerValue(encodedParams);
+3             } else {
+--------------------------------------------

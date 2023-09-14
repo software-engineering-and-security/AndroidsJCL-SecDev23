@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      */
+1    private void readObject(java.io.ObjectInputStream s)
+2         throws java.io.IOException, ClassNotFoundException  {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    private void readObject(java.io.ObjectInputStream s)
+2        throws java.io.IOException, ClassNotFoundException  {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      */
+1    private void readObject(ObjectInputStream s)
+2         throws java.io.IOException, ClassNotFoundException  {
+--------------------------------------------

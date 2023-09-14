@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk-updates/jdk11u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk-updates/jdk11u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk-updates/jdk11u/static/mercurial.js"></script>
+
+<title>jdk-updates/jdk11u: 448084150145</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk-updates/jdk11u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/shortlog/448084150145">log</a></li>
+ <li><a href="/jdk-updates/jdk11u/graph/448084150145">graph</a></li>
+ <li><a href="/jdk-updates/jdk11u/tags">tags</a></li>
+ <li><a href="/jdk-updates/jdk11u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk-updates/jdk11u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk-updates/jdk11u/raw-rev/448084150145">raw</a></li>
+ <li><a href="/jdk-updates/jdk11u/file/448084150145">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk-updates/jdk11u/archive/448084150145.zip">zip</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/448084150145.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/448084150145.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk-updates">jdk-updates</a> / <a href="/jdk-updates/jdk11u">jdk11u</a> </h2>
+<h3>changeset 52557:448084150145   </h3>
+
+<form class="search" action="/jdk-updates/jdk11u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk-updates/jdk11u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8228548: Normalize normalization for all
+Reviewed-by: chegar, rhalade, igerasim</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#105;&#103;&#101;&#114;&#97;&#115;&#105;&#109;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 14 Aug 2019 17:24:43 -0700</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk-updates/jdk11u/rev/f4cb3e7ca20c">f4cb3e7ca20c</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk-updates/jdk11u/rev/4a6b544ff9ad">4a6b544ff9ad</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk-updates/jdk11u/file/448084150145/src/java.base/share/classes/java/net/URL.java">src/java.base/share/classes/java/net/URL.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 5 insertions(+), 2 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/java.base/share/classes/java/net/URL.java</a></td>
+    <td class="diffstat-total" align="right">7</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:71.4285714286%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:28.5714285714%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/java.base/share/classes/java/net/URL.java	Tue Oct 01 08:47:32 2019 -0700</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/java.base/share/classes/java/net/URL.java	Wed Aug 14 17:24:43 2019 -0700</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -43,6 +43,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> </span><a href="#l1.4"></a>
+<span id="l1.5"> import jdk.internal.misc.JavaNetURLAccess;</span><a href="#l1.5"></a>
+<span id="l1.6"> import jdk.internal.misc.SharedSecrets;</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+import jdk.internal.misc.VM;</span><a href="#l1.7"></a>
+<span id="l1.8"> import sun.net.util.IPAddressUtil;</span><a href="#l1.8"></a>
+<span id="l1.9"> import sun.security.util.SecurityConstants;</span><a href="#l1.9"></a>
+<span id="l1.10"> import sun.security.action.GetPropertyAction;</span><a href="#l1.10"></a>
+<span id="l1.11" class="atline">@@ -1398,7 +1399,7 @@</span><a href="#l1.11"></a>
+<span id="l1.12">         boolean checkedWithFactory = false;</span><a href="#l1.12"></a>
+<span id="l1.13">         boolean overrideableProtocol = isOverrideable(protocol);</span><a href="#l1.13"></a>
+<span id="l1.14"> </span><a href="#l1.14"></a>
+<span id="l1.15" class="minusline">-        if (overrideableProtocol &amp;&amp; jdk.internal.misc.VM.isBooted()) {</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+        if (overrideableProtocol &amp;&amp; VM.isBooted()) {</span><a href="#l1.16"></a>
+<span id="l1.17">             // Use the factory (if any). Volatile read makes</span><a href="#l1.17"></a>
+<span id="l1.18">             // URLStreamHandlerFactory appear fully initialized to current thread.</span><a href="#l1.18"></a>
+<span id="l1.19">             fac = factory;</span><a href="#l1.19"></a>
+<span id="l1.20" class="atline">@@ -1629,7 +1630,9 @@</span><a href="#l1.20"></a>
+<span id="l1.21">     }</span><a href="#l1.21"></a>
+<span id="l1.22"> </span><a href="#l1.22"></a>
+<span id="l1.23">     boolean isBuiltinStreamHandler(URLStreamHandler handler) {</span><a href="#l1.23"></a>
+<span id="l1.24" class="minusline">-       return isBuiltinStreamHandler(handler.getClass().getName());</span><a href="#l1.24"></a>
+<span id="l1.25" class="plusline">+       Class&lt;?&gt; handlerClass = handler.getClass();</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+       return isBuiltinStreamHandler(handlerClass.getName())</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+                 || VM.isSystemDomainLoader(handlerClass.getClassLoader());</span><a href="#l1.27"></a>
+<span id="l1.28">     }</span><a href="#l1.28"></a>
+<span id="l1.29"> </span><a href="#l1.29"></a>
+<span id="l1.30">     private boolean isBuiltinStreamHandler(String handlerClassName) {</span><a href="#l1.30"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

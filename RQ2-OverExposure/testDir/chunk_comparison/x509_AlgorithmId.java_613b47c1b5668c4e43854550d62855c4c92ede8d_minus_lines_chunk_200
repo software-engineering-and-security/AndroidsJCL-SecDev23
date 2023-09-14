@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         } else if (algParams != null) {
+1            return algParams.toString();
+2         } else {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        } else if (algParams != null) {
+1            return algParams.toString();
+2        } else {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         } else if (algParams != null) {
+1            return ", " + algParams.toString();
+2         } else {
+--------------------------------------------

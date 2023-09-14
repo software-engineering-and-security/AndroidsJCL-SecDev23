@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         value = (char[])fields.get("value", null);
+1        count = fields.get("count", 0);
+2     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        value = (char[])fields.get("value", null);
+1        count = fields.get("count", 0);
+2    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         value = (char[])fields.get("value", null);
+1        int c = fields.get("count", 0);
+2        if (c < 0 || c > value.length) {
+3            throw new StreamCorruptedException("count value invalid");
+4        }
+5        count = c;
+6     }
+--------------------------------------------

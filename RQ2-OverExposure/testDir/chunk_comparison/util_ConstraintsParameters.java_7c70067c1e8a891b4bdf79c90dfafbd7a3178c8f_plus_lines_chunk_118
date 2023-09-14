@@ -1,0 +1,42 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /**
+2     * Returns true if a certificate chains back to a trusted JDK root CA.
+3     */
+4    boolean anchorIsJdkCA();
+5 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    /**
+2     * Returns an extended message used in exceptions. See
+3     * DisabledAlgorithmConstraints for usage.
+4     */
+5    String extendedExceptionMsg();
+---------------------------------------------
+Differences:	['5']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1    public ConstraintsParameters(X509Certificate c, boolean match,
+2            Date pkixdate, Timestamp jarTime, String variant) {
+3        cert = c;
+4        trustedMatch = match;
+5        pkixDate = pkixdate;
+6        jarTimestamp = jarTime;
+7        this.variant = (variant == null ? Validator.VAR_GENERIC : variant);
+8        algorithm = null;
+9        algParams = null;
+10        key = null;
+11        if (c != null) {
+12            curveStr = getNamedCurveFromKey(c.getPublicKey());
+13        } else {
+14            curveStr = EMPTYLIST;
+15        }
+16    }
+17 
+--------------------------------------------

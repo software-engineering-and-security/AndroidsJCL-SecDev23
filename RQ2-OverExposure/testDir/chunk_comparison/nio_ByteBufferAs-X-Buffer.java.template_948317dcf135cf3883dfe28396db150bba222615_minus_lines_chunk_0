@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         int lim = this.limit();
+1        assert (pos <= lim);
+2         int rem = (pos <= lim ? lim - pos : 0);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        int lim = limit();
+1        assert (pos <= lim);
+2        pos = (pos <= lim ? pos : lim);
+---------------------------------------------
+Differences:	['0', '2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------

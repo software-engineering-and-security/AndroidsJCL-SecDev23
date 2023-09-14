@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: 77ccfc2d7c3c</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/77ccfc2d7c3c">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/77ccfc2d7c3c">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/77ccfc2d7c3c">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/77ccfc2d7c3c">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/77ccfc2d7c3c.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/77ccfc2d7c3c.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/77ccfc2d7c3c.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48799:77ccfc2d7c3c   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8264934: Enhance cross VM serialization
+Reviewed-by: rriggs, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#109;&#98;&#97;&#108;&#97;&#111;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Tue, 05 Oct 2021 13:42:21 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/3a58399a0de6">3a58399a0de6</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/d2dfd71b99fd">d2dfd71b99fd</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/77ccfc2d7c3c/jdk/src/share/classes/java/io/ObjectInputStream.java">jdk/src/share/classes/java/io/ObjectInputStream.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 26 insertions(+), 0 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jdk/src/share/classes/java/io/ObjectInputStream.java</a></td>
+    <td class="diffstat-total" align="right">26</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:100.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:0.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jdk/src/share/classes/java/io/ObjectInputStream.java	Tue Dec 14 00:52:18 2021 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jdk/src/share/classes/java/io/ObjectInputStream.java	Tue Oct 05 13:42:21 2021 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -1244,6 +1244,8 @@</span><a href="#l1.3"></a>
+<span id="l1.4">      *     &lt;li&gt;each object reference previously deserialized from the stream</span><a href="#l1.4"></a>
+<span id="l1.5">      *     (class is {@code null}, arrayLength is -1),</span><a href="#l1.5"></a>
+<span id="l1.6">      *     &lt;li&gt;each regular class (class is not {@code null}, arrayLength is -1),</span><a href="#l1.6"></a>
+<span id="l1.7" class="plusline">+     *     &lt;li&gt;each interface class explicitly referenced in the stream</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+     *         (it is not called for interfaces implemented by classes in the stream),</span><a href="#l1.8"></a>
+<span id="l1.9">      *     &lt;li&gt;each interface of a dynamic proxy and the dynamic proxy class itself</span><a href="#l1.9"></a>
+<span id="l1.10">      *     (class is not {@code null}, arrayLength is -1),</span><a href="#l1.10"></a>
+<span id="l1.11">      *     &lt;li&gt;each array is filtered using the array type and length of the array</span><a href="#l1.11"></a>
+<span id="l1.12" class="atline">@@ -2001,6 +2003,30 @@</span><a href="#l1.12"></a>
+<span id="l1.13">             totalObjectRefs++;</span><a href="#l1.13"></a>
+<span id="l1.14">             depth++;</span><a href="#l1.14"></a>
+<span id="l1.15">             desc.initNonProxy(readDesc, cl, resolveEx, readClassDesc(false));</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+            if (cl != null) {</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+                // Check that serial filtering has been done on the local class descriptor's superclass,</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+                // in case it does not appear in the stream.</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+                // Find the next super descriptor that has a local class descriptor.</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+                // Descriptors for which there is no local class are ignored.</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+                ObjectStreamClass superLocal = null;</span><a href="#l1.23"></a>
+<span id="l1.24" class="plusline">+                for (ObjectStreamClass sDesc = desc.getSuperDesc(); sDesc != null; sDesc = sDesc.getSuperDesc()) {</span><a href="#l1.24"></a>
+<span id="l1.25" class="plusline">+                    if ((superLocal = sDesc.getLocalDesc()) != null) {</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+                        break;</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+                    }</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+                }</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+                // Scan local descriptor superclasses for a match with the local descriptor of the super found above.</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+                // For each super descriptor before the match, invoke the serial filter on the class.</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+                // The filter is invoked for each class that has not already been filtered</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+                // but would be filtered if the instance had been serialized by this Java runtime.</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+                for (ObjectStreamClass lDesc = desc.getLocalDesc().getSuperDesc();</span><a href="#l1.34"></a>
+<span id="l1.35" class="plusline">+                     lDesc != null &amp;&amp; lDesc != superLocal;</span><a href="#l1.35"></a>
+<span id="l1.36" class="plusline">+                     lDesc = lDesc.getSuperDesc()) {</span><a href="#l1.36"></a>
+<span id="l1.37" class="plusline">+                    filterCheck(lDesc.forClass(), -1);</span><a href="#l1.37"></a>
+<span id="l1.38" class="plusline">+                }</span><a href="#l1.38"></a>
+<span id="l1.39" class="plusline">+            }</span><a href="#l1.39"></a>
+<span id="l1.40">         } finally {</span><a href="#l1.40"></a>
+<span id="l1.41">             depth--;</span><a href="#l1.41"></a>
+<span id="l1.42">         }</span><a href="#l1.42"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

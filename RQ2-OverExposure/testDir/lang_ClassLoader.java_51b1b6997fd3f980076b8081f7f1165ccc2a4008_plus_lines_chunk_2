@@ -1,0 +1,39 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     protected ClassLoader(ClassLoader parent) {
+1        this(checkCreateClassLoader(), parent);
+2     }
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0    protected ClassLoader(ClassLoader parent) {
+1        this(checkCreateClassLoader(), parent);
+2    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0     protected ClassLoader(ClassLoader parent) {
+1        SecurityManager security = System.getSecurityManager();
+2        if (security != null) {
+3            security.checkCreateClassLoader();
+4        }
+5        this.parent = parent;
+6        if (parallelLoaders.contains(this.getClass())) {
+7            parallelLockMap = new ConcurrentHashMap<String, Object>();
+8            package2certs = new ConcurrentHashMap<String, Certificate[]>();
+9            domains =
+10                Collections.synchronizedSet(new HashSet<ProtectionDomain>());
+11            assertionLock = new Object();
+12        } else {
+13            // no finer-grained lock; lock on the classloader instance
+14            parallelLockMap = null;
+15            package2certs = new Hashtable<String, Certificate[]>();
+16            domains = new HashSet<ProtectionDomain>();
+17            assertionLock = this;
+18        }
+19        initialized = true;
+20     }
+--------------------------------------------

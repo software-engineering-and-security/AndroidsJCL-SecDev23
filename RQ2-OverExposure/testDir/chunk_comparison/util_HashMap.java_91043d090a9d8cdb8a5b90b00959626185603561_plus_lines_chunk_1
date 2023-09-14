@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 import java.io.InvalidObjectException;
+1import java.io.ObjectInputStream;
+2 import java.io.Serializable;
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0import java.io.InvalidObjectException;
+1import java.io.ObjectInputStream;
+2import java.io.Serializable;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+--------------------------------------------

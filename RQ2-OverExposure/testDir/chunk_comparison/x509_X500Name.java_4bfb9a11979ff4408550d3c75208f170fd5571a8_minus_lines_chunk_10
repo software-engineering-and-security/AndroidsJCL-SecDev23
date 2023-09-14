@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /** OID for the "DNQUALIFIER=" or "DNQ=" attribute, denoting DN
+2        disambiguating information.*/
+3        DNQUALIFIER_OID = intern(ObjectIdentifier.newInternal(DNQUALIFIER_DATA));
+4 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /** OID for the "DNQUALIFIER=" or "DNQ=" attribute, denoting DN
+2        disambiguating information.*/
+3        DNQUALIFIER_OID = intern(ObjectIdentifier.newInternal(DNQUALIFIER_DATA));
+4
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // OID for the "SURNAME=" attribute, denoting a person's surname.
+2    public static final ObjectIdentifier SURNAME_OID =
+3            ObjectIdentifier.newInternal(SURNAME_DATA);
+4 
+--------------------------------------------

@@ -1,0 +1,26 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1            // Attempt to add the public key algorithm if cert provided
+2            if (cert != null) {
+3                algorithms.add(cert.getPublicKey().getAlgorithm());
+4             }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1            // Attempt to add the public key algorithm if cert provided
+2            if (cert != null) {
+3                algorithms.add(cert.getPublicKey().getAlgorithm());
+4            }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1            for (Key key : cp.getKeys()) {
+2                algorithms.add(key.getAlgorithm());
+3             }
+--------------------------------------------

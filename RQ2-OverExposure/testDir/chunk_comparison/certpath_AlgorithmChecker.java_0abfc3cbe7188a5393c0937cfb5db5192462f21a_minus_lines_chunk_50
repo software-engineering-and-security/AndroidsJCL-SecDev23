@@ -1,0 +1,35 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      * @param constraints the algorithm constraints (or null)
+1     * @param pkixdate The date specified by the PKIXParameters date.  If the
+2     *                 PKIXParameters is null, the current date is used.  This
+3     *                 should be null when jar files are being checked.
+4     * @param jarTimestamp Timestamp passed for JAR timestamp constraint
+5     *                     checking. Set to null if not applicable.
+6     * @param variant is the Validator variants of the operation. A null value
+7      *                passed will set it to Validator.GENERIC.
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     * @param constraints the algorithm constraints (or null)
+1     * @param pkixdate The date specified by the PKIXParameters date.  If the
+2     *                 PKIXParameters is null, the current date is used.  This
+3     *                 should be null when jar files are being checked.
+4     * @param jarTimestamp Timestamp passed for JAR timestamp constraint
+5     *                     checking. Set to null if not applicable.
+6     * @param variant is the Validator variants of the operation. A null value
+7     *                passed will set it to Validator.GENERIC.
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      * @param constraints the algorithm constraints (or null)
+1     * @param date the date specified by the PKIXParameters date, or the
+2     *             JAR timestamp if jar files are being validated and the
+3     *             JAR is timestamped. May be null if no timestamp or
+4     *             PKIXParameter date is set.
+5     * @param variant the Validator variant of the operation. A null value
+6      *                passed will set it to Validator.GENERIC.
+--------------------------------------------

@@ -1,0 +1,32 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /** OID for the "STREET=" attribute, denoting a street address. */
+2        streetAddress_oid = intern(ObjectIdentifier.newInternal(streetAddress_data));
+3
+4    /** OID for the "T=" attribute, denoting a person's title. */
+5        title_oid = intern(ObjectIdentifier.newInternal(title_data));
+6 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /** OID for the "STREET=" attribute, denoting a street address. */
+2        streetAddress_oid = intern(ObjectIdentifier.newInternal(streetAddress_data));
+3
+4    /** OID for the "T=" attribute, denoting a person's title. */
+5        title_oid = intern(ObjectIdentifier.newInternal(title_data));
+6
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // OID for the "DNQUALIFIER=" or "DNQ=" attribute, denoting DN
+2    // disambiguating information.
+3    public static final ObjectIdentifier DNQUALIFIER_OID =
+4            ObjectIdentifier.newInternal(DNQUALIFIER_DATA);
+5 
+--------------------------------------------

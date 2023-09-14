@@ -1,0 +1,49 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 throws CertPathValidatorException {
+1            Key key = null;
+2            if (cp.getKey() != null) {
+3                key = cp.getKey();
+4            } else if (cp.getCertificate() != null) {
+5                key = cp.getCertificate().getPublicKey();
+6            }
+7            if (key != null && !permitsImpl(key)) {
+8                if (nextConstraint != null) {
+9                    nextConstraint.permits(cp);
+10                    return;
+11                 }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                throws CertPathValidatorException {
+1            Key key = null;
+2            if (cp.getPublicKey() != null) {
+3                key = cp.getPublicKey();
+4            } else if (cp.getCertificate() != null) {
+5                key = cp.getCertificate().getPublicKey();
+6            }
+7            if (key != null && !permitsImpl(key)) {
+8                if (nextConstraint != null) {
+9                    nextConstraint.permits(cp);
+10                    return;
+11                }
+---------------------------------------------
+Differences:	['2', '3']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0                 throws CertPathValidatorException {
+1            for (Key key : cp.getKeys()) {
+2                if (!permitsImpl(key)) {
+3                    if (nextConstraint != null) {
+4                        nextConstraint.permits(cp);
+5                        continue;
+6                    }
+7                    throw new CertPathValidatorException(
+8                        "Algorithm constraints check failed on keysize limits: " +
+9                        algorithm + " " + KeyUtil.getKeySize(key) + " bit key" +
+10                        cp.extendedExceptionMsg(),
+11                        null, null, -1, BasicReason.ALGORITHM_CONSTRAINED);
+12                 }
+--------------------------------------------

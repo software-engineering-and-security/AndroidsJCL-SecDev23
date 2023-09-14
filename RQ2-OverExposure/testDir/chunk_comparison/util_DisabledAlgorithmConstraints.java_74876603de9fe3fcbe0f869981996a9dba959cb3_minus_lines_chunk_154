@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 if (debug != null) {
+1                    debug.println("Checking if usage constraint \"" + v +
+2                             "\" matches \"" + cp.getVariant() + "\"");
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                if (debug != null) {
+1                    debug.println("Checking if usage constraint \"" + v +
+2                            "\" matches \"" + cp.getVariant() + "\"");
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                 if (debug != null) {
+1                    debug.println("Checking if usage constraint \"" + usage +
+2                             "\" matches \"" + cp.getVariant() + "\"");
+--------------------------------------------

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0     private DateFormat df = DateFormat.getDateInstance(DateFormat.MEDIUM, java.util.Locale.US);
+1
+2     static {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0    }
+1
+2    /**
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0     private DateFormat df = DateFormat.getDateInstance(DateFormat.MEDIUM, java.util.Locale.US);
+1    private static final boolean acceptPasvAddressVal;
+2     static {
+--------------------------------------------

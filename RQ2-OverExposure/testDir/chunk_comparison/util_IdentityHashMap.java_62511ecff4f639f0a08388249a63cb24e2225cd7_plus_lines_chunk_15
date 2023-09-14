@@ -1,0 +1,26 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         throws java.io.IOException, ClassNotFoundException  {
+1        // Size (number of mappings) is written to the stream twice
+2        // Read first size value and ignore it
+3        s.readFields();
+4 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0        throws java.io.IOException, ClassNotFoundException  {
+1        // Size (number of mappings) is written to the stream twice
+2        // Read first size value and ignore it
+3        s.readFields();
+4
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0         throws java.io.IOException, ClassNotFoundException  {
+1        // Read in any hidden stuff
+2        s.defaultReadObject();
+3 
+--------------------------------------------

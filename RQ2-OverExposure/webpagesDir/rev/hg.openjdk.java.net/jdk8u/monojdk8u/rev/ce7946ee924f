@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: ce7946ee924f</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/ce7946ee924f">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/ce7946ee924f">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/ce7946ee924f">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/ce7946ee924f">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/ce7946ee924f.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/ce7946ee924f.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/ce7946ee924f.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48818:ce7946ee924f   </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8272014: Better array indexing
+Reviewed-by: andrew
+Contributed-by: Tianmin Shi &lt;tianshi@amazon.com&gt;</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#97;&#108;&#118;&#100;&#97;&#118;&#105;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Wed, 19 Jan 2022 02:42:42 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/187106d395f3">187106d395f3</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/4d7261097cd3">4d7261097cd3</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/ce7946ee924f/hotspot/src/cpu/x86/vm/c1_LIRGenerator_x86.cpp">hotspot/src/cpu/x86/vm/c1_LIRGenerator_x86.cpp</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 26 insertions(+), 2 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">hotspot/src/cpu/x86/vm/c1_LIRGenerator_x86.cpp</a></td>
+    <td class="diffstat-total" align="right">28</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:92.8571428571%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:7.14285714286%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/hotspot/src/cpu/x86/vm/c1_LIRGenerator_x86.cpp	Wed Jan 19 02:36:43 2022 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/hotspot/src/cpu/x86/vm/c1_LIRGenerator_x86.cpp	Wed Jan 19 02:42:42 2022 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -166,8 +166,32 @@</span><a href="#l1.3"></a>
+<span id="l1.4">   LIR_Address* addr;</span><a href="#l1.4"></a>
+<span id="l1.5">   if (index_opr-&gt;is_constant()) {</span><a href="#l1.5"></a>
+<span id="l1.6">     int elem_size = type2aelembytes(type);</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-    addr = new LIR_Address(array_opr,</span><a href="#l1.7"></a>
+<span id="l1.8" class="minusline">-                           offset_in_bytes + index_opr-&gt;as_jint() * elem_size, type);</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+#ifdef _LP64</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+    jint index = index_opr-&gt;as_jint();</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+    jlong disp = offset_in_bytes + (jlong)(index) * elem_size;</span><a href="#l1.11"></a>
+<span id="l1.12" class="plusline">+    if (disp &gt; max_jint) {</span><a href="#l1.12"></a>
+<span id="l1.13" class="plusline">+      // Displacement overflow. Cannot directly use instruction with 32-bit displacement for 64-bit addresses.</span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+      // Convert array index to long to do array offset computation with 64-bit values.</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+      index_opr = new_register(T_LONG);</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+      __ move(LIR_OprFact::longConst(index), index_opr);</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+      addr = new LIR_Address(array_opr, index_opr, LIR_Address::scale(type), offset_in_bytes, type);</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+    } else {</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+      addr = new LIR_Address(array_opr, disp, type);</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+    }</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+#else</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+    // A displacement overflow can also occur for x86 but that is not a problem due to the 32-bit address range!</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+    // Let's assume an array 'a' and an access with displacement 'disp'. When disp overflows, then &quot;a + disp&quot; will</span><a href="#l1.23"></a>
+<span id="l1.24" class="plusline">+    // always be negative (i.e. underflows the 32-bit address range):</span><a href="#l1.24"></a>
+<span id="l1.25" class="plusline">+    // Let N = 2^32: a + signed_overflow(disp) = a + disp - N.</span><a href="#l1.25"></a>
+<span id="l1.26" class="plusline">+    // &quot;a + disp&quot; is always smaller than N. If an index was chosen which would point to an address beyond N, then</span><a href="#l1.26"></a>
+<span id="l1.27" class="plusline">+    // range checks would catch that and throw an exception. Thus, a + disp &lt; 0 holds which means that it always</span><a href="#l1.27"></a>
+<span id="l1.28" class="plusline">+    // underflows the 32-bit address range:</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+    // unsigned_underflow(a + signed_overflow(disp)) = unsigned_underflow(a + disp - N)</span><a href="#l1.29"></a>
+<span id="l1.30" class="plusline">+    //                                              = (a + disp - N) + N = a + disp</span><a href="#l1.30"></a>
+<span id="l1.31" class="plusline">+    // This shows that we still end up at the correct address with a displacement overflow due to the 32-bit address</span><a href="#l1.31"></a>
+<span id="l1.32" class="plusline">+    // range limitation. This overflow only needs to be handled if addresses can be larger as on 64-bit platforms.</span><a href="#l1.32"></a>
+<span id="l1.33" class="plusline">+    addr = new LIR_Address(array_opr, offset_in_bytes + index_opr-&gt;as_jint() * elem_size, type);</span><a href="#l1.33"></a>
+<span id="l1.34" class="plusline">+#endif // _LP64</span><a href="#l1.34"></a>
+<span id="l1.35">   } else {</span><a href="#l1.35"></a>
+<span id="l1.36"> #ifdef _LP64</span><a href="#l1.36"></a>
+<span id="l1.37">     if (index_opr-&gt;type() == T_INT) {</span><a href="#l1.37"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

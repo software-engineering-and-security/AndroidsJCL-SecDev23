@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0      *             either the PKIXParameters date or null for the current date.
+1     * @param variant is the Validator variants of the operation. A null value
+2      *                passed will set it to Validator.GENERIC.
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     * @param algorithmId signature algorithm Algorithm ID
+1     * @param variant is the Validator variants of the operation. A null value
+2     *                passed will set it to Validator.GENERIC.
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0      *             either the PKIXParameters date or null for the current date.
+1     * @param variant the Validator variant of the operation. A null value
+2      *                passed will set it to Validator.GENERIC.
+--------------------------------------------

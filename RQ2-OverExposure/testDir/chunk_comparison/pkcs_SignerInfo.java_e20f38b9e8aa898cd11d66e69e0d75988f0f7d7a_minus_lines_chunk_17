@@ -1,0 +1,35 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1                // check that digest algorithm is not restricted
+2                try {
+3                    JAR_DISABLED_CHECK.permits(digestAlgname, cparams);
+4                } catch (CertPathValidatorException e) {
+5                    throw new SignatureException(e.getMessage(), e);
+6                }
+7
+8                MessageDigest md = MessageDigest.getInstance(digestAlgname);
+9                 byte[] computedMessageDigest = md.digest(data);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1                // check that digest algorithm is not restricted
+2                try {
+3                    JAR_DISABLED_CHECK.permits(digestAlgname, cparams);
+4                } catch (CertPathValidatorException e) {
+5                    throw new SignatureException(e.getMessage(), e);
+6                }
+7
+8                MessageDigest md = MessageDigest.getInstance(digestAlgname);
+9                byte[] computedMessageDigest = md.digest(data);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1                MessageDigest md = MessageDigest.getInstance(digestAlgName);
+2                 byte[] computedMessageDigest = md.digest(data);
+--------------------------------------------

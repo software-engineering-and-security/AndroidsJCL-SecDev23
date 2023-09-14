@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk-updates/jdk11u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk-updates/jdk11u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk-updates/jdk11u/static/mercurial.js"></script>
+
+<title>jdk-updates/jdk11u: 517f0515f160</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk-updates/jdk11u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/shortlog/517f0515f160">log</a></li>
+ <li><a href="/jdk-updates/jdk11u/graph/517f0515f160">graph</a></li>
+ <li><a href="/jdk-updates/jdk11u/tags">tags</a></li>
+ <li><a href="/jdk-updates/jdk11u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk-updates/jdk11u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk-updates/jdk11u/raw-rev/517f0515f160">raw</a></li>
+ <li><a href="/jdk-updates/jdk11u/file/517f0515f160">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk-updates/jdk11u/archive/517f0515f160.zip">zip</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/517f0515f160.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk-updates/jdk11u/archive/517f0515f160.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk-updates/jdk11u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk-updates">jdk-updates</a> / <a href="/jdk-updates/jdk11u">jdk11u</a> </h2>
+<h3>changeset 52909:517f0515f160   </h3>
+
+<form class="search" action="/jdk-updates/jdk11u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk-updates/jdk11u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8235691: Enhance TLS connectivity
+Reviewed-by: jnimeh, rhalade, ahgross</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#120;&#117;&#101;&#108;&#101;&#105;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Tue, 17 Dec 2019 12:55:36 -0800</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk-updates/jdk11u/rev/d56ef487dbcb">d56ef487dbcb</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk-updates/jdk11u/rev/82516e8bde8d">82516e8bde8d</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk-updates/jdk11u/file/517f0515f160/src/java.base/share/classes/sun/security/ssl/SSLTransport.java">src/java.base/share/classes/sun/security/ssl/SSLTransport.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 17 insertions(+), 5 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">src/java.base/share/classes/sun/security/ssl/SSLTransport.java</a></td>
+    <td class="diffstat-total" align="right">22</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:77.2727272727%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:22.7272727273%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/src/java.base/share/classes/sun/security/ssl/SSLTransport.java	Wed Jan 29 20:00:14 2020 +0300</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/src/java.base/share/classes/sun/security/ssl/SSLTransport.java	Tue Dec 17 12:55:36 2019 -0800</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -166,12 +166,24 @@</span><a href="#l1.3"></a>
+<span id="l1.4"> </span><a href="#l1.4"></a>
+<span id="l1.5">             if (plainText == null) {</span><a href="#l1.5"></a>
+<span id="l1.6">                 plainText = Plaintext.PLAINTEXT_NULL;</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-            } else {</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            } else if (plainText.contentType ==</span><a href="#l1.8"></a>
+<span id="l1.9" class="plusline">+                            ContentType.APPLICATION_DATA.id) {</span><a href="#l1.9"></a>
+<span id="l1.10" class="plusline">+                // check handshake status</span><a href="#l1.10"></a>
+<span id="l1.11" class="plusline">+                //</span><a href="#l1.11"></a>
+<span id="l1.12" class="plusline">+                // Note that JDK does not support 0-RTT yet.  Otherwise, it is</span><a href="#l1.12"></a>
+<span id="l1.13" class="plusline">+                // needed to check early_data.</span><a href="#l1.13"></a>
+<span id="l1.14" class="plusline">+                if (!context.isNegotiated) {</span><a href="#l1.14"></a>
+<span id="l1.15" class="plusline">+                    if (SSLLogger.isOn &amp;&amp; SSLLogger.isOn(&quot;ssl,verbose&quot;)) {</span><a href="#l1.15"></a>
+<span id="l1.16" class="plusline">+                        SSLLogger.warning(&quot;unexpected application data &quot; +</span><a href="#l1.16"></a>
+<span id="l1.17" class="plusline">+                            &quot;before handshake completion&quot;);</span><a href="#l1.17"></a>
+<span id="l1.18" class="plusline">+                    }</span><a href="#l1.18"></a>
+<span id="l1.19" class="plusline">+</span><a href="#l1.19"></a>
+<span id="l1.20" class="plusline">+                    throw context.fatal(Alert.UNEXPECTED_MESSAGE,</span><a href="#l1.20"></a>
+<span id="l1.21" class="plusline">+                        &quot;Receiving application data before handshake complete&quot;);</span><a href="#l1.21"></a>
+<span id="l1.22" class="plusline">+                }</span><a href="#l1.22"></a>
+<span id="l1.23" class="plusline">+</span><a href="#l1.23"></a>
+<span id="l1.24">                 // Fill the destination buffers.</span><a href="#l1.24"></a>
+<span id="l1.25" class="minusline">-                if ((dsts != null) &amp;&amp; (dstsLength &gt; 0) &amp;&amp;</span><a href="#l1.25"></a>
+<span id="l1.26" class="minusline">-                        (plainText.contentType ==</span><a href="#l1.26"></a>
+<span id="l1.27" class="minusline">-                            ContentType.APPLICATION_DATA.id)) {</span><a href="#l1.27"></a>
+<span id="l1.28" class="minusline">-</span><a href="#l1.28"></a>
+<span id="l1.29" class="plusline">+                if ((dsts != null) &amp;&amp; (dstsLength &gt; 0)) {</span><a href="#l1.29"></a>
+<span id="l1.30">                     ByteBuffer fragment = plainText.fragment;</span><a href="#l1.30"></a>
+<span id="l1.31">                     int remains = fragment.remaining();</span><a href="#l1.31"></a>
+<span id="l1.32"> </span><a href="#l1.32"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

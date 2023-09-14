@@ -1,0 +1,31 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    /** OID for the "L=" attribute, denoting a locality (such as a city) */
+2        localityName_oid = intern(ObjectIdentifier.newInternal(localityName_data));
+3
+4    /** OID for the "O=" attribute, denoting an organization name */
+5        orgName_oid = intern(ObjectIdentifier.newInternal(orgName_data));
+6 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1    /** OID for the "L=" attribute, denoting a locality (such as a city) */
+2        localityName_oid = intern(ObjectIdentifier.newInternal(localityName_data));
+3
+4    /** OID for the "O=" attribute, denoting an organization name */
+5        orgName_oid = intern(ObjectIdentifier.newInternal(orgName_data));
+6
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1    // OID for the "S=" attribute, denoting a state (such as Delaware).
+2    public static final ObjectIdentifier stateName_oid =
+3            ObjectIdentifier.newInternal(stateName_data);
+4 
+--------------------------------------------

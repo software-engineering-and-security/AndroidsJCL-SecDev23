@@ -1,0 +1,66 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1        /*
+2         * Look for the latest timestamp in the signature block.  If an entry
+3         * has no timestamp, use current time (aka null).
+4         */
+5        for (CodeSigner s: newSigners) {
+6            if (debug != null) {
+7                debug.println("Gathering timestamp for:  " + s.toString());
+8            }
+9            if (s.getTimestamp() == null) {
+10                timestamp = null;
+11                break;
+12            } else if (timestamp == null) {
+13                timestamp = s.getTimestamp();
+14            } else {
+15                if (timestamp.getTimestamp().before(
+16                        s.getTimestamp().getTimestamp())) {
+17                    timestamp = s.getTimestamp();
+18                }
+19            }
+20         }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0
+1        /*
+2         * Look for the latest timestamp in the signature block.  If an entry
+3         * has no timestamp, use current time (aka null).
+4         */
+5        for (CodeSigner s: newSigners) {
+6            if (debug != null) {
+7                debug.println("Gathering timestamp for:  " + s.toString());
+8            }
+9            if (s.getTimestamp() == null) {
+10                timestamp = null;
+11                break;
+12            } else if (timestamp == null) {
+13                timestamp = s.getTimestamp();
+14            } else {
+15                if (timestamp.getTimestamp().before(
+16                        s.getTimestamp().getTimestamp())) {
+17                    timestamp = s.getTimestamp();
+18                }
+19            }
+20        }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0 
+1        // check if any of the algorithms used to verify the SignerInfos
+2        // are disabled
+3        params = new JarConstraintsParameters(newSigners);
+4        Set<String> notDisabledAlgorithms =
+5            SignerInfo.verifyAlgorithms(infos, params, name + " PKCS7");
+6
+7        // add the SignerInfo algorithms that are ok to the permittedAlgs map
+8        // so they are not checked again
+9        for (String algorithm : notDisabledAlgorithms) {
+10            permittedAlgs.put(algorithm, Boolean.TRUE);
+11         }
+--------------------------------------------

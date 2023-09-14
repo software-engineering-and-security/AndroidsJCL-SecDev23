@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         AlgorithmId algorithmId = x509CRLImpl.getSigAlgId();
+1        check(key, algorithmId, variant);
+2     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        AlgorithmId algorithmId = x509CRLImpl.getSigAlgId();
+1        check(key, algorithmId, variant);
+2    }
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         AlgorithmId algorithmId = x509CRLImpl.getSigAlgId();
+1        check(key, algorithmId, variant, anchor);
+2     }
+--------------------------------------------

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         // make sure we have something to do all this work for...
+1        if (newSigners == null)
+2             return;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        // make sure we have something to do all this work for...
+1        if (newSigners == null)
+2            return;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         // make sure we have something to do all this work for...
+1        if (newSigners == null) {
+2             return;
+--------------------------------------------

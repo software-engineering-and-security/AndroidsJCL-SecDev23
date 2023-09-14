@@ -1,0 +1,27 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    static {
+2    /** OID for the "CN=" attribute, denoting a person's common name. */
+3        commonName_oid = intern(ObjectIdentifier.newInternal(commonName_data));
+4 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0     */
+1    static {
+2        PrivilegedExceptionAction<Object[]> pa =
+3                new PrivilegedExceptionAction<Object[]>() {
+4            public Object[] run() throws Exception {
+---------------------------------------------
+Differences:	['3', '4']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0 
+1    // OID for the "O=" attribute, denoting an organization name.
+2    public static final ObjectIdentifier orgName_oid =
+3            ObjectIdentifier.newInternal(orgName_data);
+4 
+--------------------------------------------

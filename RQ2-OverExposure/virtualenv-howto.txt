@@ -1,0 +1,8 @@
+0. put list of requiremenst in requirements.txt
+$ vim ...
+1. need to create a virtual environment using this command
+$ python3 -m venv .localpyenv 
+2. then, install required versions of libraries:
+$ .localpyenv/bin/pip3 install -r requirements.txt
+3. run using virtual env.
+.localpyenv/bin/python3 abartel.py

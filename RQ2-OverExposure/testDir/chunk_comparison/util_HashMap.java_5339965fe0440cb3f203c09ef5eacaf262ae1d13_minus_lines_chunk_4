@@ -1,0 +1,25 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         reinitialize();
+1        if (loadFactor <= 0 || Float.isNaN(loadFactor))
+2            throw new InvalidObjectException("Illegal load factor: " +
+3                                             loadFactor);
+4         s.readInt();                // Read and ignore number of buckets
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0            initialCapacity = MAXIMUM_CAPACITY;
+1        if (loadFactor <= 0 || Float.isNaN(loadFactor))
+2            throw new IllegalArgumentException("Illegal load factor: " +
+3                                               loadFactor);
+4
+---------------------------------------------
+Differences:	['0', '2', '4']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         reinitialize();
+1
+2         s.readInt();                // Read and ignore number of buckets
+--------------------------------------------

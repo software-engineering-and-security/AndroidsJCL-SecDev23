@@ -1,0 +1,29 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 constraints);
+1        // If we are checking jar files, set pkixdate the same as the timestamp
+2        // for certificate checking
+3        this.pkixdate = (jarTimestamp != null ? jarTimestamp.getTimestamp() :
+4                pkixdate);
+5        this.jarTimestamp = jarTimestamp;
+6         this.variant = (variant == null ? Validator.VAR_GENERIC : variant);
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                constraints);
+1        // If we are checking jar files, set pkixdate the same as the timestamp
+2        // for certificate checking
+3        this.pkixdate = (jarTimestamp != null ? jarTimestamp.getTimestamp() :
+4                pkixdate);
+5        this.jarTimestamp = jarTimestamp;
+6        this.variant = (variant == null ? Validator.VAR_GENERIC : variant);
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                 constraints);
+1        this.date = date;
+2         this.variant = (variant == null ? Validator.VAR_GENERIC : variant);
+--------------------------------------------

@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         s.defaultReadObject();
+1        count = s.readInt();
+2         value = (char[]) s.readObject();
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        s.defaultReadObject();
+1        count = s.readInt();
+2        char[] val = (char[]) s.readObject();
+---------------------------------------------
+Differences:	['2']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         s.defaultReadObject();
+1        int c = s.readInt();
+2         value = (char[]) s.readObject();
+--------------------------------------------

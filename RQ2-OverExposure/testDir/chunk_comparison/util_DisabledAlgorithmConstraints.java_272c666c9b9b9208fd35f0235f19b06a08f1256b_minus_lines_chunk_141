@@ -1,0 +1,18 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 throws CertPathValidatorException {
+1            X509Certificate cert = cp.getCertificate();
+2 
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                throws CertPathValidatorException {
+1            X509Certificate cert = cp.getCertificate();
+2
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+--------------------------------------------

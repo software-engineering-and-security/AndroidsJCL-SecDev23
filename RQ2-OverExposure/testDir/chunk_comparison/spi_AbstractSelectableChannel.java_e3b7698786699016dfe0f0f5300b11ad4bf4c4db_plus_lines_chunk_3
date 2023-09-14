@@ -1,0 +1,24 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0 
+1    // True when non-blocking, need regLock to change;
+2    private volatile boolean nonBlocking;
+3 
+-------------------------------------------
+	is plus_lines  with
+----------------Target Code--------------------
+0
+1    // True when non-blocking, need regLock to change;
+2    private volatile boolean nonBlocking;
+3
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: plus_lines
+
+--------------for ref---------------------
+0 
+1    // Blocking mode, protected by regLock
+2    boolean blocking = true;
+3 
+--------------------------------------------

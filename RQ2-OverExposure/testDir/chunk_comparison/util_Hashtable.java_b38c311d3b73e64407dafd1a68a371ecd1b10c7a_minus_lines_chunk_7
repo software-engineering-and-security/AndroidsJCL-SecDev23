@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         table = new Entry<?,?>[length];
+1        threshold = (int)Math.min(length * loadFactor, MAX_ARRAY_SIZE + 1);
+2         count = 0;
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        table = new Entry<?,?>[length];
+1        threshold = (int)Math.min(length * loadFactor, MAX_ARRAY_SIZE + 1);
+2        count = 0;
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0         table = new Entry<?,?>[length];
+1        threshold = (int)Math.min(length * lf, MAX_ARRAY_SIZE + 1);
+2         count = 0;
+--------------------------------------------

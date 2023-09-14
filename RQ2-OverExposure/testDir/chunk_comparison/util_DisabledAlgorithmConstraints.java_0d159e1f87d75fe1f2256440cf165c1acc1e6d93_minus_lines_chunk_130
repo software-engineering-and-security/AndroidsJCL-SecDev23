@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0         }
+1        algorithmConstraints = new Constraints(disabledAlgorithms);
+2     }
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0        disabledAlgorithms = getAlgorithms(propertyName);
+1        algorithmConstraints = new Constraints(disabledAlgorithms);
+2    }
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+0         }
+1        algorithmConstraints = new Constraints(propertyName, disabledAlgorithms);
+2     }
+--------------------------------------------

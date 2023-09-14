@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+<head>
+<link rel="icon" href="/jdk8u/monojdk8u/static/nanoduke.ico" type="image/png" />
+<meta name="robots" content="index, nofollow" />
+<link rel="stylesheet" href="/jdk8u/monojdk8u/static/style-paper.css" type="text/css" />
+<script type="text/javascript" src="/jdk8u/monojdk8u/static/mercurial.js"></script>
+
+<title>jdk8u/monojdk8u: f75aee4df47a</title>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<div class="logo">
+<img src="/jdk8u/monojdk8u/static/duke_pipes.png" width=75 height=90 border=0 alt="Duke!" />
+</div>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/shortlog/f75aee4df47a">log</a></li>
+ <li><a href="/jdk8u/monojdk8u/graph/f75aee4df47a">graph</a></li>
+ <li><a href="/jdk8u/monojdk8u/tags">tags</a></li>
+ <li><a href="/jdk8u/monojdk8u/bookmarks">bookmarks</a></li>
+ <li><a href="/jdk8u/monojdk8u/branches">branches</a></li>
+</ul>
+<ul>
+ <li class="active">changeset</li>
+ <li><a href="/jdk8u/monojdk8u/raw-rev/f75aee4df47a">raw</a></li>
+ <li><a href="/jdk8u/monojdk8u/file/f75aee4df47a">browse</a></li>
+</ul>
+<ul>
+ 
+<li>
+<a href="/jdk8u/monojdk8u/archive/f75aee4df47a.zip">zip</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/f75aee4df47a.tar.gz">gz</a>
+</li>
+<li>
+<a href="/jdk8u/monojdk8u/archive/f75aee4df47a.tar.bz2">bz2</a>
+</li>
+</ul>
+<ul>
+ <li><a href="/jdk8u/monojdk8u/help">help</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<h2 class="breadcrumb"><a href="/">OpenJDK</a> / <a href="/jdk8u">jdk8u</a> / <a href="/jdk8u/monojdk8u">monojdk8u</a> </h2>
+<h3>changeset 48826:f75aee4df47a  <span class="tag">jdk8u322-b06</span> <span class="tag">jdk8u322-ga</span>  </h3>
+
+<form class="search" action="/jdk8u/monojdk8u/log">
+
+<p><input name="rev" id="search1" type="text" size="30" /></p>
+<div id="hint">Find changesets by keywords (author, files, the commit message), revision
+number or hash, or <a href="/jdk8u/monojdk8u/help/revsets">revset expression</a>.</div>
+</form>
+
+<div class="description">8273838: Enhanced BMP processing
+Reviewed-by: rhalade, ahgross, prr, kizune, azvegint, mschoene, andrew</div>
+
+<table id="changesetEntry">
+<tr>
+ <th class="author">author</th>
+ <td class="author">&#98;&#97;&#101;</td>
+</tr>
+<tr>
+ <th class="date">date</th>
+ <td class="date age">Tue, 28 Sep 2021 13:30:27 +0000</td></tr>
+<tr>
+ <th class="author">parents</th>
+ <td class="author"><a href="/jdk8u/monojdk8u/rev/7c8c4a447fe4">7c8c4a447fe4</a> </td>
+</tr>
+<tr>
+ <th class="author">children</th>
+ <td class="author"> <a href="/jdk8u/monojdk8u/rev/15d6f90f7dde">15d6f90f7dde</a></td>
+</tr>
+<tr>
+ <th class="files">files</th>
+ <td class="files"><a href="/jdk8u/monojdk8u/file/f75aee4df47a/jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java">jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java</a> </td>
+</tr>
+<tr>
+  <th class="diffstat">diffstat</th>
+  <td class="diffstat">
+     1 files changed, 1 insertions(+), 1 deletions(-)
+
+    <a id="diffstatexpand" href="javascript:toggleDiffstat()"/>[<tt>+</tt>]</a>
+    <div id="diffstatdetails" style="display:none;">
+      <a href="javascript:toggleDiffstat()"/>[<tt>-</tt>]</a>
+      <p>
+      <table class="stripes2">  <tr>
+    <td class="diffstat-file"><a href="#l1.1">jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java</a></td>
+    <td class="diffstat-total" align="right">2</td>
+    <td class="diffstat-graph">
+      <span class="diffstat-add" style="width:50.0%;">&nbsp;</span>
+      <span class="diffstat-remove" style="width:50.0%;">&nbsp;</span>
+    </td>
+  </tr>
+</table>
+    </div>
+  </td>
+</tr>
+</table>
+
+<div class="overflow">
+<div class="sourcefirst linewraptoggle">line wrap: <a class="linewraplink" href="javascript:toggleLinewrap()">on</a></div>
+<div class="sourcefirst"> line diff</div>
+<div class="stripes2 diffblocks">
+<div class="bottomline inc-lineno"><pre class="sourcelines wrap">
+<span id="l1.1" class="minusline">--- a/jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java	Thu Sep 23 13:29:37 2021 +0000</span><a href="#l1.1"></a>
+<span id="l1.2" class="plusline">+++ b/jdk/src/share/classes/com/sun/imageio/plugins/bmp/BMPImageReader.java	Tue Sep 28 13:30:27 2021 +0000</span><a href="#l1.2"></a>
+<span id="l1.3" class="atline">@@ -539,7 +539,7 @@</span><a href="#l1.3"></a>
+<span id="l1.4">         }</span><a href="#l1.4"></a>
+<span id="l1.5"> </span><a href="#l1.5"></a>
+<span id="l1.6">         if (metadata.compression == BI_RGB) {</span><a href="#l1.6"></a>
+<span id="l1.7" class="minusline">-            long imageDataSize = (width * height * (bitsPerPixel / 8));</span><a href="#l1.7"></a>
+<span id="l1.8" class="plusline">+            long imageDataSize = ((long)width * height * (bitsPerPixel / 8));</span><a href="#l1.8"></a>
+<span id="l1.9">             if (imageDataSize &gt; (bitmapFileSize - bitmapOffset)) {</span><a href="#l1.9"></a>
+<span id="l1.10">                 throw new IIOException(I18N.getString(&quot;BMPImageReader9&quot;));</span><a href="#l1.10"></a>
+<span id="l1.11">             }</span><a href="#l1.11"></a></pre></div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container"><div class="main footer">
+&copy 2007, <script>document.write(new Date().getFullYear())</script> Oracle and/or its affiliates<br/>
+<a href="http://openjdk.java.net/legal/tou/">Terms of Use</a>
+&#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+&#183; <a href="https://openjdk.java.net/legal/openjdk-trademark-notice.html">Trademarks</a>
+</div></div>
+
+</body>
+</html>
+

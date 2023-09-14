@@ -1,0 +1,21 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 }
+1                if (cp.getVariant().compareTo(v) == 0) {
+2                     if (next(cp)) {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                }
+1                if (cp.getVariant().compareTo(v) == 0) {
+2                    if (next(cp)) {
+---------------------------------------------
+Differences:	[]
+--	--	--	--	--
+Match Status: minus_lines
+
+--------------for ref---------------------
+0                 }
+1                if (match) {
+2                     if (next(cp)) {
+--------------------------------------------

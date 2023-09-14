@@ -1,0 +1,26 @@
+	Comparing:
+---------Patch Chunk Lines-----------------
+0                 this.trustedPubKey = anchor.getTrustedCert().getPublicKey();
+1                // Check for anchor certificate restrictions
+2                trustedMatch = checkFingerprint(anchor.getTrustedCert());
+3                if (trustedMatch && debug != null) {
+4                    debug.println("trustedMatch = true");
+5                }
+6             } else {
+-------------------------------------------
+	is minus_lines  with
+----------------Target Code--------------------
+0                prevPubKey = anchor.getTrustedCert().getPublicKey();
+1                // Check for anchor certificate restrictions
+2                trustedMatch = checkFingerprint(anchor.getTrustedCert());
+3                if (trustedMatch && debug != null) {
+4                    debug.println("trustedMatch = true");
+5                }
+6            } else {
+---------------------------------------------
+Differences:	['0']
+--	--	--	--	--
+Match Status: None
+
+--------------for ref---------------------
+--------------------------------------------
