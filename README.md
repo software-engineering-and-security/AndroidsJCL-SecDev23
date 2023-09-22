@@ -1,5 +1,5 @@
 # AndroidsJCL-SecDev23 
-In this repository, we provide the artefacts related to our paper Revisiting the VCCFinder approach for the identification of vulnerability-contributing commits to appear in the
+In this repository, we provide the artefacts related to our paper analysing the Java Class Library in Android.
 
 ```bash
 # clone this repository
