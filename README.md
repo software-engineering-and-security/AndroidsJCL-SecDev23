@@ -3,7 +3,7 @@ In this repository, we provide the artefacts related to our paper analysing the 
 
 ```bash
 # clone this repository
-git clone https://github.com/riomtimothe/AndroidsJCL-SecDev23.git
+git clone https://github.com/software-engineering-and-security/AndroidsJCL-SecDev23.git
 cd AndroidsJCL-SecDev23
 tar xzvf timdb-openjdk_classes_tables.tar.gz
 
