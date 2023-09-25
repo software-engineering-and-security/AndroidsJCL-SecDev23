@@ -21,10 +21,24 @@ DB can be rebuild auromatically by:
 # RQ1:
 
 ## Reproduce Figure 3:
-
+```bash
+cd RQ1-OriinalVersion
+bash toolsDir/one_tables_nb_ojclass_figure.sf
+cd ..
+```
 ## Reproduce Figure 4:
+For each version X
+```bash
+cd RQ1-OriginalVersion
+bash toolsDir/compare_one_tables_sh_X.sh
+cd ..
+```
 
 ## Reproduce figure 5:
+```bash
+cd RQ1-OriginalVersion/ONE_TABLES/PROXIMITY
+bash toolsDir/stats.sh
+```
 
 # RQ2:
 
