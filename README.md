@@ -41,8 +41,20 @@ bash toolsDir/stats.sh
 ```
 
 # RQ2:
+```bash 
+cd RQ2-OverExposure
+bash run_analysis.sh
+cd ..
+```
+
 
 # RQ3:
+
+Video demonstrating available at ./RQ3-Exploit/cve-2022-21340/tim\_android\_app/device-2023-05-24-101133.mp4
+
+App available at ./RQ3-Exploit/cve-2022-21340/tim\_android\_app/CVE20221340
+
+Device fingerprint: google/sdk\_gphone\_x86\_64/emu64xa:13/TE1A.220922.025/9795748:userdebug/dev-keys
 
 ## OpenJDK
 
