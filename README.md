@@ -18,6 +18,7 @@ DB can be rebuild auromatically by:
 	2. Executing ....
 
 
+--------------------------------------------------------------------------------------
 
 # RQ1-Origin of Libcore Java classes:
 
@@ -42,7 +43,7 @@ bash toolsDir/stats.sh
 ```
 
 
-
+--------------------------------------------------------------------------------------
 
 # RQ2-Management of OpenJDK CVEs and Potential Over-Exposures :
 ```bash 
@@ -51,7 +52,7 @@ bash run_analysis.sh
 cd ..
 ```
 
-
+--------------------------------------------------------------------------------------
 
 
 # RQ3- Exploit of CVE-2022-21340, both on OpenJDK and Android-13:
