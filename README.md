@@ -20,10 +20,10 @@ Mariadb has been used all alog the process.
 
 DB can be rebuild auromatically by:
 
-	1. Updating the RQ1-OriginalVersion/toolsDir/db\_tools file
-	1. Create mariadb user accordingly
-	1. cd in RQ1-OriginalVersion/toolsDir/
-	1. Execute build\_mariadb\_db.sh
+1. Updating the RQ1-OriginalVersion/toolsDir/db\_tools file
+1. Create mariadb user accordingly
+1. cd in RQ1-OriginalVersion/toolsDir/
+1. Execute build\_mariadb\_db.sh
 	
 
 
