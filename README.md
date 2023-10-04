@@ -1,7 +1,7 @@
 # AndroidsJCL-SecDev23 
 In this repository, we provide the artifacts related to our paper analysing the Java Class Library in Android:
 
-Timothée Riom, Alexandre Bartel *An In-Depth Analysis of Android’s Java Class Library: its Evolution and Security Impact.*, IEEE Secure Development Conference (SecDev), 2023. [bib](https://www.abartel.net/static/p/secdev2023-AndroidJCL.bib.txt) [secdev](https://secdev.ieee.org/2023/accepted/)
+Timothée Riom, Alexandre Bartel *An In-Depth Analysis of Android’s Java Class Library: its Evolution and Security Impact.*, IEEE Secure Development Conference (SecDev), 2023. [[bib](https://www.abartel.net/static/p/secdev2023-AndroidJCL.bib.txt)] [secdev](https://secdev.ieee.org/2023/accepted/)
 
 
 
